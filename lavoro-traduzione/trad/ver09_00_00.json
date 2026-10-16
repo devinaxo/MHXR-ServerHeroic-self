@@ -1,0 +1,92 @@
+[
+ {
+  "i": 0,
+  "jp": "深度%d",
+  "en": "Depth %d"
+ },
+ {
+  "i": 1,
+  "jp": "%d 種類",
+  "en": "%d types"
+ },
+ {
+  "i": 2,
+  "jp": "登竜門クエスト",
+  "en": "Gateway Quests"
+ },
+ {
+  "i": 3,
+  "jp": "イベント",
+  "en": "Event"
+ },
+ {
+  "i": 4,
+  "jp": "極地強襲",
+  "en": "Polar Assault"
+ },
+ {
+  "i": 5,
+  "jp": "極地強襲上位",
+  "en": "Polar Assault (High)"
+ },
+ {
+  "i": 6,
+  "jp": "禁断の狩場",
+  "en": "Forbidden Hunting Grounds"
+ },
+ {
+  "i": 7,
+  "jp": "進化素材ツアー",
+  "en": "Evolution Material Tour"
+ },
+ {
+  "i": 8,
+  "jp": "過去クエスト",
+  "en": "Past Quests"
+ },
+ {
+  "i": 9,
+  "jp": "有効期限 : %d/%02d/%02d %02d:%02d:%02d まで",
+  "en": "Expires: %d/%02d/%02d %02d:%02d:%02d"
+ },
+ {
+  "i": 10,
+  "jp": "上記の極地耐性スキルが100％未満です。\r\n \r\n100％で一定時間ごとに受けるダメージ等を\r\n完全に無効化できますが進みますか ？",
+  "en": "The polar resistance skills above are below 100%.\r\n \r\nAt 100% you fully negate the periodic damage and more.\r\nContinue anyway?"
+ },
+ {
+  "i": 11,
+  "jp": "<COL FFF000FF>%s</COL>",
+  "en": "<COL FFF000FF>%s</COL>"
+ },
+ {
+  "i": 12,
+  "jp": "現在非開催です",
+  "en": "Not currently held"
+ },
+ {
+  "i": 13,
+  "jp": "スケジュール",
+  "en": "Schedule"
+ },
+ {
+  "i": 14,
+  "jp": "Ⅰ",
+  "en": "Ⅰ"
+ },
+ {
+  "i": 15,
+  "jp": "Ⅱ",
+  "en": "Ⅱ"
+ },
+ {
+  "i": 16,
+  "jp": "Ⅲ",
+  "en": "Ⅲ"
+ },
+ {
+  "i": 17,
+  "jp": "深度",
+  "en": "Depth"
+ }
+]

@@ -1,0 +1,17 @@
+[
+ {
+  "i": 0,
+  "jp": "ターゲットした部分を中心に、\r\n大ダメージを与える岩石が降り注ぐ。\r\n岩石にあたると火傷状態になる。",
+  "en": "Rocks that deal heavy damage rain down\r\naround the targeted part.\r\nBeing hit by a rock causes Fireblight."
+ },
+ {
+  "i": 1,
+  "jp": "ターゲットしたモンスターを中心に、\r\n回転しながら広がる、\r\nダメージを与える竜巻が発生する。",
+  "en": "A damaging tornado appears around the\r\ntargeted monster, spinning and spreading."
+ },
+ {
+  "i": 2,
+  "jp": "ターゲットしたモンスターの周囲に\r\n劇毒と狂竜化状態になるウイルスエリアが\r\n発生する。モンスターは毒状態になる。",
+  "en": "A virus area that causes Deadly Poison and\r\nFrenzy appears around the targeted monster.\r\nThe monster becomes poisoned."
+ }
+]

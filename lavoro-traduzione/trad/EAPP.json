@@ -1,0 +1,57 @@
+[
+ {
+  "i": 0,
+  "jp": "Invalid Message",
+  "en": "Invalid Message"
+ },
+ {
+  "i": 1,
+  "jp": "エンドポイントのパースが失敗しました",
+  "en": "Failed to parse the endpoint"
+ },
+ {
+  "i": 2,
+  "jp": "ネットワークの初期化に失敗しました",
+  "en": "Failed to initialize the network"
+ },
+ {
+  "i": 3,
+  "jp": "ダウンロードに失敗しました",
+  "en": "Download failed"
+ },
+ {
+  "i": 4,
+  "jp": "ダウンロードサーバーに接続できません",
+  "en": "Cannot connect to the download server"
+ },
+ {
+  "i": 5,
+  "jp": "ダウンロードに失敗しました",
+  "en": "Download failed"
+ },
+ {
+  "i": 6,
+  "jp": "ファイル更新に失敗しました\r\n十分な空き容量があるかをご確認の上、\r\n再度お試しください",
+  "en": "File update failed.\r\nPlease make sure you have enough free space\r\nand try again."
+ },
+ {
+  "i": 7,
+  "jp": "ダウンロードに失敗しました",
+  "en": "Download failed"
+ },
+ {
+  "i": 8,
+  "jp": "ダウンロードに失敗しました",
+  "en": "Download failed"
+ },
+ {
+  "i": 9,
+  "jp": "ダウンロードに失敗しました",
+  "en": "Download failed"
+ },
+ {
+  "i": 10,
+  "jp": "ダウンロードに失敗しました",
+  "en": "Download failed"
+ }
+]

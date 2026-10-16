@@ -2,7996 +2,7996 @@
  {
   "i": 0,
   "jp": "力尽きました",
-  "en": ""
+  "en": "Fainted"
  },
  {
   "i": 1,
   "jp": "攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up!"
  },
  {
   "i": 2,
   "jp": "防御力アップ ！",
-  "en": ""
+  "en": "Defense Up!"
  },
  {
   "i": 3,
   "jp": "ガード率アップ ！",
-  "en": ""
+  "en": "Guard Rate Up!"
  },
  {
   "i": 4,
   "jp": "回避率アップ ！",
-  "en": ""
+  "en": "Evasion Up!"
  },
  {
   "i": 5,
   "jp": "会心率アップ ！",
-  "en": ""
+  "en": "Affinity Up!"
  },
  {
   "i": 6,
   "jp": "狙われやすさダウン ！",
-  "en": ""
+  "en": "Aggro Down!"
  },
  {
   "i": 7,
   "jp": "狙われやすさアップ ！",
-  "en": ""
+  "en": "Aggro Up!"
  },
  {
   "i": 8,
   "jp": "スキルゲージアップ ！",
-  "en": ""
+  "en": "Skill Gauge Up!"
  },
  {
   "i": 9,
   "jp": "火属性攻撃力アップ ！",
-  "en": ""
+  "en": "Fire Attack Up!"
  },
  {
   "i": 10,
   "jp": "水属性攻撃力アップ ！",
-  "en": ""
+  "en": "Water Attack Up!"
  },
  {
   "i": 11,
   "jp": "氷属性攻撃力アップ ！",
-  "en": ""
+  "en": "Ice Attack Up!"
  },
  {
   "i": 12,
   "jp": "雷属性攻撃力アップ ！",
-  "en": ""
+  "en": "Thunder Attack Up!"
  },
  {
   "i": 13,
   "jp": "土属性攻撃力アップ ！",
-  "en": ""
+  "en": "Earth Attack Up!"
  },
  {
   "i": 14,
   "jp": "火属性防御力アップ ！",
-  "en": ""
+  "en": "Fire Defense Up!"
  },
  {
   "i": 15,
   "jp": "水属性防御力アップ ！",
-  "en": ""
+  "en": "Water Defense Up!"
  },
  {
   "i": 16,
   "jp": "氷属性防御力アップ ！",
-  "en": ""
+  "en": "Ice Defense Up!"
  },
  {
   "i": 17,
   "jp": "雷属性防御力アップ ！",
-  "en": ""
+  "en": "Thunder Defense Up!"
  },
  {
   "i": 18,
   "jp": "土属性防御力アップ ！",
-  "en": ""
+  "en": "Earth Defense Up!"
  },
  {
   "i": 19,
   "jp": "体力回復 ！",
-  "en": ""
+  "en": "Health Recovered!"
  },
  {
   "i": 20,
   "jp": "一定時間体力回復 ！",
-  "en": ""
+  "en": "Health Regen!"
  },
  {
   "i": 21,
   "jp": "復活 ！",
-  "en": ""
+  "en": "Revived!"
  },
  {
   "i": 22,
   "jp": "自動復活効果 ！",
-  "en": ""
+  "en": "Auto-Revive!"
  },
  {
   "i": 23,
   "jp": "ブレス防御 ！",
-  "en": ""
+  "en": "Breath Guard!"
  },
  {
   "i": 24,
   "jp": "体力消費 ！",
-  "en": ""
+  "en": "Health Cost!"
  },
  {
   "i": 25,
   "jp": "体力吸収 ！",
-  "en": ""
+  "en": "Health Drain!"
  },
  {
   "i": 26,
   "jp": "失敗 ！",
-  "en": ""
+  "en": "Failed!"
  },
  {
   "i": 27,
   "jp": "攻撃力ダウン ！",
-  "en": ""
+  "en": "Attack Down!"
  },
  {
   "i": 28,
   "jp": "防御力ダウン ！",
-  "en": ""
+  "en": "Defense Down!"
  },
  {
   "i": 29,
   "jp": "攻撃無効 ！",
-  "en": ""
+  "en": "Attack Negated!"
  },
  {
   "i": 30,
   "jp": "状態異常無効 ！",
-  "en": ""
+  "en": "Ailments Negated!"
  },
  {
   "i": 31,
   "jp": "毒 ！",
-  "en": ""
+  "en": "Poison!"
  },
  {
   "i": 32,
   "jp": "猛毒 ！",
-  "en": ""
+  "en": "Strong Poison!"
  },
  {
   "i": 33,
   "jp": "劇毒 ！",
-  "en": ""
+  "en": "Deadly Poison!"
  },
  {
   "i": 34,
   "jp": "怒りダウン ！",
-  "en": ""
+  "en": "Rage Down!"
  },
  {
   "i": 35,
   "jp": "スキルゲージ回復量アップ ！",
-  "en": ""
+  "en": "Skill Gauge Recovery Up!"
  },
  {
   "i": 36,
   "jp": "ダメージ軽減 ！",
-  "en": ""
+  "en": "Damage Reduced!"
  },
  {
   "i": 37,
   "jp": "チャンスモード値アップ ！",
-  "en": ""
+  "en": "Chance Mode Up!"
  },
  {
   "i": 38,
   "jp": "怒りにくさアップ ！",
-  "en": ""
+  "en": "Rage Resistance Up!"
  },
  {
   "i": 39,
   "jp": "武器ゲージ回復量アップ ！",
-  "en": ""
+  "en": "Weapon Gauge Recovery Up!"
  },
  {
   "i": 40,
   "jp": "経験値獲得量アップ ！",
-  "en": ""
+  "en": "EXP Up!"
  },
  {
   "i": 41,
   "jp": "お楽しみ袋ドロップ率アップ ！",
-  "en": ""
+  "en": "Surprise Bag Drop Rate Up!"
  },
  {
   "i": 42,
   "jp": "毒ガード ！",
-  "en": ""
+  "en": "Poison Guard!"
  },
  {
   "i": 43,
   "jp": "毒耐性アップ ！",
-  "en": ""
+  "en": "Poison Res Up!"
  },
  {
   "i": 44,
   "jp": "毒・猛毒・劇毒ガード ！",
-  "en": ""
+  "en": "All Poison Guard!"
  },
  {
   "i": 45,
   "jp": "毒・猛毒・劇毒無効 ！",
-  "en": ""
+  "en": "All Poison Negated!"
  },
  {
   "i": 46,
   "jp": "麻痺ガード ！",
-  "en": ""
+  "en": "Paralysis Guard!"
  },
  {
   "i": 47,
   "jp": "麻痺耐性アップ ！",
-  "en": ""
+  "en": "Paralysis Res Up!"
  },
  {
   "i": 48,
   "jp": "睡眠ガード ！",
-  "en": ""
+  "en": "Sleep Guard!"
  },
  {
   "i": 49,
   "jp": "睡眠耐性アップ ！",
-  "en": ""
+  "en": "Sleep Res Up!"
  },
  {
   "i": 50,
   "jp": "抗菌 ！",
-  "en": ""
+  "en": "Antiseptic!"
  },
  {
   "i": 51,
   "jp": "レア採取率アップ ！",
-  "en": ""
+  "en": "Rare Gather Rate Up!"
  },
  {
   "i": 52,
   "jp": "コンティニュー強化 ！",
-  "en": ""
+  "en": "Continue Boost!"
  },
  {
   "i": 53,
   "jp": "振動無効 ！",
-  "en": ""
+  "en": "Tremors Negated!"
  },
  {
   "i": 54,
   "jp": "閃光無効 ！",
-  "en": ""
+  "en": "Flash Negated!"
  },
  {
   "i": 55,
   "jp": "音ひるみ無効 ！",
-  "en": ""
+  "en": "Sound Flinch Negated!"
  },
  {
   "i": 56,
   "jp": "風圧【小】無効 ！",
-  "en": ""
+  "en": "Windproof (S)!"
  },
  {
   "i": 57,
   "jp": "隠密 ！",
-  "en": ""
+  "en": "Stealth!"
  },
  {
   "i": 58,
   "jp": "挑発 ！",
-  "en": ""
+  "en": "Taunt!"
  },
  {
   "i": 59,
   "jp": "毒効果アップ…",
-  "en": ""
+  "en": "Poison Effect Up..."
  },
  {
   "i": 60,
   "jp": "麻痺効果アップ…",
-  "en": ""
+  "en": "Paralysis Effect Up..."
  },
  {
   "i": 61,
   "jp": "睡眠効果アップ…",
-  "en": ""
+  "en": "Sleep Effect Up..."
  },
  {
   "i": 62,
   "jp": "武器ゲージ回復量ダウン…",
-  "en": ""
+  "en": "Weapon Gauge Recovery Down..."
  },
  {
   "i": 63,
   "jp": "会心率ダウン…",
-  "en": ""
+  "en": "Affinity Down..."
  },
  {
   "i": 64,
   "jp": "スキル効果アップ ！",
-  "en": ""
+  "en": "Skill Effect Up!"
  },
  {
   "i": 65,
   "jp": "毒解除 ！",
-  "en": ""
+  "en": "Poison Cured!"
  },
  {
   "i": 66,
   "jp": "回避率ダウン…",
-  "en": ""
+  "en": "Evasion Down..."
  },
  {
   "i": 67,
   "jp": "得意属性ダメージアップ ！",
-  "en": ""
+  "en": "Favored Element Damage Up!"
  },
  {
   "i": 68,
   "jp": "毒・猛毒ガード ！",
-  "en": ""
+  "en": "Poison/Strong Poison Guard!"
  },
  {
   "i": 69,
   "jp": "毒・猛毒無効 ！",
-  "en": ""
+  "en": "Poison/Strong Poison Negated!"
  },
  {
   "i": 70,
   "jp": "全員ダメージ軽減 ！",
-  "en": ""
+  "en": "Group Damage Reduced!"
  },
  {
   "i": 71,
   "jp": "Invalid Message",
-  "en": ""
+  "en": "Invalid Message"
  },
  {
   "i": 72,
   "jp": "ブレス効果半減 ！",
-  "en": ""
+  "en": "Breath Effect Halved!"
  },
  {
   "i": 73,
   "jp": "回復強化 ！",
-  "en": ""
+  "en": "Healing Boost!"
  },
  {
   "i": 74,
   "jp": "麻痺・スキルゲージ減少無効 ！",
-  "en": ""
+  "en": "Paralysis/Skill Gauge Loss Negated!"
  },
  {
   "i": 75,
   "jp": "熱い血潮 ！",
-  "en": ""
+  "en": "Hot Blood!"
  },
  {
   "i": 76,
   "jp": "豪火の守り ！",
-  "en": ""
+  "en": "Great Fire Protection!"
  },
  {
   "i": 77,
   "jp": "豪水の守り ！",
-  "en": ""
+  "en": "Great Water Protection!"
  },
  {
   "i": 78,
   "jp": "豪氷の守り ！",
-  "en": ""
+  "en": "Great Ice Protection!"
  },
  {
   "i": 79,
   "jp": "豪雷の守り ！",
-  "en": ""
+  "en": "Great Thunder Protection!"
  },
  {
   "i": 80,
   "jp": "豪土の守り ！",
-  "en": ""
+  "en": "Great Earth Protection!"
  },
  {
   "i": 81,
   "jp": "火属性ダメージカット・小",
-  "en": ""
+  "en": "Fire Damage Cut (S)"
  },
  {
   "i": 82,
   "jp": "火属性ダメージカット・中",
-  "en": ""
+  "en": "Fire Damage Cut (M)"
  },
  {
   "i": 83,
   "jp": "火属性ダメージカット・大",
-  "en": ""
+  "en": "Fire Damage Cut (L)"
  },
  {
   "i": 84,
   "jp": "水属性ダメージカット・小",
-  "en": ""
+  "en": "Water Damage Cut (S)"
  },
  {
   "i": 85,
   "jp": "水属性ダメージカット・中",
-  "en": ""
+  "en": "Water Damage Cut (M)"
  },
  {
   "i": 86,
   "jp": "水属性ダメージカット・大",
-  "en": ""
+  "en": "Water Damage Cut (L)"
  },
  {
   "i": 87,
   "jp": "氷属性ダメージカット・小",
-  "en": ""
+  "en": "Ice Damage Cut (S)"
  },
  {
   "i": 88,
   "jp": "氷属性ダメージカット・中",
-  "en": ""
+  "en": "Ice Damage Cut (M)"
  },
  {
   "i": 89,
   "jp": "氷属性ダメージカット・大",
-  "en": ""
+  "en": "Ice Damage Cut (L)"
  },
  {
   "i": 90,
   "jp": "雷属性ダメージカット・小",
-  "en": ""
+  "en": "Thunder Damage Cut (S)"
  },
  {
   "i": 91,
   "jp": "雷属性ダメージカット・中",
-  "en": ""
+  "en": "Thunder Damage Cut (M)"
  },
  {
   "i": 92,
   "jp": "雷属性ダメージカット・大",
-  "en": ""
+  "en": "Thunder Damage Cut (L)"
  },
  {
   "i": 93,
   "jp": "土属性ダメージカット・小",
-  "en": ""
+  "en": "Earth Damage Cut (S)"
  },
  {
   "i": 94,
   "jp": "土属性ダメージカット・中",
-  "en": ""
+  "en": "Earth Damage Cut (M)"
  },
  {
   "i": 95,
   "jp": "土属性ダメージカット・大",
-  "en": ""
+  "en": "Earth Damage Cut (L)"
  },
  {
   "i": 96,
   "jp": "回避性能【小】 ！",
-  "en": ""
+  "en": "Evade Window (S)!"
  },
  {
   "i": 97,
   "jp": "回避性能【大】 ！",
-  "en": ""
+  "en": "Evade Window (L)!"
  },
  {
   "i": 98,
   "jp": "回避距離【小】 ！",
-  "en": ""
+  "en": "Evade Extender (S)!"
  },
  {
   "i": 99,
   "jp": "回避距離【大】 ！",
-  "en": ""
+  "en": "Evade Extender (L)!"
  },
  {
   "i": 100,
   "jp": "受け身 ！",
-  "en": ""
+  "en": "Recoil Recovery!"
  },
  {
   "i": 101,
   "jp": "根性 ！",
-  "en": ""
+  "en": "Guts!"
  },
  {
   "i": 102,
   "jp": "精霊の加護 ！",
-  "en": ""
+  "en": "Divine Blessing!"
  },
  {
   "i": 103,
   "jp": "猛毒無効 ！",
-  "en": ""
+  "en": "Strong Poison Negated!"
  },
  {
   "i": 104,
   "jp": "気絶耐性アップ ！",
-  "en": ""
+  "en": "Stun Res Up!"
  },
  {
   "i": 105,
   "jp": "火傷耐性アップ ！",
-  "en": ""
+  "en": "Fireblight Res Up!"
  },
  {
   "i": 106,
   "jp": "ずぶ濡れ耐性アップ ！",
-  "en": ""
+  "en": "Waterblight Res Up!"
  },
  {
   "i": 107,
   "jp": "感電耐性アップ ！",
-  "en": ""
+  "en": "Thunderblight Res Up!"
  },
  {
   "i": 108,
   "jp": "雪だるま耐性アップ ！",
-  "en": ""
+  "en": "Snowman Res Up!"
  },
  {
   "i": 109,
   "jp": "泥まみれ耐性アップ ！",
-  "en": ""
+  "en": "Mud Res Up!"
  },
  {
   "i": 110,
   "jp": "爆破やられ耐性アップ ！",
-  "en": ""
+  "en": "Blastblight Res Up!"
  },
  {
   "i": 111,
   "jp": "耳栓 ！",
-  "en": ""
+  "en": "Earplugs!"
  },
  {
   "i": 112,
   "jp": "高級耳栓 ！",
-  "en": ""
+  "en": "Superior Earplugs!"
  },
  {
   "i": 113,
   "jp": "風圧【大】無効 ！",
-  "en": ""
+  "en": "Windproof (L)!"
  },
  {
   "i": 114,
   "jp": "耐震 ！",
-  "en": ""
+  "en": "Tremor Res!"
  },
  {
   "i": 115,
   "jp": "大剣の達人 ！",
-  "en": ""
+  "en": "Great Sword Master!"
  },
  {
   "i": 116,
   "jp": "ヘビィボウガンの達人 ！",
-  "en": ""
+  "en": "Heavy Bowgun Master!"
  },
  {
   "i": 117,
   "jp": "弓の達人 ！",
-  "en": ""
+  "en": "Bow Master!"
  },
  {
   "i": 118,
   "jp": "ハンマーの達人 ！",
-  "en": ""
+  "en": "Hammer Master!"
  },
  {
   "i": 119,
   "jp": "片手剣の達人 ！",
-  "en": ""
+  "en": "Sword & Shield Master!"
  },
  {
   "i": 120,
   "jp": "ランスの達人 ！",
-  "en": ""
+  "en": "Lance Master!"
  },
  {
   "i": 121,
   "jp": "ガンランスの達人 ！",
-  "en": ""
+  "en": "Gunlance Master!"
  },
  {
   "i": 122,
   "jp": "双剣の達人 ！",
-  "en": ""
+  "en": "Dual Blades Master!"
  },
  {
   "i": 123,
   "jp": "太刀の達人 ！",
-  "en": ""
+  "en": "Long Sword Master!"
  },
  {
   "i": 124,
   "jp": "スラッシュアックスの達人 ！",
-  "en": ""
+  "en": "Switch Axe Master!"
  },
  {
   "i": 125,
   "jp": "狩猟笛の達人 ！",
-  "en": ""
+  "en": "Hunting Horn Master!"
  },
  {
   "i": 126,
   "jp": "ライトボウガンの達人 ！",
-  "en": ""
+  "en": "Light Bowgun Master!"
  },
  {
   "i": 127,
   "jp": "火耐性アップ ！",
-  "en": ""
+  "en": "Fire Res Up!"
  },
  {
   "i": 128,
   "jp": "水耐性アップ ！",
-  "en": ""
+  "en": "Water Res Up!"
  },
  {
   "i": 129,
   "jp": "雷耐性アップ ！",
-  "en": ""
+  "en": "Thunder Res Up!"
  },
  {
   "i": 130,
   "jp": "土耐性アップ ！",
-  "en": ""
+  "en": "Earth Res Up!"
  },
  {
   "i": 131,
   "jp": "氷耐性アップ ！",
-  "en": ""
+  "en": "Ice Res Up!"
  },
  {
   "i": 132,
   "jp": "武技P蓄積量アップ ！",
-  "en": ""
+  "en": "Martial Art P Gain Up!"
  },
  {
   "i": 133,
   "jp": "武技P最大値アップ ！",
-  "en": ""
+  "en": "Max Martial Art P Up!"
  },
  {
   "i": 134,
   "jp": "対獣人攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Lynians!"
  },
  {
   "i": 135,
   "jp": "対草食攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Herbivores!"
  },
  {
   "i": 136,
   "jp": "対甲虫攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Neopterons!"
  },
  {
   "i": 137,
   "jp": "対牙獣攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Fanged Beasts!"
  },
  {
   "i": 138,
   "jp": "対鳥竜攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Bird Wyverns!"
  },
  {
   "i": 139,
   "jp": "対飛竜攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Flying Wyverns!"
  },
  {
   "i": 140,
   "jp": "対魚竜攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Piscine Wyverns!"
  },
  {
   "i": 141,
   "jp": "対海竜攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Leviathans!"
  },
  {
   "i": 142,
   "jp": "対獣竜攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Brute Wyverns!"
  },
  {
   "i": 143,
   "jp": "対牙竜攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Fanged Wyverns!"
  },
  {
   "i": 144,
   "jp": "対古龍攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Elder Dragons!"
  },
  {
   "i": 145,
   "jp": "挑発【小】 ！",
-  "en": ""
+  "en": "Taunt (S)!"
  },
  {
   "i": 146,
   "jp": "挑発【大】 ！",
-  "en": ""
+  "en": "Taunt (L)!"
  },
  {
   "i": 147,
   "jp": "隠密【小】 ！",
-  "en": ""
+  "en": "Stealth (S)!"
  },
  {
   "i": 148,
   "jp": "隠密【大】 ！",
-  "en": ""
+  "en": "Stealth (L)!"
  },
  {
   "i": 149,
   "jp": "死神【小】 !",
-  "en": ""
+  "en": "Reaper (S)!"
  },
  {
   "i": 150,
   "jp": "睡眠時間倍化…",
-  "en": ""
+  "en": "Sleep Time Doubled..."
  },
  {
   "i": 151,
   "jp": "ダメージアップ ！",
-  "en": ""
+  "en": "Damage Up!"
  },
  {
   "i": 152,
   "jp": "ひるみにくさアップ！",
-  "en": ""
+  "en": "Flinch Resistance Up!"
  },
  {
   "i": 153,
   "jp": "ダメージ軽減 ！",
-  "en": ""
+  "en": "Damage Reduced!"
  },
  {
   "i": 154,
   "jp": "武技Pアップ ！",
-  "en": ""
+  "en": "Martial Art P Up!"
  },
  {
   "i": 155,
   "jp": "スピードハント【小】 ！",
-  "en": ""
+  "en": "Speed Hunt (S)!"
  },
  {
   "i": 156,
   "jp": "スピードハント【中】 ！",
-  "en": ""
+  "en": "Speed Hunt (M)!"
  },
  {
   "i": 157,
   "jp": "スピードハント【大】 ！",
-  "en": ""
+  "en": "Speed Hunt (L)!"
  },
  {
   "i": 158,
   "jp": "武技効果時間延長 ！",
-  "en": ""
+  "en": "Martial Art Duration Up!"
  },
  {
   "i": 159,
   "jp": "武技ダメージアップ ！",
-  "en": ""
+  "en": "Martial Art Damage Up!"
  },
  {
   "i": 160,
   "jp": "武技回復量アップ ！",
-  "en": ""
+  "en": "Martial Art Healing Up!"
  },
  {
   "i": 161,
   "jp": "攻撃解放 ！",
-  "en": ""
+  "en": "Attack Release!"
  },
  {
   "i": 162,
   "jp": "防御解放 ！",
-  "en": ""
+  "en": "Defense Release!"
  },
  {
   "i": 163,
   "jp": "体力解放 ！",
-  "en": ""
+  "en": "Health Release!"
  },
  {
   "i": 164,
   "jp": "体力吸収 ！",
-  "en": ""
+  "en": "Health Drain!"
  },
  {
   "i": 165,
   "jp": "不屈 ！",
-  "en": ""
+  "en": "Fortitude!"
  },
  {
   "i": 166,
   "jp": "会心強化【小】 ！",
-  "en": ""
+  "en": "Critical Boost (S)!"
  },
  {
   "i": 167,
   "jp": "会心強化【中】 ！",
-  "en": ""
+  "en": "Critical Boost (M)!"
  },
  {
   "i": 168,
   "jp": "会心強化【大】 ！",
-  "en": ""
+  "en": "Critical Boost (L)!"
  },
  {
   "i": 169,
   "jp": "防御力アップ ！",
-  "en": ""
+  "en": "Defense Up!"
  },
  {
   "i": 170,
   "jp": "スピードアップ ！",
-  "en": ""
+  "en": "Speed Up!"
  },
  {
   "i": 171,
   "jp": "武技P蓄積量アップ ！",
-  "en": ""
+  "en": "Martial Art P Gain Up!"
  },
  {
   "i": 172,
   "jp": "怒り時攻撃力アップ！",
-  "en": ""
+  "en": "Attack Up When Enraged!"
  },
  {
   "i": 173,
   "jp": "休息 ！",
-  "en": ""
+  "en": "Rest!"
  },
  {
   "i": 174,
   "jp": "破壊手当アップ！",
-  "en": ""
+  "en": "Break Bonus Up!"
  },
  {
   "i": 175,
   "jp": "乱打【小】 ！",
-  "en": ""
+  "en": "Flurry (S)!"
  },
  {
   "i": 176,
   "jp": "乱打【大】 ！",
-  "en": ""
+  "en": "Flurry (L)!"
  },
  {
   "i": 177,
   "jp": "最大体力アップ！",
-  "en": ""
+  "en": "Max Health Up!"
  },
  {
   "i": 178,
   "jp": "回復強化【小】 ！",
-  "en": ""
+  "en": "Recovery Up (S)!"
  },
  {
   "i": 179,
   "jp": "回復強化【大】 ！",
-  "en": ""
+  "en": "Recovery Up (L)!"
  },
  {
   "i": 180,
   "jp": "錬成【小】 ！",
-  "en": ""
+  "en": "Refinement (S)!"
  },
  {
   "i": 181,
   "jp": "錬成【大】 ！",
-  "en": ""
+  "en": "Refinement (L)!"
  },
  {
   "i": 182,
   "jp": "餓狼【小】 ！",
-  "en": ""
+  "en": "Hungry Wolf (S)!"
  },
  {
   "i": 183,
   "jp": "餓狼【大】 ！",
-  "en": ""
+  "en": "Hungry Wolf (L)!"
  },
  {
   "i": 184,
   "jp": "無謀…",
-  "en": ""
+  "en": "Reckless..."
  },
  {
   "i": 185,
   "jp": "封印・体力増加…",
-  "en": ""
+  "en": "Sealed: Health Up..."
  },
  {
   "i": 186,
   "jp": "武技Pロスト【小】…",
-  "en": ""
+  "en": "Martial Art P Loss (S)..."
  },
  {
   "i": 187,
   "jp": "武技Pロスト【大】…",
-  "en": ""
+  "en": "Martial Art P Loss (L)..."
  },
  {
   "i": 188,
   "jp": "毒倍加…",
-  "en": ""
+  "en": "Poison Double..."
  },
  {
   "i": 189,
   "jp": "気絶倍加…",
-  "en": ""
+  "en": "Stun Double..."
  },
  {
   "i": 190,
   "jp": "麻痺倍加…",
-  "en": ""
+  "en": "Paralysis Double..."
  },
  {
   "i": 191,
   "jp": "逆鱗…",
-  "en": ""
+  "en": "Wrath..."
  },
  {
   "i": 192,
   "jp": "状態異常回復 ！",
-  "en": ""
+  "en": "Ailments Cured!"
  },
  {
   "i": 193,
   "jp": "リロード効果アップ ！",
-  "en": ""
+  "en": "Reload Effect Up!"
  },
  {
   "i": 194,
   "jp": "連射弾数アップ ！",
-  "en": ""
+  "en": "Rapid Fire Shots Up!"
  },
  {
   "i": 195,
   "jp": "アイテム使用高速化 ！",
-  "en": ""
+  "en": "Faster Item Use!"
  },
  {
   "i": 196,
   "jp": "逆襲 ！",
-  "en": ""
+  "en": "Counterattack!"
  },
  {
   "i": 197,
   "jp": "竜撃師 ！",
-  "en": ""
+  "en": "Wyvernfire Master!"
  },
  {
   "i": 198,
   "jp": "エネルギー増幅 ！",
-  "en": ""
+  "en": "Energy Amplifier!"
  },
  {
   "i": 199,
   "jp": "練気活性 ！",
-  "en": ""
+  "en": "Spirit Activation!"
  },
  {
   "i": 200,
   "jp": "圧砕 ！",
-  "en": ""
+  "en": "Crush!"
  },
  {
   "i": 201,
   "jp": "属性大解放 ！",
-  "en": ""
+  "en": "Element Release!"
  },
  {
   "i": 202,
   "jp": "装填強化 ！",
-  "en": ""
+  "en": "Reload Boost!"
  },
  {
   "i": 203,
   "jp": "流し撃ち ！",
-  "en": ""
+  "en": "Flowing Shot!"
  },
  {
   "i": 204,
   "jp": "豪斬 ！",
-  "en": ""
+  "en": "Mighty Slash!"
  },
  {
   "i": 205,
   "jp": "急冷 ！",
-  "en": ""
+  "en": "Quick Cooling!"
  },
  {
   "i": 206,
   "jp": "舞姫 ！",
-  "en": ""
+  "en": "Blade Dancer!"
  },
  {
   "i": 207,
   "jp": "舞鬼 ！",
-  "en": ""
+  "en": "Dancing Demon!"
  },
  {
   "i": 208,
   "jp": "弓鬼 ！",
-  "en": ""
+  "en": "Bow Demon!"
  },
  {
   "i": 209,
   "jp": "豪砲 ！",
-  "en": ""
+  "en": "Mighty Cannon!"
  },
  {
   "i": 210,
   "jp": "射撃強化 ！",
-  "en": ""
+  "en": "Shot Boost!"
  },
  {
   "i": 211,
   "jp": "連弾 ！",
-  "en": ""
+  "en": "Rapid Fire!"
  },
  {
   "i": 212,
   "jp": "倹約 ！",
-  "en": ""
+  "en": "Thrift!"
  },
  {
   "i": 213,
   "jp": "豪気 ！",
-  "en": ""
+  "en": "Mighty Spirit!"
  },
  {
   "i": 214,
   "jp": "豪剣 ！",
-  "en": ""
+  "en": "Mighty Blade!"
  },
  {
   "i": 215,
   "jp": "狩楽師 ！",
-  "en": ""
+  "en": "Hunting Musician!"
  },
  {
   "i": 216,
   "jp": "冷却促進【小】 ！",
-  "en": ""
+  "en": "Faster Cooling (S)!"
  },
  {
   "i": 217,
   "jp": "怒り時防御力アップ ！",
-  "en": ""
+  "en": "Defense Up When Enraged!"
  },
  {
   "i": 218,
   "jp": "開戦の狼煙【小】 ！",
-  "en": ""
+  "en": "Opening Signal (S)!"
  },
  {
   "i": 219,
   "jp": "高揚 ！",
-  "en": ""
+  "en": "Uplift!"
  },
  {
   "i": 220,
   "jp": "抵抗者 ！",
-  "en": ""
+  "en": "Resister!"
  },
  {
   "i": 221,
   "jp": "抗体【小】 ！",
-  "en": ""
+  "en": "Antibody (S)!"
  },
  {
   "i": 222,
   "jp": "抗体【中】 ！",
-  "en": ""
+  "en": "Antibody (M)!"
  },
  {
   "i": 223,
   "jp": "抗体【大】 ！",
-  "en": ""
+  "en": "Antibody (L)!"
  },
  {
   "i": 224,
   "jp": "冷却促進【中】 ！",
-  "en": ""
+  "en": "Faster Cooling (M)!"
  },
  {
   "i": 225,
   "jp": "冷却促進【大】 ！",
-  "en": ""
+  "en": "Faster Cooling (L)!"
  },
  {
   "i": 226,
   "jp": "開戦の狼煙【中】 ！",
-  "en": ""
+  "en": "Opening Signal (M)!"
  },
  {
   "i": 227,
   "jp": "開戦の狼煙【大】 ！",
-  "en": ""
+  "en": "Opening Signal (L)!"
  },
  {
   "i": 228,
   "jp": "序章撃 !",
-  "en": ""
+  "en": "Opening Strike!"
  },
  {
   "i": 229,
   "jp": "終章撃 !",
-  "en": ""
+  "en": "Finale Strike!"
  },
  {
   "i": 230,
   "jp": "ターゲット可視化 !",
-  "en": ""
+  "en": "Target Visualizer!"
  },
  {
   "i": 231,
   "jp": "破壊王【小】 !",
-  "en": ""
+  "en": "Partbreaker King (S)!"
  },
  {
   "i": 232,
   "jp": "破壊王【中】 !",
-  "en": ""
+  "en": "Partbreaker King (M)!"
  },
  {
   "i": 233,
   "jp": "破壊王【大】 !",
-  "en": ""
+  "en": "Partbreaker King (L)!"
  },
  {
   "i": 234,
   "jp": "ブレス減少【小】 !",
-  "en": ""
+  "en": "Breath Reduction (S)!"
  },
  {
   "i": 235,
   "jp": "ブレス減少【中】 !",
-  "en": ""
+  "en": "Breath Reduction (M)!"
  },
  {
   "i": 236,
   "jp": "ブレス減少【大】 !",
-  "en": ""
+  "en": "Breath Reduction (L)!"
  },
  {
   "i": 237,
   "jp": "武体還元【小】 !",
-  "en": ""
+  "en": "Martial Body Return (S)!"
  },
  {
   "i": 238,
   "jp": "武体還元【中】 !",
-  "en": ""
+  "en": "Martial Body Return (M)!"
  },
  {
   "i": 239,
   "jp": "武体還元【大】 !",
-  "en": ""
+  "en": "Martial Body Return (L)!"
  },
  {
   "i": 240,
   "jp": "溜め時間短縮 !",
-  "en": ""
+  "en": "Charge Time Down!"
  },
  {
   "i": 241,
   "jp": "アイテム増加 !",
-  "en": ""
+  "en": "Items Up!"
  },
  {
   "i": 242,
   "jp": "めまい蓄積値アップ !",
-  "en": ""
+  "en": "Stun Buildup Up!"
  },
  {
   "i": 243,
   "jp": "弾数無制限 !",
-  "en": ""
+  "en": "Unlimited Ammo!"
  },
  {
   "i": 244,
   "jp": "ゲージ無制限 !",
-  "en": ""
+  "en": "Unlimited Gauge!"
  },
  {
   "i": 245,
   "jp": "冷却時間短縮 !",
-  "en": ""
+  "en": "Cooldown Down!"
  },
  {
   "i": 246,
   "jp": "演奏ゲージ回復 !",
-  "en": ""
+  "en": "Performance Gauge Recovered!"
  },
  {
   "i": 247,
   "jp": "ブレス軽減 !",
-  "en": ""
+  "en": "Breath Reduced!"
  },
  {
   "i": 248,
   "jp": "カウンター判定アップ ！",
-  "en": ""
+  "en": "Counter Window Up!"
  },
  {
   "i": 249,
   "jp": "ゲージ消費量ダウン ！",
-  "en": ""
+  "en": "Gauge Use Down!"
  },
  {
   "i": 250,
   "jp": "ゲージ消費速度ダウン ！",
-  "en": ""
+  "en": "Gauge Drain Down!"
  },
  {
   "i": 251,
   "jp": "気迫護 !",
-  "en": ""
+  "en": "Spirit Guard!"
  },
  {
   "i": 252,
   "jp": "気迫撃 !",
-  "en": ""
+  "en": "Spirit Strike!"
  },
  {
   "i": 253,
   "jp": "奮起【小】 !",
-  "en": ""
+  "en": "Rally (S)!"
  },
  {
   "i": 254,
   "jp": "奮起【中】 !",
-  "en": ""
+  "en": "Rally (M)!"
  },
  {
   "i": 255,
   "jp": "奮起【大】 !",
-  "en": ""
+  "en": "Rally (L)!"
  },
  {
   "i": 256,
   "jp": "火属性ブレス減少【小】 !",
-  "en": ""
+  "en": "Fire Breath Reduction (S)!"
  },
  {
   "i": 257,
   "jp": "火属性ブレス減少【中】 !",
-  "en": ""
+  "en": "Fire Breath Reduction (M)!"
  },
  {
   "i": 258,
   "jp": "火属性ブレス減少【大】 !",
-  "en": ""
+  "en": "Fire Breath Reduction (L)!"
  },
  {
   "i": 259,
   "jp": "水属性ブレス減少【小】 !",
-  "en": ""
+  "en": "Water Breath Reduction (S)!"
  },
  {
   "i": 260,
   "jp": "水属性ブレス減少【中】 !",
-  "en": ""
+  "en": "Water Breath Reduction (M)!"
  },
  {
   "i": 261,
   "jp": "水属性ブレス減少【大】 !",
-  "en": ""
+  "en": "Water Breath Reduction (L)!"
  },
  {
   "i": 262,
   "jp": "雷属性ブレス減少【小】 !",
-  "en": ""
+  "en": "Thunder Breath Reduction (S)!"
  },
  {
   "i": 263,
   "jp": "雷属性ブレス減少【中】 !",
-  "en": ""
+  "en": "Thunder Breath Reduction (M)!"
  },
  {
   "i": 264,
   "jp": "雷属性ブレス減少【大】 !",
-  "en": ""
+  "en": "Thunder Breath Reduction (L)!"
  },
  {
   "i": 265,
   "jp": "土属性ブレス減少【小】 !",
-  "en": ""
+  "en": "Earth Breath Reduction (S)!"
  },
  {
   "i": 266,
   "jp": "土属性ブレス減少【中】 !",
-  "en": ""
+  "en": "Earth Breath Reduction (M)!"
  },
  {
   "i": 267,
   "jp": "土属性ブレス減少【大】 !",
-  "en": ""
+  "en": "Earth Breath Reduction (L)!"
  },
  {
   "i": 268,
   "jp": "氷属性ブレス減少【小】 !",
-  "en": ""
+  "en": "Ice Breath Reduction (S)!"
  },
  {
   "i": 269,
   "jp": "氷属性ブレス減少【中】 !",
-  "en": ""
+  "en": "Ice Breath Reduction (M)!"
  },
  {
   "i": 270,
   "jp": "氷属性ブレス減少【大】 !",
-  "en": ""
+  "en": "Ice Breath Reduction (L)!"
  },
  {
   "i": 271,
   "jp": "カウンター職人 ！",
-  "en": ""
+  "en": "Counter Artisan!"
  },
  {
   "i": 272,
   "jp": "迅速砲 ！",
-  "en": ""
+  "en": "Swift Cannon!"
  },
  {
   "i": 273,
   "jp": "装填技法 ！",
-  "en": ""
+  "en": "Loading Technique!"
  },
  {
   "i": 274,
   "jp": "装填速度アップ ！",
-  "en": ""
+  "en": "Reload Speed Up!"
  },
  {
   "i": 275,
   "jp": "双剣馴らし ！",
-  "en": ""
+  "en": "Dual Blades Maestro!"
  },
  {
   "i": 276,
   "jp": "疾風刀 ！",
-  "en": ""
+  "en": "Gale Sword!"
  },
  {
   "i": 277,
   "jp": "太刀馴らし ！",
-  "en": ""
+  "en": "Long Sword Maestro!"
  },
  {
   "i": 278,
   "jp": "剣斧馴らし ！",
-  "en": ""
+  "en": "Switch Axe Maestro!"
  },
  {
   "i": 279,
   "jp": "笛馴らし ！",
-  "en": ""
+  "en": "Horn Maestro!"
  },
  {
   "i": 280,
   "jp": "疾風鎚 ！",
-  "en": ""
+  "en": "Gale Hammer!"
  },
  {
   "i": 281,
   "jp": "態勢維持 ！",
-  "en": ""
+  "en": "Stance Keeper!"
  },
  {
   "i": 282,
   "jp": "盾斧馴らし ！",
-  "en": ""
+  "en": "Charge Blade Maestro!"
  },
  {
   "i": 283,
   "jp": "瞬打 ！",
-  "en": ""
+  "en": "Quick Strike!"
  },
  {
   "i": 284,
   "jp": "全方位ガード ！",
-  "en": ""
+  "en": "All-Direction Guard!"
  },
  {
   "i": 285,
   "jp": "対暴征翼攻撃力アップ ！",
-  "en": ""
+  "en": "Attack Up vs Tyrant Kushala!"
  },
  {
   "i": 286,
   "jp": "対暴征翼防御力アップ ！",
-  "en": ""
+  "en": "Defense Up vs Tyrant Kushala!"
  },
  {
   "i": 287,
   "jp": "開眼火撃 ！",
-  "en": ""
+  "en": "Awakened Fire Strike!"
  },
  {
   "i": 288,
   "jp": "開眼火護 ！",
-  "en": ""
+  "en": "Awakened Fire Guard!"
  },
  {
   "i": 289,
   "jp": "武技P回復 ！",
-  "en": ""
+  "en": "Martial Art P Recovered!"
  },
  {
   "i": 290,
   "jp": "無敵時間アップ ！",
-  "en": ""
+  "en": "Invincibility Up!"
  },
  {
   "i": 291,
   "jp": "火属性攻撃力アップ ！",
-  "en": ""
+  "en": "Fire Attack Up!"
  },
  {
   "i": 292,
   "jp": "火耐性アップ ！",
-  "en": ""
+  "en": "Fire Res Up!"
  },
  {
   "i": 293,
   "jp": "開眼水撃 ！",
-  "en": ""
+  "en": "Awakened Water Strike!"
  },
  {
   "i": 294,
   "jp": "開眼雷撃 ！",
-  "en": ""
+  "en": "Awakened Thunder Strike!"
  },
  {
   "i": 295,
   "jp": "開眼土撃 ！",
-  "en": ""
+  "en": "Awakened Earth Strike!"
  },
  {
   "i": 296,
   "jp": "開眼氷撃 ！",
-  "en": ""
+  "en": "Awakened Ice Strike!"
  },
  {
   "i": 297,
   "jp": "開眼水護 ！",
-  "en": ""
+  "en": "Awakened Water Guard!"
  },
  {
   "i": 298,
   "jp": "開眼雷護 ！",
-  "en": ""
+  "en": "Awakened Thunder Guard!"
  },
  {
   "i": 299,
   "jp": "開眼土護 ！",
-  "en": ""
+  "en": "Awakened Earth Guard!"
  },
  {
   "i": 300,
   "jp": "開眼氷護 ！",
-  "en": ""
+  "en": "Awakened Ice Guard!"
  },
  {
   "i": 301,
   "jp": "熟成火撃 ！",
-  "en": ""
+  "en": "Matured Fire Strike!"
  },
  {
   "i": 302,
   "jp": "熟成水撃 ！",
-  "en": ""
+  "en": "Matured Water Strike!"
  },
  {
   "i": 303,
   "jp": "熟成雷撃 ！",
-  "en": ""
+  "en": "Matured Thunder Strike!"
  },
  {
   "i": 304,
   "jp": "熟成土撃 ！",
-  "en": ""
+  "en": "Matured Earth Strike!"
  },
  {
   "i": 305,
   "jp": "熟成氷撃 ！",
-  "en": ""
+  "en": "Matured Ice Strike!"
  },
  {
   "i": 306,
   "jp": "熟成火護 ！",
-  "en": ""
+  "en": "Matured Fire Guard!"
  },
  {
   "i": 307,
   "jp": "熟成水護 ！",
-  "en": ""
+  "en": "Matured Water Guard!"
  },
  {
   "i": 308,
   "jp": "熟成雷護 ！",
-  "en": ""
+  "en": "Matured Thunder Guard!"
  },
  {
   "i": 309,
   "jp": "熟成土護 ！",
-  "en": ""
+  "en": "Matured Earth Guard!"
  },
  {
   "i": 310,
   "jp": "熟成氷護 ！",
-  "en": ""
+  "en": "Matured Ice Guard!"
  },
  {
   "i": 311,
   "jp": "水属性攻撃力アップ ！",
-  "en": ""
+  "en": "Water Attack Up!"
  },
  {
   "i": 312,
   "jp": "雷属性攻撃力アップ ！",
-  "en": ""
+  "en": "Thunder Attack Up!"
  },
  {
   "i": 313,
   "jp": "土属性攻撃力アップ ！",
-  "en": ""
+  "en": "Earth Attack Up!"
  },
  {
   "i": 314,
   "jp": "氷属性攻撃力アップ ！",
-  "en": ""
+  "en": "Ice Attack Up!"
  },
  {
   "i": 315,
   "jp": "水耐性アップ ！",
-  "en": ""
+  "en": "Water Res Up!"
  },
  {
   "i": 316,
   "jp": "雷耐性アップ ！",
-  "en": ""
+  "en": "Thunder Res Up!"
  },
  {
   "i": 317,
   "jp": "土耐性アップ ！",
-  "en": ""
+  "en": "Earth Res Up!"
  },
  {
   "i": 318,
   "jp": "氷耐性アップ ！",
-  "en": ""
+  "en": "Ice Res Up!"
  },
  {
   "i": 319,
   "jp": "対豪火竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Blazing Fire Wyvern!"
  },
  {
   "i": 320,
   "jp": "対豪火竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Blazing Fire Wyvern!"
  },
  {
   "i": 321,
   "jp": "対凶暴個体攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Savage Specimens!"
  },
  {
   "i": 322,
   "jp": "対凶暴個体防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Savage Specimens!"
  },
  {
   "i": 323,
   "jp": "対凍牙竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Frost Fang Wyvern!"
  },
  {
   "i": 324,
   "jp": "対凍牙竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Frost Fang Wyvern!"
  },
  {
   "i": 325,
   "jp": "対黒蝕竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Gore Magala!"
  },
  {
   "i": 326,
   "jp": "対黒蝕竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Gore Magala!"
  },
  {
   "i": 327,
   "jp": "対凶怪竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Fiend Wyvern!"
  },
  {
   "i": 328,
   "jp": "対凶怪竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Fiend Wyvern!"
  },
  {
   "i": 329,
   "jp": "対天雷騎攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Thunder Rider Kirin!"
  },
  {
   "i": 330,
   "jp": "対天雷騎防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Thunder Rider Kirin!"
  },
  {
   "i": 331,
   "jp": "対銀火竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Silver Rathalos!"
  },
  {
   "i": 332,
   "jp": "対銀火竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Silver Rathalos!"
  },
  {
   "i": 333,
   "jp": "バビロンコインアップ !",
-  "en": ""
+  "en": "Babylon Coins Up!"
  },
  {
   "i": 334,
   "jp": "投影コインアップ !",
-  "en": ""
+  "en": "Projection Coins Up!"
  },
  {
   "i": 335,
   "jp": "毒無効 !",
-  "en": ""
+  "en": "Poison Negated!"
  },
  {
   "i": 336,
   "jp": "感電無効 !",
-  "en": ""
+  "en": "Thunderblight Negated!"
  },
  {
   "i": 337,
   "jp": "ずぶ濡れ無効 !",
-  "en": ""
+  "en": "Waterblight Negated!"
  },
  {
   "i": 338,
   "jp": "♂ダメージアップ♀ !",
-  "en": ""
+  "en": "♂Damage Up♀!"
  },
  {
   "i": 339,
   "jp": "体力還元 ！",
-  "en": ""
+  "en": "Health Return!"
  },
  {
   "i": 340,
   "jp": "対冥晶龍攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Crystal Abyss Dragon!"
  },
  {
   "i": 341,
   "jp": "対冥晶龍防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Crystal Abyss Dragon!"
  },
  {
   "i": 342,
   "jp": "対金火竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Gold Rathian!"
  },
  {
   "i": 343,
   "jp": "対金火竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Gold Rathian!"
  },
  {
   "i": 344,
   "jp": "対命狼竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Life Wolf Wyvern!"
  },
  {
   "i": 345,
   "jp": "対命狼竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Life Wolf Wyvern!"
  },
  {
   "i": 346,
   "jp": "吸い込み軽減 !",
-  "en": ""
+  "en": "Suction Reduction!"
  },
  {
   "i": 347,
   "jp": "吸収無効 !",
-  "en": ""
+  "en": "Absorption Negated!"
  },
  {
   "i": 348,
   "jp": "加速水撃 !",
-  "en": ""
+  "en": "Accelerated Water Strike!"
  },
  {
   "i": 349,
   "jp": "加速火撃 !",
-  "en": ""
+  "en": "Accelerated Fire Strike!"
  },
  {
   "i": 350,
   "jp": "加速氷撃 !",
-  "en": ""
+  "en": "Accelerated Ice Strike!"
  },
  {
   "i": 351,
   "jp": "加速土撃 !",
-  "en": ""
+  "en": "Accelerated Earth Strike!"
  },
  {
   "i": 352,
   "jp": "加速雷撃 !",
-  "en": ""
+  "en": "Accelerated Thunder Strike!"
  },
  {
   "i": 353,
   "jp": "猛加速水撃 !",
-  "en": ""
+  "en": "Rapid Water Strike!"
  },
  {
   "i": 354,
   "jp": "猛加速火撃 !",
-  "en": ""
+  "en": "Rapid Fire Strike!"
  },
  {
   "i": 355,
   "jp": "猛加速氷撃 !",
-  "en": ""
+  "en": "Rapid Ice Strike!"
  },
  {
   "i": 356,
   "jp": "猛加速土撃 !",
-  "en": ""
+  "en": "Rapid Earth Strike!"
  },
  {
   "i": 357,
   "jp": "猛加速雷撃 !",
-  "en": ""
+  "en": "Rapid Thunder Strike!"
  },
  {
   "i": 358,
   "jp": "会心手当アップ！",
-  "en": ""
+  "en": "Critical Bonus Up!"
  },
  {
   "i": 359,
   "jp": "感染耐性アップ ！",
-  "en": ""
+  "en": "Frenzy Res Up!"
  },
  {
   "i": 360,
   "jp": "軽銃射程 ！",
-  "en": ""
+  "en": "Light Bowgun Range!"
  },
  {
   "i": 361,
   "jp": "超根性 ！",
-  "en": ""
+  "en": "Super Guts!"
  },
  {
   "i": 362,
   "jp": "執着 ！",
-  "en": ""
+  "en": "Tenacity!"
  },
  {
   "i": 363,
   "jp": "会心共鳴化 !",
-  "en": ""
+  "en": "Critical Resonance!"
  },
  {
   "i": 364,
   "jp": "狂撃アップ !",
-  "en": ""
+  "en": "Frenzied Strike Up!"
  },
  {
   "i": 365,
   "jp": "静養 !",
-  "en": ""
+  "en": "Recuperation!"
  },
  {
   "i": 366,
   "jp": "起死回生【小】 !",
-  "en": ""
+  "en": "Comeback (S)!"
  },
  {
   "i": 367,
   "jp": "起死回生【中】 !",
-  "en": ""
+  "en": "Comeback (M)!"
  },
  {
   "i": 368,
   "jp": "起死回生【大】 !",
-  "en": ""
+  "en": "Comeback (L)!"
  },
  {
   "i": 369,
   "jp": "不動装甲【小】 !",
-  "en": ""
+  "en": "Iron Armor (S)!"
  },
  {
   "i": 370,
   "jp": "不動装甲【中】 !",
-  "en": ""
+  "en": "Iron Armor (M)!"
  },
  {
   "i": 371,
   "jp": "不動装甲【大】 !",
-  "en": ""
+  "en": "Iron Armor (L)!"
  },
  {
   "i": 372,
   "jp": "敏捷 !",
-  "en": ""
+  "en": "Agility!"
  },
  {
   "i": 373,
   "jp": "連装填 !",
-  "en": ""
+  "en": "Rapid Reload!"
  },
  {
   "i": 374,
   "jp": "おまけ術 !",
-  "en": ""
+  "en": "Bonus Shot!"
  },
  {
   "i": 375,
   "jp": "一気集中 !",
-  "en": ""
+  "en": "Focus!"
  },
  {
   "i": 376,
   "jp": "薬師 !",
-  "en": ""
+  "en": "Pharmacist!"
  },
  {
   "i": 377,
   "jp": "溜め砲術 !",
-  "en": ""
+  "en": "Charged Artillery!"
  },
  {
   "i": 378,
   "jp": "練気洗練 !",
-  "en": ""
+  "en": "Spirit Refinement!"
  },
  {
   "i": 379,
   "jp": "守備の奏 !",
-  "en": ""
+  "en": "Defense Melody!"
  },
  {
   "i": 380,
   "jp": "爆狩り !",
-  "en": ""
+  "en": "Blast Hunter!"
  },
  {
   "i": 381,
   "jp": "凶暴抑止 !",
-  "en": ""
+  "en": "Savage Deterrent!"
  },
  {
   "i": 382,
   "jp": "匠の技 !",
-  "en": ""
+  "en": "Artisan Technique!"
  },
  {
   "i": 383,
   "jp": "対黒獄卿攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Black Hell Lord!"
  },
  {
   "i": 384,
   "jp": "対黒獄卿防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Black Hell Lord!"
  },
  {
   "i": 385,
   "jp": "ニャニャワンダフル【小】 !",
-  "en": ""
+  "en": "Nya-nya Wonderful (S)!"
  },
  {
   "i": 386,
   "jp": "ニャニャワンダフル【中】 !",
-  "en": ""
+  "en": "Nya-nya Wonderful (M)!"
  },
  {
   "i": 387,
   "jp": "ニャニャワンダフル【大】 !",
-  "en": ""
+  "en": "Nya-nya Wonderful (L)!"
  },
  {
   "i": 388,
   "jp": "ニャニャマーベラス【小】 !",
-  "en": ""
+  "en": "Nya-nya Marvelous (S)!"
  },
  {
   "i": 389,
   "jp": "ニャニャマーベラス【中】 !",
-  "en": ""
+  "en": "Nya-nya Marvelous (M)!"
  },
  {
   "i": 390,
   "jp": "ニャニャマーベラス【大】 !",
-  "en": ""
+  "en": "Nya-nya Marvelous (L)!"
  },
  {
   "i": 391,
   "jp": "発症抑制【小】 !",
-  "en": ""
+  "en": "Frenzy Suppression (S)!"
  },
  {
   "i": 392,
   "jp": "発症抑制【中】 !",
-  "en": ""
+  "en": "Frenzy Suppression (M)!"
  },
  {
   "i": 393,
   "jp": "発症抑制【大】 !",
-  "en": ""
+  "en": "Frenzy Suppression (L)!"
  },
  {
   "i": 394,
   "jp": "花火コインアップ !",
-  "en": ""
+  "en": "Fireworks Coins Up!"
  },
  {
   "i": 395,
   "jp": "ムラオサコインアップ !",
-  "en": ""
+  "en": "Village Chief Coins Up!"
  },
  {
   "i": 396,
   "jp": "幸運アップ !",
-  "en": ""
+  "en": "Luck Up!"
  },
  {
   "i": 397,
   "jp": "金運 !",
-  "en": ""
+  "en": "Money Luck!"
  },
  {
   "i": 398,
   "jp": "錬成【中】 !",
-  "en": ""
+  "en": "Refinement (M)!"
  },
  {
   "i": 399,
   "jp": "乱打【中】 !",
-  "en": ""
+  "en": "Flurry (M)!"
  },
  {
   "i": 400,
   "jp": "餓狼【中】 !",
-  "en": ""
+  "en": "Hungry Wolf (M)!"
  },
  {
   "i": 401,
   "jp": "対鋼膜個体攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Steel Shell Specimens!"
  },
  {
   "i": 402,
   "jp": "対鋼膜個体耐性 !",
-  "en": ""
+  "en": "Res Up vs Steel Shell Specimens!"
  },
  {
   "i": 403,
   "jp": "対月迅竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Lucent Nargacuga!"
  },
  {
   "i": 404,
   "jp": "対月迅竜耐性防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Lucent Nargacuga!"
  },
  {
   "i": 405,
   "jp": "対冥海竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Nakarkos!"
  },
  {
   "i": 406,
   "jp": "対冥海竜耐性防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Nakarkos!"
  },
  {
   "i": 407,
   "jp": "対使徒種攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Apostles!"
  },
  {
   "i": 408,
   "jp": "対使徒種防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Apostles!"
  },
  {
   "i": 409,
   "jp": "使徒のコアコインアップ !",
-  "en": ""
+  "en": "Apostle Core Coins Up!"
  },
  {
   "i": 410,
   "jp": "最後の砦 !",
-  "en": ""
+  "en": "Last Bastion!"
  },
  {
   "i": 411,
   "jp": "連矢【小】 !",
-  "en": ""
+  "en": "Rapid Arrows (S)!"
  },
  {
   "i": 412,
   "jp": "連矢【中】 !",
-  "en": ""
+  "en": "Rapid Arrows (M)!"
  },
  {
   "i": 413,
   "jp": "連矢【大】 !",
-  "en": ""
+  "en": "Rapid Arrows (L)!"
  },
  {
   "i": 414,
   "jp": "弓極アップ !",
-  "en": ""
+  "en": "Bow Mastery Up!"
  },
  {
   "i": 415,
   "jp": "守護回避【小】 !",
-  "en": ""
+  "en": "Guardian Evade (S)!"
  },
  {
   "i": 416,
   "jp": "守護回避【中】 !",
-  "en": ""
+  "en": "Guardian Evade (M)!"
  },
  {
   "i": 417,
   "jp": "守護回避【大】 !",
-  "en": ""
+  "en": "Guardian Evade (L)!"
  },
  {
   "i": 418,
   "jp": "ガード装填アップ !",
-  "en": ""
+  "en": "Guard Reload Up!"
  },
  {
   "i": 419,
   "jp": "高速回避【小】 !",
-  "en": ""
+  "en": "Quick Evade (S)!"
  },
  {
   "i": 420,
   "jp": "高速回避【中】 !",
-  "en": ""
+  "en": "Quick Evade (M)!"
  },
  {
   "i": 421,
   "jp": "高速回避【大】 !",
-  "en": ""
+  "en": "Quick Evade (L)!"
  },
  {
   "i": 422,
   "jp": "よろしくアーマー !",
-  "en": ""
+  "en": "Nice-to-Meet-You Armor!"
  },
  {
   "i": 423,
   "jp": "よろしくフルアーマー !",
-  "en": ""
+  "en": "Nice-to-Meet-You Full Armor!"
  },
  {
   "i": 424,
   "jp": "突進攻撃化 ！",
-  "en": ""
+  "en": "Charge Becomes Attack!"
  },
  {
   "i": 425,
   "jp": "突進無敵 ！",
-  "en": ""
+  "en": "Charge Invincibility!"
  },
  {
   "i": 426,
   "jp": "溜め斬り無敵 ！",
-  "en": ""
+  "en": "Charged Slash Invincibility!"
  },
  {
   "i": 427,
   "jp": "胆力 ！",
-  "en": ""
+  "en": "Fortitude!"
  },
  {
   "i": 428,
   "jp": "自然回復+攻撃力アップ ！",
-  "en": ""
+  "en": "Natural Recovery + Attack Up!"
  },
  {
   "i": 429,
   "jp": "自然回復+ダメージ軽減 ！",
-  "en": ""
+  "en": "Natural Recovery + Damage Reduced!"
  },
  {
   "i": 430,
   "jp": "ダメージ追加 ！",
-  "en": ""
+  "en": "Extra Damage!"
  },
  {
   "i": 431,
   "jp": "コンボ変化 ！",
-  "en": ""
+  "en": "Combo Changed!"
  },
  {
   "i": 432,
   "jp": "リーチアップ ！",
-  "en": ""
+  "en": "Reach Up!"
  },
  {
   "i": 433,
   "jp": "猟虫パワーアップ ！",
-  "en": ""
+  "en": "Kinsect Power Up!"
  },
  {
   "i": 434,
   "jp": "操虫棍の達人 ！",
-  "en": ""
+  "en": "Insect Glaive Master!"
  },
  {
   "i": 435,
   "jp": "猟虫強化 ！",
-  "en": ""
+  "en": "Kinsect Boost!"
  },
  {
   "i": 436,
   "jp": "エキス採取量アップ ！",
-  "en": ""
+  "en": "Extract Gather Up!"
  },
  {
   "i": 437,
   "jp": "性質変化【回復】 ！",
-  "en": ""
+  "en": "Trait Change [Recovery]!"
  },
  {
   "i": 438,
   "jp": "性質変化【武技】 ！",
-  "en": ""
+  "en": "Trait Change [Martial Art]!"
  },
  {
   "i": 439,
   "jp": "性質変化【減少】 ！",
-  "en": ""
+  "en": "Trait Change [Reduction]!"
  },
  {
   "i": 440,
   "jp": "性質変化【攻撃】 ！",
-  "en": ""
+  "en": "Trait Change [Attack]!"
  },
  {
   "i": 441,
   "jp": "スタミナ最大数アップ ！",
-  "en": ""
+  "en": "Max Stamina Up!"
  },
  {
   "i": 442,
   "jp": "発走 ！",
-  "en": ""
+  "en": "Dash Start!"
  },
  {
   "i": 443,
   "jp": "ハイセンス ！",
-  "en": ""
+  "en": "High Sense!"
  },
  {
   "i": 444,
   "jp": "工面 ！",
-  "en": ""
+  "en": "Resourcefulness!"
  },
  {
   "i": 445,
   "jp": "迅脚 ！",
-  "en": ""
+  "en": "Swift Legs!"
  },
  {
   "i": 446,
   "jp": "無敵延長【小】 ！",
-  "en": ""
+  "en": "Invincibility Extension (S)!"
  },
  {
   "i": 447,
   "jp": "無敵延長【中】 ！",
-  "en": ""
+  "en": "Invincibility Extension (M)!"
  },
  {
   "i": 448,
   "jp": "無敵延長【大】 ！",
-  "en": ""
+  "en": "Invincibility Extension (L)!"
  },
  {
   "i": 449,
   "jp": "棍威力アップ ！",
-  "en": ""
+  "en": "Glaive Power Up!"
  },
  {
   "i": 450,
   "jp": "猟虫スピードアップ ！",
-  "en": ""
+  "en": "Kinsect Speed Up!"
  },
  {
   "i": 451,
   "jp": "猟虫攻撃威力アップ ！",
-  "en": ""
+  "en": "Kinsect Attack Up!"
  },
  {
   "i": 452,
   "jp": "猟虫スタミナ無制限 ！",
-  "en": ""
+  "en": "Unlimited Kinsect Stamina!"
  },
  {
   "i": 453,
   "jp": "エキス採取量アップ ！",
-  "en": ""
+  "en": "Extract Gather Up!"
  },
  {
   "i": 454,
   "jp": "ダークバットアップ !",
-  "en": ""
+  "en": "Dark Bat Up!"
  },
  {
   "i": 455,
   "jp": "対ハロウィン攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Halloween!"
  },
  {
   "i": 456,
   "jp": "対ハロウィン防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Halloween!"
  },
  {
   "i": 457,
   "jp": "対轟暴震防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Raging Quake Tigrex!"
  },
  {
   "i": 458,
   "jp": "対轟暴震攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Raging Quake Tigrex!"
  },
  {
   "i": 459,
   "jp": "ひるみにくさ超アップ ！",
-  "en": ""
+  "en": "Flinch Resistance Super Up!"
  },
  {
   "i": 460,
   "jp": "転身回復【小】 !",
-  "en": ""
+  "en": "Transformation Recovery (S)!"
  },
  {
   "i": 461,
   "jp": "転身回復【中】 !",
-  "en": ""
+  "en": "Transformation Recovery (M)!"
  },
  {
   "i": 462,
   "jp": "転身回復【大】 !",
-  "en": ""
+  "en": "Transformation Recovery (L)!"
  },
  {
   "i": 463,
   "jp": "大回転斬り無敵化 ！",
-  "en": ""
+  "en": "Invincible Spinning Slash!"
  },
  {
   "i": 464,
   "jp": "迅速フィニッシュ【小】 ！",
-  "en": ""
+  "en": "Swift Finish (S)!"
  },
  {
   "i": 465,
   "jp": "迅速フィニッシュ【中】 ！",
-  "en": ""
+  "en": "Swift Finish (M)!"
  },
  {
   "i": 466,
   "jp": "迅速フィニッシュ【大】 ！",
-  "en": ""
+  "en": "Swift Finish (L)!"
  },
  {
   "i": 467,
   "jp": "高速鬼人化 ！",
-  "en": ""
+  "en": "Quick Demon Mode!"
  },
  {
   "i": 468,
   "jp": "対ストⅤ 攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs SFV!"
  },
  {
   "i": 469,
   "jp": "対ストⅤ 防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs SFV!"
  },
  {
   "i": 470,
   "jp": "疾風双【小】 ！",
-  "en": ""
+  "en": "Gale Dual (S)!"
  },
  {
   "i": 471,
   "jp": "疾風双【中】 ！",
-  "en": ""
+  "en": "Gale Dual (M)!"
  },
  {
   "i": 472,
   "jp": "疾風双【大】 ！",
-  "en": ""
+  "en": "Gale Dual (L)!"
  },
  {
   "i": 473,
   "jp": "練気仕込み ！",
-  "en": ""
+  "en": "Spirit Primer!"
  },
  {
   "i": 474,
   "jp": "ヘビィバースト【小】 ！",
-  "en": ""
+  "en": "Heavy Burst (S)!"
  },
  {
   "i": 475,
   "jp": "ヘビィバースト【中】 ！",
-  "en": ""
+  "en": "Heavy Burst (M)!"
  },
  {
   "i": 476,
   "jp": "ヘビィバースト【大】 ！",
-  "en": ""
+  "en": "Heavy Burst (L)!"
  },
  {
   "i": 477,
   "jp": "鬼狩り ！",
-  "en": ""
+  "en": "Demon Hunt!"
  },
  {
   "i": 478,
   "jp": "ファイトマネーアップ ！",
-  "en": ""
+  "en": "Fight Money Up!"
  },
  {
   "i": 479,
   "jp": "攻撃変化 ！",
-  "en": ""
+  "en": "Attack Changed!"
  },
  {
   "i": 480,
   "jp": "効果エリア生成状態 ！",
-  "en": ""
+  "en": "Effect Area Active!"
  },
  {
   "i": 481,
   "jp": "攻撃貫通化 ！",
-  "en": ""
+  "en": "Piercing Attacks!"
  },
  {
   "i": 482,
   "jp": "攻撃範囲変化 ！",
-  "en": ""
+  "en": "Attack Range Changed!"
  },
  {
   "i": 483,
   "jp": "鬼人乱舞無制限 ！",
-  "en": ""
+  "en": "Unlimited Demon Dance!"
  },
  {
   "i": 484,
   "jp": "スピードダウン…",
-  "en": ""
+  "en": "Speed Down..."
  },
  {
   "i": 485,
   "jp": "回避時爆弾設置 ！",
-  "en": ""
+  "en": "Bomb on Evade!"
  },
  {
   "i": 486,
   "jp": "対FFBE 攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs FFBE!"
  },
  {
   "i": 487,
   "jp": "対FFBE 防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs FFBE!"
  },
  {
   "i": 488,
   "jp": "スタークォーツアップ ！",
-  "en": ""
+  "en": "Star Quartz Up!"
  },
  {
   "i": 489,
   "jp": "回避性能【中】 ！",
-  "en": ""
+  "en": "Evade Window (M)!"
  },
  {
   "i": 490,
   "jp": "回避距離【中】 ！",
-  "en": ""
+  "en": "Evade Extender (M)!"
  },
  {
   "i": 491,
   "jp": "龍風圧無効 ！",
-  "en": ""
+  "en": "Dragon Wind Pressure Negated!"
  },
  {
   "i": 492,
   "jp": "ヒールガーディアン【小】 ！",
-  "en": ""
+  "en": "Heal Guardian (S)!"
  },
  {
   "i": 493,
   "jp": "ヒールガーディアン【中】 ！",
-  "en": ""
+  "en": "Heal Guardian (M)!"
  },
  {
   "i": 494,
   "jp": "ヒールガーディアン【大】 ！",
-  "en": ""
+  "en": "Heal Guardian (L)!"
  },
  {
   "i": 495,
   "jp": "連槍【小】 ！",
-  "en": ""
+  "en": "Lance Combo (S)!"
  },
  {
   "i": 496,
   "jp": "連槍【中】 ！",
-  "en": ""
+  "en": "Lance Combo (M)!"
  },
  {
   "i": 497,
   "jp": "連槍【大】 ！",
-  "en": ""
+  "en": "Lance Combo (L)!"
  },
  {
   "i": 498,
   "jp": "ガード減少アップ【小】 ！",
-  "en": ""
+  "en": "Guard Drain Up (S)!"
  },
  {
   "i": 499,
   "jp": "ガード減少アップ【中】 ！",
-  "en": ""
+  "en": "Guard Drain Up (M)!"
  },
  {
   "i": 500,
   "jp": "ガード減少アップ【大】 ！",
-  "en": ""
+  "en": "Guard Drain Up (L)!"
  },
  {
   "i": 501,
   "jp": "早撃ち【小】 ！",
-  "en": ""
+  "en": "Quick Shot (S)!"
  },
  {
   "i": 502,
   "jp": "早撃ち【中】 ！",
-  "en": ""
+  "en": "Quick Shot (M)!"
  },
  {
   "i": 503,
   "jp": "早撃ち【大】 ！",
-  "en": ""
+  "en": "Quick Shot (L)!"
  },
  {
   "i": 504,
   "jp": "ガンスリンガー ！",
-  "en": ""
+  "en": "Gunslinger!"
  },
  {
   "i": 505,
   "jp": "ガンスリンガー ！",
-  "en": ""
+  "en": "Gunslinger!"
  },
  {
   "i": 506,
   "jp": "ガンスリンガー ！",
-  "en": ""
+  "en": "Gunslinger!"
  },
  {
   "i": 507,
   "jp": "獣渡り ！",
-  "en": ""
+  "en": "Beast Hopper!"
  },
  {
   "i": 508,
   "jp": "柳風砲 ！",
-  "en": ""
+  "en": "Willow Wind Cannon!"
  },
  {
   "i": 509,
   "jp": "最大体力減少…",
-  "en": ""
+  "en": "Max Health Down..."
  },
  {
   "i": 510,
   "jp": "防御力減少…",
-  "en": ""
+  "en": "Defense Down..."
  },
  {
   "i": 511,
   "jp": "回避無敵時間無効…",
-  "en": ""
+  "en": "No Evade Invincibility..."
  },
  {
   "i": 512,
   "jp": "ガード減少ダウン【小】…",
-  "en": ""
+  "en": "Guard Drain Down (S)..."
  },
  {
   "i": 513,
   "jp": "ガード減少ダウン【中】…",
-  "en": ""
+  "en": "Guard Drain Down (M)..."
  },
  {
   "i": 514,
   "jp": "ガード減少ダウン【大】…",
-  "en": ""
+  "en": "Guard Drain Down (L)..."
  },
  {
   "i": 515,
   "jp": "スピードダウン【小】…",
-  "en": ""
+  "en": "Speed Down (S)..."
  },
  {
   "i": 516,
   "jp": "スピードダウン【中】…",
-  "en": ""
+  "en": "Speed Down (M)..."
  },
  {
   "i": 517,
   "jp": "スピードダウン【大】…",
-  "en": ""
+  "en": "Speed Down (L)..."
  },
  {
   "i": 518,
   "jp": "剣斧先制術 ！",
-  "en": ""
+  "en": "Switch Axe First Strike!"
  },
  {
   "i": 519,
   "jp": "盾斧先制術 ！",
-  "en": ""
+  "en": "Charge Blade First Strike!"
  },
  {
   "i": 520,
   "jp": "武体大還元【小】 ！",
-  "en": ""
+  "en": "Great Martial Body Return (S)!"
  },
  {
   "i": 521,
   "jp": "武体大還元【中】 ！",
-  "en": ""
+  "en": "Great Martial Body Return (M)!"
  },
  {
   "i": 522,
   "jp": "武体大還元【大】 ！",
-  "en": ""
+  "en": "Great Martial Body Return (L)!"
  },
  {
   "i": 523,
   "jp": "対星黒獣 防御力アップ!",
-  "en": ""
+  "en": "Defense Up vs Star Black Beast!"
  },
  {
   "i": 524,
   "jp": "対星黒獣 攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Star Black Beast!"
  },
  {
   "i": 525,
   "jp": "第9回討伐ポイントアップ !",
-  "en": ""
+  "en": "Hunt 9 Points Up!"
  },
  {
   "i": 526,
   "jp": "第10回討伐ポイントアップ !",
-  "en": ""
+  "en": "Hunt 10 Points Up!"
  },
  {
   "i": 527,
   "jp": "対轟竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Tigrex!"
  },
  {
   "i": 528,
   "jp": "対轟竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Tigrex!"
  },
  {
   "i": 529,
   "jp": "対幻獣攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Kirin!"
  },
  {
   "i": 530,
   "jp": "対幻獣防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Kirin!"
  },
  {
   "i": 531,
   "jp": "見切り ！",
-  "en": ""
+  "en": "Critical Eye!"
  },
  {
   "i": 532,
   "jp": "効果エリア追従 ！",
-  "en": ""
+  "en": "Effect Area Follows!"
  },
  {
   "i": 533,
   "jp": "回避時ダメージアップ ！",
-  "en": ""
+  "en": "Damage Up on Evade!"
  },
  {
   "i": 534,
   "jp": "回避時体力回復 ！",
-  "en": ""
+  "en": "Heal on Evade!"
  },
  {
   "i": 535,
   "jp": "めまい誘発可能化 ！",
-  "en": ""
+  "en": "Can Cause Stun!"
  },
  {
   "i": 536,
   "jp": "通常射撃速度アップ ！",
-  "en": ""
+  "en": "Normal Shot Speed Up!"
  },
  {
   "i": 537,
   "jp": "盾斧変形回避 !",
-  "en": ""
+  "en": "Charge Blade Morph Evade!"
  },
  {
   "i": 538,
   "jp": "剣斧変形回避!",
-  "en": ""
+  "en": "Switch Axe Morph Evade!"
  },
  {
   "i": 539,
   "jp": "彼岸陣【小】 !",
-  "en": ""
+  "en": "Higan Formation (S)!"
  },
  {
   "i": 540,
   "jp": "彼岸陣【中】 !",
-  "en": ""
+  "en": "Higan Formation (M)!"
  },
  {
   "i": 541,
   "jp": "彼岸陣【大】 !",
-  "en": ""
+  "en": "Higan Formation (L)!"
  },
  {
   "i": 542,
   "jp": "彼岸泉【小】 !",
-  "en": ""
+  "en": "Higan Spring (S)!"
  },
  {
   "i": 543,
   "jp": "彼岸泉【中】 !",
-  "en": ""
+  "en": "Higan Spring (M)!"
  },
  {
   "i": 544,
   "jp": "彼岸泉【大】 !",
-  "en": ""
+  "en": "Higan Spring (L)!"
  },
  {
   "i": 545,
   "jp": "ステップファイア !",
-  "en": ""
+  "en": "Step Fire!"
  },
  {
   "i": 546,
   "jp": "裂傷耐性アップ !",
-  "en": ""
+  "en": "Bleeding Res Up!"
  },
  {
   "i": 547,
   "jp": "痛恨無敵【小】 !",
-  "en": ""
+  "en": "Critical-Hit Invincibility (S)!"
  },
  {
   "i": 548,
   "jp": "痛恨無敵【中】 !",
-  "en": ""
+  "en": "Critical-Hit Invincibility (M)!"
  },
  {
   "i": 549,
   "jp": "痛恨無敵【大】 !",
-  "en": ""
+  "en": "Critical-Hit Invincibility (L)!"
  },
  {
   "i": 550,
   "jp": "限界装填【小】 !",
-  "en": ""
+  "en": "Limit Reload (S)!"
  },
  {
   "i": 551,
   "jp": "限界装填【中】 !",
-  "en": ""
+  "en": "Limit Reload (M)!"
  },
  {
   "i": 552,
   "jp": "限界装填【大】 !",
-  "en": ""
+  "en": "Limit Reload (L)!"
  },
  {
   "i": 553,
   "jp": "オートガード【小】 !",
-  "en": ""
+  "en": "Auto-Guard (S)!"
  },
  {
   "i": 554,
   "jp": "オートガード【中】 !",
-  "en": ""
+  "en": "Auto-Guard (M)!"
  },
  {
   "i": 555,
   "jp": "オートガード【大】 !",
-  "en": ""
+  "en": "Auto-Guard (L)!"
  },
  {
   "i": 556,
   "jp": "パーツブレイカー【小】 !",
-  "en": ""
+  "en": "Partbreaker (S)!"
  },
  {
   "i": 557,
   "jp": "パーツブレイカー【中】 !",
-  "en": ""
+  "en": "Partbreaker (M)!"
  },
  {
   "i": 558,
   "jp": "パーツブレイカー【大】 !",
-  "en": ""
+  "en": "Partbreaker (L)!"
  },
  {
   "i": 559,
   "jp": "最後の抵抗 !",
-  "en": ""
+  "en": "Last Stand!"
  },
  {
   "i": 560,
   "jp": "魔障【小】 !",
-  "en": ""
+  "en": "Demonic Barrier (S)!"
  },
  {
   "i": 561,
   "jp": "魔障【中】 !",
-  "en": ""
+  "en": "Demonic Barrier (M)!"
  },
  {
   "i": 562,
   "jp": "魔障【大】 !",
-  "en": ""
+  "en": "Demonic Barrier (L)!"
  },
  {
   "i": 563,
   "jp": "近接回復【小】 !",
-  "en": ""
+  "en": "Melee Recovery (S)!"
  },
  {
   "i": 564,
   "jp": "近接回復【中】 !",
-  "en": ""
+  "en": "Melee Recovery (M)!"
  },
  {
   "i": 565,
   "jp": "近接回復【大】 !",
-  "en": ""
+  "en": "Melee Recovery (L)!"
  },
  {
   "i": 566,
   "jp": "自然回復【小】 !",
-  "en": ""
+  "en": "Natural Recovery (S)!"
  },
  {
   "i": 567,
   "jp": "自然回復【中】 !",
-  "en": ""
+  "en": "Natural Recovery (M)!"
  },
  {
   "i": 568,
   "jp": "自然回復【大】 !",
-  "en": ""
+  "en": "Natural Recovery (L)!"
  },
  {
   "i": 569,
   "jp": "ガード疾風【小】 !",
-  "en": ""
+  "en": "Guard Gale (S)!"
  },
  {
   "i": 570,
   "jp": "ガード疾風【中】 !",
-  "en": ""
+  "en": "Guard Gale (M)!"
  },
  {
   "i": 571,
   "jp": "ガード疾風【大】 !",
-  "en": ""
+  "en": "Guard Gale (L)!"
  },
  {
   "i": 572,
   "jp": "鬼力爆発【小】 !",
-  "en": ""
+  "en": "Demon Power Burst (S)!"
  },
  {
   "i": 573,
   "jp": "鬼力爆発【中】 !",
-  "en": ""
+  "en": "Demon Power Burst (M)!"
  },
  {
   "i": 574,
   "jp": "鬼力爆発【大】 !",
-  "en": ""
+  "en": "Demon Power Burst (L)!"
  },
  {
   "i": 575,
   "jp": "精霊達の防護 !",
-  "en": ""
+  "en": "Spirits' Protection!"
  },
  {
   "i": 576,
   "jp": "死神【中】 !",
-  "en": ""
+  "en": "Reaper (M)!"
  },
  {
   "i": 577,
   "jp": "死神【大】 !",
-  "en": ""
+  "en": "Reaper (L)!"
  },
  {
   "i": 578,
   "jp": "対廻世主 防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Reincarnator!"
  },
  {
   "i": 579,
   "jp": "対廻世主 攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Reincarnator!"
  },
  {
   "i": 580,
   "jp": "第11回討伐ポイントアップ !",
-  "en": ""
+  "en": "Hunt 11 Points Up!"
  },
  {
   "i": 581,
   "jp": "対千刃竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Seregios!"
  },
  {
   "i": 582,
   "jp": "とのさまんじゅうアップ !",
-  "en": ""
+  "en": "Tonosama Buns Up!"
  },
  {
   "i": 583,
   "jp": "カカオアップ !",
-  "en": ""
+  "en": "Cacao Up!"
  },
  {
   "i": 584,
   "jp": "対逆転裁判攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Ace Attorney!"
  },
  {
   "i": 585,
   "jp": "対バレンタイン攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Valentine!"
  },
  {
   "i": 586,
   "jp": "対強襲凶怪竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Assault Fiend Wyvern!"
  },
  {
   "i": 587,
   "jp": "対強襲紫水獣攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Assault Purple Water Beast!"
  },
  {
   "i": 588,
   "jp": "対強襲水竜攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs Assault Plesioth!"
  },
  {
   "i": 589,
   "jp": "対全襲来攻撃力アップ !",
-  "en": ""
+  "en": "Attack Up vs All Raids!"
  },
  {
   "i": 590,
   "jp": "対千刃竜防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Seregios!"
  },
  {
   "i": 591,
   "jp": "対逆転裁判防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Ace Attorney!"
  },
  {
   "i": 592,
   "jp": "対バレンタイン防御力アップ !",
-  "en": ""
+  "en": "Defense Up vs Valentine!"
  },
  {
   "i": 593,
   "jp": "双追撃 ！",
-  "en": ""
+  "en": "Double Follow-up!"
  },
  {
   "i": 594,
   "jp": "突進強化 ！",
-  "en": ""
+  "en": "Charge Boost!"
  },
  {
   "i": 595,
   "jp": "龍風圧無効化 ！",
-  "en": ""
+  "en": "Dragon Wind Pressure Negated!"
  },
  {
   "i": 596,
   "jp": "突進追撃 ！",
-  "en": ""
+  "en": "Charge Follow-up!"
  },
  {
   "i": 597,
   "jp": "攻撃拡散化 ！",
-  "en": ""
+  "en": "Spread Attacks!"
  },
  {
   "i": 598,
   "jp": "カウンターの極み !",
-  "en": ""
+  "en": "Counter Mastery!"
  },
  {
   "i": 599,
   "jp": "大剣瞬発術 !",
-  "en": ""
+  "en": "Great Sword Burst!"
  },
  {
   "i": 600,
   "jp": "会心装填【小】 !",
-  "en": ""
+  "en": "Critical Reload (S)!"
  },
  {
   "i": 601,
   "jp": "会心装填【中】 !",
-  "en": ""
+  "en": "Critical Reload (M)!"
  },
  {
   "i": 602,
   "jp": "会心装填【大】 !",
-  "en": ""
+  "en": "Critical Reload (L)!"
  },
  {
   "i": 603,
   "jp": "ジャストガード【小】 !",
-  "en": ""
+  "en": "Perfect Guard (S)!"
  },
  {
   "i": 604,
   "jp": "ジャストガード【中】 !",
-  "en": ""
+  "en": "Perfect Guard (M)!"
  },
  {
   "i": 605,
   "jp": "ジャストガード【大】 !",
-  "en": ""
+  "en": "Perfect Guard (L)!"
  },
  {
   "i": 606,
   "jp": "武技P効率化【小】 !",
-  "en": ""
+  "en": "Martial Art P Efficiency (S)!"
  },
  {
   "i": 607,
   "jp": "武技P効率化【中】 !",
-  "en": ""
+  "en": "Martial Art P Efficiency (M)!"
  },
  {
   "i": 608,
   "jp": "武技P効率化【大】 !",
-  "en": ""
+  "en": "Martial Art P Efficiency (L)!"
  },
  {
   "i": 609,
   "jp": "龍風圧貫通 !",
-  "en": ""
+  "en": "Dragon Wind Pierce!"
  },
  {
   "i": 610,
   "jp": "蓄積力【小】 !",
-  "en": ""
+  "en": "Buildup Power (S)!"
  },
  {
   "i": 611,
   "jp": "蓄積力【中】 !",
-  "en": ""
+  "en": "Buildup Power (M)!"
  },
  {
   "i": 612,
   "jp": "蓄積力【大】 !",
-  "en": ""
+  "en": "Buildup Power (L)!"
  },
  {
   "i": 613,
   "jp": "精霊の凪 !",
-  "en": ""
+  "en": "Spirits' Calm!"
  },
  {
   "i": 614,
   "jp": "パンケーキアップ !",
-  "en": ""
+  "en": "Pancake Up!"
  },
  {
   "i": 615,
   "jp": "対ホワイトデー攻撃力アップ  !",
-  "en": ""
+  "en": "Attack Up vs White Day!"
  },
  {
   "i": 616,
   "jp": "対ホワイトデー防御力アップ  !",
-  "en": ""
+  "en": "Defense Up vs White Day!"
  },
  {
   "i": 617,
   "jp": "対強襲豪火竜攻撃力アップ　!",
-  "en": ""
+  "en": "Attack Up vs Assault Blazing Fire Wyvern!"
  },
  {
   "i": 618,
   "jp": "対強襲金火竜攻撃力アップ　!",
-  "en": ""
+  "en": "Attack Up vs Assault Gold Rathian!"
  },
  {
   "i": 619,
   "jp": "対強襲銀火竜攻撃力アップ　!",
-  "en": ""
+  "en": "Attack Up vs Assault Silver Rathalos!"
  },
  {
   "i": 620,
   "jp": "対鋼鎚竜【凶暴】攻撃力アップ　!",
-  "en": ""
+  "en": "Attack Up vs Steel Hammer Wyvern [Savage]!"
  },
  {
   "i": 621,
   "jp": "対鋼龍攻撃力アップ　!",
-  "en": ""
+  "en": "Attack Up vs Kushala Daora!"
  },
  {
   "i": 622,
   "jp": "対鋼龍防御力アップ　!",
-  "en": ""
+  "en": "Defense Up vs Kushala Daora!"
  },
  {
   "i": 623,
   "jp": "武技威力増強【小】　!",
-  "en": ""
+  "en": "Martial Art Power Up (S)!"
  },
  {
   "i": 624,
   "jp": "武技威力増強【中】　!",
-  "en": ""
+  "en": "Martial Art Power Up (M)!"
  },
  {
   "i": 625,
   "jp": "武技威力増強【大】　!",
-  "en": ""
+  "en": "Martial Art Power Up (L)!"
  },
  {
   "i": 626,
   "jp": "水耐性増強【小】　!",
-  "en": ""
+  "en": "Water Res Boost (S)!"
  },
  {
   "i": 627,
   "jp": "水耐性増強【中】　!",
-  "en": ""
+  "en": "Water Res Boost (M)!"
  },
  {
   "i": 628,
   "jp": "水耐性増強【大】　!",
-  "en": ""
+  "en": "Water Res Boost (L)!"
  },
  {
   "i": 629,
   "jp": "火耐性増強【小】　!",
-  "en": ""
+  "en": "Fire Res Boost (S)!"
  },
  {
   "i": 630,
   "jp": "火耐性増強【中】　!",
-  "en": ""
+  "en": "Fire Res Boost (M)!"
  },
  {
   "i": 631,
   "jp": "火耐性増強【大】　!",
-  "en": ""
+  "en": "Fire Res Boost (L)!"
  },
  {
   "i": 632,
   "jp": "氷耐性増強【小】　!",
-  "en": ""
+  "en": "Ice Res Boost (S)!"
  },
  {
   "i": 633,
   "jp": "氷耐性増強【中】　!",
-  "en": ""
+  "en": "Ice Res Boost (M)!"
  },
  {
   "i": 634,
   "jp": "氷耐性増強【大】　!",
-  "en": ""
+  "en": "Ice Res Boost (L)!"
  },
  {
   "i": 635,
   "jp": "土耐性増強【小】　!",
-  "en": ""
+  "en": "Earth Res Boost (S)!"
  },
  {
   "i": 636,
   "jp": "土耐性増強【中】　!",
-  "en": ""
+  "en": "Earth Res Boost (M)!"
  },
  {
   "i": 637,
   "jp": "土耐性増強【大】　!",
-  "en": ""
+  "en": "Earth Res Boost (L)!"
  },
  {
   "i": 638,
   "jp": "雷耐性増強【小】　!",
-  "en": ""
+  "en": "Thunder Res Boost (S)!"
  },
  {
   "i": 639,
   "jp": "雷耐性増強【中】　!",
-  "en": ""
+  "en": "Thunder Res Boost (M)!"
  },
  {
   "i": 640,
   "jp": "雷耐性増強【大】　!",
-  "en": ""
+  "en": "Thunder Res Boost (L)!"
  },
  {
   "i": 641,
   "jp": "水攻撃力増強【小】　!",
-  "en": ""
+  "en": "Water Attack Boost (S)!"
  },
  {
   "i": 642,
   "jp": "水攻撃力増強【中】　!",
-  "en": ""
+  "en": "Water Attack Boost (M)!"
  },
  {
   "i": 643,
   "jp": "水攻撃力増強【大】　!",
-  "en": ""
+  "en": "Water Attack Boost (L)!"
  },
  {
   "i": 644,
   "jp": "火攻撃力増強【小】　!",
-  "en": ""
+  "en": "Fire Attack Boost (S)!"
  },
  {
   "i": 645,
   "jp": "火攻撃力増強【中】　!",
-  "en": ""
+  "en": "Fire Attack Boost (M)!"
  },
  {
   "i": 646,
   "jp": "火攻撃力増強【大】　!",
-  "en": ""
+  "en": "Fire Attack Boost (L)!"
  },
  {
   "i": 647,
   "jp": "氷攻撃力増強【小】　!",
-  "en": ""
+  "en": "Ice Attack Boost (S)!"
  },
  {
   "i": 648,
   "jp": "氷攻撃力増強【中】　!",
-  "en": ""
+  "en": "Ice Attack Boost (M)!"
  },
  {
   "i": 649,
   "jp": "氷攻撃力増強【大】　!",
-  "en": ""
+  "en": "Ice Attack Boost (L)!"
  },
  {
   "i": 650,
   "jp": "土攻撃力増強【小】　!",
-  "en": ""
+  "en": "Earth Attack Boost (S)!"
  },
  {
   "i": 651,
   "jp": "土攻撃力増強【中】　!",
-  "en": ""
+  "en": "Earth Attack Boost (M)!"
  },
  {
   "i": 652,
   "jp": "土攻撃力増強【大】　!",
-  "en": ""
+  "en": "Earth Attack Boost (L)!"
  },
  {
   "i": 653,
   "jp": "雷攻撃力増強【小】　!",
-  "en": ""
+  "en": "Thunder Attack Boost (S)!"
  },
  {
   "i": 654,
   "jp": "雷攻撃力増強【中】　!",
-  "en": ""
+  "en": "Thunder Attack Boost (M)!"
  },
  {
   "i": 655,
   "jp": "雷攻撃力増強【大】　!",
-  "en": ""
+  "en": "Thunder Attack Boost (L)!"
  },
  {
   "i": 656,
   "jp": "会心大回転斬り　!",
-  "en": ""
+  "en": "Critical Spinning Slash!"
  },
  {
   "i": 657,
   "jp": "前転回避攻撃【小】　!",
-  "en": ""
+  "en": "Forward Roll Attack (S)!"
  },
  {
   "i": 658,
   "jp": "前転回避攻撃【中】　!",
-  "en": ""
+  "en": "Forward Roll Attack (M)!"
  },
  {
   "i": 659,
   "jp": "前転回避攻撃【大】　!",
-  "en": ""
+  "en": "Forward Roll Attack (L)!"
  },
  {
   "i": 660,
   "jp": "無防備溜め【小】　!",
-  "en": ""
+  "en": "Defenseless Charge (S)!"
  },
  {
   "i": 661,
   "jp": "無防備溜め【中】　!",
-  "en": ""
+  "en": "Defenseless Charge (M)!"
  },
  {
   "i": 662,
   "jp": "無防備溜め【大】　!",
-  "en": ""
+  "en": "Defenseless Charge (L)!"
  },
  {
   "i": 663,
   "jp": "無防備回避【小】　!",
-  "en": ""
+  "en": "Defenseless Evade (S)!"
  },
  {
   "i": 664,
   "jp": "無防備回避【中】　!",
-  "en": ""
+  "en": "Defenseless Evade (M)!"
  },
  {
   "i": 665,
   "jp": "無防備回避【大】　!",
-  "en": ""
+  "en": "Defenseless Evade (L)!"
  },
  {
   "i": 666,
   "jp": "移動回復【小】　!",
-  "en": ""
+  "en": "Moving Recovery (S)!"
  },
  {
   "i": 667,
   "jp": "移動回復【中】　!",
-  "en": ""
+  "en": "Moving Recovery (M)!"
  },
  {
   "i": 668,
   "jp": "移動回復【大】　!",
-  "en": ""
+  "en": "Moving Recovery (L)!"
  },
  {
   "i": 669,
   "jp": "遠距離減少【小】　!",
-  "en": ""
+  "en": "Ranged Damage Reduction (S)!"
  },
  {
   "i": 670,
   "jp": "遠距離減少【中】　!",
-  "en": ""
+  "en": "Ranged Damage Reduction (M)!"
  },
  {
   "i": 671,
   "jp": "遠距離減少【大】　!",
-  "en": ""
+  "en": "Ranged Damage Reduction (L)!"
  },
  {
   "i": 672,
   "jp": "先駆けの矢【小】　!",
-  "en": ""
+  "en": "Vanguard Arrow (S)!"
  },
  {
   "i": 673,
   "jp": "先駆けの矢【中】　!",
-  "en": ""
+  "en": "Vanguard Arrow (M)!"
  },
  {
   "i": 674,
   "jp": "先駆けの矢【大】　!",
-  "en": ""
+  "en": "Vanguard Arrow (L)!"
  },
  {
   "i": 675,
   "jp": "スタックチャージ【小】　!",
-  "en": ""
+  "en": "Stack Charge (S)!"
  },
  {
   "i": 676,
   "jp": "スタックチャージ【中】　!",
-  "en": ""
+  "en": "Stack Charge (M)!"
  },
  {
   "i": 677,
   "jp": "スタックチャージ【大】　!",
-  "en": ""
+  "en": "Stack Charge (L)!"
  },
  {
   "i": 678,
   "jp": "オーバーウイルス　!",
-  "en": ""
+  "en": "Overvirus!"
  },
  {
   "i": 679,
   "jp": "麻痺復帰撃【小】　!",
-  "en": ""
+  "en": "Paralysis Recovery Strike (S)!"
  },
  {
   "i": 680,
   "jp": "麻痺復帰撃【中】　!",
-  "en": ""
+  "en": "Paralysis Recovery Strike (M)!"
  },
  {
   "i": 681,
   "jp": "麻痺復帰撃【大】　!",
-  "en": ""
+  "en": "Paralysis Recovery Strike (L)!"
  },
  {
   "i": 682,
   "jp": "剛突進　!",
-  "en": ""
+  "en": "Mighty Charge!"
  },
  {
   "i": 683,
   "jp": "危機会心アップ　!",
-  "en": ""
+  "en": "Crisis Critical Up!"
  },
  {
   "i": 684,
   "jp": "ガードアタック【小】　!",
-  "en": ""
+  "en": "Guard Attack (S)!"
  },
  {
   "i": 685,
   "jp": "ガードアタック【中】　!",
-  "en": ""
+  "en": "Guard Attack (M)!"
  },
  {
   "i": 686,
   "jp": "ガードアタック【大】　!",
-  "en": ""
+  "en": "Guard Attack (L)!"
  },
  {
   "i": 687,
   "jp": "突進威力アップ【小】　!",
-  "en": ""
+  "en": "Charge Power Up (S)!"
  },
  {
   "i": 688,
   "jp": "突進威力アップ【中】　!",
-  "en": ""
+  "en": "Charge Power Up (M)!"
  },
  {
   "i": 689,
   "jp": "突進威力アップ【大】　!",
-  "en": ""
+  "en": "Charge Power Up (L)!"
  },
  {
   "i": 690,
   "jp": "溜め撃ち態勢高速化　!",
-  "en": ""
+  "en": "Faster Charged Shot Stance!"
  },
  {
   "i": 691,
   "jp": "大剣溜め回復【小】　!",
-  "en": ""
+  "en": "Great Sword Charge Recovery (S)!"
  },
  {
   "i": 692,
   "jp": "大剣溜め回復【中】　!",
-  "en": ""
+  "en": "Great Sword Charge Recovery (M)!"
  },
  {
   "i": 693,
   "jp": "大剣溜め回復【大】　!",
-  "en": ""
+  "en": "Great Sword Charge Recovery (L)!"
  },
  {
   "i": 694,
   "jp": "アイテム使用回復【小】　!",
-  "en": ""
+  "en": "Item Use Recovery (S)!"
  },
  {
   "i": 695,
   "jp": "アイテム使用回復【中】　!",
-  "en": ""
+  "en": "Item Use Recovery (M)!"
  },
  {
   "i": 696,
   "jp": "アイテム使用回復【大】　!",
-  "en": ""
+  "en": "Item Use Recovery (L)!"
  },
  {
   "i": 697,
   "jp": "ハンマー溜め回復【小】　!",
-  "en": ""
+  "en": "Hammer Charge Recovery (S)!"
  },
  {
   "i": 698,
   "jp": "ハンマー溜め回復【中】　!",
-  "en": ""
+  "en": "Hammer Charge Recovery (M)!"
  },
  {
   "i": 699,
   "jp": "ハンマー溜め回復【大】　!",
-  "en": ""
+  "en": "Hammer Charge Recovery (L)!"
  },
  {
   "i": 700,
   "jp": "カウンター回復【小】　!",
-  "en": ""
+  "en": "Counter Recovery (S)!"
  },
  {
   "i": 701,
   "jp": "カウンター回復【中】　!",
-  "en": ""
+  "en": "Counter Recovery (M)!"
  },
  {
   "i": 702,
   "jp": "カウンター回復【大】　!",
-  "en": ""
+  "en": "Counter Recovery (L)!"
  },
  {
   "i": 703,
   "jp": "リロード回復【小】　!",
-  "en": ""
+  "en": "Reload Recovery (S)!"
  },
  {
   "i": 704,
   "jp": "リロード回復【中】　!",
-  "en": ""
+  "en": "Reload Recovery (M)!"
  },
  {
   "i": 705,
   "jp": "リロード回復【大】　!",
-  "en": ""
+  "en": "Reload Recovery (L)!"
  },
  {
   "i": 706,
   "jp": "溜め撃ち回復【小】　!",
-  "en": ""
+  "en": "Charged Shot Recovery (S)!"
  },
  {
   "i": 707,
   "jp": "溜め撃ち回復【中】　!",
-  "en": ""
+  "en": "Charged Shot Recovery (M)!"
  },
  {
   "i": 708,
   "jp": "溜め撃ち回復【大】　!",
-  "en": ""
+  "en": "Charged Shot Recovery (L)!"
  },
  {
   "i": 709,
   "jp": "大回転切り回復【小】　!",
-  "en": ""
+  "en": "Spinning Slash Recovery (S)!"
  },
  {
   "i": 710,
   "jp": "大回転切り回復【中】　!",
-  "en": ""
+  "en": "Spinning Slash Recovery (M)!"
  },
  {
   "i": 711,
   "jp": "大回転切り回復【大】　!",
-  "en": ""
+  "en": "Spinning Slash Recovery (L)!"
  },
  {
   "i": 712,
   "jp": "解放突き回復【小】　!",
-  "en": ""
+  "en": "Element Discharge Thrust Recovery (S)!"
  },
  {
   "i": 713,
   "jp": "解放突き回復【中】　!",
-  "en": ""
+  "en": "Element Discharge Thrust Recovery (M)!"
  },
  {
   "i": 714,
   "jp": "解放突き回復【大】　!",
-  "en": ""
+  "en": "Element Discharge Thrust Recovery (L)!"
  },
  {
   "i": 715,
   "jp": "追加装填回復【小】　!",
-  "en": ""
+  "en": "Extra Reload Recovery (S)!"
  },
  {
   "i": 716,
   "jp": "追加装填回復【中】　!",
-  "en": ""
+  "en": "Extra Reload Recovery (M)!"
  },
  {
   "i": 717,
   "jp": "追加装填回復【大】　!",
-  "en": ""
+  "en": "Extra Reload Recovery (L)!"
  },
  {
   "i": 718,
   "jp": "曲射回復【小】　!",
-  "en": ""
+  "en": "Arc Shot Recovery (S)!"
  },
  {
   "i": 719,
   "jp": "曲射回復【中】　!",
-  "en": ""
+  "en": "Arc Shot Recovery (M)!"
  },
  {
   "i": 720,
   "jp": "曲射回復【大】　!",
-  "en": ""
+  "en": "Arc Shot Recovery (L)!"
  },
  {
   "i": 721,
   "jp": "鬼人化回復【小】　!",
-  "en": ""
+  "en": "Demon Mode Recovery (S)!"
  },
  {
   "i": 722,
   "jp": "鬼人化回復【中】　!",
-  "en": ""
+  "en": "Demon Mode Recovery (M)!"
  },
  {
   "i": 723,
   "jp": "鬼人化回復【大】　!",
-  "en": ""
+  "en": "Demon Mode Recovery (L)!"
  },
  {
   "i": 724,
   "jp": "演奏回復【小】　!",
-  "en": ""
+  "en": "Performance Recovery (S)!"
  },
  {
   "i": 725,
   "jp": "演奏回復【中】　!",
-  "en": ""
+  "en": "Performance Recovery (M)!"
  },
  {
   "i": 726,
   "jp": "演奏回復【大】　!",
-  "en": ""
+  "en": "Performance Recovery (L)!"
  },
  {
   "i": 727,
   "jp": "解放斬り回復【小】　!",
-  "en": ""
+  "en": "Element Discharge Slash Recovery (S)!"
  },
  {
   "i": 728,
   "jp": "解放斬り回復【中】　!",
-  "en": ""
+  "en": "Element Discharge Slash Recovery (M)!"
  },
  {
   "i": 729,
   "jp": "解放斬り回復【大】　!",
-  "en": ""
+  "en": "Element Discharge Slash Recovery (L)!"
  },
  {
   "i": 730,
   "jp": "エキス回復【小】　!",
-  "en": ""
+  "en": "Extract Recovery (S)!"
  },
  {
   "i": 731,
   "jp": "エキス回復【中】　!",
-  "en": ""
+  "en": "Extract Recovery (M)!"
  },
  {
   "i": 732,
   "jp": "エキス回復【大】　!",
-  "en": ""
+  "en": "Extract Recovery (L)!"
  },
  {
   "i": 733,
   "jp": "対天廻龍攻撃力アップ　!",
-  "en": ""
+  "en": "Attack Up vs Shagaru Magala!"
  },
  {
   "i": 734,
   "jp": "対天廻龍防御力アップ　!",
-  "en": ""
+  "en": "Defense Up vs Shagaru Magala!"
  },
  {
   "i": 735,
   "jp": "特定クエスト攻撃力アップ !",
-  "en": ""
+  "en": "Special Quest Attack Up!"
  },
  {
   "i": 736,
   "jp": "特定クエスト防御力アップ !",
-  "en": ""
+  "en": "Special Quest Defense Up!"
  },
  {
   "i": 737,
   "jp": "イベントポイントアップ !",
-  "en": ""
+  "en": "Event Points Up!"
  },
  {
   "i": 738,
   "jp": "特殊追撃効果 ！",
-  "en": ""
+  "en": "Special Follow-up!"
  },
  {
   "i": 739,
   "jp": "無敵化 ！",
-  "en": ""
+  "en": "Invincible!"
  },
  {
   "i": 740,
   "jp": "吸血化 ！",
-  "en": ""
+  "en": "Lifesteal!"
  },
  {
   "i": 741,
   "jp": "麻痺無効 !",
-  "en": ""
+  "en": "Paralysis Negated!"
  },
  {
   "i": 742,
   "jp": "自然回復+自然武技P回復 ！",
-  "en": ""
+  "en": "Natural Recovery + Martial Art P Regen!"
  },
  {
   "i": 743,
   "jp": "生存本能【小】  !",
-  "en": ""
+  "en": "Survival Instinct (S)!"
  },
  {
   "i": 744,
   "jp": "生存本能【中】  !",
-  "en": ""
+  "en": "Survival Instinct (M)!"
  },
  {
   "i": 745,
   "jp": "生存本能【大】  !",
-  "en": ""
+  "en": "Survival Instinct (L)!"
  },
  {
   "i": 746,
   "jp": "残泉【小】  !",
-  "en": ""
+  "en": "Lingering Spring (S)!"
  },
  {
   "i": 747,
   "jp": "残泉【中】  !",
-  "en": ""
+  "en": "Lingering Spring (M)!"
  },
  {
   "i": 748,
   "jp": "残泉【大】  !",
-  "en": ""
+  "en": "Lingering Spring (L)!"
  },
  {
   "i": 749,
   "jp": "感電攻撃減少  !",
-  "en": ""
+  "en": "Thunderblight Attack Reduction!"
  },
  {
   "i": 750,
   "jp": "火傷攻撃減少 ！",
-  "en": ""
+  "en": "Fireblight Attack Reduction!"
  },
  {
   "i": 751,
   "jp": "ずぶ濡れ攻撃減少 ！",
-  "en": ""
+  "en": "Waterblight Attack Reduction!"
  },
  {
   "i": 752,
   "jp": "裂傷攻撃減少 ！",
-  "en": ""
+  "en": "Bleeding Attack Reduction!"
  },
  {
   "i": 753,
   "jp": "泥まみれ攻撃減少 ！",
-  "en": ""
+  "en": "Mud Attack Reduction!"
  },
  {
   "i": 754,
   "jp": "雪だるま攻撃減少 ！",
-  "en": ""
+  "en": "Snowman Attack Reduction!"
  },
  {
   "i": 755,
   "jp": "毒攻撃減少 ！",
-  "en": ""
+  "en": "Poison Attack Reduction!"
  },
  {
   "i": 756,
   "jp": "心眼溜め【小】 ！",
-  "en": ""
+  "en": "Mind's Eye Charge (S)!"
  },
  {
   "i": 757,
   "jp": "心眼溜め【中】 ！",
-  "en": ""
+  "en": "Mind's Eye Charge (M)!"
  },
  {
   "i": 758,
   "jp": "心眼溜め【大】 ！",
-  "en": ""
+  "en": "Mind's Eye Charge (L)!"
  },
  {
   "i": 759,
   "jp": "連動回復・武【小】 ！",
-  "en": ""
+  "en": "Linked Recovery: Martial (S)!"
  },
  {
   "i": 760,
   "jp": "連動回復・武【中】 ！",
-  "en": ""
+  "en": "Linked Recovery: Martial (M)!"
  },
  {
   "i": 761,
   "jp": "連動回復・武【大】 ！",
-  "en": ""
+  "en": "Linked Recovery: Martial (L)!"
  },
  {
   "i": 762,
   "jp": "連動回復・体【小】 ！",
-  "en": ""
+  "en": "Linked Recovery: Health (S)!"
  },
  {
   "i": 763,
   "jp": "連動回復・体【中】 ！",
-  "en": ""
+  "en": "Linked Recovery: Health (M)!"
  },
  {
   "i": 764,
   "jp": "連動回復・体【大】 ！",
-  "en": ""
+  "en": "Linked Recovery: Health (L)!"
  },
  {
   "i": 765,
   "jp": "コンボダメージアップ ！",
-  "en": ""
+  "en": "Combo Damage Up!"
  },
  {
   "i": 766,
   "jp": "狩力ダメージ軽減 ！",
-  "en": ""
+  "en": "Hunt Power Damage Reduced!"
  },
  {
   "i": 767,
   "jp": "奇跡 ！",
-  "en": ""
+  "en": "Miracle!"
  },
  {
   "i": 768,
   "jp": "自然治癒【小】 ！",
-  "en": ""
+  "en": "Natural Healing (S)!"
  },
  {
   "i": 769,
   "jp": "自然治癒【中】 ！",
-  "en": ""
+  "en": "Natural Healing (M)!"
  },
  {
   "i": 770,
   "jp": "自然治癒【大】 ！",
-  "en": ""
+  "en": "Natural Healing (L)!"
  },
  {
   "i": 771,
   "jp": "恩寵・体【小】 ！",
-  "en": ""
+  "en": "Grace: Health (S)!"
  },
  {
   "i": 772,
   "jp": "恩寵・体【中】 ！",
-  "en": ""
+  "en": "Grace: Health (M)!"
  },
  {
   "i": 773,
   "jp": "恩寵・体【大】 ！",
-  "en": ""
+  "en": "Grace: Health (L)!"
  },
  {
   "i": 774,
   "jp": "恩寵・武【小】 ！",
-  "en": ""
+  "en": "Grace: Martial (S)!"
  },
  {
   "i": 775,
   "jp": "恩寵・武【中】 ！",
-  "en": ""
+  "en": "Grace: Martial (M)!"
  },
  {
   "i": 776,
   "jp": "恩寵・武【大】 ！",
-  "en": ""
+  "en": "Grace: Martial (L)!"
  },
  {
   "i": 777,
   "jp": "底力【小】 ！",
-  "en": ""
+  "en": "Latent Power (S)!"
  },
  {
   "i": 778,
   "jp": "底力【中】 ！",
-  "en": ""
+  "en": "Latent Power (M)!"
  },
  {
   "i": 779,
   "jp": "底力【大】 ！",
-  "en": ""
+  "en": "Latent Power (L)!"
  },
  {
   "i": 780,
   "jp": "守護会心【小】 ！",
-  "en": ""
+  "en": "Guardian Critical (S)!"
  },
  {
   "i": 781,
   "jp": "守護会心【中】 ！",
-  "en": ""
+  "en": "Guardian Critical (M)!"
  },
  {
   "i": 782,
   "jp": "守護会心【大】 ！",
-  "en": ""
+  "en": "Guardian Critical (L)!"
  },
  {
   "i": 783,
   "jp": "回避回復・武 ！",
-  "en": ""
+  "en": "Evade Recovery: Martial!"
  },
  {
   "i": 784,
   "jp": "真・迅速フィニッシュ【小】 ！",
-  "en": ""
+  "en": "True Swift Finish (S)!"
  },
  {
   "i": 785,
   "jp": "真・迅速フィニッシュ【中】 ！",
-  "en": ""
+  "en": "True Swift Finish (M)!"
  },
  {
   "i": 786,
   "jp": "真・迅速フィニッシュ【大】 ！",
-  "en": ""
+  "en": "True Swift Finish (L)!"
  },
  {
   "i": 787,
   "jp": "回復効果付与 ！",
-  "en": ""
+  "en": "Healing Effect Granted!"
  },
  {
   "i": 788,
   "jp": "暴打【小】 ！",
-  "en": ""
+  "en": "Brutal Strike (S)!"
  },
  {
   "i": 789,
   "jp": "暴打【中】 ！",
-  "en": ""
+  "en": "Brutal Strike (M)!"
  },
  {
   "i": 790,
   "jp": "暴打【大】 ！",
-  "en": ""
+  "en": "Brutal Strike (L)!"
  },
  {
   "i": 791,
   "jp": "追い打ち【小】 ！",
-  "en": ""
+  "en": "Follow-up (S)!"
  },
  {
   "i": 792,
   "jp": "追い打ち【中】 ！",
-  "en": ""
+  "en": "Follow-up (M)!"
  },
  {
   "i": 793,
   "jp": "追い打ち【大】 ！",
-  "en": ""
+  "en": "Follow-up (L)!"
  },
  {
   "i": 794,
   "jp": "安静【小】 ！",
-  "en": ""
+  "en": "Bed Rest (S)!"
  },
  {
   "i": 795,
   "jp": "安静【中】 ！",
-  "en": ""
+  "en": "Bed Rest (M)!"
  },
  {
   "i": 796,
   "jp": "安静【大】 ！",
-  "en": ""
+  "en": "Bed Rest (L)!"
  },
  {
   "i": 797,
   "jp": "油断…",
-  "en": ""
+  "en": "Carelessness..."
  },
  {
   "i": 798,
   "jp": "浪費…",
-  "en": ""
+  "en": "Wastefulness..."
  },
  {
   "i": 799,
   "jp": "再起 ！",
-  "en": ""
+  "en": "Resurgence!"
  },
  {
   "i": 800,
   "jp": "息抜き【小】 ！",
-  "en": ""
+  "en": "Breather (S)!"
  },
  {
   "i": 801,
   "jp": "息抜き【中】 ！",
-  "en": ""
+  "en": "Breather (M)!"
  },
  {
   "i": 802,
   "jp": "息抜き【大】 ！",
-  "en": ""
+  "en": "Breather (L)!"
  },
  {
   "i": 803,
   "jp": "熟練【小】 ！",
-  "en": ""
+  "en": "Proficiency (S)!"
  },
  {
   "i": 804,
   "jp": "熟練【中】 ！",
-  "en": ""
+  "en": "Proficiency (M)!"
  },
  {
   "i": 805,
   "jp": "熟練【大】 ！",
-  "en": ""
+  "en": "Proficiency (L)!"
  },
  {
   "i": 806,
   "jp": "覇玉鎚の達人【小】 ！",
-  "en": ""
+  "en": "Supreme Orb Hammer Master (S)!"
  },
  {
   "i": 807,
   "jp": "覇玉鎚の達人【中】 ！",
-  "en": ""
+  "en": "Supreme Orb Hammer Master (M)!"
  },
  {
   "i": 808,
   "jp": "覇玉鎚の達人【大】 ！",
-  "en": ""
+  "en": "Supreme Orb Hammer Master (L)!"
  },
  {
   "i": 809,
   "jp": "飛翔【小】 ！",
-  "en": ""
+  "en": "Soar (S)!"
  },
  {
   "i": 810,
   "jp": "飛翔【中】 ！",
-  "en": ""
+  "en": "Soar (M)!"
  },
  {
   "i": 811,
   "jp": "飛翔【大】 ！",
-  "en": ""
+  "en": "Soar (L)!"
  },
  {
   "i": 812,
   "jp": "受け流し ！",
-  "en": ""
+  "en": "Deflect!"
  },
  {
   "i": 813,
   "jp": "後射回避距離【小】 ！",
-  "en": ""
+  "en": "Back-Shot Evade Distance (S)!"
  },
  {
   "i": 814,
   "jp": "後射回避距離【中】 ！",
-  "en": ""
+  "en": "Back-Shot Evade Distance (M)!"
  },
  {
   "i": 815,
   "jp": "後射回避距離【大】 ！",
-  "en": ""
+  "en": "Back-Shot Evade Distance (L)!"
  },
  {
   "i": 816,
   "jp": "泡耐性アップ ！",
-  "en": ""
+  "en": "Bubble Res Up!"
  },
  {
   "i": 817,
   "jp": "最大溜め無敵 ！",
-  "en": ""
+  "en": "Max Charge Invincibility!"
  },
  {
   "i": 818,
   "jp": "溜め撃ち無敵 ！",
-  "en": ""
+  "en": "Charged Shot Invincibility!"
  },
  {
   "i": 819,
   "jp": "ギルドの星 ！",
-  "en": ""
+  "en": "Guild Star!"
  },
  {
   "i": 820,
   "jp": "身かわし【小】 ！",
-  "en": ""
+  "en": "Dodge (S)!"
  },
  {
   "i": 821,
   "jp": "身かわし【中】 ！",
-  "en": ""
+  "en": "Dodge (M)!"
  },
  {
   "i": 822,
   "jp": "身かわし【大】 ！",
-  "en": ""
+  "en": "Dodge (L)!"
  },
  {
   "i": 823,
   "jp": "再撃砲【小】 ！",
-  "en": ""
+  "en": "Re-fire Cannon (S)!"
  },
  {
   "i": 824,
   "jp": "再撃砲【中】 ！",
-  "en": ""
+  "en": "Re-fire Cannon (M)!"
  },
  {
   "i": 825,
   "jp": "再撃砲【大】 ！",
-  "en": ""
+  "en": "Re-fire Cannon (L)!"
  },
  {
   "i": 826,
   "jp": "迎撃【小】 ！",
-  "en": ""
+  "en": "Interception (S)!"
  },
  {
   "i": 827,
   "jp": "迎撃【中】 ！",
-  "en": ""
+  "en": "Interception (M)!"
  },
  {
   "i": 828,
   "jp": "迎撃【大】 ！",
-  "en": ""
+  "en": "Interception (L)!"
  },
  {
   "i": 829,
   "jp": "高熱化部位ハント【小】 ！",
-  "en": ""
+  "en": "Heated Part Hunt (S)!"
  },
  {
   "i": 830,
   "jp": "高熱化部位ハント【中】 ！",
-  "en": ""
+  "en": "Heated Part Hunt (M)!"
  },
  {
   "i": 831,
   "jp": "高熱化部位ハント【大】 ！",
-  "en": ""
+  "en": "Heated Part Hunt (L)!"
  },
  {
   "i": 832,
   "jp": "武技P蓄積量ダウン…",
-  "en": ""
+  "en": "Martial Art P Gain Down..."
  },
  {
   "i": 833,
   "jp": "呪・ずぶ濡れ…",
-  "en": ""
+  "en": "Curse: Waterblight..."
  },
  {
   "i": 834,
   "jp": "呪・感電…",
-  "en": ""
+  "en": "Curse: Thunderblight..."
  },
  {
   "i": 835,
   "jp": "呪・火傷…",
-  "en": ""
+  "en": "Curse: Fireblight..."
  },
  {
   "i": 836,
   "jp": "二連斬り移行術【小】 ！",
-  "en": ""
+  "en": "Double Slash Transition (S)!"
  },
  {
   "i": 837,
   "jp": "二連斬り移行術【中】 ！",
-  "en": ""
+  "en": "Double Slash Transition (M)!"
  },
  {
   "i": 838,
   "jp": "二連斬り移行術【大】 ！",
-  "en": ""
+  "en": "Double Slash Transition (L)!"
  },
  {
   "i": 839,
   "jp": "覇玉鎚の溜め術【小】 ！",
-  "en": ""
+  "en": "Supreme Orb Hammer Charge (S)!"
  },
  {
   "i": 840,
   "jp": "覇玉鎚の溜め術【中】 ！",
-  "en": ""
+  "en": "Supreme Orb Hammer Charge (M)!"
  },
  {
   "i": 841,
   "jp": "覇玉鎚の溜め術【大】 ！",
-  "en": ""
+  "en": "Supreme Orb Hammer Charge (L)!"
  },
  {
   "i": 842,
   "jp": "覇玉槍の溜め術【小】 ！",
-  "en": ""
+  "en": "Supreme Orb Lance Charge (S)!"
  },
  {
   "i": 843,
   "jp": "覇玉槍の溜め術【中】 ！",
-  "en": ""
+  "en": "Supreme Orb Lance Charge (M)!"
  },
  {
   "i": 844,
   "jp": "覇玉槍の溜め術【大】 ！",
-  "en": ""
+  "en": "Supreme Orb Lance Charge (L)!"
  },
  {
   "i": 845,
   "jp": "暑がり…",
-  "en": ""
+  "en": "Heat Sensitive..."
  },
  {
   "i": 846,
   "jp": "疾風剣斧【小】　!",
-  "en": ""
+  "en": "Gale Switch Axe (S)!"
  },
  {
   "i": 847,
   "jp": "疾風剣斧【中】　!",
-  "en": ""
+  "en": "Gale Switch Axe (M)!"
  },
  {
   "i": 848,
   "jp": "疾風剣斧【大】　!",
-  "en": ""
+  "en": "Gale Switch Axe (L)!"
  },
  {
   "i": 849,
   "jp": "飛術・気刃連斬【小】　!",
-  "en": ""
+  "en": "Flight Art: Spirit Combo (S)!"
  },
  {
   "i": 850,
   "jp": "飛術・気刃連斬【中】　!",
-  "en": ""
+  "en": "Flight Art: Spirit Combo (M)!"
  },
  {
   "i": 851,
   "jp": "飛術・気刃連斬【大】　!",
-  "en": ""
+  "en": "Flight Art: Spirit Combo (L)!"
  },
  {
   "i": 852,
   "jp": "残泉・極【小】　!",
-  "en": ""
+  "en": "Lingering Spring EX (S)!"
  },
  {
   "i": 853,
   "jp": "残泉・極【中】　!",
-  "en": ""
+  "en": "Lingering Spring EX (M)!"
  },
  {
   "i": 854,
   "jp": "残泉・極【大】　!",
-  "en": ""
+  "en": "Lingering Spring EX (L)!"
  },
  {
   "i": 855,
   "jp": "忍走術【小】　!",
-  "en": ""
+  "en": "Ninja Run (S)!"
  },
  {
   "i": 856,
   "jp": "忍走術【中】　!",
-  "en": ""
+  "en": "Ninja Run (M)!"
  },
  {
   "i": 857,
   "jp": "忍走術【大】　!",
-  "en": ""
+  "en": "Ninja Run (L)!"
  },
  {
   "i": 858,
   "jp": "温存急襲【小】　!",
-  "en": ""
+  "en": "Reserved Raid (S)!"
  },
  {
   "i": 859,
   "jp": "温存急襲【中】　!",
-  "en": ""
+  "en": "Reserved Raid (M)!"
  },
  {
   "i": 860,
   "jp": "温存急襲【大】　!",
-  "en": ""
+  "en": "Reserved Raid (L)!"
  },
  {
   "i": 861,
   "jp": "毒蝕【小】　!",
-  "en": ""
+  "en": "Poison Erosion (S)!"
  },
  {
   "i": 862,
   "jp": "毒蝕【中】　!",
-  "en": ""
+  "en": "Poison Erosion (M)!"
  },
  {
   "i": 863,
   "jp": "毒蝕【大】　!",
-  "en": ""
+  "en": "Poison Erosion (L)!"
  },
  {
   "i": 864,
   "jp": "残心・刃【気刃乱れ斬り】　!",
-  "en": ""
+  "en": "Zanshin: Blade [Spirit Roundslash]!"
  },
  {
   "i": 865,
   "jp": "残心・鞘【気刃乱れ斬り】　!",
-  "en": ""
+  "en": "Zanshin: Sheath [Spirit Roundslash]!"
  },
  {
   "i": 866,
   "jp": "残心・眼【気刃乱れ斬り】　!",
-  "en": ""
+  "en": "Zanshin: Eye [Spirit Roundslash]!"
  },
  {
   "i": 867,
   "jp": "極限集中　!",
-  "en": ""
+  "en": "Extreme Focus!"
  },
  {
   "i": 868,
   "jp": "残心・刃【いなし斬り】　!",
-  "en": ""
+  "en": "Zanshin: Blade [Parry Slash]!"
  },
  {
   "i": 869,
   "jp": "残心・鞘【いなし斬り】　!",
-  "en": ""
+  "en": "Zanshin: Sheath [Parry Slash]!"
  },
  {
   "i": 870,
   "jp": "残心・眼【いなし斬り】　!",
-  "en": ""
+  "en": "Zanshin: Eye [Parry Slash]!"
  },
  {
   "i": 871,
   "jp": "真・角砕き【小】　!",
-  "en": ""
+  "en": "True Horn Breaker (S)!"
  },
  {
   "i": 872,
   "jp": "真・角砕き【中】　!",
-  "en": ""
+  "en": "True Horn Breaker (M)!"
  },
  {
   "i": 873,
   "jp": "真・角砕き【大】　!",
-  "en": ""
+  "en": "True Horn Breaker (L)!"
  },
  {
   "i": 874,
   "jp": "真・百烈突き【小】　!",
-  "en": ""
+  "en": "True Hundred Thrust (S)!"
  },
  {
   "i": 875,
   "jp": "真・百烈突き【中】　!",
-  "en": ""
+  "en": "True Hundred Thrust (M)!"
  },
  {
   "i": 876,
   "jp": "真・百烈突き【大】　!",
-  "en": ""
+  "en": "True Hundred Thrust (L)!"
  },
  {
   "i": 877,
   "jp": "祝福ガード【小】　!",
-  "en": ""
+  "en": "Blessed Guard (S)!"
  },
  {
   "i": 878,
   "jp": "祝福ガード【中】　!",
-  "en": ""
+  "en": "Blessed Guard (M)!"
  },
  {
   "i": 879,
   "jp": "祝福ガード【大】　!",
-  "en": ""
+  "en": "Blessed Guard (L)!"
  },
  {
   "i": 880,
   "jp": "鉄壁ガード【小】　!",
-  "en": ""
+  "en": "Iron Wall Guard (S)!"
  },
  {
   "i": 881,
   "jp": "鉄壁ガード【中】　!",
-  "en": ""
+  "en": "Iron Wall Guard (M)!"
  },
  {
   "i": 882,
   "jp": "鉄壁ガード【大】　!",
-  "en": ""
+  "en": "Iron Wall Guard (L)!"
  },
  {
   "i": 883,
   "jp": "強ガード溜め術【小】　!",
-  "en": ""
+  "en": "Power Guard Charge (S)!"
  },
  {
   "i": 884,
   "jp": "強ガード溜め術【中】　!",
-  "en": ""
+  "en": "Power Guard Charge (M)!"
  },
  {
   "i": 885,
   "jp": "強ガード溜め術【大】　!",
-  "en": ""
+  "en": "Power Guard Charge (L)!"
  },
  {
   "i": 886,
   "jp": "迅速ガード【小】　!",
-  "en": ""
+  "en": "Swift Guard (S)!"
  },
  {
   "i": 887,
   "jp": "迅速ガード【中】　!",
-  "en": ""
+  "en": "Swift Guard (M)!"
  },
  {
   "i": 888,
   "jp": "迅速ガード【大】　!",
-  "en": ""
+  "en": "Swift Guard (L)!"
  },
  {
   "i": 889,
   "jp": "回避振り・巧【小】　!",
-  "en": ""
+  "en": "Skilled Evade Swing (S)!"
  },
  {
   "i": 890,
   "jp": "回避振り・巧【中】　!",
-  "en": ""
+  "en": "Skilled Evade Swing (M)!"
  },
  {
   "i": 891,
   "jp": "回避振り・巧【大】　!",
-  "en": ""
+  "en": "Skilled Evade Swing (L)!"
  },
  {
   "i": 892,
   "jp": "リロードショット・巧【小】　!",
-  "en": ""
+  "en": "Skilled Reload Shot (S)!"
  },
  {
   "i": 893,
   "jp": "リロードショット・巧【中】　!",
-  "en": ""
+  "en": "Skilled Reload Shot (M)!"
  },
  {
   "i": 894,
   "jp": "リロードショット・巧【大】　!",
-  "en": ""
+  "en": "Skilled Reload Shot (L)!"
  },
  {
   "i": 895,
   "jp": "真・ドライブショット【小】　!",
-  "en": ""
+  "en": "True Drive Shot (S)!"
  },
  {
   "i": 896,
   "jp": "真・ドライブショット【中】　!",
-  "en": ""
+  "en": "True Drive Shot (M)!"
  },
  {
   "i": 897,
   "jp": "真・ドライブショット【大】　!",
-  "en": ""
+  "en": "True Drive Shot (L)!"
  },
  {
   "i": 898,
   "jp": "攻撃スピードアップ ！",
-  "en": ""
+  "en": "Attack Speed Up!"
  },
  {
   "i": 899,
   "jp": "狙われやすさ大ダウン ！",
-  "en": ""
+  "en": "Aggro Greatly Down!"
  },
  {
   "i": 900,
   "jp": "百烈突き無敵 ！",
-  "en": ""
+  "en": "Hundred Thrust Invincibility!"
  },
  {
   "i": 901,
   "jp": "リロードショット無敵 ！",
-  "en": ""
+  "en": "Reload Shot Invincibility!"
  },
  {
   "i": 902,
   "jp": "会心溜め斬り【小】　!",
-  "en": ""
+  "en": "Critical Charged Slash (S)!"
  },
  {
   "i": 903,
   "jp": "会心溜め斬り【中】　!",
-  "en": ""
+  "en": "Critical Charged Slash (M)!"
  },
  {
   "i": 904,
   "jp": "会心溜め斬り【大】　!",
-  "en": ""
+  "en": "Critical Charged Slash (L)!"
  },
  {
   "i": 905,
   "jp": "破壊蓄積術【小】　!",
-  "en": ""
+  "en": "Break Buildup (S)!"
  },
  {
   "i": 906,
   "jp": "破壊蓄積術【中】　!",
-  "en": ""
+  "en": "Break Buildup (M)!"
  },
  {
   "i": 907,
   "jp": "破壊蓄積術【大】　!",
-  "en": ""
+  "en": "Break Buildup (L)!"
  },
  {
   "i": 908,
   "jp": "反撃体勢【小】　!",
-  "en": ""
+  "en": "Counter Stance (S)!"
  },
  {
   "i": 909,
   "jp": "反撃体勢【中】　!",
-  "en": ""
+  "en": "Counter Stance (M)!"
  },
  {
   "i": 910,
   "jp": "反撃体勢【大】　!",
-  "en": ""
+  "en": "Counter Stance (L)!"
  },
  {
   "i": 911,
   "jp": "護身術【小】　!",
-  "en": ""
+  "en": "Self-Defense (S)!"
  },
  {
   "i": 912,
   "jp": "護身術【中】　!",
-  "en": ""
+  "en": "Self-Defense (M)!"
  },
  {
   "i": 913,
   "jp": "護身術【大】　!",
-  "en": ""
+  "en": "Self-Defense (L)!"
  },
  {
   "i": 914,
   "jp": "二頭狩り【小】　!",
-  "en": ""
+  "en": "Double Hunt (S)!"
  },
  {
   "i": 915,
   "jp": "二頭狩り【中】　!",
-  "en": ""
+  "en": "Double Hunt (M)!"
  },
  {
   "i": 916,
   "jp": "二頭狩り【大】　!",
-  "en": ""
+  "en": "Double Hunt (L)!"
  },
  {
   "i": 917,
   "jp": "二頭備え【小】　!",
-  "en": ""
+  "en": "Double Hunt Prep (S)!"
  },
  {
   "i": 918,
   "jp": "二頭備え【中】　!",
-  "en": ""
+  "en": "Double Hunt Prep (M)!"
  },
  {
   "i": 919,
   "jp": "二頭備え【大】　!",
-  "en": ""
+  "en": "Double Hunt Prep (L)!"
  },
  {
   "i": 920,
   "jp": "会心猟虫【小】　!",
-  "en": ""
+  "en": "Critical Kinsect (S)!"
  },
  {
   "i": 921,
   "jp": "会心猟虫【中】　!",
-  "en": ""
+  "en": "Critical Kinsect (M)!"
  },
  {
   "i": 922,
   "jp": "会心猟虫【大】　!",
-  "en": ""
+  "en": "Critical Kinsect (L)!"
  },
  {
   "i": 923,
   "jp": "連動軽減・武【小】　!",
-  "en": ""
+  "en": "Linked Reduction: Martial (S)!"
  },
  {
   "i": 924,
   "jp": "連動軽減・武【中】　!",
-  "en": ""
+  "en": "Linked Reduction: Martial (M)!"
  },
  {
   "i": 925,
   "jp": "連動軽減・武【大】　!",
-  "en": ""
+  "en": "Linked Reduction: Martial (L)!"
  },
  {
   "i": 926,
   "jp": "連撃蓄積【小】　!",
-  "en": ""
+  "en": "Combo Buildup (S)!"
  },
  {
   "i": 927,
   "jp": "連撃蓄積【中】　!",
-  "en": ""
+  "en": "Combo Buildup (M)!"
  },
  {
   "i": 928,
   "jp": "連撃蓄積【大】　!",
-  "en": ""
+  "en": "Combo Buildup (L)!"
  },
  {
   "i": 929,
   "jp": "爆斧の達人【小】　!",
-  "en": ""
+  "en": "Blast Axe Master (S)!"
  },
  {
   "i": 930,
   "jp": "爆斧の達人【中】　!",
-  "en": ""
+  "en": "Blast Axe Master (M)!"
  },
  {
   "i": 931,
   "jp": "爆斧の達人【大】　!",
-  "en": ""
+  "en": "Blast Axe Master (L)!"
  },
  {
   "i": 932,
   "jp": "真・バースト斬り【小】　!",
-  "en": ""
+  "en": "True Burst Slash (S)!"
  },
  {
   "i": 933,
   "jp": "真・バースト斬り【中】　!",
-  "en": ""
+  "en": "True Burst Slash (M)!"
  },
  {
   "i": 934,
   "jp": "真・バースト斬り【大】　!",
-  "en": ""
+  "en": "True Burst Slash (L)!"
  },
  {
   "i": 935,
   "jp": "迅速ダッシュ【小】　!",
-  "en": ""
+  "en": "Swift Dash (S)!"
  },
  {
   "i": 936,
   "jp": "迅速ダッシュ【中】　!",
-  "en": ""
+  "en": "Swift Dash (M)!"
  },
  {
   "i": 937,
   "jp": "迅速ダッシュ【大】　!",
-  "en": ""
+  "en": "Swift Dash (L)!"
  },
  {
   "i": 938,
   "jp": "剛ダッシュ　!",
-  "en": ""
+  "en": "Mighty Dash!"
  },
  {
   "i": 939,
   "jp": "ブレイブエリアル　!",
-  "en": ""
+  "en": "Brave Aerial!"
  },
  {
   "i": 940,
   "jp": "バースト斬り・巧　!",
-  "en": ""
+  "en": "Skilled Burst Slash!"
  },
  {
   "i": 941,
   "jp": "滑り止め ！",
-  "en": ""
+  "en": "Anti-Slip!"
  },
  {
   "i": 942,
   "jp": "バースト斬り無敵 ！",
-  "en": ""
+  "en": "Burst Slash Invincibility!"
  },
  {
   "i": 943,
   "jp": "笛殴り【小】 ！",
-  "en": ""
+  "en": "Horn Bash (S)!"
  },
  {
   "i": 944,
   "jp": "笛殴り【中】 ！",
-  "en": ""
+  "en": "Horn Bash (M)!"
  },
  {
   "i": 945,
   "jp": "笛殴り【大】 ！",
-  "en": ""
+  "en": "Horn Bash (L)!"
  },
  {
   "i": 946,
   "jp": "重装備【小】 ！",
-  "en": ""
+  "en": "Heavy Armor (S)!"
  },
  {
   "i": 947,
   "jp": "重装備【中】 ！",
-  "en": ""
+  "en": "Heavy Armor (M)!"
  },
  {
   "i": 948,
   "jp": "重装備【大】 ！",
-  "en": ""
+  "en": "Heavy Armor (L)!"
  },
  {
   "i": 949,
   "jp": "復讐心【小】 ！",
-  "en": ""
+  "en": "Vengeance (S)!"
  },
  {
   "i": 950,
   "jp": "復讐心【中】 ！",
-  "en": ""
+  "en": "Vengeance (M)!"
  },
  {
   "i": 951,
   "jp": "復讐心【大】 ！",
-  "en": ""
+  "en": "Vengeance (L)!"
  },
  {
   "i": 952,
   "jp": "破傷毒【小】 ！",
-  "en": ""
+  "en": "Wound Poison (S)!"
  },
  {
   "i": 953,
   "jp": "破傷毒【中】 ！",
-  "en": ""
+  "en": "Wound Poison (M)!"
  },
  {
   "i": 954,
   "jp": "破傷毒【大】 ！",
-  "en": ""
+  "en": "Wound Poison (L)!"
  },
  {
   "i": 955,
   "jp": "怪童ノ溜め斬り【小】 ！",
-  "en": ""
+  "en": "Prodigy's Charged Slash (S)!"
  },
  {
   "i": 956,
   "jp": "怪童ノ溜め斬り【中】 ！",
-  "en": ""
+  "en": "Prodigy's Charged Slash (M)!"
  },
  {
   "i": 957,
   "jp": "怪童ノ溜め斬り【大】 ！",
-  "en": ""
+  "en": "Prodigy's Charged Slash (L)!"
  },
  {
   "i": 958,
   "jp": "鼓舞ガード【小】 ！",
-  "en": ""
+  "en": "Rallying Guard (S)!"
  },
  {
   "i": 959,
   "jp": "鼓舞ガード【中】 ！",
-  "en": ""
+  "en": "Rallying Guard (M)!"
  },
  {
   "i": 960,
   "jp": "鼓舞ガード【大】 ！",
-  "en": ""
+  "en": "Rallying Guard (L)!"
  },
  {
   "i": 961,
   "jp": "治癒ガード【小】 ！",
-  "en": ""
+  "en": "Healing Guard (S)!"
  },
  {
   "i": 962,
   "jp": "治癒ガード【中】 ！",
-  "en": ""
+  "en": "Healing Guard (M)!"
  },
  {
   "i": 963,
   "jp": "治癒ガード【大】 ！",
-  "en": ""
+  "en": "Healing Guard (L)!"
  },
  {
   "i": 964,
   "jp": "軽銃長射程 ！",
-  "en": ""
+  "en": "Light Bowgun Long Range!"
  },
  {
   "i": 965,
   "jp": "虫使いの舞い ！",
-  "en": ""
+  "en": "Insect Master's Dance!"
  },
  {
   "i": 966,
   "jp": "強・流し撃ち ！",
-  "en": ""
+  "en": "Power Flowing Shot!"
  },
  {
   "i": 967,
   "jp": "いなしの構え【小】 ！",
-  "en": ""
+  "en": "Parry Stance (S)!"
  },
  {
   "i": 968,
   "jp": "いなしの構え【中】 ！",
-  "en": ""
+  "en": "Parry Stance (M)!"
  },
  {
   "i": 969,
   "jp": "いなしの構え【大】 ！",
-  "en": ""
+  "en": "Parry Stance (L)!"
  },
  {
   "i": 970,
   "jp": "獅子の大剣使い【小】 ！",
-  "en": ""
+  "en": "Lion Great Sword User (S)!"
  },
  {
   "i": 971,
   "jp": "獅子の大剣使い【中】 ！",
-  "en": ""
+  "en": "Lion Great Sword User (M)!"
  },
  {
   "i": 972,
   "jp": "獅子の大剣使い【大】 ！",
-  "en": ""
+  "en": "Lion Great Sword User (L)!"
  },
  {
   "i": 973,
   "jp": "パートナーの被ダメージ減少 ！",
-  "en": ""
+  "en": "Partner Damage Taken Down!"
  },
  {
   "i": 974,
   "jp": "一定回数無敵 ！",
-  "en": ""
+  "en": "Limited Invincibility!"
  },
  {
   "i": 975,
   "jp": "武体共鳴　!",
-  "en": ""
+  "en": "Martial Body Resonance!"
  },
  {
   "i": 976,
   "jp": "不屈の魂【小】　!",
-  "en": ""
+  "en": "Indomitable Soul (S)!"
  },
  {
   "i": 977,
   "jp": "不屈の魂【中】　!",
-  "en": ""
+  "en": "Indomitable Soul (M)!"
  },
  {
   "i": 978,
   "jp": "不屈の魂【大】　!",
-  "en": ""
+  "en": "Indomitable Soul (L)!"
  },
  {
   "i": 979,
   "jp": "裏・武技師【小】　!",
-  "en": ""
+  "en": "Reverse Martial Artist (S)!"
  },
  {
   "i": 980,
   "jp": "裏・武技師【中】　!",
-  "en": ""
+  "en": "Reverse Martial Artist (M)!"
  },
  {
   "i": 981,
   "jp": "裏・武技師【大】　!",
-  "en": ""
+  "en": "Reverse Martial Artist (L)!"
  },
  {
   "i": 982,
   "jp": "転身防御【小】　!",
-  "en": ""
+  "en": "Turning Defense (S)!"
  },
  {
   "i": 983,
   "jp": "転身防御【中】　!",
-  "en": ""
+  "en": "Turning Defense (M)!"
  },
  {
   "i": 984,
   "jp": "転身防御【大】　!",
-  "en": ""
+  "en": "Turning Defense (L)!"
  },
  {
   "i": 985,
   "jp": "還元防御　!",
-  "en": ""
+  "en": "Restoring Defense!"
  },
  {
   "i": 986,
   "jp": "肉体硬化術【小】　!",
-  "en": ""
+  "en": "Body Hardening (S)!"
  },
  {
   "i": 987,
   "jp": "肉体硬化術【中】　!",
-  "en": ""
+  "en": "Body Hardening (M)!"
  },
  {
   "i": 988,
   "jp": "肉体硬化術【大】　!",
-  "en": ""
+  "en": "Body Hardening (L)!"
  },
  {
   "i": 989,
   "jp": "小タル爆弾の術【小】　!",
-  "en": ""
+  "en": "Mini Barrel Bomb Art (S)!"
  },
  {
   "i": 990,
   "jp": "小タル爆弾の術【中】　!",
-  "en": ""
+  "en": "Mini Barrel Bomb Art (M)!"
  },
  {
   "i": 991,
   "jp": "小タル爆弾の術【大】　!",
-  "en": ""
+  "en": "Mini Barrel Bomb Art (L)!"
  },
  {
   "i": 992,
   "jp": "迅速シールドラン【小】　!",
-  "en": ""
+  "en": "Swift Shield Run (S)!"
  },
  {
   "i": 993,
   "jp": "迅速シールドラン【中】　!",
-  "en": ""
+  "en": "Swift Shield Run (M)!"
  },
  {
   "i": 994,
   "jp": "迅速シールドラン【大】　!",
-  "en": ""
+  "en": "Swift Shield Run (L)!"
  },
  {
   "i": 995,
   "jp": "真鬼人回避・改【小】　!",
-  "en": ""
+  "en": "True Demon Evade+ (S)!"
  },
  {
   "i": 996,
   "jp": "真鬼人回避・改【中】　!",
-  "en": ""
+  "en": "True Demon Evade+ (M)!"
  },
  {
   "i": 997,
   "jp": "真鬼人回避・改【大】　!",
-  "en": ""
+  "en": "True Demon Evade+ (L)!"
  },
  {
   "i": 998,
   "jp": "真鬼人乱舞・改【小】　!",
-  "en": ""
+  "en": "True Demon Dance+ (S)!"
  },
  {
   "i": 999,
   "jp": "真鬼人乱舞・改【中】　!",
-  "en": ""
+  "en": "True Demon Dance+ (M)!"
  },
  {
   "i": 1000,
   "jp": "真鬼人乱舞・改【大】　!",
-  "en": ""
+  "en": "True Demon Dance+ (L)!"
  },
  {
   "i": 1001,
   "jp": "力泉砲【小】　!",
-  "en": ""
+  "en": "Power Spring Cannon (S)!"
  },
  {
   "i": 1002,
   "jp": "力泉砲【中】　!",
-  "en": ""
+  "en": "Power Spring Cannon (M)!"
  },
  {
   "i": 1003,
   "jp": "力泉砲【大】　!",
-  "en": ""
+  "en": "Power Spring Cannon (L)!"
  },
  {
   "i": 1004,
   "jp": "練気式回復術【小】　!",
-  "en": ""
+  "en": "Spirit Recovery Art (S)!"
  },
  {
   "i": 1005,
   "jp": "練気式回復術【中】　!",
-  "en": ""
+  "en": "Spirit Recovery Art (M)!"
  },
  {
   "i": 1006,
   "jp": "練気式回復術【大】　!",
-  "en": ""
+  "en": "Spirit Recovery Art (L)!"
  },
  {
   "i": 1007,
   "jp": "迅速突進【小】　!",
-  "en": ""
+  "en": "Swift Lunge (S)!"
  },
  {
   "i": 1008,
   "jp": "迅速突進【中】　!",
-  "en": ""
+  "en": "Swift Lunge (M)!"
  },
  {
   "i": 1009,
   "jp": "迅速突進【大】　!",
-  "en": ""
+  "en": "Swift Lunge (L)!"
  },
  {
   "i": 1010,
   "jp": "ヒールガーディアン・極【小】　!",
-  "en": ""
+  "en": "Heal Guardian EX (S)!"
  },
  {
   "i": 1011,
   "jp": "ヒールガーディアン・極【中】　!",
-  "en": ""
+  "en": "Heal Guardian EX (M)!"
  },
  {
   "i": 1012,
   "jp": "ヒールガーディアン・極【大】　!",
-  "en": ""
+  "en": "Heal Guardian EX (L)!"
  },
  {
   "i": 1013,
   "jp": "高級耳栓【超】　!",
-  "en": ""
+  "en": "Superior Earplugs (Super)!"
  },
  {
   "i": 1014,
   "jp": "麻痺無効 !",
-  "en": ""
+  "en": "Paralysis Negated!"
  },
  {
   "i": 1015,
   "jp": "適正距離延長 !",
-  "en": ""
+  "en": "Ideal Range Extended!"
  },
  {
   "i": 1016,
   "jp": "ゲージ蓄積量アップ !",
-  "en": ""
+  "en": "Gauge Gain Up!"
  },
  {
   "i": 1017,
   "jp": "起死大回生【小】 !",
-  "en": ""
+  "en": "Great Resurrection (S)!"
  },
  {
   "i": 1018,
   "jp": "起死大回生【中】 !",
-  "en": ""
+  "en": "Great Resurrection (M)!"
  },
  {
   "i": 1019,
   "jp": "起死大回生【大】 !",
-  "en": ""
+  "en": "Great Resurrection (L)!"
  },
  {
   "i": 1020,
   "jp": "破・武技師【小】 !",
-  "en": ""
+  "en": "Break Martial Artist (S)!"
  },
  {
   "i": 1021,
   "jp": "破・武技師【中】 !",
-  "en": ""
+  "en": "Break Martial Artist (M)!"
  },
  {
   "i": 1022,
   "jp": "破・武技師【大】 !",
-  "en": ""
+  "en": "Break Martial Artist (L)!"
  },
  {
   "i": 1023,
   "jp": "転身回復・武【小】 !",
-  "en": ""
+  "en": "Turning Recovery: Martial (S)!"
  },
  {
   "i": 1024,
   "jp": "転身回復・武【中】 !",
-  "en": ""
+  "en": "Turning Recovery: Martial (M)!"
  },
  {
   "i": 1025,
   "jp": "転身回復・武【大】 !",
-  "en": ""
+  "en": "Turning Recovery: Martial (L)!"
  },
  {
   "i": 1026,
   "jp": "我慢【小】 !",
-  "en": ""
+  "en": "Endurance (S)!"
  },
  {
   "i": 1027,
   "jp": "我慢【中】 !",
-  "en": ""
+  "en": "Endurance (M)!"
  },
  {
   "i": 1028,
   "jp": "我慢【大】 !",
-  "en": ""
+  "en": "Endurance (L)!"
  },
  {
   "i": 1029,
   "jp": "延命術【小】 !",
-  "en": ""
+  "en": "Life Extension (S)!"
  },
  {
   "i": 1030,
   "jp": "延命術【中】 !",
-  "en": ""
+  "en": "Life Extension (M)!"
  },
  {
   "i": 1031,
   "jp": "延命術【大】 !",
-  "en": ""
+  "en": "Life Extension (L)!"
  },
  {
   "i": 1032,
   "jp": "活力回避 !",
-  "en": ""
+  "en": "Vitality Evade!"
  },
  {
   "i": 1033,
   "jp": "アフターブレイカー【小】 !",
-  "en": ""
+  "en": "After-Breaker (S)!"
  },
  {
   "i": 1034,
   "jp": "アフターブレイカー【中】 !",
-  "en": ""
+  "en": "After-Breaker (M)!"
  },
  {
   "i": 1035,
   "jp": "アフターブレイカー【大】 !",
-  "en": ""
+  "en": "After-Breaker (L)!"
  },
  {
   "i": 1036,
   "jp": "大剣の達人・極",
-  "en": ""
+  "en": "Great Sword Master EX"
  },
  {
   "i": 1037,
   "jp": "練気維持 !",
-  "en": ""
+  "en": "Spirit Gauge Keeper!"
  },
  {
   "i": 1038,
   "jp": "アイテム活用回復・武【小】 !",
-  "en": ""
+  "en": "Item Use Recovery: Martial (S)!"
  },
  {
   "i": 1039,
   "jp": "アイテム活用回復・武【中】 !",
-  "en": ""
+  "en": "Item Use Recovery: Martial (M)!"
  },
  {
   "i": 1040,
   "jp": "アイテム活用回復・武【大】 !",
-  "en": ""
+  "en": "Item Use Recovery: Martial (L)!"
  },
  {
   "i": 1041,
   "jp": "アイテム活用回復  !",
-  "en": ""
+  "en": "Item Use Recovery!"
  },
  {
   "i": 1042,
   "jp": "覇玉片手剣の溜め術【小】 !",
-  "en": ""
+  "en": "Supreme Orb Sword & Shield Charge (S)!"
  },
  {
   "i": 1043,
   "jp": "覇玉片手剣の溜め術【中】 !",
-  "en": ""
+  "en": "Supreme Orb Sword & Shield Charge (M)!"
  },
  {
   "i": 1044,
   "jp": "覇玉片手剣の溜め術【大】 !",
-  "en": ""
+  "en": "Supreme Orb Sword & Shield Charge (L)!"
  },
  {
   "i": 1045,
   "jp": "鬼練弾高速化【小】 !",
-  "en": ""
+  "en": "Faster Demon Spirit Shot (S)!"
  },
  {
   "i": 1046,
   "jp": "鬼練弾高速化【中】 !",
-  "en": ""
+  "en": "Faster Demon Spirit Shot (M)!"
  },
  {
   "i": 1047,
   "jp": "鬼練弾高速化【大】 !",
-  "en": ""
+  "en": "Faster Demon Spirit Shot (L)!"
  },
  {
   "i": 1048,
   "jp": "アイアンチャージャー !",
-  "en": ""
+  "en": "Iron Charger!"
  },
  {
   "i": 1049,
   "jp": "余波装填 !",
-  "en": ""
+  "en": "Aftershock Reload!"
  },
  {
   "i": 1050,
   "jp": "超急冷【小】 !",
-  "en": ""
+  "en": "Super Quick Cooling (S)!"
  },
  {
   "i": 1051,
   "jp": "超急冷【中】 !",
-  "en": ""
+  "en": "Super Quick Cooling (M)!"
  },
  {
   "i": 1052,
   "jp": "超急冷 !",
-  "en": ""
+  "en": "Super Quick Cooling!"
  },
  {
   "i": 1053,
   "jp": "属性爆解放【小】 !",
-  "en": ""
+  "en": "Element Burst Release (S)!"
  },
  {
   "i": 1054,
   "jp": "属性爆解放【中】 !",
-  "en": ""
+  "en": "Element Burst Release (M)!"
  },
  {
   "i": 1055,
   "jp": "属性爆解放 !",
-  "en": ""
+  "en": "Element Burst Release!"
  },
  {
   "i": 1056,
   "jp": "剛ドライブ !",
-  "en": ""
+  "en": "Mighty Drive!"
  },
  {
   "i": 1057,
   "jp": "被撃回復・武【小】 !",
-  "en": ""
+  "en": "Hit Recovery: Martial (S)!"
  },
  {
   "i": 1058,
   "jp": "被撃回復・武【中】 !",
-  "en": ""
+  "en": "Hit Recovery: Martial (M)!"
  },
  {
   "i": 1059,
   "jp": "被撃回復・武【大】 !",
-  "en": ""
+  "en": "Hit Recovery: Martial (L)!"
  },
  {
   "i": 1060,
   "jp": "破壊節約術【小】 !",
-  "en": ""
+  "en": "Break Thrift (S)!"
  },
  {
   "i": 1061,
   "jp": "破壊節約術【中】 !",
-  "en": ""
+  "en": "Break Thrift (M)!"
  },
  {
   "i": 1062,
   "jp": "破壊節約術【大】 !",
-  "en": ""
+  "en": "Break Thrift (L)!"
  },
  {
   "i": 1063,
   "jp": "肉切骨断【小】 !",
-  "en": ""
+  "en": "Flesh for Bone (S)!"
  },
  {
   "i": 1064,
   "jp": "肉切骨断【中】 !",
-  "en": ""
+  "en": "Flesh for Bone (M)!"
  },
  {
   "i": 1065,
   "jp": "肉切骨断【大】 !",
-  "en": ""
+  "en": "Flesh for Bone (L)!"
  },
  {
   "i": 1066,
   "jp": "背水の陣【小】 !",
-  "en": ""
+  "en": "Last Bastion (S)!"
  },
  {
   "i": 1067,
   "jp": "背水の陣【中】 !",
-  "en": ""
+  "en": "Last Bastion (M)!"
  },
  {
   "i": 1068,
   "jp": "背水の陣【大】 !",
-  "en": ""
+  "en": "Last Bastion (L)!"
  },
  {
   "i": 1069,
   "jp": "破壊怪力術【小】 !",
-  "en": ""
+  "en": "Break Brute Force (S)!"
  },
  {
   "i": 1070,
   "jp": "破壊怪力術【中】 !",
-  "en": ""
+  "en": "Break Brute Force (M)!"
  },
  {
   "i": 1071,
   "jp": "破壊怪力術【大】 !",
-  "en": ""
+  "en": "Break Brute Force (L)!"
  },
  {
   "i": 1072,
   "jp": "毒会心【小】 !",
-  "en": ""
+  "en": "Poison Critical (S)!"
  },
  {
   "i": 1073,
   "jp": "毒会心【中】 !",
-  "en": ""
+  "en": "Poison Critical (M)!"
  },
  {
   "i": 1074,
   "jp": "毒会心【大】 !",
-  "en": ""
+  "en": "Poison Critical (L)!"
  },
  {
   "i": 1075,
   "jp": "攻勢会心術【小】 !",
-  "en": ""
+  "en": "Offensive Critical (S)!"
  },
  {
   "i": 1076,
   "jp": "攻勢会心術【中】 !",
-  "en": ""
+  "en": "Offensive Critical (M)!"
  },
  {
   "i": 1077,
   "jp": "攻勢会心術【大】 !",
-  "en": ""
+  "en": "Offensive Critical (L)!"
  },
  {
   "i": 1078,
   "jp": "連動強化・攻【小】 !",
-  "en": ""
+  "en": "Linked Boost: Attack (S)!"
  },
  {
   "i": 1079,
   "jp": "連動強化・攻【中】 !",
-  "en": ""
+  "en": "Linked Boost: Attack (M)!"
  },
  {
   "i": 1080,
   "jp": "連動強化・攻【大】 !",
-  "en": ""
+  "en": "Linked Boost: Attack (L)!"
  },
  {
   "i": 1081,
   "jp": "破壊忍耐術【小】 !",
-  "en": ""
+  "en": "Break Endurance (S)!"
  },
  {
   "i": 1082,
   "jp": "破壊忍耐術【中】 !",
-  "en": ""
+  "en": "Break Endurance (M)!"
  },
  {
   "i": 1083,
   "jp": "破壊忍耐術【大】 !",
-  "en": ""
+  "en": "Break Endurance (L)!"
  },
  {
   "i": 1084,
   "jp": "堅守回避 !",
-  "en": ""
+  "en": "Steadfast Evade!"
  },
  {
   "i": 1085,
   "jp": "免疫【小】 !",
-  "en": ""
+  "en": "Immunity (S)!"
  },
  {
   "i": 1086,
   "jp": "免疫【中】 !",
-  "en": ""
+  "en": "Immunity (M)!"
  },
  {
   "i": 1087,
   "jp": "免疫【大】 !",
-  "en": ""
+  "en": "Immunity (L)!"
  },
  {
   "i": 1088,
   "jp": "剛演奏 !",
-  "en": ""
+  "en": "Mighty Performance!"
  },
  {
   "i": 1089,
   "jp": "剛気刃連斬 !",
-  "en": ""
+  "en": "Mighty Spirit Combo!"
  },
  {
   "i": 1090,
   "jp": "真・徹甲榴弾【小】 !",
-  "en": ""
+  "en": "True Crag Shot (S)!"
  },
  {
   "i": 1091,
   "jp": "真・徹甲榴弾【中】 !",
-  "en": ""
+  "en": "True Crag Shot (M)!"
  },
  {
   "i": 1092,
   "jp": "真・徹甲榴弾【大】 !",
-  "en": ""
+  "en": "True Crag Shot (L)!"
  },
  {
   "i": 1093,
   "jp": "真・散弾【小】 !",
-  "en": ""
+  "en": "True Spread Shot (S)!"
  },
  {
   "i": 1094,
   "jp": "真・散弾【中】 !",
-  "en": ""
+  "en": "True Spread Shot (M)!"
  },
  {
   "i": 1095,
   "jp": "真・散弾【大】 !",
-  "en": ""
+  "en": "True Spread Shot (L)!"
  },
  {
   "i": 1096,
   "jp": "真・貫通弾【小】 !",
-  "en": ""
+  "en": "True Pierce Shot (S)!"
  },
  {
   "i": 1097,
   "jp": "真・貫通弾【中】 !",
-  "en": ""
+  "en": "True Pierce Shot (M)!"
  },
  {
   "i": 1098,
   "jp": "真・貫通弾【大】 !",
-  "en": ""
+  "en": "True Pierce Shot (L)!"
  },
  {
   "i": 1099,
   "jp": "盾斧変形追撃術【小】 !",
-  "en": ""
+  "en": "Charge Blade Morph Follow-up (S)!"
  },
  {
   "i": 1100,
   "jp": "盾斧変形追撃術【中】 !",
-  "en": ""
+  "en": "Charge Blade Morph Follow-up (M)!"
  },
  {
   "i": 1101,
   "jp": "盾斧変形追撃術【大】 !",
-  "en": ""
+  "en": "Charge Blade Morph Follow-up (L)!"
  },
  {
   "i": 1102,
   "jp": "剛竜撃砲 !",
-  "en": ""
+  "en": "Mighty Wyvernfire!"
  },
  {
   "i": 1103,
   "jp": "ガードバリア強化 ！",
-  "en": ""
+  "en": "Guard Barrier Boost!"
  },
  {
   "i": 1104,
   "jp": "破・自然回復【小】 !",
-  "en": ""
+  "en": "Break Natural Recovery (S)!"
  },
  {
   "i": 1105,
   "jp": "破・自然回復【中】 !",
-  "en": ""
+  "en": "Break Natural Recovery (M)!"
  },
  {
   "i": 1106,
   "jp": "破・自然回復【大】 !",
-  "en": ""
+  "en": "Break Natural Recovery (L)!"
  },
  {
   "i": 1107,
   "jp": "必死の捌【小】 !",
-  "en": ""
+  "en": "Desperate Parry (S)!"
  },
  {
   "i": 1108,
   "jp": "必死の捌【中】 !",
-  "en": ""
+  "en": "Desperate Parry (M)!"
  },
  {
   "i": 1109,
   "jp": "必死の捌【大】 !",
-  "en": ""
+  "en": "Desperate Parry (L)!"
  },
  {
   "i": 1110,
   "jp": "爆斧跳躍術【小】 !",
-  "en": ""
+  "en": "Blast Axe Jump (S)!"
  },
  {
   "i": 1111,
   "jp": "爆斧跳躍術【中】 !",
-  "en": ""
+  "en": "Blast Axe Jump (M)!"
  },
  {
   "i": 1112,
   "jp": "爆斧跳躍術【大】 !",
-  "en": ""
+  "en": "Blast Axe Jump (L)!"
  },
  {
   "i": 1113,
   "jp": "剛ジャンプ !",
-  "en": ""
+  "en": "Mighty Jump!"
  },
  {
   "i": 1114,
   "jp": "武技活力法【小】 !",
-  "en": ""
+  "en": "Martial Vitality (S)!"
  },
  {
   "i": 1115,
   "jp": "武技活力法【中】 !",
-  "en": ""
+  "en": "Martial Vitality (M)!"
  },
  {
   "i": 1116,
   "jp": "武技活力法【大】 !",
-  "en": ""
+  "en": "Martial Vitality (L)!"
  },
  {
   "i": 1117,
   "jp": "変換再生術【小】 !",
-  "en": ""
+  "en": "Conversion Regeneration (S)!"
  },
  {
   "i": 1118,
   "jp": "変換再生術【中】 !",
-  "en": ""
+  "en": "Conversion Regeneration (M)!"
  },
  {
   "i": 1119,
   "jp": "変換再生術【大】 !",
-  "en": ""
+  "en": "Conversion Regeneration (L)!"
  },
  {
   "i": 1120,
   "jp": "装填完璧主義【小】 !",
-  "en": ""
+  "en": "Reload Perfectionist (S)!"
  },
  {
   "i": 1121,
   "jp": "装填完璧主義【中】 !",
-  "en": ""
+  "en": "Reload Perfectionist (M)!"
  },
  {
   "i": 1122,
   "jp": "装填完璧主義【大】 !",
-  "en": ""
+  "en": "Reload Perfectionist (L)!"
  },
  {
   "i": 1123,
   "jp": "会心中毒【小】 !",
-  "en": ""
+  "en": "Critical Addiction (S)!"
  },
  {
   "i": 1124,
   "jp": "会心中毒【中】 !",
-  "en": ""
+  "en": "Critical Addiction (M)!"
  },
  {
   "i": 1125,
   "jp": "会心中毒【大】 !",
-  "en": ""
+  "en": "Critical Addiction (L)!"
  },
  {
   "i": 1126,
   "jp": "鼓膜振動健康法【小】 !",
-  "en": ""
+  "en": "Eardrum Health Method (S)!"
  },
  {
   "i": 1127,
   "jp": "鼓膜振動健康法【中】 !",
-  "en": ""
+  "en": "Eardrum Health Method (M)!"
  },
  {
   "i": 1128,
   "jp": "鼓膜振動健康法【大】 !",
-  "en": ""
+  "en": "Eardrum Health Method (L)!"
  },
  {
   "i": 1129,
   "jp": "被撃回復強化【小】 !",
-  "en": ""
+  "en": "Hit Recovery Up (S)!"
  },
  {
   "i": 1130,
   "jp": "被撃回復強化【中】 !",
-  "en": ""
+  "en": "Hit Recovery Up (M)!"
  },
  {
   "i": 1131,
   "jp": "被撃回復強化【大】 !",
-  "en": ""
+  "en": "Hit Recovery Up (L)!"
  },
  {
   "i": 1132,
   "jp": "冷却技術【小】 !",
-  "en": ""
+  "en": "Cooling Technique (S)!"
  },
  {
   "i": 1133,
   "jp": "冷却技術【中】 !",
-  "en": ""
+  "en": "Cooling Technique (M)!"
  },
  {
   "i": 1134,
   "jp": "冷却技術【大】 !",
-  "en": ""
+  "en": "Cooling Technique (L)!"
  },
  {
   "i": 1135,
   "jp": "射ち損じ強化【小】 !",
-  "en": ""
+  "en": "Missed Shot Boost (S)!"
  },
  {
   "i": 1136,
   "jp": "射ち損じ強化【中】 !",
-  "en": ""
+  "en": "Missed Shot Boost (M)!"
  },
  {
   "i": 1137,
   "jp": "射ち損じ強化【大】 !",
-  "en": ""
+  "en": "Missed Shot Boost (L)!"
  },
  {
   "i": 1138,
   "jp": "迅速連撃フィニッシュ !",
-  "en": ""
+  "en": "Swift Combo Finish!"
  },
  {
   "i": 1139,
   "jp": "迅速連撃フィニッシュ・極 !",
-  "en": ""
+  "en": "Swift Combo Finish EX!"
  },
  {
   "i": 1140,
   "jp": "盾斧変形ブースト【小】 !",
-  "en": ""
+  "en": "Charge Blade Morph Boost (S)!"
  },
  {
   "i": 1141,
   "jp": "盾斧変形ブースト【中】 !",
-  "en": ""
+  "en": "Charge Blade Morph Boost (M)!"
  },
  {
   "i": 1142,
   "jp": "盾斧変形ブースト【大】 !",
-  "en": ""
+  "en": "Charge Blade Morph Boost (L)!"
  },
  {
   "i": 1143,
   "jp": "剣斧変形ブースト【小】 !",
-  "en": ""
+  "en": "Switch Axe Morph Boost (S)!"
  },
  {
   "i": 1144,
   "jp": "剣斧変形ブースト【中】 !",
-  "en": ""
+  "en": "Switch Axe Morph Boost (M)!"
  },
  {
   "i": 1145,
   "jp": "剣斧変形ブースト【大】 !",
-  "en": ""
+  "en": "Switch Axe Morph Boost (L)!"
  },
  {
   "i": 1146,
   "jp": "アイテム身代わり術【小】 !",
-  "en": ""
+  "en": "Item Substitute (S)!"
  },
  {
   "i": 1147,
   "jp": "アイテム身代わり術【中】 !",
-  "en": ""
+  "en": "Item Substitute (M)!"
  },
  {
   "i": 1148,
   "jp": "アイテム身代わり術【大】 !",
-  "en": ""
+  "en": "Item Substitute (L)!"
  },
  {
   "i": 1149,
   "jp": "毒散布【小】 !",
-  "en": ""
+  "en": "Poison Spread (S)!"
  },
  {
   "i": 1150,
   "jp": "毒散布【中】 !",
-  "en": ""
+  "en": "Poison Spread (M)!"
  },
  {
   "i": 1151,
   "jp": "毒散布【大】 !",
-  "en": ""
+  "en": "Poison Spread (L)!"
  },
  {
   "i": 1152,
   "jp": "初勢術【小】 !",
-  "en": ""
+  "en": "Initial Momentum (S)!"
  },
  {
   "i": 1153,
   "jp": "初勢術【中】 !",
-  "en": ""
+  "en": "Initial Momentum (M)!"
  },
  {
   "i": 1154,
   "jp": "初勢術【大】 !",
-  "en": ""
+  "en": "Initial Momentum (L)!"
  },
  {
   "i": 1155,
   "jp": "毒特効 ！",
-  "en": ""
+  "en": "Poison Bonus!"
  },
  {
   "i": 1156,
   "jp": "体力玉変化 ！",
-  "en": ""
+  "en": "Health Orb Changed!"
  },
  {
   "i": 1157,
   "jp": "猟虫追撃 ！",
-  "en": ""
+  "en": "Kinsect Follow-up!"
  },
  {
   "i": 1158,
   "jp": "空中攻撃高速化【小】 !",
-  "en": ""
+  "en": "Faster Aerial Attacks (S)!"
  },
  {
   "i": 1159,
   "jp": "空中攻撃高速化【中】 !",
-  "en": ""
+  "en": "Faster Aerial Attacks (M)!"
  },
  {
   "i": 1160,
   "jp": "空中攻撃高速化【大】 !",
-  "en": ""
+  "en": "Faster Aerial Attacks (L)!"
  },
  {
   "i": 1161,
   "jp": "猟虫追撃強化【小】 !",
-  "en": ""
+  "en": "Kinsect Follow-up Boost (S)!"
  },
  {
   "i": 1162,
   "jp": "猟虫追撃強化【中】 !",
-  "en": ""
+  "en": "Kinsect Follow-up Boost (M)!"
  },
  {
   "i": 1163,
   "jp": "猟虫追撃強化【大】 !",
-  "en": ""
+  "en": "Kinsect Follow-up Boost (L)!"
  },
  {
   "i": 1164,
   "jp": "覇玉重弩の溜め術【小】 !",
-  "en": ""
+  "en": "Supreme Orb Heavy Bowgun Charge (S)!"
  },
  {
   "i": 1165,
   "jp": "覇玉重弩の溜め術【中】 !",
-  "en": ""
+  "en": "Supreme Orb Heavy Bowgun Charge (M)!"
  },
  {
   "i": 1166,
   "jp": "覇玉重弩の溜め術【大】 !",
-  "en": ""
+  "en": "Supreme Orb Heavy Bowgun Charge (L)!"
  },
  {
   "i": 1167,
   "jp": "覇玉重弩の節約術【小】 !",
-  "en": ""
+  "en": "Supreme Orb Heavy Bowgun Thrift (S)!"
  },
  {
   "i": 1168,
   "jp": "覇玉重弩の節約術【中】 !",
-  "en": ""
+  "en": "Supreme Orb Heavy Bowgun Thrift (M)!"
  },
  {
   "i": 1169,
   "jp": "覇玉重弩の節約術【大】 !",
-  "en": ""
+  "en": "Supreme Orb Heavy Bowgun Thrift (L)!"
  },
  {
   "i": 1170,
   "jp": "溜め撃ち離脱距離【小】 !",
-  "en": ""
+  "en": "Charged Shot Evade Distance (S)!"
  },
  {
   "i": 1171,
   "jp": "溜め撃ち離脱距離【中】 !",
-  "en": ""
+  "en": "Charged Shot Evade Distance (M)!"
  },
  {
   "i": 1172,
   "jp": "溜め撃ち離脱距離【大】 !",
-  "en": ""
+  "en": "Charged Shot Evade Distance (L)!"
  },
  {
   "i": 1173,
   "jp": "ポイズンカウンター【小】 !",
-  "en": ""
+  "en": "Poison Counter (S)!"
  },
  {
   "i": 1174,
   "jp": "ポイズンカウンター【中】 !",
-  "en": ""
+  "en": "Poison Counter (M)!"
  },
  {
   "i": 1175,
   "jp": "ポイズンカウンター【大】 !",
-  "en": ""
+  "en": "Poison Counter (L)!"
  },
  {
   "i": 1176,
   "jp": "破壊追撃【小】 !",
-  "en": ""
+  "en": "Break Follow-up (S)!"
  },
  {
   "i": 1177,
   "jp": "破壊追撃【中】 !",
-  "en": ""
+  "en": "Break Follow-up (M)!"
  },
  {
   "i": 1178,
   "jp": "破壊追撃【大】 !",
-  "en": ""
+  "en": "Break Follow-up (L)!"
  },
  {
   "i": 1179,
   "jp": "演奏延長術【小】 !",
-  "en": ""
+  "en": "Performance Extension (S)!"
  },
  {
   "i": 1180,
   "jp": "演奏延長術【中】 !",
-  "en": ""
+  "en": "Performance Extension (M)!"
  },
  {
   "i": 1181,
   "jp": "演奏延長術【大】 !",
-  "en": ""
+  "en": "Performance Extension (L)!"
  },
  {
   "i": 1182,
   "jp": "体力転化発動【小】 !",
-  "en": ""
+  "en": "Health Conversion (S)!"
  },
  {
   "i": 1183,
   "jp": "体力転化発動【中】 !",
-  "en": ""
+  "en": "Health Conversion (M)!"
  },
  {
   "i": 1184,
   "jp": "体力転化発動【大】 !",
-  "en": ""
+  "en": "Health Conversion (L)!"
  },
  {
   "i": 1185,
   "jp": "悲しみの力【小】 !",
-  "en": ""
+  "en": "Power of Sorrow (S)!"
  },
  {
   "i": 1186,
   "jp": "悲しみの力【中】 !",
-  "en": ""
+  "en": "Power of Sorrow (M)!"
  },
  {
   "i": 1187,
   "jp": "悲しみの力【大】 !",
-  "en": ""
+  "en": "Power of Sorrow (L)!"
  },
  {
   "i": 1188,
   "jp": "ガード回復・武【小】 !",
-  "en": ""
+  "en": "Guard Recovery: Martial (S)!"
  },
  {
   "i": 1189,
   "jp": "ガード回復・武【中】 !",
-  "en": ""
+  "en": "Guard Recovery: Martial (M)!"
  },
  {
   "i": 1190,
   "jp": "ガード回復・武【大】 !",
-  "en": ""
+  "en": "Guard Recovery: Martial (L)!"
  },
  {
   "i": 1191,
   "jp": "会心減少術【小】 !",
-  "en": ""
+  "en": "Critical Reduction (S)!"
  },
  {
   "i": 1192,
   "jp": "会心減少術【中】 !",
-  "en": ""
+  "en": "Critical Reduction (M)!"
  },
  {
   "i": 1193,
   "jp": "会心減少術【大】 !",
-  "en": ""
+  "en": "Critical Reduction (L)!"
  },
  {
   "i": 1194,
   "jp": "シールドメテオ強化【小】 !",
-  "en": ""
+  "en": "Shield Meteor Boost (S)!"
  },
  {
   "i": 1195,
   "jp": "シールドメテオ強化【中】 !",
-  "en": ""
+  "en": "Shield Meteor Boost (M)!"
  },
  {
   "i": 1196,
   "jp": "シールドメテオ強化【大】 !",
-  "en": ""
+  "en": "Shield Meteor Boost (L)!"
  },
  {
   "i": 1197,
   "jp": "アフタークリティカル【小】 !",
-  "en": ""
+  "en": "After-Critical (S)!"
  },
  {
   "i": 1198,
   "jp": "アフタークリティカル【中】 !",
-  "en": ""
+  "en": "After-Critical (M)!"
  },
  {
   "i": 1199,
   "jp": "アフタークリティカル【大】 !",
-  "en": ""
+  "en": "After-Critical (L)!"
  },
  {
   "i": 1200,
   "jp": "ガード狂【小】 !",
-  "en": ""
+  "en": "Guard Maniac (S)!"
  },
  {
   "i": 1201,
   "jp": "ガード狂【中】 !",
-  "en": ""
+  "en": "Guard Maniac (M)!"
  },
  {
   "i": 1202,
   "jp": "ガード狂【大】 !",
-  "en": ""
+  "en": "Guard Maniac (L)!"
  },
  {
   "i": 1203,
   "jp": "削命演奏【小】 !",
-  "en": ""
+  "en": "Life-Cutting Performance (S)!"
  },
  {
   "i": 1204,
   "jp": "削命演奏【中】 !",
-  "en": ""
+  "en": "Life-Cutting Performance (M)!"
  },
  {
   "i": 1205,
   "jp": "削命演奏【大】 !",
-  "en": ""
+  "en": "Life-Cutting Performance (L)!"
  },
  {
   "i": 1206,
   "jp": "オーバーチャージ【小】 !",
-  "en": ""
+  "en": "Overcharge (S)!"
  },
  {
   "i": 1207,
   "jp": "オーバーチャージ【中】 !",
-  "en": ""
+  "en": "Overcharge (M)!"
  },
  {
   "i": 1208,
   "jp": "オーバーチャージ【大】 !",
-  "en": ""
+  "en": "Overcharge (L)!"
  },
  {
   "i": 1209,
   "jp": "炎まといダメージ減少 !",
-  "en": ""
+  "en": "Flame Coat Damage Reduced!"
  },
  {
   "i": 1210,
   "jp": "炎まとい貫通 !",
-  "en": ""
+  "en": "Flame Coat Pierce!"
  },
  {
   "i": 1211,
   "jp": "全体効果生成状態 ！",
-  "en": ""
+  "en": "Group Effect Active!"
  },
  {
   "i": 1212,
   "jp": "フルバースト減少術【小】　!",
-  "en": ""
+  "en": "Full Burst Reduction (S)!"
  },
  {
   "i": 1213,
   "jp": "フルバースト減少術【中】　!",
-  "en": ""
+  "en": "Full Burst Reduction (M)!"
  },
  {
   "i": 1214,
   "jp": "フルバースト減少術【大】　!",
-  "en": ""
+  "en": "Full Burst Reduction (L)!"
  },
  {
   "i": 1215,
   "jp": "特殊追加効果 !",
-  "en": ""
+  "en": "Special Extra Effect!"
  },
  {
   "i": 1216,
   "jp": "被ダメージアップ耐性アップ　!",
-  "en": ""
+  "en": "Damage Taken Up Res Up!"
  },
  {
   "i": 1217,
   "jp": "追奏敏捷術【小】　!",
-  "en": ""
+  "en": "Encore Agility (S)!"
  },
  {
   "i": 1218,
   "jp": "追奏敏捷術【中】　!",
-  "en": ""
+  "en": "Encore Agility (M)!"
  },
  {
   "i": 1219,
   "jp": "追奏敏捷術【大】　!",
-  "en": ""
+  "en": "Encore Agility (L)!"
  },
  {
   "i": 1220,
   "jp": "響音波強化【小】　!",
-  "en": ""
+  "en": "Echo Wave Boost (S)!"
  },
  {
   "i": 1221,
   "jp": "響音波強化【中】　!",
-  "en": ""
+  "en": "Echo Wave Boost (M)!"
  },
  {
   "i": 1222,
   "jp": "響音波強化【大】　!",
-  "en": ""
+  "en": "Echo Wave Boost (L)!"
  },
  {
   "i": 1223,
   "jp": "響音強化・攻【小】　!",
-  "en": ""
+  "en": "Echo Boost: Attack (S)!"
  },
  {
   "i": 1224,
   "jp": "響音強化・攻【中】　!",
-  "en": ""
+  "en": "Echo Boost: Attack (M)!"
  },
  {
   "i": 1225,
   "jp": "響音強化・攻【大】　!",
-  "en": ""
+  "en": "Echo Boost: Attack (L)!"
  },
  {
   "i": 1226,
   "jp": "響音強化・癒【小】　!",
-  "en": ""
+  "en": "Echo Boost: Healing (S)!"
  },
  {
   "i": 1227,
   "jp": "響音強化・癒【中】　!",
-  "en": ""
+  "en": "Echo Boost: Healing (M)!"
  },
  {
   "i": 1228,
   "jp": "響音強化・癒【大】　!",
-  "en": ""
+  "en": "Echo Boost: Healing (L)!"
  },
  {
   "i": 1229,
   "jp": "剛追奏　!",
-  "en": ""
+  "en": "Mighty Encore!"
  },
  {
   "i": 1230,
   "jp": "砲撃離脱の達人【小】　!",
-  "en": ""
+  "en": "Shelling Retreat Master (S)!"
  },
  {
   "i": 1231,
   "jp": "砲撃離脱の達人【中】　!",
-  "en": ""
+  "en": "Shelling Retreat Master (M)!"
  },
  {
   "i": 1232,
   "jp": "砲撃離脱の達人【大】　!",
-  "en": ""
+  "en": "Shelling Retreat Master (L)!"
  },
  {
   "i": 1233,
   "jp": "操虫スタミナ回復術【小】　!",
-  "en": ""
+  "en": "Kinsect Stamina Recovery (S)!"
  },
  {
   "i": 1234,
   "jp": "操虫スタミナ回復術【中】　!",
-  "en": ""
+  "en": "Kinsect Stamina Recovery (M)!"
  },
  {
   "i": 1235,
   "jp": "操虫スタミナ回復術【大】　!",
-  "en": ""
+  "en": "Kinsect Stamina Recovery (L)!"
  },
  {
   "i": 1236,
   "jp": "響音効果【ダメージ軽減】 ！",
-  "en": ""
+  "en": "Echo Effect [Damage Reduced]!"
  },
  {
   "i": 1237,
   "jp": "響音効果【武技P回復】 ！",
-  "en": ""
+  "en": "Echo Effect [Martial Art P]!"
  },
  {
   "i": 1238,
   "jp": "響音効果【体力回復】 ！",
-  "en": ""
+  "en": "Echo Effect [Healing]!"
  },
  {
   "i": 1239,
   "jp": "響音効果【ダメージアップ】 ！",
-  "en": ""
+  "en": "Echo Effect [Damage Up]!"
  },
  {
   "i": 1240,
   "jp": "拡散剛射強化【小】　!",
-  "en": ""
+  "en": "Spread Power Shot Boost (S)!"
  },
  {
   "i": 1241,
   "jp": "拡散剛射強化【中】　!",
-  "en": ""
+  "en": "Spread Power Shot Boost (M)!"
  },
  {
   "i": 1242,
   "jp": "拡散剛射強化【大】　!",
-  "en": ""
+  "en": "Spread Power Shot Boost (L)!"
  },
  {
   "i": 1243,
   "jp": "飛剛射強化【小】　!",
-  "en": ""
+  "en": "Flying Power Shot Boost (S)!"
  },
  {
   "i": 1244,
   "jp": "飛剛射強化【中】　!",
-  "en": ""
+  "en": "Flying Power Shot Boost (M)!"
  },
  {
   "i": 1245,
   "jp": "飛剛射強化【大】　!",
-  "en": ""
+  "en": "Flying Power Shot Boost (L)!"
  },
  {
   "i": 1246,
   "jp": "天射強化【小】　!",
-  "en": ""
+  "en": "Heaven Shot Boost (S)!"
  },
  {
   "i": 1247,
   "jp": "天射強化【中】　!",
-  "en": ""
+  "en": "Heaven Shot Boost (M)!"
  },
  {
   "i": 1248,
   "jp": "天射強化【大】　!",
-  "en": ""
+  "en": "Heaven Shot Boost (L)!"
  },
  {
   "i": 1249,
   "jp": "覇玉弓の溜め術【小】　!",
-  "en": ""
+  "en": "Supreme Orb Bow Charge (S)!"
  },
  {
   "i": 1250,
   "jp": "覇玉弓の溜め術【中】　!",
-  "en": ""
+  "en": "Supreme Orb Bow Charge (M)!"
  },
  {
   "i": 1251,
   "jp": "覇玉弓の溜め術【大】　!",
-  "en": ""
+  "en": "Supreme Orb Bow Charge (L)!"
  },
  {
   "i": 1252,
   "jp": "覇玉弓の達人【小】　!",
-  "en": ""
+  "en": "Supreme Orb Bow Master (S)!"
  },
  {
   "i": 1253,
   "jp": "覇玉弓の達人【中】　!",
-  "en": ""
+  "en": "Supreme Orb Bow Master (M)!"
  },
  {
   "i": 1254,
   "jp": "覇玉弓の達人【大】　!",
-  "en": ""
+  "en": "Supreme Orb Bow Master (L)!"
  },
  {
   "i": 1255,
   "jp": "迅速剛射【小】　!",
-  "en": ""
+  "en": "Swift Power Shot (S)!"
  },
  {
   "i": 1256,
   "jp": "迅速剛射【中】　!",
-  "en": ""
+  "en": "Swift Power Shot (M)!"
  },
  {
   "i": 1257,
   "jp": "迅速剛射【大】　!",
-  "en": ""
+  "en": "Swift Power Shot (L)!"
  },
  {
   "i": 1258,
   "jp": "猟虫スタミナ回復 ！",
-  "en": ""
+  "en": "Kinsect Stamina Recovered!"
  },
  {
   "i": 1259,
   "jp": "流射無制限 ！",
-  "en": ""
+  "en": "Unlimited Flowing Shot!"
  },
  {
   "i": 1260,
   "jp": "剛射無制限 ！",
-  "en": ""
+  "en": "Unlimited Power Shot!"
  },
  {
   "i": 1261,
   "jp": "運アップ ！",
-  "en": ""
+  "en": "Luck Up!"
  },
  {
   "i": 1262,
   "jp": "オートプレイ守備術【小】　!",
-  "en": ""
+  "en": "Auto-Play Defense (S)!"
  },
  {
   "i": 1263,
   "jp": "オートプレイ守備術【中】　!",
-  "en": ""
+  "en": "Auto-Play Defense (M)!"
  },
  {
   "i": 1264,
   "jp": "オートプレイ守備術【大】　!",
-  "en": ""
+  "en": "Auto-Play Defense (L)!"
  },
  {
   "i": 1265,
   "jp": "瀕死再生術【小】　!",
-  "en": ""
+  "en": "Near-Death Regeneration (S)!"
  },
  {
   "i": 1266,
   "jp": "瀕死再生術【中】　!",
-  "en": ""
+  "en": "Near-Death Regeneration (M)!"
  },
  {
   "i": 1267,
   "jp": "瀕死再生術【大】　!",
-  "en": ""
+  "en": "Near-Death Regeneration (L)!"
  },
  {
   "i": 1268,
   "jp": "蘇生術【小】　!",
-  "en": ""
+  "en": "Resuscitation (S)!"
  },
  {
   "i": 1269,
   "jp": "蘇生術【中】　!",
-  "en": ""
+  "en": "Resuscitation (M)!"
  },
  {
   "i": 1270,
   "jp": "蘇生術【大】　!",
-  "en": ""
+  "en": "Resuscitation (L)!"
  },
  {
   "i": 1271,
   "jp": "武技P節約術【小】　!",
-  "en": ""
+  "en": "Martial Art P Thrift (S)!"
  },
  {
   "i": 1272,
   "jp": "武技P節約術【中】　!",
-  "en": ""
+  "en": "Martial Art P Thrift (M)!"
  },
  {
   "i": 1273,
   "jp": "武技P節約術【大】　!",
-  "en": ""
+  "en": "Martial Art P Thrift (L)!"
  },
  {
   "i": 1274,
   "jp": "火事場の武技力【小】　!",
-  "en": ""
+  "en": "Crisis Martial Power (S)!"
  },
  {
   "i": 1275,
   "jp": "火事場の武技力【中】　!",
-  "en": ""
+  "en": "Crisis Martial Power (M)!"
  },
  {
   "i": 1276,
   "jp": "火事場の武技力【大】　!",
-  "en": ""
+  "en": "Crisis Martial Power (L)!"
  },
  {
   "i": 1277,
   "jp": "集中治療術【小】　!",
-  "en": ""
+  "en": "Intensive Care (S)!"
  },
  {
   "i": 1278,
   "jp": "集中治療術【中】　!",
-  "en": ""
+  "en": "Intensive Care (M)!"
  },
  {
   "i": 1279,
   "jp": "集中治療術【大】　!",
-  "en": ""
+  "en": "Intensive Care (L)!"
  },
  {
   "i": 1280,
   "jp": "高耳【超】(太刀・重弩)　!",
-  "en": ""
+  "en": "Superior Earplugs (Super) (Long Sword/Heavy Bowgun)!"
  },
  {
   "i": 1281,
   "jp": "特定クエスト与ダメージアップ　!",
-  "en": ""
+  "en": "Special Quest Damage Up!"
  },
  {
   "i": 1282,
   "jp": "捨て身の攻撃　!",
-  "en": ""
+  "en": "Reckless Attack!"
  },
  {
   "i": 1283,
   "jp": "覇玉爆斧の溜め術【小】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Charge (S)!"
  },
  {
   "i": 1284,
   "jp": "覇玉爆斧の溜め術【中】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Charge (M)!"
  },
  {
   "i": 1285,
   "jp": "覇玉爆斧の溜め術【大】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Charge (L)!"
  },
  {
   "i": 1286,
   "jp": "覇玉爆斧の達人【小】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Master (S)!"
  },
  {
   "i": 1287,
   "jp": "覇玉爆斧の達人【中】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Master (M)!"
  },
  {
   "i": 1288,
   "jp": "覇玉爆斧の達人【大】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Master (L)!"
  },
  {
   "i": 1289,
   "jp": "覇玉爆斧馴らし【小】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Taming (S)!"
  },
  {
   "i": 1290,
   "jp": "覇玉爆斧馴らし【中】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Taming (M)!"
  },
  {
   "i": 1291,
   "jp": "覇玉爆斧馴らし【大】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Taming (L)!"
  },
  {
   "i": 1292,
   "jp": "空中ダッシュ斬りの極意 !",
-  "en": ""
+  "en": "Aerial Dash Slash Secret!"
  },
  {
   "i": 1293,
   "jp": "古の石碑パワー【HR360】 !",
-  "en": ""
+  "en": "Ancient Stone Power [HR360]!"
  },
  {
   "i": 1294,
   "jp": "練丹術【小】 !",
-  "en": ""
+  "en": "Elixir Art (S)!"
  },
  {
   "i": 1295,
   "jp": "練丹術【中】 !",
-  "en": ""
+  "en": "Elixir Art (M)!"
  },
  {
   "i": 1296,
   "jp": "練丹術【大】 !",
-  "en": ""
+  "en": "Elixir Art (L)!"
  },
  {
   "i": 1297,
   "jp": "蘇生回復・武【小】 !",
-  "en": ""
+  "en": "Revival Recovery: Martial (S)!"
  },
  {
   "i": 1298,
   "jp": "蘇生回復・武【中】 !",
-  "en": ""
+  "en": "Revival Recovery: Martial (M)!"
  },
  {
   "i": 1299,
   "jp": "蘇生回復・武【大】 !",
-  "en": ""
+  "en": "Revival Recovery: Martial (L)!"
  },
  {
   "i": 1300,
   "jp": "蘇生身かわし術【小】 !",
-  "en": ""
+  "en": "Revival Dodge (S)!"
  },
  {
   "i": 1301,
   "jp": "蘇生身かわし術【中】 !",
-  "en": ""
+  "en": "Revival Dodge (M)!"
  },
  {
   "i": 1302,
   "jp": "蘇生身かわし術【大】 !",
-  "en": ""
+  "en": "Revival Dodge (L)!"
  },
  {
   "i": 1303,
   "jp": "スパルタ指導【小】 !",
-  "en": ""
+  "en": "Spartan Training (S)!"
  },
  {
   "i": 1304,
   "jp": "スパルタ指導【中】 !",
-  "en": ""
+  "en": "Spartan Training (M)!"
  },
  {
   "i": 1305,
   "jp": "スパルタ指導【大】 !",
-  "en": ""
+  "en": "Spartan Training (L)!"
  },
  {
   "i": 1306,
   "jp": "献身的サポート【小】 !",
-  "en": ""
+  "en": "Devoted Support (S)!"
  },
  {
   "i": 1307,
   "jp": "献身的サポート【中】 !",
-  "en": ""
+  "en": "Devoted Support (M)!"
  },
  {
   "i": 1308,
   "jp": "献身的サポート【大】 !",
-  "en": ""
+  "en": "Devoted Support (L)!"
  },
  {
   "i": 1309,
   "jp": "攻勢鉄壁術【小】 !",
-  "en": ""
+  "en": "Offensive Iron Wall (S)!"
  },
  {
   "i": 1310,
   "jp": "攻勢鉄壁術【中】 !",
-  "en": ""
+  "en": "Offensive Iron Wall (M)!"
  },
  {
   "i": 1311,
   "jp": "攻勢鉄壁術【大】 !",
-  "en": ""
+  "en": "Offensive Iron Wall (L)!"
  },
  {
   "i": 1312,
   "jp": "高耳【超】(笛・弓)　!",
-  "en": ""
+  "en": "Superior Earplugs (Super) (Horn/Bow)!"
  },
  {
   "i": 1313,
   "jp": "スピニングバースト斬り無制限 ！",
-  "en": ""
+  "en": "Unlimited Spinning Burst Slash!"
  },
  {
   "i": 1314,
   "jp": "雪だるま無効 ！",
-  "en": ""
+  "en": "Snowman Negated!"
  },
  {
   "i": 1315,
   "jp": "泥まみれ無効 ！",
-  "en": ""
+  "en": "Mud Negated!"
  },
  {
   "i": 1316,
   "jp": "裂傷無効 ！",
-  "en": ""
+  "en": "Bleeding Negated!"
  },
  {
   "i": 1317,
   "jp": "被ダメージアップ無効 ！",
-  "en": ""
+  "en": "Damage Taken Up Negated!"
  },
  {
   "i": 1318,
   "jp": "爆破やられ無効 ！",
-  "en": ""
+  "en": "Blastblight Negated!"
  },
  {
   "i": 1319,
   "jp": "重弩改良【小】　!",
-  "en": ""
+  "en": "Heavy Bowgun Upgrade (S)!"
  },
  {
   "i": 1320,
   "jp": "重弩改良【中】　!",
-  "en": ""
+  "en": "Heavy Bowgun Upgrade (M)!"
  },
  {
   "i": 1321,
   "jp": "重弩改良【大】　!",
-  "en": ""
+  "en": "Heavy Bowgun Upgrade (L)!"
  },
  {
   "i": 1322,
   "jp": "覇玉狩猟笛の溜め術【小】　!",
-  "en": ""
+  "en": "Supreme Orb Hunting Horn Charge (S)!"
  },
  {
   "i": 1323,
   "jp": "覇玉狩猟笛の溜め術【中】　!",
-  "en": ""
+  "en": "Supreme Orb Hunting Horn Charge (M)!"
  },
  {
   "i": 1324,
   "jp": "覇玉狩猟笛の溜め術【大】　!",
-  "en": ""
+  "en": "Supreme Orb Hunting Horn Charge (L)!"
  },
  {
   "i": 1325,
   "jp": "竜薙砲制御術　!",
-  "en": ""
+  "en": "Wyvernsnipe Control!"
  },
  {
   "i": 1326,
   "jp": "フルバースト節約術　!",
-  "en": ""
+  "en": "Full Burst Thrift!"
  },
  {
   "i": 1327,
   "jp": "千手突き【小】　!",
-  "en": ""
+  "en": "Thousand Thrusts (S)!"
  },
  {
   "i": 1328,
   "jp": "千手突き【中】　!",
-  "en": ""
+  "en": "Thousand Thrusts (M)!"
  },
  {
   "i": 1329,
   "jp": "千手突き【大】　!",
-  "en": ""
+  "en": "Thousand Thrusts (L)!"
  },
  {
   "i": 1330,
   "jp": "剣斧変形追撃術【小】　!",
-  "en": ""
+  "en": "Switch Axe Morph Follow-up (S)!"
  },
  {
   "i": 1331,
   "jp": "剣斧変形追撃術【中】　!",
-  "en": ""
+  "en": "Switch Axe Morph Follow-up (M)!"
  },
  {
   "i": 1332,
   "jp": "剣斧変形追撃術【大】　!",
-  "en": ""
+  "en": "Switch Axe Morph Follow-up (L)!"
  },
  {
   "i": 1333,
   "jp": "溜め二連斬りの達人【小】　!",
-  "en": ""
+  "en": "Charged Double Slash Master (S)!"
  },
  {
   "i": 1334,
   "jp": "溜め二連斬りの達人【中】　!",
-  "en": ""
+  "en": "Charged Double Slash Master (M)!"
  },
  {
   "i": 1335,
   "jp": "溜め二連斬りの達人【大】　!",
-  "en": ""
+  "en": "Charged Double Slash Master (L)!"
  },
  {
   "i": 1336,
   "jp": "ガードバリア還元術【小】　!",
-  "en": ""
+  "en": "Guard Barrier Restoration (S)!"
  },
  {
   "i": 1337,
   "jp": "ガードバリア還元術【中】　!",
-  "en": ""
+  "en": "Guard Barrier Restoration (M)!"
  },
  {
   "i": 1338,
   "jp": "ガードバリア還元術【大】　!",
-  "en": ""
+  "en": "Guard Barrier Restoration (L)!"
  },
  {
   "i": 1339,
   "jp": "いなしの鬼【小】　!",
-  "en": ""
+  "en": "Parry Demon (S)!"
  },
  {
   "i": 1340,
   "jp": "いなしの鬼【中】　!",
-  "en": ""
+  "en": "Parry Demon (M)!"
  },
  {
   "i": 1341,
   "jp": "いなしの鬼【大】　!",
-  "en": ""
+  "en": "Parry Demon (L)!"
  },
  {
   "i": 1342,
   "jp": "鬼練殺法【小】　!",
-  "en": ""
+  "en": "Demon Spirit Killing Art (S)!"
  },
  {
   "i": 1343,
   "jp": "鬼練殺法【中】　!",
-  "en": ""
+  "en": "Demon Spirit Killing Art (M)!"
  },
  {
   "i": 1344,
   "jp": "鬼練殺法【大】　!",
-  "en": ""
+  "en": "Demon Spirit Killing Art (L)!"
  },
  {
   "i": 1345,
   "jp": "ゲージ回復 ！",
-  "en": ""
+  "en": "Gauge Recovered!"
  },
  {
   "i": 1346,
   "jp": "重弩回避術　!",
-  "en": ""
+  "en": "Heavy Bowgun Evasion!"
  },
  {
   "i": 1347,
   "jp": "特定攻撃武技P蓄積量アップ ！",
-  "en": ""
+  "en": "Martial Art P Gain Up (Specific Attacks)!"
  },
  {
   "i": 1348,
   "jp": "攻勢K.O.術【小】　!",
-  "en": ""
+  "en": "Offensive K.O. (S)!"
  },
  {
   "i": 1349,
   "jp": "攻勢K.O.術【中】　!",
-  "en": ""
+  "en": "Offensive K.O. (M)!"
  },
  {
   "i": 1350,
   "jp": "攻勢K.O.術【大】　!",
-  "en": ""
+  "en": "Offensive K.O. (L)!"
  },
  {
   "i": 1351,
   "jp": "重ガードバリア【小】　!",
-  "en": ""
+  "en": "Heavy Guard Barrier (S)!"
  },
  {
   "i": 1352,
   "jp": "重ガードバリア【中】　!",
-  "en": ""
+  "en": "Heavy Guard Barrier (M)!"
  },
  {
   "i": 1353,
   "jp": "重ガードバリア【大】　!",
-  "en": ""
+  "en": "Heavy Guard Barrier (L)!"
  },
  {
   "i": 1354,
   "jp": "大剣反撃術【小】　!",
-  "en": ""
+  "en": "Great Sword Counter (S)!"
  },
  {
   "i": 1355,
   "jp": "大剣反撃術【中】　!",
-  "en": ""
+  "en": "Great Sword Counter (M)!"
  },
  {
   "i": 1356,
   "jp": "大剣反撃術【大】　!",
-  "en": ""
+  "en": "Great Sword Counter (L)!"
  },
  {
   "i": 1357,
   "jp": "銃槍馴らし【小】　!",
-  "en": ""
+  "en": "Gunlance Taming (S)!"
  },
  {
   "i": 1358,
   "jp": "銃槍馴らし【中】　!",
-  "en": ""
+  "en": "Gunlance Taming (M)!"
  },
  {
   "i": 1359,
   "jp": "銃槍馴らし【大】　!",
-  "en": ""
+  "en": "Gunlance Taming (L)!"
  },
  {
   "i": 1360,
   "jp": "部位破壊強化 !",
-  "en": ""
+  "en": "Part Break Boost!"
  },
  {
   "i": 1361,
   "jp": "専心静養【小】 ！",
-  "en": ""
+  "en": "Focused Rest (S)!"
  },
  {
   "i": 1362,
   "jp": "専心静養【中】 ！",
-  "en": ""
+  "en": "Focused Rest (M)!"
  },
  {
   "i": 1363,
   "jp": "専心静養【大】 ！",
-  "en": ""
+  "en": "Focused Rest (L)!"
  },
  {
   "i": 1364,
   "jp": "身かわし強化・毒 ！",
-  "en": ""
+  "en": "Evade Boost: Poison!"
  },
  {
   "i": 1365,
   "jp": "身かわし強化・麻痺 ！",
-  "en": ""
+  "en": "Evade Boost: Paralysis!"
  },
  {
   "i": 1366,
   "jp": "身かわし強化・睡眠 ！",
-  "en": ""
+  "en": "Evade Boost: Sleep!"
  },
  {
   "i": 1367,
   "jp": "身かわし強化・気絶 ！",
-  "en": ""
+  "en": "Evade Boost: Stun!"
  },
  {
   "i": 1368,
   "jp": "身かわし強化・火傷 ！",
-  "en": ""
+  "en": "Evade Boost: Fireblight!"
  },
  {
   "i": 1369,
   "jp": "身かわし強化・ずぶ濡れ ！",
-  "en": ""
+  "en": "Evade Boost: Waterblight!"
  },
  {
   "i": 1370,
   "jp": "身かわし強化・感電 ！",
-  "en": ""
+  "en": "Evade Boost: Thunderblight!"
  },
  {
   "i": 1371,
   "jp": "身かわし強化・雪だるま ！",
-  "en": ""
+  "en": "Evade Boost: Snowman!"
  },
  {
   "i": 1372,
   "jp": "身かわし強化・泥まみれ ！",
-  "en": ""
+  "en": "Evade Boost: Mud!"
  },
  {
   "i": 1373,
   "jp": "身かわし強化・爆破やられ ！",
-  "en": ""
+  "en": "Evade Boost: Blastblight!"
  },
  {
   "i": 1374,
   "jp": "身かわし強化・裂傷 ！",
-  "en": ""
+  "en": "Evade Boost: Bleeding!"
  },
  {
   "i": 1375,
   "jp": "身かわし強化・泡 ！",
-  "en": ""
+  "en": "Evade Boost: Bubble!"
  },
  {
   "i": 1376,
   "jp": "身かわし強化・被ダメアップ ！",
-  "en": ""
+  "en": "Evade Boost: Damage Taken Up!"
  },
  {
   "i": 1377,
   "jp": "超暴打【小】 ！",
-  "en": ""
+  "en": "Super Brutal Strike (S)!"
  },
  {
   "i": 1378,
   "jp": "超暴打【中】 ！",
-  "en": ""
+  "en": "Super Brutal Strike (M)!"
  },
  {
   "i": 1379,
   "jp": "超暴打【大】 ！",
-  "en": ""
+  "en": "Super Brutal Strike (L)!"
  },
  {
   "i": 1380,
   "jp": "追奏回避性能【小】 ！",
-  "en": ""
+  "en": "Encore Evasion (S)!"
  },
  {
   "i": 1381,
   "jp": "追奏回避性能【中】 ！",
-  "en": ""
+  "en": "Encore Evasion (M)!"
  },
  {
   "i": 1382,
   "jp": "追奏回避性能【大】 ！",
-  "en": ""
+  "en": "Encore Evasion (L)!"
  },
  {
   "i": 1383,
   "jp": "超過回復・武【小】 ！",
-  "en": ""
+  "en": "Overheal: Martial (S)!"
  },
  {
   "i": 1384,
   "jp": "超過回復・武【中】 ！",
-  "en": ""
+  "en": "Overheal: Martial (M)!"
  },
  {
   "i": 1385,
   "jp": "超過回復・武【大】 ！",
-  "en": ""
+  "en": "Overheal: Martial (L)!"
  },
  {
   "i": 1386,
   "jp": "超過回復強化・減少【小】 ！",
-  "en": ""
+  "en": "Overheal Boost: Reduction (S)!"
  },
  {
   "i": 1387,
   "jp": "超過回復強化・減少【中】 ！",
-  "en": ""
+  "en": "Overheal Boost: Reduction (M)!"
  },
  {
   "i": 1388,
   "jp": "超過回復強化・減少【大】 ！",
-  "en": ""
+  "en": "Overheal Boost: Reduction (L)!"
  },
  {
   "i": 1389,
   "jp": "破壊ブースト【小】 ！",
-  "en": ""
+  "en": "Break Booster (S)!"
  },
  {
   "i": 1390,
   "jp": "破壊ブースト【中】 ！",
-  "en": ""
+  "en": "Break Booster (M)!"
  },
  {
   "i": 1391,
   "jp": "破壊ブースト【大】 ！",
-  "en": ""
+  "en": "Break Booster (L)!"
  },
  {
   "i": 1392,
   "jp": "超発走【小】 ！",
-  "en": ""
+  "en": "Super Dash Start (S)!"
  },
  {
   "i": 1393,
   "jp": "超発走【中】 ！",
-  "en": ""
+  "en": "Super Dash Start (M)!"
  },
  {
   "i": 1394,
   "jp": "超発走【大】 ！",
-  "en": ""
+  "en": "Super Dash Start (L)!"
  },
  {
   "i": 1395,
   "jp": "指導強化・減少【小】 ！",
-  "en": ""
+  "en": "Training Boost: Reduction (S)!"
  },
  {
   "i": 1396,
   "jp": "指導強化・減少【中】 ！",
-  "en": ""
+  "en": "Training Boost: Reduction (M)!"
  },
  {
   "i": 1397,
   "jp": "指導強化・減少【大】 ！",
-  "en": ""
+  "en": "Training Boost: Reduction (L)!"
  },
  {
   "i": 1398,
   "jp": "サポート強化・減少【小】 ！",
-  "en": ""
+  "en": "Support Boost: Reduction (S)!"
  },
  {
   "i": 1399,
   "jp": "サポート強化・減少【中】 ！",
-  "en": ""
+  "en": "Support Boost: Reduction (M)!"
  },
  {
   "i": 1400,
   "jp": "サポート強化・減少【大】 ！",
-  "en": ""
+  "en": "Support Boost: Reduction (L)!"
  },
  {
   "i": 1401,
   "jp": "延命術強化・武【小】 ！",
-  "en": ""
+  "en": "Life Extension Boost: Martial (S)!"
  },
  {
   "i": 1402,
   "jp": "延命術強化・武【中】 ！",
-  "en": ""
+  "en": "Life Extension Boost: Martial (M)!"
  },
  {
   "i": 1403,
   "jp": "延命術強化・武【大】 ！",
-  "en": ""
+  "en": "Life Extension Boost: Martial (L)!"
  },
  {
   "i": 1404,
   "jp": "肉体硬化術強化・武【小】 ！",
-  "en": ""
+  "en": "Body Hardening Boost: Martial (S)!"
  },
  {
   "i": 1405,
   "jp": "肉体硬化術強化・武【中】 ！",
-  "en": ""
+  "en": "Body Hardening Boost: Martial (M)!"
  },
  {
   "i": 1406,
   "jp": "肉体硬化術強化・武【大】 ！",
-  "en": ""
+  "en": "Body Hardening Boost: Martial (L)!"
  },
  {
   "i": 1407,
   "jp": "超過武技師壱・最武【小】 ！",
-  "en": ""
+  "en": "Over Martial Artist I: Max Martial (S)!"
  },
  {
   "i": 1408,
   "jp": "超過武技師壱・最武【中】 ！",
-  "en": ""
+  "en": "Over Martial Artist I: Max Martial (M)!"
  },
  {
   "i": 1409,
   "jp": "超過武技師壱・最武【大】 ！",
-  "en": ""
+  "en": "Over Martial Artist I: Max Martial (L)!"
  },
  {
   "i": 1410,
   "jp": "超過武技師弐・最武【小】 ！",
-  "en": ""
+  "en": "Over Martial Artist II: Max Martial (S)!"
  },
  {
   "i": 1411,
   "jp": "超過武技師弐・最武【中】 ！",
-  "en": ""
+  "en": "Over Martial Artist II: Max Martial (M)!"
  },
  {
   "i": 1412,
   "jp": "超過武技師弐・最武【大】 ！",
-  "en": ""
+  "en": "Over Martial Artist II: Max Martial (L)!"
  },
  {
   "i": 1413,
   "jp": "二頭狩り・対氷【小】 ！",
-  "en": ""
+  "en": "Double Hunt: Ice (S)!"
  },
  {
   "i": 1414,
   "jp": "二頭狩り・対氷【中】 ！",
-  "en": ""
+  "en": "Double Hunt: Ice (M)!"
  },
  {
   "i": 1415,
   "jp": "二頭狩り・対氷【大】 ！",
-  "en": ""
+  "en": "Double Hunt: Ice (L)!"
  },
  {
   "i": 1416,
   "jp": "二頭狩り・対火【小】 ！",
-  "en": ""
+  "en": "Double Hunt: Fire (S)!"
  },
  {
   "i": 1417,
   "jp": "二頭狩り・対火【中】 ！",
-  "en": ""
+  "en": "Double Hunt: Fire (M)!"
  },
  {
   "i": 1418,
   "jp": "二頭狩り・対火【大】 ！",
-  "en": ""
+  "en": "Double Hunt: Fire (L)!"
  },
  {
   "i": 1419,
   "jp": "二頭狩り・対水【小】 ！",
-  "en": ""
+  "en": "Double Hunt: Water (S)!"
  },
  {
   "i": 1420,
   "jp": "二頭狩り・対水【中】 ！",
-  "en": ""
+  "en": "Double Hunt: Water (M)!"
  },
  {
   "i": 1421,
   "jp": "二頭狩り・対水【大】 ！",
-  "en": ""
+  "en": "Double Hunt: Water (L)!"
  },
  {
   "i": 1422,
   "jp": "二頭狩り・対雷【小】 ！",
-  "en": ""
+  "en": "Double Hunt: Thunder (S)!"
  },
  {
   "i": 1423,
   "jp": "二頭狩り・対雷【中】 ！",
-  "en": ""
+  "en": "Double Hunt: Thunder (M)!"
  },
  {
   "i": 1424,
   "jp": "二頭狩り・対雷【大】 ！",
-  "en": ""
+  "en": "Double Hunt: Thunder (L)!"
  },
  {
   "i": 1425,
   "jp": "二頭狩り・対土【小】 ！",
-  "en": ""
+  "en": "Double Hunt: Earth (S)!"
  },
  {
   "i": 1426,
   "jp": "二頭狩り・対土【中】 ！",
-  "en": ""
+  "en": "Double Hunt: Earth (M)!"
  },
  {
   "i": 1427,
   "jp": "二頭狩り・対土【大】 ！",
-  "en": ""
+  "en": "Double Hunt: Earth (L)!"
  },
  {
   "i": 1428,
   "jp": "二頭備え・対氷【小】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Ice (S)!"
  },
  {
   "i": 1429,
   "jp": "二頭備え・対氷【中】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Ice (M)!"
  },
  {
   "i": 1430,
   "jp": "二頭備え・対氷【大】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Ice (L)!"
  },
  {
   "i": 1431,
   "jp": "二頭備え・対火【小】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Fire (S)!"
  },
  {
   "i": 1432,
   "jp": "二頭備え・対火【中】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Fire (M)!"
  },
  {
   "i": 1433,
   "jp": "二頭備え・対火【大】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Fire (L)!"
  },
  {
   "i": 1434,
   "jp": "二頭備え・対水【小】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Water (S)!"
  },
  {
   "i": 1435,
   "jp": "二頭備え・対水【中】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Water (M)!"
  },
  {
   "i": 1436,
   "jp": "二頭備え・対水【大】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Water (L)!"
  },
  {
   "i": 1437,
   "jp": "二頭備え・対雷【小】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Thunder (S)!"
  },
  {
   "i": 1438,
   "jp": "二頭備え・対雷【中】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Thunder (M)!"
  },
  {
   "i": 1439,
   "jp": "二頭備え・対雷【大】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Thunder (L)!"
  },
  {
   "i": 1440,
   "jp": "二頭備え・対土【小】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Earth (S)!"
  },
  {
   "i": 1441,
   "jp": "二頭備え・対土【中】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Earth (M)!"
  },
  {
   "i": 1442,
   "jp": "二頭備え・対土【大】 ！",
-  "en": ""
+  "en": "Double Hunt Prep: Earth (L)!"
  },
  {
   "i": 1443,
   "jp": "ジャンプ無敵 ！",
-  "en": ""
+  "en": "Jump Invincibility!"
  },
  {
   "i": 1444,
   "jp": "火傷無効 ！",
-  "en": ""
+  "en": "Fireblight Negated!"
  },
  {
   "i": 1445,
   "jp": "睡眠無効 ！",
-  "en": ""
+  "en": "Sleep Negated!"
  },
  {
   "i": 1446,
   "jp": "気絶無効 ！",
-  "en": ""
+  "en": "Stun Negated!"
  },
  {
   "i": 1447,
   "jp": "感染無効 ！",
-  "en": ""
+  "en": "Frenzy Negated!"
  },
  {
   "i": 1448,
   "jp": "泡無効 ！",
-  "en": ""
+  "en": "Bubble Negated!"
  },
  {
   "i": 1449,
   "jp": "麻痺攻撃減少  !",
-  "en": ""
+  "en": "Paralysis Attack Reduced!"
  },
  {
   "i": 1450,
   "jp": "ダメージ減少  !",
-  "en": ""
+  "en": "Damage Reduced!"
  },
  {
   "i": 1451,
   "jp": "溜め限界突破 ！",
-  "en": ""
+  "en": "Charge Limit Break!"
  },
  {
   "i": 1452,
   "jp": "双剣の溜め術【小】 !",
-  "en": ""
+  "en": "Dual Blades Charge (S)!"
  },
  {
   "i": 1453,
   "jp": "双剣の溜め術【中】 !",
-  "en": ""
+  "en": "Dual Blades Charge (M)!"
  },
  {
   "i": 1454,
   "jp": "双剣の溜め術【大】 !",
-  "en": ""
+  "en": "Dual Blades Charge (L)!"
  },
  {
   "i": 1455,
   "jp": "覇玉双剣の溜め術【小】 !",
-  "en": ""
+  "en": "Supreme Orb Dual Blades Charge (S)!"
  },
  {
   "i": 1456,
   "jp": "覇玉双剣の溜め術【中】 !",
-  "en": ""
+  "en": "Supreme Orb Dual Blades Charge (M)!"
  },
  {
   "i": 1457,
   "jp": "覇玉双剣の溜め術【大】 !",
-  "en": ""
+  "en": "Supreme Orb Dual Blades Charge (L)!"
  },
  {
   "i": 1458,
   "jp": "剛真乱舞 !",
-  "en": ""
+  "en": "Mighty True Demon Dance!"
  },
  {
   "i": 1459,
   "jp": "覇玉爆斧の極意【小】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Secret (S)!"
  },
  {
   "i": 1460,
   "jp": "覇玉爆斧の極意【中】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Secret (M)!"
  },
  {
   "i": 1461,
   "jp": "覇玉爆斧の極意【大】 !",
-  "en": ""
+  "en": "Supreme Orb Blast Axe Secret (L)!"
  },
  {
   "i": 1462,
   "jp": "覇玉弓馴らし【小】 !",
-  "en": ""
+  "en": "Supreme Orb Bow Taming (S)!"
  },
  {
   "i": 1463,
   "jp": "覇玉弓馴らし【中】 !",
-  "en": ""
+  "en": "Supreme Orb Bow Taming (M)!"
  },
  {
   "i": 1464,
   "jp": "覇玉弓馴らし【大】 !",
-  "en": ""
+  "en": "Supreme Orb Bow Taming (L)!"
  },
  {
   "i": 1465,
   "jp": "連剛射 !",
-  "en": ""
+  "en": "Power Shot Combo!"
  },
  {
   "i": 1466,
   "jp": "高速強剛射 !",
-  "en": ""
+  "en": "Fast Strong Power Shot!"
  },
  {
   "i": 1467,
   "jp": "高速強天射 !",
-  "en": ""
+  "en": "Fast Strong Heaven Shot!"
  },
  {
   "i": 1468,
   "jp": "覇玉弓の敏捷達人 !",
-  "en": ""
+  "en": "Supreme Orb Bow Agile Master!"
  },
  {
   "i": 1469,
   "jp": "天射威力増強 !",
-  "en": ""
+  "en": "Heaven Shot Power Up!"
  },
  {
   "i": 1470,
   "jp": "睡眠攻撃減少 !",
-  "en": ""
+  "en": "Sleep Attack Reduced!"
  },
  {
   "i": 1471,
   "jp": "気絶攻撃減少 !",
-  "en": ""
+  "en": "Stun Attack Reduced!"
  },
  {
   "i": 1472,
   "jp": "爆破やられ攻撃減少 !",
-  "en": ""
+  "en": "Blastblight Attack Reduced!"
  },
  {
   "i": 1473,
   "jp": "感染攻撃減少 !",
-  "en": ""
+  "en": "Frenzy Attack Reduced!"
  },
  {
   "i": 1474,
   "jp": "泡攻撃減少 !",
-  "en": ""
+  "en": "Bubble Attack Reduced!"
  },
  {
   "i": 1475,
   "jp": "被ダメアップ攻撃減少 !",
-  "en": ""
+  "en": "Damage Taken Up Attack Reduced!"
  },
  {
   "i": 1476,
   "jp": "溜め移動速度アップ ！",
-  "en": ""
+  "en": "Charge Move Speed Up!"
  },
  {
   "i": 1477,
   "jp": "乱舞無敵 ！",
-  "en": ""
+  "en": "Demon Dance Invincibility!"
  },
  {
   "i": 1478,
   "jp": "属性解放突き無敵 ！",
-  "en": ""
+  "en": "Element Discharge Invincibility!"
  },
  {
   "i": 1479,
   "jp": "フルバースト無敵 ！",
-  "en": ""
+  "en": "Full Burst Invincibility!"
  },
  {
   "i": 1480,
   "jp": "シールドメテオ無敵 ！",
-  "en": ""
+  "en": "Shield Meteor Invincibility!"
  },
  {
   "i": 1481,
   "jp": "カウンター突き無敵 ！",
-  "en": ""
+  "en": "Counter Thrust Invincibility!"
  },
  {
   "i": 1482,
   "jp": "響音変化 ！",
-  "en": ""
+  "en": "Echo Changed!"
  },
  {
   "i": 1483,
   "jp": "氷極地【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar [Depth I] Res Up!"
  },
  {
   "i": 1484,
   "jp": "氷極地【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar [Depth II] Res Up!"
  },
  {
   "i": 1485,
   "jp": "氷極地【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar [Depth III] Res Up!"
  },
  {
   "i": 1486,
   "jp": "土極地【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar [Depth I] Res Up!"
  },
  {
   "i": 1487,
   "jp": "土極地【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar [Depth II] Res Up!"
  },
  {
   "i": 1488,
   "jp": "土極地【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar [Depth III] Res Up!"
  },
  {
   "i": 1489,
   "jp": "雷極地【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar [Depth I] Res Up!"
  },
  {
   "i": 1490,
   "jp": "雷極地【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar [Depth II] Res Up!"
  },
  {
   "i": 1491,
   "jp": "雷極地【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar [Depth III] Res Up!"
  },
  {
   "i": 1492,
   "jp": "水極地【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar [Depth I] Res Up!"
  },
  {
   "i": 1493,
   "jp": "水極地【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar [Depth II] Res Up!"
  },
  {
   "i": 1494,
   "jp": "水極地【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar [Depth III] Res Up!"
  },
  {
   "i": 1495,
   "jp": "火極地【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar [Depth I] Res Up!"
  },
  {
   "i": 1496,
   "jp": "火極地【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar [Depth II] Res Up!"
  },
  {
   "i": 1497,
   "jp": "火極地【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar [Depth III] Res Up!"
  },
  {
   "i": 1498,
   "jp": "氷極地2【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 2 [Depth I] Res Up!"
  },
  {
   "i": 1499,
   "jp": "氷極地2【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 2 [Depth II] Res Up!"
  },
  {
   "i": 1500,
   "jp": "氷極地2【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 2 [Depth III] Res Up!"
  },
  {
   "i": 1501,
   "jp": "土極地2【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 2 [Depth I] Res Up!"
  },
  {
   "i": 1502,
   "jp": "土極地2【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 2 [Depth II] Res Up!"
  },
  {
   "i": 1503,
   "jp": "土極地2【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 2 [Depth III] Res Up!"
  },
  {
   "i": 1504,
   "jp": "雷極地2【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 2 [Depth I] Res Up!"
  },
  {
   "i": 1505,
   "jp": "雷極地2【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 2 [Depth II] Res Up!"
  },
  {
   "i": 1506,
   "jp": "雷極地2【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 2 [Depth III] Res Up!"
  },
  {
   "i": 1507,
   "jp": "水極地2【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 2 [Depth I] Res Up!"
  },
  {
   "i": 1508,
   "jp": "水極地2【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 2 [Depth II] Res Up!"
  },
  {
   "i": 1509,
   "jp": "水極地2【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 2 [Depth III] Res Up!"
  },
  {
   "i": 1510,
   "jp": "火極地2【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 2 [Depth I] Res Up!"
  },
  {
   "i": 1511,
   "jp": "火極地2【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 2 [Depth II] Res Up!"
  },
  {
   "i": 1512,
   "jp": "火極地2【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 2 [Depth III] Res Up!"
  },
  {
   "i": 1513,
   "jp": "氷極地3【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 3 [Depth I] Res Up!"
  },
  {
   "i": 1514,
   "jp": "氷極地3【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 3 [Depth II] Res Up!"
  },
  {
   "i": 1515,
   "jp": "氷極地3【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 3 [Depth III] Res Up!"
  },
  {
   "i": 1516,
   "jp": "土極地3【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 3 [Depth I] Res Up!"
  },
  {
   "i": 1517,
   "jp": "土極地3【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 3 [Depth II] Res Up!"
  },
  {
   "i": 1518,
   "jp": "土極地3【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 3 [Depth III] Res Up!"
  },
  {
   "i": 1519,
   "jp": "雷極地3【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 3 [Depth I] Res Up!"
  },
  {
   "i": 1520,
   "jp": "雷極地3【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 3 [Depth II] Res Up!"
  },
  {
   "i": 1521,
   "jp": "雷極地3【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 3 [Depth III] Res Up!"
  },
  {
   "i": 1522,
   "jp": "水極地3【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 3 [Depth I] Res Up!"
  },
  {
   "i": 1523,
   "jp": "水極地3【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 3 [Depth II] Res Up!"
  },
  {
   "i": 1524,
   "jp": "水極地3【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 3 [Depth III] Res Up!"
  },
  {
   "i": 1525,
   "jp": "火極地3【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 3 [Depth I] Res Up!"
  },
  {
   "i": 1526,
   "jp": "火極地3【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 3 [Depth II] Res Up!"
  },
  {
   "i": 1527,
   "jp": "火極地3【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 3 [Depth III] Res Up!"
  },
  {
   "i": 1528,
   "jp": "氷極地4【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 4 [Depth I] Res Up!"
  },
  {
   "i": 1529,
   "jp": "氷極地4【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 4 [Depth II] Res Up!"
  },
  {
   "i": 1530,
   "jp": "氷極地4【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 4 [Depth III] Res Up!"
  },
  {
   "i": 1531,
   "jp": "土極地4【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 4 [Depth I] Res Up!"
  },
  {
   "i": 1532,
   "jp": "土極地4【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 4 [Depth II] Res Up!"
  },
  {
   "i": 1533,
   "jp": "土極地4【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 4 [Depth III] Res Up!"
  },
  {
   "i": 1534,
   "jp": "雷極地4【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 4 [Depth I] Res Up!"
  },
  {
   "i": 1535,
   "jp": "雷極地4【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 4 [Depth II] Res Up!"
  },
  {
   "i": 1536,
   "jp": "雷極地4【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 4 [Depth III] Res Up!"
  },
  {
   "i": 1537,
   "jp": "水極地4【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 4 [Depth I] Res Up!"
  },
  {
   "i": 1538,
   "jp": "水極地4【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 4 [Depth II] Res Up!"
  },
  {
   "i": 1539,
   "jp": "水極地4【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 4 [Depth III] Res Up!"
  },
  {
   "i": 1540,
   "jp": "火極地4【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 4 [Depth I] Res Up!"
  },
  {
   "i": 1541,
   "jp": "火極地4【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 4 [Depth II] Res Up!"
  },
  {
   "i": 1542,
   "jp": "火極地4【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 4 [Depth III] Res Up!"
  },
  {
   "i": 1543,
   "jp": "氷極地5【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 5 [Depth I] Res Up!"
  },
  {
   "i": 1544,
   "jp": "氷極地5【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 5 [Depth II] Res Up!"
  },
  {
   "i": 1545,
   "jp": "氷極地5【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 5 [Depth III] Res Up!"
  },
  {
   "i": 1546,
   "jp": "土極地5【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 5 [Depth I] Res Up!"
  },
  {
   "i": 1547,
   "jp": "土極地5【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 5 [Depth II] Res Up!"
  },
  {
   "i": 1548,
   "jp": "土極地5【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 5 [Depth III] Res Up!"
  },
  {
   "i": 1549,
   "jp": "雷極地5【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 5 [Depth I] Res Up!"
  },
  {
   "i": 1550,
   "jp": "雷極地5【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 5 [Depth II] Res Up!"
  },
  {
   "i": 1551,
   "jp": "雷極地5【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 5 [Depth III] Res Up!"
  },
  {
   "i": 1552,
   "jp": "水極地5【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 5 [Depth I] Res Up!"
  },
  {
   "i": 1553,
   "jp": "水極地5【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 5 [Depth II] Res Up!"
  },
  {
   "i": 1554,
   "jp": "水極地5【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 5 [Depth III] Res Up!"
  },
  {
   "i": 1555,
   "jp": "火極地5【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 5 [Depth I] Res Up!"
  },
  {
   "i": 1556,
   "jp": "火極地5【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 5 [Depth II] Res Up!"
  },
  {
   "i": 1557,
   "jp": "火極地5【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 5 [Depth III] Res Up!"
  },
  {
   "i": 1558,
   "jp": "氷極地6【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 6 [Depth I] Res Up!"
  },
  {
   "i": 1559,
   "jp": "氷極地6【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 6 [Depth II] Res Up!"
  },
  {
   "i": 1560,
   "jp": "氷極地6【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 6 [Depth III] Res Up!"
  },
  {
   "i": 1561,
   "jp": "土極地6【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 6 [Depth I] Res Up!"
  },
  {
   "i": 1562,
   "jp": "土極地6【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 6 [Depth II] Res Up!"
  },
  {
   "i": 1563,
   "jp": "土極地6【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 6 [Depth III] Res Up!"
  },
  {
   "i": 1564,
   "jp": "雷極地6【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 6 [Depth I] Res Up!"
  },
  {
   "i": 1565,
   "jp": "雷極地6【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 6 [Depth II] Res Up!"
  },
  {
   "i": 1566,
   "jp": "雷極地6【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 6 [Depth III] Res Up!"
  },
  {
   "i": 1567,
   "jp": "水極地6【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 6 [Depth I] Res Up!"
  },
  {
   "i": 1568,
   "jp": "水極地6【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 6 [Depth II] Res Up!"
  },
  {
   "i": 1569,
   "jp": "水極地6【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 6 [Depth III] Res Up!"
  },
  {
   "i": 1570,
   "jp": "火極地6【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 6 [Depth I] Res Up!"
  },
  {
   "i": 1571,
   "jp": "火極地6【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 6 [Depth II] Res Up!"
  },
  {
   "i": 1572,
   "jp": "火極地6【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 6 [Depth III] Res Up!"
  },
  {
   "i": 1573,
   "jp": "氷極地7【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 7 [Depth I] Res Up!"
  },
  {
   "i": 1574,
   "jp": "氷極地7【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 7 [Depth II] Res Up!"
  },
  {
   "i": 1575,
   "jp": "氷極地7【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Ice Polar 7 [Depth III] Res Up!"
  },
  {
   "i": 1576,
   "jp": "土極地7【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 7 [Depth I] Res Up!"
  },
  {
   "i": 1577,
   "jp": "土極地7【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 7 [Depth II] Res Up!"
  },
  {
   "i": 1578,
   "jp": "土極地7【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Earth Polar 7 [Depth III] Res Up!"
  },
  {
   "i": 1579,
   "jp": "雷極地7【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 7 [Depth I] Res Up!"
  },
  {
   "i": 1580,
   "jp": "雷極地7【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 7 [Depth II] Res Up!"
  },
  {
   "i": 1581,
   "jp": "雷極地7【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Thunder Polar 7 [Depth III] Res Up!"
  },
  {
   "i": 1582,
   "jp": "水極地7【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 7 [Depth I] Res Up!"
  },
  {
   "i": 1583,
   "jp": "水極地7【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 7 [Depth II] Res Up!"
  },
  {
   "i": 1584,
   "jp": "水極地7【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Water Polar 7 [Depth III] Res Up!"
  },
  {
   "i": 1585,
   "jp": "火極地7【深度Ⅰ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 7 [Depth I] Res Up!"
  },
  {
   "i": 1586,
   "jp": "火極地7【深度Ⅱ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 7 [Depth II] Res Up!"
  },
  {
   "i": 1587,
   "jp": "火極地7【深度Ⅲ】耐性アップ !",
-  "en": ""
+  "en": "Fire Polar 7 [Depth III] Res Up!"
  },
  {
   "i": 1588,
   "jp": "砲弾装填 !",
-  "en": ""
+  "en": "Shells Loaded!"
  },
  {
   "i": 1589,
   "jp": "増幅パーツブレイカー !",
-  "en": ""
+  "en": "Amplified Partbreaker!"
  },
  {
   "i": 1590,
   "jp": "増幅アフターブレイカー !",
-  "en": ""
+  "en": "Amplified After-Breaker!"
  },
  {
   "i": 1591,
   "jp": "増幅追い打ち !",
-  "en": ""
+  "en": "Amplified Follow-up!"
  },
  {
   "i": 1592,
   "jp": "増幅乱打 !",
-  "en": ""
+  "en": "Amplified Flurry!"
  },
  {
   "i": 1593,
   "jp": "増幅復讐心 !",
-  "en": ""
+  "en": "Amplified Vengeance!"
  },
  {
   "i": 1594,
   "jp": "増幅会心中毒 !",
-  "en": ""
+  "en": "Amplified Critical Addiction!"
  },
  {
   "i": 1595,
   "jp": "増幅攻勢会心術 !",
-  "en": ""
+  "en": "Amplified Offensive Critical!"
  },
  {
   "i": 1596,
   "jp": "増幅会心強化 !",
-  "en": ""
+  "en": "Amplified Critical Boost!"
  },
  {
   "i": 1597,
   "jp": "増幅最後の抵抗 !",
-  "en": ""
+  "en": "Amplified Last Stand!"
  },
  {
   "i": 1598,
   "jp": "豪運アップ !",
-  "en": ""
+  "en": "Great Luck Up!"
  }
 ]

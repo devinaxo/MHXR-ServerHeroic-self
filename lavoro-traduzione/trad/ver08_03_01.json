@@ -1,0 +1,37 @@
+[
+ {
+  "i": 0,
+  "jp": "有効のみ表示",
+  "en": "Show active only"
+ },
+ {
+  "i": 1,
+  "jp": "プレミアムログインボーナスの\r\n期間が終了しました\r\n再度の交換はこちら",
+  "en": "The Premium Login Bonus\r\nperiod has ended\r\nExchange again here"
+ },
+ {
+  "i": 2,
+  "jp": "お得なプレミアム\r\nログインボーナスと交換しよう !\r\n交換はこちら",
+  "en": "Exchange for a great-value\r\nPremium Login Bonus!\r\nExchange here"
+ },
+ {
+  "i": 3,
+  "jp": "新しくなったプレミアム\r\nログインボーナスが登場 !\r\n交換はこちら",
+  "en": "A new Premium\r\nLogin Bonus is here!\r\nExchange here"
+ },
+ {
+  "i": 4,
+  "jp": "サポート",
+  "en": "Support"
+ },
+ {
+  "i": 5,
+  "jp": "キャッシュを削除します\r\n\r\n※プレイヤーデータは\r\n　削除されません\r\n※ゲーム画面が\r\n　正常に表示されないなどの場合に\r\n　実行してください",
+  "en": "Clear the cache\r\n\r\n※Player data will\r\n　not be deleted\r\n※Use this if the game\r\n　screen does not\r\n　display correctly"
+ },
+ {
+  "i": 6,
+  "jp": "キャッシュの削除が完了しました",
+  "en": "Cache cleared"
+ }
+]

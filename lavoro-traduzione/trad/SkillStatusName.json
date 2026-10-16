@@ -1,0 +1,1082 @@
+[
+ {
+  "i": 0,
+  "jp": "Invalid Message",
+  "en": "Invalid Message"
+ },
+ {
+  "i": 1,
+  "jp": "ダメージアップ",
+  "en": "Damage Up"
+ },
+ {
+  "i": 2,
+  "jp": "火属性ダメージアップ",
+  "en": "Fire Damage Up"
+ },
+ {
+  "i": 3,
+  "jp": "氷属性ダメージアップ",
+  "en": "Ice Damage Up"
+ },
+ {
+  "i": 4,
+  "jp": "土属性ダメージアップ",
+  "en": "Earth Damage Up"
+ },
+ {
+  "i": 5,
+  "jp": "雷属性ダメージアップ",
+  "en": "Thunder Damage Up"
+ },
+ {
+  "i": 6,
+  "jp": "水属性ダメージアップ",
+  "en": "Water Damage Up"
+ },
+ {
+  "i": 7,
+  "jp": "火耐性アップ",
+  "en": "Fire Res Up"
+ },
+ {
+  "i": 8,
+  "jp": "氷耐性アップ",
+  "en": "Ice Res Up"
+ },
+ {
+  "i": 9,
+  "jp": "土耐性アップ",
+  "en": "Earth Res Up"
+ },
+ {
+  "i": 10,
+  "jp": "雷耐性アップ",
+  "en": "Thunder Res Up"
+ },
+ {
+  "i": 11,
+  "jp": "水耐性アップ",
+  "en": "Water Res Up"
+ },
+ {
+  "i": 12,
+  "jp": "状態異常無効",
+  "en": "Ailments Negated"
+ },
+ {
+  "i": 13,
+  "jp": "ひるみにくさアップ",
+  "en": "Flinch Res Up"
+ },
+ {
+  "i": 14,
+  "jp": "狙われやすさアップ",
+  "en": "Aggro Up"
+ },
+ {
+  "i": 15,
+  "jp": "狙われやすさダウン",
+  "en": "Aggro Down"
+ },
+ {
+  "i": 16,
+  "jp": "溜め時間短縮",
+  "en": "Charge Time Down"
+ },
+ {
+  "i": 17,
+  "jp": "カウンター威力アップ",
+  "en": "Counter Power Up"
+ },
+ {
+  "i": 18,
+  "jp": "めまい蓄積値アップ",
+  "en": "Stun Buildup Up"
+ },
+ {
+  "i": 19,
+  "jp": "弾数無制限",
+  "en": "Unlimited Ammo"
+ },
+ {
+  "i": 20,
+  "jp": "ゲージ無制限",
+  "en": "Unlimited Gauge"
+ },
+ {
+  "i": 21,
+  "jp": "冷却時間短縮",
+  "en": "Cooldown Down"
+ },
+ {
+  "i": 22,
+  "jp": "毒",
+  "en": "Poison"
+ },
+ {
+  "i": 23,
+  "jp": "猛毒",
+  "en": "Strong Poison"
+ },
+ {
+  "i": 24,
+  "jp": "麻痺",
+  "en": "Paralysis"
+ },
+ {
+  "i": 25,
+  "jp": "睡眠",
+  "en": "Sleep"
+ },
+ {
+  "i": 26,
+  "jp": "気絶",
+  "en": "Stun"
+ },
+ {
+  "i": 27,
+  "jp": "爆破やられ",
+  "en": "Blastblight"
+ },
+ {
+  "i": 28,
+  "jp": "火傷",
+  "en": "Fireblight"
+ },
+ {
+  "i": 29,
+  "jp": "雪だるま",
+  "en": "Snowman"
+ },
+ {
+  "i": 30,
+  "jp": "泥まみれ",
+  "en": "Mud"
+ },
+ {
+  "i": 31,
+  "jp": "感電",
+  "en": "Thunderblight"
+ },
+ {
+  "i": 32,
+  "jp": "ずぶ濡れ",
+  "en": "Waterblight"
+ },
+ {
+  "i": 33,
+  "jp": "自動回復",
+  "en": "Auto-Recovery"
+ },
+ {
+  "i": 34,
+  "jp": "防御力アップ",
+  "en": "Defense Up"
+ },
+ {
+  "i": 35,
+  "jp": "ダメージ軽減",
+  "en": "Damage Reduced"
+ },
+ {
+  "i": 36,
+  "jp": "攻撃力ダウン",
+  "en": "Attack Down"
+ },
+ {
+  "i": 37,
+  "jp": "防御力ダウン",
+  "en": "Defense Down"
+ },
+ {
+  "i": 38,
+  "jp": "スピードアップ",
+  "en": "Speed Up"
+ },
+ {
+  "i": 39,
+  "jp": "会心率アップ",
+  "en": "Affinity Up"
+ },
+ {
+  "i": 40,
+  "jp": "武技Ｐブースト",
+  "en": "Martial Art P Boost"
+ },
+ {
+  "i": 41,
+  "jp": "気刃連斬強化",
+  "en": "Spirit Combo Boost"
+ },
+ {
+  "i": 42,
+  "jp": "火属性モンスター特効",
+  "en": "Fire Monster Bonus"
+ },
+ {
+  "i": 43,
+  "jp": "氷属性モンスター特効",
+  "en": "Ice Monster Bonus"
+ },
+ {
+  "i": 44,
+  "jp": "土属性モンスター特効",
+  "en": "Earth Monster Bonus"
+ },
+ {
+  "i": 45,
+  "jp": "雷属性モンスター特効",
+  "en": "Thunder Monster Bonus"
+ },
+ {
+  "i": 46,
+  "jp": "水属性モンスター特効",
+  "en": "Water Monster Bonus"
+ },
+ {
+  "i": 47,
+  "jp": "弱点特効",
+  "en": "Weak Spot Bonus"
+ },
+ {
+  "i": 48,
+  "jp": "飛竜種特効",
+  "en": "Flying Wyvern Bonus"
+ },
+ {
+  "i": 49,
+  "jp": "海竜種特効",
+  "en": "Leviathan Bonus"
+ },
+ {
+  "i": 50,
+  "jp": "魚竜種特効",
+  "en": "Piscine Wyvern Bonus"
+ },
+ {
+  "i": 51,
+  "jp": "牙竜種特効",
+  "en": "Fanged Wyvern Bonus"
+ },
+ {
+  "i": 52,
+  "jp": "獣竜種特効",
+  "en": "Brute Wyvern Bonus"
+ },
+ {
+  "i": 53,
+  "jp": "古龍種特効",
+  "en": "Elder Dragon Bonus"
+ },
+ {
+  "i": 54,
+  "jp": "鳥竜種特効",
+  "en": "Bird Wyvern Bonus"
+ },
+ {
+  "i": 55,
+  "jp": "牙獣種特効",
+  "en": "Fanged Beast Bonus"
+ },
+ {
+  "i": 56,
+  "jp": "未破壊部位特効",
+  "en": "Unbroken Part Bonus"
+ },
+ {
+  "i": 57,
+  "jp": "怒り特効",
+  "en": "Enraged Bonus"
+ },
+ {
+  "i": 58,
+  "jp": "属性解放斬り強化",
+  "en": "Element Discharge Boost"
+ },
+ {
+  "i": 59,
+  "jp": "溜め斬り強化",
+  "en": "Charged Slash Boost"
+ },
+ {
+  "i": 60,
+  "jp": "突進強化",
+  "en": "Charge Boost"
+ },
+ {
+  "i": 61,
+  "jp": "溜め攻撃強化",
+  "en": "Charged Attack Boost"
+ },
+ {
+  "i": 62,
+  "jp": "バースト斬り強化",
+  "en": "Burst Slash Boost"
+ },
+ {
+  "i": 63,
+  "jp": "通常射撃強化",
+  "en": "Normal Shot Boost"
+ },
+ {
+  "i": 64,
+  "jp": "鬼人攻撃強化",
+  "en": "Demon Attack Boost"
+ },
+ {
+  "i": 65,
+  "jp": "大回転斬り強化",
+  "en": "Spirit Roundslash Boost"
+ },
+ {
+  "i": 66,
+  "jp": "曲射強化",
+  "en": "Arc Shot Boost"
+ },
+ {
+  "i": 67,
+  "jp": "剣攻撃強化",
+  "en": "Sword Attack Boost"
+ },
+ {
+  "i": 68,
+  "jp": "竜撃砲強化",
+  "en": "Wyvernfire Boost"
+ },
+ {
+  "i": 69,
+  "jp": "反射",
+  "en": "Reflect"
+ },
+ {
+  "i": 70,
+  "jp": "連射数アップ",
+  "en": "Rapid Fire Up"
+ },
+ {
+  "i": 71,
+  "jp": "溜め撃ち強化",
+  "en": "Charged Shot Boost"
+ },
+ {
+  "i": 72,
+  "jp": "気刃連斬強化Ⅱ",
+  "en": "Spirit Combo Boost II"
+ },
+ {
+  "i": 73,
+  "jp": "曲射強化Ⅱ",
+  "en": "Arc Shot Boost II"
+ },
+ {
+  "i": 74,
+  "jp": "ダメージアップⅡ",
+  "en": "Damage Up II"
+ },
+ {
+  "i": 75,
+  "jp": "防御力ダウンⅡ",
+  "en": "Defense Down II"
+ },
+ {
+  "i": 76,
+  "jp": "ダメージアップⅢ",
+  "en": "Damage Up III"
+ },
+ {
+  "i": 77,
+  "jp": "防御力ダウンⅢ",
+  "en": "Defense Down III"
+ },
+ {
+  "i": 78,
+  "jp": "火属性ブレス軽減",
+  "en": "Fire Breath Reduction"
+ },
+ {
+  "i": 79,
+  "jp": "氷属性ブレス軽減",
+  "en": "Ice Breath Reduction"
+ },
+ {
+  "i": 80,
+  "jp": "土属性ブレス軽減",
+  "en": "Earth Breath Reduction"
+ },
+ {
+  "i": 81,
+  "jp": "雷属性ブレス軽減",
+  "en": "Thunder Breath Reduction"
+ },
+ {
+  "i": 82,
+  "jp": "水属性ブレス軽減",
+  "en": "Water Breath Reduction"
+ },
+ {
+  "i": 83,
+  "jp": "硬質部位特効",
+  "en": "Hard Part Bonus"
+ },
+ {
+  "i": 84,
+  "jp": "カウンター判定アップ",
+  "en": "Counter Window Up"
+ },
+ {
+  "i": 85,
+  "jp": "ゲージ消費量ダウン",
+  "en": "Gauge Use Down"
+ },
+ {
+  "i": 86,
+  "jp": "ゲージ消費速度ダウン",
+  "en": "Gauge Drain Down"
+ },
+ {
+  "i": 87,
+  "jp": "無敵時間アップ",
+  "en": "Invincibility Up"
+ },
+ {
+  "i": 88,
+  "jp": "目まい特効",
+  "en": "Dizzy Bonus"
+ },
+ {
+  "i": 89,
+  "jp": "リロード効果アップⅡ",
+  "en": "Reload Effect Up II"
+ },
+ {
+  "i": 90,
+  "jp": "毒無効",
+  "en": "Poison Negated"
+ },
+ {
+  "i": 91,
+  "jp": "感電無効",
+  "en": "Thunderblight Negated"
+ },
+ {
+  "i": 92,
+  "jp": "ずぶ濡れ無効",
+  "en": "Waterblight Negated"
+ },
+ {
+  "i": 93,
+  "jp": "♂ダメージアップ♀",
+  "en": "♂Damage Up♀"
+ },
+ {
+  "i": 94,
+  "jp": "体力還元",
+  "en": "Health Return"
+ },
+ {
+  "i": 95,
+  "jp": "突進攻撃化",
+  "en": "Charge Becomes Attack"
+ },
+ {
+  "i": 96,
+  "jp": "突進無敵",
+  "en": "Charge Invincibility"
+ },
+ {
+  "i": 97,
+  "jp": "溜め斬り無敵",
+  "en": "Charged Slash Invincibility"
+ },
+ {
+  "i": 98,
+  "jp": "胆力",
+  "en": "Fortitude"
+ },
+ {
+  "i": 99,
+  "jp": "ダメージアップⅤ",
+  "en": "Damage Up V"
+ },
+ {
+  "i": 100,
+  "jp": "ダメージ追加",
+  "en": "Extra Damage"
+ },
+ {
+  "i": 101,
+  "jp": "睡眠特効",
+  "en": "Sleep Bonus"
+ },
+ {
+  "i": 102,
+  "jp": "ひるみにくさ超アップ",
+  "en": "Flinch Res Super Up"
+ },
+ {
+  "i": 103,
+  "jp": "攻撃変化",
+  "en": "Attack Changed"
+ },
+ {
+  "i": 104,
+  "jp": "効果エリア生成",
+  "en": "Effect Area"
+ },
+ {
+  "i": 105,
+  "jp": "攻撃貫通化",
+  "en": "Piercing Attacks"
+ },
+ {
+  "i": 106,
+  "jp": "攻撃範囲変化",
+  "en": "Attack Range Changed"
+ },
+ {
+  "i": 107,
+  "jp": "リロード効果アップⅢ",
+  "en": "Reload Effect Up III"
+ },
+ {
+  "i": 108,
+  "jp": "スタミナ無制限",
+  "en": "Unlimited Stamina"
+ },
+ {
+  "i": 109,
+  "jp": "猟虫強化",
+  "en": "Kinsect Boost"
+ },
+ {
+  "i": 110,
+  "jp": "エキス採取量アップ",
+  "en": "Extract Gather Up"
+ },
+ {
+  "i": 111,
+  "jp": "鬼人乱舞無制限",
+  "en": "Unlimited Demon Dance"
+ },
+ {
+  "i": 112,
+  "jp": "スピードダウン",
+  "en": "Speed Down"
+ },
+ {
+  "i": 113,
+  "jp": "回避時爆弾設置",
+  "en": "Bomb on Evade"
+ },
+ {
+  "i": 114,
+  "jp": "見切り",
+  "en": "Critical Eye"
+ },
+ {
+  "i": 115,
+  "jp": "効果エリア追従",
+  "en": "Effect Area Follows"
+ },
+ {
+  "i": 116,
+  "jp": "回避時ダメージアップ",
+  "en": "Damage Up on Evade"
+ },
+ {
+  "i": 117,
+  "jp": "回避時体力回復",
+  "en": "Heal on Evade"
+ },
+ {
+  "i": 118,
+  "jp": "めまい誘発可能化",
+  "en": "Can Cause Stun"
+ },
+ {
+  "i": 119,
+  "jp": "通常射撃速度アップ",
+  "en": "Normal Shot Speed Up"
+ },
+ {
+  "i": 120,
+  "jp": "双追撃",
+  "en": "Double Follow-up"
+ },
+ {
+  "i": 121,
+  "jp": "突進強化",
+  "en": "Charge Boost"
+ },
+ {
+  "i": 122,
+  "jp": "龍風圧無効",
+  "en": "Dragon Wind Pressure Negated"
+ },
+ {
+  "i": 123,
+  "jp": "突進超強化",
+  "en": "Charge Super Boost"
+ },
+ {
+  "i": 124,
+  "jp": "攻撃拡散化",
+  "en": "Spread Attacks"
+ },
+ {
+  "i": 125,
+  "jp": "特殊追撃効果",
+  "en": "Special Follow-up"
+ },
+ {
+  "i": 126,
+  "jp": "無敵化",
+  "en": "Invincible"
+ },
+ {
+  "i": 127,
+  "jp": "吸血化",
+  "en": "Lifesteal"
+ },
+ {
+  "i": 128,
+  "jp": "ゲージ無制限",
+  "en": "Unlimited Gauge"
+ },
+ {
+  "i": 129,
+  "jp": "麻痺無効",
+  "en": "Paralysis Negated"
+ },
+ {
+  "i": 130,
+  "jp": "狩力ダメージ軽減",
+  "en": "Hunt Power Damage Reduced"
+ },
+ {
+  "i": 131,
+  "jp": "コンボダメージアップ",
+  "en": "Combo Damage Up"
+ },
+ {
+  "i": 132,
+  "jp": "回復効果付与",
+  "en": "Healing Effect"
+ },
+ {
+  "i": 133,
+  "jp": "リーチアップ",
+  "en": "Reach Up"
+ },
+ {
+  "i": 134,
+  "jp": "スピードアップⅡ",
+  "en": "Speed Up II"
+ },
+ {
+  "i": 135,
+  "jp": "ガードダメージアップ",
+  "en": "Guard Damage Up"
+ },
+ {
+  "i": 136,
+  "jp": "最大溜め無敵",
+  "en": "Max Charge Invincibility"
+ },
+ {
+  "i": 137,
+  "jp": "溜め撃ち無敵",
+  "en": "Charged Shot Invincibility"
+ },
+ {
+  "i": 138,
+  "jp": "ギルドの星Ⅰ",
+  "en": "Guild Star I"
+ },
+ {
+  "i": 139,
+  "jp": "ギルドの星Ⅱ",
+  "en": "Guild Star II"
+ },
+ {
+  "i": 140,
+  "jp": "自動武技Ｐ回復",
+  "en": "Auto Martial Art P Recovery"
+ },
+ {
+  "i": 141,
+  "jp": "攻撃スピードアップ",
+  "en": "Attack Speed Up"
+ },
+ {
+  "i": 142,
+  "jp": "狙われやすさ大ダウン",
+  "en": "Aggro Greatly Down"
+ },
+ {
+  "i": 143,
+  "jp": "百烈突き無敵",
+  "en": "Hundred Thrust Invincibility"
+ },
+ {
+  "i": 144,
+  "jp": "リロードショット無敵",
+  "en": "Reload Shot Invincibility"
+ },
+ {
+  "i": 145,
+  "jp": "バースト斬り無敵",
+  "en": "Burst Slash Invincibility"
+ },
+ {
+  "i": 146,
+  "jp": "一定回数無敵",
+  "en": "Limited Invincibility"
+ },
+ {
+  "i": 147,
+  "jp": "麻痺無効",
+  "en": "Paralysis Negated"
+ },
+ {
+  "i": 148,
+  "jp": "適正距離延長",
+  "en": "Ideal Range Extended"
+ },
+ {
+  "i": 149,
+  "jp": "ゲージ蓄積量アップ",
+  "en": "Gauge Gain Up"
+ },
+ {
+  "i": 150,
+  "jp": "ガードバリア強化",
+  "en": "Guard Barrier Boost"
+ },
+ {
+  "i": 151,
+  "jp": "狩力ダメージアップ",
+  "en": "Hunt Power Damage Up"
+ },
+ {
+  "i": 152,
+  "jp": "気刃乱れ斬り強化",
+  "en": "Spirit Blade Flurry Boost"
+ },
+ {
+  "i": 153,
+  "jp": "毒特効",
+  "en": "Poison Bonus"
+ },
+ {
+  "i": 154,
+  "jp": "体力玉変化",
+  "en": "Health Orb Changed"
+ },
+ {
+  "i": 155,
+  "jp": "全体効果生成",
+  "en": "Group Effect"
+ },
+ {
+  "i": 156,
+  "jp": "特殊追加効果",
+  "en": "Special Extra Effect"
+ },
+ {
+  "i": 157,
+  "jp": "攻撃力アップ",
+  "en": "Attack Up"
+ },
+ {
+  "i": 158,
+  "jp": "剣攻撃強化",
+  "en": "Sword Attack Boost"
+ },
+ {
+  "i": 159,
+  "jp": "響音波強化",
+  "en": "Echo Wave Boost"
+ },
+ {
+  "i": 160,
+  "jp": "対飛竜攻撃力アップ",
+  "en": "Attack Up vs Flying Wyverns"
+ },
+ {
+  "i": 161,
+  "jp": "対海竜攻撃力アップ",
+  "en": "Attack Up vs Leviathans"
+ },
+ {
+  "i": 162,
+  "jp": "対魚竜攻撃力アップ",
+  "en": "Attack Up vs Piscine Wyverns"
+ },
+ {
+  "i": 163,
+  "jp": "対牙竜攻撃力アップ",
+  "en": "Attack Up vs Fanged Wyverns"
+ },
+ {
+  "i": 164,
+  "jp": "対獣竜攻撃力アップ",
+  "en": "Attack Up vs Brute Wyverns"
+ },
+ {
+  "i": 165,
+  "jp": "対古龍攻撃力アップ",
+  "en": "Attack Up vs Elder Dragons"
+ },
+ {
+  "i": 166,
+  "jp": "対鳥竜攻撃力アップ",
+  "en": "Attack Up vs Bird Wyverns"
+ },
+ {
+  "i": 167,
+  "jp": "対牙獣攻撃力アップ",
+  "en": "Attack Up vs Fanged Beasts"
+ },
+ {
+  "i": 168,
+  "jp": "流射強化",
+  "en": "Heaven Shot Boost"
+ },
+ {
+  "i": 169,
+  "jp": "飛剛射強化",
+  "en": "Flying Power Shot Boost"
+ },
+ {
+  "i": 170,
+  "jp": "拡散剛射強化",
+  "en": "Spread Power Shot Boost"
+ },
+ {
+  "i": 171,
+  "jp": "流射無制限",
+  "en": "Unlimited Heaven Shot"
+ },
+ {
+  "i": 172,
+  "jp": "剛射無制限",
+  "en": "Unlimited Power Shot"
+ },
+ {
+  "i": 173,
+  "jp": "ダメージ追加",
+  "en": "Extra Damage"
+ },
+ {
+  "i": 174,
+  "jp": "ゲージ無制限（限定）",
+  "en": "Unlimited Gauge (Limited)"
+ },
+ {
+  "i": 175,
+  "jp": "スピードアップⅢ",
+  "en": "Speed Up III"
+ },
+ {
+  "i": 176,
+  "jp": "SB斬り強化",
+  "en": "SB Slash Boost"
+ },
+ {
+  "i": 177,
+  "jp": "リーチアップ",
+  "en": "Reach Up"
+ },
+ {
+  "i": 178,
+  "jp": "突進強化",
+  "en": "Charge Boost"
+ },
+ {
+  "i": 179,
+  "jp": "ダメージ軽減",
+  "en": "Damage Reduced"
+ },
+ {
+  "i": 180,
+  "jp": "ひるみにくさ超アップ",
+  "en": "Flinch Res Super Up"
+ },
+ {
+  "i": 181,
+  "jp": "フルアクセル攻撃強化",
+  "en": "Full Accel Attack Boost"
+ },
+ {
+  "i": 182,
+  "jp": "雪だるま無効",
+  "en": "Snowman Negated"
+ },
+ {
+  "i": 183,
+  "jp": "泥まみれ無効",
+  "en": "Mud Negated"
+ },
+ {
+  "i": 184,
+  "jp": "裂傷無効",
+  "en": "Bleeding Negated"
+ },
+ {
+  "i": 185,
+  "jp": "被ダメージアップ無効",
+  "en": "Damage Taken Up Negated"
+ },
+ {
+  "i": 186,
+  "jp": "爆破やられ無効",
+  "en": "Blastblight Negated"
+ },
+ {
+  "i": 187,
+  "jp": "通常砲撃強化",
+  "en": "Normal Shelling Boost"
+ },
+ {
+  "i": 188,
+  "jp": "飛竜種耐性アップ",
+  "en": "Flying Wyvern Res Up"
+ },
+ {
+  "i": 189,
+  "jp": "海竜種耐性アップ",
+  "en": "Leviathan Res Up"
+ },
+ {
+  "i": 190,
+  "jp": "魚竜種耐性アップ",
+  "en": "Piscine Wyvern Res Up"
+ },
+ {
+  "i": 191,
+  "jp": "牙竜種耐性アップ",
+  "en": "Fanged Wyvern Res Up"
+ },
+ {
+  "i": 192,
+  "jp": "獣竜種耐性アップ",
+  "en": "Brute Wyvern Res Up"
+ },
+ {
+  "i": 193,
+  "jp": "古龍種耐性アップ",
+  "en": "Elder Dragon Res Up"
+ },
+ {
+  "i": 194,
+  "jp": "鳥竜種耐性アップ",
+  "en": "Bird Wyvern Res Up"
+ },
+ {
+  "i": 195,
+  "jp": "牙獣種耐性アップ",
+  "en": "Fanged Beast Res Up"
+ },
+ {
+  "i": 196,
+  "jp": "部位破壊強化",
+  "en": "Part Break Boost"
+ },
+ {
+  "i": 197,
+  "jp": "ジャンプ螺旋撃強化",
+  "en": "Jump Spiral Boost"
+ },
+ {
+  "i": 198,
+  "jp": "いなし貯め",
+  "en": "Parry Charge"
+ },
+ {
+  "i": 199,
+  "jp": "ジャンプ無敵",
+  "en": "Jump Invincibility"
+ },
+ {
+  "i": 200,
+  "jp": "火傷無効",
+  "en": "Fireblight Negated"
+ },
+ {
+  "i": 201,
+  "jp": "睡眠無効",
+  "en": "Sleep Negated"
+ },
+ {
+  "i": 202,
+  "jp": "気絶無効",
+  "en": "Stun Negated"
+ },
+ {
+  "i": 203,
+  "jp": "感染無効",
+  "en": "Frenzy Negated"
+ },
+ {
+  "i": 204,
+  "jp": "泡無効",
+  "en": "Bubble Negated"
+ },
+ {
+  "i": 205,
+  "jp": "溜め限界突破",
+  "en": "Charge Limit Break"
+ },
+ {
+  "i": 206,
+  "jp": "溜め移動速度アップ",
+  "en": "Charge Move Speed Up"
+ },
+ {
+  "i": 207,
+  "jp": "乱舞無敵",
+  "en": "Demon Dance Invincibility"
+ },
+ {
+  "i": 208,
+  "jp": "属性解放突き無敵",
+  "en": "Element Discharge Invincibility"
+ },
+ {
+  "i": 209,
+  "jp": "フルバースト無敵",
+  "en": "Full Burst Invincibility"
+ },
+ {
+  "i": 210,
+  "jp": "シールドメテオ無敵",
+  "en": "Shield Meteor Invincibility"
+ },
+ {
+  "i": 211,
+  "jp": "カウンター突き無敵",
+  "en": "Counter Thrust Invincibility"
+ },
+ {
+  "i": 212,
+  "jp": "真鬼人回避強化",
+  "en": "True Demon Evade Boost"
+ },
+ {
+  "i": 213,
+  "jp": "いなし速度アップ",
+  "en": "Parry Speed Up"
+ },
+ {
+  "i": 214,
+  "jp": "溜め時間短縮（回数）",
+  "en": "Charge Time Down (Count)"
+ },
+ {
+  "i": 215,
+  "jp": "溜め二連斬り強化",
+  "en": "Charged Double Slash Boost"
+ }
+]

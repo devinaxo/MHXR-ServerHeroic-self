@@ -1,0 +1,566 @@
+{
+ "about": "English texture translations for Monster Hunter Explore (MHXR, Android).",
+ "howItWorks": "Each entry names a PNG and every archive it must be written into. A texture usually exists in several archives; all of them are listed because the client caches textures by name and may load any copy, so patching only one leaves some screens Japanese.",
+ "appliedOnOriginServer": "res_ver 291-300 on the origin server; the 7 formerly-dropped textures re-applied at res 368 and menu_Town01 + otomo hunterinfo at res 369 after the FPK +0x48 fix.",
+ "textures": [
+  {
+   "png": "cmn_equipbanner_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "0b1b713ea035f78a",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/cmn/cmn_equipbanner_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "cmn_kaiikiName01_LP4_NOMIP.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "11f86cc24e516063",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/cmn/cmn_kaiikiName01_LP4_NOMIP"
+    }
+   ]
+  },
+  {
+   "png": "cmn_load01_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "cd19b7232d9d0983",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/cmn/cmn_load01_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "cmn_otomoWindow_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "a424f5767509473a",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/cmn/cmn_otomoWindow_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "cmn_sample_syougou_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 128,
+   "height": 128,
+   "pristineSize": 32808,
+   "pristineSha256_16": "cd6df32537c7d9b3",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_common.arc",
+     "entry": "GUI/tex/cmn/cmn_sample_syougou_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "map_03_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "fc72cc0d97bc52e0",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/map/map_03_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_Equip01_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "e7adf8cb7fc7d1e3",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_common.arc",
+     "entry": "GUI/tex/menu/menu_Equip01_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_Equip02_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "9efd86c7721e905f",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_list.arc",
+     "entry": "GUI/tex/menu/menu_Equip02_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_menu.arc",
+     "entry": "GUI/tex/menu/menu_Equip02_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_equip.arc",
+     "entry": "GUI/tex/menu/menu_Equip02_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_Equip05_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "1b85d0955723d97a",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_detail.arc",
+     "entry": "GUI/tex/menu/menu_Equip05_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_menu.arc",
+     "entry": "GUI/tex/menu/menu_Equip05_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_equip.arc",
+     "entry": "GUI/tex/menu/menu_Equip05_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_title.arc",
+     "entry": "GUI/tex/menu/menu_Equip05_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_EquipMenu03_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "62d322ff56ab8103",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_detail.arc",
+     "entry": "GUI/tex/menu/menu_EquipMenu03_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_common.arc",
+     "entry": "GUI/tex/menu/menu_EquipMenu03_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_EquipMenu04_BM_NOMIP.png",
+   "format": "PVRTC4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 1572904,
+   "pristineSha256_16": "62e50fdab1b61305",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_menu.arc",
+     "entry": "GUI/tex/menu/menu_EquipMenu04_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_top.arc",
+     "entry": "GUI/tex/menu/menu_EquipMenu04_BM_NOMIP"
+    }
+   ]
+  },
+  {
+   "png": "menu_HeaderFooter_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "6fc05ee51f1f1146",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_common.arc",
+     "entry": "GUI/tex/menu/menu_HeaderFooter_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_partner_list.arc",
+     "entry": "GUI/tex/menu/menu_HeaderFooter_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_HeaderFooter_ipad_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "595f14a2e15ea63e",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_common.arc",
+     "entry": "GUI/tex/menu/menu_HeaderFooter_ipad_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_bukisyousai_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "014d630110fcfd01",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/menu/menu_bukisyousai_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_home_parts00_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "4f3f1abf7348af4b",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_equip.arc",
+     "entry": "GUI/tex/menu/menu_home_parts00_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_home_parts01_BM_NOMIP_jpn.png",
+   "format": "PVRTC4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 1572904,
+   "pristineSha256_16": "df3c8a81325ed33c",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_cmn.arc",
+     "entry": "GUI/tex/menu/menu_home_parts01_BM_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_hunterinfo_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "9850842601a32967",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_menu.arc",
+     "entry": "GUI/tex/menu/menu_hunterinfo_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_equip.arc",
+     "entry": "GUI/tex/menu/menu_hunterinfo_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_hunter_info.arc",
+     "entry": "GUI/tex/menu/menu_hunterinfo_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_otomo_detail.arc",
+     "entry": "GUI/tex/menu/menu_hunterinfo_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_otomo_menu.arc",
+     "entry": "GUI/tex/menu/menu_hunterinfo_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_kakou02_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "f371354b3c2d6707",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_detail.arc",
+     "entry": "GUI/tex/menu/menu_kakou02_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_list.arc",
+     "entry": "GUI/tex/menu/menu_kakou02_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_equip.arc",
+     "entry": "GUI/tex/menu/menu_kakou02_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "title_parts01_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "7089e9fd07eb14df",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_shop.arc",
+     "entry": "GUI/tex/tit/title_parts01_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_title.arc",
+     "entry": "GUI/tex/tit/title_parts01_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "event_parts04_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "6792837f4d16e2e3",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_event_info_popup.arc",
+     "entry": "GUI/tex/event/event_parts04_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_forest_lottery.arc",
+     "entry": "GUI/tex/event/event_parts04_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_event_quest.arc",
+     "entry": "GUI/tex/event/event_parts04_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_forest.arc",
+     "entry": "GUI/tex/event/event_parts04_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_quest.arc",
+     "entry": "GUI/tex/event/event_parts04_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_result.arc",
+     "entry": "GUI/tex/event/event_parts04_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "nyanken_parts00_BM_NOMIP.png",
+   "format": "PVRTC4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 1572904,
+   "pristineSha256_16": "835518196041450c",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_nyanken.arc",
+     "entry": "GUI/tex/nyanken/nyanken_parts00_BM_NOMIP"
+    }
+   ]
+  },
+  {
+   "png": "nyanken_parts00_LP4_NOMIP.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "b242643564437f04",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_common.arc",
+     "entry": "GUI/tex/nyanken/nyanken_parts00_LP4_NOMIP"
+    }
+   ]
+  },
+  {
+   "png": "town_koukan_parts02_BM_NOMIP.png",
+   "format": "PVRTC4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 393256,
+   "pristineSha256_16": "2b0af6681f4d1b1b",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_exchange.arc",
+     "entry": "GUI/tex/town/town_koukan_parts02_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_forest_lottery.arc",
+     "entry": "GUI/tex/town/town_koukan_parts02_BM_NOMIP"
+    }
+   ]
+  },
+  {
+   "png": "town_koukan_parts_BM_NOMIP.png",
+   "format": "PVRTC4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 393256,
+   "pristineSha256_16": "4aa57d2e956e2eb4",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_exchange.arc",
+     "entry": "GUI/tex/town/town_koukan_parts_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_forest_lottery.arc",
+     "entry": "GUI/tex/town/town_koukan_parts_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_equip.arc",
+     "entry": "GUI/tex/town/town_koukan_parts_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_quest.arc",
+     "entry": "GUI/tex/town/town_koukan_parts_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_treasure.arc",
+     "entry": "GUI/tex/town/town_koukan_parts_BM_NOMIP"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_quest_sekihi.arc",
+     "entry": "GUI/tex/town/town_koukan_parts_BM_NOMIP"
+    }
+   ]
+  },
+  {
+   "png": "town_koukanjyo_BM_NOMIP_jpn.png",
+   "format": "PVRTC4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 1572904,
+   "pristineSha256_16": "429b28616efbf7eb",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_exchange.arc",
+     "entry": "GUI/tex/town/town_koukanjyo_BM_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_forest_lottery.arc",
+     "entry": "GUI/tex/town/town_koukanjyo_BM_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "town_trainingRangeBG_BM_NOMIP_jpn.png",
+   "format": "PVRTC4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 1572904,
+   "pristineSha256_16": "c987af879bca1af0",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_exchange.arc",
+     "entry": "GUI/tex/town/town_trainingRangeBG_BM_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_training.arc",
+     "entry": "GUI/tex/town/town_trainingRangeBG_BM_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu_Town01_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "7dd99a770c005227",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_detail.arc",
+     "entry": "GUI/tex/menu/menu_Town01_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_event_quest.arc",
+     "entry": "GUI/tex/menu/menu_Town01_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_town.arc",
+     "entry": "GUI/tex/menu/menu_Town01_LP4_NOMIP_jpn"
+    }
+   ]
+  }
+ ],
+ "excludedTargets": {
+  "note": "Empty: the old \"rebuilding an archive crashes its screen\" rule was the FPK entry +0x48 size field (sizeAndFlags) going stale when an archive grew. The packers (fpk-align/fpk-pull/fpk-replace) now recompute it, so no archive has to be skipped. If your own packer does not, run tools-js/fpk-check.cjs on the result. See docs/TEXTURE-CRASH-FPK-SIZE.md.",
+  "arcs": []
+ }
+}

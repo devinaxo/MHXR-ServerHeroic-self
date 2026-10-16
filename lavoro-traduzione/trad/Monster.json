@@ -92,7 +92,7 @@
  {
   "i": 18,
   "jp": "チャナガブル",
-  "en": "Nibelsnarf"
+  "en": "Gobul"
  },
  {
   "i": 19,
@@ -217,12 +217,12 @@
  {
   "i": 43,
   "jp": "ウルクスス",
-  "en": "Volvidon"
+  "en": "Lagombi"
  },
  {
   "i": 44,
   "jp": "ラングロトラ",
-  "en": "Lagombi"
+  "en": "Volvidon"
  },
  {
   "i": 45,
@@ -502,7 +502,7 @@
  {
   "i": 100,
   "jp": "ラングロトラ星黒種",
-  "en": "LagombiStarblack"
+  "en": "VolvidonStarblack"
  },
  {
   "i": 101,
@@ -562,12 +562,12 @@
  {
   "i": 112,
   "jp": "ウルクスス魔女種",
-  "en": "VolvidonWitch"
+  "en": "LagombiWitch"
  },
  {
   "i": 113,
   "jp": "チャナガブル魔女種",
-  "en": "NibelsnarfWitch"
+  "en": "GobulWitch"
  },
  {
   "i": 114,
@@ -592,7 +592,7 @@
  {
   "i": 118,
   "jp": "ラングロトラ聖夜種",
-  "en": "LagombiWitch"
+  "en": "VolvidonWitch"
  },
  {
   "i": 119,
@@ -717,7 +717,7 @@
  {
   "i": 143,
   "jp": "星黒獣ラングロトラ",
-  "en": "Lagombi the Starblack Beast"
+  "en": "Volvidon the Starblack Beast"
  },
  {
   "i": 144,
