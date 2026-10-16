@@ -6,10 +6,7 @@
 #   docker compose -f docker-compose.prod.yml start               riaccende
 #
 # MAI "down -v": la -v cancella i volumi, cioe' il database e il personaggio.
-#
-# I volumi sono dichiarati "external" e conservano il nome che avevano quando li
-# creo' la vecchia installazione. E' voluto: cosi' passando a questo compose non
-# si sposta un byte di database, si riusa esattamente lo stesso disco.
+# I volumi del database sono dichiarati in fondo a questo file, senza "external".
 
 services:
   mongo:
@@ -37,7 +34,11 @@ services:
     env_file:
       - .env
     ports:
-      - '80:80'
+      # 8081, not 80: this host already uses 80/443 (Caddy) and 8080/8096
+      # (Jellyfin). version.controller.ts appends any port other than 80/443 to
+      # the URLs it hands the client, so this must match PORT in .env.
+      - '127.0.0.1:8081:8081'
+      - '100.115.13.121:8081:8081'
     volumes:
       # "yarn build" crea dist/public come SYMLINK a ../src/public, ma lo stage
       # di runtime copia solo /app/dist: il mount va su /app/src/public, non su
@@ -51,6 +52,13 @@ services:
       # Script di manutenzione. Estensione .cjs e non .js: il package.json ha
       # "type": "module", quindi ogni .js sotto /app sarebbe letto come ESM.
       - './tools-js:/app/tools'
+    # The container runs as uid 999; the bind-mounted packs belong to the host
+    # user, so it can read the .fpk files but cannot create download.list beside
+    # them (EACCES, and the client gets no resource manifests). Joining the host
+    # user's group is enough -- the pack directories are group-writable -- and
+    # avoids touching file ownership. Set HOST_GID in .env if `id` disagrees.
+    group_add:
+      - '${HOST_GID:-1000}'
     depends_on:
       mongo:
         condition: service_healthy
@@ -76,13 +84,12 @@ services:
     networks:
       - explore
 
+# No "external": those volumes existed only on the original author's machine
+# (fixed names apypos-server-main_mongo_*) and compose refused to start
+# elsewhere. Note that "down -v" now really does delete them.
 volumes:
   mongo_data:
-    external: true
-    name: apypos-server-main_mongo_data
   mongo_config:
-    external: true
-    name: apypos-server-main_mongo_config
 
 networks:
   explore:

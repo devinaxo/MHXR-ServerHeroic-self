@@ -4,10 +4,17 @@ import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import { ERROR_CODE, ERROR_CATEGORY } from '../../../constants/error.codes.js';
 import { createLogger } from '../../../middleware/logger.js';
 import User from '../../../model/user.js';
+import { spendiKaridama } from '../../../services/karidamaService.js';
+import { saldiPayments, paymentsDaSalvare } from '../../../services/paymentService.js';
 import type { SendRequestInput, AcceptRequestInput } from './friend.schema.js';
 import type { SessionOnlyInput } from '../../../schemas/common.schema.js';
 
 const log = createLogger('friend');
+
+// Hunter Coins charged per Hunting Friend slot expansion. 0 = free. The client
+// confirmation says "+5"; the request carries no cost, the server decides.
+const SLOT_PER_ESPANSIONE = 5;
+const PREZZO_ESPANSIONE_FRIEND = Math.max(0, Number(process.env.FRIEND_EXPAND_PRICE ?? 0) || 0);
 
 /*
  * "狩友" (Hunting Friend): relazione 1 a 1 fra due account, con richiesta di
@@ -31,12 +38,53 @@ export const capacityInfo = async (req: Request, res: Response) => {
     const data = {
       max: doc.box?.capacity?.friend_max ?? 100,
       now: doc.friend_info?.list?.length ?? 0,
-      price: 0,
+      price: PREZZO_ESPANSIONE_FRIEND,
     };
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in capacityInfo:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Capacity info failed');
+  }
+};
+
+/**
+ * friend/capacity/expand. The route did not exist, so pressing the button 404'd
+ * and the screen retried until the app was killed. The client parses
+ * `capacity` (the new max) and `payments` (the updated Hunter Coin balances), so
+ * that is what comes back -- the same contract as the equipment box.
+ */
+export const capacityExpand = async (req: Request, res: Response) => {
+  try {
+    const { session_id } = req.body as SessionOnlyInput;
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    const box = doc.box as unknown as {
+      capacity?: { friend_max?: number };
+      payments?: { mst_payment_id?: number | null; amount?: number | null }[];
+    };
+
+    if (PREZZO_ESPANSIONE_FRIEND > 0 && !spendiKaridama(box, PREZZO_ESPANSIONE_FRIEND)) {
+      return encryptAndSend(
+        { capacity: Number(box.capacity?.friend_max) || 100, payments: saldiPayments(box.payments) },
+        res, req, ERROR_CODE.ZENY_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+        'Not enough Hunter Coins',
+      );
+    }
+
+    const nuovoMax = (Number(box.capacity?.friend_max) || 100) + SLOT_PER_ESPANSIONE;
+    box.capacity = { ...(box.capacity ?? {}), friend_max: nuovoMax };
+
+    const update: Record<string, unknown> = { 'box.capacity.friend_max': nuovoMax };
+    if (PREZZO_ESPANSIONE_FRIEND > 0) update['box.payments'] = paymentsDaSalvare(box.payments);
+    await User.updateOne({ _id: doc._id }, { $set: update });
+
+    log.info('espansione amici | %s: %d -> %d', doc.character_name ?? '?', nuovoMax - SLOT_PER_ESPANSIONE, nuovoMax);
+    encryptAndSend({ capacity: nuovoMax, payments: saldiPayments(box.payments) }, res, req);
+  } catch (error) {
+    log.error('Error in capacityExpand:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Capacity expand failed');
   }
 };
 

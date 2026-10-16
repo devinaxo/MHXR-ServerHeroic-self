@@ -8,6 +8,28 @@ import { conteggiNavigazione } from '../../../services/navigazioneService.js';
 import type { SessionOnlyInput } from './notice.schema.js';
 const log = createLogger('notice');
 
+/*
+ * EXTRA TREASURE BUN (マシマシ宝まん). Read out of `sResponse::setupNoticeGet`
+ * (libMHS.so): the notice response's `increase_info` is copied straight into
+ * the client's cGameUserInfo --
+ *
+ *   mFreeRewardExtensionCount (+0x60) <- increase_info.now_num
+ *   daily allowance            (+0x64) <- increase_info.max_num
+ *   reset delay                (+0x68) <- increase_info.remain_time
+ *   absolute deadline          (+0x6c) <- now + increase_info.remain_time
+ *
+ * and `uGUIMapQuestPowerUp::updateRewardExtensionButton` only offers the bun
+ * when the allowance still has a use left (max_num - now_num >= 1). With the
+ * old all-zero `increase_info` the option stayed greyed out on every quest.
+ * These are the base daily numbers; MenuCmn 1092/1106/1107 describe the feature.
+ */
+const FREE_BUNS = {
+  // `now_num` is whatever is not free any more; `max_num` must be the larger.
+  now: Number(process.env.POWERUP_FREE_BUNS_USED ?? 1) || 0,
+  max: Number(process.env.POWERUP_FREE_BUNS_MAX ?? 2) || 2,
+  remain: Number(process.env.POWERUP_FREE_BUNS_REMAIN ?? 86400) || 0,
+};
+
 export const get = async (req: Request, res: Response) => {
   try {
     const { session_id } = req.body as SessionOnlyInput;
@@ -22,6 +44,24 @@ export const get = async (req: Request, res: Response) => {
     });
 
     log.debug('Count of unreceived presents:', presentCount); // Incomplete
+    /*
+     * Campaigns drive the banners the client floats above the island map and in
+     * the quest list. Each entry needs a real target and a real countdown:
+     * `message` is shown to the player verbatim, `end_remain` is seconds until
+     * the banner goes away, and `value` is the quest count the campaign tracks.
+     *
+     * The three lists below used to carry the original author's debug stubs:
+     * "Notice/Get island_campaign", "Notice/Get event_campaign_list" and "test",
+     * all with a fixed 10-hour timer and made-up ids. The client showed them
+     * as-is, so a banner reading "Notice/Get island_campaign 9 hours left"
+     * followed the player around the map and reappeared on every quest.
+     *
+     * They are empty until there is a campaign behind them. There is nothing to
+     * derive one from yet -- the `events` collection is empty and no event
+     * scheduler runs -- so a plausible-looking row would just be a different
+     * lie in the same place. The shape is kept because the client parses the
+     * keys regardless of whether the arrays have anything in them.
+     */
     const data = {
     banner_list: {
       outer_banner_list: [
@@ -41,52 +81,13 @@ export const get = async (req: Request, res: Response) => {
       ],
     },
     campaign_list: {
-      event_campaign_list: [
-        {
-          campaigns: [
-            //Shows crown over event selected
-            {
-              end_remain: 36000,
-              message: 'Notice/Get event_campaign_list',
-              mst_quest_campaign_type_id: 1,
-              start_remain: 0,
-              value: 1,
-            },
-          ],
-          mst_event_node_id: 2392657253, //Event Selected
-        },
-      ],
-      forest_campaign_list: [
-        //Unknown Beahviour probably similar to above...
-        {
-          forest_campaigns: [
-            {
-              end_remain: 3600,
-              message: 'test',
-              mst_forest_campaign_type_id: 1,
-              start_remain: 0,
-              value: 234,
-            },
-          ],
-          mst_event_info_id: 3424126991,
-        },
-      ],
-
-      island_campaign_list: [
-        //Sets a message above the island and on quests
-        {
-          campaigns: [
-            {
-              end_remain: 36000, // 9 hours left
-              message: 'Notice/Get island_campaign',
-              mst_quest_campaign_type_id: 2,
-              start_remain: 0,
-              value: 5,
-            },
-          ],
-          mst_part_id: 3815380063, //Selected Island...
-        },
-      ],
+      // Shows a crown over the selected event. Needs a live event node.
+      event_campaign_list: [],
+      // Unknown behaviour, probably shaped like the event list.
+      forest_campaign_list: [],
+      // Banner above an island. Needs a real mst_part_id from the ocean data:
+      // the stub used 3815380063, which is not one of the 36 islands.
+      island_campaign_list: [],
       m16_campaign_list: [
         // {
         //   m16_campaigns: [
@@ -187,9 +188,9 @@ export const get = async (req: Request, res: Response) => {
     free_auto: 0,
     fuwafuwa_time: Date.now(),
     increase_info: {
-      max_num: 0,
-      now_num: 0,
-      remain_time: 3600,
+      max_num: Math.max(FREE_BUNS.max, FREE_BUNS.now + 1),
+      now_num: FREE_BUNS.now,
+      remain_time: FREE_BUNS.remain,
     },
     invite_num: 0,
     // Il numerino rosso sulla bussola (探検ナビ): voci ancora da riscattare.

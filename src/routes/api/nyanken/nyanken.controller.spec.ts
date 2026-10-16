@@ -5,7 +5,7 @@ vi.mock('../../../services/crypto/encryptionHelpers');
 vi.mock('../../../model/user');
 
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
-import { progress, islandInfoGet, historyGet, QuestList, result, start, returnHome } from './nyanken.controller.js';
+import { progress, islandInfoGet, historyGet, QuestList, result, start, startNext, paidResult, returnHome } from './nyanken.controller.js';
 import User from '../../../model/user.js';
 import pool from '../../../json/nyanken-equip.json' with { type: 'json' };
 import categorie from '../../../json/nyanken-categorie.json' with { type: 'json' };
@@ -84,6 +84,19 @@ describe('nyanken.controller', () => {
         'mst_banner_id', 'mst_nyanken_id', 'open', 'play_limit', 'play_now', 'quest_state', 'quest_time',
         'sequence_no', 'sort_key', 'start', 'time_display_flag', 'name', 'island_info'];
       for (const q of lista) for (const k of campi) expect(q).toHaveProperty(k);
+    });
+
+    it('the paid shelf advertises the batch price (4 rolls), not one roll', () => {
+      const { req, res } = mockReqRes({});
+      QuestList(req, res);
+      const [data] = vi.mocked(encryptAndSend).mock.calls[0]!;
+      const paid = (data as { paidQuestDataList: { currency_ammount: number; discount_currency_ammount: number }[] }).paidQuestDataList;
+      expect(paid).toHaveLength(13);
+      // 5 giri al prezzo di 4: 15 x 4 = 60.
+      for (const q of paid) {
+        expect(q.currency_ammount).toBe(60);
+        expect(q.discount_currency_ammount).toBe(60);
+      }
     });
   });
 });
@@ -280,7 +293,7 @@ describe('nyanken: spedizione con il timer', () => {
     const { req, res } = mockReqRes({ session_id: 's1', mst_nyanken_id: ID_ARMI67 });
     await returnHome(req, res);
     expect(User.updateOne).not.toHaveBeenCalled();
-    expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.GENERIC_ERROR, 2, expect.stringContaining('3/15'));
+    expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, 2, expect.stringContaining('3/15'));
   });
 
   it('the cats bring 3 or 5 karidama, shown as a normal reward (never the whole balance)', async () => {
@@ -312,5 +325,112 @@ describe('nyanken: spedizione con il timer', () => {
     }
     expect(lista.find((q) => q.name === '秘境探検クエスト')!.quest_time).toBe(60);
     expect(lista.find((q) => q.name === '★6★7武器確定クエスト')!.quest_time).toBe(480);
+  });
+});
+
+describe('nyanken: spedizione rapida a pagamento (start/next)', () => {
+  beforeEach(() => vi.resetAllMocks());
+
+  const KARIDAMA = 3301823224;
+  const ID_ARMI67 = categorie.find((c) => c.nome === '★6★7武器確定クエスト')!.mst_nyanken_id;
+  // Una spedizione gratis gia' in corso: start/next deve poterla ignorare.
+  const giocatore = (gemme: number) => ({
+    _id: 'u1', character_name: 'Heroic69',
+    nyanken_cooldown: { mst_nyanken_id: ID_ARMI67, inizio: 1, fine: 999_999_999_999 },
+    box: { equipments: [], capacity: { eqp_box: 200 }, payments: [{ mst_payment_id: KARIDAMA, amount: gemme }] },
+  });
+
+  it('charges the cost, delivers 3 pieces now, and leaves the free timer alone', async () => {
+    vi.mocked(User.findOne).mockResolvedValue(giocatore(50) as never);
+    vi.mocked(User.updateOne).mockResolvedValue({} as never);
+    const { req, res } = mockReqRes({ session_id: 's1', mst_nyanken_id: ID_ARMI67 });
+    await startNext(req, res);
+
+    // 50 - 15 di costo + 5 di premio (spedizione da 480 min) = 40.
+    expect(User.updateOne).toHaveBeenCalledWith({ _id: 'u1' }, {
+      $push: { 'box.equipments': { $each: expect.any(Array) } },
+      $set: { 'box.payments': [{ mst_payment_id: KARIDAMA, amount: 40 }] },
+    });
+    // Nessuna scrittura sul timer della spedizione gratis.
+    const aggiornamenti = vi.mocked(User.updateOne).mock.calls.map((c) => JSON.stringify(c[1]));
+    expect(aggiornamenti.some((u) => u.includes('nyanken_cooldown'))).toBe(false);
+
+    const [data] = vi.mocked(encryptAndSend).mock.calls.at(-1)!;
+    const d = data as { result_list: { equipments: unknown[] } };
+    expect(d.result_list.equipments).toHaveLength(3);
+  });
+
+  it('refuses when Hunter Coins are short, changing nothing', async () => {
+    vi.mocked(User.findOne).mockResolvedValue(giocatore(5) as never);
+    const { req, res } = mockReqRes({ session_id: 's1', mst_nyanken_id: ID_ARMI67 });
+    await startNext(req, res);
+    expect(User.updateOne).not.toHaveBeenCalled();
+    expect(encryptAndSend).toHaveBeenCalledWith(
+      expect.objectContaining({ result_list: expect.anything() }),
+      res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, 2, expect.stringContaining('5/15'),
+    );
+  });
+
+  it('rejects an unknown session', async () => {
+    vi.mocked(User.findOne).mockResolvedValue(null);
+    const { req, res } = mockReqRes({ session_id: 'nope' });
+    await startNext(req, res);
+    expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+  });
+});
+
+describe('nyanken: spedizione a pagamento (paid/result, il pulsante viola)', () => {
+  beforeEach(() => vi.resetAllMocks());
+
+  const KARIDAMA = 3301823224;
+  const ID_ARMI67 = categorie.find((c) => c.nome === '★6★7武器確定クエスト')!.mst_nyanken_id;
+  // Una spedizione gratis gia' in corso: paid/result deve ignorarla (prima dava errore 1).
+  const giocatore = (gemme: number) => ({
+    _id: 'u1', character_name: 'Heroic69',
+    nyanken_cooldown: { mst_nyanken_id: 2022298312, inizio: 1, fine: 999_999_999_999 },
+    box: { equipments: [], capacity: { eqp_box: 200 }, payments: [{ mst_payment_id: KARIDAMA, amount: gemme }] },
+  });
+
+  it('charges the batch cost, delivers 5 expeditions of loot, and ignores the free timer', async () => {
+    vi.mocked(User.findOne).mockResolvedValue(giocatore(100) as never);
+    vi.mocked(User.updateOne).mockResolvedValue({} as never);
+    const { req, res } = mockReqRes({ session_id: 's1', mst_nyanken_id: ID_ARMI67 });
+    await paidResult(req, res);
+
+    // 5 giri x 3 pezzi = 15 pezzi; ★6★7 -> 5 狩玉 a giro = 25. Costo pacchetto = 4 giri = 60.
+    // 100 - 60 + 25 = 65.
+    expect(User.updateOne).toHaveBeenCalledWith({ _id: 'u1' }, {
+      $push: { 'box.equipments': { $each: expect.any(Array) } },
+      $set: { 'box.payments': [{ mst_payment_id: KARIDAMA, amount: 65 }] },
+    });
+    const aggiornamenti = vi.mocked(User.updateOne).mock.calls.map((c) => JSON.stringify(c[1]));
+    expect(aggiornamenti.some((u) => u.includes('nyanken_cooldown'))).toBe(false);
+
+    const [data] = vi.mocked(encryptAndSend).mock.calls.at(-1)!;
+    const d = data as { result_list: { equipments: unknown[] } };
+    expect(d.result_list.equipments).toHaveLength(15);
+  });
+
+  it('works while a free expedition is still exploring (no more error 1)', async () => {
+    vi.mocked(User.findOne).mockResolvedValue(giocatore(100) as never);
+    vi.mocked(User.updateOne).mockResolvedValue({} as never);
+    const { req, res } = mockReqRes({ session_id: 's1', mst_nyanken_id: ID_ARMI67 });
+    await paidResult(req, res);
+    const chiamata = vi.mocked(encryptAndSend).mock.calls.at(-1)!;
+    // Successo: encryptAndSend(data, res, req) senza codice d'errore.
+    expect(chiamata).toHaveLength(3);
+    expect((chiamata[0] as { result_list: { equipments: unknown[] } }).result_list.equipments).toHaveLength(15);
+    expect(User.updateOne).toHaveBeenCalled();
+  });
+
+  it('refuses when Hunter Coins are short, changing nothing', async () => {
+    vi.mocked(User.findOne).mockResolvedValue(giocatore(5) as never);
+    const { req, res } = mockReqRes({ session_id: 's1', mst_nyanken_id: ID_ARMI67 });
+    await paidResult(req, res);
+    expect(User.updateOne).not.toHaveBeenCalled();
+    expect(encryptAndSend).toHaveBeenCalledWith(
+      expect.objectContaining({ result_list: expect.anything() }),
+      res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, 2, expect.stringContaining('5/60'),
+    );
   });
 });

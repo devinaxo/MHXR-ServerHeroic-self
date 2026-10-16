@@ -99,6 +99,39 @@ describe('present.controller', () => {
       );
     });
 
+    it('merges point gifts into the existing balance instead of duplicating rows', async () => {
+      const mockUser = { uu_id: 'uid1', box: { points: [{ mst_event_point_id: 111, amount: 100 }] } };
+      vi.mocked(User.findOne).mockResolvedValue(mockUser as never);
+      vi.mocked(Present.find).mockResolvedValue([
+        {
+          _id: 'p1',
+          toObject: () => ({
+            content: {
+              points: [
+                { mst_event_point_id: 111, amount: 1000 },
+                { mst_event_point_id: 222, amount: 1000 },
+              ],
+            },
+          }),
+        },
+      ] as never);
+      vi.mocked(User.updateOne).mockResolvedValue({} as never);
+
+      const { req, res } = mockReqRes({ session_id: 'sess-1', _ids: ['p1'] });
+      await presentReceive(req, res);
+
+      // Scoped to the caller and to what is still unclaimed.
+      expect(Present.find).toHaveBeenCalledWith({
+        _id: { $in: ['p1'] },
+        uu_id: 'uid1',
+        received: { $ne: 1 },
+      });
+      expect(mockUser.box.points).toEqual([
+        { mst_event_point_id: 111, amount: 1100 },
+        { mst_event_point_id: 222, amount: 1000 },
+      ]);
+    });
+
     it('returns error on DB failure', async () => {
       vi.mocked(User.findOne).mockRejectedValue(new Error('DB fail'));
 

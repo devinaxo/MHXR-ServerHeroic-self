@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { Request, Response } from 'express';
 
 vi.mock('../../../model/user');
+vi.mock('../../../model/presents');
 vi.mock('../../../services/crypto/encryptionHelpers');
 vi.mock('../../../middleware/logger', () => ({
   createLogger: () => ({
@@ -13,6 +14,7 @@ vi.mock('../../../middleware/logger', () => ({
 }));
 
 import User from '../../../model/user.js';
+import Present from '../../../model/presents.js';
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import { ERROR_CODE, ERROR_CATEGORY } from '../../../constants/error.codes.js';
 import { registerAccount, loginAccount, migrationReady, migrationAuth } from './account.controller.js';
@@ -161,6 +163,32 @@ describe('account.controller', () => {
       await loginAccount(req, res);
 
       expect(User.updateOne).not.toHaveBeenCalled();
+    });
+
+    it('sends the daily Trade Points gift on the first login of the day', async () => {
+      vi.mocked(User.findOne).mockResolvedValue({ ...utenteOk, punti_ultimo_giorno: undefined } as never);
+      vi.mocked(User.findOneAndUpdate).mockResolvedValue(utenteOk);
+      vi.mocked(User.updateOne).mockResolvedValue({ modifiedCount: 1 } as never);
+      vi.mocked(Present.create).mockResolvedValue({} as never);
+      const { req, res } = mockReqRes(corpoOk);
+
+      await loginAccount(req, res);
+      await vi.waitFor(() => expect(Present.create).toHaveBeenCalled());
+
+      expect(Present.create).toHaveBeenCalledWith(
+        expect.objectContaining({ uu_id: 'test-uuid', content: expect.objectContaining({ points: expect.any(Array) }) }),
+      );
+    });
+
+    it('does not put a login_bonus_info popup in the response', async () => {
+      vi.mocked(User.findOne).mockResolvedValue({ ...utenteOk, punti_ultimo_giorno: undefined } as never);
+      vi.mocked(User.findOneAndUpdate).mockResolvedValue(utenteOk);
+      const { req, res } = mockReqRes(corpoOk);
+
+      await loginAccount(req, res);
+
+      const [data] = vi.mocked(encryptAndSend).mock.calls[0]!;
+      expect((data as Record<string, unknown>).login_bonus_info).toBeUndefined();
     });
 
     it('returns 4004 when user not found', async () => {

@@ -118,6 +118,43 @@ describe('story.controller', () => {
       );
     });
 
+    it('echoes the current island for a story it does not special-case', async () => {
+      const { req, res } = mockReqRes({
+        mst_ocean_id: 3525753088,
+        mst_part_id: 2053326309,
+        mst_node_id: 2264755923,
+        mst_story_id: 282500997,
+        mst_note_content_id: 0,
+        session_id: 'sess-1',
+      });
+
+      await end(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({ mst_part_id: 2053326309 }),
+        res,
+        req,
+      );
+    });
+
+    it('records a watched story so the scene is not replayed', async () => {
+      const { req, res } = mockReqRes({
+        mst_ocean_id: 3525753088,
+        mst_part_id: 3815380063,
+        mst_node_id: 4156475344,
+        mst_story_id: 2560604357,
+        mst_note_content_id: 0,
+        session_id: 'sess-1',
+      });
+
+      await end(req, res);
+
+      expect(User.updateOne).toHaveBeenCalledWith(
+        { current_session: 'sess-1' },
+        { $addToSet: { storie_viste: 2560604357 } },
+      );
+    });
+
     it('returns NOT_AUTHENTICATED for first branch when user not found', async () => {
       vi.mocked(User.findOne).mockResolvedValue(null);
 

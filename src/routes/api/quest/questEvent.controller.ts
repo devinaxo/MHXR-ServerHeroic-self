@@ -9,6 +9,7 @@ import QuestSheet from '../../../model/questSheet.js';
 import User from '../../../model/user.js';
 import { blocchiPerAvvio } from '../../../services/blocchiQuest.js';
 import { applicaRaccolta, salvaRaccolta } from '../../../services/raccoltaQuest.js';
+import { salvaOtomoAvviati } from '../../../services/otomoQuest.js';
 import type { EventStartInput } from './quest.schema.js';
 
 interface BlockListItem {
@@ -52,7 +53,7 @@ export const eventTicketFree = async (req: Request, res: Response) => {
 
 export const eventNormalStart = async (req: Request, res: Response) => {
   try {
-    const { mst_quest_id } = req.body as EventStartInput;
+    const { mst_quest_id, power_up, otomo } = req.body as EventStartInput & { otomo?: unknown };
 
 
     const data = {
@@ -89,7 +90,7 @@ export const eventNormalStart = async (req: Request, res: Response) => {
           now_point: 0,
           total_point: 0,
         },
-        power_up: 0,
+        power_up: power_up ?? 0,
         select_fix_equipment_idx: 0,
         subtargets: [{ instance_id: 0, mst_subtarget_id: 0 }],
       },
@@ -118,6 +119,7 @@ export const eventNormalStart = async (req: Request, res: Response) => {
     const sessione = String((req.body as { session_id?: string }).session_id ?? '');
     const punti = applicaRaccolta(data.instance_data.block_list, quest?.mRewardItemList, `${sessione}:${mst_quest_id}`);
     await salvaRaccolta((f, u) => User.updateOne(f, u), sessione, mst_quest_id, punti);
+    await salvaOtomoAvviati((f, u) => User.updateOne(f, u), sessione, mst_quest_id, otomo);
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in eventNormalStart:', error);
@@ -127,7 +129,7 @@ export const eventNormalStart = async (req: Request, res: Response) => {
 
 export const eventTicketStart = async (req: Request, res: Response) => {
   try {
-    const { mst_quest_id } = req.body as EventStartInput;
+    const { mst_quest_id, power_up, otomo } = req.body as EventStartInput & { otomo?: unknown };
     const startedQuest = mst_quest_id;
     const quest = await QuestSheet.findOne({ mQuestID: String(startedQuest) });
     const data = {
@@ -164,7 +166,7 @@ export const eventTicketStart = async (req: Request, res: Response) => {
           now_point: 0,
           total_point: 0,
         },
-        power_up: 0,
+        power_up: power_up ?? 0,
         select_fix_equipment_idx: 0,
         subtargets: [{ instance_id: 0, mst_subtarget_id: 0 }],
       },
@@ -190,6 +192,7 @@ export const eventTicketStart = async (req: Request, res: Response) => {
     const sessione = String((req.body as { session_id?: string }).session_id ?? '');
     const punti = applicaRaccolta(data.instance_data.block_list, quest?.mRewardItemList, `${sessione}:${startedQuest}`);
     await salvaRaccolta((f, u) => User.updateOne(f, u), sessione, startedQuest, punti);
+    await salvaOtomoAvviati((f, u) => User.updateOne(f, u), sessione, startedQuest, otomo);
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in eventTicketStart:', error);
@@ -199,7 +202,7 @@ export const eventTicketStart = async (req: Request, res: Response) => {
 
 export const eventScoreStart = async (req: Request, res: Response) => {
   try {
-    const { mst_quest_id } = req.body as EventStartInput;
+    const { mst_quest_id, power_up, otomo } = req.body as EventStartInput & { otomo?: unknown };
     const startedQuest = mst_quest_id;
     const quest = await QuestSheet.findOne({ mQuestID: String(startedQuest) });
     const data = {
@@ -236,7 +239,7 @@ export const eventScoreStart = async (req: Request, res: Response) => {
           now_point: 0,
           total_point: 0,
         },
-        power_up: 0,
+        power_up: power_up ?? 0,
         select_fix_equipment_idx: 0,
         subtargets: [{ instance_id: 0, mst_subtarget_id: 0 }],
       },
@@ -262,6 +265,7 @@ export const eventScoreStart = async (req: Request, res: Response) => {
     const sessione = String((req.body as { session_id?: string }).session_id ?? '');
     const punti = applicaRaccolta(data.instance_data.block_list, quest?.mRewardItemList, `${sessione}:${startedQuest}`);
     await salvaRaccolta((f, u) => User.updateOne(f, u), sessione, startedQuest, punti);
+    await salvaOtomoAvviati((f, u) => User.updateOne(f, u), sessione, startedQuest, otomo);
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in eventScoreStart:', error);
@@ -271,22 +275,28 @@ export const eventScoreStart = async (req: Request, res: Response) => {
 
 export const eventListAll = async (req: Request, res: Response) => {
   try {
+    const { session_id } = req.body as { session_id?: string };
+    const doc = typeof session_id === 'string' && session_id ? await User.findOne({ current_session: session_id }) : null;
+    const cleared = doc?.cleared_quests ?? [];
     const event = (await Event.findOne({}).exec())!.toObject();
     const data = {
       big_node_order_array: event.big_node_order_array,
       event_list: {
         assault: enrichEvent(
           (await AssualtEvents.find().exec()).map((d) => d.toObject({ getters: true })),
+          cleared,
         ),
-        m16: enrichEvent((await M16Events.find().exec()).map((d) => d.toObject({ getters: true }))),
+        m16: enrichEvent((await M16Events.find().exec()).map((d) => d.toObject({ getters: true })), cleared),
         score: enrichEvent(
           (await ScoreEvents.find().exec()).map((d) => d.toObject({ getters: true })),
+          cleared,
         ),
         standing: enrichEvent(
           (await StandingEvents.find().exec()).map((d) => d.toObject({ getters: true })),
+          cleared,
         ),
         ticket: await TicketEvents.find({}).exec(),
-        tour: enrichEvent((await TourEvents.find().exec()).map((d) => d.toObject({ getters: true }))),
+        tour: enrichEvent((await TourEvents.find().exec()).map((d) => d.toObject({ getters: true })), cleared),
       },
       next_day_start: event.next_day_start,
       next_latest_node_infos: event.next_latest_node_infos,

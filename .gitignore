@@ -40,5 +40,23 @@ recordings/
 # Patcher output
 scripts/patcher/out/
 
+# Extracted game art / texture dumps (Capcom content, local only -- same as
+# sprites/ and lavoro-traduzione/, which are deliberately untracked)
+/dump/
+/screenshots/
+/sprites/
+
+# The 90 MB client APK and the patched build are local artifacts, Capcom's
+# content, and far too big for git.
+*.apk
+
+
 # Website
 /website/
+
+# Pristine resource packs downloaded from Heroic's server (Capcom content,
+# local only, same treatment as /dump/ and sprites/)
+/heroic-packs-pristine/
+
+# Per-publish resource pack snapshots (Capcom content, local only)
+/backups/

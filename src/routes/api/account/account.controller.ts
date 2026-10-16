@@ -10,6 +10,7 @@ import {
   loginUser,
   registraAccesso,
 } from '../../../services/accountService.js';
+import { consegnaPresenteGiornalieroAsync } from '../../../services/presenteGiornalieroService.js';
 import type { MigrationReadyInput, MigrationAuthInput, RegistInput, LoginInput } from './account.schema.js';
 const log = createLogger('account');
 
@@ -178,7 +179,14 @@ export const loginAccount = async (req: Request, res: Response) => {
     // Senza await, apposta: vedi registraAccesso. Il login non la aspetta.
     registraAccesso(uu_id, req.ip ?? req.socket?.remoteAddress, (e) => log.warn('ultimo accesso non registrato:', e));
 
-    let login = {
+    /*
+     * Daily Trade Points are sent to the present box as a gift, once per game
+     * day. Fire-and-forget: the login must never fail because of a write, and
+     * the service swallows its own errors. See presenteGiornalieroService.ts.
+     */
+    void consegnaPresenteGiornalieroAsync(doc);
+
+    let login: Record<string, unknown> = {
       auto_course_remain_time: 3600,
       event_login_bonus_info: {
         banner_path: 'coev_04480',
@@ -259,6 +267,12 @@ export const loginAccount = async (req: Request, res: Response) => {
         ...login,
       };
     }
+
+    /*
+     * No login_bonus_info popup: the daily Trade Points now arrive as a gift in
+     * the present box, which shows them with an icon. See
+     * presenteGiornalieroService.ts.
+     */
 
     log.info(`TutorialStepUp: ${login.tutorial_step}`);
 

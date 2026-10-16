@@ -7,7 +7,7 @@ vi.mock('../../../model/user');
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import User from '../../../model/user.js';
 import { ERROR_CODE } from '../../../constants/error.codes.js';
-import { capacityInfo, listFriends, listRequests, sendRequest, acceptRequest } from './friend.controller.js';
+import { capacityInfo, capacityExpand, listFriends, listRequests, sendRequest, acceptRequest } from './friend.controller.js';
 
 function mockReqRes(body: Record<string, unknown> = {}) {
   const req = { body, ip: '127.0.0.1', get: vi.fn() } as unknown as Request;
@@ -47,6 +47,31 @@ describe('friend.controller', () => {
       vi.mocked(User.findOne).mockResolvedValue(null);
       const { req, res } = mockReqRes({ session_id: 'bad' });
       await capacityInfo(req, res);
+      expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    });
+  });
+
+  describe('capacityExpand', () => {
+    it('adds 5 slots, persists and returns {capacity, payments}', async () => {
+      vi.mocked(User.findOne).mockResolvedValue(baseUser() as never);
+      vi.mocked(User.updateOne).mockResolvedValue({} as never);
+      const { req, res } = mockReqRes({ session_id: 's1' });
+      await capacityExpand(req, res);
+
+      expect(User.updateOne).toHaveBeenCalledWith(
+        { _id: 'mongo-id' },
+        { $set: { 'box.capacity.friend_max': 105 } },
+      );
+      const [data] = vi.mocked(encryptAndSend).mock.calls[0]!;
+      const risposta = data as { capacity: number; payments: unknown[] };
+      expect(risposta.capacity).toBe(105);
+      expect(Array.isArray(risposta.payments)).toBe(true);
+    });
+
+    it('returns NOT_AUTHENTICATED when the session is unknown', async () => {
+      vi.mocked(User.findOne).mockResolvedValue(null);
+      const { req, res } = mockReqRes({ session_id: 'bad' });
+      await capacityExpand(req, res);
       expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
     });
   });

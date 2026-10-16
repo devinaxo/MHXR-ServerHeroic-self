@@ -153,6 +153,21 @@ export const updatePartNoteState = (
 export const end = async (req: Request, res: Response) => {
   try {
     const { session_id, mst_node_id, mst_note_content_id, mst_ocean_id, mst_part_id, mst_story_id } = req.body as StoryEndInput;
+    log.info(
+      'story/end | ocean=%s part=%s node=%s story=%s note=%s',
+      String(mst_ocean_id), String(mst_part_id), String(mst_node_id), String(mst_story_id), String(mst_note_content_id),
+    );
+    /*
+     * Segna la scena come vista. Senza questo, al rientro la mappa (ricostruita
+     * dalla full_island) rimanda ancora il mst_story_id e il client riproduce la
+     * stessa scena ogni volta ("Eliza ripete che serve il permesso di Argo").
+     */
+    if (session_id && mst_story_id) {
+      await User.updateOne(
+        { current_session: session_id },
+        { $addToSet: { storie_viste: Number(mst_story_id) } },
+      );
+    }
   // Use the above values to determine how to increment the island....
 
   const data = {
@@ -246,6 +261,15 @@ export const end = async (req: Request, res: Response) => {
 
     await User.findByIdAndUpdate(doc.id, update);
     }
+
+    /*
+     * Il client legge `mst_part_id` come "l'isola su cui sei adesso": con lo 0 di
+     * default, dopo una scena che non rientra nei due casi qui sopra restava
+     * senza isola e la scena stessa non partiva (es. la porta dell'isola 2).
+     * Si rimanda indietro quella della richiesta.
+     */
+    if (Number(mst_part_id)) data.mst_part_id = Number(mst_part_id);
+
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in end:', error);

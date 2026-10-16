@@ -39,7 +39,7 @@ describe('quest/reward/final (tutti i premi x5)', () => {
     await rewardFinal(req, res);
     expect(User.updateOne).not.toHaveBeenCalled();
     expect(doc.box.payments[0]!.amount).toBe(1);
-    expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.GENERIC_ERROR, 2, expect.stringContaining('1/2'));
+    expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, 2, expect.stringContaining('1/2'));
   });
 
   it('a second press (nothing left to multiply) costs nothing', async () => {

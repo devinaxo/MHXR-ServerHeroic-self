@@ -73,8 +73,13 @@ export const trainingEnd = async (req: Request, res: Response) => {
       log.debug('Inserted Quest as seen');
       cleared_quests.push({ mst_quest_id: cleared_quest, clear_time: clearTime });
     } else {
-      log.debug('Updated clear_time...');
-      cleared_quests[questIndex]!.clear_time = clearTime;
+      // Keep the BEST time, not the last (see islandEnd).
+      const precedente = Number(cleared_quests[questIndex]!.clear_time ?? 0);
+      const nuovo = Number(clearTime) || 0;
+      if (nuovo > 0 && (precedente <= 0 || nuovo < precedente)) {
+        log.debug('Updated clear_time...');
+        cleared_quests[questIndex]!.clear_time = nuovo;
+      }
     }
 
     const update = { cleared_quests: cleared_quests };
@@ -126,6 +131,7 @@ export const trainingEnd = async (req: Request, res: Response) => {
 };
 
 export const trainingStart = (req: Request, res: Response) => {
+  const { power_up } = req.body as TrainingStartInput & { power_up?: number };
   const data = {
     instance_data: {
       block_list: [
@@ -193,7 +199,7 @@ export const trainingStart = (req: Request, res: Response) => {
         now_point: 0,
         total_point: 0,
       },
-      power_up: 0,
+      power_up: power_up ?? 0,
       select_fix_equipment_idx: 0,
       subtargets: [{ instance_id: 0, mst_subtarget_id: 0 }],
     },

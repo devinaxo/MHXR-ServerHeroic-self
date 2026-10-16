@@ -58,7 +58,12 @@ export function makeDownloadList(type: string, os: string) {
     });
     let response = '';
     data.forEach((item, index) => {
-      response += `${item.filePath},${item.crc},${item.fileSize}`;
+      // Hex, not decimal: the client parses this field as hex, so a base-10 value
+      // is a different number and every pack reads as corrupt (0x2e853644 was
+      // emitted as "780482116"). padStart(8) restores leading zeros, which
+      // toString(16) drops.
+      const crcHex = item.crc.toString(16).padStart(8, '0');
+      response += `${item.filePath},${crcHex},${item.fileSize}`;
       if (index < data.length - 1) {
         response += '\n';
       }

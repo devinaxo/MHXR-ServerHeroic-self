@@ -14,7 +14,9 @@ import QuestSheet from '../../../model/questSheet.js';
 import User from '../../../model/user.js';
 import { blocchiPerAvvio } from '../../../services/blocchiQuest.js';
 import { applicaRaccolta, salvaRaccolta } from '../../../services/raccoltaQuest.js';
+import { salvaOtomoAvviati } from '../../../services/otomoQuest.js';
 import { spendiKaridama, saldoKaridama } from '../../../services/karidamaService.js';
+import { tempoPerLista } from '../../../services/questTime.js';
 import type { EternalStartInput } from './quest.schema.js';
 
 interface BlockListItem {
@@ -50,7 +52,7 @@ export const questResultEnd = (req: Request, res: Response) => {
 
 export const eternalStart = async (req: Request, res: Response) => {
   try {
-    const { mst_quest_id } = req.body as EternalStartInput;
+    const { mst_quest_id, power_up, otomo } = req.body as EternalStartInput & { otomo?: unknown };
     const startedQuest = mst_quest_id;
 
     const quest = await QuestSheet.findOne({ mQuestID: String(startedQuest) });
@@ -81,7 +83,7 @@ export const eternalStart = async (req: Request, res: Response) => {
           now_point: 0,
           total_point: 0,
         },
-        power_up: 0,
+        power_up: power_up ?? 0,
         select_fix_equipment_idx: 0,
         subtargets: [{ instance_id: 0, mst_subtarget_id: 0 }],
       },
@@ -110,6 +112,7 @@ export const eternalStart = async (req: Request, res: Response) => {
     const sessione = String((req.body as { session_id?: string }).session_id ?? '');
     const punti = applicaRaccolta(data.instance_data.block_list, quest?.mRewardItemList, `${sessione}:${startedQuest}`);
     await salvaRaccolta((f, u) => User.updateOne(f, u), sessione, startedQuest, punti);
+    await salvaOtomoAvviati((f, u) => User.updateOne(f, u), sessione, startedQuest, otomo);
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in eternalStart:', error);
@@ -117,43 +120,51 @@ export const eternalStart = async (req: Request, res: Response) => {
   }
 };
 
-export const eternalAll = (req: Request, res: Response) => {
-  //ukyu_0010000 - Eternal Island (Argo)
-  //ukyu_0020000 - Wind & Thunder (Kirin)
-  //ukyu_0030000 - Explosion (Brachydios)
-  const data = {
-    banner_path: 'ukyu_00100',
-    eternal_collection_list: [],
-    eternal_nodes: [
-      {
-        banner_path: 'ukyu_00100',
-        eternal_quest_list: [
-          { clear_time: 0, idx: 0, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2574015882, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 1, is_collection_quest: 0, is_enable: 1, mst_quest_id: 6622256, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 2, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2002926758, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 3, is_collection_quest: 0, is_enable: 1, mst_quest_id: 3909527813, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 4, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2650904979, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 5, is_collection_quest: 0, is_enable: 1, mst_quest_id: 118016041, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 6, is_collection_quest: 0, is_enable: 1, mst_quest_id: 1880094911, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 7, is_collection_quest: 0, is_enable: 1, mst_quest_id: 3769689390, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 8, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2545407416, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 9, is_collection_quest: 0, is_enable: 1, mst_quest_id: 4151336029, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 10, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2155310283, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 11, is_collection_quest: 0, is_enable: 1, mst_quest_id: 427703665, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 12, is_collection_quest: 0, is_enable: 1, mst_quest_id: 1853427175, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 13, is_collection_quest: 0, is_enable: 1, mst_quest_id: 4028471364, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 14, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2266671314, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 15, is_collection_quest: 0, is_enable: 1, mst_quest_id: 504625512, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 16, is_collection_quest: 0, is_enable: 1, mst_quest_id: 1762970110, quest_subtargets: [], state: 0 },
-          { idx: 17, is_collection_quest: 0, is_enable: 1, mst_quest_id: 4188787823, quest_subtargets: [], state: 0 },
-          { idx: 18, is_collection_quest: 0, is_enable: 1, mst_quest_id: 2393695481, quest_subtargets: [], state: 0 },
-          { clear_time: 0, idx: 19, is_collection_quest: 0, is_enable: 1, mst_quest_id: 3697086366, quest_subtargets: [], state: 0 },
-        ],
-        mst_eternal_node_id: 1,
-      },
-    ],
-  };
-  encryptAndSend(data, res, req);
+/*
+ * Cacce eterne (永劫). La lista era fissa: 20 voci con clear_time 0, quindi il
+ * gioco mostrava sempre "99:59". Ora il tempo migliore (0 se mai fatta) e lo
+ * stato vengono letti da user.cleared_quests, come fa la mappa delle isole.
+ */
+const ETERNAL_QUESTS: ReadonlyArray<number> = [
+  2574015882, 6622256, 2002926758, 3909527813, 2650904979, 118016041, 1880094911,
+  3769689390, 2545407416, 4151336029, 2155310283, 427703665, 1853427175, 4028471364,
+  2266671314, 504625512, 1762970110, 4188787823, 2393695481, 3697086366,
+];
+
+export const eternalAll = async (req: Request, res: Response) => {
+  try {
+    const { session_id } = req.body as { session_id?: string };
+    const doc = typeof session_id === 'string' && session_id ? await User.findOne({ current_session: session_id }) : null;
+    const cleared = doc?.cleared_quests ?? [];
+    const eternal_quest_list = ETERNAL_QUESTS.map((mst_quest_id, idx) => {
+      const voce = cleared.find((q) => q.mst_quest_id === mst_quest_id);
+      const clear_time = tempoPerLista(voce?.clear_time);
+      return {
+        clear_time,
+        idx,
+        is_collection_quest: 0,
+        is_enable: 1,
+        mst_quest_id,
+        quest_subtargets: [],
+        state: clear_time > 0 ? 3 : 0,
+      };
+    });
+    const data = {
+      banner_path: 'ukyu_00100',
+      eternal_collection_list: [],
+      eternal_nodes: [
+        {
+          banner_path: 'ukyu_00100',
+          eternal_quest_list,
+          mst_eternal_node_id: 1,
+        },
+      ],
+    };
+    encryptAndSend(data, res, req);
+  } catch (error) {
+    log.error('Error in eternalAll:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Eternal list failed');
+  }
 };
 
 /*
@@ -175,7 +186,8 @@ export const questContinue = async (req: Request, res: Response) => {
     }
     const box = doc.box as unknown as { payments?: { mst_payment_id?: number | null; amount?: number | null }[] };
     if (!spendiKaridama(box, PREZZO_CONTINUA)) {
-      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG,
+      // 73 = "Not enough Hunting Orbs" (狩玉) instead of the generic error.
+      return encryptAndSend({}, res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
         `狩玉が足りません (Not enough karidama: ${saldoKaridama(box.payments)}/${PREZZO_CONTINUA})`);
     }
     // Continua usati: si contano per la stessa quest avviata (stesso quest_instance_id).

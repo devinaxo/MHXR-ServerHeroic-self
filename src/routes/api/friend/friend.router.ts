@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { capacityInfo, listFriends, listRequests, sendRequest, acceptRequest } from './friend.controller.js';
+import { capacityInfo, capacityExpand, listFriends, listRequests, sendRequest, acceptRequest } from './friend.controller.js';
 import { validate } from '../../../middleware/validation.js';
 import { SessionOnlySchema } from '../../../schemas/common.schema.js';
 import { SendRequestSchema, AcceptRequestSchema } from './friend.schema.js';
@@ -7,6 +7,7 @@ import { SendRequestSchema, AcceptRequestSchema } from './friend.schema.js';
 const friendRouter = Router();
 
 friendRouter.post('/capacity/info', validate(SessionOnlySchema), capacityInfo);
+friendRouter.post('/capacity/expand', validate(SessionOnlySchema), capacityExpand);
 friendRouter.post('/listRequests', validate(SessionOnlySchema), listRequests);
 friendRouter.post('/listFriends', validate(SessionOnlySchema), listFriends);
 friendRouter.post('/acceptRequest', validate(AcceptRequestSchema), acceptRequest);

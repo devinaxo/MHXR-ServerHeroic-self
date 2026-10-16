@@ -120,7 +120,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2278830943,
-                        "mst_story_id": 1839295424,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 始まりの丘",
@@ -196,7 +196,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4040360905,
-                        "mst_story_id": 4219011573,
+                        "mst_story_id": 1839295424,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -317,7 +317,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1857525354,
-                        "mst_story_id": 585170183,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 連戦ブルファンゴ",
@@ -438,7 +438,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 431007484,
-                        "mst_story_id": 3438189611,
+                        "mst_story_id": 585170183,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -667,7 +667,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2264755923,
-                        "mst_story_id": 282500997,
+                        "mst_story_id": 1294116524,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -734,7 +734,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 536100713,
-                        "mst_story_id": 1294116524,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 未開の地へ",
@@ -867,7 +867,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1760759807,
-                        "mst_story_id": 1712321903,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 魚竜との出会い",
@@ -943,7 +943,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4137130588,
-                        "mst_story_id": 4040662874,
+                        "mst_story_id": 1712321903,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -1010,7 +1010,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2173741770,
-                        "mst_story_id": 2132067374,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 破られし静寂",
@@ -1134,7 +1134,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 412744560,
-                        "mst_story_id": 2434442498,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 未踏の地を行く",
@@ -1258,7 +1258,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1872677862,
-                        "mst_story_id": 810898153,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 入り江の中へ",
@@ -1382,7 +1382,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4280407671,
-                        "mst_story_id": 2794272988,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 湿地帯を行く１",
@@ -1675,7 +1675,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3907088132,
-                        "mst_story_id": 2318014251,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 狗竜の巣窟４",
@@ -1787,7 +1787,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2682675090,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2132067374,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -2045,7 +2045,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4018973469,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2318014251,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -2303,7 +2303,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1988491943,
-                        "mst_story_id": 0,
+                        "mst_story_id": 810898153,
                         "night_quest_list": [],
                         "state": 1
                     }
@@ -2402,7 +2402,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1161105226,
-                        "mst_story_id": 40054891,
+                        "mst_story_id": 4120822217,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -2478,7 +2478,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3694943984,
-                        "mst_story_id": 4120822217,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 たっぷりメラルー",
@@ -2611,7 +2611,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2872798822,
-                        "mst_story_id": 3736310282,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 憩いのオアシス",
@@ -2859,7 +2859,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1113115475,
-                        "mst_story_id": 817754918,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 荒地を行く１",
@@ -2983,7 +2983,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3679558377,
-                        "mst_story_id": 3349717835,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 深き森への誘い",
@@ -3116,7 +3116,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2891360895,
-                        "mst_story_id": 1366346110,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 耳障りなお客さん",
@@ -3192,7 +3192,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1021949934,
-                        "mst_story_id": 2296984972,
+                        "mst_story_id": 3736310282,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -3259,7 +3259,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1273923448,
-                        "mst_story_id": 506552249,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "9-2 日照りの砂浜１",
@@ -3540,7 +3540,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1546534411,
-                        "mst_story_id": 3980892863,
+                        "mst_story_id": 3349717835,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -3607,7 +3607,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3307696049,
-                        "mst_story_id": 55180179,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2 クルクルペッコ",
@@ -3932,7 +3932,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3259673512,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2296984972,
                         "night_quest_list": [],
                         "state": 1
                     }
@@ -4035,7 +4035,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1842114814,
-                        "mst_story_id": 3135198990,
+                        "mst_story_id": 1749678448,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -4102,7 +4102,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4106559812,
-                        "mst_story_id": 1749678448,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 遭難の危機！？１",
@@ -4226,7 +4226,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2210533842,
-                        "mst_story_id": 1130670771,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 水辺に響く声１",
@@ -4350,7 +4350,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 497452145,
-                        "mst_story_id": 3585917062,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 氷の迷宮１",
@@ -4474,7 +4474,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1788982503,
-                        "mst_story_id": 1518312434,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 砂に棲む者１",
@@ -4598,7 +4598,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4087932253,
-                        "mst_story_id": 3433558471,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 騒々しい者たち１",
@@ -4722,7 +4722,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2226116043,
-                        "mst_story_id": 356388149,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 麗らかな山々１",
@@ -4789,7 +4789,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 336644186,
-                        "mst_story_id": 2212914944,
+                        "mst_story_id": 1130670771,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -5013,7 +5013,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 63992105,
-                        "mst_story_id": 1888526854,
+                        "mst_story_id": 1518312434,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -5089,7 +5089,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1960264127,
-                        "mst_story_id": 2661204778,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "11-2 鋭い冷気の中１",
@@ -5222,7 +5222,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3990753285,
-                        "mst_story_id": 2940291319,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2 凍える大地１",
@@ -5289,7 +5289,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2597920915,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2940291319,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -5547,15 +5547,17 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3937653788,
-                        "mst_story_id": 0,
+                        "mst_story_id": 356388149,
                         "night_quest_list": [],
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 5,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -5644,7 +5646,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2836249019,
-                        "mst_story_id": 654864311,
+                        "mst_story_id": 3505757717,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -5711,7 +5713,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 805627905,
-                        "mst_story_id": 3505757717,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 新たな決意１",
@@ -5845,7 +5847,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3647425844,
-                        "mst_story_id": 1828759523,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 節理の乱れ１",
@@ -5978,7 +5980,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2925559202,
-                        "mst_story_id": 3804494999,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 湖面に響く声１",
@@ -6111,7 +6113,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 929639448,
-                        "mst_story_id": 214801851,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 静かなる熱砂１",
@@ -6235,7 +6237,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1080958094,
-                        "mst_story_id": 2911005264,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 強者の集う海１",
@@ -6404,7 +6406,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3503358239,
-                        "mst_story_id": 995754085,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 深き森の中１",
@@ -6516,7 +6518,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2815832457,
-                        "mst_story_id": 3029949201,
+                        "mst_story_id": 3804494999,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -6583,7 +6585,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3339827308,
-                        "mst_story_id": 574697764,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 迫りくる気配１",
@@ -6840,7 +6842,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 689953088,
-                        "mst_story_id": 3358377315,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2 荒ぶる予感１",
@@ -6916,7 +6918,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1578691030,
-                        "mst_story_id": 639804495,
+                        "mst_story_id": 2911005264,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -6983,7 +6985,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3229383797,
-                        "mst_story_id": 402468754,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "14-2 危機の中へ１",
@@ -7050,7 +7052,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3078311139,
-                        "mst_story_id": 0,
+                        "mst_story_id": 402468754,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -7308,7 +7310,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3385471070,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3029949201,
                         "night_quest_list": [],
                         "state": 1
                     }
@@ -7394,7 +7396,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 825079181,
-                        "mst_story_id": 2259630483,
+                        "mst_story_id": 3258987003,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -7470,7 +7472,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2820990007,
-                        "mst_story_id": 3258987003,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 危機を抜けて１",
@@ -7603,7 +7605,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3743667361,
-                        "mst_story_id": 3916259896,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 荒れる水面１",
@@ -7670,7 +7672,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1095188738,
-                        "mst_story_id": 2142570509,
+                        "mst_story_id": 3916259896,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -7746,7 +7748,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 910193044,
-                        "mst_story_id": 4034286457,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 溶岩の道１",
@@ -7879,7 +7881,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2940805166,
-                        "mst_story_id": 511193685,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 喧騒の砂原１",
@@ -8003,7 +8005,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3628994744,
-                        "mst_story_id": 3208103358,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 耳障りな風１",
@@ -8127,7 +8129,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1223757097,
-                        "mst_story_id": 703573899,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 熱気漂う湖畔１",
@@ -8251,7 +8253,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1073102271,
-                        "mst_story_id": 2787964159,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "9-2 灼熱の山１",
@@ -8442,7 +8444,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 674661580,
-                        "mst_story_id": 0,
+                        "mst_story_id": 4034286457,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -8518,7 +8520,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2973750646,
-                        "mst_story_id": 1210226131,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2 決意の道１",
@@ -8594,7 +8596,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3325617632,
-                        "mst_story_id": 3667487373,
+                        "mst_story_id": 88637564,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -8661,7 +8663,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1482453059,
-                        "mst_story_id": 882314145,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "15-2 高難度：三界の竜",
@@ -8785,7 +8787,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 794509525,
-                        "mst_story_id": 88637564,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "14-2 高難度：狗竜の庭",
@@ -8852,7 +8854,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3058831727,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3208103358,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -8862,15 +8864,17 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3243581945,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2787964159,
                         "night_quest_list": [],
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 6,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -8957,7 +8961,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4075148308,
-                        "mst_story_id": 2484770429,
+                        "mst_story_id": 2063357598,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -9024,7 +9028,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1810662830,
-                        "mst_story_id": 2063357598,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 新たな群島１",
@@ -9148,7 +9152,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 485209400,
-                        "mst_story_id": 1372652893,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 新たな群島４",
@@ -9272,7 +9276,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2190418075,
-                        "mst_story_id": 3339284328,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 砂原を越えて１",
@@ -9396,7 +9400,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4119334925,
-                        "mst_story_id": 1221211164,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 巫女のいる島１",
@@ -9463,7 +9467,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1820410295,
-                        "mst_story_id": 2797884720,
+                        "mst_story_id": 1372652893,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -9672,7 +9676,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2335796400,
-                        "mst_story_id": 3186943769,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 乾いた砂丘１",
@@ -9739,7 +9743,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4231945254,
-                        "mst_story_id": 0,
+                        "mst_story_id": 1221211164,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -9997,7 +10001,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1928836335,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3186943769,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -10374,10 +10378,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 7,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -10462,7 +10468,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1625246437,
-                        "mst_story_id": 901627993,
+                        "mst_story_id": 580863688,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -10529,7 +10535,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4191558495,
-                        "mst_story_id": 580863688,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 凍てつく大地１",
@@ -10653,7 +10659,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2396072905,
-                        "mst_story_id": 162665739,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 心地よい光１",
@@ -10777,7 +10783,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 280346218,
-                        "mst_story_id": 2674556734,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 荒ぶる海１",
@@ -10901,7 +10907,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1739755260,
-                        "mst_story_id": 279520330,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 果てなき砂丘１",
@@ -11025,7 +11031,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4273725254,
-                        "mst_story_id": 2255572607,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 熱い日差しの中１",
@@ -11149,7 +11155,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2310860752,
-                        "mst_story_id": 1609085581,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 漂う異臭１",
@@ -11216,7 +11222,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 419689025,
-                        "mst_story_id": 2984694689,
+                        "mst_story_id": 162665739,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -11407,7 +11413,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 247679794,
-                        "mst_story_id": 3851941711,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 おいしいゆで卵１",
@@ -11474,7 +11480,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2042919844,
-                        "mst_story_id": 0,
+                        "mst_story_id": 279520330,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -11998,7 +12004,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3886083591,
-                        "mst_story_id": 0,
+                        "mst_story_id": 1609085581,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -12132,7 +12138,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1622784,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3851941711,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -12385,10 +12391,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 8,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -12473,7 +12481,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2853032472,
-                        "mst_story_id": 1843318799,
+                        "mst_story_id": 2585993645,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -12540,7 +12548,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 855933858,
-                        "mst_story_id": 2585993645,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 少し静かな旅路１",
@@ -12664,7 +12672,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1141093172,
-                        "mst_story_id": 2970514030,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 照らす陽は強く１",
@@ -12788,7 +12796,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3664193175,
-                        "mst_story_id": 668342363,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 瀑布の源１",
@@ -12912,7 +12920,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2908755457,
-                        "mst_story_id": 2819965743,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 熱の残る山１",
@@ -13036,7 +13044,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 879314875,
-                        "mst_story_id": 1176183299,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 輝く水面１",
@@ -13160,7 +13168,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1131312941,
-                        "mst_story_id": 3881096680,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 煙立つ台地１",
@@ -13284,7 +13292,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3553716924,
-                        "mst_story_id": 156939460,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 熱い砂浜１",
@@ -13532,7 +13540,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3289502671,
-                        "mst_story_id": 1563136042,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 影の領域１",
@@ -13723,7 +13731,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 706720483,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2970514030,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -14123,7 +14131,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 762476282,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2819965743,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -14647,7 +14655,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2554048666,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3881096680,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -14781,7 +14789,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1983238582,
-                        "mst_story_id": 0,
+                        "mst_story_id": 1563136042,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -15158,10 +15166,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 9,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -15246,7 +15256,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1260899013,
-                        "mst_story_id": 3580016490,
+                        "mst_story_id": 3662366615,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -15322,7 +15332,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3526269823,
-                        "mst_story_id": 3662366615,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 揺れる砂漠１",
@@ -15465,7 +15475,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 994917962,
-                        "mst_story_id": 526939512,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 心に決めたこと１",
@@ -15589,7 +15599,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1279921884,
-                        "mst_story_id": 3900515605,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 凍りついた山１",
@@ -15713,7 +15723,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3577962342,
-                        "mst_story_id": 2124762912,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 暗き森１",
@@ -15837,7 +15847,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2722394096,
-                        "mst_story_id": 2805773266,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 震える山１",
@@ -15904,7 +15914,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 855339617,
-                        "mst_story_id": 837081575,
+                        "mst_story_id": 3900515605,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -16095,7 +16105,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 624675602,
-                        "mst_story_id": 490993168,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 山紫水明１",
@@ -16658,7 +16668,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1431388061,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2805773266,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -16916,7 +16926,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 736117536,
-                        "mst_story_id": 0,
+                        "mst_story_id": 490993168,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -17293,10 +17303,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 10,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -17385,7 +17397,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1036274159,
-                        "mst_story_id": 3190260371,
+                        "mst_story_id": 1660362994,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -17452,7 +17464,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2764904533,
-                        "mst_story_id": 1660362994,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 禁戒の地１",
@@ -17576,7 +17588,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3553241283,
-                        "mst_story_id": 1239053105,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 果てなき荒漠１",
@@ -17700,7 +17712,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1303297376,
-                        "mst_story_id": 2815693341,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 乱れた恵雨１",
@@ -17833,7 +17845,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 984190454,
-                        "mst_story_id": 1354842736,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 淵の冷気１",
@@ -17966,7 +17978,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2745228364,
-                        "mst_story_id": 3323537477,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 ガスを吐く山１",
@@ -18033,7 +18045,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3567774938,
-                        "mst_story_id": 528536759,
+                        "mst_story_id": 1239053105,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -18100,7 +18112,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1142485323,
-                        "mst_story_id": 4052661659,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 想いと決意１",
@@ -18167,7 +18179,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 857719261,
-                        "mst_story_id": 0,
+                        "mst_story_id": 1354842736,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -18234,7 +18246,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1406683192,
-                        "mst_story_id": 2784989557,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 瞳の奥に１",
@@ -18567,7 +18579,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3402701186,
-                        "mst_story_id": 0,
+                        "mst_story_id": 528536759,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -18701,7 +18713,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 598916279,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2784989557,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -19202,10 +19214,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 11,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -19298,7 +19312,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2783200729,
-                        "mst_story_id": 110880246,
+                        "mst_story_id": 1883410204,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -19365,7 +19379,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1022170211,
-                        "mst_story_id": 1883410204,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 風が曲がる砂原１",
@@ -19489,7 +19503,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1273636085,
-                        "mst_story_id": 1534057695,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 不快な気配１",
@@ -19622,7 +19636,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3582898518,
-                        "mst_story_id": 3043081715,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 荒涼とした樹林１",
@@ -19698,7 +19712,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2726920640,
-                        "mst_story_id": 1114959262,
+                        "mst_story_id": 1534057695,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -19765,7 +19779,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 998297722,
-                        "mst_story_id": 3568076715,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 張り詰めた空気１",
@@ -19889,7 +19903,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1283973356,
-                        "mst_story_id": 221608793,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 不気味な地響き１",
@@ -19956,7 +19970,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3694722429,
-                        "mst_story_id": 0,
+                        "mst_story_id": 1114959262,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -20023,7 +20037,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2873085419,
-                        "mst_story_id": 3812301429,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "9-2 民衆の声１",
@@ -20147,7 +20161,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3422045198,
-                        "mst_story_id": 3075096219,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 凍てつく風１",
@@ -20604,7 +20618,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3432349719,
-                        "mst_story_id": 0,
+                        "mst_story_id": 221608793,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -20614,7 +20628,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3146952833,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3075096219,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -21363,10 +21377,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 12,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1
@@ -21457,7 +21473,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1714168896,
-                        "mst_story_id": 1057167835,
+                        "mst_story_id": 3372148857,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -21524,7 +21540,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4280645114,
-                        "mst_story_id": 3372148857,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 未踏の島１",
@@ -21657,7 +21673,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2283947372,
-                        "mst_story_id": 3822304186,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2 静寂の水辺１",
@@ -21733,7 +21749,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 373739727,
-                        "mst_story_id": 232643222,
+                        "mst_story_id": 3822304186,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -21800,7 +21816,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1631707225,
-                        "mst_story_id": 4207446779,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 色失せた森１",
@@ -21924,7 +21940,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4165513699,
-                        "mst_story_id": 348580823,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 予感１",
@@ -22172,7 +22188,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 535862500,
-                        "mst_story_id": 267803134,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 滅び行く草原１",
@@ -22505,7 +22521,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2134316289,
-                        "mst_story_id": 0,
+                        "mst_story_id": 4207446779,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -23011,7 +23027,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3780346018,
-                        "mst_story_id": 0,
+                        "mst_story_id": 267803134,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -23461,7 +23477,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1322605556,
-                        "mst_story_id": 3045661756,
+                        "mst_story_id": 1428803776,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -23528,7 +23544,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3621521998,
-                        "mst_story_id": 1428803776,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2冷たい高地１",
@@ -23661,7 +23677,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2698722008,
-                        "mst_story_id": 2114224899,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2震える水面１",
@@ -23737,7 +23753,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1052749691,
-                        "mst_story_id": 2416632367,
+                        "mst_story_id": 2114224899,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -23813,7 +23829,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1236836333,
-                        "mst_story_id": 1730130498,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2張り詰めた時１",
@@ -23946,7 +23962,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3501313623,
-                        "mst_story_id": 2299646830,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 赤に淀む場所１",
@@ -24013,7 +24029,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2813787841,
-                        "mst_story_id": 677258373,
+                        "mst_story_id": 1730130498,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -24080,7 +24096,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 923394896,
-                        "mst_story_id": 3327149481,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 冷酷な森１",
@@ -24204,7 +24220,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1074713542,
-                        "mst_story_id": 826611140,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "9-2凍った台地１",
@@ -24337,7 +24353,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 550066723,
-                        "mst_story_id": 2812116977,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2広漠の砂１",
@@ -24413,7 +24429,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1473145525,
-                        "mst_story_id": 0,
+                        "mst_story_id": 677258373,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -24480,7 +24496,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3469163279,
-                        "mst_story_id": 2451661127,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2静止した砂漠１",
@@ -24671,7 +24687,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 665099834,
-                        "mst_story_id": 0,
+                        "mst_story_id": 826611140,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -24805,7 +24821,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3383426838,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2451661127,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -25255,7 +25271,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2316604081,
-                        "mst_story_id": 443041287,
+                        "mst_story_id": 3986012069,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -25322,7 +25338,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 320717579,
-                        "mst_story_id": 3986012069,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2砂の入江１",
@@ -25455,7 +25471,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1679487901,
-                        "mst_story_id": 3334005862,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "3-2閉塞する水１",
@@ -25531,7 +25547,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4202587710,
-                        "mst_story_id": 683050314,
+                        "mst_story_id": 3334005862,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -25598,7 +25614,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2373539496,
-                        "mst_story_id": 3752056103,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2沈黙する流水１",
@@ -25722,7 +25738,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 342886162,
-                        "mst_story_id": 833467403,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2守り人の森１",
@@ -25846,7 +25862,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1668757380,
-                        "mst_story_id": 2430747616,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2不動の大滝１",
@@ -25979,7 +25995,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 4089981461,
-                        "mst_story_id": 104475093,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2澱む刻の渓谷１",
@@ -26055,7 +26071,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2228165251,
-                        "mst_story_id": 2314826401,
+                        "mst_story_id": 3752056103,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -26122,7 +26138,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3825767270,
-                        "mst_story_id": 1744245645,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2崖の上の台地１",
@@ -26189,7 +26205,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2467275760,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2430747616,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -26265,7 +26281,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 168227402,
-                        "mst_story_id": 714933794,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2眠る記憶の砂１",
@@ -26341,7 +26357,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2097267420,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2314826401,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -26599,7 +26615,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 225130067,
-                        "mst_story_id": 0,
+                        "mst_story_id": 714933794,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -27049,7 +27065,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 305438343,
-                        "mst_story_id": 2731811170,
+                        "mst_story_id": 4280293451,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -27125,7 +27141,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2336083773,
-                        "mst_story_id": 4280293451,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2冷たい砂塵１",
@@ -27268,7 +27284,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1650354696,
-                        "mst_story_id": 973286052,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2冷たい火の山１",
@@ -27392,7 +27408,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 358177438,
-                        "mst_story_id": 3440802505,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2臨海の砂漠１",
@@ -27516,7 +27532,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2354055972,
-                        "mst_story_id": 1540231420,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2歪な断崖１",
@@ -27583,7 +27599,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 4216798130,
-                        "mst_story_id": 2186800142,
+                        "mst_story_id": 3440802505,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -27650,7 +27666,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1810376227,
-                        "mst_story_id": 344950331,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2冷気に浸る渓流１",
@@ -27774,7 +27790,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 485430965,
-                        "mst_story_id": 2605505871,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "9-2沈む冷たい水１",
@@ -27841,7 +27857,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2083037008,
-                        "mst_story_id": 1967307875,
+                        "mst_story_id": 2186800142,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -27993,7 +28009,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2452029052,
-                        "mst_story_id": 942189004,
+                        "mst_story_id": 2605505871,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -28375,7 +28391,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 2504735333,
-                        "mst_story_id": 0,
+                        "mst_story_id": 942189004,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -28825,7 +28841,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3523018526,
-                        "mst_story_id": 2959183500,
+                        "mst_story_id": 1201438510,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -28901,7 +28917,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1224060580,
-                        "mst_story_id": 1201438510,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 荒涼の島１",
@@ -29044,7 +29060,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2710965137,
-                        "mst_story_id": 2193575361,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 砂の中の孤独１",
@@ -29168,7 +29184,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3599842055,
-                        "mst_story_id": 1974082988,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 崩れ去る場所１",
@@ -29301,7 +29317,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1335388861,
-                        "mst_story_id": 2611248256,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "6-2 立ちすくむ刻１",
@@ -29377,7 +29393,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 949967403,
-                        "mst_story_id": 988515179,
+                        "mst_story_id": 1974082988,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -29444,7 +29460,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2820687802,
-                        "mst_story_id": 2889081182,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 停滞する空１",
@@ -29511,7 +29527,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3743905580,
-                        "mst_story_id": 602978858,
+                        "mst_story_id": 988515179,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -29578,7 +29594,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3219193545,
-                        "mst_story_id": 3456031494,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 萎えた水１",
@@ -29711,7 +29727,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3370634847,
-                        "mst_story_id": 148761065,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "11-2 ねじれた入江１",
@@ -29787,7 +29803,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1374592997,
-                        "mst_story_id": 2651161564,
+                        "mst_story_id": 602978858,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -29978,7 +29994,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3096263376,
-                        "mst_story_id": 2157235881,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "14-2 横臥する火山１",
@@ -30045,7 +30061,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3481930310,
-                        "mst_story_id": 0,
+                        "mst_story_id": 298244264,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -30179,7 +30195,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 562326378,
-                        "mst_story_id": 0,
+                        "mst_story_id": 2157235881,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -30633,7 +30649,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1137074671,
-                        "mst_story_id": 298244264,
+                        "mst_story_id": 536833912,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -30709,7 +30725,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3671011413,
-                        "mst_story_id": 536833912,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "2-2 ひび割れた谷２",
@@ -30852,7 +30868,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 866948448,
-                        "mst_story_id": 3671874967,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "4-2 立ちすくむ断崖２",
@@ -30985,7 +31001,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 1152099830,
-                        "mst_story_id": 768151034,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "5-2 虚空に立つ２",
@@ -31061,7 +31077,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3718444108,
-                        "mst_story_id": 3284626646,
+                        "mst_story_id": 768151034,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -31128,7 +31144,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 2862990554,
-                        "mst_story_id": 1653119805,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "7-2 空震の地２",
@@ -31252,7 +31268,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 974838091,
-                        "mst_story_id": 4098945288,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "8-2 断絶の熱水２",
@@ -31319,7 +31335,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1293806045,
-                        "mst_story_id": 2073275004,
+                        "mst_story_id": 1653119805,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -31395,7 +31411,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 769286200,
-                        "mst_story_id": 2510146384,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "10-2 裂けた記憶２",
@@ -31471,7 +31487,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 1524453550,
-                        "mst_story_id": 1354693055,
+                        "mst_story_id": 2073275004,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -31538,7 +31554,7 @@
                         ],
                         "is_collection_node": 0,
                         "mst_node_id": 3285451028,
-                        "mst_story_id": 3328611210,
+                        "mst_story_id": 0,
                         "night_quest_list": [
                             {
                                 "quest_name": "12-2 砂塵の帳２",
@@ -31729,7 +31745,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 716678177,
-                        "mst_story_id": 3640123135,
+                        "mst_story_id": 1235601662,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -31863,7 +31879,7 @@
                         "day_quest_list": [],
                         "is_collection_node": 0,
                         "mst_node_id": 3300508941,
-                        "mst_story_id": 0,
+                        "mst_story_id": 3640123135,
                         "night_quest_list": [],
                         "state": 1
                     },
@@ -32488,10 +32504,12 @@
                         "state": 1
                     }
                 ],
-                "object_list": [{
+                "object_list": [
+                    {
                         "mst_object_id": 18,
                         "state": 2
-                    }],
+                    }
+                ],
                 "raid_info": [],
                 "silver_bonus": 0,
                 "state": 1

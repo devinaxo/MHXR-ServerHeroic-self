@@ -88,7 +88,10 @@ questRouter.post('/training/list', validate(TrainingListSchema), questTrainingCo
 questRouter.post('/training/start', validate(TrainingStartSchema), questTrainingController.trainingStart);
 questRouter.post('/training/end', validate(TrainingEndSchema), questTrainingController.trainingEnd);
 
-//questRouter.post("/reward/exchange", );
+// Riscatto della ricompensa di fine quest. La richiesta porta solo `idx` e la
+// semantica originale non e' del tutto nota: vedi rewardExchange. Niente
+// validate(): i campi possono non corrispondere a nessuno schema noto.
+questRouter.post('/reward/exchange', questIslandController.rewardExchange);
 // "Tutti i premi x5" pagato in 狩玉, dopo island/end (final_reward_info):
 // vedi rewardFinal. Niente validate(): la richiesta porta campi mai visti.
 questRouter.post('/reward/final', questIslandController.rewardFinal);
