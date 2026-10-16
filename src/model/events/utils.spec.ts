@@ -10,6 +10,7 @@ vi.mock('../../middleware/logger', () => ({
 }));
 
 import { getDurationFromValue, enrichEvent } from './utils.js';
+import event_nodes from '../../json/event_nodes.json' with { type: 'json' };
 
 describe('event utils', () => {
   describe('getDurationFromValue', () => {
@@ -44,6 +45,20 @@ describe('event utils', () => {
 
     it('handles empty event list', () => {
       expect(enrichEvent([])).toEqual([]);
+    });
+
+    it('reports the stored best time and marks the quest cleared', () => {
+      const nodes = event_nodes as { mEventNodeHash: string; mEventQuestList: string[] }[];
+      const node = nodes.find((n) => n.mEventQuestList && n.mEventQuestList.length > 0);
+      if (!node) return; // data shape changed; nothing to assert
+      const nodeId = parseInt(node.mEventNodeHash, 10);
+      const questId = parseInt(node.mEventQuestList[0]!, 10);
+
+      const out = enrichEvent([{ mst_event_node_id: nodeId }], [{ mst_quest_id: questId, clear_time: 105702 }]);
+      const q = out[0]!.quest_list!.find((x) => x.mst_quest_id === questId);
+      // 105702 ms is reported to the client as 105 s (~1:45).
+      expect(q?.clear_time).toBe(105);
+      expect(q?.state).toBe(3);
     });
   });
 });

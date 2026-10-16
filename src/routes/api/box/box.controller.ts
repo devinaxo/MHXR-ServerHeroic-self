@@ -5,10 +5,59 @@ import { createLogger } from '../../../middleware/logger.js';
 import User from '../../../model/user.js';
 import { calcMstId as _calcMstId } from '../../../services/defineService.js';
 import prezziVendita from '../../../json/prezzi-vendita.json' with { type: 'json' };
-import { KARIDAMA_IDS } from '../../../services/karidamaService.js';
+import COSTI from '../../../json/upgrade-costs.json' with { type: 'json' };
+import omamoriData from '../../../json/omamori.json' with { type: 'json' };
+import { KARIDAMA_IDS, spendiKaridama } from '../../../services/karidamaService.js';
+import { saldiPayments, paymentsDaSalvare } from '../../../services/paymentService.js';
+import { expCrescitaPartner, crescitaPerPartner, applicaExpPartner, CRESCITA_PARTNER } from '../../../services/partnerGrow.js';
+import { dimenticaSubSkillOtomo, OTOMO_NO_SKILL } from '../../../services/otomoQuest.js';
 import { sistemaMercenari } from '../../../services/setMercenari.js';
 import type { BoxGetInput, StorageGetInput, EquipLevelupInput, EquipAwakeInput, PotentialupAutoSetInput, SaleInput, FavoriteSetInput, MonumentLevelupInput } from './box.schema.js';
+import type { SessionOnlyInput } from '../../../schemas/common.schema.js';
 const log = createLogger('box');
+
+/**
+ * Upgrade cost tables (src/json/upgrade-costs.json). The JSON import is typed
+ * from the file itself, which loses the index signatures; see upgrade-costs.d.ts.
+ */
+interface TabellaCosti {
+  zenyByRarity: Record<string, number>;
+  /** Material-set index -> its materials. */
+  materialSets: Record<string, { mst_material_id: number; amount: number }[]>;
+  /** strengthenNeedMaterialId -> per-level set index (index lv = step lv -> lv+1). */
+  strengthRef: Record<string, number[]>;
+  equipment: Record<string, { name: string; rarity: number; levelMax: number; strengthenNeedMaterialId: number }>;
+}
+
+/** A material row in the box. */
+interface VoceMateriale {
+  mst_material_id?: number | null;
+  amount?: number | null;
+}
+
+/**
+ * Full growth-item list to hand back to the client.
+ *
+ * The partner menu keeps a quantity per row and refreshes the rows it is told
+ * about. If a row is *omitted* once it hits zero, the menu keeps showing the old
+ * number, so the player can still "select" orbs that were already spent -- and
+ * the next level-up then fails. Sending the whole catalogue (services/
+ * partnerGrow.ts), zeros included, keeps the menu in step.
+ */
+function elencoCrescita(box: { growth_items?: { mst_growth_item_id?: number | null; amount?: number | null }[] }): { mst_growth_item_id: number; amount: number }[] {
+  const perId = new Map<number, number>();
+  for (const g of box.growth_items ?? []) {
+    const id = Number(g.mst_growth_item_id);
+    perId.set(id, (perId.get(id) ?? 0) + Number(g.amount ?? 0));
+  }
+  const catalogo = new Set<number>(CRESCITA_PARTNER.map((g) => g.id));
+  const out = CRESCITA_PARTNER.map((g) => ({ mst_growth_item_id: g.id, amount: Math.max(0, perId.get(g.id) ?? 0) }));
+  // Any growth item already in the box that is not in the catalogue: keep it.
+  for (const [id, amount] of perId) {
+    if (!catalogo.has(id)) out.push({ mst_growth_item_id: id, amount: Math.max(0, amount) });
+  }
+  return out;
+}
 
 export const get = async (req: Request, res: Response) => {
   try {
@@ -139,22 +188,256 @@ export const partnerGet = async (req: Request, res: Response) => {
   }
 };
 
-export const equipCapacityInfo = (req: Request, res: Response) => {
-  const data = {
-    max: 10000,
-    now: 0,
-    price: 0,
-  };
-  encryptAndSend(data, res, req);
+/*
+ * PARTNER LEVEL-UP ("Growth").
+ *
+ * The client sends the growth items to feed and the partner to grow; we add
+ * their EXP (Shard 100, Orb 500), level the partner up along the game's real
+ * cumulative curve (src/json/partner-grow.json) and, if the exp passes the
+ * current cap, unlock the next limit-break tier (20 -> 30 -> 50). The reply is
+ * the updated partner plus the remaining growth items.
+ *
+ * Contract read from the client:
+ *   cAPIBoxPartnerLevelup::Request::to_json  sends growth_items[{amount,mst_growth_item_id}], partner_id
+ *   cAPIBoxPartnerLevelup::Response::setup   reads partner{...}, growth_items[]
+ */
+export const partnerLevelup = async (req: Request, res: Response) => {
+  try {
+    const { session_id, partner_id, growth_items } = req.body as {
+      session_id?: string;
+      partner_id?: unknown;
+      growth_items?: { mst_growth_item_id?: unknown; amount?: unknown }[];
+    };
+    const doc = session_id ? await User.findOne({ current_session: session_id }) : null;
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+
+    const partner = (doc.box.partners ?? []).find((p) => String(p.partner_id) === String(partner_id));
+    if (!partner) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Partner not found');
+    }
+
+    // Sum the EXP the requested items are worth, and how many of each to spend.
+    const consumo = new Map<number, number>();
+    let guadagno = 0;
+    for (const g of Array.isArray(growth_items) ? growth_items : []) {
+      const id = Number(g?.mst_growth_item_id);
+      const amount = Math.max(0, Math.floor(Number(g?.amount) || 0));
+      const exp = expCrescitaPartner(id);
+      // Skip items that are not for this partner (Colorless is for anyone).
+      if (!exp || amount <= 0 || !crescitaPerPartner(id, Number(partner.mst_partner_id))) continue;
+      guadagno += exp * amount;
+      consumo.set(id, (consumo.get(id) ?? 0) + amount);
+    }
+    if (guadagno <= 0) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No growth items selected');
+    }
+
+    // Own them all, before touching anything.
+    for (const [id, amount] of consumo) {
+      const posseduti = (doc.box.growth_items ?? [])
+        .filter((g) => Number(g.mst_growth_item_id) === id)
+        .reduce((t, g) => t + Number(g.amount ?? 0), 0);
+      if (posseduti < amount) {
+        return encryptAndSend(
+          { growth_items: elencoCrescita(doc.box) },
+          res, req, ERROR_CODE.MATERIALS_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+          `Growth item ${id}: need ${amount}, have ${posseduti}`,
+        );
+      }
+    }
+
+    const esito = applicaExpPartner(partner, guadagno);
+    partner.level = esito.level;
+    partner.exp = esito.exp;
+    partner.exp_max = esito.exp_max;
+    partner.level_cap_tier = esito.level_cap_tier;
+    partner.level_max = esito.level_max;
+
+    // Spend the items (merge duplicates, drop empty rows).
+    const perId = new Map<number, number>();
+    for (const g of doc.box.growth_items ?? []) {
+      const id = Number(g.mst_growth_item_id);
+      perId.set(id, (perId.get(id) ?? 0) + Number(g.amount ?? 0));
+    }
+    for (const [id, amount] of consumo) perId.set(id, (perId.get(id) ?? 0) - amount);
+    // Keep rows that reached zero: the client's menu only refreshes the rows it
+    // is told about, and dropping a row leaves its old count on screen.
+    doc.box.growth_items = [...perId.entries()].map(([mst_growth_item_id, amount]) => ({
+      mst_growth_item_id,
+      amount: Math.max(0, amount),
+    }));
+
+    await User.updateOne(
+      { _id: doc._id },
+      { $set: { 'box.partners': doc.box.partners, 'box.growth_items': doc.box.growth_items } },
+    );
+
+    log.info(
+      'partner | %s: %s -> lv%d (+%d exp%s)',
+      doc.character_name ?? '?', partner.partner_id, esito.level, guadagno,
+      esito.limitBreak ? `, LIMIT BREAK tier ${esito.level_cap_tier} (max ${esito.level_max})` : '',
+    );
+
+    encryptAndSend(
+      {
+        partner: {
+          created: Number(partner.created ?? 0),
+          exp: esito.exp,
+          exp_max: esito.exp_max,
+          level: esito.level,
+          level_cap_tier: esito.level_cap_tier,
+          level_max: esito.level_max,
+          mst_partner_id: Number(partner.mst_partner_id),
+          partner_id: partner.partner_id,
+        },
+        growth_items: elencoCrescita(doc.box),
+      },
+      res, req,
+    );
+  } catch (error) {
+    log.error('Error in partnerLevelup:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Partner level up failed');
+  }
 };
 
-export const equipCapacityExpand = (req: Request, res: Response) => {
-  const data = {
-    max: 10000,
-    now: 0,
-    price: 0,
-  };
-  encryptAndSend(data, res, req);
+/*
+ * PALICO SKILL REMOVE (box/otomo/skill/remove) -- "dimentica una skill".
+ *
+ * Il client lo chiama quando il palico ha imparato una subskill oltre il numero
+ * di slot (0 sotto il 10, poi 1/2/3 agli sblocchi 10/25/75) e il giocatore
+ * sceglie quale dimenticare. La richiesta e'
+ *   cAPIBoxOtomoSkillRemove::Request: { otomo, otomo_id, mst_skill_id }
+ * e la risposta rimanda l'otomo aggiornato: { otomo: {...} }.
+ *
+ * Togliere la skill dall'array (invece di lasciarci il segnaposto "No Skill")
+ * e' quello che evita il bug per cui la skill imparata dopo compariva come
+ * "No Skill": il segnaposto non deve mai restare in lista.
+ */
+export const otomoSkillRemove = async (req: Request, res: Response) => {
+  try {
+    const { session_id, otomo_id, mst_skill_id } = req.body as {
+      session_id?: string;
+      otomo_id?: unknown;
+      mst_skill_id?: unknown;
+    };
+    const doc = session_id ? await User.findOne({ current_session: session_id }) : null;
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    const otomo = (doc.box.otomos ?? []).find((o) => String(o.otomo_id) === String(otomo_id));
+    if (!otomo) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Otomo not found');
+    }
+
+    const tolta = dimenticaSubSkillOtomo(otomo as unknown as { subskill?: number[] | null }, Number(mst_skill_id));
+    await User.updateOne({ _id: doc._id }, { $set: { 'box.otomos': doc.box.otomos } });
+
+    log.info('palico | %s: dimentica skill %s da %s (%s)', doc.character_name ?? '?', String(mst_skill_id), String(otomo_id), tolta ? 'ok' : 'non presente');
+
+    encryptAndSend(
+      {
+        otomo: {
+          created: Number(otomo.created ?? 0),
+          exp: Number(otomo.exp ?? 0),
+          mst_otomo_id: Number(otomo.mst_otomo_id),
+          otomo_id: otomo.otomo_id,
+          subskill: (otomo.subskill ?? []).filter((s) => s !== OTOMO_NO_SKILL),
+        },
+      },
+      res, req,
+    );
+  } catch (error) {
+    log.error('Error in otomoSkillRemove:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Otomo skill remove failed');
+  }
+};
+
+/*
+ * GROWTH ITEM BOX (box/growthitem/get).
+ *
+ * The client refreshes the growth-item list through this route right after
+ * feeding a partner; it was never registered, so every level-up finished on a
+ * 404 (and any other screen reading the list failed too). It sends an optional
+ * `growth_items` filter, but the reply is simply the whole list:
+ * cAPIBoxGrowthItemGet::Response::setup reads `growth_items[]` of
+ * { amount, mst_growth_item_id } -- the same shape partnerLevelup returns.
+ */
+export const growthitemGet = async (req: Request, res: Response) => {
+  try {
+    const { session_id } = req.body as SessionOnlyInput;
+    const doc = session_id ? await User.findOne({ current_session: session_id }) : null;
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    encryptAndSend({ growth_items: elencoCrescita(doc.box) }, res, req);
+  } catch (error) {
+    log.error('Error in growthitemGet:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Get growth items failed');
+  }
+};
+
+// Equipment box capacity (box.capacity.eqp_box -- NOT `equipaggiamento`, which
+// no schema ever defined; reading it always fell back to 100, so the client
+// showed a 100 cap while the box really allowed 500).
+const CAPACITY_EQUIP = 500;
+// Slots added per expansion. The client's confirmation says "+5".
+const SLOT_PER_ESPANSIONE = 5;
+// Hunter Coins charged per expansion. 0 = free. Tunable without a rebuild.
+const PREZZO_ESPANSIONE_BOX = Math.max(0, Number(process.env.BOX_EXPAND_PRICE ?? 0) || 0);
+
+export const equipCapacityInfo = async (req: Request, res: Response) => {
+  try {
+    const sessione = sessioneDa(req.body);
+    const doc = sessione ? await User.findOne({ current_session: sessione }) : null;
+    const box = doc?.box as unknown as { equipments?: unknown[]; capacity?: { eqp_box?: number } } | undefined;
+    const max = Number(box?.capacity?.eqp_box) || CAPACITY_EQUIP;
+    const now = Array.isArray(box?.equipments) ? box!.equipments!.length : 0;
+    encryptAndSend({ max, now, price: PREZZO_ESPANSIONE_BOX }, res, req);
+  } catch (error) {
+    log.error('Error in equipCapacityInfo:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment capacity info failed');
+  }
+};
+
+export const equipCapacityExpand = async (req: Request, res: Response) => {
+  try {
+    const sessione = sessioneDa(req.body);
+    const doc = sessione ? await User.findOne({ current_session: sessione }) : null;
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    const box = doc.box as unknown as {
+      equipments?: unknown[];
+      capacity?: { eqp_box?: number };
+      payments?: { mst_payment_id?: number | null; amount?: number | null }[];
+    };
+
+    if (PREZZO_ESPANSIONE_BOX > 0 && !spendiKaridama(box as { payments?: { mst_payment_id?: number | null; amount?: number | null }[] }, PREZZO_ESPANSIONE_BOX)) {
+      return encryptAndSend(
+        { capacity: Number(box.capacity?.eqp_box) || CAPACITY_EQUIP, payments: saldiPayments(box.payments) },
+        res, req, ERROR_CODE.ZENY_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+        'Not enough Hunter Coins',
+      );
+    }
+
+    const nuovoMax = (Number(box.capacity?.eqp_box) || CAPACITY_EQUIP) + SLOT_PER_ESPANSIONE;
+    box.capacity = { ...(box.capacity ?? {}), eqp_box: nuovoMax };
+
+    // Dotted whole-value writes: a nested scalar edit is not marked dirty by
+    // save() on its own, and the payments array is written whole for the same
+    // reason the Trade Points are (see tradePointsService.ts).
+    const update: Record<string, unknown> = { 'box.capacity.eqp_box': nuovoMax };
+    if (PREZZO_ESPANSIONE_BOX > 0) update['box.payments'] = paymentsDaSalvare(box.payments);
+    await User.updateOne({ _id: doc._id }, { $set: update });
+
+    log.info('espansione box | %s: %d -> %d', doc.character_name ?? '?', nuovoMax - SLOT_PER_ESPANSIONE, nuovoMax);
+    encryptAndSend({ capacity: nuovoMax, payments: saldiPayments(box.payments) }, res, req);
+  } catch (error) {
+    log.error('Error in equipCapacityExpand:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment capacity expand failed');
+  }
 };
 
 export const stampGet = (req: Request, res: Response) => {
@@ -168,28 +451,80 @@ export const stampGet = (req: Request, res: Response) => {
   };
   encryptAndSend(data, res, req);
 };
-export const stampHoldGet = (req: Request, res: Response) => {
-  const data = {
-    hold_stamp_ids: [
-      //numbers
-    ],
-  };
-  encryptAndSend(data, res, req);
+export const stampHoldGet = async (req: Request, res: Response) => {
+  try {
+    const { session_id } = req.body as SessionOnlyInput;
+    const doc = await User.findOne({ current_session: session_id });
+    encryptAndSend({ hold_stamp_ids: doc?.hold_stamp_ids ?? [] }, res, req);
+  } catch (error) {
+    log.error('Error in stampHoldGet:', error);
+    encryptAndSend({ hold_stamp_ids: [] }, res, req);
+  }
 };
+
+/**
+ * box/stamp/hold/set: which (up to four) stamps the player displays.
+ *
+ * This route did not exist, so the client's "set stamps" call 404'd and, because
+ * the screen retries until it succeeds, the only way out was to kill the app.
+ * The client parses exactly `hold_stamp_ids` back (cAPIBoxStampHoldSet::Response
+ * ::setup), so we store the list and echo it.
+ */
+export const holdStampSet = async (req: Request, res: Response) => {
+  try {
+    const { session_id, hold_stamp_ids } = req.body as { session_id: string; hold_stamp_ids?: unknown };
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    const ids = (Array.isArray(hold_stamp_ids) ? hold_stamp_ids : []).slice(0, 4).map((n) => Number(n) || 0);
+    await User.updateOne({ _id: doc._id }, { $set: { hold_stamp_ids: ids } });
+    log.info('francobolli | %s imposta %j', doc.character_name ?? '?', ids);
+    encryptAndSend({ hold_stamp_ids: ids }, res, req);
+  } catch (error) {
+    log.error('Error in holdStampSet:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Stamp hold set failed');
+  }
+};
+
 export const stampShopList = (req: Request, res: Response) => {
   const data = {
     stamp_shop_list: [
       {
         end: 0,
         mst_stamp_set_id: 67667029,
-        remain_id: 0,
+        // `remain_time`, not `remain_id`: the client parses the former and an
+        // unknown key left the row reading as already exchanged/expired.
+        remain_time: 36000,
         start: 0,
         type: 0,
-        value: 0,
+        value: 1,
       },
     ],
   };
   encryptAndSend(data, res, req);
+};
+
+/**
+ * box/stamp/shop/buy. No master-data price table was available, so the row is
+ * free for now; the reply carries `payments` (the client replaces its cached
+ * balances with whatever comes back) and the bought `mst_stamp_set_id`.
+ */
+export const stampShopBuy = async (req: Request, res: Response) => {
+  try {
+    const { session_id, mst_stamp_set_id } = req.body as { session_id: string; mst_stamp_set_id?: unknown };
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    encryptAndSend(
+      { payments: saldiPayments(doc.box?.payments), mst_stamp_set_id: Number(mst_stamp_set_id) || 0 },
+      res, req,
+    );
+  } catch (error) {
+    log.error('Error in stampShopBuy:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Stamp shop buy failed');
+  }
 };
 export const paymentLimitGet = (req: Request, res: Response) => {
   const data = {
@@ -263,9 +598,30 @@ export const PaymentGet = async (req: Request, res: Response) => {
   }
 };
 
+/*
+ * Equipment level-up ("enhancement").
+ *
+ * Costs come from the game's own master data, extracted into
+ * src/json/upgrade-costs.json by tools-js/build-upgrade-costs.cjs:
+ *
+ *   zenny    = sum over the levels gained of floor((zenyBase[rarity] - 10) * fromLevel / 16)
+ *   materials = the piece's mStrengthenNeedMaterialID row, x1 per level gained
+ *
+ * The client works out and displays the same figures before the player confirms,
+ * so the server has to agree with them or the balance ends up wrong. The zenny
+ * formula reproduces the client's own displayed cost exactly for the one piece
+ * we could check (a rarity 8 lance, 14,981 / 30,461 / 46,441 zenny for level
+ * 30 -> 31 / 32 / 33); see docs/UPGRADE-COSTS.md for the derivation and for
+ * what has NOT been verified.
+ *
+ * This route used to raise `elv` for free and reply with no zenny and no
+ * material list at all. The client reads the remaining zenny straight out of
+ * the response, so it carried on showing the pre-upgrade figure -- and the
+ * balance it displayed jumped to 999,999,999 (0x3B9AC9FF, the client's "unset"
+ * sentinel) whenever the level-up screen refreshed it.
+ */
 export const equipLevelup = async (req: Request, res: Response) => {
   try {
-    // Authenticate by session
     const { session_id, eqp_obj_id, num } = req.body as EquipLevelupInput;
     const filter = { current_session: session_id };
     const doc = await User.findOne(filter);
@@ -287,25 +643,142 @@ export const equipLevelup = async (req: Request, res: Response) => {
       return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
     }
 
-    // Apply level up
     const equipment = doc.box.equipments?.[equipmentIndex];
     if (!equipment) {
       return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
     }
-    const currentLevel = equipment.elv || 0;
+
+    const currentLevel = Number(equipment.elv ?? 0);
+
+    // Master data for this piece, or we cannot price the upgrade. Every weapon
+    // and armour piece is in the table, so this only trips on a stale id.
+    const tabella = COSTI as unknown as TabellaCosti;
+    const mst = tabella.equipment[String(equipment.mst_equipment_id)];
+    if (!mst) {
+      log.warn('potenziamento | mst_equipment_id %s assente dai costi', equipment.mst_equipment_id);
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No cost data for this equipment');
+    }
+
+    const baseZeny = Number(tabella.zenyByRarity[String(mst.rarity)] ?? 0);
+    if (baseZeny <= 0) {
+      log.warn('potenziamento | rarita %d assente dai costi', mst.rarity);
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No cost data for this equipment');
+    }
+
+    // Each level costs a little more than the last, so the levels actually
+    // gained have to be summed one by one.
+    let zenny = 0;
+    for (let lv = currentLevel; lv < currentLevel + steps; lv++) {
+      zenny += Math.floor(((baseZeny - 10) * lv) / 16);
+    }
+
+    /*
+     * Materials, PER LEVEL. The game stores a set index per level step:
+     *   strengthRef[strengthenNeedMaterialId][lv]  ->  materialSets[...]
+     * so the step lv -> lv+1 uses that set. The old code used one fixed set for
+     * every level, so past ~level 29 it asked for the wrong materials and
+     * refused legitimate upgrades with error 81 (MATERIALS_NOT_ENOUGH).
+     */
+    const ref = tabella.strengthRef[String(mst.strengthenNeedMaterialId)] ?? [];
+    const fabbisogno = new Map<number, number>();
+    for (let lv = currentLevel; lv < currentLevel + steps; lv++) {
+      const setIdx = ref[lv];
+      if (setIdx === undefined || setIdx === -1) continue;
+      for (const m of tabella.materialSets[String(setIdx)] ?? []) {
+        fabbisogno.set(m.mst_material_id, (fabbisogno.get(m.mst_material_id) ?? 0) + Number(m.amount ?? 0));
+      }
+    }
+    const materialSet = [...fabbisogno.entries()].map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    // Enough zenny?
+    const zenyPosseduti = Number(doc.box.zeny ?? 0);
+    if (zenny > zenyPosseduti) {
+      return encryptAndSend(
+        { zeny: zenyPosseduti },
+        res,
+        req,
+        ERROR_CODE.ZENY_NOT_ENOUGH,
+        ERROR_CATEGORY.ERROR_DIALOG,
+        `Zenny insufficient: need ${zenny}, have ${zenyPosseduti}`,
+      );
+    }
+
+    // Enough of every material? Checked before anything is deducted, so a
+    // refusal leaves the box untouched. (materialSet is already summed over the
+    // levels gained, so it must NOT be multiplied by `steps` again.)
+    const richiesti = materialSet.map((m: { mst_material_id: number; amount: number }) => ({
+      mst_material_id: Number(m.mst_material_id),
+      amount: Number(m.amount ?? 0),
+    }));
+    for (const need of richiesti) {
+      const posseduti = (doc.box.materials ?? [])
+        .filter((m: VoceMateriale) => Number(m.mst_material_id) === need.mst_material_id)
+        .reduce((tot: number, m: VoceMateriale) => tot + Number(m.amount ?? 0), 0);
+      if (posseduti < need.amount) {
+        return encryptAndSend(
+          { materials: [{ mst_material_id: need.mst_material_id, amount: posseduti }] },
+          res,
+          req,
+          ERROR_CODE.MATERIALS_NOT_ENOUGH,
+          ERROR_CATEGORY.ERROR_DIALOG,
+          `Material ${need.mst_material_id}: need ${need.amount}, have ${posseduti}`,
+        );
+      }
+    }
+
+    // Everything checked out: spend, then level.
+    doc.box.zeny = zenyPosseduti - zenny;
+
+    /*
+     * Spend the materials. Built from a map keyed by material id rather than
+     * by filtering the live array in a loop: the box often holds the same
+     * material on several rows (the tutorial creates duplicates), and each
+     * pass has to see the rows the previous ones left alone. Rows are merged
+     * so the box does not fill up with duplicates the client counts separately.
+     */
+    const perId = new Map<number, number>();
+    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+      const id = Number(m.mst_material_id);
+      perId.set(id, (perId.get(id) ?? 0) + Number(m.amount ?? 0));
+    }
+    for (const need of richiesti) {
+      perId.set(need.mst_material_id, (perId.get(need.mst_material_id) ?? 0) - need.amount);
+    }
+    doc.box.materials = [...perId.entries()]
+      .filter(([, amount]) => amount > 0)
+      .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
     const newLevel = currentLevel + steps;
     equipment.elv = newLevel;
-
-    // Optional: handle zenny/material consumption when is_use_reinforcement == 2
-    // Not fully implemented due to pricing tables/material ids pending in repo
 
     // Persist
     await User.findByIdAndUpdate(doc.id, { box: doc.box });
 
+    log.info(
+      'potenziamento | %s: %s lv%d -> lv%d, zenny %d (saldo %d), materiali %d',
+      doc.character_name ?? '?',
+      String(equipment.equipment_id),
+      currentLevel,
+      newLevel,
+      zenny,
+      Number(doc.box.zeny ?? 0),
+      richiesti.length,
+    );
+
+    /*
+     * The client reads the post-transaction box out of this response: the
+     * remaining zenny, the updated piece, and every material row it should
+     * know about. Anything omitted here is what it renders as 999,999,999.
+     */
     const data = {
       levelup: {
         equipment: equipment,
       },
+      zeny: Number(doc.box.zeny ?? 0),
+      materials: (doc.box.materials ?? []).map((m: VoceMateriale) => ({
+        mst_material_id: Number(m.mst_material_id),
+        amount: Number(m.amount ?? 0),
+      })),
     };
 
     encryptAndSend(data, res, req);
@@ -314,95 +787,206 @@ export const equipLevelup = async (req: Request, res: Response) => {
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment level up failed');
   }
 };
-// TODO: Equipment awakening is not implemented. Requires knowledge of awakening
-// mechanics (karidama consumption, resource equipment merging, stat changes).
-// Currently returns the session-authenticated user's equipment unchanged.
+/*
+ * EQUIPMENT AWAKENING / CHARM UNLOCK (box/equipment/awake).
+ *
+ * The client helper is sPlayer::cAwakeOmamoriAPI and its menu is
+ * uMenuEquipOmamoriAwake: this is where a charm (お守り / OD_OMA…) is "released".
+ * Request (cAPIBoxEquipmentAwake): { base_equipment_id, resource_equipment_ids,
+ * use_karidama }. Response: { base_equipment, payments, resource_equipments,
+ * resource_materials }.
+ *
+ * A charm carries a 技玉 (Skill Orb) + a skill that are INVALID until it is
+ * unlocked (MenuCmn: "the charm has not been unlocked, or its expiration has
+ * passed, so the Skill Orb and skill are invalid"). The cost lives in the client
+ * table omamori_release (Hunter Coins OR materials, + zenny), looked up by the
+ * charm's mst_equipment_id (src/json/omamori.json).
+ *
+ * Two deliberate departures from the original:
+ *  - the success roll is dropped: unlocking always succeeds;
+ *  - the effect is PERMANENT. The client decides "enabled" in
+ *    nPlayerWorkspace::cItemOmamori::isEnableEffect: it needs is_awake=1 and,
+ *    for mLimitType 1..5, start_remain <= now <= end_remain (2/3 also need the
+ *    awake-remain time > now, 4/5 a non-zero awake count). Those are set to a
+ *    far-future / large value so the timer never runs out.
+ */
+interface OmamoriRelease {
+  zenny: number;
+  karidama: number;
+  sozai: { materialId: number; amount: number }[];
+}
+const OMAMORI = omamoriData as unknown as {
+  byMstId: Record<string, { releaseId: number; rarity: number; name: string }>;
+  release: Record<string, OmamoriRelease>;
+};
+/** 2100-01-01 in unix seconds: any "end" set to this never expires. */
+const MAI = 4102444800;
+
 export const awake = async (req: Request, res: Response) => {
   try {
-    const { session_id, base_equipment_id } = req.body as EquipAwakeInput;
-    const filter = { current_session: session_id };
-    const doc = await User.findOne(filter);
-    if (!doc) {
+    const sessione = sessioneDa(req.body);
+    const doc = sessione ? await User.findOne({ current_session: sessione }) : null;
+    if (!doc?.box) {
       return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED); // Not authenticated
     }
-    if (!doc.box) {
-      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Box not found');
-    }
-    const equipment = doc.box.equipments!.find((eq) => eq.equipment_id === base_equipment_id);
+    const base_equipment_id = String((req.body as { base_equipment_id?: unknown }).base_equipment_id ?? '');
+    const use_karidama = Math.max(0, Number((req.body as { use_karidama?: unknown }).use_karidama ?? 0) || 0);
 
-    const data = {
-      equipment: equipment ?? {},
-    };
-    encryptAndSend(data, res, req);
+    const equipments = (doc.box.equipments ?? []) as unknown as Record<string, unknown>[];
+    const idx = equipments.findIndex((e) => e.equipment_id === base_equipment_id);
+    if (idx === -1) {
+      return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
+    }
+    const eq = equipments[idx]!;
+
+    const esito = (consumedMaterials: { mst_material_id: number }[] = []) =>
+      encryptAndSend(
+        {
+          base_equipment: eq,
+          payments: saldiPayments(doc.box!.payments),
+          resource_equipments: [],
+          resource_materials: consumedMaterials,
+          zeny: Number(doc.box!.zeny ?? 0),
+        },
+        res,
+        req,
+      );
+
+    const info = OMAMORI.byMstId[String(eq.mst_equipment_id)];
+    // Not a charm (or already unlocked): echo the piece unchanged.
+    if (!info || Number(eq.is_awake) === 1) {
+      return esito();
+    }
+
+    const rel = OMAMORI.release[String(info.releaseId)] ?? { zenny: 0, karidama: 0, sozai: [] };
+    const zenny = Number(rel.zenny ?? 0);
+    const zennyPosseduti = Number(doc.box.zeny ?? 0);
+    if (zenny > zennyPosseduti) {
+      return encryptAndSend(
+        { zeny: zennyPosseduti },
+        res,
+        req,
+        ERROR_CODE.ZENY_NOT_ENOUGH,
+        ERROR_CATEGORY.ERROR_DIALOG,
+        `Zenny insufficient: need ${zenny}`,
+      );
+    }
+
+    // Cost: Hunter Coins if the client chose that path, otherwise the materials.
+    const consumati: { mst_material_id: number }[] = [];
+    if (use_karidama > 0) {
+      const need = Number(rel.karidama ?? 0);
+      if (need > 0 && !spendiKaridama(doc.box, need)) {
+        return encryptAndSend(
+          { payments: saldiPayments(doc.box.payments) },
+          res,
+          req,
+          ERROR_CODE.KARIDAMA_NOT_ENOUGH,
+          ERROR_CATEGORY.ERROR_DIALOG,
+          `Karidama insufficient: need ${need}`,
+        );
+      }
+    } else {
+      const richiesti = (rel.sozai ?? [])
+        .map((s) => ({ mst_material_id: Number(s.materialId), amount: Number(s.amount ?? 0) }))
+        .filter((s) => s.amount > 0);
+      const perId = new Map<number, number>();
+      for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+        const id = Number(m.mst_material_id);
+        perId.set(id, (perId.get(id) ?? 0) + Number(m.amount ?? 0));
+      }
+      for (const need of richiesti) {
+        const posseduti = perId.get(need.mst_material_id) ?? 0;
+        if (posseduti < need.amount) {
+          return encryptAndSend(
+            { materials: [{ mst_material_id: need.mst_material_id, amount: posseduti }] },
+            res,
+            req,
+            ERROR_CODE.MATERIALS_NOT_ENOUGH,
+            ERROR_CATEGORY.ERROR_DIALOG,
+            `Material ${need.mst_material_id}: need ${need.amount}, have ${posseduti}`,
+          );
+        }
+      }
+      for (const need of richiesti) {
+        perId.set(need.mst_material_id, (perId.get(need.mst_material_id) ?? 0) - need.amount);
+        consumati.push({ mst_material_id: need.mst_material_id });
+      }
+      doc.box.materials = [...perId.entries()]
+        .filter(([, a]) => a > 0)
+        .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+    }
+
+    doc.box.zeny = zennyPosseduti - zenny;
+
+    // Unlock for good: no expiry, no use limit.
+    eq.is_awake = 1;
+    eq.awaked = 1;
+    eq.start_remain = 0;
+    eq.end_remain = MAI;
+    eq.endAwakeRemain = MAI;
+    eq.endAwakeCount = 9999;
+    eq.evolve_start_time = Math.floor(Date.now() / 1000);
+
+    await User.findByIdAndUpdate(doc.id, { box: doc.box });
+
+    log.info(
+      'omamori | %s: %s sbloccato (karidama %d, materiali %d, zenny %d)',
+      doc.character_name ?? '?',
+      base_equipment_id,
+      use_karidama > 0 ? Number(rel.karidama ?? 0) : 0,
+      consumati.length,
+      zenny,
+    );
+    return esito(consumati);
   } catch (error) {
     log.error('Error in awake:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment awake failed');
   }
 };
 
-export const potentialupAutoSet = (req: Request, res: Response) => {
+/*
+ * "Auto-set" the materials used for potential (awakening) upgrades.
+ *
+ * The mechanic itself is not implemented -- there is no potential-upgrade cost
+ * table in the repo -- so this does nothing and says so.
+ *
+ * It used to return a fully invented payload: equipment "EQP_ABC123", a fake
+ * partner payment, made-up materials, and `zeny: 999999`. The client applies the
+ * zenny value, so the on-screen balance jumped to 999999999 after touching this
+ * screen and only snapped back on the next request that re-read the real box.
+ *
+ * It now echoes the caller's REAL state with nothing changed, so the client
+ * displays the balance it should have.
+ */
+export const potentialupAutoSet = async (req: Request, res: Response) => {
   try {
-    const { eqp_obj_infos: _eqp_obj_infos } = req.body as PotentialupAutoSetInput;
-    //todo make real data
-    const data = {
-      base_equipment: {
-        auto_potential_composite: 12345,
-        awaked: 1,
-        created: 1700000000,
-        elv: 5,
-        endAwakeCount: 10,
-        endAwakeRemain: 3,
-        end_remain: 100,
-        equipment_id: 'EQP_ABC123',
-        evolve_start_time: 1700001234,
-        favorite: 0,
-        is_awake: 1,
-        is_complete_auto_potential_composite: 0,
-        mst_equipment_id: 987654,
-        potential: 222,
-        slv: 3,
-        start_remain: 200,
-      },
-      payments: [
-        {
-          amount: 500,
-          mst_payment_id: 1001,
-        },
-      ],
-      resource_equipments: [
-        {
-          auto_potential_composite: 123,
-          awaked: 0,
-          created: 1699999999,
-          elv: 2,
-          endAwakeCount: 5,
-          endAwakeRemain: 1,
-          end_remain: 50,
-          equipment_id: 'EQP_XYZ999',
-          evolve_start_time: 1700001111,
-          favorite: 1,
-          is_awake: 1,
-          is_complete_auto_potential_composite: 0,
-          mst_equipment_id: 444444,
-          potential: 333,
-          slv: 2,
-          start_remain: 75,
-        },
-      ],
-      resource_materials: [
-        {
-          amount: 20,
-          mst_material_id: 3001,
-        },
-        {
-          amount: 50,
-          mst_material_id: 3002,
-        },
-      ],
-      zeny: 999999,
+    const sessione = sessioneDa(req.body);
+    const doc = sessione ? await User.findOne({ current_session: sessione }) : null;
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+    const box = doc.box as unknown as {
+      equipments?: unknown[];
+      payments?: { mst_payment_id?: number | null; amount?: number | null }[];
+      zeny?: number | null;
     };
-
-    encryptAndSend(data, res, req);
+    // Nothing is consumed, so nothing is echoed as consumed: the real equipment,
+    // the real payment balances, and the real zenny.
+    encryptAndSend(
+      {
+        base_equipment: {},
+        payments: (box.payments ?? []).map((p) => ({
+          mst_payment_id: Number(p.mst_payment_id),
+          amount: Number(p.amount ?? 0),
+        })),
+        resource_equipments: [],
+        resource_materials: [],
+        zeny: Number(box.zeny ?? 0),
+      },
+      res,
+      req,
+    );
   } catch (error) {
     log.error('Error in potentialupAutoSet:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Potential up auto set failed');
@@ -492,9 +1076,15 @@ export const materialSell = async (req: Request, res: Response) => {
     const materiali = doc.box.materials ?? [];
     const suoi = materiali.filter((m) => Number(m.mst_material_id) === idMateriale);
     if (!Number.isFinite(idMateriale) || !suoi.length) {
-      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Material not found');
+      // 94 = "The material you tried to sell is not in your Material Box".
+      return encryptAndSend({}, res, req, ERROR_CODE.MATERIAL_NOT_IN_BOX_SELL, ERROR_CATEGORY.ERROR_DIALOG, 'Material not found');
     }
     const posseduti = suoi.reduce((t, m) => t + Number(m.amount ?? 0), 0);
+    if (quanti > posseduti) {
+      // 95 = "You do not have enough of the material you tried to sell".
+      return encryptAndSend({}, res, req, ERROR_CODE.MATERIALS_NOT_ENOUGH_SELL, ERROR_CATEGORY.ERROR_DIALOG,
+        `素材が足りません (Material not enough: have ${posseduti}, asked ${quanti})`);
+    }
     const venduti = Math.min(quanti, posseduti);
     const rimasti = posseduti - venduti;
     const guadagno = venduti * (PREZZO_MATERIALE[String(idMateriale)] ?? 0);

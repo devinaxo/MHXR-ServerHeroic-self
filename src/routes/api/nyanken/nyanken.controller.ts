@@ -160,6 +160,63 @@ function rispostaRisultato(pezzi: ReturnType<typeof nuovoPezzo>[], payments: unk
 }
 
 /*
+ * Una spedizione "rapida": uno o più tiri completi del gacha consegnati subito,
+ * a pagamento. È ciò che serve sia a `nyanken/start/next` sia (soprattutto) a
+ * `nyanken/paid/result`, che è l'endpoint davvero chiamato dal pulsante viola
+ * "esplora 5 volte in un colpo" (MenuCmn 492/498). A differenza di consegnaPremi
+ * NON tocca il timer, così la spedizione gratis può restare in corso mentre si
+ * comprano quelle a pagamento.
+ */
+const COSTO_SPEDIZIONE_RAPIDA = Math.max(0, Number(process.env.NYANKEN_REPEAT_COST ?? 15) || 0);
+// Il batch a pagamento: quante spedizioni in un colpo e quanto costa il colpo.
+const GIRI_PAGAMENTO = Math.max(1, Number(process.env.NYANKEN_PAID_DRAWS ?? 5) || 5);
+// Costo fisso in 狩玉. Se non impostato e' automatico: si paga come (giri - 1)
+// spedizioni intere, quindi 5 giri costano 4 (uno sconto sul pacchetto).
+const COSTO_PAGAMENTO = process.env.NYANKEN_PAID_COST === undefined
+  ? null
+  : Math.max(0, Number(process.env.NYANKEN_PAID_COST) || 0);
+
+async function premiaSubito(sessionId: string, idRichiesto: unknown, giri: number, costo: number) {
+  if (typeof sessionId !== 'string' || !sessionId) return null;
+  const doc = await User.findOne({ current_session: sessionId });
+  if (!doc?.box) return null;
+  const categoria = categoriaDa(idRichiesto) ?? CATEGORIA_BASE;
+  const box = doc.box as unknown as {
+    payments?: { mst_payment_id?: number | null; amount?: number | null }[];
+    equipments?: { equipment_id?: string | null }[];
+    capacity?: { eqp_box?: number };
+  };
+
+  if (costo > 0 && !spendiKaridama(box, costo)) {
+    return { doc, pezzi: [] as ReturnType<typeof nuovoPezzo>[], gemme: 0, insufficiente: true };
+  }
+
+  const esistenti = box.equipments ?? [];
+  const capienza = Number(box.capacity?.eqp_box ?? 500);
+  let posto = Math.max(0, capienza - esistenti.length);
+  const usati = new Set(esistenti.map((e) => String(e.equipment_id)));
+  const pezzi: ReturnType<typeof nuovoPezzo>[] = [];
+  let gemme = 0;
+  // Ogni giro è una spedizione intera: 3 pezzi + le sue 狩玉. Niente doppioni in
+  // tutto il batch, e mai oltre la capienza della box.
+  for (let giro = 0; giro < giri && posto > 0; giro++) {
+    for (const v of pesca(poolDi(categoria), usati, Math.min(PEZZI_PER_SPEDIZIONE, posto))) {
+      usati.add(v.n);
+      pezzi.push(nuovoPezzo(v));
+      posto--;
+    }
+    gemme += gemmePremio(categoria.nome);
+  }
+  aggiungiKaridama(box, gemme);
+  await User.updateOne({ _id: doc._id }, {
+    ...(pezzi.length ? { $push: { 'box.equipments': { $each: pezzi } } } : {}),
+    $set: { 'box.payments': box.payments },
+  });
+  log.info('spedizione rapida | %s: %d giri -> %d pezzi, %d 狩玉, costo %d', doc.character_name ?? '?', giri, pezzi.length, gemme, costo);
+  return { doc, pezzi, gemme, insufficiente: false };
+}
+
+/*
  * La spedizione ha il timer vero (services/spedizioniGatti.ts): partire e' gratis,
  * i gatti tornano dopo quest_time minuti, e si puo' pagare in 狩玉 per farli
  * rientrare subito (nyanken/return). I premi si ritirano solo a spedizione finita.
@@ -227,7 +284,8 @@ export const returnHome = async (req: Request, res: Response) => {
     const box = doc.box as unknown as { payments?: { mst_payment_id?: number | null; amount?: number | null }[] };
     if (sp.stato === 'in_corso') {
       if (!spendiKaridama(box, sp.prezzo)) {
-        return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG,
+        // 73 = "Not enough Hunting Orbs" (狩玉), the real message the client shows.
+        return encryptAndSend({}, res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
           `狩玉が足りません (Not enough karidama: ${saldoKaridama(box.payments)}/${sp.prezzo})`);
       }
       await User.updateOne({ _id: doc._id }, { $set: { 'box.payments': box.payments, 'nyanken_cooldown.fine': ora } });
@@ -278,12 +336,66 @@ export const result = async (req: Request, res: Response) => {
   }
 };
 
+/**
+ * nyanken/paid/result: la spedizione a pagamento immediata.
+ *
+ * È l'endpoint davvero chiamato dal pulsante viola del client ("esplora 5 volte
+ * in un colpo"; l'avviso è MenuCmn 498 "usa %d 狩玉 a pagamento…"). Paga una
+ * volta e consegna subito GIRI_PAGAMENTO spedizioni di premi, senza toccare il
+ * timer della spedizione gratis: si può comprare anche mentre un'altra è in
+ * corso. Prima era mappato su ritira(), che per una spedizione in corso
+ * rispondeva errore 1 e altrimenti consegnava premi vuoti (e il saldo finiva
+ * mostrato come premio).
+ */
 export const paidResult = async (req: Request, res: Response) => {
   try {
-    await ritira(req, res, { disp_last_one_result: 0, is_pop_not_enough_zeny: 0, max_potential_equipments: [] });
+    const { session_id, mst_nyanken_id } = req.body as NyankenInput;
+    const categoria = categoriaDa(mst_nyanken_id) ?? CATEGORIA_BASE;
+    // Pacchetto "5 al prezzo di 4": costo automatico = (giri - 1) x prezzo pieno.
+    const costo = COSTO_PAGAMENTO ?? prezzoPienoDi(categoria) * (GIRI_PAGAMENTO - 1);
+    const esito = await premiaSubito(session_id, mst_nyanken_id, GIRI_PAGAMENTO, costo);
+    if (!esito) return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+
+    const payments = esito.doc.box?.payments ?? [];
+    if (esito.insufficiente) {
+      return encryptAndSend(
+        rispostaRisultato([], payments),
+        res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+        `狩玉が足りません (Not enough karidama: ${saldoKaridama(payments)}/${costo})`,
+      );
+    }
+    encryptAndSend(rispostaRisultato(esito.pezzi, payments, esito.gemme), res, req);
   } catch (error) {
     log.error('Error in nyanken paid result:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Nyanken paid result failed');
+  }
+};
+
+/**
+ * nyanken/start/next: la spedizione a pagamento immediata e ripetibile.
+ *
+ * Il client la usa per "mandare di nuovo" senza aspettare il timer (anche con
+ * una spedizione gratis già in corso). Ogni chiamata è un tiro completo del
+ * gacha della spedizione scelta, pagato in 狩玉, con l'esito nella risposta.
+ */
+export const startNext = async (req: Request, res: Response) => {
+  try {
+    const { session_id, mst_nyanken_id } = req.body as NyankenInput;
+    const esito = await premiaSubito(session_id, mst_nyanken_id, 1, COSTO_SPEDIZIONE_RAPIDA);
+    if (!esito) return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+
+    const payments = esito.doc.box?.payments ?? [];
+    if (esito.insufficiente) {
+      return encryptAndSend(
+        rispostaRisultato([], payments),
+        res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+        `狩玉が足りません (Not enough karidama: ${saldoKaridama(payments)}/${COSTO_SPEDIZIONE_RAPIDA})`,
+      );
+    }
+    encryptAndSend(rispostaRisultato(esito.pezzi, payments, esito.gemme), res, req);
+  } catch (error) {
+    log.error('Error in nyanken start/next:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Nyanken start next failed');
   }
 };
 
@@ -414,13 +526,13 @@ export const QuestList = (req: Request, res: Response) => {
    * i valori a 0 sono gli stessi della vecchia voce unica, che il client
    * accettava gia'. Cambiano solo ID, nome, banner e ordine.
    */
-  const questDataList = CATEGORIE.map((c) => ({
+  const riga = (c: Categoria, prezzo: number) => ({
     beginner_flag: 0,
     close: 0,
     // Costo vero in 狩玉 (tabella del gioco): prima 0, e il prezzo non si vedeva.
-    currency_ammount: c.costo ?? 0,
+    currency_ammount: prezzo,
     currency_type: 0,
-    discount_currency_ammount: c.costo ?? 0,
+    discount_currency_ammount: prezzo,
     end: 0,
     island_info: {
       area_info_list: [],
@@ -442,6 +554,15 @@ export const QuestList = (req: Request, res: Response) => {
     sort_key: c.ordine,
     start: 0,
     time_display_flag: 0,
-  }));
-  encryptAndSend({ questDataList }, res, req);
+  });
+
+  const questDataList = CATEGORIE.map((c) => riga(c, c.costo ?? 0));
+  /*
+   * Il batch a pagamento ("esplora 5 in un colpo") costa (giri - 1) spedizioni:
+   * il suo pulsante/avviso deve mostrare QUEL prezzo, non quello di una singola
+   * spedizione, altrimenti dice 15 mentre il server ne addebita 60.
+   */
+  const prezzoBatch = (c: Categoria) => (c.costo ?? 0) * Math.max(0, GIRI_PAGAMENTO - 1);
+  const paidQuestDataList = CATEGORIE.map((c) => riga(c, prezzoBatch(c)));
+  encryptAndSend({ questDataList, paidQuestDataList }, res, req);
 };

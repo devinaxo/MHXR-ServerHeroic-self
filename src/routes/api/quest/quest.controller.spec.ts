@@ -3,6 +3,7 @@ import { Request, Response } from 'express';
 
 vi.mock('../../../model/user');
 vi.mock('../../../model/questSheet');
+vi.mock('../../../model/presents');
 vi.mock('../../../model/events/eventMeta');
 vi.mock('../../../model/events/assualts');
 vi.mock('../../../model/events/m16');
@@ -32,6 +33,7 @@ vi.mock('fs/promises', () => ({
 
 import User from '../../../model/user.js';
 import QuestSheet from '../../../model/questSheet.js';
+import Present from '../../../model/presents.js';
 import { Event } from '../../../model/events/index.js';
 import AssualtEvents from '../../../model/events/assualts.js';
 import M16Events from '../../../model/events/m16.js';
@@ -43,7 +45,12 @@ import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import { ERROR_CODE, ERROR_CATEGORY } from '../../../constants/error.codes.js';
 import { questProgress, questResultEnd, eternalStart, eternalAll } from './quest.controller.js';
 import { eventTicketFree, eventNormalStart, eventTicketStart, eventScoreStart, eventListAll } from './questEvent.controller.js';
-import { islandStart, islandEnd, islandMapAll } from './questIsland.controller.js';
+import { islandStart, islandEnd, islandMapAll, rewardExchange } from './questIsland.controller.js';
+import {
+  PUNTI_PER_QUEST,
+  PUNTI_PER_RISCATTO,
+  TRADE_POINT_ID,
+} from '../../../services/tradePointsService.js';
 
 function mockReqRes(body: Record<string, unknown> = {}) {
   const req = { body, ip: '127.0.0.1', get: vi.fn() } as unknown as Request;
@@ -323,7 +330,7 @@ describe('quest.controller', () => {
 
       expect(User.findOneAndUpdate).toHaveBeenCalledWith(
         { current_session: 'sess-1' },
-        { cleared_quests: [{ mst_quest_id: 100 }] },
+        { cleared_quests: [{ mst_quest_id: 100 }], otomo_avviati: { mst_quest_id: 100, otomo_ids: [] } },
         { new: true },
       );
       expect(encryptAndSend).toHaveBeenCalledWith(
@@ -346,7 +353,29 @@ describe('quest.controller', () => {
 
       expect(User.findOneAndUpdate).toHaveBeenCalledWith(
         { current_session: 'sess-1' },
-        { cleared_quests: [{ mst_quest_id: 100 }] },
+        { cleared_quests: [{ mst_quest_id: 100 }], otomo_avviati: { mst_quest_id: 100, otomo_ids: [] } },
+        { new: true },
+      );
+    });
+
+    // The client sends `otomo` as a bare array of otomo_id strings
+    // (cMHiParser::getArrayString); we remember them for the end-of-quest exp.
+    it('remembers the palicos that set off', async () => {
+      vi.mocked(User.findOne).mockResolvedValue({ cleared_quests: [] } as never);
+      vi.mocked(QuestSheet.findOne).mockResolvedValue({ mBlocks: [10] } as never);
+      vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+      const { req, res } = mockReqRes({
+        mst_quest_id: 100,
+        session_id: 'sess-1',
+        otomo: ['OT_OTOMO_CHAR_ID_118', 'OT_OTOMO_CHAR_ID_119'],
+      });
+      await islandStart(req, res);
+
+      expect(User.findOneAndUpdate).toHaveBeenCalledWith(
+        { current_session: 'sess-1' },
+        expect.objectContaining({
+          otomo_avviati: { mst_quest_id: 100, otomo_ids: ['OT_OTOMO_CHAR_ID_118', 'OT_OTOMO_CHAR_ID_119'] },
+        }),
         { new: true },
       );
     });
@@ -404,25 +433,106 @@ describe('quest.controller', () => {
     });
 
     it('returns reward data on success', async () => {
+      // Pin the zenny range so the assertion is deterministic.
+      const prev = process.env.QUEST_ZENY;
+      process.env.QUEST_ZENY = '500-500';
+      try {
+        vi.mocked(QuestSheet.findOne).mockResolvedValue({ mRewardItemList: [] } as never);
+        vi.mocked(User.findOne).mockResolvedValue({ cleared_quests: [] } as never);
+        vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+        const { req, res } = mockReqRes({
+          mst_quest_id: 200,
+          clear_time: 45,
+          session_id: 'sess-1',
+        });
+        await islandEnd(req, res);
+
+        expect(encryptAndSend).toHaveBeenCalledWith(
+          expect.objectContaining({
+            rewards: expect.objectContaining({
+              zeny: 500,
+            }),
+          }),
+          res,
+          req,
+        );
+      } finally {
+        if (prev === undefined) delete process.env.QUEST_ZENY;
+        else process.env.QUEST_ZENY = prev;
+      }
+    });
+
+    it('places the player on the island of a Special Request (subjugation) quest', async () => {
       vi.mocked(QuestSheet.findOne).mockResolvedValue({ mRewardItemList: [] } as never);
       vi.mocked(User.findOne).mockResolvedValue({ cleared_quests: [] } as never);
       vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
       const { req, res } = mockReqRes({
-        mst_quest_id: 200,
+        mst_quest_id: 141015936, // 3-10 美女の落し物, a subjugation quest on island 2
         clear_time: 45,
         session_id: 'sess-1',
       });
       await islandEnd(req, res);
 
       expect(encryptAndSend).toHaveBeenCalledWith(
-        expect.objectContaining({
-          rewards: expect.objectContaining({
-            zeny: 30,
-          }),
-        }),
+        expect.objectContaining({ mst_part_id: 2053326309 }),
         res,
         req,
       );
+    });
+
+    it('sends a Special Request reward to the present box, not the inventory', async () => {
+      const prev = process.env.QUEST_CRESCITA_CHANCE;
+      process.env.QUEST_CRESCITA_CHANCE = '0';
+      try {
+        vi.mocked(QuestSheet.findOne).mockResolvedValue({
+          mRewardItemList: [{ mItemHash: '1926212767', mProbScale: '10', mRewardType: '0' }],
+        } as never);
+        const box = { materials: [] as { mst_material_id: number; amount: number }[] };
+        vi.mocked(User.findOne).mockResolvedValue({ uu_id: 'uu1', character_name: 'H', cleared_quests: [], box } as never);
+        vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+        vi.mocked(Present.create).mockResolvedValue({} as never);
+
+        const { req, res } = mockReqRes({ mst_quest_id: 141015936, clear_time: 45, session_id: 'sess-1' });
+        await islandEnd(req, res);
+
+        expect(Present.create).toHaveBeenCalledWith(expect.objectContaining({ uu_id: 'uu1' }));
+        const content = vi.mocked(Present.create).mock.calls[0]![0].content as { materials?: { mst_material_id: number }[] };
+        expect(content.materials?.[0]?.mst_material_id).toBe(1926212767);
+        // Delivered through the present box, so the inventory must stay empty.
+        expect(box.materials).toEqual([]);
+      } finally {
+        if (prev === undefined) delete process.env.QUEST_CRESCITA_CHANCE;
+        else process.env.QUEST_CRESCITA_CHANCE = prev;
+      }
+    });
+
+    it.runIf(PUNTI_PER_QUEST > 0)('pays Trade Points for the quest and shows them in the reward list', async () => {
+      const prev = process.env.QUEST_CRESCITA_CHANCE;
+      process.env.QUEST_CRESCITA_CHANCE = '0';
+      try {
+        vi.mocked(QuestSheet.findOne).mockResolvedValue({ mRewardItemList: [] } as never);
+        const box = {
+          points: [] as { mst_event_point_id: number; amount: number }[],
+          materials: [] as { mst_material_id: number; amount: number }[],
+        };
+        vi.mocked(User.findOne).mockResolvedValue({ uu_id: 'uu1', character_name: 'H', cleared_quests: [], box } as never);
+        vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+
+        const { req, res } = mockReqRes({ mst_quest_id: 200, clear_time: 45, session_id: 'sess-1' });
+        await islandEnd(req, res);
+
+        // Credited to the box...
+        expect(box.points.find((p) => p.mst_event_point_id === TRADE_POINT_ID)?.amount).toBe(PUNTI_PER_QUEST);
+        // ...and shown in the first reward slot, so what is seen is what is given.
+        const [data] = vi.mocked(encryptAndSend).mock.calls[0]!;
+        const rewards = (data as { rewards: { normal_reward: { other_list_add: { item_list: { points?: unknown[] } }[] } } }).rewards;
+        expect(rewards.normal_reward.other_list_add[0]!.item_list.points).toEqual([
+          { amount: PUNTI_PER_QUEST, mst_event_point_id: TRADE_POINT_ID },
+        ]);
+      } finally {
+        if (prev === undefined) delete process.env.QUEST_CRESCITA_CHANCE;
+        else process.env.QUEST_CRESCITA_CHANCE = prev;
+      }
     });
 
     it('returns error on DB failure', async () => {
@@ -442,6 +552,29 @@ describe('quest.controller', () => {
         ERROR_CATEGORY.ERROR_DIALOG,
         'Island end failed',
       );
+    });
+  });
+
+  describe('rewardExchange', () => {
+    it('answers an empty exchange_list without a session, and never throws', async () => {
+      const { req, res } = mockReqRes({ idx: 1 });
+      await rewardExchange(req, res);
+      expect(encryptAndSend).toHaveBeenCalledWith({ exchange_list: [] }, res, req);
+    });
+
+    it.runIf(PUNTI_PER_RISCATTO === 0)('does not pay points while QUEST_EXCHANGE_POINTS is unset', async () => {
+      vi.mocked(User.findOne).mockResolvedValue({ uu_id: 'u1', box: { points: [] } } as never);
+      const { req, res } = mockReqRes({ session_id: 'sess-1', idx: 1 });
+      await rewardExchange(req, res);
+      expect(encryptAndSend).toHaveBeenCalledWith({ exchange_list: [] }, res, req);
+      expect(User.updateOne).not.toHaveBeenCalled();
+    });
+
+    it('returns NOT_AUTHENTICATED when the session is unknown', async () => {
+      vi.mocked(User.findOne).mockResolvedValue(null);
+      const { req, res } = mockReqRes({ session_id: 'bad', idx: 1 });
+      await rewardExchange(req, res);
+      expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
     });
   });
 

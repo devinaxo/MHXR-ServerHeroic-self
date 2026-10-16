@@ -1,7 +1,7 @@
 # MHXR — Apypos Server (restoration work)
 
 **Work in progress.** A private server for *Monster Hunter Explore* (モンスターハンター エクスプロア),
-the Capcom mobile game whose official servers were shut down in 2020.
+the Capcom mobile game whose official servers were shut down in 2020. Tailored to my own home server needs. 
 
 This repository is a working fork of [Forgotten-MH/apypos-server](https://github.com/Forgotten-MH/apypos-server),
 focused on one goal: **making the event quests actually work**. Story/island quests already

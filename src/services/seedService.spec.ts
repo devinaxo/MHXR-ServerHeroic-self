@@ -73,7 +73,7 @@ vi.mock('../json/forb_events.json', () => ({ default: [{ difficulty: 'forb' }] }
 
 import { Event, AssualtEvents, ScoreEvents, TicketEvents } from '../model/events/index.js';
 import QuestSheet from '../model/questSheet.js';
-import { seedDatabase } from './seedService.js';
+import { seedDatabase, normalizzaQuest } from './seedService.js';
 
 const mockLog = {
   info: vi.fn(),
@@ -112,8 +112,17 @@ describe('seedService', () => {
       expect(ScoreEvents.create).toHaveBeenCalledTimes(1);
       // Ticket events: 1 ticket event
       expect(TicketEvents.create).toHaveBeenCalledTimes(1);
-      // Quest sheets: 6 insertMany calls (normal, training, score, eternal, ticket, event)
-      expect(QuestSheet.insertMany).toHaveBeenCalledTimes(6);
+      // Quest sheets: normal, training, score, eternal, ticket and event are
+      // combined into a single insertMany (so they can be normalised first).
+      expect(QuestSheet.insertMany).toHaveBeenCalledTimes(1);
+      expect(vi.mocked(QuestSheet.insertMany).mock.calls[0]![0]).toEqual([
+        { id: 'normal1' },
+        { id: 'training1' },
+        { id: 'score1' },
+        { id: 'eternal1' },
+        { id: 'ticket1' },
+        { id: 'event1' },
+      ]);
     });
 
     it('skips seeding when collections are not empty', async () => {
@@ -148,6 +157,28 @@ describe('seedService', () => {
       expect(ScoreEvents.create).not.toHaveBeenCalled();
       expect(TicketEvents.create).toHaveBeenCalled();
       expect(QuestSheet.insertMany).not.toHaveBeenCalled();
+    });
+
+    it('unwraps wrapped reward and boss arrays before insert', () => {
+      // Le quest evento arrivano dal convertitore XFS con gli array avvolti:
+      // senza srotolarli Mongoose scriverebbe [null] (era il bug che lasciava
+      // le 1524 quest evento senza ricompense).
+      const quest = {
+        mQuestID: '123',
+        mRewardItemList: { mAutoDelete: 'false', array: { mpArray: [{ mItemHash: '111' }] } },
+        mBossList: { mAutoDelete: 'false', classref_: { mpArray: [{ mEnemyID: '3' }] } },
+      };
+      expect(normalizzaQuest(quest)).toEqual({
+        mQuestID: '123',
+        mRewardItemList: [{ mItemHash: '111' }],
+        mBossList: [{ mEnemyID: '3' }],
+      });
+    });
+
+    it('leaves already-flat arrays untouched', () => {
+      const rewards = [{ mItemHash: '111' }];
+      const quest = { mQuestID: '123', mRewardItemList: rewards };
+      expect(normalizzaQuest(quest).mRewardItemList).toBe(rewards);
     });
 
     it('creates assault events with timestamp fields', async () => {

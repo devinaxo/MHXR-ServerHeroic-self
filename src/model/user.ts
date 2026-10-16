@@ -55,12 +55,27 @@ export interface IUser extends Document {
   // Solo per l'amministratore (tools-js/recupera-account.cjs): mai mandati al gioco.
   ultimo_accesso?: Date;
   ultimo_ip?: string;
+  // Game day (YYYYMMDD) the last Trade Points gift was sent, so the daily gift
+  // is idempotent. See services/presenteGiornalieroService.ts.
+  punti_ultimo_giorno?: number;
+  // Game day (YYYYMMDD) of the last quest reward exchange payout.
+  punti_exchange_ultimo_giorno?: number;
+  // Trading Post purchases, grouped by game day (YYYYMMDD) then item id, so the
+  // stock resets by itself at the 05:00 rollover. See tradePointsService.ts.
+  negozi_acquistati?: Record<string, Record<string, number>>;
   // Voci del 探検ナビ gia' riscattate (services/navigazioneService.ts).
   navigazioni_riscattate?: number[];
+  // Stamp ids currently held (box/stamp/hold/set), up to four, 0 = empty slot.
+  hold_stamp_ids?: number[];
   // Mappa della storia con la progressione vera (services/progressioneStoria.ts).
   progressione_storia?: boolean;
+  // Scene di storia gia' viste (mst_story_id): la mappa non le ripropone e non
+  // le riproduce di nuovo al rientro (routes/api/story).
+  storie_viste?: number[];
   // Cosa c'e' nei punti di raccolta dell'ultima quest avviata (services/raccoltaQuest.ts).
   raccolta_avviata?: { mst_quest_id: number; punti: { instance_id: number; mst_material_id: number; amount: number }[] } | null;
+  // Palico portati nell'ultima quest avviata (services/otomoQuest.ts).
+  otomo_avviati?: { mst_quest_id: number; otomo_ids: string[] } | null;
   comment?: string;
   tutorial_flags: number[];
   model_info?: ModelInfo;
@@ -180,10 +195,22 @@ const userSchema = new Schema({
   // accountService). Facoltativi: gli account vecchi semplicemente non li hanno.
   ultimo_accesso: Date,
   ultimo_ip: String,
+  punti_ultimo_giorno: Number,
+  // Game day (YYYYMMDD) the quest reward exchange paid out, so /quest/reward/
+  // exchange cannot be farmed in a loop (see questIsland.rewardExchange).
+  punti_exchange_ultimo_giorno: Number,
+  // { 'YYYYMMDD': { '<mst_shop_item_id>': quanti } }
+  negozi_acquistati: { type: mongoose.Schema.Types.Mixed, default: {} },
   navigazioni_riscattate: { type: [Number], default: [] },
+  // The four "held" stamps (box/stamp/hold/set). Client sends up to four ids,
+  // 0 = empty slot; stored verbatim so box/stamp/hold/get returns them back.
+  hold_stamp_ids: { type: [Number], default: [] },
   // Acceso per tutti dal 29/09 (prima solo in prova su Heroic69); false lo spegne per un account.
   progressione_storia: { type: Boolean, default: true },
   raccolta_avviata: { type: mongoose.Schema.Types.Mixed, default: null },
+  // I palico portati nell'ultima quest avviata (quest/island|event|.../start):
+  // a fine quest prendono l'exp (otomo_result). Vedi services/otomoQuest.ts.
+  otomo_avviati: { type: mongoose.Schema.Types.Mixed, default: null },
   // Premi dell'ultima missione finita, per il "x5" pagato in 狩玉 (rewardFinal).
   ultimi_premi: { type: mongoose.Schema.Types.Mixed, default: null },
   // Continua usati nella quest in corso (quest/continue).
@@ -269,6 +296,11 @@ const userSchema = new Schema({
   },
   cleared_quests: {
     type: [ClearedQuests],
+    default: [],
+  },
+  // Scene di storia gia' viste (mst_story_id), per non riprodurle di nuovo.
+  storie_viste: {
+    type: [Number],
     default: [],
   },
   nyanken_cooldown: {

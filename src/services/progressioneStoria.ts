@@ -44,6 +44,10 @@ export function statoStoria(completate: Set<number>): StatoStoria {
   let aperto = true; // il prossimo nodo nell'ordine
   let isolaCorrente: number | null = null;
   let prossimaIsolaAperta = true;
+  // Isola di cui e' stata raggiunta la costa d'uscita: i suoi nodi restanti
+  // restano accessibili e NON fanno piu' interrompere la catena, altrimenti
+  // l'isola successiva (aperta dall'uscita) non verrebbe mai raggiunta.
+  let isolaConclusa: number | null = null;
   for (let i = 0; i < IN_ORDINE.length; i++) {
     const { oceano, isola, nodo } = IN_ORDINE[i]!;
     if (isola !== isolaCorrente) {
@@ -51,14 +55,16 @@ export function statoStoria(completate: Set<number>): StatoStoria {
       aperto = prossimaIsolaAperta;
       prossimaIsolaAperta = false;
       isolaCorrente = isola;
+      isolaConclusa = null;
     }
-    if (!aperto && i > finoA) break;
+    if (!aperto && isola !== isolaConclusa && i > finoA) break;
     s.oceani.add(oceano);
     s.isole.add(isola);
     s.nodi.add(nodo.mst_node_id);
     if (nodo.tipo === 4) {
       s.tesori.add(isola);
       prossimaIsolaAperta = true;
+      isolaConclusa = isola;
     }
     aperto = nodo.missioni.length === 0 || nodo.missioni.slice(-2).some((q) => completate.has(q));
   }
@@ -68,6 +74,21 @@ export function statoStoria(completate: Set<number>): StatoStoria {
 /** Missioni davvero completate (island/end salva clear_time; island/start le segna solo come viste). */
 export function missioniCompletate(cleared: { mst_quest_id?: number | null; clear_time?: number | null }[] | null | undefined): Set<number> {
   return new Set((cleared ?? []).filter((q) => q.clear_time != null).map((q) => Number(q.mst_quest_id)));
+}
+
+/**
+ * L'isola (mst_part_id) a cui appartiene una missione della storia, o null se
+ * non e' una missione della mappa (eventi/eternal). Serve a island/end per
+ * rimandare il giocatore sull'isola giusta dopo la caccia: prima era fissa a
+ * 3815380063, quindi chiudere una missione sull'isola 2 riportava all'isola 1.
+ */
+export function isolaDiQuest(questId: number): number | null {
+  for (const o of STORIA) {
+    for (const i of o.isole) {
+      if (i.nodi.some((n) => n.missioni.includes(questId))) return i.mst_part_id;
+    }
+  }
+  return null;
 }
 
 type NotaMappa = { mst_note_content_id: number; state: number };

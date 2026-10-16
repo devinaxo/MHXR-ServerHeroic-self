@@ -2,38 +2,43 @@ import { Request, Response } from 'express';
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import { ERROR_CODE, ERROR_CATEGORY } from '../../../constants/error.codes.js';
 import { createLogger } from '../../../middleware/logger.js';
+import QuestSheet from '../../../model/questSheet.js';
 import equipaggiamenti from '../../../json/equipaggiamenti.json' with { type: 'json' };
+import catalogoRicompense from '../../../json/catalogo-ricompense.json' with { type: 'json' };
 
 const log = createLogger('katamari');
 
 /*
- * I KATAMARI: i fagotti che si raccolgono durante la caccia.
+ * I KATAMARI: i fagotti/equipaggiamento ottenibili da una quest.
  *
- * Il giocatore, nella fase di raccolta/pesca, tira su un fagotto; il client
- * chiede al server cosa contiene con /quest/katamari/content/get e lo mostra.
- * Finora quella rotta era agganciata a notImplemented.blankResponseEncrypted,
- * cioe' rispondeva {} — per questo l'oggetto raccolto compariva come "null".
+ * Il client chiede il contenuto con /quest/katamari/content/get, indicando
+ * QUEST, NODO EVENTO e PARTE:
  *
- * Il contenuto e' EQUIPAGGIAMENTO: la forma di ogni voce e' documentata nel
- * commento di katamari_content_list dentro questIsland.controller.ts
- * (elv, end_remain, is_awake, mst_equipment_id, prob_type_id, slv,
- * start_remain).
+ *   req  { session_id, mst_quest_id, mst_event_node_id, mst_part_id }
+ *   resp { katamari_content_list: [{ elv, end_remain, is_awake,
+ *                                    mst_equipment_id, prob_type_id, slv,
+ *                                    start_remain }] }
  *
- * I cinque tipi di fagotto vengono da katamari_define nell'apk, e ognuno ha un
- * mDirectionID da 1 a 5 in katamari_info: si usa come livello di pregio, cosi'
- * il fagotto piu' raro contiene equipaggiamento piu' raro.
+ * (Da cAPIQuestKatamariContentGet::Request::to_json / ::Response::setup.)
+ * E' il riquadro "ottenibili" della schermata di dettaglio di una quest.
+ *
+ * COSA FACEVA: ignorava quest e parte e pescava 6 equipaggiamenti A CASO
+ * (Math.random): il riquadro cambiava ad ogni apertura e non c'entrava con la
+ * missione.
+ *
+ * COSA FA ORA: usa la tabella delle ricompense VERA della quest
+ * (mRewardItemList), tenendo solo la famiglia "equipaggiamento" del catalogo
+ * (il campo mRewardType non e' affidabile, vedi questIsland.controller.ts), e
+ * li ordina per rarita' decrescente (il pezzo pregiato prima). NIENTE tetto:
+ * si mandano TUTTI i pezzi in tabella.
+ *
+ * Se la quest NON elenca equipaggiamento (quasi tutte le missioni della storia:
+ * le loro ricompense sono materiali; l'equipaggiamento arriva dai katamari in
+ * caccia, e quella tabella parte->katamari->pezzo sta in rKatamariInfo.ktmi
+ * dentro rsdnt_property.arc, non ancora estratta) si risponde con la lista
+ * VUOTA: il client mostra "Equipment Crystals cannot be obtained in this quest"
+ * invece di inventare equipaggiamento.
  */
-
-/** I 5 tipi, da katamari_define + katamari_info dell'apk. Non inventati. */
-const TIPI_KATAMARI: Record<number, { livello: number; rarita: number[] }> = {
-  2730451382: { livello: 1, rarita: [3, 4] }, // KATAMARI00001
-  1001795596: { livello: 2, rarita: [4, 5] }, // KATAMARI00002
-  1286668442: { livello: 3, rarita: [5, 6] }, // KATAMARI00003
-  3537212729: { livello: 4, rarita: [6, 7] }, // KATAMARI00004
-  2782045615: { livello: 5, rarita: [7, 8] }, // KATAMARI00005
-};
-
-const TIPO_PREDEFINITO = 1286668442; // quello di mezzo, se il client non lo dice
 
 interface VoceEquip {
   i: number; // id
@@ -41,64 +46,51 @@ interface VoceEquip {
   c: string; // categoria
 }
 
-// Indice per rarita', costruito una volta sola all'avvio.
-const PER_RARITA = new Map<number, VoceEquip[]>();
-for (const e of equipaggiamenti as ReadonlyArray<VoceEquip>) {
-  if (!PER_RARITA.has(e.r)) PER_RARITA.set(e.r, []);
-  PER_RARITA.get(e.r)!.push(e);
-}
+// rarita' per id, dal catalogo ({ i, r, c }).
+const RARITA = new Map<number, number>(
+  (equipaggiamenti as ReadonlyArray<VoceEquip>).map((e) => [e.i, e.r]),
+);
 
-function pescaEquipaggiamenti(rarita: number[], quanti: number): VoceEquip[] {
-  const pool: VoceEquip[] = [];
-  for (const r of rarita) pool.push(...(PER_RARITA.get(r) ?? []));
-  if (!pool.length) return [];
+/** id -> famiglia ('equipaggiamento', 'materiale', ...). */
+const FAMIGLIA = new Map<number, string>(
+  (catalogoRicompense as ReadonlyArray<{ id: number; f: string }>).map((v) => [v.id, v.f]),
+);
 
-  const scelti: VoceEquip[] = [];
-  const usati = new Set<number>();
-  // Un po' di tentativi in piu' per evitare doppioni, ma senza rischiare un
-  // ciclo lungo se il pool fosse piccolo.
-  for (let tentativi = 0; scelti.length < quanti && tentativi < quanti * 8; tentativi++) {
-    const e = pool[Math.floor(Math.random() * pool.length)]!;
-    if (usati.has(e.i)) continue;
-    usati.add(e.i);
-    scelti.push(e);
-  }
-  return scelti;
-}
-
-export const contentGet = (req: Request, res: Response) => {
+export const contentGet = async (req: Request, res: Response) => {
   try {
     const corpo = (req.body ?? {}) as Record<string, unknown>;
+    const questId = String(corpo.mst_quest_id ?? '');
+    const partId = String(corpo.mst_part_id ?? '');
+    const nodeId = String(corpo.mst_event_node_id ?? '');
 
-    /*
-     * Non conosciamo con certezza il nome del campo con cui il client indica
-     * QUALE fagotto sta aprendo: la rotta non e' mai stata implementata, quindi
-     * non c'e' uno schema da cui dedurlo. Si provano i nomi plausibili e si
-     * registra il corpo vero, cosi' dal primo utilizzo reale si vede il nome
-     * giusto nei log e si stringe la lettura.
-     */
-    const candidati = ['mst_katamari_type_id', 'mst_katamari_id', 'katamari_type_id', 'katamari_id'];
-    let tipo = TIPO_PREDEFINITO;
-    for (const c of candidati) {
-      const v = Number(corpo[c]);
-      if (Number.isFinite(v) && TIPI_KATAMARI[v]) { tipo = v; break; }
+    // Equipaggiamento VERO elencato dalla quest, dal piu' raro al piu' comune.
+    let ids: number[] = [];
+    let fonte = 'nessuna';
+    if (questId && questId !== '0') {
+      const quest = await QuestSheet.findOne({ mQuestID: questId });
+      ids = [
+        ...new Set(
+          (quest?.mRewardItemList ?? [])
+            .map((r) => Number(r?.mItemHash))
+            .filter((id) => Number.isFinite(id) && id > 0 && FAMIGLIA.get(id) === 'equipaggiamento'),
+        ),
+      ];
+      ids.sort((a, b) => (RARITA.get(b) ?? 0) - (RARITA.get(a) ?? 0));
+      if (ids.length) fonte = 'ricompense-quest';
     }
 
-    const config = TIPI_KATAMARI[tipo]!;
-    const contenuto = pescaEquipaggiamenti(config.rarita, 6);
-
     log.info(
-      'katamari aperto | tipo=%d livello=%d pezzi=%d campiRichiesta=%s',
-      tipo, config.livello, contenuto.length, Object.keys(corpo).join(',') || '(vuoto)',
+      'katamari | quest=%s parte=%s nodo=%s fonte=%s pezzi=%d',
+      questId || '-', partId || '-', nodeId || '-', fonte, ids.length,
     );
 
     const data = {
-      katamari_content_list: contenuto.map((e, i) => ({
+      katamari_content_list: ids.map((id, i) => ({
         elv: 0,
         end_remain: 0,
         is_awake: 0,
-        mst_equipment_id: e.i,
-        prob_type_id: i === 0 ? 1 : 0, // il primo e' il pezzo "di punta"
+        mst_equipment_id: id,
+        prob_type_id: i === 0 ? 1 : 0,
         slv: 0,
         start_remain: 0,
       })),

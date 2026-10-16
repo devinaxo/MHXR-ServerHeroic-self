@@ -1,11 +1,11 @@
 import { Router } from 'express';
 import * as boxController from './box.controller.js';
-import * as notImplemented from '../notImplemented.controller.js';
 import { validate } from '../../../middleware/validation.js';
 import {
   BoxGetSchema,
   StorageGetSchema,
   EquipLevelupSchema,
+  EquipAwakeSchema,
   MonumentLevelupSchema,
   SaleSchema,
   FavoriteSetSchema,
@@ -19,9 +19,9 @@ boxRouter.post('/payment/get', validate(SessionOnlySchema), boxController.Paymen
 boxRouter.post('/payment/limit/get', validate(SessionOnlySchema), boxController.paymentLimitGet);
 
 boxRouter.post('/otomo/get', validate(SessionOnlySchema), boxController.otomoGet);
-// boxRouter.post("/otomo/skill/remove", );
+boxRouter.post('/otomo/skill/remove', boxController.otomoSkillRemove);
 boxRouter.post('/partner/get', validate(SessionOnlySchema), boxController.partnerGet);
-boxRouter.post('/partner/levelup', notImplemented.blankResponseEncrypted);
+boxRouter.post('/partner/levelup', validate(SessionOnlySchema), boxController.partnerLevelup);
 // Vendita materiali/equipaggiamenti e preferiti prima rispondevano {} e il gioco
 // andava in crash (dettagli in box.controller).
 boxRouter.post('/material/sell', boxController.materialSell);
@@ -32,18 +32,18 @@ boxRouter.post('/storage/content/get', validate(StorageGetSchema), boxController
 // boxRouter.post("/storage/rename", );
 
 boxRouter.post('/equipment/levelup', validate(EquipLevelupSchema), boxController.equipLevelup);
-boxRouter.post('/equipment/awake', notImplemented.blankResponseEncrypted);
+boxRouter.post('/equipment/awake', validate(EquipAwakeSchema), boxController.awake);
 // boxRouter.post("/equipment/evolve", );
 // boxRouter.post("/equipment/get", );
 // boxRouter.post("/equipment/potentialup", );
 // boxRouter.post("/equipment/wskillup", );
-boxRouter.post('/equipment/potentialup/auto/set', notImplemented.blankResponseEncrypted);
+boxRouter.post('/equipment/potentialup/auto/set', boxController.potentialupAutoSet);
 boxRouter.post('/equipment/favorite/set', validate(FavoriteSetSchema), boxController.favoriteSet);
 boxRouter.post('/equipment/sale', validate(SaleSchema), boxController.sale);
 boxRouter.post('/equipment/capacity/info', validate(SessionOnlySchema), boxController.equipCapacityInfo);
 boxRouter.post('/equipment/capacity/expand', validate(SessionOnlySchema), boxController.equipCapacityExpand);
 
-// boxRouter.post("/growthitem/get", );
+boxRouter.post('/growthitem/get', validate(SessionOnlySchema), boxController.growthitemGet);
 // boxRouter.post("/item/get", );
 // boxRouter.post("/item/use", );
 // boxRouter.post("/matatabi/use", );
@@ -56,8 +56,8 @@ boxRouter.post('/monument/levelup/auto', validate(MonumentLevelupSchema), boxCon
 
 boxRouter.post('/stamp/get', validate(SessionOnlySchema), boxController.stampGet);
 boxRouter.post('/stamp/hold/get', validate(SessionOnlySchema), boxController.stampHoldGet);
+boxRouter.post('/stamp/hold/set', validate(SessionOnlySchema), boxController.holdStampSet);
 boxRouter.post('/stamp/shop/list', validate(SessionOnlySchema), boxController.stampShopList);
-// boxRouter.post("/stamp/hold/set", );
-// boxRouter.post("/stamp/shop/buy", );
+boxRouter.post('/stamp/shop/buy', validate(SessionOnlySchema), boxController.stampShopBuy);
 
 export default boxRouter;

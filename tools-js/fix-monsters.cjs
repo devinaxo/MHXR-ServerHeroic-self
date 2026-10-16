@@ -523,7 +523,14 @@ function leggiQuest(nome) {
   // Le quest della storia (prefisso QUEST) restano escluse: funzionano, e
   // riassegnarle romperebbe 1995 missioni che vanno bene.
   const eventi = await qs.find({ mDefineId: /^(EVENT|TICKE|ETERN|SCORE)/ })
-    .project({ mDefineId: 1, mQuestID: 1, mQuestName: 1, mBossList: 1, mBlocks: 1, mBlocksPrima: 1, mDangerLevel: 1 }).toArray();
+    .project({ mDefineId: 1, mQuestID: 1, mQuestName: 1, mBossList: 1, mBlocks: 1, mBlocksPrima: 1, mDangerLevel: 1, mBlocksSource: 1 }).toArray();
+
+  // Non toccare le quest con blocchi AUTENTICI (tools-js/restore-real-blocks.cjs):
+  // questa ricostruzione li sovrascriverebbe, e authentico batte ricostruito.
+  // Cosi' l'ordine dei due script non conta piu'.
+  const primaAutentiche = eventi.length;
+  const eventiDaSistemare = eventi.filter((q) => q.mBlocksSource !== 'autentico');
+  console.log(`quest evento: ${primaAutentiche} totali, ${primaAutentiche - eventiDaSistemare.length} autentiche (saltate)\n`);
 
   // --- passaggio 1: match dal nome, e costruzione della tabella mEnemyID -> mostro
   const voti = new Map();
@@ -556,7 +563,7 @@ function leggiQuest(nome) {
   const ops = [];
   const esempi = [];
 
-  for (const q of eventi) {
+  for (const q of eventiDaSistemare) {
     const nome = String(q.mQuestName || '');
     let info = decisione.get(String(q._id));
     if (info) daNome++;

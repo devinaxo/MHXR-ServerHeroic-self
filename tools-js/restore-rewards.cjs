@@ -1,19 +1,25 @@
 /*
- * Recupera le ricompense delle quest (mRewardItemList), perse nell'import come
- * lo erano i boss, e le usa per identificare il mostro di ogni quest.
+ * Recupera le mRewardItemList delle quest evento, perse durante l'importazione.
  *
  *   docker compose -f docker-compose.prod.yml exec -T server node /app/tools/restore-rewards.cjs --dry
  *   docker compose -f docker-compose.prod.yml exec -T server node /app/tools/restore-rewards.cjs
  *
- * Il convertitore XFS avvolge la lista in {mAutoDelete, array:{mpArray:[...]}},
- * lo schema Mongoose si aspetta un array semplice e ha scritto [null].
+ * COSA ERA SUCCESSO
+ * Nel dump grezzo le ricompense sono avvolte nella struttura del convertitore
+ * XFS: {"mAutoDelete":"false","array":{"mpArray":[{mItemHash,...},...]}} (in
+ * alcuni file la chiave e' "classref_"). Lo schema Mongoose si aspetta un array
+ * semplice: ricevendo l'oggetto ha scritto [null], e TUTTE le 1524 quest evento
+ * sono rimaste senza ricompense. Stesso difetto dei boss, recuperati con
+ * restore-bosses.cjs; per le ricompense non esisteva lo script.
  *
- * In piu': ogni materiale ha un mMonsterID nel foglio new_item_material, quindi
- * dalle ricompense si risale al mostro anche quando il titolo non lo nomina.
- * E' il ponte piu' affidabile, perche' i premi di una caccia sono per
- * definizione i materiali di quella preda.
+ * Conseguenza: materiali che si ottenevano solo da quelle quest (le pergamene
+ * "Subjugation" delle lune, i Flower Ore, ecc.) erano irraggiungibili.
+ *
+ * Lo script riscrive mRewardItemList solo dove in DB NON c'e' gia' una
+ * ricompensa vera, quindi e' idempotente e non tocca le quest normali.
  */
 const fs = require('fs');
+const path = require('path');
 const mongoose = require('mongoose');
 
 const {
@@ -23,89 +29,82 @@ const {
 
 const DRY = process.argv.includes('--dry');
 
-function estrai(campo) {
-  if (Array.isArray(campo)) return campo.filter((x) => x && x.mItemHash);
-  const arr = campo?.array?.mpArray ?? campo?.classref_?.mpArray;
-  return Array.isArray(arr) ? arr.filter((x) => x && x.mItemHash) : [];
+const SORGENTI = [
+  'event.extended.blank.json',
+  'event.extended.json',
+  'ticket.extended.complete.json',
+  'normal.extended.complete.json',
+  'eternal.extended.complete.json',
+  'score.extended.complete.json',
+  'training.extended.complete.json',
+];
+
+// Normalizza le due forme del convertitore in un array di ricompense vere.
+function estraiRicompense(valore) {
+  if (Array.isArray(valore)) {
+    const validi = valore.filter((r) => r && String(r.mItemHash ?? '').trim() !== '');
+    return validi.length ? validi : null;
+  }
+  const arr = valore?.classref_?.mpArray ?? valore?.array?.mpArray;
+  if (!Array.isArray(arr)) return null;
+  const validi = arr.filter((r) => r && String(r.mItemHash ?? '').trim() !== '');
+  return validi.length ? validi : null;
 }
 
 (async () => {
   await mongoose.connect(`mongodb://${DB_USER}:${DB_PASSWORD}@${DB_IP}:${DB_PORT}`, { dbName: DB_NAME });
   const qs = mongoose.connection.db.collection('questsheets');
 
-  // materiale -> mostro
-  const materiali = JSON.parse(fs.readFileSync('/app/tools/materiali.json', 'utf8'));
-  const mostroPerItem = new Map();
-  for (const m of materiali) if (m.itemId && m.monsterId) mostroPerItem.set(String(m.itemId), Number(m.monsterId));
-  console.log(`materiali con mostro: ${mostroPerItem.size}`);
-
-  const SORGENTI = ['event.extended.json', 'ticket.extended.complete.json',
-    'score.extended.complete.json', 'eternal.extended.complete.json', 'normal.extended.complete.json'];
-
   const premi = new Map();
   for (const f of SORGENTI) {
-    const p = `/app/dist/json/questDB/${f}`;
+    const p = path.join('/app/dist/json/questDB', f);
     if (!fs.existsSync(p)) continue;
     let d;
     try { d = JSON.parse(fs.readFileSync(p, 'utf8')); } catch { continue; }
     let n = 0;
     for (const q of d?.rQuestSheet?.mQuestDataList || []) {
-      const lista = estrai(q.mRewardItemList);
-      if (lista.length && q.mQuestID) { premi.set(String(q.mQuestID), lista); n++; }
+      const r = estraiRicompense(q.mRewardItemList);
+      if (r && q.mQuestID && !premi.has(String(q.mQuestID))) { premi.set(String(q.mQuestID), r); n++; }
     }
-    console.log(`  ${f.padEnd(36)} ${n} quest con ricompense`);
+    console.log(`  ${f.padEnd(34)} ricompense recuperate: ${n}`);
   }
-  console.log(`totale: ${premi.size}\n`);
+  console.log(`\ntotale quest con ricompense nei file: ${premi.size}`);
 
-  const docs = await qs.find({ mQuestID: { $in: [...premi.keys()] } })
-    .project({ mQuestID: 1, mDefineId: 1, mQuestName: 1, mRewardItemList: 1 }).toArray();
+  const ids = [...premi.keys()];
+  const attuali = await qs.find({ mQuestID: { $in: ids } })
+    .project({ mQuestID: 1, mRewardItemList: 1, mQuestName: 1 }).toArray();
 
   const ops = [];
-  let recuperate = 0, gia = 0;
-  const perMostro = new Map();
-
-  for (const doc of docs) {
-    const lista = premi.get(String(doc.mQuestID));
-    const attuali = (doc.mRewardItemList || []).filter((x) => x && x.mItemHash);
-
-    // mostro dedotto dalle ricompense: vince quello piu' rappresentato
-    const voti = new Map();
-    for (const r of lista) {
-      const mid = mostroPerItem.get(String(r.mItemHash));
-      if (mid) voti.set(mid, (voti.get(mid) || 0) + 1);
+  const esempi = [];
+  let gia = 0;
+  for (const doc of attuali) {
+    const nuovo = premi.get(String(doc.mQuestID));
+    const vecchio = (doc.mRewardItemList || []).filter((r) => r && String(r.mItemHash ?? '').trim() !== '');
+    if (vecchio.length > 0) { gia++; continue; } // gia' a posto
+    if (esempi.length < 6) {
+      const nome = String(doc.mQuestName || '').replace(/\n/g, ' ');
+      // Quante ricompense e i primi id, per riconoscere le quest.
+      esempi.push(`  ${nome.slice(0, 42).padEnd(44)} -> ${nuovo.length} premi (${nuovo.slice(0, 3).map((r) => r.mItemHash).join(', ')})`);
     }
-    if (voti.size) {
-      const ord = [...voti.entries()].sort((a, b) => b[1] - a[1]);
-      perMostro.set(String(doc.mQuestID), ord[0][0]);
-    }
-
-    if (attuali.length) { gia++; continue; }
-    recuperate++;
-    ops.push({
-      updateOne: {
-        filter: { _id: doc._id },
-        update: { $set: { mRewardItemList: lista.map((r) => ({
-          mItemHash: String(r.mItemHash), mProbScale: String(r.mProbScale ?? '1'), mRewardType: String(r.mRewardType ?? '0'),
-        })) } },
-      },
-    });
+    ops.push({ updateOne: { filter: { _id: doc._id }, update: { $set: { mRewardItemList: nuovo } } } });
   }
 
-  console.log(`quest trovate in DB     : ${docs.length}`);
-  console.log(`  gia' con ricompense   : ${gia}`);
-  console.log(`  da recuperare         : ${recuperate}`);
-  console.log(`  mostro dedotto dai premi: ${perMostro.size}`);
+  console.log(`quest trovate in DB : ${attuali.length}`);
+  console.log(`  gia' con ricompense: ${gia}`);
+  console.log(`  da recuperare     : ${ops.length}`);
+  console.log('\nesempi:');
+  esempi.forEach((e) => console.log(e));
 
-  if (!DRY && ops.length) {
+  if (DRY) { console.log('\n[dry] nessuna scrittura.'); }
+  else if (ops.length) {
     const r = await qs.bulkWrite(ops);
-    console.log(`\nrecuperate ${r.modifiedCount} liste ricompense.`);
-  } else if (DRY) console.log('\n[dry] nessuna scrittura.');
-
-  // salvo la mappa quest -> mostro per il passo successivo
-  const out = {};
-  for (const [q, m] of perMostro) out[q] = m;
-  fs.writeFileSync('/app/tools/quest-monster.json', JSON.stringify(out));
-  console.log(`salvata quest->mostro per ${Object.keys(out).length} quest`);
+    console.log(`\nrecuperate ${r.modifiedCount} liste di ricompense.`);
+    const senza = await qs.countDocuments({
+      mQuestType: '2',
+      $or: [{ mRewardItemList: { $size: 0 } }, { 'mRewardItemList.0.mItemHash': { $exists: false } }],
+    });
+    console.log(`quest evento ancora senza ricompense: ${senza}`);
+  }
 
   await mongoose.disconnect();
 })().catch((e) => { console.error('ERRORE:', e); process.exit(1); });

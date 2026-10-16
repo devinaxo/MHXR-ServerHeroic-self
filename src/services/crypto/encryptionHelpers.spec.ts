@@ -24,6 +24,7 @@ import {
 } from './encryptionHelpers.js';
 import { EncryptionService } from './encryptionService.js';
 import type { Response, Request } from 'express';
+import { PROTOCOL } from '../../constants/protocol.js';
 
 function makeReq(overrides: Record<string, unknown> = {}): Request {
   return {
@@ -156,7 +157,9 @@ describe('encryptAndSend', () => {
       encryptionService.decrypt(res._data!).replace(/\0+$/, '').trim(),
     ) as Record<string, unknown>;
     expect(decrypted.result).toBe('ok');
-    expect(decrypted.res_ver).toBe(285);
+    // Read from PROTOCOL: RES_VER moves every time the resource packs are
+    // bumped, and a hardcoded number here just goes stale.
+    expect(decrypted.res_ver).toBe(PROTOCOL.RES_VER);
     expect(decrypted.banner_ver).toBe(91);
     expect(decrypted.app_ver).toBe('09.03.06');
     expect(decrypted.session_id).toEqual(expect.any(String));

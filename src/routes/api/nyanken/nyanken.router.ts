@@ -14,7 +14,7 @@ nyankenRouter.post('/islandInfoGet', validate(SessionOnlySchema), nyankenControl
 // start/next, return, result, paid/result. /result era chiamato davvero dal
 // gioco e rispondeva 404 (visto nei log): i gatti tornavano senza premi.
 nyankenRouter.post('/start', validate(NyankenSchema), nyankenController.start);
-nyankenRouter.post('/start/next', validate(NyankenSchema), nyankenController.start);
+nyankenRouter.post('/start/next', validate(NyankenSchema), nyankenController.startNext);
 nyankenRouter.post('/return', validate(NyankenSchema), nyankenController.returnHome);
 nyankenRouter.post('/result', validate(NyankenSchema), nyankenController.result);
 nyankenRouter.post('/paid/result', validate(NyankenSchema), nyankenController.paidResult);

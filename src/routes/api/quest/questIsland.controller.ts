@@ -18,9 +18,110 @@ import QuestSheet from '../../../model/questSheet.js';
 import { blocchiPerAvvio } from '../../../services/blocchiQuest.js';
 import { applicaRaccolta, salvaRaccolta, raccoltoDaiBlocchi, type PuntoAvviato } from '../../../services/raccoltaQuest.js';
 import { tesoroDelBlocco } from '../../../services/tesoriIsole.js';
-import { mappaProgressiva, missioniCompletate } from '../../../services/progressioneStoria.js';
+import { mappaProgressiva, missioniCompletate, isolaDiQuest } from '../../../services/progressioneStoria.js';
 import { aggiungiKaridama, saldoKaridama, spendiKaridama, KARIDAMA_A_MISSIONE, KARIDAMA_PRINCIPALE } from '../../../services/karidamaService.js';
+import { CRESCITA_PARTNER } from '../../../services/partnerGrow.js';
+import {
+  PUNTI_PER_QUEST,
+  PUNTI_PER_RISCATTO,
+  TRADE_POINT_ID,
+  aggiungiPunti,
+  giornoGioco,
+} from '../../../services/tradePointsService.js';
+import { tempoPerLista } from '../../../services/questTime.js';
+import { registraOtomoAvviati, premiaOtomoFineQuest, otomoIdsSquadraSelezionata } from '../../../services/otomoQuest.js';
+import { intervalloEnv, interoCasuale } from '../../../services/intervalloEnv.js';
+import Present from '../../../model/presents.js';
+import specialRequests from '../../../json/special-requests.json' with { type: 'json' };
 import type { IslandStartInput, IslandEndInput, IslandMapAllInput } from './quest.schema.js';
+
+/**
+ * ID delle missioni "特別依頼" (Special Request / subjugation). Le loro ricompense
+ * il gioco non le mette nella cassa a fine caccia: le spedisce al box dei
+ * regali ("依頼達成の報酬が送られてきました"). Elenco estratto da
+ * rsdnt_map.arc :: node_info.mSubjugationQuestList
+ * (tools-js/... vedi src/json/special-requests.json).
+ */
+const SPECIAL_REQUESTS = new Set<number>((specialRequests as number[]).map(Number));
+
+/*
+ * Quest -> island (mst_part_id), from the full map data. `progressione-storia`
+ * only lists a node's MAIN quests; the Special Request (subjugation) quests such
+ * as 3-9/3-10 are not there, so finishing one of them fell back to island 1 and
+ * dropped the player back on the first island. full_island has every quest.
+ */
+const ISOLA_PER_QUEST: Map<number, number> = (() => {
+  const m = new Map<number, number>();
+  const oceani = full_island as unknown as { part_list?: { mst_part_id: number; node_list?: { day_quest_list?: { mst_quest_id?: number }[]; night_quest_list?: { mst_quest_id?: number }[] }[] }[] }[];
+  for (const o of oceani) {
+    for (const p of o.part_list ?? []) {
+      for (const n of p.node_list ?? []) {
+        for (const q of [...(n.day_quest_list ?? []), ...(n.night_quest_list ?? [])]) {
+          if (q.mst_quest_id != null) m.set(Number(q.mst_quest_id), p.mst_part_id);
+        }
+      }
+    }
+  }
+  return m;
+})();
+
+/** L'isola di una missione: prima la mappa completa, poi la progressione. */
+function isolaDellaMissione(questId: number): number | null {
+  return ISOLA_PER_QUEST.get(questId) ?? isolaDiQuest(questId);
+}
+
+/*
+ * RICHIESTE DI SOTTOMISSIONE (討伐依頼). Una scena di storia puo' chiedere al
+ * giocatore di andare a cacciare in un altro nodo, con il markup
+ * <POP1 tipo, NODO> (es. la richiesta di Abigail: <POP1 8,PART00002_NODE00103>).
+ * Fintanto che quel nodo non e' stato "esaudito" la scena resta sulla prima
+ * parte (la richiesta); una volta esaudito il client deve passare alla parte
+ * finale. src/json/story-requests.json (generato dai GMD del gioco) ci dice:
+ *   requests: scena -> { target, block, part }   (una richiesta per la sua parte)
+ *   blocks:   blocco -> [parti in ordine]        (per trovare la parte finale)
+ */
+import storyRequests from '../../../json/story-requests.json' with { type: 'json' };
+
+const RICHIESTE = storyRequests.requests as ReadonlyArray<{ story: number; target: number; block: string; part: number }>;
+const BLOCCHI = storyRequests.blocks as unknown as Record<string, { part: number; story: number }[]>;
+
+/** Per una scena-richiesta: il blocco a cui appartiene e la parte massima con POP. */
+const RICHIESTA_PER_STORIA = new Map<number, { block: string; part: number; target: number }>();
+for (const r of RICHIESTE) {
+  if (r.story) RICHIESTA_PER_STORIA.set(r.story, { block: r.block, part: r.part, target: r.target });
+}
+/** Scena -> blocco e parte, per ogni parte di ogni blocco. */
+const BLOCCO_PER_STORIA = new Map<number, { block: string; part: number }>();
+/** Blocco -> parti in ordine. */
+const PARTI_BLOCCO = new Map<string, { part: number; story: number }[]>();
+for (const [block, parti] of Object.entries(BLOCCHI)) {
+  const ordinate = [...parti].sort((a, b) => a.part - b.part);
+  PARTI_BLOCCO.set(block, ordinate);
+  for (const p of ordinate) BLOCCO_PER_STORIA.set(p.story, { block, part: p.part });
+}
+
+/**
+ * La scena da mostrare per un nodo: la parte del SUO blocco successiva a quella
+ * piu' avanti gia' vista (`storie_viste`). Il client segna come vista ogni parte
+ * che riproduce, quindi la progressione e' dentro il blocco: _01 -> _02 -> _03 ->
+ * _04. A blocco finito si resta sull'ultima parte (non si torna alla prima,
+ * altrimenti la richiesta tornerebbe in loop). NON si salta ad altri blocchi:
+ * altrimenti OGNI nodo mostrerebbe l'intera catena dell'isola (scene non ancora
+ * sbloccate comprese). Non serve avanzare fra blocchi: la mappa assegna un solo
+ * blocco a ciascun nodo-storia (t1 porto, t3 passaggi, t4 uscita), in ordine.
+ */
+function parteDaMostrare(storyAttuale: number, storieViste: Set<number>): number {
+  const b = BLOCCO_PER_STORIA.get(storyAttuale);
+  if (!b) return storyAttuale;
+  const parti = PARTI_BLOCCO.get(b.block);
+  if (!parti?.length) return storyAttuale;
+  const maxVista = Math.max(0, ...parti.filter((p) => storieViste.has(p.story)).map((p) => p.part));
+  const prossima = parti.find((p) => p.part > maxVista);
+  if (prossima) return prossima.story;
+  const ultima = parti[parti.length - 1];
+  return ultima ? ultima.story : storyAttuale;
+}
+
 
 interface BlockListItem {
   block_idx: number;
@@ -113,6 +214,7 @@ function parseCsv<T = Record<string, string>>(csv: string): T[] {
 export async function enrichOceanData(
   oceanData: Ocean[],
   cleared_quests: { mst_quest_id: number; clear_time?: number }[],
+  storie_viste: number[] = [],
 ): Promise<Ocean[]> {
   // Load CSVs in parallel
   const [nodeQuestCsv, questDataCsv, questSubtargetCsv] = await Promise.all([
@@ -152,6 +254,17 @@ export async function enrichOceanData(
       nodeQuestMap.get(nodeHash)!.push(row);
     }
   }
+
+  // Nodi "esauditi": hanno una Special Request (Subjugation) gia' completata.
+  // Una scena di storia che puntava a un nodo esaudito puo' passare alla parte finale.
+  const nodiEsauditi = new Set<number>();
+  for (const [nodeHash, rows] of nodeQuestMap) {
+    for (const nq of rows) {
+      if (nq.QuestType !== 'Subjugation') continue;
+      if (cleared_quests.some((q) => q.mst_quest_id === Number(nq.mQuestHash))) nodiEsauditi.add(nodeHash);
+    }
+  }
+  const storieViste = new Set<number>((storie_viste ?? []).map(Number));
   // Enrich ocean data
   const enrichedOcean = oceanData.map((ocean) => {
     const enrichedParts = ocean.part_list.map((part) => {
@@ -164,6 +277,9 @@ export async function enrichOceanData(
         const nodeQuests = nodeQuestMap.get(nodeID) || [];
         const day_quest_list: QuestObject[] = [];
         const night_quest_list: QuestObject[] = [];
+        // Una "Special Request" (討伐依頼) soddisfatta: la scena di storia legata a
+        // questo nodo puo' proseguire, quindi il nodo va segnato come concluso.
+        let richiestaSoddisfatta = false;
 
         for (const nq of nodeQuests) {
           const questID = Number(nq.mQuestHash);
@@ -171,13 +287,14 @@ export async function enrichOceanData(
           if (!quest) continue;
 
           const clearedQuest = cleared_quests.find((q) => q.mst_quest_id === questID);
+          if (clearedQuest && nq.QuestType === 'Subjugation') richiestaSoddisfatta = true;
 
           let state = 1; // default = NEW
           if (clearedQuest) {
             state = clearedQuest.clear_time != null ? 3 : 0; //clear 3 / 0 nothing
           }
 
-          const clearTime = clearedQuest?.clear_time ?? 0;
+          const clearTime = tempoPerLista(clearedQuest?.clear_time);
 
           const isCollectionQuestFlag = nq.isCollectionQuest === 'true' ? 1 : 0;
 
@@ -208,6 +325,11 @@ export async function enrichOceanData(
           ...node,
           day_quest_list,
           night_quest_list,
+          // La 討伐依頼 del nodo e' stata esaudita: il nodo risulta concluso, cosi'
+          // la scena di storia che l'aveva richiesta puo' andare avanti.
+          state: richiestaSoddisfatta ? 3 : node.state,
+          // ...e la scena avanza dentro il suo blocco (una parte per volta).
+          mst_story_id: parteDaMostrare(Number(node.mst_story_id ?? 0), storieViste),
         };
       });
 
@@ -226,7 +348,7 @@ export async function enrichOceanData(
 
 export const islandStart = async (req: Request, res: Response) => {
   try {
-    const { mst_quest_id, session_id } = req.body as IslandStartInput;
+    const { mst_quest_id, session_id, power_up, otomo } = req.body as IslandStartInput & { power_up?: number; otomo?: unknown };
     const startedQuest = mst_quest_id;
     const filter = { current_session: session_id };
 
@@ -246,7 +368,11 @@ export const islandStart = async (req: Request, res: Response) => {
       cleared_quests.push({ mst_quest_id: startedQuest });
     }
 
-    const update = { cleared_quests: cleared_quests };
+    const update = {
+      cleared_quests: cleared_quests,
+      // I palico che partono ora prendono l'exp a fine quest (services/otomoQuest.ts).
+      otomo_avviati: registraOtomoAvviati(Number(startedQuest), otomo),
+    };
 
     // Await the update so you know it completed
     await User.findOneAndUpdate(filter, update, { new: true });
@@ -284,7 +410,7 @@ export const islandStart = async (req: Request, res: Response) => {
           now_point: 0,
           total_point: 0,
         },
-        power_up: 0,
+        power_up: power_up ?? 0,
         select_fix_equipment_idx: 0,
         subtargets: [{ instance_id: 0, mst_subtarget_id: 0 }],
       },
@@ -439,6 +565,14 @@ function buildRewardSlots(lista?: readonly VoceRicompensa[] | null) {
     return voci[voci.length - 1]!.id;
   };
 
+  /*
+   * Oltre ai premi della quest, ogni tanto esce un oggetto di crescita dei
+   * partner (scheggia/sfera), cosi' si possono potenziare i partner giocando.
+   * Probabilita' configurabile: QUEST_CRESCITA_CHANCE (0 disattiva).
+   */
+  const CHANCE_CRESCITA = Math.max(0, Math.min(1, Number(process.env.QUEST_CRESCITA_CHANCE ?? 0.35)));
+  const pescaCrescita = () => CRESCITA_PARTNER[Math.floor(Math.random() * CRESCITA_PARTNER.length)]!.id;
+
   const vinti = new Map<number, { quanti: number; famiglia: Famiglia }>();
 
   /**
@@ -447,8 +581,11 @@ function buildRewardSlots(lista?: readonly VoceRicompensa[] | null) {
    * casse diverse della stessa caccia.
    */
   const costruisciFila = (fila: number, conPuntiEvento: boolean) => [1, 2, 3, 4].map((idx) => {
-    const id = pescaUno();
-    const famiglia = CATALOGO.get(id) ?? 'materiale';
+    // La fila principale puo' portare un oggetto di crescita dei partner al
+    // posto del premio normale, cosi' si trovano giocando (vedi CHANCE_CRESCITA).
+    const cresce = fila === 1 && Math.random() < CHANCE_CRESCITA;
+    const id = cresce ? pescaCrescita() : pescaUno();
+    const famiglia: Famiglia = cresce ? 'crescita' : (CATALOGO.get(id) ?? 'materiale');
     // Un'arma o un'armatura si vince a pezzo singolo, non a mucchietti: solo
     // materiali, oggetti di crescita e limitati hanno una quantita'.
     const quanti = famiglia === 'equipaggiamento' ? 1 : 1 + Math.floor(Math.random() * 3);
@@ -481,10 +618,21 @@ function buildRewardSlots(lista?: readonly VoceRicompensa[] | null) {
     const slot: Record<string, unknown> = {
       idx,
       is_katamari: 0,
-      zeny: 1,
+      // Lo zenny si spalma qui sotto, quando si conosce il totale sorteggiato.
+      zeny: 0,
       value: 1,
       item_list: itemList,
     };
+    /*
+     * Punti di scambio vinti: il primo riquadro della fila principale li porta
+     * anche nell'item_list, cosi' quello che il giocatore vede a fine caccia e'
+     * quello che il server accredita in box.points (vedi islandEnd).
+     */
+    if (fila === 1 && idx === 1 && PUNTI_PER_QUEST > 0) {
+      (itemList as Record<string, unknown>).points = [
+        { amount: PUNTI_PER_QUEST, mst_event_point_id: TRADE_POINT_ID },
+      ];
+    }
     // il primo riquadro porta anche i punti evento, come faceva prima
     if (conPuntiEvento && idx === 1) {
       slot.extend = {
@@ -503,12 +651,26 @@ function buildRewardSlots(lista?: readonly VoceRicompensa[] | null) {
    * tutte e tre nella stessa mappa `vinti`, quindi cio' che il giocatore vede
    * e' esattamente cio' che riceve.
    */
-  return {
-    slots: costruisciFila(1, true),
-    bonus2: costruisciFila(2, false),
-    bonus3: costruisciFila(3, false),
-    vinti,
-  };
+  const slots = costruisciFila(1, true);
+  const bonus2 = costruisciFila(2, false);
+  const bonus3 = costruisciFila(3, false);
+  /*
+   * Zenny di fine quest: un importo casuale in un intervallo configurabile
+   * (QUEST_ZENY, "min-max" o fisso). Il client somma lo `zeny` di ogni riquadro
+   * e quello e' il totale che mostra; il server accredita lo stesso totale in
+   * box.zeny (vedi islandEnd). L'importo si spalma sui dodici riquadri, cosi'
+   * cio' che si vede e' cio' che si riceve.
+   */
+  const [zenyMin, zenyMax] = intervalloEnv('QUEST_ZENY', 5000, 100000);
+  const zenny = interoCasuale(zenyMin, zenyMax);
+  const riquadri = [...slots, ...bonus2, ...bonus3];
+  let resto = zenny;
+  riquadri.forEach((s, i) => {
+    const quota = i === riquadri.length - 1 ? resto : Math.floor(zenny / riquadri.length);
+    s.zeny = quota;
+    resto -= quota;
+  });
+  return { slots, bonus2, bonus3, vinti, zenny, punti: PUNTI_PER_QUEST };
 }
 
 interface VoceQuantita {
@@ -588,6 +750,23 @@ function accreditaPremi(box: BoxPremi, vinti: Map<number, { quanti: number; fami
 // Una casella di premio vuota: il client la accetta e non mostra niente.
 const NESSUN_PREMIO = { item_list: {} };
 
+/**
+ * Il contenuto di un regalo a partire dai premi di una missione (stesse famiglie
+ * della box, cosi' presentReceive li rimette negli array giusti).
+ */
+function contenutoPresente(vinti: Map<number, { quanti: number; famiglia: Famiglia }>): Record<string, unknown[]> {
+  const content: Record<string, unknown[]> = {};
+  for (const [id, { quanti, famiglia }] of vinti) {
+    switch (famiglia) {
+      case 'materiale': (content.materials ??= []).push({ mst_material_id: id, amount: quanti }); break;
+      case 'crescita': (content.growth_items ??= []).push({ mst_growth_item_id: id, amount: quanti }); break;
+      case 'limitato': (content.limiteds ??= []).push({ mst_limited_id: id, amount: quanti }); break;
+      case 'equipaggiamento': (content.equipments ??= []).push(nuovoEquipaggiamento(`Q${id}`, id)); break;
+    }
+  }
+  return content;
+}
+
 export const islandEnd = async (req: Request, res: Response) => {
   try {
     const { mst_quest_id, clear_time, session_id } = req.body as IslandEndInput;
@@ -608,8 +787,14 @@ export const islandEnd = async (req: Request, res: Response) => {
       log.debug('Inserted Quest as seen');
       cleared_quests.push({ mst_quest_id: cleared_quest, clear_time: clearTime });
     } else {
-      log.debug('Updated clear_time...');
-      cleared_quests[questIndex]!.clear_time = clearTime;
+      // Keep the BEST time, not the last: overwrite only when this run is
+      // faster. A clear with no time (0) never erases an existing record.
+      const precedente = Number(cleared_quests[questIndex]!.clear_time ?? 0);
+      const nuovo = Number(clearTime) || 0;
+      if (nuovo > 0 && (precedente <= 0 || nuovo < precedente)) {
+        log.debug('Updated clear_time...');
+        cleared_quests[questIndex]!.clear_time = nuovo;
+      }
     }
 
     /*
@@ -627,8 +812,36 @@ export const islandEnd = async (req: Request, res: Response) => {
     const gemmeMissione = KARIDAMA_A_MISSIONE;
 
     let augite: ReturnType<typeof daiAugite> = null;
+    // Exp che i palico hanno preso in questa quest (otomo_result, in fondo).
+    let otomoResult: ReturnType<typeof premiaOtomoFineQuest> = [];
+    let conteggioPremi = { materiale: 0, crescita: 0, limitato: 0, equipaggiamento: 0 };
     if (doc.box) {
-      const c = accreditaPremi(doc.box as unknown as BoxPremi, premi.vinti);
+      /*
+       * Special Request (特別依頼): a fine caccia il gioco NON mette le ricompense
+       * nella cassa, le spedisce al box dei regali ("依頼達成の報酬が送られて
+       * きました"). Qui si crea il regalo e si salta l'accredito diretto,
+       * altrimenti si riceverebbero due volte.
+       */
+      if (SPECIAL_REQUESTS.has(Number(cleared_quest)) && premi.vinti.size) {
+        await Present.create({
+          uu_id: doc.uu_id,
+          content: contenutoPresente(premi.vinti),
+          created: Date.now(),
+          received: 0,
+          valid: 1,
+        });
+        log.info('依頼 | %s: richiesta speciale %s, %d premi al regalo', doc.character_name ?? '?', String(cleared_quest), premi.vinti.size);
+      } else {
+        conteggioPremi = accreditaPremi(doc.box as unknown as BoxPremi, premi.vinti);
+      }
+      // Zenny: la stessa somma che i riquadri mostrano a fine caccia. Prima non
+      // entrava mai in box.zeny, quindi il saldo restava quello iniziale
+      // (100000) per sempre.
+      const boxConZenny = doc.box as unknown as { zeny?: number | null };
+      const zennyVinti = premi.zenny;
+      if (zennyVinti > 0) {
+        boxConZenny.zeny = Number(boxConZenny.zeny ?? 0) + zennyVinti;
+      }
       // Per il "tutti i premi x5" pagato in 狩玉 (rewardFinal): si ricordano i premi
       // appena dati. Armi e armature no: sono pezzi unici, non si moltiplicano.
       update.ultimi_premi = {
@@ -651,10 +864,29 @@ export const islandEnd = async (req: Request, res: Response) => {
       // 狩玉 guadagnati giocando (niente microtransazioni): servono per il gacha dei gatti.
       aggiungiKaridama(doc.box as { payments?: { mst_payment_id?: number | null; amount?: number | null }[] }, gemmeMissione);
       log.info('狩玉 | %s riceve %d, saldo %d', doc.character_name ?? '?', gemmeMissione, saldoKaridama(doc.box.payments));
+      // Palico: exp di fine quest per chi ha partecipato (services/otomoQuest.ts).
+      const avviati = (doc as unknown as { otomo_avviati?: { mst_quest_id: number; otomo_ids: string[] } | null }).otomo_avviati;
+      const otomoIds =
+        avviati && Number(avviati.mst_quest_id) === Number(cleared_quest) && (avviati.otomo_ids?.length ?? 0) > 0
+          ? avviati.otomo_ids
+          : otomoIdsSquadraSelezionata((doc as unknown as { otomoteam?: Parameters<typeof otomoIdsSquadraSelezionata>[0] }).otomoteam);
+      if (otomoIds.length) {
+        otomoResult = premiaOtomoFineQuest(doc.box.otomos, otomoIds);
+        if (otomoResult.length) {
+          log.info('palico | %s: exp a %s', doc.character_name ?? '?', otomoResult.map((o) => `${o.otomo_id} +${o.get_exp}`).join(', '));
+        }
+      }
+      update.otomo_avviati = null;
+      // Punti di scambio vinti con la quest: stessi numeri mostrati nei riquadri.
+      if (premi.punti > 0) {
+        const saldoPunti = aggiungiPunti(doc.box, premi.punti);
+        log.info('punti di scambio | %s: +%d P per la quest %s (saldo %d)', doc.character_name ?? '?', premi.punti, String(cleared_quest), saldoPunti);
+      }
       update.box = doc.box;
       log.info(
-        'ricompense accreditate | quest=%s materiali=%d crescita=%d limitati=%d equipaggiamenti=%d',
-        String(cleared_quest), c.materiale, c.crescita, c.limitato, c.equipaggiamento,
+        'ricompense accreditate | quest=%s materiali=%d crescita=%d limitati=%d equipaggiamenti=%d zenny=%d (saldo %d)',
+        String(cleared_quest), conteggioPremi.materiale, conteggioPremi.crescita, conteggioPremi.limitato, conteggioPremi.equipaggiamento,
+        zennyVinti, Number(boxConZenny.zeny ?? 0),
       );
     }
 
@@ -676,8 +908,13 @@ export const islandEnd = async (req: Request, res: Response) => {
     get_guild_accum_reward_ids: [],
     get_loop_random_reward_ids: [],
     get_loop_reward_ids: [],
-    get_mst_otomo_id: 2092467563,
-    get_mst_partner_id: 507850012,
+    // 0 means "nothing new was acquired". These were hardcoded, so the server
+    // claimed a Palico (2092467563) and a partner -- Ciel, 507850012, the
+    // starting partner per src/json/user-defaults.json -- were gained after
+    // EVERY quest, and Ciel re-ran her "mind if I train under you?" scene each
+    // time. Nothing in a normal quest grants a partner.
+    get_mst_otomo_id: 0,
+    get_mst_partner_id: 0,
     increase_value: 7,
     is_pop_not_enough_zeny: 0, // could not auto synth due to lack of zeny?
     katamari_content_list: [
@@ -694,7 +931,7 @@ export const islandEnd = async (req: Request, res: Response) => {
     max_potential_equipments: [
       //"stingval"
     ],
-    mst_part_id: 3815380063, //current
+    mst_part_id: isolaDellaMissione(Number(cleared_quest)) ?? 3815380063, // isola della missione appena finita
     open_list: {
       open_ocean: [
         /*{"mst_ocean_id":0}*/
@@ -706,14 +943,9 @@ export const islandEnd = async (req: Request, res: Response) => {
         //{mst_part_id:2053326309}
       ],
     },
-    otomo_result: [
-      //unk
-      // {
-      //   get_exp:10,
-      //   mst_otomo_subskill_id:1355115484,
-      //   otomo_id:"OT_OTOMO_CHAR_ID_001"
-      // }
-    ],
+    // Exp dei palico che hanno partecipato (services/otomoQuest.ts). Prima era
+    // sempre vuoto, quindi i palico non crescevano mai.
+    otomo_result: otomoResult,
     partner_cap_list: [
       //unk
       // {
@@ -805,7 +1037,9 @@ export const islandEnd = async (req: Request, res: Response) => {
       score_enemy_list: [
         //unk
       ],
-      zeny: 30,
+      // Lo stesso totale spalmato sui riquadri e accreditato in box.zeny: cosi'
+      // la riga del saldo di fine missione combacia con quello che si riceve.
+      zeny: premi.zenny,
     },
 
     view_collection_list: [], ////unk
@@ -853,7 +1087,7 @@ export const rewardFinal = async (req: Request, res: Response) => {
       return encryptAndSend(risposta(), res, req);
     }
     if (!spendiKaridama(box, PREMIO_FINALE.prezzo)) {
-      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG,
+      return encryptAndSend({}, res, req, ERROR_CODE.KARIDAMA_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
         `狩玉が足りません (Not enough karidama: ${saldoKaridama(box.payments)}/${PREMIO_FINALE.prezzo})`);
     }
     accreditaPremi(box, new Map(ultimi.vinti.map(([id, quanti, famiglia]) => [id, { quanti: quanti * (PREMIO_FINALE.moltiplicatore - 1), famiglia }])));
@@ -892,7 +1126,7 @@ export const islandMapAll = async (req: Request, res: Response) => {
       : plainDoc.ocean_list;
     const clearedPlain = plainDoc.cleared_quests;
 
-    const final_ocean = await enrichOceanData(oceanPlain, clearedPlain);
+    const final_ocean = await enrichOceanData(oceanPlain, clearedPlain, (plainDoc as { storie_viste?: number[] }).storie_viste ?? []);
     log.debug('FINAL ocean data: %o', final_ocean);
     const data = {
       ocean_list: final_ocean,
@@ -902,5 +1136,63 @@ export const islandMapAll = async (req: Request, res: Response) => {
   } catch (error) {
     log.error('Error in islandMapAll:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Island map all failed');
+  }
+};
+
+/**
+ * POST /quest/reward/exchange.
+ *
+ * Read out of the client (libMHS.so): the request carries only `idx`
+ * (`cAPIQuestRewardExchange::Request::setup` reads "idx"), and the response is
+ * `{ exchange_list: [{ amount, mst_exchange_id }] }`
+ * (`cAPIQuestRewardExchange::Response::setup` reads "exchange_list" then
+ * "amount" and "mst_exchange_id"; `sServer::createExchangeList` builds it from
+ * generic item bases).
+ *
+ * What `idx` selects, and what the exchange master is, are NOT in the data we
+ * have, so this is deliberately two things at once:
+ *   - it always logs the request, so a live call reveals the real semantics;
+ *   - it only pays Trade Points when QUEST_EXCHANGE_POINTS is set (> 0), and
+ *     then only once per game day, so it can never be farmed in a loop.
+ * With the default (0) it answers an empty, valid exchange_list -- safer than
+ * the 404 the client used to get.
+ */
+export const rewardExchange = async (req: Request, res: Response) => {
+  try {
+    const { session_id, idx } = req.body as { session_id?: string; idx?: number };
+    log.info('quest/reward/exchange | sessione=%s idx=%s body=%o', (session_id ?? '').slice(0, 8), String(idx), req.body);
+
+    if (!session_id) {
+      return encryptAndSend({ exchange_list: [] }, res, req);
+    }
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+
+    const oggi = giornoGioco(new Date());
+    const giaPagato = Number((doc as unknown as { punti_exchange_ultimo_giorno?: number }).punti_exchange_ultimo_giorno) === oggi;
+    if (PUNTI_PER_RISCATTO <= 0 || giaPagato || !doc.box) {
+      return encryptAndSend({ exchange_list: [] }, res, req);
+    }
+
+    const saldo = aggiungiPunti(doc.box, PUNTI_PER_RISCATTO);
+    await User.updateOne(
+      { _id: doc._id },
+      {
+        $set: {
+          'box.points': (doc.box.points ?? []).map((p) => ({
+            mst_event_point_id: Number(p.mst_event_point_id),
+            amount: Number(p.amount ?? 0) || 0,
+          })),
+          punti_exchange_ultimo_giorno: oggi,
+        },
+      },
+    );
+    log.info('punti di scambio | %s riscatta la ricompensa %s: +%d P (saldo %d)', doc.character_name ?? '?', String(idx), PUNTI_PER_RISCATTO, saldo);
+    encryptAndSend({ exchange_list: [{ amount: PUNTI_PER_RISCATTO, mst_exchange_id: TRADE_POINT_ID }] }, res, req);
+  } catch (error) {
+    log.error('Error in rewardExchange:', error);
+    encryptAndSend({ exchange_list: [] }, res, req);
   }
 };

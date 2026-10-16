@@ -1,5 +1,6 @@
 import event_nodes from '../../json/event_nodes.json' with { type: 'json' };
 import { createLogger } from '../../middleware/logger.js';
+import { tempoPerLista } from '../../services/questTime.js';
 import type { QuestSubtarget } from '../../types/game.js';
 const log = createLogger('eventUtils');
 export const getDurationFromValue = (value: { getTime(): number } | null | undefined) => {
@@ -21,7 +22,11 @@ interface EventEntry {
   }>;
 }
 
-export function enrichEvent(eventList: EventEntry[]): EventEntry[] {
+export function enrichEvent(
+  eventList: EventEntry[],
+  cleared?: ReadonlyArray<{ mst_quest_id: number; clear_time?: number | null }>,
+): EventEntry[] {
+  const tempo = new Map((cleared ?? []).map((q) => [q.mst_quest_id, Number(q.clear_time ?? 0) || 0]));
   return eventList.map((event) => {
     const nodeId = event.mst_event_node_id ?? event.mst_score_node_id;
 
@@ -35,13 +40,15 @@ export function enrichEvent(eventList: EventEntry[]): EventEntry[] {
     event.quest_list ??= [];
 
     for (const questId of node.mEventQuestList) {
+      const id = parseInt(questId, 10);
+      const ct = tempoPerLista(tempo.get(id));
       event.quest_list.push({
-        clear_time: 0,
+        clear_time: ct,
         limited_amount: 0,
         mst_limited_id: 0,
-        mst_quest_id: parseInt(questId, 10),
+        mst_quest_id: id,
         quest_subtargets: [],
-        state: 1,
+        state: ct > 0 ? 3 : 1,
       });
     }
 

@@ -50,10 +50,18 @@ function estraiBoss(mBossList) {
   if (arr.some((e) => e && e.mEnemyID && e.mAreaNo !== undefined)) {
     return arr.filter((e) => e && e.mEnemyID);
   }
-  // forma "classref_": oggetti a chiave singola da unire in uno solo
-  const unito = {};
-  for (const e of arr) if (e && typeof e === 'object') Object.assign(unito, e);
-  return unito.mEnemyID ? [unito] : null;
+  // forma "classref_" / spezzata: oggetti a chiave singola, uno per campo.
+  // Un mEnemyID apre un mostro nuovo; i campi che seguono (mAreaNo,
+  // mFieldSkillPackId) si uniscono a quello. Prima si fondeva TUTTO in un solo
+  // oggetto, quindi una quest con piu' mostri ne teneva solo l'ultimo.
+  const out = [];
+  let cur = null;
+  for (const e of arr) {
+    if (!e || typeof e !== 'object') continue;
+    if (e.mEnemyID !== undefined) { cur = { ...e }; out.push(cur); }
+    else if (cur) { for (const k of Object.keys(e)) if (cur[k] === undefined) cur[k] = e[k]; }
+  }
+  return out.length ? out : null;
 }
 
 (async () => {
@@ -85,7 +93,11 @@ function estraiBoss(mBossList) {
   for (const doc of attuali) {
     const nuovo = boss.get(String(doc.mQuestID));
     const vecchio = (doc.mBossList || []).filter((b) => b && b.mEnemyID);
-    if (vecchio.length) { gia++; continue; }
+    // "gia' a posto" solo se ogni boss ha ANCHE l'area: gli import vecchi
+    // avevano i campi spezzati in oggetti separati (un mEnemyID da solo), e il
+    // solo mEnemyID li faceva passare per validi, lasciandoli rotti per sempre.
+    const aPosto = vecchio.length > 0 && vecchio.every((b) => b.mAreaNo !== undefined);
+    if (aPosto) { gia++; continue; }
     if (esempi.length < 6) {
       const nome = String(doc.mQuestName || '').replace(/\n/g, ' ');
       esempi.push(`  ${nome}  ->  ${nuovo.map((b) => `enemy=${b.mEnemyID}/area=${b.mAreaNo}`).join(' + ')}`);

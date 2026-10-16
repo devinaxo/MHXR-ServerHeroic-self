@@ -1,0 +1,1029 @@
+{
+ "_comment": "Generated from rsdnt_otomo.arc :: OtomoSkillSub. Every otomo subskill (mSkillId is the hash stored in box.otomos[].subskill). Entry 0 is the \"No Skill\" placeholder.",
+ "skills": [
+  {
+   "id": 2006012238,
+   "name": "No Skill"
+  },
+  {
+   "id": 2587550611,
+   "name": "Provoke [S]"
+  },
+  {
+   "id": 1614143216,
+   "name": "Provoke [M]"
+  },
+  {
+   "id": 389213798,
+   "name": "Provoke [L]"
+  },
+  {
+   "id": 1355115484,
+   "name": "Guts"
+  },
+  {
+   "id": 1958785480,
+   "name": "Divine Protection [S]"
+  },
+  {
+   "id": 2395966635,
+   "name": "Divine Protection [M]"
+  },
+  {
+   "id": 4190682173,
+   "name": "Divine Protection [L]"
+  },
+  {
+   "id": 2025353202,
+   "name": "Negate Poison"
+  },
+  {
+   "id": 3786489416,
+   "name": "Negate Deadly Poison"
+  },
+  {
+   "id": 2528513758,
+   "name": "Negate Noxious Poison"
+  },
+  {
+   "id": 1624609028,
+   "name": "Negate Paralysis"
+  },
+  {
+   "id": 1902153097,
+   "name": "Negate Sleep"
+  },
+  {
+   "id": 3330826289,
+   "name": "Negate Snowman"
+  },
+  {
+   "id": 661133911,
+   "name": "Negate Blastblight"
+  },
+  {
+   "id": 1720350291,
+   "name": "Earplugs"
+  },
+  {
+   "id": 4286785513,
+   "name": "HG Earplugs"
+  },
+  {
+   "id": 2630177813,
+   "name": "Windproof [S]"
+  },
+  {
+   "id": 97256879,
+   "name": "Windproof [L]"
+  },
+  {
+   "id": 3538331461,
+   "name": "Tremor Res"
+  },
+  {
+   "id": 3869062435,
+   "name": "Poison Halved"
+  },
+  {
+   "id": 1611220877,
+   "name": "Deadly Poison Halved"
+  },
+  {
+   "id": 2874512424,
+   "name": "Noxious Poison Halved"
+  },
+  {
+   "id": 1199208481,
+   "name": "Paralysis Halved"
+  },
+  {
+   "id": 4190330179,
+   "name": "Sleep Halved"
+  },
+  {
+   "id": 2430260283,
+   "name": "K.O. Level UP"
+  },
+  {
+   "id": 2148115419,
+   "name": "Affinity +5％"
+  },
+  {
+   "id": 3438179529,
+   "name": "Affinity +10％"
+  },
+  {
+   "id": 3162800198,
+   "name": "Affinity +15％"
+  },
+  {
+   "id": 3888326410,
+   "name": "Affinity +20％"
+  },
+  {
+   "id": 2544489349,
+   "name": "Affinity +25％"
+  },
+  {
+   "id": 4275574347,
+   "name": "Affinity +30％"
+  },
+  {
+   "id": 2394088132,
+   "name": "Affinity +35％"
+  },
+  {
+   "id": 2979627148,
+   "name": "Affinity +40％"
+  },
+  {
+   "id": 3253957635,
+   "name": "Affinity +45％"
+  },
+  {
+   "id": 2827137485,
+   "name": "Affinity +50％"
+  },
+  {
+   "id": 2139073892,
+   "name": "Fire Res +3"
+  },
+  {
+   "id": 2518419537,
+   "name": "Fire Res +5"
+  },
+  {
+   "id": 2309818522,
+   "name": "Fire Res +10"
+  },
+  {
+   "id": 4190632981,
+   "name": "Fire Res +15"
+  },
+  {
+   "id": 2726320985,
+   "name": "Fire Res +20"
+  },
+  {
+   "id": 3538595798,
+   "name": "Fire Res +25"
+  },
+  {
+   "id": 3147524632,
+   "name": "Fire Res +30"
+  },
+  {
+   "id": 3421609623,
+   "name": "Fire Res +35"
+  },
+  {
+   "id": 4107992287,
+   "name": "Fire Res +40"
+  },
+  {
+   "id": 3988901278,
+   "name": "Fire Res +50"
+  },
+  {
+   "id": 1654350883,
+   "name": "Water Res +3"
+  },
+  {
+   "id": 2348335382,
+   "name": "Water Res +5"
+  },
+  {
+   "id": 1627928672,
+   "name": "Water Res +10"
+  },
+  {
+   "id": 291687663,
+   "name": "Water Res +15"
+  },
+  {
+   "id": 1243966371,
+   "name": "Water Res +20"
+  },
+  {
+   "id": 978296620,
+   "name": "Water Res +25"
+  },
+  {
+   "id": 1396595426,
+   "name": "Water Res +30"
+  },
+  {
+   "id": 592752237,
+   "name": "Water Res +35"
+  },
+  {
+   "id": 478137381,
+   "name": "Water Res +40"
+  },
+  {
+   "id": 90504548,
+   "name": "Water Res +50"
+  },
+  {
+   "id": 1625152122,
+   "name": "Thunder Res +3"
+  },
+  {
+   "id": 2310963023,
+   "name": "Thunder Res +5"
+  },
+  {
+   "id": 1941804942,
+   "name": "Thunder Res +10"
+  },
+  {
+   "id": 64447233,
+   "name": "Thunder Res +15"
+  },
+  {
+   "id": 1485882445,
+   "name": "Thunder Res +20"
+  },
+  {
+   "id": 687485122,
+   "name": "Thunder Res +25"
+  },
+  {
+   "id": 1099691276,
+   "name": "Thunder Res +30"
+  },
+  {
+   "id": 836829571,
+   "name": "Thunder Res +35"
+  },
+  {
+   "id": 248144843,
+   "name": "Thunder Res +40"
+  },
+  {
+   "id": 399594122,
+   "name": "Thunder Res +50"
+  },
+  {
+   "id": 2100892477,
+   "name": "Earth Res +3"
+  },
+  {
+   "id": 2488972808,
+   "name": "Earth Res +5"
+  },
+  {
+   "id": 2602084212,
+   "name": "Earth Res +10"
+  },
+  {
+   "id": 3950138363,
+   "name": "Earth Res +15"
+  },
+  {
+   "id": 2956326071,
+   "name": "Earth Res +20"
+  },
+  {
+   "id": 3227451448,
+   "name": "Earth Res +25"
+  },
+  {
+   "id": 2838414838,
+   "name": "Earth Res +30"
+  },
+  {
+   "id": 3645124985,
+   "name": "Earth Res +35"
+  },
+  {
+   "id": 3866055473,
+   "name": "Earth Res +40"
+  },
+  {
+   "id": 4285817456,
+   "name": "Earth Res +50"
+  },
+  {
+   "id": 1948510809,
+   "name": "Ice Res +3"
+  },
+  {
+   "id": 2638237548,
+   "name": "Ice Res +5"
+  },
+  {
+   "id": 3519944908,
+   "name": "Ice Res +10"
+  },
+  {
+   "id": 2711940163,
+   "name": "Ice Res +15"
+  },
+  {
+   "id": 4209199887,
+   "name": "Ice Res +20"
+  },
+  {
+   "id": 2324283264,
+   "name": "Ice Res +25"
+  },
+  {
+   "id": 3824712270,
+   "name": "Ice Res +30"
+  },
+  {
+   "id": 2475855553,
+   "name": "Ice Res +35"
+  },
+  {
+   "id": 2897865865,
+   "name": "Ice Res +40"
+  },
+  {
+   "id": 3047349704,
+   "name": "Ice Res +50"
+  },
+  {
+   "id": 3244314811,
+   "name": "Lynian Bane +3"
+  },
+  {
+   "id": 671348110,
+   "name": "Lynian Bane +5"
+  },
+  {
+   "id": 2877838259,
+   "name": "Lynian Bane +10"
+  },
+  {
+   "id": 3689064252,
+   "name": "Lynian Bane +15"
+  },
+  {
+   "id": 2158297200,
+   "name": "Lynian Bane +20"
+  },
+  {
+   "id": 4040160511,
+   "name": "Lynian Bane +25"
+  },
+  {
+   "id": 2579378481,
+   "name": "Lynian Bane +30"
+  },
+  {
+   "id": 3607078902,
+   "name": "Lynian Bane +40"
+  },
+  {
+   "id": 3487864503,
+   "name": "Lynian Bane +50"
+  },
+  {
+   "id": 3515992775,
+   "name": "Lynian Bane +100"
+  },
+  {
+   "id": 2900770434,
+   "name": "Lynian Bane +150"
+  },
+  {
+   "id": 3554112670,
+   "name": "Lynian Bane +200"
+  },
+  {
+   "id": 452875015,
+   "name": "Herbivore Bane +3"
+  },
+  {
+   "id": 4087215666,
+   "name": "Herbivore Bane +5"
+  },
+  {
+   "id": 3827114655,
+   "name": "Herbivore Bane +10"
+  },
+  {
+   "id": 2490881552,
+   "name": "Herbivore Bane +15"
+  },
+  {
+   "id": 3476058460,
+   "name": "Herbivore Bane +20"
+  },
+  {
+   "id": 3210380755,
+   "name": "Herbivore Bane +25"
+  },
+  {
+   "id": 3593158685,
+   "name": "Herbivore Bane +30"
+  },
+  {
+   "id": 2573915866,
+   "name": "Herbivore Bane +40"
+  },
+  {
+   "id": 2154948507,
+   "name": "Herbivore Bane +50"
+  },
+  {
+   "id": 1115967496,
+   "name": "Herbivore Bane +100"
+  },
+  {
+   "id": 1072931917,
+   "name": "Herbivore Bane +150"
+  },
+  {
+   "id": 1086516817,
+   "name": "Herbivore Bane +200"
+  },
+  {
+   "id": 1446507995,
+   "name": "Neopteron Bane +3"
+  },
+  {
+   "id": 3209973998,
+   "name": "Neopteron Bane +5"
+  },
+  {
+   "id": 2687762057,
+   "name": "Neopteron Bane +10"
+  },
+  {
+   "id": 3495496198,
+   "name": "Neopteron Bane +15"
+  },
+  {
+   "id": 2334043466,
+   "name": "Neopteron Bane +20"
+  },
+  {
+   "id": 4218706373,
+   "name": "Neopteron Bane +25"
+  },
+  {
+   "id": 2449841163,
+   "name": "Neopteron Bane +30"
+  },
+  {
+   "id": 3712223948,
+   "name": "Neopteron Bane +40"
+  },
+  {
+   "id": 3294575501,
+   "name": "Neopteron Bane +50"
+  },
+  {
+   "id": 1078646062,
+   "name": "Neopteron Bane +100"
+  },
+  {
+   "id": 1027416427,
+   "name": "Neopteron Bane +150"
+  },
+  {
+   "id": 1108110199,
+   "name": "Neopteron Bane +200"
+  },
+  {
+   "id": 1031406118,
+   "name": "Fanged Beast Bane +3"
+  },
+  {
+   "id": 3558450963,
+   "name": "Fanged Beast Bane +5"
+  },
+  {
+   "id": 1571571461,
+   "name": "Fanged Beast Bane +10"
+  },
+  {
+   "id": 767996810,
+   "name": "Fanged Beast Bane +15"
+  },
+  {
+   "id": 1988170950,
+   "name": "Fanged Beast Bane +20"
+  },
+  {
+   "id": 116121673,
+   "name": "Fanged Beast Bane +25"
+  },
+  {
+   "id": 1872373127,
+   "name": "Fanged Beast Bane +30"
+  },
+  {
+   "id": 551269184,
+   "name": "Fanged Beast Bane +40"
+  },
+  {
+   "id": 968917505,
+   "name": "Fanged Beast Bane +50"
+  },
+  {
+   "id": 3053151149,
+   "name": "Fanged Beast Bane +100"
+  },
+  {
+   "id": 3364657128,
+   "name": "Fanged Beast Bane +150"
+  },
+  {
+   "id": 3082673652,
+   "name": "Fanged Beast Bane +200"
+  },
+  {
+   "id": 1461551061,
+   "name": "Bird Wyvern Bane +3"
+  },
+  {
+   "id": 3195984608,
+   "name": "Bird Wyvern Bane +5"
+  },
+  {
+   "id": 1200290052,
+   "name": "Bird Wyvern Bane +10"
+  },
+  {
+   "id": 937430411,
+   "name": "Bird Wyvern Bane +15"
+  },
+  {
+   "id": 1822927559,
+   "name": "Bird Wyvern Bane +20"
+  },
+  {
+   "id": 483221064,
+   "name": "Bird Wyvern Bane +25"
+  },
+  {
+   "id": 1975294854,
+   "name": "Bird Wyvern Bane +30"
+  },
+  {
+   "id": 989662529,
+   "name": "Bird Wyvern Bane +40"
+  },
+  {
+   "id": 602291200,
+   "name": "Bird Wyvern Bane +50"
+  },
+  {
+   "id": 3550778292,
+   "name": "Bird Wyvern Bane +100"
+  },
+  {
+   "id": 2933090289,
+   "name": "Bird Wyvern Bane +150"
+  },
+  {
+   "id": 3521261037,
+   "name": "Bird Wyvern Bane +200"
+  },
+  {
+   "id": 839992383,
+   "name": "Flying Wyvern Bane +3"
+  },
+  {
+   "id": 3681739018,
+   "name": "Flying Wyvern Bane +5"
+  },
+  {
+   "id": 1101948318,
+   "name": "Flying Wyvern Bane +10"
+  },
+  {
+   "id": 834965777,
+   "name": "Flying Wyvern Bane +15"
+  },
+  {
+   "id": 1786984029,
+   "name": "Flying Wyvern Bane +20"
+  },
+  {
+   "id": 451527378,
+   "name": "Flying Wyvern Bane +25"
+  },
+  {
+   "id": 1939343132,
+   "name": "Flying Wyvern Bane +30"
+  },
+  {
+   "id": 1020891611,
+   "name": "Flying Wyvern Bane +40"
+  },
+  {
+   "id": 633512090,
+   "name": "Flying Wyvern Bane +50"
+  },
+  {
+   "id": 2493821060,
+   "name": "Flying Wyvern Bane +100"
+  },
+  {
+   "id": 3922937025,
+   "name": "Flying Wyvern Bane +150"
+  },
+  {
+   "id": 2531397341,
+   "name": "Flying Wyvern Bane +200"
+  },
+  {
+   "id": 318694997,
+   "name": "Piscine Wyvern Bane +3"
+  },
+  {
+   "id": 4221387616,
+   "name": "Piscine Wyvern Bane +5"
+  },
+  {
+   "id": 2859964861,
+   "name": "Piscine Wyvern Bane +10"
+  },
+  {
+   "id": 3659361586,
+   "name": "Piscine Wyvern Bane +15"
+  },
+  {
+   "id": 2170210942,
+   "name": "Piscine Wyvern Bane +20"
+  },
+  {
+   "id": 4046470897,
+   "name": "Piscine Wyvern Bane +25"
+  },
+  {
+   "id": 2554460991,
+   "name": "Piscine Wyvern Bane +30"
+  },
+  {
+   "id": 3607129592,
+   "name": "Piscine Wyvern Bane +40"
+  },
+  {
+   "id": 3457899705,
+   "name": "Piscine Wyvern Bane +50"
+  },
+  {
+   "id": 1643406844,
+   "name": "Piscine Wyvern Bane +100"
+  },
+  {
+   "id": 478384569,
+   "name": "Piscine Wyvern Bane +150"
+  },
+  {
+   "id": 1672666021,
+   "name": "Piscine Wyvern Bane +200"
+  },
+  {
+   "id": 3342451374,
+   "name": "Leviathan Bane +3"
+  },
+  {
+   "id": 777676699,
+   "name": "Leviathan Bane +5"
+  },
+  {
+   "id": 2160948493,
+   "name": "Leviathan Bane +10"
+  },
+  {
+   "id": 4037509506,
+   "name": "Leviathan Bane +15"
+  },
+  {
+   "id": 2883593934,
+   "name": "Leviathan Bane +20"
+  },
+  {
+   "id": 3683308097,
+   "name": "Leviathan Bane +25"
+  },
+  {
+   "id": 3002800015,
+   "name": "Leviathan Bane +30"
+  },
+  {
+   "id": 4256858440,
+   "name": "Leviathan Bane +40"
+  },
+  {
+   "id": 3835801609,
+   "name": "Leviathan Bane +50"
+  },
+  {
+   "id": 2864671900,
+   "name": "Leviathan Bane +100"
+  },
+  {
+   "id": 3620247769,
+   "name": "Leviathan Bane +150"
+  },
+  {
+   "id": 2834944709,
+   "name": "Leviathan Bane +200"
+  },
+  {
+   "id": 3516569590,
+   "name": "Brute Wyvern Bane +3"
+  },
+  {
+   "id": 955855555,
+   "name": "Brute Wyvern Bane +5"
+  },
+  {
+   "id": 2750780505,
+   "name": "Brute Wyvern Bane +10"
+  },
+  {
+   "id": 3550437590,
+   "name": "Brute Wyvern Bane +15"
+  },
+  {
+   "id": 2295908250,
+   "name": "Brute Wyvern Bane +20"
+  },
+  {
+   "id": 4172428053,
+   "name": "Brute Wyvern Bane +25"
+  },
+  {
+   "id": 2445539035,
+   "name": "Brute Wyvern Bane +30"
+  },
+  {
+   "id": 3733086236,
+   "name": "Brute Wyvern Bane +40"
+  },
+  {
+   "id": 3348713821,
+   "name": "Brute Wyvern Bane +50"
+  },
+  {
+   "id": 2437332070,
+   "name": "Brute Wyvern Bane +100"
+  },
+  {
+   "id": 3962652707,
+   "name": "Brute Wyvern Bane +150"
+  },
+  {
+   "id": 2466251327,
+   "name": "Brute Wyvern Bane +200"
+  },
+  {
+   "id": 671790779,
+   "name": "Fanged Wyvern Bane +3"
+  },
+  {
+   "id": 3244888974,
+   "name": "Fanged Wyvern Bane +5"
+  },
+  {
+   "id": 2875275605,
+   "name": "Fanged Wyvern Bane +10"
+  },
+  {
+   "id": 3674983898,
+   "name": "Fanged Wyvern Bane +15"
+  },
+  {
+   "id": 2152491670,
+   "name": "Fanged Wyvern Bane +20"
+  },
+  {
+   "id": 4029062681,
+   "name": "Fanged Wyvern Bane +25"
+  },
+  {
+   "id": 2572639191,
+   "name": "Fanged Wyvern Bane +30"
+  },
+  {
+   "id": 3591818512,
+   "name": "Fanged Wyvern Bane +40"
+  },
+  {
+   "id": 3473800273,
+   "name": "Fanged Wyvern Bane +50"
+  },
+  {
+   "id": 2566415584,
+   "name": "Fanged Wyvern Bane +100"
+  },
+  {
+   "id": 3851391141,
+   "name": "Fanged Wyvern Bane +150"
+  },
+  {
+   "id": 2596199097,
+   "name": "Fanged Wyvern Bane +200"
+  },
+  {
+   "id": 3584081343,
+   "name": "Elder Dragon Bane +3"
+  },
+  {
+   "id": 1019418762,
+   "name": "Elder Dragon Bane +5"
+  },
+  {
+   "id": 2901497671,
+   "name": "Elder Dragon Bane +10"
+  },
+  {
+   "id": 3701187528,
+   "name": "Elder Dragon Bane +15"
+  },
+  {
+   "id": 2279343236,
+   "name": "Elder Dragon Bane +20"
+  },
+  {
+   "id": 4155961355,
+   "name": "Elder Dragon Bane +25"
+  },
+  {
+   "id": 2663855557,
+   "name": "Elder Dragon Bane +30"
+  },
+  {
+   "id": 3515261698,
+   "name": "Elder Dragon Bane +40"
+  },
+  {
+   "id": 3365769795,
+   "name": "Elder Dragon Bane +50"
+  },
+  {
+   "id": 1799783878,
+   "name": "Elder Dragon Bane +100"
+  },
+  {
+   "id": 372339075,
+   "name": "Elder Dragon Bane +150"
+  },
+  {
+   "id": 1761622943,
+   "name": "Elder Dragon Bane +200"
+  },
+  {
+   "id": 1585729584,
+   "name": "Guard Rate Up [XS]"
+  },
+  {
+   "id": 565689544,
+   "name": "Guard Rate Up [S]"
+  },
+  {
+   "id": 3686302123,
+   "name": "Guard Rate Up [M]"
+  },
+  {
+   "id": 2898243901,
+   "name": "Guard Rate Up [L]"
+  },
+  {
+   "id": 604190450,
+   "name": "Never Give Up [Atk]"
+  },
+  {
+   "id": 385033878,
+   "name": "Never Give Up [Def]"
+  },
+  {
+   "id": 205155231,
+   "name": "Last Bastion"
+  },
+  {
+   "id": 1517694320,
+   "name": "Less Slacking [XS]"
+  },
+  {
+   "id": 1692012397,
+   "name": "Less Slacking [S]"
+  },
+  {
+   "id": 2664772110,
+   "name": "Less Slacking [M]"
+  },
+  {
+   "id": 3922854552,
+   "name": "Less Slacking [L]"
+  },
+  {
+   "id": 1720326376,
+   "name": "No Slacking"
+  },
+  {
+   "id": 1712036805,
+   "name": "Idle Recovery [S]"
+  },
+  {
+   "id": 2617550502,
+   "name": "Idle Recovery [M]"
+  },
+  {
+   "id": 3942880816,
+   "name": "Idle Recovery [L]"
+  },
+  {
+   "id": 2010170860,
+   "name": "Stealth [S]"
+  },
+  {
+   "id": 2380265615,
+   "name": "Stealth [M]"
+  },
+  {
+   "id": 4208511001,
+   "name": "Stealth [L]"
+  },
+  {
+   "id": 342542829,
+   "name": "Explorer: Maracudja"
+  },
+  {
+   "id": 2372114519,
+   "name": "Explorer: Rambai"
+  },
+  {
+   "id": 4200900801,
+   "name": "Explorer: Feijoa"
+  },
+  {
+   "id": 1677737314,
+   "name": "Explorer: Cupuacu"
+  },
+  {
+   "id": 319229428,
+   "name": "Explorer: Canistel"
+  },
+  {
+   "id": 2316196942,
+   "name": "Explorer: Pitanga"
+  },
+  {
+   "id": 2281866235,
+   "name": "Explorer: Maracudja Isles"
+  },
+  {
+   "id": 372012980,
+   "name": "Explorer: Toripu"
+  },
+  {
+   "id": 2401576462,
+   "name": "Explorer: Pupunha"
+  },
+  {
+   "id": 4162983576,
+   "name": "Explorer: Belem"
+  },
+  {
+   "id": 1715897147,
+   "name": "Explorer: Chiricheri"
+  },
+  {
+   "id": 289518509,
+   "name": "Explorer: Soiere"
+  },
+  {
+   "id": 2286477847,
+   "name": "Explorer: Volhille"
+  },
+  {
+   "id": 3483564331,
+   "name": "Explorer: Volhille Isles"
+  },
+  {
+   "id": 3114955137,
+   "name": "Quick Rescue"
+  },
+  {
+   "id": 1129034113,
+   "name": "Hamelin [S]"
+  },
+  {
+   "id": 3108277474,
+   "name": "Hamelin [M]"
+  },
+  {
+   "id": 3460545652,
+   "name": "Hamelin [L]"
+  },
+  {
+   "id": 3117370760,
+   "name": "Explorer: Double Isles"
+  },
+  {
+   "id": 4072853659,
+   "name": "Explorer: Tabradin Isles"
+  }
+ ]
+}

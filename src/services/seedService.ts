@@ -149,16 +149,46 @@ async function seedTicketEvents(log: Logger): Promise<void> {
   }
 }
 
+/*
+ * Il convertitore XFS avvolge alcuni array dentro {array:{mpArray:[...]}} o
+ * {classref_:{mpArray:[...]}}. Lo schema Mongoose se ne aspetta uno semplice:
+ * ricevendo l'oggetto avvolto scrive [null] (i campi spariscono). E' successo
+ * alle ricompense di TUTTE le 1.524 quest evento (mRewardItemList) e ai boss,
+ * che poi sono stati recuperati da tools-js/restore-bosses.cjs. Qui si srotola
+ * PRIMA dell'insert, cosi' un database ricreato da zero non perde piu' niente.
+ */
+function srotolaArray(valore: unknown): unknown[] | undefined {
+  if (Array.isArray(valore)) return valore as unknown[];
+  const avvolto = valore as
+    | { array?: { mpArray?: unknown }; classref_?: { mpArray?: unknown } }
+    | null
+    | undefined;
+  const arr = avvolto?.classref_?.mpArray ?? avvolto?.array?.mpArray;
+  return Array.isArray(arr) ? (arr as unknown[]) : undefined;
+}
+
+export function normalizzaQuest(quest: Record<string, unknown>): Record<string, unknown> {
+  const out: Record<string, unknown> = { ...quest };
+  for (const chiave of ['mRewardItemList', 'mBossList']) {
+    const piatto = srotolaArray(quest[chiave]);
+    if (piatto) out[chiave] = piatto;
+  }
+  return out;
+}
+
 async function seedQuestSheets(log: Logger): Promise<void> {
   const count = await QuestSheet.countDocuments({});
   log.info(`Number of Quests: ${count}`);
   if (count === 0) {
-    await QuestSheet.insertMany(typedNormal.rQuestSheet.mQuestDataList);
-    await QuestSheet.insertMany(typedTraining.rQuestSheet.mQuestDataList);
-    await QuestSheet.insertMany(typedScore.rQuestSheet.mQuestDataList);
-    await QuestSheet.insertMany(typedEternal.rQuestSheet.mQuestDataList);
-    await QuestSheet.insertMany(typedTicket.rQuestSheet.mQuestDataList);
-    await QuestSheet.insertMany(typedEvent.rQuestSheet.mQuestDataList);
+    const lista = [
+      ...typedNormal.rQuestSheet.mQuestDataList,
+      ...typedTraining.rQuestSheet.mQuestDataList,
+      ...typedScore.rQuestSheet.mQuestDataList,
+      ...typedEternal.rQuestSheet.mQuestDataList,
+      ...typedTicket.rQuestSheet.mQuestDataList,
+      ...typedEvent.rQuestSheet.mQuestDataList,
+    ].map(normalizzaQuest);
+    await QuestSheet.insertMany(lista);
     log.info('Quest Data imported successfully.');
   } else {
     log.info('Quest Data is not empty. Skipping import.');

@@ -12,5 +12,6 @@ shopRouter.post('/buy', validate(ShopBuySchema), shopController.buy);
 
 shopRouter.post('/karidama/info', validate(SessionOnlySchema), shopController.karidamaInfo);
 shopRouter.post('/karidama/list', validate(SessionOnlySchema), shopController.karidamaList);
+shopRouter.post('/karidama/buy', shopController.karidamaBuy);
 
 export default shopRouter;

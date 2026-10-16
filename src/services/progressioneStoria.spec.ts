@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { statoStoria, mappaProgressiva, missioniCompletate } from './progressioneStoria.js';
+import { statoStoria, mappaProgressiva, missioniCompletate, isolaDiQuest } from './progressioneStoria.js';
 import struttura from '../json/progressione-storia.json' with { type: 'json' };
 import completa from '../json/full_enabled_state.json' with { type: 'json' };
 
@@ -71,5 +71,27 @@ describe('progressioneStoria', () => {
 
   it('only quests with a clear_time count as cleared', () => {
     expect(missioniCompletate([{ mst_quest_id: 1, clear_time: 30 }, { mst_quest_id: 2 }, { mst_quest_id: 3, clear_time: 0 }])).toEqual(new Set([1, 3]));
+  });
+
+  it('maps a quest to its island (used to place the player after a hunt)', () => {
+    const q1 = isola1.nodi[1]!.missioni[0]!;
+    const q2 = isola2.nodi[1]!.missioni[0]!;
+    expect(isolaDiQuest(q1)).toBe(isola1.mst_part_id);
+    expect(isolaDiQuest(q2)).toBe(isola2.mst_part_id);
+    // Not a story-map quest (e.g. an event/eternal one).
+    expect(isolaDiQuest(1)).toBeNull();
+  });
+
+  it('opens the next island once the exit coast is reached, even with nodes left after it', () => {
+    const isola3 = struttura[0]!.isole[2]!;
+    // Completa tutto della prima isola e tutta la seconda fino alla sua costa
+    // d'uscita (che non e' l'ultimo nodo della lista).
+    const fatte = new Set<number>([
+      ...isola1.nodi.flatMap((n) => n.missioni),
+      ...isola2.nodi.flatMap((n) => n.missioni),
+    ]);
+    const s = statoStoria(fatte);
+    expect(s.isole.has(isola3.mst_part_id)).toBe(true);
+    expect(s.nodi.has(isola3.nodi[0]!.mst_node_id)).toBe(true);
   });
 });

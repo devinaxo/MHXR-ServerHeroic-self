@@ -38,6 +38,6 @@ describe('quest/continue', () => {
     const r = req({ mst_quest_id: 7, quest_instance_id: 99 });
     await questContinue(r, res);
     expect(User.updateOne).not.toHaveBeenCalled();
-    expect(encryptAndSend).toHaveBeenCalledWith({}, res, r, ERROR_CODE.GENERIC_ERROR, 2, expect.stringContaining('4/5'));
+    expect(encryptAndSend).toHaveBeenCalledWith({}, res, r, ERROR_CODE.KARIDAMA_NOT_ENOUGH, 2, expect.stringContaining('4/5'));
   });
 });
