@@ -1,0 +1,27 @@
+[
+ {
+  "i": 0,
+  "jp": "現在、狩玉は販売しておりません",
+  "en": "Karidama are not on sale right now"
+ },
+ {
+  "i": 1,
+  "jp": "豪運",
+  "en": "Great Luck"
+ },
+ {
+  "i": 2,
+  "jp": "スキル名を入力してください（部分一致）",
+  "en": "Enter a skill name (partial match)"
+ },
+ {
+  "i": 3,
+  "jp": "スキル検索",
+  "en": "Skill Search"
+ },
+ {
+  "i": 4,
+  "jp": "有効のみ表示",
+  "en": "Show active only"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "name": "menu_home_parts01_BM_NOMIP_jpn",
+  "format": "PVRTC4",
+  "size": "1024x1024",
+  "arc": "arc_cmn/GUI/GUI_cmn.arc",
+  "desc": "the old ship wheels: \u30af\u30a8\u30b9\u30c8\u3078 / \u30a4\u30d9\u30f3\u30c8 / \u30b7\u30e7\u30c3\u30d7 banner"
+ },
+ {
+  "name": "menu_HeaderFooter_BM_NOMIP_jpn",
+  "format": "PVRTC4",
+  "size": "1024x1024",
+  "arc": "arc_cmn/GUI/GUI_cmn.arc",
+  "desc": "bottom bar artwork + \u3042\u306a\u305f\u306e\u8a55\u4fa1\u3092\u304a\u5f85\u3061\u3057\u3066\u3044\u307e\u3059\u266a"
+ },
+ {
+  "name": "event_parts04_LP4_NOMIP_jpn",
+  "format": "RGBA4",
+  "size": "1024x1024",
+  "arc": "arc_cmn/GUI/GUI_event_info_popup.arc",
+  "desc": "compass \u63a2\u691c\u30ca\u30d3 + \u72e9\u731f\u56e3\u306b\u52a0\u5165\u3057\u3088\u3046\uff01 banner"
+ },
+ {
+  "name": "menu_EquipMenu03_LP4_NOMIP_jpn",
+  "format": "RGBA4",
+  "size": "512x512",
+  "arc": "arc_cmn/GUI/GUI_equip_detail.arc",
+  "desc": "compass \u63a2\u691c\u30ca\u30d3 (equip-screen copy)"
+ }
+]

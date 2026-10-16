@@ -1,0 +1,117 @@
+[
+ {
+  "i": 0,
+  "jp": "スキル Lv.%uで習得",
+  "en": "Learned at Skill Lv.%u"
+ },
+ {
+  "i": 1,
+  "jp": "パートナーLv.%uで\r\n秘技発動可能",
+  "en": "Secret Art available\r\nat Partner Lv.%u"
+ },
+ {
+  "i": 2,
+  "jp": "自動合成機能を変更しました\r\n同一の装備を獲得した際は、\r\n自動でプラス値合成されます\r\n\r\n※プラス値最大時や進化時は\r\n自動的に解除されます",
+  "en": "Auto-fusion has been changed.\r\nWhen you get the same equipment,\r\nit is fused automatically for plus value.\r\n\r\n※It turns off automatically\r\nat max plus value or on evolution"
+ },
+ {
+  "i": 3,
+  "jp": "同一の装備が\r\n自動合成に設定されています\r\nその装備から自動合成設定を外し、\r\n新たに本装備に\r\n自動合成を設定しますか？",
+  "en": "The same equipment is\r\nalready set for auto-fusion.\r\nRemove auto-fusion from that equipment\r\nand set auto-fusion\r\non this one instead?"
+ },
+ {
+  "i": 4,
+  "jp": "自動合成",
+  "en": "Auto-Fusion"
+ },
+ {
+  "i": 5,
+  "jp": "ゼニーが不足しているため、\r\n自動合成できませんでした",
+  "en": "Not enough zenny,\r\nauto-fusion could not be done"
+ },
+ {
+  "i": 6,
+  "jp": "※プラス値最大時、自動合成機能は解除されます",
+  "en": "※At max plus value, auto-fusion turns off"
+ },
+ {
+  "i": 7,
+  "jp": "自動合成装備選択",
+  "en": "Select Auto-Fusion Equipment"
+ },
+ {
+  "i": 8,
+  "jp": "自動合成機能の対象が\r\n変更されています\r\n変更内容を保存しますか？",
+  "en": "The auto-fusion targets\r\nhave been changed.\r\nSave the changes?"
+ },
+ {
+  "i": 9,
+  "jp": "武器種限定",
+  "en": "Weapon Type Only"
+ },
+ {
+  "i": 10,
+  "jp": "武器種限定\r\n発動",
+  "en": "Weapon Type Only\r\nActive"
+ },
+ {
+  "i": 11,
+  "jp": "以上の装備がプラス値最大になりました\r\n上記の装備の自動合成機能はＯＦＦになります",
+  "en": "The equipment above reached max plus value.\r\nAuto-fusion for it is now OFF"
+ },
+ {
+  "i": 12,
+  "jp": "上記の装備の自動合成設定を変更します",
+  "en": "Change the auto-fusion settings of the equipment above"
+ },
+ {
+  "i": 13,
+  "jp": "自動合成設定されいる装備が含まれています",
+  "en": "Includes equipment set for auto-fusion"
+ },
+ {
+  "i": 14,
+  "jp": "合成装備選択済み",
+  "en": "Fusion equipment selected"
+ },
+ {
+  "i": 15,
+  "jp": "[期]",
+  "en": "[Lim]"
+ },
+ {
+  "i": 16,
+  "jp": "[覚]",
+  "en": "[Awk]"
+ },
+ {
+  "i": 17,
+  "jp": "[武]",
+  "en": "[MA]"
+ },
+ {
+  "i": 18,
+  "jp": "プラス値最大",
+  "en": "Max Plus Value"
+ },
+ {
+  "i": 19,
+  "jp": "秘技は",
+  "en": "Secret Art:"
+ },
+ {
+  "i": 20,
+  "jp": "覚醒スキルは",
+  "en": "Awakening Skill:"
+ },
+ {
+  "i": 21,
+  "jp": "装備を選択してください",
+  "en": "Please select equipment"
+ },
+ {
+  "i": 22,
+  "jp": "その他報酬の装備が\r\n先に合成されていることがあります",
+  "en": "Equipment from other rewards\r\nmay have been fused first"
+ }
+]

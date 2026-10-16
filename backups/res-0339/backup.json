@@ -1,0 +1,14 @@
+{
+ "label": "res-0339",
+ "createdAt": "2026-10-12T18:39:51.724Z",
+ "packs": [
+  {
+   "path": "cmn/GUI.81.fpk",
+   "size": 99264
+  },
+  {
+   "path": "cmn/GUI.82.fpk",
+   "size": 70096
+  }
+ ]
+}

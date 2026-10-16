@@ -1,0 +1,67 @@
+[
+ {
+  "i": 0,
+  "jp": "上級交易ポイント",
+  "en": "Advanced Trade Points"
+ },
+ {
+  "i": 1,
+  "jp": "上級交易ポイントを使用して",
+  "en": "Using Advanced Trade Points"
+ },
+ {
+  "i": 2,
+  "jp": "所持上級交易ポイント：",
+  "en": "Advanced Trade Points owned:"
+ },
+ {
+  "i": 3,
+  "jp": "使用上級交易ポイント：%dP",
+  "en": "Advanced Trade Points used: %dP"
+ },
+ {
+  "i": 4,
+  "jp": "交易市場のラインナップが更新されました\r\n交換期限が過ぎているため、\r\n交換することが出来ません",
+  "en": "The trade market lineup has been updated.\r\nThe exchange period has passed,\r\nso you cannot exchange this"
+ },
+ {
+  "i": 5,
+  "jp": "特級交易ポイント",
+  "en": "Special Trade Points"
+ },
+ {
+  "i": 6,
+  "jp": "特級交易ポイントを使用して",
+  "en": "Using Special Trade Points"
+ },
+ {
+  "i": 7,
+  "jp": "所持特級交易ポイント：",
+  "en": "Special Trade Points owned:"
+ },
+ {
+  "i": 8,
+  "jp": "使用特級交易ポイント：%dP",
+  "en": "Special Trade Points used: %dP"
+ },
+ {
+  "i": 9,
+  "jp": "交易市場",
+  "en": "Trade Market"
+ },
+ {
+  "i": 10,
+  "jp": "交易市場で交換",
+  "en": "Exchange at the Trade Market"
+ },
+ {
+  "i": 11,
+  "jp": "P",
+  "en": "P"
+ },
+ {
+  "i": 12,
+  "jp": "現在商品を取り扱っておりません",
+  "en": "No items available right now"
+ }
+]

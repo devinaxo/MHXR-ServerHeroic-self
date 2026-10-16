@@ -78,12 +78,18 @@ function scriviArc(voci, magic, versione) {
   const corpi = [];
   let cursore = DIM_HEADER + tabella.length;
   voci.forEach((v, i) => {
-    const compresso = zlib.deflateSync(v.dati);
+    // Capcom's packer keeps every compressed body on an 8-byte boundary and
+    // sets bit 0x40000000 in the uncompressed-size field (+0x48). Writing the
+    // raw deflate length and the bare size produces an archive the client can
+    // misread; see tools-js/fpk-align.cjs and docs/STRING-EDITS.md. Reproduce
+    // the original layout exactly: pad to 8, flag the size.
+    let compresso = zlib.deflateSync(v.dati);
+    if (compresso.length % 8) compresso = Buffer.concat([compresso, Buffer.alloc(8 - (compresso.length % 8))]);
     const off = i * DIM_VOCE;
     tabella.write(v.nomeInterno, off, 64, 'utf-8');
     tabella.writeUInt32LE(v.tipo, off + 64);
     tabella.writeUInt32LE(compresso.length, off + 68);
-    tabella.writeUInt32LE(v.dati.length, off + 72);
+    tabella.writeUInt32LE((v.dati.length | 0x40000000) >>> 0, off + 72);
     tabella.writeUInt32LE(cursore, off + 76);
     corpi.push(compresso);
     cursore += compresso.length;
@@ -116,10 +122,23 @@ function clonaBuf(buf, sostituisciStringa) {
     ctxIn.pos += 4;
     pezzi.push(testaRef);
     if (type === 0x7fff || (type & 1) === 0) return;
-    const size = buf.subarray(ctxIn.pos, ctxIn.pos + 8);
+    // Il campo dopo il tipo NON e' sempre "8 + byte dell'oggetto": e' la
+    // lunghezza serializzata dell'oggetto, quindi si AGGIUSTA della differenza
+    // introdotta dalle stringhe tradotte. Senza cambi la differenza e' 0 e la
+    // tabella esce byte-identica (fedele su ogni tabella, incluse weapon/series).
+    const sizeVal = buf.readBigInt64LE(ctxIn.pos);
     ctxIn.pos += 8;
-    pezzi.push(size);
+    const objStart = ctxIn.pos;
+    const idxSize = pezzi.length;
+    pezzi.push(null); // segnaposto, riempito dopo aver scritto l'oggetto
+    const inizio = pezzi.length;
     scriviOggetto(type >> 1);
+    const oldBytes = ctxIn.pos - objStart;
+    let newBytes = 0;
+    for (let k = inizio; k < pezzi.length; k++) newBytes += pezzi[k].length;
+    const sizeBuf = Buffer.alloc(8);
+    sizeBuf.writeBigInt64LE(sizeVal + BigInt(newBytes - oldBytes));
+    pezzi[idxSize] = sizeBuf;
   }
   function scriviOggetto(classIndex) {
     const cls = ctxIn.classi[classIndex];

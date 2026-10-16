@@ -4,3 +4,274 @@
 283 cmn/GUI.00.fpk cmn/resident.00.fpk
 284 cmn/resident.00.fpk
 285 cmn/GUI.00.fpk
+# 286: GUI.00.fpk ricostruito con arc-edit/fpk-replace (crcjam bd6f0090).
+# Prima versione dopo il fork di self-hosting: il client dei giocatori gia'
+# installati e' su 285, quindi la distanza e' 1 e riceve solo questo pacchetto.
+286 cmn/GUI.00.fpk
+# 287: GUI_home_common.arc con menu_HeaderFooter(_ipad)_LP4_NOMIP_jpn tradotti in
+# inglese (GROUP/CHAT/TOP/SHOP/EXPLORE/EQUIP/TOWN, MESSAGES, HUNTER ID SEARCH,
+# CHANGE EQUIP, GROUP INV.). Solo GUI.00.fpk cambia: crcjam bd6f0090 -> f93dc921.
+287 cmn/GUI.00.fpk
+# 288: MenuCmn.json rieditato a mano (4 voci: 435 "Check the meowxpedition!",
+# 1152 "Treasure Det.", 1168 "Check", 1169 "x%d Reward with Hunter Gems") piu' le
+# 6 voci che erano indietro rispetto a cio' che il server gia' serviva (440/719
+# " time(s)", 720 " min", 721 " h", 722 " day(s)", 1091 ": not available"): se
+# avessimo pubblicato cosi' i suffissi numerici avrebbero perso lo spazio iniziale.
+# Solo GUI.00.fpk cambia: crcjam f93dc921 -> 7f2f0c5b.
+288 cmn/GUI.00.fpk
+# 289: correzione del pacchetto 288. buildFpk() scriveva 0xCDCDCDCD nel campo
+# padding (+0x40) di ogni voce, mentre nei pacchetti veri quel campo e' zero e il
+# client lo legge: il gioco andava in crash all'avvio, fermo sulla schermata
+# del titolo. Ora la copia di ogni voce conserva il campo. Solo GUI.00.fpk
+# cambia: crcjam 7f2f0c5b -> 9f27265b.
+289 cmn/GUI.00.fpk
+# 290: correzione definitiva. build-msg-arc.cjs scriveva solo +0x44 (dimensione
+# compressa) e +0x4C (offset) delle voci dell'archivio, ma non +0x40 (tag
+# 0x242BB29A) ne +0x48 (0x40000000 | dimensione non compressa): il client legge
+# entrambi e senza quello a 0x48 non riconosce la lunghezza, quindi il gioco
+# muore all'avvio. La 289 aveva corretto solo il campo padding del FPK. Stessa
+# fine: l'archivio ora scrive i due campi come costanti, non li copia dalla
+# sorgente (che li aveva persi). Solo GUI.00.fpk cambia.
+290 cmn/GUI.00.fpk
+# 291: 9 texture tradotte in inglese (T1), tutte in GUI.00.fpk. In
+# GUI_cmn.arc: cmn_equipbanner, cmn_load01, cmn_otomoWindow, map_03,
+# menu_bukisyousai. In GUI_home_common.arc: menu_Equip01, menu_HeaderFooter,
+# menu_HeaderFooter_ipad. In GUI_home_equip.arc: menu_home_parts00.
+# Ricostruito con tools-js/tex-ship.cjs, che riusa arc-edit/fpk-pull.
+# crcjam 9f27265b -> 6177bd9b.
+291 cmn/GUI.00.fpk
+# 292: 7 texture della schermata principale e della piazza. In GUI_cmn.arc
+# menu_home_parts01_BM (le ruote della nave クエストへ/イベント). In
+# GUI_exchange.arc: town_koukan_parts02 (etichette 交易市場/交換所/交易店),
+# town_koukan_parts, town_koukanjyo_BM, town_trainingRangeBG. In
+# GUI_equip_detail.arc menu_EquipMenu03 (bussola 探検ナビ). In
+# GUI_event_info_popup.arc event_parts04 (bussola + striscione 狩猟団に加入).
+# Primo lotto con PVRTC4 ricodificato via PVRTexTool (tools-js/tex_pvrtc4.py):
+# 5 dei 7 file sono PVRTC4, la dimensione dei .tex resta identica.
+# crcjam 6177bd9b -> 7c4060cd.
+292 cmn/GUI.00.fpk
+# 293: correzione del lotto 292. PVRTexTool defaultava lo spazio colore di input
+# a sRGB e converteva in lineare prima di comprimere, quindi la GPU applicava una
+# seconda conversione e le texture PVRTC4 risultavano piu' scure (curva gamma 2.2
+# misurata: 120->47, 168->99, 232->208). Aggiunto "-ics lRGB" in tex_pvrtc4.py:
+# l'errore medio e' sceso da 16-28 a 0.3-1.3 per canale. Ricostruiti gli stessi 7
+# file del 292. crcjam 7c4060cd -> nuovo.
+293 cmn/GUI.00.fpk
+# 294: menu della Nyan Expedition (ニャン検隊). GUI_home_common.arc:
+# nyanken_parts00_LP4 (etichetta "Nyan Expedition", Camp Box, Explore All Turns,
+# Paid Gems Only). GUI_home_nyanken.arc: nyanken_parts00_BM (insegna
+# "Palico Exploration Outpost", 探検出発, 全踏破達成!, palico capitano).
+# Nota: nel BM la scritta 探検出発 e' resa solo in parte (S + A, il resto e'
+# rimasto giapponese) -- spedita lo stesso su richiesta.
+# crcjam e2abd776 -> nuovo.
+294 cmn/GUI.00.fpk
+# 295: 6 etichette di menu, SOLO RGBA4 (il PVRTC4 menu_EquipMenu04 e' rimasto
+# fuori: sospetto che il suo ricodifica abbia causato la schermata nera nella
+# scheda equipaggiamento). Inoltre tex-ship ora scrive OGNI copia di una texture:
+# questi nomi esistono in piu' archivi (menu_hunterinfo in 5), e prima ne veniva
+# aggiornata una sola, quindi la traduzione non appariva. 20 voci su 11 archivi:
+# GUI_equip_list, GUI_equip_menu, GUI_home_equip, GUI_equip_detail, GUI_title,
+# GUI_home_event_quest, GUI_home_town, GUI_hunter_info, GUI_otomo_detail,
+# GUI_otomo_menu, GUI_home_shop.
+# crcjam 19c1c1fa -> nuovo.
+295 cmn/GUI.00.fpk
+# 296: correzione di formato in arc-edit. Capcom tiene ogni corpo compresso
+# allineato a 8 byte (tutti i cs originali sono multipli di 8); arc-edit li
+# riscriveva attaccati, quindi gli offset successivi al primo cadevano fuori
+# dalla griglia dei blocchi Blowfish e il client andava in crash (piazza) o
+# schermo nero (equip). Ora ogni corpo viene paddato a 8 e, se l'archivio non e'
+# gia' allineato, si forza il repack invece della patch in place (che
+# perpetuava il disallineamento). Verificato: 188/192 voci disallineate prima,
+# 0/192 dopo. Lotto: gli stessi 7 file di urgent-2, ora anche PVRTC4
+# menu_EquipMenu04_BM, su 12 archivi. crcjam ad4ba6f5 -> 5d846bf9.
+296 cmn/GUI.00.fpk
+# 297: ripristinato l'archivio GUI_home_town.arc alla versione precedente alle
+# traduzioni. La piazza continuava a bloccarsi su schermo nero e poi crashare
+# anche dopo la correzione dell'allineamento; le due etichette tradotte li'
+# (menu_Town01) erano comunque marginali. L'arc viene rimesso com'era (copia
+# esatta da res294), quindi il file torna alla dimensione originale 1024416.
+# crcjam 5d846bf9 -> f492bb26.
+297 cmn/GUI.00.fpk
+# 298: due correzioni. (1) tex-ship ora aggiorna OGNI copia di una texture: le
+# stesse etichette vivono in piu' archivi (menu_EquipMenu03 in 2, event_parts04
+# in 6) e i lotti precedenti ne aggiornavano una sola, quindi la bussola
+# "Exploration Navi" non appariva nella schermata principale (che carica
+# GUI_home_common.arc). Rimandate tutte le 18 texture dei lotti 291-294, 33 voci
+# su 16 archivi. (2) nuovo tools-js/fpk-align.cjs normalizza ogni ARC del pack:
+# un archivio aveva ancora 47 voci disallineate (offset/cs non multipli di 8),
+# ora 1476/1476 allineate e tutte decodificabili.
+# crcjam f492bb26 -> ceb11dbf.
+298 cmn/GUI.00.fpk
+# 299: due etichette in piu'. GUI_cmn.arc: cmn_kaiikiName01 (nomi delle aree).
+# GUI_home_common.arc: cmn_sample_syougou (campione titolo). Contestualmente
+# tradotta la stringa del ticker attivita' della schermata principale, che non
+# e' una texture ma un valore del server in
+# src/routes/api/activity/activity.controller.ts: '狩猟団に入団しよう!' ->
+# 'Join a Hunting Squad!' (resa dal font di gioco, per questo non si trovava
+# in nessun atlante). crcjam ceb11dbf -> 4d5fa0b7.
+299 cmn/GUI.00.fpk
+# 300: menu_HeaderFooter_LP4_NOMIP_jpn e menu_HeaderFooter_ipad_LP4_NOMIP_jpn
+# ritoccati (barra di navigazione in basso). Il primo esiste in due archivi
+# (GUI_home_common e GUI_partner_list) e vengono aggiornati entrambi.
+# crcjam 4d5fa0b7 -> nuovo.
+300 cmn/GUI.00.fpk
+301 cmn/resident.00.fpk
+302 cmn/resident.00.fpk
+303 cmn/resident.00.fpk
+304 cmn/resident.00.fpk
+305 cmn/resident.00.fpk
+306 cmn/resident.00.fpk
+307 cmn/resident.00.fpk
+308 cmn/resident.00.fpk
+# 309: riallineati gli archivi di resident.00.fpk. rsdnt_equip.arc (39/39 voci),
+# rsdnt_property.arc (45/46) e rsdnt_weapon.arc (30/31) avevano offset/dimensioni
+# non multipli di 8, quindi il client decrittava spazzatura: la schermata dei
+# risultati dopo una quest restava in caricamento e poi crashava. I tre archivi
+# sono stati ripacchettati con padding a 8 byte (tools-js/fpk-align.cjs), il
+# contenuto decompresso non cambia. crcjam 5b5cbd6e -> 27d69699.
+309 cmn/resident.00.fpk
+# 310: resident.00.fpk con il campo padding +0x40 delle voci FPK azzerato. Il
+# pacchetto precedente lo aveva a 0xCDCDCDCD (memoria non inizializzata) su
+# tutte e 17 le voci: e' lo stesso difetto del 288/289 che faceva crashare il
+# gioco all'avvio. fpk-align ora azzera quel campo invece di copiarlo; il
+# pacchetto e' anche riallineato (3 archivi, 325 voci, 0 disallineate).
+# crcjam 27d69699 -> a3fce6d9.
+310 cmn/resident.00.fpk
+# 311: ripristinato resident.00.fpk esattamente come era alla 308 (crcjam
+# 5b5cbd6e). Le 309 e 310 lo avevano riallineato e ripulito dal campo +0x40, ma
+# il client andava in crash all'avvio con entrambe: a differenza di GUI.*.fpk
+# questo pacchetto evidentemente richiede il layout originale. Le due modifiche
+# restano da capire prima di ritentarle. Il blocco della schermata risultati
+# torna, ma l'avvio funziona.
+311 cmn/resident.00.fpk
+# 312: tre ripristini, tutti a contenuto originale. GUI_training.arc e
+# GUI_exchange.arc: town_trainingRangeBG_BM_NOMIP_jpn torna giapponese (la sala
+# di addestramento si bloccava entrando da piazza). GUI_home_nyanken.arc:
+# nyanken_parts00_BM_NOMIP torna giapponese (la scritta 探検出発 era resa solo in
+# parte, "SA出発"). Le altre copie restano come sono. Contestualmente tolto lo
+# switch MINIMAL_REWARDS: la schermata dei risultati continua a crashare anche
+# con ricompense minime, quindi non e' il payload. crcjam b7a9f7a0 -> 275b8148.
+312 cmn/GUI.00.fpk
+# 313: rimessi GUI_training.arc, GUI_exchange.arc e GUI_home_nyanken.arc come
+# erano alla 311 (crcjam b7a9f7a0). I ripristini della 312 erano passati da
+# arc-edit, che RICOSTRUISCE l'archivio: la piazza ha ripreso a crashare.
+# L'unico ripristino che ha funzionato (GUI_home_town alla 297) era una copia
+# integrale dell'archivio originale via fpk-push, non una ricostruzione.
+# => il problema e' la ricostruzione dell'archivio fatta da arc-edit, non il
+# contenuto delle texture. Da capire prima di toccare altri archivi.
+313 cmn/GUI.00.fpk
+# 314: ripristinate a giapponese le texture delle schermate che si bloccano /
+# crashano, mantenendo tutto il resto tradotto. town_trainingRangeBG_BM_NOMIP
+# (GUI_training + GUI_exchange, sala addestramento), nyanken_parts00_BM
+# (GUI_home_nyanken, "SA出発") ed event_parts04_LP4_NOMIP_jpn su tutti e 6 gli
+# archivi (schermata risultati). Nota: la piazza potrebbe ricrashare perche' i
+# ripristini passano da arc-edit, che ricostruisce l'archivio.
+# crcjam b7a9f7a0 -> nuovo.
+314 cmn/GUI.00.fpk
+# 315-324: (saltati) da qui in poi i pacchetti NON sono piu' quelli modificati a
+# mano: l'intero set e' stato riscaricato pulito dal server di Heroic
+# (http://57.131.193.244/) con tools/Download-Packs.cjs e la copia integra e'
+# in heroic-packs-pristine/ (ignorata da git). Le traduzioni delle texture sono
+# conservate in translations/textures/ e in /tmp/opencode/translated-backup/.
+# 325: cambio di set completo. RES_VER passa a 325 con un salto di 11: il client
+# (fermo alla 314) chiede la cartella v0325/ e riscarica tutto, invece di seguire
+# passo passo una storia di versioni che non descrive piu' questi file.
+325 cmn/resident.00.fpk
+# 326: prima e unica pubblicazione delle traduzioni sul set pulito di Heroic,
+# fatta in un colpo solo (tools: translations/textures/apply.cjs). 19 texture su
+# 13 archivi; escluse le schermate che si bloccano: piazza (town_*), risultati
+# (event_parts04) e spedizione dei gatti (nyanken_*). La barra in basso
+# (menu_HeaderFooter) e' fra quelle applicate. crcjam 6b4fed56 -> nuovo.
+326 cmn/GUI.00.fpk
+# 327: tutte e 26 le texture tradotte, ricostruite UNA volta partendo dal pack
+# integro di Heroic (backups/res-0325-pristine-heroic/). 54 voci su 24 archivi,
+# inclusi piazza, risultati e spedizione gatti che alla 326 erano rimasti in
+# giapponese. crcjam 476e66ec -> nuovo. Rollback alla 326:
+#   cp backups/res-0326/GUI.00.fpk src/public/res/download/android/v0282/stdDL/cmn/
+#   find src/public/res/download/android -name download.list -delete
+#   (poi rimetti RES_VER a 326 e riavvia)
+327 cmn/GUI.00.fpk
+# 328: rollback. Rimesse nel pack le 19 texture della 326 (backups/res-0326/):
+# piazza, risultati e spedizione gatti sono di nuovo in giapponese perche' le
+# loro traduzioni sono rotte. Si pubblica come 328 e non come 326 perche' un
+# client gia' alla 327 non tornerebbe indietro da solo.
+# crcjam 5b34d043 -> 476e66ec.
+328 cmn/GUI.00.fpk
+329 cmn/resident.00.fpk
+330 cmn/resident.00.fpk
+331 cmn/resident.00.fpk
+332 cmn/resident.00.fpk
+333 cmn/GUI.81.fpk
+334 cmn/GUI.81.fpk
+335 cmn/GUI.81.fpk
+336 cmn/GUI.81.fpk
+337 cmn/GUI.81.fpk
+338 cmn/GUI.81.fpk
+339 cmn/GUI.81.fpk
+339 cmn/GUI.82.fpk
+340 cmn/GUI.83.fpk
+341 cmn/GUI.84.fpk
+342 cmn/GUI.85.fpk
+343 cmn/GUI.86.fpk
+344 cmn/GUI.87.fpk
+345 cmn/GUI.88.fpk
+346 cmn/GUI.89.fpk
+347 cmn/GUI.90.fpk
+348 cmn/GUI.91.fpk
+349 cmn/GUI.91.fpk
+350 cmn/GUI.92.fpk
+351 cmn/GUI.93.fpk
+352 cmn/GUI.94.fpk
+353 cmn/GUI.80.fpk
+# 354: resident.00.fpk - rsdnt_player.arc :: tradotti i testi delle abilita'
+# dei partner (tuning/xml/partner/partnerSkillParam, 90 voci / 157 stringhe)
+# con lavoro-traduzione/partner/partner-skill.json (mName + mText; i nomi dei
+# partner restano dai rispettivi campi). Solo testo, nessuna texture toccata.
+354 cmn/resident.00.fpk
+# 355: accorciate le descrizioni delle abilita' partner perche' il campo taglia
+# a ~44 celle: ATK/DEF/HP/DMG, stile "Fire weapon: ATK up", "Great Sword: DMG
+# up", "HP, ATK, DEF +15 each". Stesso dizionario, testi piu' corti.
+355 cmn/resident.00.fpk
+# 356: GUI.00.fpk ricostruito dal baseline integro di Heroic con le 19 texture,
+# ma SENZA toccare gli archivi che rompono le loro schermate (excludedTargets in
+# translations/textures/manifest.json). Rispetto alla 328 spariscono le scritture
+# in GUI_otomo_detail.arc e GUI_otomo_menu.arc: la casa degli Otomo smetteva di
+# funzionare perche' menu_hunterinfo veniva applicato anche li'. 11 archivi
+# invece di 13. crcjam 476e66ec -> nuovo.
+356 cmn/GUI.00.fpk
+# 357: nomi di materiali/"proof" dei mostri riscritti con il nome ufficiale del mostro (mostri.json/confermati) al posto della traduzione letterale dell'epiteto. Solo item_material in rsdnt_property.arc (2400 stringhe).
+357 cmn/resident.00.fpk
+# 358: kariwazaParam (Martial Art names) - 567 nomi lunghi gia in inglese spezzati su 2 righe prima di " [dettaglio]" (o al primo spazio) per non venire tagliati nella scheda arte.
+358 cmn/resident.00.fpk
+# 359: rollback del 358 - i nomi delle arti NON si possono spezzare su due righe (il layout non lo prevede), quindi ripristinati su una riga. Le traduzioni lunghe verranno accorciate per rientrare nel taglio.
+359 cmn/resident.00.fpk
+# 360: nomi arti (kariwazaParam) - 865 nomi inglesi lunghi accorciati per rientrare in 32 celle (il box taglia, non va a capo). Es. Golden Masterful Technique -> Golden Mastery, Undying Path of Supremacy -> Undying Supremacy.
+360 cmn/resident.00.fpk
+# 361: testi delle ABILITA' DEL CACCATORE - nomi/descrizioni di arti marziali (kariwazaParam), etichette abilita' (equipSkillParam.mSkillListTextList), tipi di proiettile (playerBulletParam) e melodie (pipeMelodyParam) in rsdnt_player.arc; arti segrete (higi_param) in rsdnt_equip.arc. Tutto in resident.00.fpk. Nomi su una riga (<=32 celle).
+361 cmn/resident.00.fpk
+# 362: descrizioni delle ABILITA' - GMD SkillText in GUI.00.fpk (GUI_msg.arc). 1568 testi inglesi rimandati a capo (<=52 celle per riga) come gli originali giapponesi: senza ritorni a capo il box rimpiccioliva il testo fino a renderlo illeggibile. Corretto anche un bug di allineamento in build-msg-arc.cjs che corrompeva l'ultimo byte dell'archivio quando la lunghezza non era multipla di 4.
+362 cmn/GUI.00.fpk
+# 363: nomi degli OMANORI (talismani/ciondoli) - 2.465 nomi in rsdnt_equip.arc :: tuning/xml/equip/omamori/omamori_series (mOmamoriName) + le condizioni in omamori_trigger (mTriggerText). Erano tutti in giapponese. Nomi su una riga (max 46 celle).
+363 cmn/resident.00.fpk
+# 364: FIX crash all'avvio (SIGSEGV in rHigiParam). traduci-rsdnt-arc.cjs copiava il campo "size" dei CLASSREF senza ricalcolarlo: quando le stringhe tradotte cambiano lunghezza il client legge oltre l'oggetto. Ora il size viene ricalcolato (size = 8 + byte dell'oggetto). Corrette anche 6 altre arc tradotte (enemy, otomo, player, property, quest, weapon) con lo stesso difetto latente.
+364 cmn/resident.00.fpk
+# 365: FIX definitivo crash avvio. xfs-clone/traduci ricostruivano FEDELMENTE solo alcune tabelle: per 30 tabelle (weapon/series, ecc.) la loro traversata non riproduce l'originale, quindi tradurle le rompeva. Ora ricostruisci-resident.cjs ricalcola i size solo dove la traversata e' fedele e RIPRISTINA la tabella pristine (baseline, gia' inglese) dove non lo e'. Crash era in rWeaponSeries/rHigiParam.
+365 cmn/resident.00.fpk
+# 366: ripristino di TUTTE le traduzioni tolte dal 365, con i size dei CLASSREF corretti. Nuovo tool unisci-traduzione.cjs: prende la tabella PRISTINE (struttura/size originali) e quella TRADOTTA (testo inglese) e le unisce -> size = size_pristine + delta stringhe. Fedele su ogni tabella (weapon/series compreso). Recupera kariwaza (486), equipSkill, item_material, partner/otomo skill, higi, omamori.
+366 cmn/resident.00.fpk
+# 367: testi delle QUEST EVENTO (collab). Tradotti i nomi quest in rsdnt_quest.arc::questData/event (594) e questData/ticket (184) [due righe, il box le mostra a capo], le spiegazioni technicalQuestInfo (362), field_skill_param, equip_hint, karidamaPowerUp, subTargetList. 0 stringhe JP rimaste in rsdnt_quest.arc. Dizionario in /tmp/opencode/skillfix/quest_all_en.json.
+367 cmn/resident.00.fpk
+# 368: rimesse le 7 texture finora scartate (event_parts04_LP4, nyanken_parts00
+# BM + LP4, town_koukan_parts, town_koukan_parts02, town_koukanjyo,
+# town_trainingRangeBG) su 13 archivi. Erano state tolte perche' le schermate
+# result/training/exchange/nyan andavano in crash: la causa NON era l'artwork ma
+# il campo FPK +0x48 (sizeAndFlags) che i tool di ricostruzione copiavano invece
+# di ricalcolare, quindi restava la dimensione vecchia quando l'archivio
+# cresceva. Corretti fpk-pull.cjs / fpk-align.cjs / fpk-replace.cjs; gate in
+# fpk-check.cjs. Vedi docs/TEXTURE-CRASH-FPK-SIZE.md.
+368 cmn/GUI.00.fpk
+# 369: ultime due texture precedentemente escluse. menu_Town01 (equip_detail,
+# home_event_quest, home_town) e menu_hunterinfo sugli archivi otomo
+# (GUI_otomo_detail, GUI_otomo_menu) che tenevano chiusa la casa dei Palico.
+# Stesso fix +0x48 del 368. Ora tutti gli archivi erano ricostruibili.
+369 cmn/GUI.00.fpk

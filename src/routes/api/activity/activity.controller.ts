@@ -11,7 +11,7 @@ export const activityGet = (req: Request, res: Response) => {
       created: Date.now(),
       mst_activity_id: 1,
       mst_activity_type_id: 1,
-      text: '狩猟団に入団しよう!',
+      text: 'Join a Hunting Squad!',
       user_id: '83SP6Q95',
     },
   ];

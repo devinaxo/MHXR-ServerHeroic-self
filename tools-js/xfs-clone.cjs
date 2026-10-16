@@ -58,10 +58,24 @@ function clona(percorso, sostituisciStringa) {
     ctxIn.pos += 4;
     pezzi.push(testaRef);
     if (type === 0x7fff || (type & 1) === 0) return; // riferimento nullo
-    const size = buf.subarray(ctxIn.pos, ctxIn.pos + 8);
+    // Il campo dopo il tipo NON si ricalcola da zero: non e' sempre "8 + byte
+    // dell'oggetto" (per alcune tabelle, es. weapon/series, vale altro). E'
+    // invece la lunghezza serializzata dell'oggetto, quindi si AGGIUSTA della
+    // differenza di byte introdotta dalle stringhe tradotte. Con nessun cambio
+    // la differenza e' 0 e la tabella esce byte-identica (fedele su OGNI tabella).
+    const sizeVal = buf.readBigInt64LE(ctxIn.pos);
     ctxIn.pos += 8;
-    pezzi.push(size); // ricalcolato alla fine se serve, per ora copiato
+    const objStart = ctxIn.pos;
+    const idxSize = pezzi.length;
+    pezzi.push(null); // segnaposto, riempito dopo aver scritto l'oggetto
+    const inizio = pezzi.length;
     scriviOggetto(type >> 1);
+    const oldBytes = ctxIn.pos - objStart;
+    let newBytes = 0;
+    for (let k = inizio; k < pezzi.length; k++) newBytes += pezzi[k].length;
+    const sizeBuf = Buffer.alloc(8);
+    sizeBuf.writeBigInt64LE(sizeVal + BigInt(newBytes - oldBytes));
+    pezzi[idxSize] = sizeBuf;
   }
 
   function scriviOggetto(classIndex) {

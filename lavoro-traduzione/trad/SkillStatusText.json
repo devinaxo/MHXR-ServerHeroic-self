@@ -1,0 +1,1082 @@
+[
+ {
+  "i": 0,
+  "jp": "Invalid Message",
+  "en": "Invalid Message"
+ },
+ {
+  "i": 1,
+  "jp": "与えるダメージが\r\n上がる",
+  "en": "Damage dealt goes up"
+ },
+ {
+  "i": 2,
+  "jp": "火属性の与える\r\nダメージが上がる",
+  "en": "Fire damage dealt goes\r\nup"
+ },
+ {
+  "i": 3,
+  "jp": "氷属性の与える\r\nダメージが上がる",
+  "en": "Ice damage dealt goes up"
+ },
+ {
+  "i": 4,
+  "jp": "土属性の与える\r\nダメージが上がる",
+  "en": "Earth damage dealt goes\r\nup"
+ },
+ {
+  "i": 5,
+  "jp": "雷属性の与える\r\nダメージが上がる",
+  "en": "Thunder damage dealt\r\ngoes up"
+ },
+ {
+  "i": 6,
+  "jp": "水属性の与える\r\nダメージが上がる",
+  "en": "Water damage dealt goes\r\nup"
+ },
+ {
+  "i": 7,
+  "jp": "火属性の受ける\r\nダメージを減らす",
+  "en": "Reduces Fire damage\r\ntaken"
+ },
+ {
+  "i": 8,
+  "jp": "氷属性の受ける\r\nダメージを減らす",
+  "en": "Reduces Ice damage taken"
+ },
+ {
+  "i": 9,
+  "jp": "土属性の受ける\r\nダメージを減らす",
+  "en": "Reduces Earth damage\r\ntaken"
+ },
+ {
+  "i": 10,
+  "jp": "雷属性の受ける\r\nダメージを減らす",
+  "en": "Reduces Thunder damage\r\ntaken"
+ },
+ {
+  "i": 11,
+  "jp": "水属性の受ける\r\nダメージを減らす",
+  "en": "Reduces Water damage\r\ntaken"
+ },
+ {
+  "i": 12,
+  "jp": "一部の状態異常を\r\n無効化する",
+  "en": "Negates some status\r\nailments"
+ },
+ {
+  "i": 13,
+  "jp": "ひるみにくくなる",
+  "en": "You flinch less"
+ },
+ {
+  "i": 14,
+  "jp": "モンスターに\r\n狙われやすくなる",
+  "en": "Monsters target you more"
+ },
+ {
+  "i": 15,
+  "jp": "モンスターに\r\n狙われにくくなる",
+  "en": "Monsters target you less"
+ },
+ {
+  "i": 16,
+  "jp": "溜め時間が短くなる",
+  "en": "Shorter charge time"
+ },
+ {
+  "i": 17,
+  "jp": "カウンターの威力が\r\n上がる",
+  "en": "Counter power goes up"
+ },
+ {
+  "i": 18,
+  "jp": "めまいを\r\n起こさせやすくする",
+  "en": "Makes monsters dizzy\r\nmore easily"
+ },
+ {
+  "i": 19,
+  "jp": "弾を消費せずに\r\n攻撃ができる",
+  "en": "Attack without using\r\nammo"
+ },
+ {
+  "i": 20,
+  "jp": "ゲージを消費せずに\r\n攻撃ができる",
+  "en": "Attack without using the\r\ngauge"
+ },
+ {
+  "i": 21,
+  "jp": "冷却時間が短くなる",
+  "en": "Shorter cooldown time"
+ },
+ {
+  "i": 22,
+  "jp": "体力が減り続ける",
+  "en": "Health keeps dropping"
+ },
+ {
+  "i": 23,
+  "jp": "体力が激減し続ける",
+  "en": "Health keeps dropping\r\nfast"
+ },
+ {
+  "i": 24,
+  "jp": "行動不能になる",
+  "en": "You can't move"
+ },
+ {
+  "i": 25,
+  "jp": "行動不能になる",
+  "en": "You can't move"
+ },
+ {
+  "i": 26,
+  "jp": "行動不能になる",
+  "en": "You can't move"
+ },
+ {
+  "i": 27,
+  "jp": "一定時間が経過すると\r\n爆発ダメージを受ける",
+  "en": "Explodes after a while,\r\ndealing damage"
+ },
+ {
+  "i": 28,
+  "jp": "武技Ｐが減り続ける",
+  "en": "Martial Art P keeps\r\ndropping"
+ },
+ {
+  "i": 29,
+  "jp": "行動に制限が掛かる",
+  "en": "Your actions are limited"
+ },
+ {
+  "i": 30,
+  "jp": "行動に制限が掛かる",
+  "en": "Your actions are limited"
+ },
+ {
+  "i": 31,
+  "jp": "武技が使用できなく\r\nなる",
+  "en": "You can't use Martial\r\nArts"
+ },
+ {
+  "i": 32,
+  "jp": "防具スキルの効果を\r\n失う",
+  "en": "Armor skills stop\r\nworking"
+ },
+ {
+  "i": 33,
+  "jp": "体力が回復し続ける",
+  "en": "Health keeps recovering"
+ },
+ {
+  "i": 34,
+  "jp": "防御力が上がる",
+  "en": "Defense goes up"
+ },
+ {
+  "i": 35,
+  "jp": "受けるダメージを\r\n減らす",
+  "en": "Reduces damage taken"
+ },
+ {
+  "i": 36,
+  "jp": "攻撃力が下がる",
+  "en": "Attack goes down"
+ },
+ {
+  "i": 37,
+  "jp": "防御力が下がる",
+  "en": "Defense goes down"
+ },
+ {
+  "i": 38,
+  "jp": "アクションスピードが\r\n上がる",
+  "en": "Action speed goes up"
+ },
+ {
+  "i": 39,
+  "jp": "会心率が上がる",
+  "en": "Affinity goes up"
+ },
+ {
+  "i": 40,
+  "jp": "武技Pが\r\n溜まりやすくなる",
+  "en": "Martial Art P builds\r\nfaster"
+ },
+ {
+  "i": 41,
+  "jp": "気刃連斬の威力と\r\n飛距離がアップする",
+  "en": "Spirit Combo power and\r\nrange go up"
+ },
+ {
+  "i": 42,
+  "jp": "火属性モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Fire\r\nmonsters"
+ },
+ {
+  "i": 43,
+  "jp": "氷属性モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Ice\r\nmonsters"
+ },
+ {
+  "i": 44,
+  "jp": "土属性モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Earth\r\nmonsters"
+ },
+ {
+  "i": 45,
+  "jp": "雷属性モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Thunder\r\nmonsters"
+ },
+ {
+  "i": 46,
+  "jp": "水属性モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Water\r\nmonsters"
+ },
+ {
+  "i": 47,
+  "jp": "弱点部位に\r\n与えるダメージが増加",
+  "en": "More damage to weak\r\nspots"
+ },
+ {
+  "i": 48,
+  "jp": "飛竜種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Flying\r\nWyverns"
+ },
+ {
+  "i": 49,
+  "jp": "海竜種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to\r\nLeviathans"
+ },
+ {
+  "i": 50,
+  "jp": "魚竜種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Piscine\r\nWyverns"
+ },
+ {
+  "i": 51,
+  "jp": "牙竜種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Fanged\r\nWyverns"
+ },
+ {
+  "i": 52,
+  "jp": "獣竜種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Brute\r\nWyverns"
+ },
+ {
+  "i": 53,
+  "jp": "古龍種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Elder\r\nDragons"
+ },
+ {
+  "i": 54,
+  "jp": "鳥竜種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Bird\r\nWyverns"
+ },
+ {
+  "i": 55,
+  "jp": "牙獣種モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to Fanged\r\nBeasts"
+ },
+ {
+  "i": 56,
+  "jp": "未破壊部位に\r\n与えるダメージが増加",
+  "en": "More damage to unbroken\r\nparts"
+ },
+ {
+  "i": 57,
+  "jp": "怒り状態モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to enraged\r\nmonsters"
+ },
+ {
+  "i": 58,
+  "jp": "属性解放斬りの\r\n威力が上がる",
+  "en": "Element Discharge Slash\r\npower goes up"
+ },
+ {
+  "i": 59,
+  "jp": "溜め斬り威力が上がり\r\n溜め時間が長くなる",
+  "en": "Charged slash power up,\r\nbut longer charge"
+ },
+ {
+  "i": 60,
+  "jp": "突進威力とスピードが\r\n上がる",
+  "en": "Charge power and speed\r\ngo up"
+ },
+ {
+  "i": 61,
+  "jp": "振り降ろしの\r\n威力が上がる",
+  "en": "Downswing power goes up"
+ },
+ {
+  "i": 62,
+  "jp": "バースト斬りの\r\n威力が上がる",
+  "en": "Burst Slash power goes\r\nup"
+ },
+ {
+  "i": 63,
+  "jp": "通常射撃の\r\n威力が上がる",
+  "en": "Normal shot power goes\r\nup"
+ },
+ {
+  "i": 64,
+  "jp": "鬼人化時の攻撃の\r\n威力が上がる",
+  "en": "Demon Mode attack power\r\ngoes up"
+ },
+ {
+  "i": 65,
+  "jp": "大回転斬りの\r\n威力が上がる",
+  "en": "Spirit Roundslash power\r\ngoes up"
+ },
+ {
+  "i": 66,
+  "jp": "曲射の威力が上がる",
+  "en": "Arc shot power goes up"
+ },
+ {
+  "i": 67,
+  "jp": "剣攻撃の威力が上がり\r\nゲージ消費量が増える",
+  "en": "Sword attack power up,\r\nbut more gauge use"
+ },
+ {
+  "i": 68,
+  "jp": "竜撃砲の威力が上がる",
+  "en": "Wyvernfire power goes up"
+ },
+ {
+  "i": 69,
+  "jp": "ジャストガード時に\r\nダメージ攻撃を行う",
+  "en": "Deals damage on a just\r\nguard"
+ },
+ {
+  "i": 70,
+  "jp": "一度に発射する弾数が\r\n増える",
+  "en": "More shots fired at once"
+ },
+ {
+  "i": 71,
+  "jp": "溜め撃ち威力が上がり\r\n溜め時間が長くなる",
+  "en": "Charged shot power up,\r\nbut longer charge"
+ },
+ {
+  "i": 72,
+  "jp": "気刃連斬の威力が\r\n上がる",
+  "en": "Spirit Combo power goes\r\nup"
+ },
+ {
+  "i": 73,
+  "jp": "曲射の威力が上がり\r\n溜め時間が長くなる",
+  "en": "Arc shot power up, but\r\nlonger charge"
+ },
+ {
+  "i": 74,
+  "jp": "与えるダメージが\r\n徐々に上がっていく",
+  "en": "Damage dealt rises\r\ngradually"
+ },
+ {
+  "i": 75,
+  "jp": "防御力が\r\n徐々に下がっていく",
+  "en": "Defense drops gradually"
+ },
+ {
+  "i": 76,
+  "jp": "装備の条件によって\r\n与えるダメージが増加",
+  "en": "More damage depending on\r\nequipment conditions"
+ },
+ {
+  "i": 77,
+  "jp": "特定の状態で\r\n防御力が下がる",
+  "en": "Defense drops in certain\r\nstates"
+ },
+ {
+  "i": 78,
+  "jp": "火属性ブレス攻撃の\r\n受けるダメージが減る",
+  "en": "Less damage from Fire\r\nbreath attacks"
+ },
+ {
+  "i": 79,
+  "jp": "氷属性ブレス攻撃の\r\n受けるダメージが減る",
+  "en": "Less damage from Ice\r\nbreath attacks"
+ },
+ {
+  "i": 80,
+  "jp": "土属性ブレス攻撃の\r\n受けるダメージが減る",
+  "en": "Less damage from Earth\r\nbreath attacks"
+ },
+ {
+  "i": 81,
+  "jp": "雷属性ブレス攻撃の\r\n受けるダメージが減る",
+  "en": "Less damage from Thunder\r\nbreath attacks"
+ },
+ {
+  "i": 82,
+  "jp": "水属性ブレス攻撃の\r\n受けるダメージが減る",
+  "en": "Less damage from Water\r\nbreath attacks"
+ },
+ {
+  "i": 83,
+  "jp": "防御力の高い部位に\r\n与えるダメージが増加",
+  "en": "More damage to hard\r\nparts"
+ },
+ {
+  "i": 84,
+  "jp": "ジャストカウンターが\r\n出やすくなる",
+  "en": "Just counters come out\r\nmore easily"
+ },
+ {
+  "i": 85,
+  "jp": "ゲージ消費量が減る",
+  "en": "Uses less gauge"
+ },
+ {
+  "i": 86,
+  "jp": "ゲージ減少速度が\r\n下がる",
+  "en": "Gauge drains slower"
+ },
+ {
+  "i": 87,
+  "jp": "回避アクション時の\r\n無敵時間が増える",
+  "en": "Longer invincibility\r\nwhen evading"
+ },
+ {
+  "i": 88,
+  "jp": "めまい中のモンスターに\r\n与えるダメージが増加",
+  "en": "More damage to dizzy\r\nmonsters"
+ },
+ {
+  "i": 89,
+  "jp": "リロード時の射程距離\r\nアップ効果が上がる",
+  "en": "Reload range bonus goes\r\nup"
+ },
+ {
+  "i": 90,
+  "jp": "毒を無効化する",
+  "en": "Negates Poison"
+ },
+ {
+  "i": 91,
+  "jp": "感電を無効化する",
+  "en": "Negates Thunderblight"
+ },
+ {
+  "i": 92,
+  "jp": "ずぶ濡れを無効化する",
+  "en": "Negates Waterblight"
+ },
+ {
+  "i": 93,
+  "jp": "対象が異性かどうかで\r\n与えるダメージが変化",
+  "en": "Damage changes with the\r\ntarget's gender"
+ },
+ {
+  "i": 94,
+  "jp": "効果中受けたダメージ\r\n分をあとで回復する",
+  "en": "Damage taken during the\r\neffect is healed later"
+ },
+ {
+  "i": 95,
+  "jp": "通常攻撃が突進攻撃に\r\nなる",
+  "en": "Normal attacks become\r\ncharges"
+ },
+ {
+  "i": 96,
+  "jp": "突進攻撃時は\r\n無敵状態になる",
+  "en": "Invincible while\r\ncharging"
+ },
+ {
+  "i": 97,
+  "jp": "溜め斬り攻撃時は\r\n無敵状態になる",
+  "en": "Invincible during\r\ncharged slashes"
+ },
+ {
+  "i": 98,
+  "jp": "効果中は体力1で\r\n踏み留まり続ける",
+  "en": "You hold on with 1\r\nhealth during the effect"
+ },
+ {
+  "i": 99,
+  "jp": "指定された回数分\r\n与えるダメージが増加",
+  "en": "More damage for a set\r\nnumber of times"
+ },
+ {
+  "i": 100,
+  "jp": "攻撃ヒット時に確率で\r\n追加ダメージが発生する",
+  "en": "Hits may deal extra\r\ndamage"
+ },
+ {
+  "i": 101,
+  "jp": "睡眠中のモンスターに\r\n与えるダメージが増加",
+  "en": "More damage to sleeping\r\nmonsters"
+ },
+ {
+  "i": 102,
+  "jp": "ほとんどの攻撃に\r\nひるまなくなる",
+  "en": "You don't flinch from\r\nmost attacks"
+ },
+ {
+  "i": 103,
+  "jp": "特定の攻撃が\r\n別の攻撃に変化する",
+  "en": "Certain attacks change\r\ninto other attacks"
+ },
+ {
+  "i": 104,
+  "jp": "特定の行動をすると\r\n効果エリアを生成できる",
+  "en": "Certain actions create\r\nan effect area"
+ },
+ {
+  "i": 105,
+  "jp": "特定の攻撃が\r\n貫通効果を持つ",
+  "en": "Certain attacks pierce"
+ },
+ {
+  "i": 106,
+  "jp": "特定の攻撃の\r\n攻撃範囲が変化する",
+  "en": "Certain attacks change\r\nrange"
+ },
+ {
+  "i": 107,
+  "jp": "リロード時に得られる\r\n全ての効果量が上がる",
+  "en": "All reload effects go up"
+ },
+ {
+  "i": 108,
+  "jp": "猟虫のスタミナが\r\n減らない状態になる",
+  "en": "Kinsect stamina doesn't\r\ndrop"
+ },
+ {
+  "i": 109,
+  "jp": "猟虫の攻撃威力が\r\n上がる",
+  "en": "Kinsect attack power\r\ngoes up"
+ },
+ {
+  "i": 110,
+  "jp": "猟虫が採取する\r\nエキス量が上がる",
+  "en": "Kinsect gathers more\r\nextract"
+ },
+ {
+  "i": 111,
+  "jp": "鬼人乱舞による\r\nゲージの消費がなくなる",
+  "en": "Demon Dance doesn't use\r\nthe gauge"
+ },
+ {
+  "i": 112,
+  "jp": "アクションスピードが\r\n下がる",
+  "en": "Action speed goes down"
+ },
+ {
+  "i": 113,
+  "jp": "前転回避時に爆弾\r\nを置くことができる",
+  "en": "You can place a bomb\r\nwhen rolling"
+ },
+ {
+  "i": 114,
+  "jp": "攻撃を自動回避し\r\n特定のアクションを行う",
+  "en": "Auto-evades attacks and\r\nperforms an action"
+ },
+ {
+  "i": 115,
+  "jp": "効果エリアが自身に\r\n追従した状態になる",
+  "en": "The effect area follows\r\nyou"
+ },
+ {
+  "i": 116,
+  "jp": "回避アクションを行うと\r\n与えるダメージが上がる",
+  "en": "Evading raises damage\r\ndealt"
+ },
+ {
+  "i": 117,
+  "jp": "回避アクションを行うと\r\n体力が回復する",
+  "en": "Evading recovers health"
+ },
+ {
+  "i": 118,
+  "jp": "めまいを誘発可能になる",
+  "en": "You can cause dizziness"
+ },
+ {
+  "i": 119,
+  "jp": "通常射撃のアクション\r\nスピードが上がる",
+  "en": "Normal shot action speed\r\ngoes up"
+ },
+ {
+  "i": 120,
+  "jp": "斬り払いと鬼人乱舞時に\r\n追撃が発生する",
+  "en": "Sweeping slashes and\r\nDemon Dance add\r\nfollow-ups"
+ },
+ {
+  "i": 121,
+  "jp": "強力な突進が出る",
+  "en": "A powerful charge comes\r\nout"
+ },
+ {
+  "i": 122,
+  "jp": "龍風圧が無効化される",
+  "en": "Dragon Wind Pressure is\r\nnegated"
+ },
+ {
+  "i": 123,
+  "jp": "突進時にダメージを\r\n与える衝撃波が発生する",
+  "en": "Charges release a\r\ndamaging shockwave"
+ },
+ {
+  "i": 124,
+  "jp": "特定の攻撃が\r\n拡散効果を持つ",
+  "en": "Certain attacks spread"
+ },
+ {
+  "i": 125,
+  "jp": "特殊な追撃効果が\r\n付与される",
+  "en": "Adds a special follow-up\r\neffect"
+ },
+ {
+  "i": 126,
+  "jp": "一部を除いたモンスター\r\nの攻撃を無効化する",
+  "en": "Negates most monster\r\nattacks"
+ },
+ {
+  "i": 127,
+  "jp": "攻撃を当てた時に一定\r\n確率で体力が回復する",
+  "en": "Hits may recover health"
+ },
+ {
+  "i": 128,
+  "jp": "ゲージが減らなくなる",
+  "en": "Gauge doesn't drop"
+ },
+ {
+  "i": 129,
+  "jp": "麻痺を無効化する",
+  "en": "Negates Paralysis"
+ },
+ {
+  "i": 130,
+  "jp": "狩力を消費して受ける\r\nダメージを減らす",
+  "en": "Uses Hunt Power to\r\nreduce damage taken"
+ },
+ {
+  "i": 131,
+  "jp": "連続でヒットさせると\r\n与えるダメージが上がる",
+  "en": "Consecutive hits raise\r\ndamage dealt"
+ },
+ {
+  "i": 132,
+  "jp": "特定の攻撃に回復効果が\r\n付与される",
+  "en": "Certain attacks gain a\r\nhealing effect"
+ },
+ {
+  "i": 133,
+  "jp": "武器のリーチが長くなる",
+  "en": "Weapon reach gets longer"
+ },
+ {
+  "i": 134,
+  "jp": "特定のアクションの\r\nスピードが上がる",
+  "en": "Certain actions get\r\nfaster"
+ },
+ {
+  "i": 135,
+  "jp": "ガード成功回数に応じて\r\n与えるダメージが上がる",
+  "en": "Damage rises with\r\nsuccessful guards"
+ },
+ {
+  "i": 136,
+  "jp": "最大溜め時は\r\n無敵状態になる",
+  "en": "Invincible at max charge"
+ },
+ {
+  "i": 137,
+  "jp": "溜め撃ち時は\r\n無敵状態になる",
+  "en": "Invincible during\r\ncharged shots"
+ },
+ {
+  "i": 138,
+  "jp": "小さな星を\r\n飛ばせるようになる",
+  "en": "Lets you shoot small\r\nstars"
+ },
+ {
+  "i": 139,
+  "jp": "武器による攻撃で\r\nめまいを誘発可能になる",
+  "en": "Weapon attacks can cause\r\ndizziness"
+ },
+ {
+  "i": 140,
+  "jp": "武技Ｐが回復し続ける",
+  "en": "Martial Art P keeps\r\nrecovering"
+ },
+ {
+  "i": 141,
+  "jp": "攻撃アクション\r\nスピードが上がる",
+  "en": "Attack action speed goes\r\nup"
+ },
+ {
+  "i": 142,
+  "jp": "モンスターにかなり\r\n狙われにくくなる",
+  "en": "Monsters target you much\r\nless"
+ },
+ {
+  "i": 143,
+  "jp": "百烈突き時は\r\n無敵状態になる",
+  "en": "Invincible during\r\nHundred Thrust"
+ },
+ {
+  "i": 144,
+  "jp": "リロードショット時は\r\n無敵状態になる",
+  "en": "Invincible during Reload\r\nShot"
+ },
+ {
+  "i": 145,
+  "jp": "バースト斬り時は\r\n無敵状態になる",
+  "en": "Invincible during Burst\r\nSlash"
+ },
+ {
+  "i": 146,
+  "jp": "一定回数ダメージを\r\n無効化する",
+  "en": "Negates damage a set\r\nnumber of times"
+ },
+ {
+  "i": 147,
+  "jp": "麻痺を無効化する",
+  "en": "Negates Paralysis"
+ },
+ {
+  "i": 148,
+  "jp": "弓の適正距離が\r\n延長される",
+  "en": "Bow ideal range is\r\nextended"
+ },
+ {
+  "i": 149,
+  "jp": "ゲージ蓄積量が上がる",
+  "en": "Gauge gain goes up"
+ },
+ {
+  "i": 150,
+  "jp": "ガードバリアの性能が\r\n向上する",
+  "en": "Guard Barrier\r\nperformance improves"
+ },
+ {
+  "i": 151,
+  "jp": "狩力を消費したぶん\r\n与えるダメージが上がる",
+  "en": "Damage rises by the Hunt\r\nPower used"
+ },
+ {
+  "i": 152,
+  "jp": "気刃乱れ斬りの\r\n威力が上がる",
+  "en": "Spirit Blade Flurry\r\npower goes up"
+ },
+ {
+  "i": 153,
+  "jp": "毒状態モンスターに\r\n与えるダメージが増加",
+  "en": "More damage to poisoned\r\nmonsters"
+ },
+ {
+  "i": 154,
+  "jp": "体力玉の効果が変化する",
+  "en": "Health orb effect\r\nchanges"
+ },
+ {
+  "i": 155,
+  "jp": "特定の行動をすると\r\n全体効果が付与される",
+  "en": "Certain actions grant a\r\ngroup effect"
+ },
+ {
+  "i": 156,
+  "jp": "特定のアクション時に\r\n特殊な追加効果を得る",
+  "en": "Certain actions grant a\r\nspecial extra effect"
+ },
+ {
+  "i": 157,
+  "jp": "攻撃力が上がる",
+  "en": "Attack goes up"
+ },
+ {
+  "i": 158,
+  "jp": "剣攻撃の威力が上がる",
+  "en": "Sword attack power goes\r\nup"
+ },
+ {
+  "i": 159,
+  "jp": "響音波の威力が上がる",
+  "en": "Echo Wave power goes up"
+ },
+ {
+  "i": 160,
+  "jp": "飛竜種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against Flying\r\nWyverns"
+ },
+ {
+  "i": 161,
+  "jp": "海竜種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against\r\nLeviathans"
+ },
+ {
+  "i": 162,
+  "jp": "魚竜種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against\r\nPiscine Wyverns"
+ },
+ {
+  "i": 163,
+  "jp": "牙竜種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against Fanged\r\nWyverns"
+ },
+ {
+  "i": 164,
+  "jp": "獣竜種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against Brute\r\nWyverns"
+ },
+ {
+  "i": 165,
+  "jp": "古龍種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against Elder\r\nDragons"
+ },
+ {
+  "i": 166,
+  "jp": "鳥竜種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against Bird\r\nWyverns"
+ },
+ {
+  "i": 167,
+  "jp": "牙獣種に対する\r\n攻撃力が上がる",
+  "en": "Attack up against Fanged\r\nBeasts"
+ },
+ {
+  "i": 168,
+  "jp": "天射の威力が上がる",
+  "en": "Heaven Shot power goes\r\nup"
+ },
+ {
+  "i": 169,
+  "jp": "飛剛射の威力が上がる",
+  "en": "Flying Power Shot power\r\ngoes up"
+ },
+ {
+  "i": 170,
+  "jp": "拡散剛射の威力が上がる",
+  "en": "Spread Power Shot power\r\ngoes up"
+ },
+ {
+  "i": 171,
+  "jp": "天射が減らない状態に\r\nなる",
+  "en": "Heaven Shots don't run\r\nout"
+ },
+ {
+  "i": 172,
+  "jp": "剛射が減らない状態に\r\nなる",
+  "en": "Power Shots don't run\r\nout"
+ },
+ {
+  "i": 173,
+  "jp": "攻撃ヒット時に\r\n追加ダメージが発生する",
+  "en": "Hits deal extra damage"
+ },
+ {
+  "i": 174,
+  "jp": "特定のアクションで\r\nゲージが減らなくなる",
+  "en": "Certain actions don't\r\nuse the gauge"
+ },
+ {
+  "i": 175,
+  "jp": "アクションスピードが\r\n徐々に上がっていく",
+  "en": "Action speed rises\r\ngradually"
+ },
+ {
+  "i": 176,
+  "jp": "スピニングバースト斬り\r\nの威力が上がる",
+  "en": "Spinning Burst Slash\r\npower goes up"
+ },
+ {
+  "i": 177,
+  "jp": "特定アクションの\r\nリーチが長くなる",
+  "en": "Certain actions get\r\nlonger reach"
+ },
+ {
+  "i": 178,
+  "jp": "突進威力が上がる",
+  "en": "Charge power goes up"
+ },
+ {
+  "i": 179,
+  "jp": "特定アクション時の\r\n受けるダメージが減る",
+  "en": "Less damage taken during\r\ncertain actions"
+ },
+ {
+  "i": 180,
+  "jp": "特定アクション時に\r\nほとんどひるまなくなる",
+  "en": "Barely flinch during\r\ncertain actions"
+ },
+ {
+  "i": 181,
+  "jp": "フルアクセル状態での\r\n攻撃の威力が上がる",
+  "en": "Full Accel attack power\r\ngoes up"
+ },
+ {
+  "i": 182,
+  "jp": "雪だるまを無効化する",
+  "en": "Negates Snowman"
+ },
+ {
+  "i": 183,
+  "jp": "泥まみれを無効化する",
+  "en": "Negates Mud"
+ },
+ {
+  "i": 184,
+  "jp": "裂傷を無効化する",
+  "en": "Negates Bleeding"
+ },
+ {
+  "i": 185,
+  "jp": "被ダメージアップを\r\n無効化する",
+  "en": "Negates Damage Taken Up"
+ },
+ {
+  "i": 186,
+  "jp": "爆破やられを無効化する",
+  "en": "Negates Blastblight"
+ },
+ {
+  "i": 187,
+  "jp": "通常コンボの砲撃の\r\n威力が上がる",
+  "en": "Normal combo shelling\r\npower goes up"
+ },
+ {
+  "i": 188,
+  "jp": "飛竜種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Flying\r\nWyverns"
+ },
+ {
+  "i": 189,
+  "jp": "海竜種から受ける\r\nダメージを減らす",
+  "en": "Less damage from\r\nLeviathans"
+ },
+ {
+  "i": 190,
+  "jp": "魚竜種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Piscine\r\nWyverns"
+ },
+ {
+  "i": 191,
+  "jp": "牙竜種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Fanged\r\nWyverns"
+ },
+ {
+  "i": 192,
+  "jp": "獣竜種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Brute\r\nWyverns"
+ },
+ {
+  "i": 193,
+  "jp": "古龍種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Elder\r\nDragons"
+ },
+ {
+  "i": 194,
+  "jp": "鳥竜種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Bird\r\nWyverns"
+ },
+ {
+  "i": 195,
+  "jp": "牙獣種から受ける\r\nダメージを減らす",
+  "en": "Less damage from Fanged\r\nBeasts"
+ },
+ {
+  "i": 196,
+  "jp": "部位破壊しやすくなる",
+  "en": "Parts break more easily"
+ },
+ {
+  "i": 197,
+  "jp": "ジャンプ螺旋撃の\r\n威力が上がる",
+  "en": "Jump Spiral power goes\r\nup"
+ },
+ {
+  "i": 198,
+  "jp": "いなし斬りのいなし成功\r\nで心眼ゲージが貯まる",
+  "en": "Successful parries fill\r\nthe Mind's Eye gauge"
+ },
+ {
+  "i": 199,
+  "jp": "ジャンプ中は\r\n無敵状態になる",
+  "en": "Invincible while jumping"
+ },
+ {
+  "i": 200,
+  "jp": "火傷を無効化する",
+  "en": "Negates Fireblight"
+ },
+ {
+  "i": 201,
+  "jp": "睡眠を無効化する",
+  "en": "Negates Sleep"
+ },
+ {
+  "i": 202,
+  "jp": "気絶を無効化する",
+  "en": "Negates Stun"
+ },
+ {
+  "i": 203,
+  "jp": "感染を無効化する",
+  "en": "Negates Frenzy"
+ },
+ {
+  "i": 204,
+  "jp": "泡を無効化する",
+  "en": "Negates Bubble"
+ },
+ {
+  "i": 205,
+  "jp": "余分に溜めることで\r\n特殊な効果が発動する",
+  "en": "Overcharging triggers a\r\nspecial effect"
+ },
+ {
+  "i": 206,
+  "jp": "溜め中の移動速度が\r\n上がる",
+  "en": "Faster movement while\r\ncharging"
+ },
+ {
+  "i": 207,
+  "jp": "乱舞中は\r\n無敵状態になる",
+  "en": "Invincible during Demon\r\nDance"
+ },
+ {
+  "i": 208,
+  "jp": "属性解放突き中は\r\n無敵状態になる",
+  "en": "Invincible during\r\nElement Discharge"
+ },
+ {
+  "i": 209,
+  "jp": "フルバースト中は\r\n無敵状態になる",
+  "en": "Invincible during Full\r\nBurst"
+ },
+ {
+  "i": 210,
+  "jp": "シールドメテオ中は\r\n無敵状態になる",
+  "en": "Invincible during Shield\r\nMeteor"
+ },
+ {
+  "i": 211,
+  "jp": "カウンター突き中は\r\n無敵状態になる",
+  "en": "Invincible during\r\nCounter Thrust"
+ },
+ {
+  "i": 212,
+  "jp": "真鬼人回避の\r\n威力が上がる",
+  "en": "True Demon Evade power\r\ngoes up"
+ },
+ {
+  "i": 213,
+  "jp": "いなしの構える速度が\r\n上がる",
+  "en": "Parry stance comes out\r\nfaster"
+ },
+ {
+  "i": 214,
+  "jp": "特定回数分だけ\r\n溜め時間が短くなる",
+  "en": "Shorter charge time for\r\na set number of times"
+ },
+ {
+  "i": 215,
+  "jp": "溜め二連斬りの\r\n威力が上がる",
+  "en": "Charged Double Slash\r\npower goes up"
+ }
+]
