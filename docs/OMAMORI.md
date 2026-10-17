@@ -52,6 +52,24 @@ zenny) and marks it unlocked.
    never runs out. (`mLimitType` itself lives in the client table and is left
    untouched.)
 
+## Enabling the charm in a quest (`enable_talisman`)
+
+Unlocking is not enough: each **quest-start** response carries
+`instance_data.enable_talisman` (and `enable_talisman_partner`), and the client
+only applies the equipped charm's skill and **skill orbs** when it is 1. Every
+quest controller used to hardcode both to `0`, so a released charm showed its
+orbs in the menus but was ignored on the hunt — a weapon art needing 6 fire orbs
+stayed locked even with 4 from armour + 12 from the charm, while 6 from armour
+alone worked.
+
+`src/services/talismanService.ts` computes the flag (`talismanAbilitato`): 1 when
+the selected equip set's talisman is a released (`is_awake=1`) charm, and — as a
+fallback, because the client can equip a released charm locally before the
+equip-set save round-trips — 1 when the player owns any released charm. The
+client still applies only the charm it actually has equipped, so the fallback
+cannot over-grant. All quest starts (eternal, island, event ×3, forest ×2,
+training) now use it.
+
 ## Getting more (quest drops)
 
 Charms are ordinary **equipment rewards**: the quest reward builder already

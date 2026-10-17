@@ -10,6 +10,7 @@ import User from '../../../model/user.js';
 import { blocchiPerAvvio } from '../../../services/blocchiQuest.js';
 import { applicaRaccolta, salvaRaccolta } from '../../../services/raccoltaQuest.js';
 import { salvaOtomoAvviati } from '../../../services/otomoQuest.js';
+import { talismanAbilitatoDaSessione } from '../../../services/talismanService.js';
 import type { EventStartInput } from './quest.schema.js';
 
 interface BlockListItem {
@@ -54,6 +55,11 @@ export const eventTicketFree = async (req: Request, res: Response) => {
 export const eventNormalStart = async (req: Request, res: Response) => {
   try {
     const { mst_quest_id, power_up, otomo } = req.body as EventStartInput & { otomo?: unknown };
+    // Charms are gated per quest: without this the equipped charm's skill orbs
+    // are ignored and weapon arts stay locked (services/talismanService).
+    const enableTalisman = await talismanAbilitatoDaSessione(
+      (req.body as { session_id?: string }).session_id,
+    );
 
 
     const data = {
@@ -66,7 +72,7 @@ export const eventNormalStart = async (req: Request, res: Response) => {
         ],
         enable_limited_skill_id_list: [],
         enable_partner_limited_skill_id_list: [],
-        enable_talisman: 0,
+        enable_talisman: enableTalisman,
         enable_talisman_partner: 0,
         enemy_point_list: [
           {
@@ -132,6 +138,10 @@ export const eventTicketStart = async (req: Request, res: Response) => {
     const { mst_quest_id, power_up, otomo } = req.body as EventStartInput & { otomo?: unknown };
     const startedQuest = mst_quest_id;
     const quest = await QuestSheet.findOne({ mQuestID: String(startedQuest) });
+    // Charms are gated per quest (services/talismanService).
+    const enableTalisman = await talismanAbilitatoDaSessione(
+      (req.body as { session_id?: string }).session_id,
+    );
     const data = {
       instance_data: {
         block_list: [] as BlockListItem[],
@@ -142,7 +152,7 @@ export const eventTicketStart = async (req: Request, res: Response) => {
         ],
         enable_limited_skill_id_list: [],
         enable_partner_limited_skill_id_list: [],
-        enable_talisman: 0,
+        enable_talisman: enableTalisman,
         enable_talisman_partner: 0,
         enemy_point_list: [
           {
@@ -205,6 +215,10 @@ export const eventScoreStart = async (req: Request, res: Response) => {
     const { mst_quest_id, power_up, otomo } = req.body as EventStartInput & { otomo?: unknown };
     const startedQuest = mst_quest_id;
     const quest = await QuestSheet.findOne({ mQuestID: String(startedQuest) });
+    // Charms are gated per quest (services/talismanService).
+    const enableTalisman = await talismanAbilitatoDaSessione(
+      (req.body as { session_id?: string }).session_id,
+    );
     const data = {
       instance_data: {
         block_list: [] as BlockListItem[],
@@ -215,7 +229,7 @@ export const eventScoreStart = async (req: Request, res: Response) => {
         ],
         enable_limited_skill_id_list: [],
         enable_partner_limited_skill_id_list: [],
-        enable_talisman: 0,
+        enable_talisman: enableTalisman,
         enable_talisman_partner: 0,
         enemy_point_list: [
           {

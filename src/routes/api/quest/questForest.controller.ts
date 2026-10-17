@@ -1,12 +1,16 @@
 import { Request, Response } from 'express';
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
+import { talismanAbilitatoDaSessione } from '../../../services/talismanService.js';
 
-export const forestRestart = (req: Request, res: Response) => {
+export const forestRestart = async (req: Request, res: Response) => {
+  const enableTalisman = await talismanAbilitatoDaSessione(
+    (req.body as { session_id?: string }).session_id,
+  );
   const data = {
     boost_type: 0,
     enable_limited_skill_id_list: [],
     enable_partner_limited_skill_id_list: [],
-    enable_talisman: 0,
+    enable_talisman: enableTalisman,
     enable_talisman_partner: 0,
     floor_map_id: 0,
     forest_block_list: [
@@ -116,12 +120,15 @@ export const questForestProgress = (req: Request, res: Response) => {
   encryptAndSend(data, res, req);
 };
 
-export const questForestRestart = (req: Request, res: Response) => {
+export const questForestRestart = async (req: Request, res: Response) => {
+  const enableTalisman = await talismanAbilitatoDaSessione(
+    (req.body as { session_id?: string }).session_id,
+  );
   const data = {
     boost_type: 0,
     enable_limited_skill_id_list: [], //s64
     enable_partner_limited_skill_id_list: [],
-    enable_talisman: 0,
+    enable_talisman: enableTalisman,
     enable_talisman_partner: 0,
     floor_map_id: 0,
     forest_block_list: [

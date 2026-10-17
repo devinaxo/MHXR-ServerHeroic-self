@@ -21,6 +21,7 @@ import { tesoroDelBlocco } from '../../../services/tesoriIsole.js';
 import { mappaProgressiva, missioniCompletate, isolaDiQuest } from '../../../services/progressioneStoria.js';
 import { aggiungiKaridama, saldoKaridama, spendiKaridama, KARIDAMA_A_MISSIONE, KARIDAMA_PRINCIPALE } from '../../../services/karidamaService.js';
 import { CRESCITA_PARTNER } from '../../../services/partnerGrow.js';
+import { talismanAbilitato } from '../../../services/talismanService.js';
 import {
   PUNTI_PER_QUEST,
   PUNTI_PER_RISCATTO,
@@ -386,7 +387,7 @@ export const islandStart = async (req: Request, res: Response) => {
         ],
         enable_limited_skill_id_list: [],
         enable_partner_limited_skill_id_list: [],
-        enable_talisman: 0,
+        enable_talisman: talismanAbilitato(doc),
         enable_talisman_partner: 0,
         enemy_point_list: [
           // {

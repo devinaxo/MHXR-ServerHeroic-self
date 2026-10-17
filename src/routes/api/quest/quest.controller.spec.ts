@@ -312,6 +312,24 @@ describe('quest.controller', () => {
       expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
     });
 
+    it('enables the charm (enable_talisman) when a released charm is owned', async () => {
+      // Rookie fire jewel: released (is_awake=1) but not yet saved into a set.
+      vi.mocked(User.findOne).mockResolvedValue({
+        cleared_quests: [],
+        equipset: { selected_equip_set_index: 1, equip_sets: [{ index: 1, talisman: { equipment_id: 'NO_EQUIP' } }] },
+        box: { equipments: [{ equipment_id: 'OD_OMA1387', mst_equipment_id: 3529887655, is_awake: 1 }] },
+      } as never);
+      vi.mocked(QuestSheet.findOne).mockResolvedValue({ mBlocks: [10] } as never);
+      vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+      const { req, res } = mockReqRes({ mst_quest_id: 100, session_id: 'sess-1' });
+      await islandStart(req, res);
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({ instance_data: expect.objectContaining({ enable_talisman: 1 }) }),
+        res,
+        req,
+      );
+    });
+
     it('returns QUEST_INFO_FAILED when quest has no blocks', async () => {
       vi.mocked(User.findOne).mockResolvedValue({ cleared_quests: [] } as never);
       vi.mocked(QuestSheet.findOne).mockResolvedValue(null);

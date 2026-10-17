@@ -5,6 +5,7 @@ import { createLogger } from '../../../middleware/logger.js';
 import { calcMstId } from '../../../services/defineService.js';
 import User from '../../../model/user.js';
 import Present from '../../../model/presents.js';
+import { talismanAbilitatoDaSessione } from '../../../services/talismanService.js';
 import type { TrainingEndInput, TrainingStartInput, TrainingListInput } from './questTraining.schema.js';
 const log = createLogger('questTraining');
 
@@ -130,8 +131,11 @@ export const trainingEnd = async (req: Request, res: Response) => {
   }
 };
 
-export const trainingStart = (req: Request, res: Response) => {
+export const trainingStart = async (req: Request, res: Response) => {
   const { power_up } = req.body as TrainingStartInput & { power_up?: number };
+  const enableTalisman = await talismanAbilitatoDaSessione(
+    (req.body as { session_id?: string }).session_id,
+  );
   const data = {
     instance_data: {
       block_list: [
@@ -175,7 +179,7 @@ export const trainingStart = (req: Request, res: Response) => {
       ],
       enable_limited_skill_id_list: [],
       enable_partner_limited_skill_id_list: [],
-      enable_talisman: 0,
+      enable_talisman: enableTalisman,
       enable_talisman_partner: 0,
       enemy_point_list: [
         {

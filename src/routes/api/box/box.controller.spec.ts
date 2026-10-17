@@ -16,7 +16,7 @@ vi.mock('../../../middleware/logger', () => ({
 import User from '../../../model/user.js';
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import { ERROR_CODE, ERROR_CATEGORY } from '../../../constants/error.codes.js';
-import { get, otomoGet, partnerGet, equipLevelup, storageInfo, sale, favoriteSet, leveupAuto, materialSell, equipCapacityInfo, equipCapacityExpand, holdStampSet, partnerLevelup, growthitemGet, otomoSkillRemove } from './box.controller.js';
+import { get, otomoGet, partnerGet, equipLevelup, equipWSkillup, storageInfo, sale, favoriteSet, leveupAuto, materialSell, equipCapacityInfo, equipCapacityExpand, holdStampSet, partnerLevelup, growthitemGet, otomoSkillRemove } from './box.controller.js';
 import prezzi from '../../../json/prezzi-vendita.json' with { type: 'json' };
 
 function mockReqRes(body: Record<string, unknown> = {}) {
@@ -289,6 +289,156 @@ describe('box.controller', () => {
       await equipLevelup(req, res);
 
       expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, 2001, 0, 'equipment not found');
+    });
+  });
+
+  describe('equipWSkillup', () => {
+    /*
+     * Zork the Rush Zero I (ゾークザラッシュ零Ⅰ), rarity 7, mKariwazaID
+     * 2606267074. Arts Lv. (`slv`) costs, from
+     * src/json/arts-costs.json / bugiStrengthenNeedMaterialTable:
+     *   5x Twilight Ritual: Zero [Cold Severity] (18321636)
+     *   20x Monster Claw (1911177763)
+     *   20x Monster Marrow (116224693)
+     * plus 7,000 zeny (bugiStrengthenNeedZenyTable, rarity 7).
+     */
+    const MST_ZORK = 1024651966;
+    const MATS = [
+      { mst_material_id: 18321636, amount: 5 },
+      { mst_material_id: 1911177763, amount: 20 },
+      { mst_material_id: 116224693, amount: 20 },
+    ];
+    const ZENY = 7000;
+
+    function utenteConZork(slv: number, zeny = 100_000, mul = 3) {
+      const box = {
+        zeny,
+        equipments: [{ equipment_id: 'EQP_Z', slv, mst_equipment_id: MST_ZORK }],
+        materials: MATS.map((m) => ({ mst_material_id: m.mst_material_id, amount: m.amount * mul })),
+      };
+      vi.mocked(User.findOne).mockResolvedValue({ id: 'user-1', box } as never);
+      return box;
+    }
+
+    type BoxSalvato = {
+      zeny: number;
+      equipments: { slv: number }[];
+      materials: { mst_material_id: number; amount: number }[];
+    };
+    function boxSalvato(): BoxSalvato {
+      const [, update] = vi.mocked(User.findByIdAndUpdate).mock.calls[0]!;
+      return (update as { box: BoxSalvato }).box;
+    }
+
+    it('raises slv by one and spends one set of materials + the zeny base', async () => {
+      utenteConZork(0);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      const salvato = boxSalvato();
+      expect(salvato.equipments[0]!.slv).toBe(1);
+      expect(salvato.zeny).toBe(100_000 - ZENY);
+      for (const need of MATS) {
+        const row = salvato.materials.find((m) => m.mst_material_id === need.mst_material_id);
+        expect(row).toEqual({ mst_material_id: need.mst_material_id, amount: need.amount * 2 });
+      }
+    });
+
+    it('charges per step when several arts levels are gained at once', async () => {
+      utenteConZork(0);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z', num: 3 });
+
+      await equipWSkillup(req, res);
+
+      const salvato = boxSalvato();
+      expect(salvato.equipments[0]!.slv).toBe(3);
+      expect(salvato.zeny).toBe(100_000 - ZENY * 3);
+      // Three sets in the box, three spent -> nothing left of the scroll.
+      const scroll = salvato.materials.find((m) => m.mst_material_id === 18321636);
+      expect(scroll).toBeUndefined(); // 5 * 3 - 5 * 3 = 0, dropped
+    });
+
+    it('returns zeny, the updated piece and the materials the client must subtract', async () => {
+      utenteConZork(4);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        {
+          zeny: 100_000 - ZENY,
+          base_equipment: expect.objectContaining({ slv: 5, equipment_id: 'EQP_Z' }),
+          resource_materials: MATS,
+        },
+        res,
+        req,
+      );
+    });
+
+    it('refuses and changes nothing when the player cannot pay', async () => {
+      utenteConZork(0, 100);
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        { zeny: 100 }, res, req, ERROR_CODE.ZENY_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String),
+      );
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+    });
+
+    it('refuses and changes nothing when a material is missing', async () => {
+      const box = utenteConZork(0);
+      box.materials = box.materials.map((m) =>
+        m.mst_material_id === 18321636 ? { mst_material_id: m.mst_material_id, amount: 2 } : m,
+      );
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({ materials: [{ mst_material_id: 18321636, amount: 2 }] }),
+        res, req, ERROR_CODE.MATERIALS_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String),
+      );
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+    });
+
+    it('returns NOT_AUTHENTICATED when the session is unknown', async () => {
+      vi.mocked(User.findOne).mockResolvedValue(null);
+      const { req, res } = mockReqRes({ session_id: 'bad', base_equipment_id: 'EQP_Z', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    });
+
+    it('returns error when equipment not found', async () => {
+      vi.mocked(User.findOne).mockResolvedValue({ id: 'u1', box: { equipments: [] } } as never);
+      const { req, res } = mockReqRes({ session_id: 's', base_equipment_id: 'MISSING', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, 2001, 0, 'equipment not found');
+    });
+
+    it('refuses a piece with no arts cost data instead of upgrading it free', async () => {
+      vi.mocked(User.findOne).mockResolvedValue({
+        id: 'u1',
+        box: { zeny: 999999, equipments: [{ equipment_id: 'EQP_X', slv: 0, mst_equipment_id: 123 }], materials: [] },
+      } as never);
+      const { req, res } = mockReqRes({ session_id: 's', base_equipment_id: 'EQP_X', num: 1 });
+
+      await equipWSkillup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String));
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
     });
   });
 

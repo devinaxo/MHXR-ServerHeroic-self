@@ -17,6 +17,7 @@ import { applicaRaccolta, salvaRaccolta } from '../../../services/raccoltaQuest.
 import { salvaOtomoAvviati } from '../../../services/otomoQuest.js';
 import { spendiKaridama, saldoKaridama } from '../../../services/karidamaService.js';
 import { tempoPerLista } from '../../../services/questTime.js';
+import { talismanAbilitatoDaSessione } from '../../../services/talismanService.js';
 import type { EternalStartInput } from './quest.schema.js';
 
 interface BlockListItem {
@@ -54,6 +55,11 @@ export const eternalStart = async (req: Request, res: Response) => {
   try {
     const { mst_quest_id, power_up, otomo } = req.body as EternalStartInput & { otomo?: unknown };
     const startedQuest = mst_quest_id;
+    // Charms are gated per quest: without this the equipped charm's skill and
+    // skill orbs are ignored and weapon arts stay locked (services/talismanService).
+    const enableTalisman = await talismanAbilitatoDaSessione(
+      (req.body as { session_id?: string }).session_id,
+    );
 
     const quest = await QuestSheet.findOne({ mQuestID: String(startedQuest) });
     const data = {
@@ -64,7 +70,7 @@ export const eternalStart = async (req: Request, res: Response) => {
 
         enable_limited_skill_id_list: [],
         enable_partner_limited_skill_id_list: [],
-        enable_talisman: 0,
+        enable_talisman: enableTalisman,
         enable_talisman_partner: 0,
         enemy_point_list: [],
         instance_id: 0,

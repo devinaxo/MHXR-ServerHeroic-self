@@ -6,13 +6,14 @@ import User from '../../../model/user.js';
 import { calcMstId as _calcMstId } from '../../../services/defineService.js';
 import prezziVendita from '../../../json/prezzi-vendita.json' with { type: 'json' };
 import COSTI from '../../../json/upgrade-costs.json' with { type: 'json' };
+import ARTS from '../../../json/arts-costs.json' with { type: 'json' };
 import omamoriData from '../../../json/omamori.json' with { type: 'json' };
 import { KARIDAMA_IDS, spendiKaridama } from '../../../services/karidamaService.js';
 import { saldiPayments, paymentsDaSalvare } from '../../../services/paymentService.js';
 import { expCrescitaPartner, crescitaPerPartner, applicaExpPartner, CRESCITA_PARTNER } from '../../../services/partnerGrow.js';
 import { dimenticaSubSkillOtomo, OTOMO_NO_SKILL } from '../../../services/otomoQuest.js';
 import { sistemaMercenari } from '../../../services/setMercenari.js';
-import type { BoxGetInput, StorageGetInput, EquipLevelupInput, EquipAwakeInput, PotentialupAutoSetInput, SaleInput, FavoriteSetInput, MonumentLevelupInput } from './box.schema.js';
+import type { BoxGetInput, StorageGetInput, EquipLevelupInput, EquipAwakeInput, EquipWSkillupInput, PotentialupAutoSetInput, SaleInput, FavoriteSetInput, MonumentLevelupInput } from './box.schema.js';
 import type { SessionOnlyInput } from '../../../schemas/common.schema.js';
 const log = createLogger('box');
 
@@ -27,6 +28,16 @@ interface TabellaCosti {
   /** strengthenNeedMaterialId -> per-level set index (index lv = step lv -> lv+1). */
   strengthRef: Record<string, number[]>;
   equipment: Record<string, { name: string; rarity: number; levelMax: number; strengthenNeedMaterialId: number }>;
+}
+
+/**
+ * Arts Lv. (`slv`) upgrade cost table (src/json/arts-costs.json). The JSON
+ * import is typed from the file itself; see arts-costs.d.ts.
+ */
+interface TabellaArti {
+  zenyByRarity: Record<string, number>;
+  byKariwaza: Record<string, { materials: { mst_material_id: number; amount: number }[]; commonUpNum: number }>;
+  kariwazaByEquipment: Record<string, number>;
 }
 
 /** A material row in the box. */
@@ -787,6 +798,155 @@ export const equipLevelup = async (req: Request, res: Response) => {
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment level up failed');
   }
 };
+
+/*
+ * ARTS LV. UPGRADE (武技強化 / "weapon skill up", box/equipment/wskillup).
+ *
+ * Client class cAPIBoxEquipmentWSkillup. Request (Request::createProperty in
+ * libMHS.so): { base_equipment_id, is_use_reinforcement, num }. Response
+ * (Response::createProperty): { zeny, base_equipment, resource_materials },
+ * where resource_materials[{ amount, mst_material_id }] are the materials the
+ * client has to *subtract* from its workspace (sServer::
+ * setupBoxEquipmentWSkillupResponse does `count -= amount`).
+ *
+ * The weapon's Arts level is the equipment's `slv`. The price comes from the
+ * game's own master data, extracted into src/json/arts-costs.json by
+ * tools-js/build-arts-costs.cjs:
+ *
+ *   zeny      = zenyByRarity[weapon rarity] (flat, per composite)
+ *   materials = bugiStrengthenNeedMaterialTable row for the weapon's
+ *               mKariwazaID (weapon series -> mKariwazaID -> mMaterialRefDataList
+ *               -> mMaterialDataList), x1 per step
+ *
+ * For "Zork the Rush Zero I" (mKariwazaID 2606267074) that row is exactly
+ * 5x Twilight Ritual: Zero [Cold Severity] + 20x Monster Claw + 20x Monster
+ * Marrow, which is what the client displays.
+ *
+ * NOT independently verified: how the cost scales when more than one arts level
+ * is gained at once (the request's `num`). The set is constant across levels, so
+ * this charges `num` sets and `num` zeny bases. The single-step case is the one
+ * confirmed against the client display. See docs/ARTS-UPGRADE.md.
+ */
+export const equipWSkillup = async (req: Request, res: Response) => {
+  try {
+    const { session_id, base_equipment_id, num } = req.body as EquipWSkillupInput;
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED); // Not authenticated
+    }
+
+    const equipmentIndex = (doc.box.equipments ?? []).findIndex((eq) => eq.equipment_id === base_equipment_id);
+    if (equipmentIndex === -1) {
+      return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
+    }
+    const equipment = doc.box.equipments![equipmentIndex]!;
+
+    const arti = ARTS as unknown as TabellaArti;
+    const kariwaza = arti.kariwazaByEquipment[String(equipment.mst_equipment_id)];
+    if (!kariwaza) {
+      log.warn('arti | mst_equipment_id %s assente dai costi arti', equipment.mst_equipment_id);
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No arts cost data for this equipment');
+    }
+    const costo = arti.byKariwaza[String(kariwaza)];
+    if (!costo) {
+      log.warn('arti | kariwaza %d assente dai costi arti', kariwaza);
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No arts cost data for this equipment');
+    }
+
+    const steps = Math.min(100, Math.max(1, num || 1));
+    const currentSlv = Number(equipment.slv ?? 0);
+
+    // One material set per step.
+    const fabbisogno = new Map<number, number>();
+    for (let s = 0; s < steps; s++) {
+      for (const m of costo.materials) {
+        const id = Number(m.mst_material_id);
+        fabbisogno.set(id, (fabbisogno.get(id) ?? 0) + Number(m.amount ?? 0));
+      }
+    }
+    const richiesti = [...fabbisogno.entries()].map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    // Flat rarity base per step. Rarity comes from the same master table as
+    // box/equipment/levelup (upgrade-costs.json).
+    const mst = (COSTI as unknown as TabellaCosti).equipment[String(equipment.mst_equipment_id)];
+    const baseZeny = Number(arti.zenyByRarity[String(mst?.rarity ?? 0)] ?? 0);
+    const zeny = baseZeny * steps;
+
+    const zenyPosseduti = Number(doc.box.zeny ?? 0);
+    if (zeny > zenyPosseduti) {
+      return encryptAndSend(
+        { zeny: zenyPosseduti },
+        res,
+        req,
+        ERROR_CODE.ZENY_NOT_ENOUGH,
+        ERROR_CATEGORY.ERROR_DIALOG,
+        `Zenny insufficient: need ${zeny}, have ${zenyPosseduti}`,
+      );
+    }
+
+    // Checked before anything is deducted, so a refusal leaves the box untouched.
+    for (const need of richiesti) {
+      const posseduti = (doc.box.materials ?? [])
+        .filter((m: VoceMateriale) => Number(m.mst_material_id) === need.mst_material_id)
+        .reduce((tot: number, m: VoceMateriale) => tot + Number(m.amount ?? 0), 0);
+      if (posseduti < need.amount) {
+        return encryptAndSend(
+          { materials: [{ mst_material_id: need.mst_material_id, amount: posseduti }] },
+          res,
+          req,
+          ERROR_CODE.MATERIALS_NOT_ENOUGH,
+          ERROR_CATEGORY.ERROR_DIALOG,
+          `Material ${need.mst_material_id}: need ${need.amount}, have ${posseduti}`,
+        );
+      }
+    }
+
+    // Spend, then raise the arts level.
+    doc.box.zeny = zenyPosseduti - zeny;
+
+    const perId = new Map<number, number>();
+    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+      const id = Number(m.mst_material_id);
+      perId.set(id, (perId.get(id) ?? 0) + Number(m.amount ?? 0));
+    }
+    for (const need of richiesti) {
+      perId.set(need.mst_material_id, (perId.get(need.mst_material_id) ?? 0) - need.amount);
+    }
+    doc.box.materials = [...perId.entries()]
+      .filter(([, amount]) => amount > 0)
+      .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    const newSlv = currentSlv + steps;
+    equipment.slv = newSlv;
+
+    await User.findByIdAndUpdate(doc.id, { box: doc.box });
+
+    log.info(
+      'arti | %s: %s slv%d -> slv%d, zenny %d (saldo %d), materiali %d',
+      doc.character_name ?? '?',
+      String(equipment.equipment_id),
+      currentSlv,
+      newSlv,
+      zeny,
+      Number(doc.box.zeny ?? 0),
+      richiesti.length,
+    );
+
+    // resource_materials are the materials the client must subtract, so they
+    // carry the amount actually spent (see the header comment).
+    const data = {
+      zeny: Number(doc.box.zeny ?? 0),
+      base_equipment: equipment,
+      resource_materials: richiesti.map((m) => ({ mst_material_id: m.mst_material_id, amount: m.amount })),
+    };
+
+    encryptAndSend(data, res, req);
+  } catch (error) {
+    log.error('Error in equipWSkillup:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment arts level up failed');
+  }
+};
+
 /*
  * EQUIPMENT AWAKENING / CHARM UNLOCK (box/equipment/awake).
  *

@@ -4,6 +4,7 @@ import {
   StorageGetSchema,
   EquipLevelupSchema,
   EquipAwakeSchema,
+  EquipWSkillupSchema,
   PotentialupAutoSetSchema,
   SaleSchema,
   FavoriteSetSchema,
@@ -25,6 +26,18 @@ describe('box.schema', () => {
 
   it('EquipAwakeSchema validates', () => {
     expect(EquipAwakeSchema.safeParse({ session_id: 'sid', base_equipment_id: 'eq1' }).success).toBe(true);
+  });
+
+  it('EquipWSkillupSchema validates', () => {
+    const ok = EquipWSkillupSchema.safeParse({
+      session_id: 'sid',
+      base_equipment_id: 'eq1',
+      is_use_reinforcement: 0,
+      num: 1,
+    });
+    expect(ok.success).toBe(true);
+    // base_equipment_id is required, unlike num (defaults to 1 in the controller).
+    expect(EquipWSkillupSchema.safeParse({ session_id: 'sid' }).success).toBe(false);
   });
 
   it('PotentialupAutoSetSchema validates', () => {

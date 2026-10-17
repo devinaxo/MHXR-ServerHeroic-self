@@ -40,6 +40,23 @@ export const EquipAwakeSchema = z
 
 export type EquipAwakeInput = z.infer<typeof EquipAwakeSchema>;
 
+/**
+ * Arts Lv. upgrade (武技強化, client cAPIBoxEquipmentWSkillup).
+ * Request fields confirmed in libMHS.so (Request::createProperty):
+ *   base_equipment_id, is_use_reinforcement, num
+ */
+export const EquipWSkillupSchema = z
+  .object({
+    session_id: sessionIdSchema,
+    base_equipment_id: z.string(),
+    is_use_reinforcement: z.number().int().optional(),
+    num: z.number().int().optional(),
+    ...commonRequestFields,
+  })
+  .loose();
+
+export type EquipWSkillupInput = z.infer<typeof EquipWSkillupSchema>;
+
 export const PotentialupAutoSetSchema = z
   .object({
     eqp_obj_infos: z.array(z.unknown()),

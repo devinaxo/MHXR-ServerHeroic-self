@@ -31,10 +31,10 @@ describe('questTraining.controller', () => {
   });
 
   describe('trainingStart', () => {
-    it('returns instance data with quest id', () => {
+    it('returns instance data with quest id', async () => {
       const questId = calcMstId('TRAINING00001');
       const { req, res } = mockReqRes({ mst_quest_id: questId });
-      trainingStart(req, res);
+      await trainingStart(req, res);
       expect(encryptAndSend).toHaveBeenCalledWith(
         expect.objectContaining({
           instance_data: expect.objectContaining({
