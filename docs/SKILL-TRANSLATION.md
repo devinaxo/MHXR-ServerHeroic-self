@@ -23,7 +23,7 @@ All JP source strings below are now translated and published as **361**
 
 | Table | String(s) translated | Dict |
 |---|---|---|
-| `kariwazaParam` (martial arts) | **486** names | `/tmp/opencode/skillfix/kariwaza_jp_en.json` |
+| `kariwazaParam` (martial arts) | **486** names | `lavoro-traduzione/skill/kariwaza_jp_en.json` |
 | `equipSkillParam` (skill labels) | **1,455** (`mListText` + `mFilterFindName`) | `equipSkill_en.json` |
 | `playerBulletParam` (bullet types) | **20** | `playerBullet_en.json` |
 | `pipeMelodyParam` (melodies) | **122** names + 14 status + 76 explanations + 8 status descriptions | `melody_en.json` |
@@ -70,7 +70,7 @@ Undying Path of Supremacy [Great Talent]         -> Undying Supremacy [Talent]  
 Undying Path of Supremacy: Zero [Great Talent]   -> Undying Supremacy: Zero [Talent] (31)
 ```
 
-- dictionary: `/tmp/opencode/skillfix/kariwaza_en_short.json` (865 `old -> new`)
+- dictionary: `lavoro-traduzione/skill/kariwaza_en_short.json` (865 `old -> new`)
 - applied with `traduci-rsdnt-arc.cjs` (865/865 keys used, 41/41 tables clean)
 - published as **360** (`crcjam cd90daab`, PASS)
 

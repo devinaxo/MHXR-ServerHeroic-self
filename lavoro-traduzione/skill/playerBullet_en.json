@@ -1,0 +1,22 @@
+{
+ "通常弾": "Normal Ammo",
+ "貫通弾": "Pierce Ammo",
+ "散弾": "Spread Ammo",
+ "徹甲榴弾": "Crag Shot",
+ "竜泉弾": "Dragon Spring",
+ "ダメージを与えることができる弾。": "Ammo that deals damage.",
+ "ダメージを与えることができる弾。\nLv1よりも高威力で、射程距離が長い。": "Ammo that deals damage.\nStronger than Lv1,\nwith longer range.",
+ "ダメージを与えることができる弾。\nLv2よりも高威力で、装填数も多い。": "Ammo that deals damage.\nStronger than Lv2,\nwith more loaded shots.",
+ "貫通ヒットさせることができる弾。": "Ammo that can pierce-hit.",
+ "貫通ヒットさせることができる弾。\nLv1よりもヒット数が上がる。": "Ammo that can pierce-hit.\nHits more than Lv1.",
+ "貫通ヒットさせることができる弾。\nLv2よりもヒット数と装填数が上がる。": "Ammo that can pierce-hit.\nMore hits and shots than Lv2.",
+ "広範囲にダメージを与えることができる弾。": "Ammo that damages a wide area.",
+ "広範囲にダメージを与えることができる弾。\nLv1よりも発射数が多い。": "Ammo that damages a wide area.\nFires more than Lv1.",
+ "広範囲にダメージを与えることができる弾。\nLv2よりも発射数が多い。": "Ammo that damages a wide area.\nFires more than Lv2.",
+ "爆発により目まいを誘発することができる弾。": "Ammo that can stun\nby explosion.",
+ "爆発により目まいを誘発することができる弾。\nLv1よりも高威力で、目まいを誘発させやすい。": "Ammo that can stun\nby explosion.\nStronger than Lv1, stuns easier.",
+ "爆発により目まいを誘発することができる弾。\nLv2よりも高威力で、最大装填数が多い。": "Ammo that can stun\nby explosion.\nStronger than Lv2, more shots.",
+ "10秒間、与えるダメージが1.5倍になる\n効果エリアを生成することができる弾。": "Ammo that creates an area\nwhere damage is x1.5\nfor 10 seconds.",
+ "10秒間、与えるダメージが1.75倍になる\n効果エリアを生成することができる弾。": "Ammo that creates an area\nwhere damage is x1.75\nfor 10 seconds.",
+ "10秒間、与えるダメージが2倍になる\n効果エリアを生成することができる弾。": "Ammo that creates an area\nwhere damage is x2\nfor 10 seconds."
+}
