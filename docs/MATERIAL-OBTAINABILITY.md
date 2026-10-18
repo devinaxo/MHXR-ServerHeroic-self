@@ -20,7 +20,7 @@ They were not missing from the data. They were lost **on the way into MongoDB**.
 The XFS converter wraps some arrays in `{ "array": { "mpArray": [...] } }` (or
 `{ "classref_": { "mpArray": [...] } }`). `src/model/questSheet.ts` declares
 `mRewardItemList` and `mBossList` as plain arrays. When Mongoose is handed the
-wrapped object it casts it to a one-element array whose element has no fields —
+wrapped object it casts it to a one-element array whose element has no fields -
 stored as `[null]`.
 
 - The **normal / ticket / eternal / score** files were pre-flattened
@@ -86,6 +86,6 @@ present). Only 8 of them are used by upgrades, and those are covered by the shop
 
 The `Plus Upgrade Stone` items (プラス強化石, with a dedicated
 "Plus Upgrade Stone Exchange" in the client) are **not** in `materiali.json` or
-any other extracted item table in the repo — only the UI strings survive in
+any other extracted item table in the repo - only the UI strings survive in
 `lavoro-traduzione/`. They cannot be sold or granted until their item ids are
 extracted from a table the repo does not currently have.

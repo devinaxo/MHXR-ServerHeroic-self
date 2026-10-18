@@ -89,13 +89,13 @@ node tools-js/verify-bump.cjs http://127.0.0.1:8081 <vecchia> <NUOVA>
 
 **A client never goes backwards on its own.** It only downloads a version higher
 than the one it saved. So a rollback is always published as a *new, higher*
-version that re-serves the old bytes — which is exactly what version 328 was (a
+version that re-serves the old bytes - which is exactly what version 328 was (a
 rollback of 327, published as 328 so clients on 327 would fetch it).
 
 ## What a backup does *not* cover
 
 - Versions before `res-0325` have no backup (the scheme started there). Old
-  packs for those are not recoverable — only the pristine set is kept as
+  packs for those are not recoverable - only the pristine set is kept as
   `backups/res-0325-pristine-heroic`.
 - The database is **not** part of this. Character data, quest `mBlocks`, etc. are
   backed up separately (`tools/Backup-Mhxr.ps1`). Never `docker compose down -v`.

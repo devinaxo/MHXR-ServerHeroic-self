@@ -18,7 +18,7 @@ The panel is fed by **`POST /api/quest/katamari/content/get`**. The client sends
 prob_type_id, slv, start_remain }] }` (from `::Response::setup`).
 
 `src/routes/api/quest/questKatamari.controller.ts` **ignored the quest and the
-part** and called `pescaEquipaggiamenti(rarita, 6)` — six `Math.random()` picks
+part** and called `pescaEquipaggiamenti(rarita, 6)` - six `Math.random()` picks
 from a rarity pool. So the panel was random and unrelated to the quest.
 
 (Not the culprit, checked and ruled out: `/api/dictionary/equipment/get` is a
@@ -31,9 +31,9 @@ static catalogue the client only requested once, and `uGUIEventEquipHint`'s
 
 1. Looks up the quest by `mst_quest_id` (`QuestSheet`) and returns the ids in its
    `mRewardItemList` whose catalogue family is `equipaggiamento` (the
-   `mRewardType` field is not reliable — see `questIsland.controller.ts`),
+   `mRewardType` field is not reliable - see `questIsland.controller.ts`),
    **sorted by rarity descending** (rarest first). These are the real equipment
-   rewards the event/ticket quests promise. **No cap** — every piece in the table
+   rewards the event/ticket quests promise. **No cap** - every piece in the table
    is sent, so quests that promise more than six (e.g. `TICKET00337`, 18 pieces)
    list them all.
 2. For quests that list **no** equipment it returns an **empty list**, so the
@@ -56,16 +56,16 @@ data**, so they cannot be reconstructed. Extraction pass (2026-10-13) checked th
 resident archives and found no such table:
 
 - `rsdnt_property.arc` → `katamari_define` (the 5 `KATAMARI0000x` ids) and
-  `katamari_info` (`{mID, mIconID, mDirectionID}`) — **no equipment pool**.
+  `katamari_info` (`{mID, mIconID, mDirectionID}`) - **no equipment pool**.
 - `rsdnt_quest.arc` → `questData/{normal,event,ticket,…}` (per-quest fields are
   exactly what `QuestSheet` already has: `mBossList`, `mRewardItemList`,
   `mRewardDataList` = a shared 18-row table) and `equip_hint` (a *recommended
   gear* table covering only **30 quests**: 1 weapon + 5 armour each).
 - `rsdnt_enemy.arc` → `EnemyList`, `enemy_breakName` (`mEnemyId`/`mRemNo`/name:
-  Head, Tail…) — parts, but **no drops**.
-- `rsdnt_equip.arc` → the `equip_*_series` / `equip_series_*_define` tables —
+  Head, Tail…) - parts, but **no drops**.
+- `rsdnt_equip.arc` → the `equip_*_series` / `equip_series_*_define` tables -
   equipment stats and name→hash, **no monster link**.
-- `rsdnt_quest_block.arc` → `quest_block_define_l*` — block name→hash only.
+- `rsdnt_quest_block.arc` → `quest_block_define_l*` - block name→hash only.
 
 Conclusion: the panel's per-quest contents were produced by the original server,
 not read from the client. So for story quests (whose reward tables list only
@@ -79,7 +79,7 @@ bundle shown at quest end.
 
 ## Backups
 
-- `backups/db-apypos-full-20261012-220319.archive` — whole `apypos` database
+- `backups/db-apypos-full-20261012-220319.archive` - whole `apypos` database
   (quests, events, users, everything), `mongodump --gzip`.
   Restore: `mongorestore --drop --gzip --archive=… ` (see the mongorestore form
   in `docs/EVENT-QUESTS-BLOCKS.md`).

@@ -1,6 +1,6 @@
-获取 MHXRTools（MHXR 工具）—— 可在此处获取：https://discord.com/channels/481188092636823552/494135269893865475/531509865873408000
+获取 MHXRTools（MHXR 工具）-- 可在此处获取：https://discord.com/channels/481188092636823552/494135269893865475/531509865873408000
 
-获取 MHXR Patcher（MHXR 补丁工具）—— 已包含在代码仓库中
+获取 MHXR Patcher（MHXR 补丁工具）-- 已包含在代码仓库中
 * 此工具需 Java 环境支持（Java 下载地址：https://www.java.com/download/ie_manual.jsp）
 
 获取 RevilToolset（Revil 工具集）
@@ -11,13 +11,13 @@ https://github.com/PredatorCZ/RevilLib/releases/tag/nightly
 
 1. 从服务器文件夹中拖拽一个.fpk 文件到 MHXRTools.exe 上进行解压。程序会在该文件所在位置生成一个文件夹，因此建议提前将.fpk 文件复制到其他位置，避免在 Apypos 目录下生成多余文件。
  
-2A. 解压后的.fpk 文件内会有一个包含大量.arc 文件的文件夹。将该文件夹移动到 RevilToolset 中，以便进行批量解压。若文件夹内文件数量过多，可能会导致解压失败，此时需将文件拆分后再操作。执行解压命令后，删除所有.arc 文件以清理目录 —— 因为解压过程会生成许多路径较长的独立文件夹，若不清理会占用过多空间。此外，RevilToolset 中还包含多种工具，可用于后续的文件格式转换和模组制作。
+2A. 解压后的.fpk 文件内会有一个包含大量.arc 文件的文件夹。将该文件夹移动到 RevilToolset 中，以便进行批量解压。若文件夹内文件数量过多，可能会导致解压失败，此时需将文件拆分后再操作。执行解压命令后，删除所有.arc 文件以清理目录 -- 因为解压过程会生成许多路径较长的独立文件夹，若不清理会占用过多空间。此外，RevilToolset 中还包含多种工具，可用于后续的文件格式转换和模组制作。
 1. 在文件资源管理器中打开命令提示符（cmd），输入以下命令：
 revil_toolset.exe extract_arc --title mhxr --platform Android ??????
 其中，?????? 需替换为.fpk 解压后生成的文件夹名称（示例中为 arc_cmn）。
 2. 以.tex 文件为例，可将其拖拽到 “mft_tex_to_dds.bat” 文件上，将其转换为.dds 格式。
  
-2B. 作为 2A 步骤的替代方案：无需将.fpk 解压后的文件夹移动到 RevilToolset，而是将需要修改的单个.arc 文件导入 MHXR-ARCExtract（工具），程序会生成一个文件夹，供你在 kuriimu（另一个编辑工具）中进行编辑。编辑完成后，将文件导入 MHXR-ARCRepack（工具）重新打包即可。若你明确知道需要修改哪些文件，建议优先选择此方法 —— 该方法更简单快捷，且无需清理解压生成的冗余文件。
+2B. 作为 2A 步骤的替代方案：无需将.fpk 解压后的文件夹移动到 RevilToolset，而是将需要修改的单个.arc 文件导入 MHXR-ARCExtract（工具），程序会生成一个文件夹，供你在 kuriimu（另一个编辑工具）中进行编辑。编辑完成后，将文件导入 MHXR-ARCRepack（工具）重新打包即可。若你明确知道需要修改哪些文件，建议优先选择此方法 -- 该方法更简单快捷，且无需清理解压生成的冗余文件。
  
 3. 将修改后的文件放回根目录，打开命令提示符（cmd），输入以下命令：py.exe .\mhxr-android-patcher.py -i .\MHXR_base.apk -ip ??????其中，?????? 需替换为与服务器端配置相同的 IP 地址。
 

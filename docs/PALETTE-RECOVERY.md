@@ -36,7 +36,7 @@ ABIs in APK    arm64-v8a, armeabi-v7a
 
 **There is no x86_64 code in the APK.** An x86_64 emulator cannot run it without
 full ARM translation, which makes it slow and, more importantly, unreliable for
-pixel-exact colour comparison — a translator plus a software GL stack is exactly
+pixel-exact colour comparison - a translator plus a software GL stack is exactly
 the setup where colours drift.
 
 Your **`poco-x8-pro-max` is the right tool**: real ARM64 hardware, the real GPU
@@ -48,7 +48,7 @@ The patched APK already carries `android:debuggable="true"` (patch 6 in
 
 ---
 
-## Step 0 — install adb on this machine
+## Step 0 - install adb on this machine
 
 Only `adb` is needed; no SDK, no emulator.
 
@@ -59,7 +59,7 @@ adb version
 
 ---
 
-## Step 1 — enable wireless debugging on the phone
+## Step 1 - enable wireless debugging on the phone
 
 On the Poco: **Settings → About phone → tap "Build number" 7 times** to unlock
 developer options. Then **Settings → Additional settings → Developer options →
@@ -79,12 +79,12 @@ adb devices
 ```
 
 After pairing you can unplug and stay on wireless debugging. If you prefer to
-stay cabled for the whole session, just keep using `adb shell` — nothing below
+stay cabled for the whole session, just keep using `adb shell` - nothing below
 requires the network.
 
 ---
 
-## Step 2 — install and launch
+## Step 2 - install and launch
 
 ```bash
 cd /home/nacho/Documents/mhxr/MHXR-ServerHeroic-self
@@ -103,7 +103,7 @@ The client needs Tailscale running on the phone, since the APK points at
 
 ---
 
-## Step 3 — take a screenshot
+## Step 3 - take a screenshot
 
 ```bash
 adb exec-out screencap -p > build/shot.png
@@ -112,11 +112,11 @@ python3 -c "from PIL import Image; im=Image.open('build/shot.png'); print(im.siz
 
 ---
 
-## Step 4 — capture a reference frame
+## Step 4 - capture a reference frame
 
 This is the ground truth: what the game actually renders.
 
-Navigate to a screen with a button whose art you know — the home screen is fine,
+Navigate to a screen with a button whose art you know - the home screen is fine,
 it has the nav bar and `クエストへ`. Then:
 
 ```bash
@@ -128,7 +128,7 @@ animation by holding still a second before capturing.
 
 ---
 
-## Step 5 — the calibration texture
+## Step 5 - the calibration texture
 
 This is the part that replaces all the guessing so far.
 
@@ -178,7 +178,7 @@ corrupt anything.
 
 ---
 
-## Step 6 — ship the calibration build
+## Step 6 - ship the calibration build
 
 All commands below are **verified working** as written. The awkward part is that
 the ARC tools need `GUI_home_top.arc` as a standalone file, but it lives inside
@@ -242,7 +242,7 @@ sg docker -c 'docker exec mhxr-serverheroic-self-server-1 node /app/tools/fpk-pu
 ```
 
 It prints `verify: 100/100 entries byte-identical to intent`. **If that line does
-not appear, stop — do not copy the file over the live pack.**
+not appear, stop - do not copy the file over the live pack.**
 
 ### 6f. Install it and regenerate the manifest
 
@@ -292,7 +292,7 @@ Expect `PASS: 1/1 packs verified`. Only then launch the game on the phone.
 
 ---
 
-## Step 7 — read the palette off the screenshot
+## Step 7 - read the palette off the screenshot
 
 Launch the game, reach the screen with the swatches, and capture:
 
@@ -324,12 +324,12 @@ PY
 ```
 
 Purity near 100% means the sample is solid. Below ~80% you are reading an
-antialiased edge or an overlapping element — widen the sample or pick a
+antialiased edge or an overlapping element - widen the sample or pick a
 different screen region.
 
 ---
 
-## Step 8 — decode the art for real
+## Step 8 - decode the art for real
 
 Once you have 16 colours, `tex_index_tool.py decode` plus a lookup gives a
 truecolour PNG:
@@ -343,7 +343,7 @@ python3 tools-js/tex_index_tool.py decode <file.tex> out.png     # index view
 ```
 
 Then map each index to its measured colour to get the real image. At that point
-the dither resolves and you can finally see the art as the player does — and,
+the dither resolves and you can finally see the art as the player does - and,
 more importantly, you can paint white text and know exactly which index means
 white.
 
@@ -380,7 +380,7 @@ find src/public/res/download/android -name download.list -delete
 sg docker -c 'docker compose -f docker-compose.prod.yml restart server'
 ```
 
-Never `docker compose down -v` — that deletes the database and your character.
+Never `docker compose down -v` - that deletes the database and your character.
 
 ### Verified already
 
@@ -396,7 +396,7 @@ That last point matters most. Pull → push with an *unmodified* file returns th
 identical CRC, so any CRC change you see afterwards is genuinely your edit and not
 an artefact of the repack.
 
-What has **not** been verified is the calibration texture itself — nothing has
+What has **not** been verified is the calibration texture itself - nothing has
 been rendered with modified LP4 pixels in game yet. That is the point of step 7.
 
 ---
@@ -407,7 +407,7 @@ Recovering the palette fixes **colours**. It does not by itself give a faithful
 decompile: the earlier strip-layout guess (16 strips of 113 rows, stride 127)
 scored well on a correlation test but still rendered as dither noise, so the true
 row layout is still unconfirmed. Expect to revisit that once real colours are in
-hand — a proper decode may make the strip structure obvious, or may show it was
+hand - a proper decode may make the strip structure obvious, or may show it was
 wrong.
 
 The most likely reason that guess looked wrong: if the palette is a luminance

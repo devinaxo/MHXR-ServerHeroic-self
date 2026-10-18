@@ -68,7 +68,7 @@ truth to match. A rarity 8 lance (*Over The Wall Zero III*) at level 30 shows:
 | 30 -> 32 | 30,461 |
 | 30 -> 33 | 46,441 |
 
-Per-level that is 14,981 / 15,480 / 15,980 — differences of 499 and 500, so the
+Per-level that is 14,981 / 15,480 / 15,980 - differences of 499 and 500, so the
 price is very nearly linear in the level. Solving for the coefficient over the
 rarity table gives `7990 / 16 = 499.375`, and `7990 = 8 * 1000 - 10`. That
 reproduces all three figures exactly:
@@ -86,7 +86,7 @@ Honest limits on that formula:
 - It is fitted to **three data points from one weapon at one rarity**. It may
   be right for rarity 8 and slightly off elsewhere.
 - The `- 10` is the part with no independent confirmation. `base/16` on its own
-  gives 15,000 / 15,500 / 16,000 — too high by 19 / 20 / 20. The `-10` is what
+  gives 15,000 / 15,500 / 16,000 - too high by 19 / 20 / 20. The `-10` is what
   makes it exact here, but a different constant would also fit three points.
 
 So: if upgrade prices ever look wrong on some other piece, this formula is the
@@ -96,7 +96,7 @@ game table and are not in doubt.
 
 ## Worked example
 
-*Over The Wall Zero III* — rarity 8, `mStrengthenNeedMaterialID` 1255:
+*Over The Wall Zero III* - rarity 8, `mStrengthenNeedMaterialID` 1255:
 
 ```
 Zenny, 30 -> 31:  floor((8000 - 10) * 30 / 16) = 14981
@@ -139,7 +139,7 @@ The response must carry all three of these, or the client shows 999,999,999:
 
 Field names are suffix-merged in the client's string table, which is why
 `levelup`, `zeny`, `materials` and `equipment` do not appear as standalone
-strings in `libMHS.so` — they are tails of longer strings like
+strings in `libMHS.so` - they are tails of longer strings like
 `box/equipment/levelup` and `resource_materials`. Confirmed by disassembling
 `sServer::setupBoxEquipmentLevelupResponse`, which reads a zenny field into the
 player workspace and then loops over a material array calling

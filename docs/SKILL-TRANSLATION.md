@@ -1,9 +1,9 @@
-# Hunter skill / art names — scope and progress (2026-10-14, RES_VER 361)
+# Hunter skill / art names - scope and progress (2026-10-14, RES_VER 361)
 
 ## Where the skill text lives
 
 Skill, art and secret-art names are **client master data** in `resident.00.fpk`,
-in tuning (XFS) tables — **not** in the `GUI_msg.arc` GMDs:
+in tuning (XFS) tables - **not** in the `GUI_msg.arc` GMDs:
 
 | Table | Field(s) | What it is |
 |---|---|---|
@@ -40,7 +40,7 @@ The JP entries were largely the later event / "Zero" / "Absolute" variants; the
 base arts and common skills were already English.
 
 ### Known data bug
-The `SkillName` GMD is **misaligned** in the Zero/Absolute block — e.g.
+The `SkillName` GMD is **misaligned** in the Zero/Absolute block - e.g.
 `覇道不滅・零【傑物】 → "Princess's Melody - Zero (Magnificent Age)"` (off by
 one). Do **not** reuse that GMD blindly for the JP art names; align by JP and
 retranslate (or fix the shift).
@@ -53,14 +53,14 @@ tried inserting `\n`; the layout ignored it, so it was rolled back in 359).
 So every `kariwazaParam` name must **fit on one line at ≤32 cells**. In
 RES_VER 360, **865** English art names were rewritten shorter, systematically:
 
-- long art "families" abbreviated — e.g.
+- long art "families" abbreviated - e.g.
   `Golden Masterful Technique → Golden Mastery`,
   `Undying Path of Supremacy → Undying Supremacy`,
   `Brilliant Talent in Bloom → Genius Bloom`,
   `Transcendent Technique → Transcendent`
-- `[detail]` parts abbreviated where needed — e.g.
+- `[detail]` parts abbreviated where needed - e.g.
   `[Snow Cherry Blossom] → [Snow]`, `[Heavenly Conquest] → [Heaven]`
-- variant tags shortened — `: Ultimate → : Ult`, `: Mighty → : Mig`,
+- variant tags shortened - `: Ultimate → : Ult`, `: Mighty → : Mig`,
   `: Extreme → : Ext`, `: Blossoming → : Bloom`
 
 Result: **0** names over 32, no duplicate names. Examples:
@@ -80,8 +80,8 @@ The description under an art card is **not** in `kariwazaParam` (its
 `mCommentID` is only a 0/1/2 enum). It is the **`SkillText` GMD** in
 `GUI.00.fpk → GUI_msg.arc`, one string per art, parallel to `SkillName`.
 
-The Japanese originals are pre-wrapped with `\n` (1–7 lines, ≤ ~53 half-width
-cells each) because the box does **not** auto-wrap — it shrinks the font to fit.
+The Japanese originals are pre-wrapped with `\n` (1-7 lines, ≤ ~53 half-width
+cells each) because the box does **not** auto-wrap - it shrinks the font to fit.
 The earlier English translation had collapsed every description to a single line
 (0 of 1,949 had `\n`), so the long ones shrank to the point of being unreadable
 (e.g. `Beast Blood [Mad Tempest]`, `TOP OF HEAVEN 2`).
@@ -102,10 +102,12 @@ already 4-aligned.
 
 The hunter skill-text scope (arts, skill labels, secret arts, bullet types,
 melodies) is **complete as of RES_VER 361**. Remaining JP in `rsdnt_player.arc` /
-`rsdnt_equip.arc`, if any, is outside skill text (Palico names, dummy equipment
-placeholders).
+`rsdnt_equip.arc`, if any, is outside skill text (dummy equipment placeholders).
+Palico (otomo) names live in `rsdnt_otomo.arc` and have their own dictionary,
+`lavoro-traduzione/otomo/otomo-nomi.json` (see
+[docs/OTOMO-PALICO.md](OTOMO-PALICO.md)).
 
-Pipeline per table (same as 357–361):
+Pipeline per table (same as 357-361):
 pull the arc from the live `resident.00.fpk`, apply a flat `{jp: en}` dict with a
 table-restricted `traduci-rsdnt-arc.cjs`, `fpk-replace.cjs`, regenerate
 `download.list`, publish a new version, bump `RES_VER`, `verify-bump`.

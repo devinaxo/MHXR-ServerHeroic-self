@@ -54,7 +54,7 @@ node tools-js/build-arts-costs.cjs
 
 ### Worked example
 
-*Zork the Rush Zero I* (ゾークザラッシュ零Ⅰ) — `weapon_acaxe_series`, `mID`
+*Zork the Rush Zero I* (ゾークザラッシュ零Ⅰ) - `weapon_acaxe_series`, `mID`
 1024651966, rarity 7, `mKariwazaID` 2606267074. The kariwaza hash maps to bugi
 material row 1158:
 

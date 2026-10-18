@@ -3,9 +3,10 @@
  *
  *   src/json/otomo-grow.json    mst_otomo_id -> { maxLevel, expByLevel[] }
  *   src/json/otomo-skills.json  the subskill pool (OtomoSkillSub)
+ *   src/json/otomo-master.json  who can be encountered (name, rarity, event flag)
  *
  * Sources (rsdnt_otomo.arc, extracted with tools-js/xfs-parse.cjs):
- *   tuning\xml\otomo\OtomoParam     mMaxLevel per otomo
+ *   tuning\xml\otomo\OtomoParam     mMaxLevel, name, rarity, event flag per otomo
  *   tuning\xml\otomo\OtomoGrow      per otomo + level: cumulative mExp
  *   tuning\xml\otomo\OtomoSkillSub  mSkillId + mSkillName for every subskill
  *
@@ -22,6 +23,7 @@ const ROOT = path.join(__dirname, '..');
 const ARC = path.join(__dirname, 'rsdnt_otomo.arc');
 const OUT_GROW = path.join(ROOT, 'src/json/otomo-grow.json');
 const OUT_SKILLS = path.join(ROOT, 'src/json/otomo-skills.json');
+const OUT_MASTER = path.join(ROOT, 'src/json/otomo-master.json');
 
 const PARAM_TABLE = 'OtomoParam';
 const GROW_TABLE = 'OtomoGrow';
@@ -82,6 +84,24 @@ function main() {
   const maxLevelById = {};
   for (const p of params) maxLevelById[p.mOtomoCharId] = p.mMaxLevel;
 
+  // Master rows used by the random encounter at the end of an island quest.
+  // Keep the Japanese mOtomoName: the English one lives in the client pack
+  // (lavoro-traduzione/otomo/otomo-nomi.json), not in server data.
+  const master = params.map((p) => ({
+    charNo: p.mOtomoCharNo,
+    id: p.mOtomoCharId,
+    name: p.mOtomoName,
+    type: p.mOtomoType,
+    maxLevel: p.mMaxLevel,
+    rarity: p.mRarityType,
+    event: p.mEventChar,
+    release: p.mReleaseNo,
+    initialSubskills: [p.mSkillSubId0Init, p.mSkillSubId1Init, p.mSkillSubId2Init]
+      .map(Number)
+      .filter((s) => s && s !== 2006012238),
+    mainSkills: [p.mSkillMainId0, p.mSkillMainId1].map(Number).filter(Boolean),
+  }));
+
   const growRows = readTable(GROW_TABLE).root.mDataList.mpArray;
   const perOtomo = {};
   for (const row of growRows) {
@@ -128,8 +148,22 @@ function main() {
     ) + '\n',
   );
 
+  fs.writeFileSync(
+    OUT_MASTER,
+    JSON.stringify(
+      {
+        _comment:
+          'Generated from rsdnt_otomo.arc :: OtomoParam. charNo builds the box otomo_id (OT_OTOMO_CHAR_ID_<charNo>), id is mst_otomo_id. event=1 marks collab/test rows that must not drop. Initial subskills exclude the No Skill placeholder.',
+        otomos: master,
+      },
+      null,
+      1,
+    ) + '\n',
+  );
+
   console.log(`otomo-grow.json: ${Object.keys(byOtomo).length} otomos`);
   console.log(`otomo-skills.json: ${skills.length} subskills`);
+  console.log(`otomo-master.json: ${master.length} rows (${master.filter((o) => !o.event).length} non-event)`);
 }
 
 main();

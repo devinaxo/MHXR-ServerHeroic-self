@@ -1,4 +1,4 @@
-# Handoff — quest name translation (and resource backups)
+# Handoff - quest name translation (and resource backups)
 
 From: the quest-translation work. To: whoever owns the server/texture work next.
 Everything here is on top of the current tree; nothing under `translations/` was
@@ -9,8 +9,8 @@ touched by me.
 | Thing | Value |
 |---|---|
 | `RES_VER` | **329** |
-| `cmn/resident.00.fpk` | `6b9f58b6` — **English quest names** |
-| `cmn/GUI.00.fpk` | `476e66ec` — your texture set (unchanged by me) |
+| `cmn/resident.00.fpk` | `6b9f58b6` - **English quest names** |
+| `cmn/GUI.00.fpk` | `476e66ec` - your texture set (unchanged by me) |
 | `backups/` | res-0325-pristine-heroic, 0326, 0327, 0328, **0329** |
 | Quest DB `mBlocks` | back to the pristine baseline: 2014 quests with blocks, **2161 without** |
 
@@ -24,9 +24,9 @@ Quest titles are read by the client from `resident.00.fpk` → `rsdnt_quest.arc`
 (the server sends quest **ids**, not names). So translation is a pack edit, not a
 server change.
 
-- Dictionary: **`lavoro-traduzione/quest/quest-nomi.json`** — 4,182 entries,
+- Dictionary: **`lavoro-traduzione/quest/quest-nomi.json`** - 4,182 entries,
   `{ "japanese": "English" }`.
-- Monster table: **`lavoro-traduzione/quest/mostri.json`** — 168 JP→EN monster
+- Monster table: **`lavoro-traduzione/quest/mostri.json`** - 168 JP→EN monster
   names (epithet + katakana), verified against monsterhunterwiki.org. Built from
   a wiki scrape; `mostri-da-completare.csv` is the input the owner filled in.
 - Pipeline (verified): `traduci-rsdnt-arc.cjs` → `fpk-replace.cjs` →
@@ -34,14 +34,14 @@ server change.
   `pubblica-risorse.sh <ver>` → bump `RES_VER` → rebuild → `verify-bump.cjs`.
 
 Coverage: all 4,173 distinct quest names have an English entry, but **778 still
-contain a Japanese word or two** — unique event flavor text I couldn't translate
+contain a Japanese word or two** - unique event flavor text I couldn't translate
 with confidence. They are left as-is rather than guessed. The rest, including the
 entire story set, is English.
 
 Titles must fit **≤25 half-width chars per line** (measured: the display field is
 ~26 columns; longer clips). Long bracket titles use a two-line form
 (`[Difficulty]\nName`). Strings were also scrubbed of characters the game's text
-engine interprets — `%` (printf), plus `★ ☆ Ⅰ–Ⅶ ×` → ASCII. Keep that rule if
+engine interprets - `%` (printf), plus `★ ☆ Ⅰ-Ⅶ ×` → ASCII. Keep that rule if
 you add entries.
 
 ### 2. Fixed a real bug in `traduci-rsdnt-arc.cjs`
@@ -65,12 +65,12 @@ that fix.**
 
 ## Open issues
 
-### A. Event / ticket / eternal quests error 10001 — needs a block decision
+### A. Event / ticket / eternal quests error 10001 - needs a block decision
 
 `eventTicketStart` / `eventNormalStart` answer `QUEST_INFO_FAILED` when
 `blocchiPerAvvio(quest)` is empty. The seeder loads event quests from
 `event.extended.blank.json` (no blocks), and the DB has 2,161 quests with empty
-`mBlocks` — all of event, ticket and eternal.
+`mBlocks` - all of event, ticket and eternal.
 
 I tried the obvious fix and it backfired: `fix-blocks.cjs` reconstructs blocks
 for the unmatched quests but falls back to the **tutorial island** (`l00_m01`)
@@ -78,20 +78,20 @@ for 1,668 of them, and the owner reported an event quest then played the
 **prologue**. So I reverted all `mBlocks` changes (`fix-blocks.cjs --undo` + a
 manual clear of the `autentico` rows) to leave a clean baseline.
 
-**Recommended:** apply only the authentic blocks — `restore-real-blocks.cjs`
+**Recommended:** apply only the authentic blocks - `restore-real-blocks.cjs`
 covers 967 event quests from `event.extended.json`. Do **not** run the
 `l00_m01` fallback path. The rest of the event quests need a better
 quest→block reconstruction (by block-name suffix, per the note in
 `restore-real-blocks.cjs`) or they stay on 10001.
 
-### B. Post-quest client hang — owner says it was texture-side
+### B. Post-quest client hang - owner says it was texture-side
 
 Story quests completed server-side fine (all 200, rewards credited), then the
-client hung ~1–2 min and crashed. I isolated it first as not-the-text (strings
+client hung ~1-2 min and crashed. I isolated it first as not-the-text (strings
 never exceed the original byte lengths; the pack round-trips 29/29). The owner
 **worked out the texture errors**, which fits: the post-quest screen loads
 `GUI.00.fpk` assets, and `event_parts04` / `town_*` / `nyanken_*` were the
-problem textures. Nothing more for me there, but if it recurs, capture logcat —
+problem textures. Nothing more for me there, but if it recurs, capture logcat -
 `adb` is not installed on this host (phone `poco-x8-pro-max` is on the tailnet).
 
 ## How to re-apply / extend the quest translation

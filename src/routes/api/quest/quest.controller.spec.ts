@@ -498,6 +498,53 @@ describe('quest.controller', () => {
       );
     });
 
+    it('can leave a new palico after an island quest', async () => {
+      const prev = process.env.OTOMO_ENCOUNTER_CHANCE;
+      process.env.OTOMO_ENCOUNTER_CHANCE = '100';
+      try {
+        vi.mocked(QuestSheet.findOne).mockResolvedValue({ mRewardItemList: [] } as never);
+        const box = { otomos: [] as { otomo_id: string }[], materials: [] as unknown[] };
+        vi.mocked(User.findOne).mockResolvedValue({ character_name: 'H', cleared_quests: [], box } as never);
+        vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+
+        const { req, res } = mockReqRes({ mst_quest_id: 141015936, clear_time: 45, session_id: 'sess-1' });
+        await islandEnd(req, res);
+
+        expect(box.otomos).toHaveLength(1);
+        const [data] = vi.mocked(encryptAndSend).mock.calls[0]!;
+        expect((data as { get_mst_otomo_id: number }).get_mst_otomo_id).not.toBe(0);
+        expect(User.findOneAndUpdate).toHaveBeenCalledWith(
+          { current_session: 'sess-1' },
+          expect.objectContaining({ box: expect.objectContaining({ otomos: box.otomos }) }),
+          { new: true },
+        );
+      } finally {
+        if (prev === undefined) delete process.env.OTOMO_ENCOUNTER_CHANCE;
+        else process.env.OTOMO_ENCOUNTER_CHANCE = prev;
+      }
+    });
+
+    it('does not hand out a palico on a non-island quest', async () => {
+      const prev = process.env.OTOMO_ENCOUNTER_CHANCE;
+      process.env.OTOMO_ENCOUNTER_CHANCE = '100';
+      try {
+        vi.mocked(QuestSheet.findOne).mockResolvedValue({ mRewardItemList: [] } as never);
+        const box = { otomos: [] as { otomo_id: string }[], materials: [] as unknown[] };
+        vi.mocked(User.findOne).mockResolvedValue({ character_name: 'H', cleared_quests: [], box } as never);
+        vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+
+        const { req, res } = mockReqRes({ mst_quest_id: 200, clear_time: 45, session_id: 'sess-1' });
+        await islandEnd(req, res);
+
+        expect(box.otomos).toHaveLength(0);
+        const [data] = vi.mocked(encryptAndSend).mock.calls[0]!;
+        expect((data as { get_mst_otomo_id: number }).get_mst_otomo_id).toBe(0);
+      } finally {
+        if (prev === undefined) delete process.env.OTOMO_ENCOUNTER_CHANCE;
+        else process.env.OTOMO_ENCOUNTER_CHANCE = prev;
+      }
+    });
+
     it('sends a Special Request reward to the present box, not the inventory', async () => {
       const prev = process.env.QUEST_CRESCITA_CHANCE;
       process.env.QUEST_CRESCITA_CHANCE = '0';

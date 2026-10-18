@@ -1,4 +1,4 @@
-# MHXR — Apypos Server (restoration work)
+# MHXR - Apypos Server (restoration work)
 
 **Work in progress.** A private server for *Monster Hunter Explore* (モンスターハンター エクスプロア),
 the Capcom mobile game whose official servers were shut down in 2020. Tailored to my own home server needs. 
@@ -9,12 +9,12 @@ ran fine upstream; event quests were largely broken or invisible. Most of the wo
 about bringing those back.
 
 The long-term aim is to get the server stable enough to open it up so people can play together
-again. It is not there yet — see [Current state](#current-state).
+again. It is not there yet - see [Current state](#current-state).
 
-> **Owner:** [@Heroic853](https://github.com/Heroic853) — everyone else contributes.
+> **Owner:** [@Heroic853](https://github.com/Heroic853) - everyone else contributes.
 >
 > **English translation (work in progress).** A community English translation
-> covering most of the main game flow — UI, quests, skills, items and dialogue.
+> covering most of the main game flow - UI, quests, skills, items and dialogue.
 > See **[TRANSLATION.md](TRANSLATION.md)** for what it covers, how to apply it
 > to your own server, and screenshots.
 
@@ -26,11 +26,11 @@ again. It is not there yet — see [Current state](#current-state).
 |---|---|
 | Login, account creation, asset download | working |
 | Story / island quests | working (unchanged from upstream) |
-| Event quests — visibility | **fixed** — all 2189 event quest entries are now reachable in game |
-| Event quests — correct monster | **~1490 assigned**, roughly 96% of event quests |
-| Event quests — rewards | **fixed** — quests now grant their own reward materials |
+| Event quests - visibility | **fixed** - all 2189 event quest entries are now reachable in game |
+| Event quests - correct monster | **~1490 assigned**, roughly 96% of event quests |
+| Event quests - rewards | **fixed** - quests now grant their own reward materials |
 | Multiplayer | working, lightly tested |
-| Public/open server | not yet — still running privately on a home machine |
+| Public/open server | not yet - still running privately on a home machine |
 
 ---
 
@@ -47,7 +47,7 @@ quests from 561 to 2189.
 ### Boss and reward data was silently lost on import
 
 Every event quest *does* carry its boss and reward list in the raw game files, but the XFS
-converter wraps them as `{mAutoDelete, classref_: {mpArray: [...]}}` — and in some quests the key
+converter wraps them as `{mAutoDelete, classref_: {mpArray: [...]}}` - and in some quests the key
 is `array` instead, with the objects already merged. The Mongoose schema expects a plain array,
 received an object, and wrote `[null]`.
 
@@ -61,7 +61,7 @@ slots all handing out the same material id. Rewards are now drawn from the quest
 
 ### Wrong monsters
 
-The monster is not sent by the server — it comes from the **map block** the server picks. Wrong
+The monster is not sent by the server - it comes from the **map block** the server picks. Wrong
 block, wrong monster. The quest→block mapping does not exist in any shipped file; upstream falls
 back to `getBlockHashsFromQuestHash`, an approximate search that increments a suffix until
 something matches.
@@ -89,7 +89,7 @@ NUL-terminated rather than length-prefixed. Validated at 250/250 records against
   database. It now reads the user's actual `box.payments`.
 - Block count now respects the rule validated across all 1995 story quests: the number of blocks
   sent is always `>=` the highest `mAreaNo`. 167 event quests violated it.
-- `Boolean("false") === true` in JavaScript — `API_NOT_AVAILABLE_MAINTENANCE` must be left
+- `Boolean("false") === true` in JavaScript - `API_NOT_AVAILABLE_MAINTENANCE` must be left
   *empty*, never set to `"false"`.
 
 ---
@@ -123,7 +123,7 @@ Two things that will bite you otherwise:
 2. `yarn build` creates `dist/public` as a **symlink** to `../src/public`, and the runtime image
    only copies `/app/dist`. Mount your assets at `/app/src/public`, not `/app/dist/public`.
 
-The database password must be **alphanumeric only** — it is interpolated into the Mongo
+The database password must be **alphanumeric only** - it is interpolated into the Mongo
 connection string without URL encoding, so an `@` breaks it. On Windows, write `.env` as UTF-8
 **without BOM**, or compose reads the first key as `?IP`.
 
@@ -138,17 +138,17 @@ They use the `.cjs` extension on purpose: `package.json` declares `"type": "modu
 
 ---
 
-## `tools/` — PowerShell helpers
+## `tools/` - PowerShell helpers
 
 | Script | What it does |
 |---|---|
-| `Patch-MhxrUrl.ps1` | Rewrites the dispatch URL in `libMHS.so`. Validates **both** architectures before writing either, so arm64 and armeabi-v7a can never end up pointing at different servers — a mismatch that produces a client which works in an emulator and fails on a real phone. `-Restore` reverts. |
+| `Patch-MhxrUrl.ps1` | Rewrites the dispatch URL in `libMHS.so`. Validates **both** architectures before writing either, so arm64 and armeabi-v7a can never end up pointing at different servers - a mismatch that produces a client which works in an emulator and fails on a real phone. `-Restore` reverts. |
 | `Update-DuckDns.ps1` | Keeps a DuckDNS domain pointed at the current IP, public or LAN (`-UseLocalIp`). Token stored DPAPI-encrypted. Registers a scheduled task. |
 | `Backup-Mhxr.ps1` | Dumps and restores the database through `docker cp`, never through a shell redirect (which corrupts the gzip archive on Windows). |
 
 The reason the dispatch URL matters: the client has exactly **one** hardcoded address. Every other
 endpoint is handed to it at runtime from the server's own `.env`. Put a *domain* in that one slot
-and the client never needs repatching again — when the server moves, you update DNS.
+and the client never needs repatching again - when the server moves, you update DNS.
 
 The slot is fixed-width and cannot be extended: 55 bytes on arm64, **48 on armeabi-v7a**, which is
 the real limit. On arm64 a pointer table sits immediately after it, so overrunning corrupts the library.
@@ -157,7 +157,7 @@ the real limit. On arm64 a pointer table sits immediately after it, so overrunni
 
 ## Credits and licence
 
-Upstream: [Forgotten-MH/apypos-server](https://github.com/Forgotten-MH/apypos-server) —
+Upstream: [Forgotten-MH/apypos-server](https://github.com/Forgotten-MH/apypos-server) -
 all the heavy lifting of the original server implementation is theirs.
 
 Licensed under **AGPL-3.0**, same as upstream. If you run a modified version of this server and

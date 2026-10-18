@@ -1,4 +1,4 @@
-# Item / material names — monster-name fix (2026-10-13, RES_VER 357)
+# Item / material names - monster-name fix (2026-10-13, RES_VER 357)
 
 ## Problem
 
@@ -16,7 +16,7 @@ official English monster name. Examples:
 | 水竜の鱗 | Lagiacrus Scale *(mismapped)* | **Plesioth Scale** |
 
 Monsters whose names were already correct (Rathalos, Rathian, Diablos,
-Zinogre, Tigrex, Nargacuga, …) were left untouched — e.g. `Rathian Proof I`
+Zinogre, Tigrex, Nargacuga, …) were left untouched - e.g. `Rathian Proof I`
 stayed `Rathian Proof I`, confirming the intended format
 **`<OfficialName> <Part>`**.
 
@@ -55,8 +55,8 @@ well as the `α/β/γ` markers, are preserved.
   (`mItemName`, 2,400 substitutions).
 - **server JSON**: `src/json/materiali.json` (`en` field, 2,400 rows).
 - **dictionary**: `tools-js/dizionario-materiali.json` (2,400 values).
-- `tools-js/aggiornamenti-risorse.txt` — `357 cmn/resident.00.fpk`.
-- `src/constants/protocol.ts` — `RES_VER` 356 → **357**.
+- `tools-js/aggiornamenti-risorse.txt` - `357 cmn/resident.00.fpk`.
+- `src/constants/protocol.ts` - `RES_VER` 356 → **357**.
 
 ## Pipeline
 

@@ -57,7 +57,7 @@ and work, because none of them grew.
 | live `res 367` | 0 | |
 
 The single mismatch in 326/328 is `GUI_otomo_menu.arc`, which is on the
-`excludedTargets` list ("Palico House: black screen then crash") — the same bug,
+`excludedTargets` list ("Palico House: black screen then crash") - the same bug,
 on an archive that had grown earlier. Every crashing screen is an arc that grew.
 
 The alignment theory from the older notes was a red herring: `res-0327` is fully
@@ -103,9 +103,9 @@ The 7 dropped textures were re-applied and published as `res 368`
 (`GUI.00.fpk`, crcjam `8bb60b50`) across 20 entries / 13 archives. Tested on a
 real client:
 
-- **quest result screen** — no longer crashes
-- **Palico House** — no longer crashes
-- **training hall** — no longer crashes
+- **quest result screen** - no longer crashes
+- **Palico House** - no longer crashes
+- **training hall** - no longer crashes
 
 So the crash really was the stale `+0x48`, not the texture data. The old
 `excludedTargets` entry for `GUI_otomo_menu` (Palico House) is also resolved by

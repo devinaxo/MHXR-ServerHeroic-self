@@ -1,4 +1,4 @@
-# Charms / talismans (お守り, `omamori`) — names, unlock, drops
+# Charms / talismans (お守り, `omamori`) - names, unlock, drops
 
 ## What a charm is
 
@@ -14,7 +14,7 @@ data in `rsdnt_equip.arc`:
 
 A charm carries a **技玉 (Skill Orb)** plus a skill that are **invalid until the
 charm is unlocked** (`MenuCmn`: *"the charm has not been unlocked, or its
-expiration has passed, so the Skill Orb and skill are invalid"* — the client
+expiration has passed, so the Skill Orb and skill are invalid"* - the client
 shows `スキルなし` / "No Skill"). Skill Orbs are what power **Martial Arts (武技)**.
 
 ## Translation (RES_VER 363)
@@ -41,9 +41,9 @@ zenny) and marks it unlocked.
 
 **Two deliberate departures from the original mobile-game design:**
 
-1. **Always succeeds** — the success roll (`mProbabilityBase`/`mProbabilityAdd`)
+1. **Always succeeds** - the success roll (`mProbabilityBase`/`mProbabilityAdd`)
    is ignored.
-2. **Permanent — the expiry timer is dropped.** The client decides "enabled" in
+2. **Permanent - the expiry timer is dropped.** The client decides "enabled" in
    `nPlayerWorkspace::cItemOmamori::isEnableEffect` (decoded from
    `libMHS.so`): it needs `is_awake=1` and, for `mLimitType` 1..5,
    `start_remain ≤ now ≤ end_remain`; 2/3 also need the awake-remain time > now,
@@ -58,14 +58,14 @@ Unlocking is not enough: each **quest-start** response carries
 `instance_data.enable_talisman` (and `enable_talisman_partner`), and the client
 only applies the equipped charm's skill and **skill orbs** when it is 1. Every
 quest controller used to hardcode both to `0`, so a released charm showed its
-orbs in the menus but was ignored on the hunt — a weapon art needing 6 fire orbs
+orbs in the menus but was ignored on the hunt - a weapon art needing 6 fire orbs
 stayed locked even with 4 from armour + 12 from the charm, while 6 from armour
 alone worked.
 
 `src/services/talismanService.ts` computes the flag (`talismanAbilitato`): 1 when
-the selected equip set's talisman is a released (`is_awake=1`) charm, and — as a
+the selected equip set's talisman is a released (`is_awake=1`) charm, and - as a
 fallback, because the client can equip a released charm locally before the
-equip-set save round-trips — 1 when the player owns any released charm. The
+equip-set save round-trips - 1 when the player owns any released charm. The
 client still applies only the charm it actually has equipped, so the fallback
 cannot over-grant. All quest starts (eternal, island, event ×3, forest ×2,
 training) now use it.
@@ -80,4 +80,4 @@ reward catalogue (`catalogo-ricompense.json`). They drop from the **禁断の狩
 `OD_OMA1823` (id `598871253`, weight 1 of 14) → **~26%** to get it in one clear
 (1 pick per slot, 4 slots).
 
-So no reward wiring was needed — they already drop; they are simply rare.
+So no reward wiring was needed - they already drop; they are simply rare.

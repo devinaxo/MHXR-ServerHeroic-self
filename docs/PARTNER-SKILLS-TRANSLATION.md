@@ -1,4 +1,4 @@
-# Partner skill texts — translation (2026-10-13, RES_VER 354)
+# Partner skill texts - translation (2026-10-13, RES_VER 354)
 
 Partner (mercenary) skill names and descriptions are **client master data**, not
 server data. They live in:
@@ -34,15 +34,15 @@ the elemental Stances, Evasion, Guard Reduction, Command, and the per-weapon
 
 ## Files
 
-- **new** `lavoro-traduzione/partner/partner-skill.json` — flat `{ "jp": "en" }`,
+- **new** `lavoro-traduzione/partner/partner-skill.json` - flat `{ "jp": "en" }`,
   161 entries (157 strings + the 5 partner names). Used by
   `tools-js/traduci-rsdnt-arc.cjs`.
 - **new** helper tools used to find/extract the strings:
-  - `tools-js/scan-packs.cjs <regex>` — list pack entries whose internal path matches.
-  - `tools-js/extract-entry.cjs <regex> <out>` — pull one entry out of the packs.
-  - `tools-js/dump-xfs-strings.cjs <file> [--pairs]` — dump `mName`/`mText` from an XFS table.
-- `tools-js/aggiornamenti-risorse.txt` — added `354 cmn/resident.00.fpk`.
-- `src/constants/protocol.ts` — `RES_VER` 353 → **354**.
+  - `tools-js/scan-packs.cjs <regex>` - list pack entries whose internal path matches.
+  - `tools-js/extract-entry.cjs <regex> <out>` - pull one entry out of the packs.
+  - `tools-js/dump-xfs-strings.cjs <file> [--pairs]` - dump `mName`/`mText` from an XFS table.
+- `tools-js/aggiornamenti-risorse.txt` - added `354 cmn/resident.00.fpk`.
+- `src/constants/protocol.ts` - `RES_VER` 353 → **354**.
 
 ## Pipeline (same as the quest-name translation)
 

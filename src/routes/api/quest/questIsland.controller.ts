@@ -31,6 +31,7 @@ import {
 } from '../../../services/tradePointsService.js';
 import { tempoPerLista } from '../../../services/questTime.js';
 import { registraOtomoAvviati, premiaOtomoFineQuest, otomoIdsSquadraSelezionata } from '../../../services/otomoQuest.js';
+import { estraiOtomoIncontro, creaOtomoIncontro } from '../../../services/otomoEncounter.js';
 import { intervalloEnv, interoCasuale } from '../../../services/intervalloEnv.js';
 import Present from '../../../model/presents.js';
 import specialRequests from '../../../json/special-requests.json' with { type: 'json' };
@@ -773,6 +774,9 @@ export const islandEnd = async (req: Request, res: Response) => {
     const { mst_quest_id, clear_time, session_id } = req.body as IslandEndInput;
     const cleared_quest = mst_quest_id;
     const clearTime = clear_time;
+    // Solo le missioni che stanno su un'isola possono far incontrare un palico:
+    // eventi/eternal passano da questa stessa rotta ma non hanno un part_id.
+    const isolaDellaQuest = isolaDellaMissione(Number(cleared_quest));
     const filter = { current_session: session_id };
     const quest = await QuestSheet.findOne({ mQuestID: String(cleared_quest) });
     log.debug('Rewards: %o', quest?.mRewardItemList);
@@ -815,6 +819,8 @@ export const islandEnd = async (req: Request, res: Response) => {
     let augite: ReturnType<typeof daiAugite> = null;
     // Exp che i palico hanno preso in questa quest (otomo_result, in fondo).
     let otomoResult: ReturnType<typeof premiaOtomoFineQuest> = [];
+    // Palico incontrato a fine missione (get_mst_otomo_id, in fondo).
+    let nuovoOtomo: ReturnType<typeof creaOtomoIncontro> | null = null;
     let conteggioPremi = { materiale: 0, crescita: 0, limitato: 0, equipaggiamento: 0 };
     if (doc.box) {
       /*
@@ -877,6 +883,19 @@ export const islandEnd = async (req: Request, res: Response) => {
           log.info('palico | %s: exp a %s', doc.character_name ?? '?', otomoResult.map((o) => `${o.otomo_id} +${o.get_exp}`).join(', '));
         }
       }
+      /*
+       * Incontro casuale con un palico nuovo, solo sulle missioni delle isole.
+       * Il client lo scopre da `get_mst_otomo_id` (in fondo) e lo ritrova poi in
+       * box.otomos: per questo va scritto QUI, nella stessa update dei premi.
+       */
+      if (isolaDellaQuest && Array.isArray(doc.box.otomos)) {
+        const candidato = estraiOtomoIncontro(doc.box.otomos);
+        if (candidato) {
+          nuovoOtomo = creaOtomoIncontro(candidato);
+          doc.box.otomos.push(nuovoOtomo);
+          log.info('palico | %s incontra %s (%s, rarita %d)', doc.character_name ?? '?', candidato.name, nuovoOtomo.otomo_id, candidato.rarity);
+        }
+      }
       update.otomo_avviati = null;
       // Punti di scambio vinti con la quest: stessi numeri mostrati nei riquadri.
       if (premi.punti > 0) {
@@ -913,8 +932,10 @@ export const islandEnd = async (req: Request, res: Response) => {
     // claimed a Palico (2092467563) and a partner -- Ciel, 507850012, the
     // starting partner per src/json/user-defaults.json -- were gained after
     // EVERY quest, and Ciel re-ran her "mind if I train under you?" scene each
-    // time. Nothing in a normal quest grants a partner.
-    get_mst_otomo_id: 0,
+    // time. Nothing in a normal quest grants a partner. Now an island clear can
+    // really leave a new Palico (services/otomoEncounter.ts), and only then is
+    // this set: the box was written above in the same update.
+    get_mst_otomo_id: nuovoOtomo?.mst_otomo_id ?? 0,
     get_mst_partner_id: 0,
     increase_value: 7,
     is_pop_not_enough_zeny: 0, // could not auto synth due to lack of zeny?
@@ -932,7 +953,7 @@ export const islandEnd = async (req: Request, res: Response) => {
     max_potential_equipments: [
       //"stingval"
     ],
-    mst_part_id: isolaDellaMissione(Number(cleared_quest)) ?? 3815380063, // isola della missione appena finita
+    mst_part_id: isolaDellaQuest ?? 3815380063, // isola della missione appena finita
     open_list: {
       open_ocean: [
         /*{"mst_ocean_id":0}*/

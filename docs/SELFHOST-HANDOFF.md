@@ -1,11 +1,11 @@
-# Self-hosting MHXR (Monster Hunter Explore) — handoff brief
+# Self-hosting MHXR (Monster Hunter Explore) - handoff brief
 
 Written for an agent picking this up cold. Everything below is verified against the
 live server on 2026-10-07, except where marked as untested.
 
 ---
 
-## 0a. THIS INSTALLATION — verified working 2026-10-08
+## 0a. THIS INSTALLATION - verified working 2026-10-08
 
 Read this section first; it records what was actually done on this machine and the
 deviations from the general instructions below.
@@ -15,7 +15,7 @@ deviations from the general instructions below.
 | Install path | `/home/nacho/Documents/mhxr/MHXR-ServerHeroic-self` |
 | Branch / tip | `fix/multiplayer-gacha-hr` @ `071a851` |
 | Reachable at | `http://100.115.13.121:8081` (Tailscale IP, tailnet only) |
-| Packs on disk | 262 files, 1.97 GB — all four groups |
+| Packs on disk | 262 files, 1.97 GB - all four groups |
 | Database | seeded: 4175 questsheets, 597 ticket, 176 assault events |
 | Patched APK | `scripts/patcher/out/monster-hunter-explore-09-03-06-patched-aligned-debugSigned.apk` |
 
@@ -44,10 +44,10 @@ matching the advertised size, and a real Blowfish round-trip to
    belong to your host uid 1000; the container runs as uid 999 and could read them
    but got `EACCES` writing `download.list`. Adding your group as a supplementary
    group fixes write access without touching file ownership. `HOST_GID=1000` is in
-   `.env` — change it if your uid differs.
+   `.env` - change it if your uid differs.
 
 5. **Two upstream bugs fixed in the source.** Both were real blockers, not
-   cosmetic — see section 9.
+   cosmetic - see section 9.
 
 ### Operating it
 
@@ -87,7 +87,7 @@ plus a Socket.IO binary channel. It has exactly **one** hardcoded server address
 the dispatch URL in `libMHS.so`; everything else (api, res, web, socket) is handed
 to it at runtime from the server's own `.env`.
 
-## 1. Get the code — branch matters
+## 1. Get the code - branch matters
 
 ```bash
 git clone https://github.com/Heroic853/MHXR-ServerHeroic
@@ -99,7 +99,7 @@ git checkout fix/multiplayer-gacha-hr
 does not contain the English translation work at all. The live server runs the
 other branch. Current tip: `071a851` (2026-09-30).
 
-Do not run `yarn setup --import-resources` if you use the fetcher below — it creates
+Do not run `yarn setup --import-resources` if you use the fetcher below - it creates
 symlinks that fight with a plain directory tree.
 
 ## 2. Get the game assets
@@ -161,7 +161,7 @@ Verified examples:
 ```
 
 Note the group name appears **once** in the final URL. Appending the path verbatim
-gives a doubled group name and a 404 — that is the easy mistake here.
+gives a doubled group name and a 404 - that is the easy mistake here.
 
 ### Use the full manifest, NOT the `d*_*` diff manifests
 
@@ -174,10 +174,10 @@ them.** Measured on 2026-10-07:
 | `cmn/GUI.00.fpk` | 142334672 / `bc25ed17` | 142535088 / `fcc82edd` | 142334672 / `bc25ed17` |
 
 The `d*` folders are symlinks to `v0282` (`tools-js/pubblica-risorse.sh`), so every
-path serves identical bytes — the diff manifests simply advertise files that are
+path serves identical bytes - the diff manifests simply advertise files that are
 larger than what exists. Verifying against them produces false corruption reports.
 
-### crcJam, not CRC-32 — this will bite you
+### crcJam, not CRC-32 - this will bite you
 
 The manifest CRC is `crc/crcjam` (npm), used by
 `src/services/initResourceDownloadList.ts`. It is table-driven CRC-32
@@ -190,7 +190,7 @@ crcJam("123456789") = 340bc6d9     (zlib CRC-32 = cbf43926, the complement)
 crcJam("")         = ffffffff     (not 00000000)
 ```
 
-Easiest path is to just `npm i crc` and use `require('crc/crcjam')` — that's what
+Easiest path is to just `npm i crc` and use `require('crc/crcjam')` - that's what
 the server does, so it can't drift.
 
 ### Resulting layout
@@ -209,7 +209,7 @@ describing someone else's files will be served verbatim and the client will reje
 every pack. Deleting them lets the server compute correct CRCs from your own files
 on first boot.
 
-### Everything is in English — with two known exceptions
+### Everything is in English - with two known exceptions
 
 The target is a fully English game. Almost all of it arrives with the packs
 described above, so there is no translation work to do. Two things are worth
@@ -219,7 +219,7 @@ knowing up front so they don't look like bugs:
    display text the server genuinely sends. `src/services/oceanService.ts:291`
    reads `mQuestName` out of `src/csv/questData.csv` and returns it as
    `quest_name`. In practice most quest names the player sees still come from
-   the client, so the visible impact is small — but island node titles can show
+   the client, so the visible impact is small - but island node titles can show
    Japanese. Fixing it means translating that CSV (Japanese source text) and
    re-seeding; the seed only runs on an empty `questsheets` collection, so
    existing installs need the rows updated directly.
@@ -228,8 +228,8 @@ knowing up front so they don't look like bugs:
    That's the upstream author's language and has no effect on the game. Ignore
    it.
 
-Everything else — menus, monsters, skills, equipment and weapon names, battle
-messages, network/API error text, the in-hunt pause menu — is English, because
+Everything else - menus, monsters, skills, equipment and weapon names, battle
+messages, network/API error text, the in-hunt pause menu - is English, because
 it all lives in the client resource packs.
 
 ### The packs are the English build
@@ -279,7 +279,7 @@ docker compose -f docker-compose.prod.yml up -d --build
 docker compose -f docker-compose.prod.yml logs -f server
 ```
 
-Look for `File created successfully` in the logs — that's the download.list
+Look for `File created successfully` in the logs - that's the download.list
 regeneration.
 
 **Never `docker compose down -v`.** The `-v` deletes the database and your character.
@@ -290,21 +290,21 @@ Maintenance scripts are mounted at `/app/tools` and run with `node`:
 docker compose -f docker-compose.prod.yml exec -T server node /app/tools/verifica-totale.cjs
 ```
 
-They are `.cjs` on purpose — `package.json` declares `"type": "module"`, so any
+They are `.cjs` on purpose - `package.json` declares `"type": "module"`, so any
 `.js` under `/app` would be parsed as ESM and every `require()` would fail.
 
 ## 5. Patch the client
 
-Untested by me — read `docs/APK_PATCHING_GUIDE.md` for the full seven-patch
+Untested by me - read `docs/APK_PATCHING_GUIDE.md` for the full seven-patch
 procedure with byte offsets.
 
 The one that matters is the dispatch URL in `libMHS.so` (arm64-v8a **and**
-armeabi-v7a — a mismatch gives a client that works in an emulator and fails on a
+armeabi-v7a - a mismatch gives a client that works in an emulator and fails on a
 real phone). Original string: `https://mhxr-dispatch.s3-ap-northeast-1.amazonaws.com/`
 
 `tools/Patch-MhxrUrl.ps1` automates it and validates both architectures before
 writing either, but it's **PowerShell/Windows**. On Linux use
-`scripts/patcher/patcher.py` (Python 3, needs `apktool.jar` — present in the repo)
+`scripts/patcher/patcher.py` (Python 3, needs `apktool.jar` - present in the repo)
 or hex-edit both `.so` files directly.
 
 **The slot is fixed-width and cannot grow: 55 bytes on arm64-v8a, 48 on
@@ -316,7 +316,7 @@ SafetyNet must also be patched or the client hangs forever on 通信中です…
 Prereqs: JDK 17+, `apktool` 2.9.3 (in `scripts/patcher/`), Android SDK
 build-tools for `zipalign`/`apksigner`, Python 3.
 
-## 6. Resource versioning — ignore it for self-hosting
+## 6. Resource versioning - ignore it for self-hosting
 
 `src/constants/protocol.ts` has `RES_VER: 285` on the fork. The client compares it
 to a saved version: gap < 10 → asks for a `d<old>_<new>/` diff folder; gap ≥ 10 or
@@ -328,20 +328,20 @@ player re-download 1.8 GB. **For your own server, set `RES_VER: 282`** and skip 
 installs the full set regardless.
 
 When you later translate something and want to push it to existing players, that's
-when the version bump and `pubblica-risorse.sh` matter — bump `RES_VER`, add a line
+when the version bump and `pubblica-risorse.sh` matter - bump `RES_VER`, add a line
 to `tools-js/aggiornamenti-risorse.txt`, run the script on the server host.
 
 ## 7. Gotchas, collected
 
 - `yarn build` runs `ln -sfn ../src/public dist/public`, and the runtime Docker
   stage copies only `/app/dist`. The prod compose therefore mounts assets at
-  `/app/src/public`, not `/app/dist/public`. Already correct there — don't "fix" it.
+  `/app/src/public`, not `/app/dist/public`. Already correct there - don't "fix" it.
 - Only resource version **282** is supported by the server code.
 - If the client hangs on first boot, reboot the emulator. This is normal per
   upstream docs.
 - When you change FPKs: delete `download.list`, restart the server, and on the
   client wipe app data/cache so it re-fetches.
-- `tools-js/` needs the `crc`, `egoroof-blowfish`, `mongoose` modules — run those
+- `tools-js/` needs the `crc`, `egoroof-blowfish`, `mongoose` modules - run those
   scripts inside the container where they're installed. `.cjs` on purpose: `package.json`
   declares `"type": "module"`, so any `.js` under `/app` is parsed as ESM and every
   `require()` fails.
@@ -360,8 +360,8 @@ Neither is cosmetic. Both silently produce a server that boots and looks healthy
 
 ### 9a. `download.list` CRCs were written in decimal, not hex
 
-`initResourceDownloadList.ts` interpolated the value returned by `crc/crcjam` —
-a JS number — with a bare `${item.crc}`, so it printed base 10. The origin's
+`initResourceDownloadList.ts` interpolated the value returned by `crc/crcjam` -
+a JS number - with a bare `${item.crc}`, so it printed base 10. The origin's
 manifests are hexadecimal (`/openingDL/adrd/eft.00.fpk,2e853644,1478595`), so
 `0x2e853644` went out as `780482116`. The client parses the field as hex, gets a
 completely different number, and rejects **every pack** as corrupt.
@@ -370,7 +370,7 @@ Fixed to `item.crc.toString(16).padStart(8, '0')`. The `padStart` is deliberate:
 the origin itself is inconsistent and writes 19 of its 232 stdDL entries unpadded
 (e.g. `899dfad`), but padding matches the documented 8-digit form and a hex parser
 accepts both. After the fix, all 232 generated stdDL entries are numerically
-identical to the origin's — same paths, same CRC values, same sizes.
+identical to the origin's - same paths, same CRC values, same sizes.
 
 ### 9b. Every tutorialDL and trainingDL manifest on the origin is stale
 
@@ -395,7 +395,7 @@ client ever compares against.
 ## 8. Licensing
 
 Server code is AGPL-3.0: if you run a modified version and let other people
-connect, you must offer them the source. The **game assets are separate** — they're
+connect, you must offer them the source. The **game assets are separate** - they're
 Capcom's, and the project treats them as personal-use only. Don't build a public
 service on them.
 ---
@@ -479,7 +479,7 @@ the pre-288 pack: header identical, 0 padding mismatches, 0 `sizeAndFlags`
 mismatches, and `GUI_msg.arc` the only entry whose data differs.
 
 ### Still a live hazard
-`src/tools/fpk/formats/fpk.ts` — the packer the project itself uses — **still
+`src/tools/fpk/formats/fpk.ts` - the packer the project itself uses - **still
 writes `0xCDCDCDCD`**. Anything built through that path can reproduce this crash.
 Worth fixing there too; see docs/STRING-EDITS.md.
 
@@ -519,8 +519,8 @@ them the loss propagated forward. Both are now written as constants.
 
 ### What made this expensive
 Both crashes looked identical, and I diagnosed the second one from the first
-without re-deriving it. The check that would have caught either — re-inflate
-every entry and compare against the stored length — did not exist. It does now,
+without re-deriving it. The check that would have caught either - re-inflate
+every entry and compare against the stored length - did not exist. It does now,
 and `publish-msg-arc.cjs` refuses to publish without it:
 
 ```
@@ -558,7 +558,7 @@ Two separate things, both in `shop.controller.ts`:
 1. `shop_limit: 0` on every row. Those are the shop's "Exchanged" and
    "Remaining" columns (the game's own strings 2119/2120 are literally those two
    headings), so zero remaining stock rendered the whole post as sold out. The
-   comment above the field said *"Limiti mai a 0"* — the intent was there, the
+   comment above the field said *"Limiti mai a 0"* - the intent was there, the
    code was not.
 2. The currency did not exist server-side. `box.points` was empty and
    `account/login` hardcoded `points: [{ amount: 0 }]`. Prices were in zenny at a
@@ -656,7 +656,7 @@ From `uGUIMenuExchange`'s `updateDisp*` family:
 | --- | --- | --- |
 | item name | row `name` | yes |
 | price in P | `item[68]`, MenuCmn 2101 `"1 Time: %dP"` | yes |
-| "Owned: N" | `uMenuExchange::getBoxItemNum()` — how many you hold | yes |
+| "Owned: N" | `uMenuExchange::getBoxItemNum()` - how many you hold | yes |
 | exchanged / spent | `item[28]`, inverted: 0 means exchanged | yes |
 | lineup expiry | `item[80]`, absolute time; MenuCmn 188 is "Indefinite" | yes |
 | remaining stock | `shop_limit` | the "sold out" wording |
@@ -667,7 +667,7 @@ The post's own header strings sit together at MenuCmn 2098-2111:
 `"There are currently no matching items available"`, `"New"`.
 
 MenuCmn 2119/2120 ("Exchanged"/"Remaining") are headers of a different view, not
-this card — reading them as field meanings is what produced the earlier guess.
+this card - reading them as field meanings is what produced the earlier guess.
 
 ### Stock is tracked per player, and refills at 05:00
 
@@ -891,6 +891,15 @@ and the client derives the level from whatever we store, so the env knob simply
 sets the pace. 1000 is roughly one early level per quest (カカオ: 755 to level 2)
 and slows down as the curve steepens.
 
+Random encounters were added later (services/otomoEncounter.ts): an island clear
+can leave a Palico the box does not own yet, written to `box.otomos` in the same
+update and announced with `get_mst_otomo_id`. Event/eternal ends share
+`islandEnd` but have no island, so they never drop one. `OTOMO_ENCOUNTER_CHANCE`
+(default 20, percent) sets the frequency, `0` disables it. See
+[docs/OTOMO-PALICO.md](OTOMO-PALICO.md), which also explains why a level 69
+Palico has exactly 2 subskills (slots open at 10/25/75) and lists the English
+name dictionary (`lavoro-traduzione/otomo/otomo-nomi.json`).
+
 
 ### Partner level-up ended on a 404
 
@@ -924,7 +933,7 @@ Two changes in `box.controller.ts`:
 
 Each island's `part_info.mChartStoryList` had the **previous** island's departure
 scene prepended, and `full_enabled_state.json` assigned the list to the nodes
-position-by-position. So every island-2+ node got the scene one step too early —
+position-by-position. So every island-2+ node got the scene one step too early -
 island 2's port played island 1's "we need Argo's permission to sail" send-off
 instead of island 2's real arrival, `Story_00002_001_01` (*"We've arrived! This
 is the second island, Lumbai Island! …"*).
@@ -938,13 +947,13 @@ rule is right.
 That first remap still assigned the scenes to the nodes in raw file order, which
 soaked them onto the leading nodes and left the *later* `t3` passage nodes with
 `mst_story_id 0` (silent). A later pass assigns each island's blocks to its story
-nodes (`t1`/`t3`/`t4`) positionally instead — see "The blocks live on the story
-nodes" below. The scene files themselves are complete in `GUI.81`–`GUI.94`.
+nodes (`t1`/`t3`/`t4`) positionally instead - see "The blocks live on the story
+nodes" below. The scene files themselves are complete in `GUI.81`-`GUI.94`.
 
 ### Next island stayed locked after finishing the exit coast
 
 `statoStoria` opened the next island when a `type 4` (exit coast) node was
-reached — but the exit is **not** the last node of its island in the progression
+reached - but the exit is **not** the last node of its island in the progression
 list (island 2 has three nodes after it). The walk kept going through those,
 found one whose last two quests weren't cleared, and `break`-ed **before** ever
 reaching the next island, so finishing island 2 never unlocked island 3.
@@ -956,7 +965,7 @@ exit) is reached. Regression test added.
 ### Subjugation-request story nodes never advanced
 
 A story scene can hand the player a **Subjugation Request** through the markup
-`<POP1 8,PART00002_NODE00103>` — the name after the comma is a node, resolved
+`<POP1 8,PART00002_NODE00103>` - the name after the comma is a node, resolved
 via `tuning/xml/define/node_define` (`PART00002_NODE00103` → `1760759807`,
 Tambaqui Coast). The client then shows "Subjugation Request: <monster> …
 sighted at <island>", and the scene has follow-up parts (`Story_00002_003_01`
@@ -965,7 +974,7 @@ request → `_02` still-outstanding → `_03` completion).
 Our map always sent node `state: 1`, so even after the flagged quest was cleared
 the node still read as pending and the scene never moved on. `enrichOceanData`
 now sets a node's `state` to `3` when it has a cleared **Subjugation**
-(`QuestType`) quest — the node-side signal the scene needs. (Request binding is
+(`QuestType`) quest - the node-side signal the scene needs. (Request binding is
 per-node, so this covers every subjugation-request scene, not just one.)
 
 The story node itself needed a second lever: it kept reporting the request part
@@ -976,7 +985,7 @@ scenes, `tools-js`-style extraction) records, for every scene carrying a
 (`Story_00002_003`) and the target node; plus every block's parts in order.
 `enrichOceanData` now, for a node whose story is such a request and whose target
 node is in the "fulfilled" set, reports the block's **final part** (the first
-part after the last POP part) instead — so Abigail's request finally plays its
+part after the last POP part) instead - so Abigail's request finally plays its
 completion ("We slew it!").
 
 **Proper progression (watch-driven).** A block is multi-part (`_01` request →
@@ -989,7 +998,7 @@ nothing watched it starts at `_01`.
 
 **Do NOT advance across blocks.** An earlier revision walked the whole island
 sequence (`002 → 003 → 004 → 099`) so a node would show the next unwatched scene
-of *any* block — which made each story node play every event in turn, including
+of *any* block - which made each story node play every event in turn, including
 not-yet-unlocked ones (the departure, and a Gobul request for a node the player
 didn't have). Each block must stay on its own node; the advance is block-scoped.
 
@@ -998,11 +1007,11 @@ scene is entirely server-driven: `sQuestWorkspace::requestDramaStory` plays the
 node's `mst_story_id` (resolved through `story_info`→`drama_info`, where the story
 drama carries `getDefineType == 0x21`), and the client remembers what it watched
 in its **own** cache (`sDramaManager::reqSaveCache`, `sdcard://AppHome/Cache`,
-`drama\cache`) — the protocol carries no watched flag and there is no server
+`drama\cache`) - the protocol carries no watched flag and there is no server
 endpoint for it. So the map has to hand each node the right story.
 
 Island 2 had two passage (`t3`) nodes the earlier remap left with `mst_story_id = 0`
-(pressable, click sound, no camp — identical symptom to the un-patched port). The
+(pressable, click sound, no camp - identical symptom to the un-patched port). The
 raw-order remap had soaked the scenes onto the first nodes in file order, leaving
 the *later* `t3` nodes empty. `full_enabled_state.json` now assigns each island's
 main-line blocks (001, 002, …) to its `t1`/`t3` nodes **positionally**, and the
@@ -1038,7 +1047,7 @@ scene is tagged `2053326309` (island 2); the client's play list keys off that
 tag. Fixed by patching the **served** client pack (this is client data, not a
 server response):
 
-- `rsdnt_scenario.arc :: tuning/xml/drama/drama_info` — drama `3441885821`'s
+- `rsdnt_scenario.arc :: tuning/xml/drama/drama_info` - drama `3441885821`'s
   parent changed to `2053326309`.
 - Repacked with `tools-js/arc-repack.cjs` semantics and swapped into
   `src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk` with
@@ -1089,7 +1098,7 @@ now uses the island the quest belongs to, falling back to island 1 only for
 quests that are not on the story map. The lookup is `ISOLA_PER_QUEST` built from
 `full_enabled_state.json` (which lists **every** quest, including the Special
 Request / subjugation ones like 3-9/3-10), then
-`isolaDiQuest` (`services/progressioneStoria.ts`) as a second source — that file
+`isolaDiQuest` (`services/progressioneStoria.ts`) as a second source - that file
 only lists a node's main quests, so a Special Request hunt used to fall back to
 island 1 and dump the player there.
 

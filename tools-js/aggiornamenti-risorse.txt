@@ -278,3 +278,22 @@
 # 370: texture ritoccate (14) + 3 nuove (map_01, map_seaarea_01, menu05) dal
 # merge di feat/english-translation. Applicate con apply.cjs (+0x48 corretto).
 370 cmn/GUI.00.fpk
+# 371: resident.00.fpk - rsdnt_property.arc :: nomi materiali piu' corti e a capo
+# controllato (Canadian style: Award, Fire Silk, C.Qurupeco/S.Rajang, \r\n a 12
+# celle). Vedi docs/MATERIAL-NAMES-WRAP.md.
+371 cmn/resident.00.fpk
+# 372: resident.00.fpk :: rsdnt_property.arc :: item_material - CALIBRATION. 8 items
+# renamed to test strings to pin the wrap width and test break codes. Temporary.
+372 cmn/resident.00.fpk
+# 373: resident.00.fpk :: rsdnt_property.arc :: item_material - real word wrap.
+# Names wrapped at word boundaries to fit ~300 px lines, joined with \r\n
+# (honored by the box). Replaces the 371/372 state. 3+ line names left unwrapped.
+373 cmn/resident.00.fpk
+# 374: same wrap as 373 plus the renamed items (Thunder Silk++ -> Thunder / Silk++).
+374 cmn/resident.00.fpk
+# 375: shorten the rest of the material names so none needs 3 lines (tier/variant drops, template+lexicon abbreviations, month/bracket kept).
+375 cmn/resident.00.fpk
+# 376: resident.00.fpk :: rsdnt_otomo.arc :: OtomoParam.mOtomoName - all 53
+# Palico (otomo) names translated (Cacao, Souffle, Waffle, Macarona, ...).
+# Romanizations, single line, no textures. See docs/OTOMO-PALICO.md.
+376 cmn/resident.00.fpk

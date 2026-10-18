@@ -21,7 +21,7 @@ node tools-js/verify-bump.cjs http://127.0.0.1:8081 <old> <new>
 # then reinstall the APK with the new resources
 ```
 
-Run from the project root as your own user — not inside the container, which
+Run from the project root as your own user - not inside the container, which
 runs as `appuser` and cannot write the packs.
 
 Step 2 prints every string that differs from what is being served now, plus the
@@ -65,8 +65,8 @@ grep -rl "Treasure Details" lavoro-traduzione/trad/
 
 Each of the 49 entries in `GUI_msg.arc` is a Capcom GMD file. Its strings sit in
 one block at the very end, after a table of labels. Translating changes only
-that block's size; the labels — and therefore every key the game uses to find a
-message — are carried over untouched. `tools-js/testo-gmd.cjs` does that
+that block's size; the labels - and therefore every key the game uses to find a
+message - are carried over untouched. `tools-js/testo-gmd.cjs` does that
 rewrite, and it re-reads its own output afterwards to catch a malformed GMD
 before it can crash the game at startup.
 
@@ -146,7 +146,7 @@ Published 2026-10-09. Four hand-edited strings plus the six drift fixes above.
 
 **1169 keeps the `%d` on purpose.** It is the button for the multiplier screen,
 which offers x2 / x3 / x5, so a literal `x5` would have read `x5` on all three
-buttons. If you specifically want the literal text, change it to `x5` — but
+buttons. If you specifically want the literal text, change it to `x5` - but
 expect the wrong label on the x2 and x3 buttons.
 
 ## Still open: the quest time result row
@@ -159,7 +159,7 @@ not one string:
 | the time | 1863 | `%02d:%02d` |
 | the condition | 24 / 25 | `Or More` / `Or Less` |
 | the separator | 2231 | `---` |
-| the rank | 1145–1148 | `S` `A` `B` `C` |
+| the rank | 1145-1148 | `S` `A` `B` `C` |
 
 The overlap you see on the time is not a text problem you can fix by editing
 one entry: 24 and 25 are shared with several other screens, so shortening them
@@ -170,7 +170,7 @@ Ways to attack it, if it is still bothering you:
 - shorten 24/25 (`"Or+"`, `"Or-"`) and accept the effect on every other screen
 - give 24/25 a leading space (`" Or Less"`), which is the same trick the numeric
   suffixes at 440/719/720/721/722 already use
-- change the rank letters 1145–1148, which are used elsewhere too
+- change the rank letters 1145-1148, which are used elsewhere too
 
 Worth saying plainly: this may be a layout problem rather than a string problem.
 The client positions those pieces itself, and a spacing change to the text may
@@ -197,7 +197,7 @@ client reads the length from +0x48; with it missing it misparses the archive and
 the game dies on startup, before the title screen.
 
 This shipped twice. Version 289 "fixed" a crash that was actually a *different*
-field — the padding word at +0x40 of the **FPK** entry, which also had to be zero
+field - the padding word at +0x40 of the **FPK** entry, which also had to be zero
 and was being written as `0xCDCDCDCD`. Two fields, two broken releases.
 
 Both are now written as constants rather than copied from the source pack, which
@@ -280,7 +280,7 @@ find src/public/res/download/android -name download.list -delete
 docker compose -f docker-compose.prod.yml up -d --build server
 ```
 
-`build/` is throwaway scratch, so keep a real backup — publishing auto-snapshots
+`build/` is throwaway scratch, so keep a real backup - publishing auto-snapshots
 into `backups/`. The backup from this release was
 `build/GUI.00_backup_pre_strings.fpk` (md5 `56762eb4f726cb8cb2bc2a7d0e09532d`).
 `GUI.00_backup.fpk` and `GUI.00_backup_pre_calib.fpk` are from the texture work.

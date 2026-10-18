@@ -1,0 +1,808 @@
+{
+ "_comment": "Generated from rsdnt_otomo.arc :: OtomoParam. charNo builds the box otomo_id (OT_OTOMO_CHAR_ID_<charNo>), id is mst_otomo_id. event=1 marks collab/test rows that must not drop. Initial subskills exclude the No Skill placeholder.",
+ "otomos": [
+  {
+   "charNo": 0,
+   "id": 197113341,
+   "name": "ブランク",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 1,
+   "id": 2092467563,
+   "name": "ワッフル",
+   "type": 1,
+   "maxLevel": 40,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    3940878573,
+    3940878573
+   ]
+  },
+  {
+   "charNo": 2,
+   "id": 3853636817,
+   "name": "サブレ",
+   "type": 1,
+   "maxLevel": 40,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    3940878573,
+    3940878573
+   ]
+  },
+  {
+   "charNo": 3,
+   "id": 2461459527,
+   "name": "トルテ",
+   "type": 1,
+   "maxLevel": 40,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    4166035203,
+    4166035203
+   ]
+  },
+  {
+   "charNo": 4,
+   "id": 215118308,
+   "name": "シトロン",
+   "type": 1,
+   "maxLevel": 40,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    602590373,
+    602590373
+   ]
+  },
+  {
+   "charNo": 5,
+   "id": 2077573490,
+   "name": "モカ",
+   "type": 2,
+   "maxLevel": 40,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    4220279533,
+    4220279533
+   ]
+  },
+  {
+   "charNo": 6,
+   "id": 3806073032,
+   "name": "ガレット",
+   "type": 1,
+   "maxLevel": 40,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    1381592968,
+    1381592968
+   ]
+  },
+  {
+   "charNo": 7,
+   "id": 2514165854,
+   "name": "ペポ",
+   "type": 2,
+   "maxLevel": 50,
+   "rarity": 2,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    4220279533,
+    4199428314
+   ]
+  },
+  {
+   "charNo": 8,
+   "id": 90455503,
+   "name": "マカロナ",
+   "type": 1,
+   "maxLevel": 50,
+   "rarity": 2,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    4166035203,
+    622923342
+   ]
+  },
+  {
+   "charNo": 9,
+   "id": 1919094105,
+   "name": "コルネ",
+   "type": 0,
+   "maxLevel": 50,
+   "rarity": 2,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    2691686420,
+    1915357299
+   ]
+  },
+  {
+   "charNo": 10,
+   "id": 312771772,
+   "name": "メラード",
+   "type": 0,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1915357299,
+    2284139792
+   ]
+  },
+  {
+   "charNo": 11,
+   "id": 1705227306,
+   "name": "ショコラ",
+   "type": 0,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    371575926,
+    401057345
+   ]
+  },
+  {
+   "charNo": 12,
+   "id": 4239058320,
+   "name": "トリュフ",
+   "type": 2,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    4199428314,
+    4263353
+   ]
+  },
+  {
+   "charNo": 13,
+   "id": 2343425286,
+   "name": "ザーネ",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    544086219,
+    3663799720
+   ]
+  },
+  {
+   "charNo": 14,
+   "id": 365510821,
+   "name": "ミント",
+   "type": 1,
+   "maxLevel": 50,
+   "rarity": 2,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    622923342,
+    3744346925
+   ]
+  },
+  {
+   "charNo": 15,
+   "id": 1657696307,
+   "name": "デックス",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    648403488,
+    3702187843
+   ]
+  },
+  {
+   "charNo": 16,
+   "id": 4224131465,
+   "name": "アラレ",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    618882169,
+    3740031258
+   ]
+  },
+  {
+   "charNo": 18,
+   "id": 478088334,
+   "name": "プロア",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [
+    2281866235
+   ],
+   "mainSkills": [
+    661106711,
+    3714616692
+   ]
+  },
+  {
+   "charNo": 19,
+   "id": 1803041816,
+   "name": "バンチョー",
+   "type": 0,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1915357299,
+    362879000
+   ]
+  },
+  {
+   "charNo": 20,
+   "id": 965334911,
+   "name": "ワーズ",
+   "type": 2,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    4220279533,
+    25388942
+   ]
+  },
+  {
+   "charNo": 21,
+   "id": 1317988329,
+   "name": "カシワ",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    3714616692
+   ]
+  },
+  {
+   "charNo": 22,
+   "id": 3615995475,
+   "name": "パスカル",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [
+    3483564331
+   ],
+   "mainSkills": [
+    618882169,
+    3740031258
+   ]
+  },
+  {
+   "charNo": 24,
+   "id": 1055134566,
+   "name": "ボーロ",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    3987568704,
+    2594851030
+   ]
+  },
+  {
+   "charNo": 25,
+   "id": 1239622640,
+   "name": "ポルカ",
+   "type": 1,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    3714616692
+   ]
+  },
+  {
+   "charNo": 26,
+   "id": 3505025610,
+   "name": "クイニー",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1605355175,
+    682161713
+   ]
+  },
+  {
+   "charNo": 28,
+   "id": 928145229,
+   "name": "キルシュ",
+   "type": 1,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    544086219,
+    3663799720
+   ]
+  },
+  {
+   "charNo": 30,
+   "id": 546498110,
+   "name": "フィロ",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 2,
+   "initialSubskills": [],
+   "mainSkills": [
+    1887060217,
+    125661295
+   ]
+  },
+  {
+   "charNo": 31,
+   "id": 1469437608,
+   "name": "シュバイン",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1784942439,
+    493043697
+   ]
+  },
+  {
+   "charNo": 44,
+   "id": 1757328608,
+   "name": "ボロン",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 2,
+   "initialSubskills": [],
+   "mainSkills": [
+    1605355175,
+    682161713
+   ]
+  },
+  {
+   "charNo": 49,
+   "id": 370133085,
+   "name": "ロゼット",
+   "type": 1,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 2,
+   "initialSubskills": [],
+   "mainSkills": [
+    2880296917,
+    2880296917
+   ]
+  },
+  {
+   "charNo": 57,
+   "id": 3903640603,
+   "name": "フィナンシェ",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 2,
+   "initialSubskills": [],
+   "mainSkills": [
+    1605355175,
+    682161713
+   ]
+  },
+  {
+   "charNo": 63,
+   "id": 3303818177,
+   "name": "エクレア",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 2,
+   "initialSubskills": [],
+   "mainSkills": [
+    3537397762,
+    2782877844
+   ]
+  },
+  {
+   "charNo": 66,
+   "id": 3028727630,
+   "name": "クグロフ",
+   "type": 0,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 2,
+   "initialSubskills": [],
+   "mainSkills": [
+    371575926,
+    401057345
+   ]
+  },
+  {
+   "charNo": 106,
+   "id": 3810425599,
+   "name": "エミニャ",
+   "type": 5,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1427185445,
+    571879347
+   ]
+  },
+  {
+   "charNo": 107,
+   "id": 2484685417,
+   "name": "セイニャー",
+   "type": 5,
+   "maxLevel": 60,
+   "rarity": 3,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    2809907192,
+    3497850734
+   ]
+  },
+  {
+   "charNo": 109,
+   "id": 1939957614,
+   "name": "ソルティ",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1572536149,
+    717082563
+   ]
+  },
+  {
+   "charNo": 110,
+   "id": 325512843,
+   "name": "シュネーバル",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    3842414640,
+    2449582246
+   ]
+  },
+  {
+   "charNo": 112,
+   "id": 4251488167,
+   "name": "モグルー",
+   "type": 1,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    2567269583,
+    4247333200
+   ]
+  },
+  {
+   "charNo": 113,
+   "id": 2322579249,
+   "name": "ラムネ",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    4155717598,
+    2159281992
+   ]
+  },
+  {
+   "charNo": 114,
+   "id": 336276114,
+   "name": "ワタアメ",
+   "type": 0,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    362879000,
+    362879000
+   ]
+  },
+  {
+   "charNo": 115,
+   "id": 1661737476,
+   "name": "カルタ",
+   "type": 0,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [
+    3117370760
+   ],
+   "mainSkills": [
+    1915357299,
+    2284139792
+   ]
+  },
+  {
+   "charNo": 116,
+   "id": 4194651070,
+   "name": "ペスカ",
+   "type": 5,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [
+    4072853659
+   ],
+   "mainSkills": [
+    3987568704,
+    2594851030
+   ]
+  },
+  {
+   "charNo": 117,
+   "id": 2365750056,
+   "name": "KIRIMI",
+   "type": 1,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    378330539,
+    4157723627
+   ]
+  },
+  {
+   "charNo": 118,
+   "id": 498951865,
+   "name": "カカオ",
+   "type": 1,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    3714616692
+   ]
+  },
+  {
+   "charNo": 119,
+   "id": 1790596655,
+   "name": "スフレ",
+   "type": 1,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    3702187843,
+    2880296917
+   ]
+  },
+  {
+   "charNo": 120,
+   "id": 944487752,
+   "name": "ハピルー",
+   "type": 0,
+   "maxLevel": 80,
+   "rarity": 4,
+   "event": 0,
+   "release": 1,
+   "initialSubskills": [],
+   "mainSkills": [
+    1120998979,
+    2129795158
+   ]
+  },
+  {
+   "charNo": 200,
+   "id": 138109331,
+   "name": "デビルー",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 1,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 201,
+   "id": 2134659333,
+   "name": "アルゴー",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 1,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 202,
+   "id": 3862233279,
+   "name": "ニャン検１",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 1,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 203,
+   "id": 2435985449,
+   "name": "ニャン検２",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 1,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 204,
+   "id": 257336714,
+   "name": "ニャン検３",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 1,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 205,
+   "id": 2018612508,
+   "name": "ニャン検４",
+   "type": 1,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 1,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    661106711,
+    661106711
+   ]
+  },
+  {
+   "charNo": 210,
+   "id": 287330514,
+   "name": "テスタ",
+   "type": 5,
+   "maxLevel": 30,
+   "rarity": 1,
+   "event": 0,
+   "release": 0,
+   "initialSubskills": [],
+   "mainSkills": [
+    3665004658,
+    2910107876
+   ]
+  }
+ ]
+}

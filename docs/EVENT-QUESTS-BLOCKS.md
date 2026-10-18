@@ -51,16 +51,16 @@ its `mst_block_id` hash, its map, and the monster it contains.
 Pipeline, in this order (reconstruct first, then overwrite with the authentic
 lists where they exist):
 
-1. `restore-bosses.cjs` — recovers `mBossList`. An XFS-conversion bug had
+1. `restore-bosses.cjs` - recovers `mBossList`. An XFS-conversion bug had
    written `[null]` for 1525 event quests; the boss is needed for `fix-monsters`
    to place it on the right area.
-2. `fix-monsters.cjs --forza-foglio-inglese` — for each EVENT/TICKE/ETERN/SCORE
+2. `fix-monsters.cjs --forza-foglio-inglese` - for each EVENT/TICKE/ETERN/SCORE
    quest, picks blocks from `mst-block-ids.json`: right continent
    (`EVENT90xxxx → l90`), right map, right monster/variant, boss on its
    `mAreaNo`, other areas filled from the same map. Saves the previous value in
    `mBlocksPrima`; tags the row `mBlocksSource: 'foglio-mst_block_ids-v3'`.
    (The script is disabled by default; `--forza-foglio-inglese` runs it.)
-3. `restore-real-blocks.cjs` — overwrites with the **authentic** block lists
+3. `restore-real-blocks.cjs` - overwrites with the **authentic** block lists
    where they exist (`json/questDB/event.extended.json`, 967 of 1524 event
    quests; the other `*.extended.complete.json` have no authentic blocks).
    Tags `mBlocksSource: 'autentico'`.
@@ -118,7 +118,7 @@ Partial rollback is possible too: `fix-monsters.cjs --undo` restores
 `mBlocksPrima`, and (`fix-blocks.cjs --undo`, then manually clear the
 `mBlocksSource: 'autentico'` rows) removes the rest.
 
-## Remaining gap (326) — now closed
+## Remaining gap (326) - now closed
 
 _Update, same day: the 326 were fixed too, leaving 0 empty._
 
@@ -134,26 +134,26 @@ import wrote each boss field in a separate object:
 instead of one `{ mEnemyID, mAreaNo, mFieldSkillPackId }`. Two bits of fallout:
 
 - `restore-bosses.cjs` didn't see them as broken (its "already has a boss" check
-  was `b.mEnemyID` alone), so it skipped them — 558 quests stayed split.
+  was `b.mEnemyID` alone), so it skipped them - 558 quests stayed split.
 - `fix-monsters.cjs` reads `b.mAreaNo` to place the boss and found nothing.
 
 Fixes:
 - **patched `tools-js/restore-bosses.cjs`** so `estraiBoss` groups single-key
   objects by `mEnemyID` (a quest with several monsters no longer collapses to
   the last one) and so the "already has a boss" check requires the area too.
-- **new `tools-js/fix-bosses-split.cjs`** — recomposes the split arrays from the
+- **new `tools-js/fix-bosses-split.cjs`** - recomposes the split arrays from the
   data already in the DB (preserving the area, which the source files sometimes
   omit). Repaired **558** quests.
 
 ### The last 325: placeholder enemies
 
 The remaining quests use boss ids **114, 91, 31, 22, 36, 160**, which are
-unnamed special enemies (not monsters) — the zeny / flag / explorer reward
+unnamed special enemies (not monsters) - the zeny / flag / explorer reward
 quests and the "レア装備確定/%" (rare-equipment) ones. No monster name exists for
 them in any table, so `fix-monsters` can't match (the titles name an event, not a
 monster). The original block data for them is in no game file.
 
-- **new `tools-js/fix-empty-event-blocks.cjs`** — assigns each a deterministic
+- **new `tools-js/fix-empty-event-blocks.cjs`** - assigns each a deterministic
   block per boss area from **event continents only** (l70/l75/l9x, never the
   story continents where the tutorial island lives), tagged
   `mBlocksSource: 'fallback-evento'`, with `--undo`. Covered all 325.
@@ -170,7 +170,7 @@ the 962 authentic rows. `fix-monsters.cjs` now **skips any quest marked
 
 | `mBlocksSource` | count |
 | --- | --- |
-| (none — story/training original) | 2014 |
+| (none - story/training original) | 2014 |
 | `autentico` | 962 |
 | `foglio-mst_block_ids-v3` | 873 |
 | `fallback-evento` | 326 |
@@ -207,7 +207,7 @@ Consequences / open points:
 
 - **The block file is per AREA, not per variant.** `l93_m13_a01_*` are 138
   variants sharing the `m13a01` file, and the variant number is **not** stored
-  in the file — so *which* placement spawns is decided client-side
+  in the file - so *which* placement spawns is decided client-side
   (`sQuestNew::setupBlockType` in `libMHS.so` derives a type bitfield and walks a
   placement array). We cannot read the exact per-variant spawn out of the data.
 - `mst-block-ids.json` labels each variant (e.g. `_3125` = Goruru) and the labels
@@ -234,7 +234,7 @@ monster" cases.
 
 The block files name **every** placement, and each placement's `mPrimList.mpArray.Type`
 is the enemy id. So the block files give a ground-truth `mEnemyID → monster`
-table — built by the new `tools-js/build-enemy-map.cjs` into
+table - built by the new `tools-js/build-enemy-map.cjs` into
 `tools-js/enemy-map.json` (148 enemies). It agrees with heroic's hand table on
 the entries it had (162 Tigrex Unit-02, 163 Alphonse, 140 Yoga Gigginox, 157
 Destruction Rathalos) and fills the ones it lacked:
@@ -260,7 +260,7 @@ From `libMHS.so`:
 
 - `sQuestNew::createBlockLayout` calls `createLayoutEnemy(uint, BlockInfo*,
   MtTypedArray<cQuestMonsterData>*)`, `createLayoutEnemyWait(...)`,
-  `createLayoutTranslate`, `createLayoutObstacle`, … — i.e. the block file's
+  `createLayoutTranslate`, `createLayoutObstacle`, … - i.e. the block file's
   per-type lists drive the spawn.
 - `createLayoutEnemy` walks the block's `cQuestMonsterData` (each has
   `mMonsterId, mSubId, mRank, mTarget, mInstanceId, mParamGroupID, mOtherGroupID`),
@@ -270,10 +270,10 @@ From `libMHS.so`:
   monsters and the selected block supplies the params that enable them.
 
 The catch remains: the block NAME's variant (`_3125`) is not stored in the file,
-and the selected-block index/params come from data we don't fully see — so the
+and the selected-block index/params come from data we don't fully see - so the
 sheet's per-variant label (e.g. `_3125` = Goruru) is unverified for event blocks.
 The goruru block's area (`m13a01`) does contain goruru (`ENEMY_ゴルルー_6`, Type
-90), but as a **non-target**; the `mIsTarget: true` placement in it is a boss —
+90), but as a **non-target**; the `mIsTarget: true` placement in it is a boss -
 consistent with fighting a boss instead.
 
 ### Re-pick done: blocks chosen from the real block contents (2026-10-13)
@@ -301,14 +301,14 @@ sg docker -c "docker exec mhxr-serverheroic-self-server-1 node /app/tools/fix-bl
 
 Result: **517 quests** re-picked (326 were `fallback-evento`, 191 were
 sheet-based rows whose area did not contain the target). **331** of them are
-enemy **114 (ドスゴルルー, Great Goruru)** — the golden-cat quests. After the
+enemy **114 (ドスゴルルー, Great Goruru)** - the golden-cat quests. After the
 run, **all 517** have a block whose area contains the quest's target (verified),
 and `fallback-evento` dropped from 326 to **2** (two quests whose chosen block
 already equalled the current one, so they were left tagged as-is).
 
 | `mBlocksSource` | after |
 | --- | --- |
-| (none — story/training original) | 2014 |
+| (none - story/training original) | 2014 |
 | `autentico` | 962 |
 | `foglio-mst_block_ids-v3` | 680 |
 | `enemy-map` | 517 |
@@ -320,7 +320,7 @@ area where all 59 of its placements are the target; enemy **90** never appears a
 a target (it is a wait/small enemy), so its areas always mix 13 monsters.
 
 > Note: the same area file is duplicated inside many `quest.*.fpk` archives, so
-> the "distinct enemies" count is a union across those copies — it is a ranking
+> the "distinct enemies" count is a union across those copies - it is a ranking
 > aid, not a per-variant truth. And the variant (last digits of the block name)
 > is still chosen best-effort; see the caveat below.
 

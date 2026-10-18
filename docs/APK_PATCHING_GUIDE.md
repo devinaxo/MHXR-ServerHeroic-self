@@ -441,7 +441,7 @@ For the client to progress through the full startup sequence, the server must ha
 
 | # | Method | Endpoint | Notes |
 |---|--------|----------|-------|
-| 1 | GET | `/<version>.json` | Dispatch — returns API/res/web URLs |
+| 1 | GET | `/<version>.json` | Dispatch - returns API/res/web URLs |
 | 2 | GET | `/maintenance_env/schedule` | Maintenance schedule |
 | 3 | POST | `/api/maintenance/check` | Maintenance status |
 | 4 | POST | `/api/banner/dllist/get` | Banner download list (can return empty `download_list: []`) |
@@ -507,7 +507,7 @@ For the client to progress through the full startup sequence, the server must ha
 
 ### Error Code 403
 
-- **Dispatch URL still pointing to AWS**: The native binary patch didn't take effect. Verify the installed APK has the patched `libMHS.so`. If upgrading over an existing install, the old APK may be cached — uninstall first.
+- **Dispatch URL still pointing to AWS**: The native binary patch didn't take effect. Verify the installed APK has the patched `libMHS.so`. If upgrading over an existing install, the old APK may be cached - uninstall first.
 - **Android cleartext policy**: Same as Error Code 3.
 
 ### Client stuck at "通信中です…" (Communicating...)

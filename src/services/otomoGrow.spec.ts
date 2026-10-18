@@ -43,6 +43,12 @@ describe('otomoGrow', () => {
     expect([9, 10, 24, 25, 74, 75, 99].map(slotSubSkillOtomo)).toEqual([0, 1, 1, 2, 2, 3, 3]);
   });
 
+  it('holds exactly 2 subskills at level 69, the third opens at 75', () => {
+    // The reported case: a level 69 Palico shows 2 subskills, not a bug.
+    expect(slotSubSkillOtomo(69)).toBe(2);
+    expect(slotSubSkillOtomo(75)).toBe(3);
+  });
+
   it('adds exp and clamps at the table ceiling', () => {
     const esito = applicaExpOtomo({ mst_otomo_id: CACAO, exp: 700 }, 100);
     expect(esito.level).toBe(2);
