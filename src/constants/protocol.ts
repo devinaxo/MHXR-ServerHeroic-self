@@ -111,7 +111,9 @@ export const PROTOCOL = {
   // docs/TEXTURE-CRASH-FPK-SIZE.md.
   // 369: ultime due texture escluse (menu_Town01, menu_hunterinfo sugli archivi
   // otomo / casa dei Palico).
-  RES_VER: 369,
+  // 370: texture ritoccate (14) + nuove (map_01, map_seaarea_01, menu05) da
+  // feat/english-translation. Stesso fix +0x48.
+  RES_VER: 370,
   BANNER_VER: 91, // If set to 0 /api/banner/dllist/get is not called; incremental update trigger
   APP_VER: '09.03.06',
   BLOCK_SEQ: 0, // Possibly need to increment for cycling encryption (client ignores if 0)

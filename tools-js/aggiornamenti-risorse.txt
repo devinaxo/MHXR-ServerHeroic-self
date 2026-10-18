@@ -275,3 +275,6 @@
 # (GUI_otomo_detail, GUI_otomo_menu) che tenevano chiusa la casa dei Palico.
 # Stesso fix +0x48 del 368. Ora tutti gli archivi erano ricostruibili.
 369 cmn/GUI.00.fpk
+# 370: texture ritoccate (14) + 3 nuove (map_01, map_seaarea_01, menu05) dal
+# merge di feat/english-translation. Applicate con apply.cjs (+0x48 corretto).
+370 cmn/GUI.00.fpk
