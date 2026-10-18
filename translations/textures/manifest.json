@@ -557,6 +557,66 @@
      "entry": "GUI/tex/menu/menu_Town01_LP4_NOMIP_jpn"
     }
    ]
+  },
+  {
+   "png": "map_01_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 512,
+   "height": 512,
+   "pristineSize": 524328,
+   "pristineSha256_16": "838a98fa7ba82fee",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_equip_confirm.arc",
+     "entry": "GUI/tex/map/map_01_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_event_quest.arc",
+     "entry": "GUI/tex/map/map_01_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_quest.arc",
+     "entry": "GUI/tex/map/map_01_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "map_seaarea_01_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "4ad90d61257d3b2e",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_quest.arc",
+     "entry": "GUI/tex/map/map_seaarea_01_LP4_NOMIP_jpn"
+    }
+   ]
+  },
+  {
+   "png": "menu05_LP4_NOMIP_jpn.png",
+   "format": "RGBA4",
+   "width": 1024,
+   "height": 1024,
+   "pristineSize": 2097192,
+   "pristineSha256_16": "ae18a88afdf90a51",
+   "targets": [
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_home_menu.arc",
+     "entry": "GUI/tex/menu/menu05_LP4_NOMIP_jpn"
+    },
+    {
+     "pack": "GUI.00",
+     "arc": "arc_cmn/GUI/GUI_tutorial.arc",
+     "entry": "GUI/tex/menu/menu05_LP4_NOMIP_jpn"
+    }
+   ]
   }
  ],
  "excludedTargets": {
