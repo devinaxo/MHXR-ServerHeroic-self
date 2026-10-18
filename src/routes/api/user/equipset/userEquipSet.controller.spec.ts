@@ -66,6 +66,44 @@ describe('userEquipSet.controller', () => {
       expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
     });
 
+    it('never rewrites the stored sets (no fabricated clones on the database)', async () => {
+      const equipset = {
+        capacity_eqp_set: 5,
+        selected_equip_set_index: 1,
+        equip_sets: [
+          {
+            index: 1,
+            weapon: { equipment_id: 'W1' },
+            partner_equip_sets: [{ mst_partner_id: 507850012, weapon: { equipment_id: 'W1' } }],
+          },
+        ],
+      };
+      const box = {
+        equipments: [{ equipment_id: 'W1', mst_equipment_id: 1 }],
+        partners: [{ mst_partner_id: 507850012 }],
+      };
+      vi.mocked(User.findOne).mockResolvedValue({
+        equipset,
+        toObject() { return { _id: 'u1', box, equipset }; },
+      } as never);
+
+      const { req, res } = mockReqRes({ session_id: 'sess-1' });
+
+      await equipSetGet(req, res);
+
+      // Nessun set inventato scritto sul database: al massimo si aggiunge al box
+      // l'arma predefinita che manca davvero.
+      for (const call of vi.mocked(User.updateOne).mock.calls) {
+        expect(call[1]).not.toHaveProperty('$set');
+      }
+      const inviato = vi.mocked(encryptAndSend).mock.calls[0]![0] as {
+        equip_sets: { index: number; partner_equip_sets: unknown[] }[];
+      };
+      expect(inviato.equip_sets.map((s) => s.index)).toEqual([1, 2, 3, 4, 5]);
+      // I cloni portano con se' i mercenari, non liste vuote (crash sul cambio set).
+      expect(inviato.equip_sets[1]!.partner_equip_sets).toHaveLength(1);
+    });
+
     it('returns error on DB failure', async () => {
       vi.mocked(User.findOne).mockRejectedValue(new Error('DB error'));
 
@@ -118,6 +156,70 @@ describe('userEquipSet.controller', () => {
       await equipSetSet(req, res);
 
       expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    });
+
+    it('merges a partial save by index instead of dropping the other sets', async () => {
+      const equipset = {
+        capacity_eqp_set: 5,
+        selected_equip_set_index: 1,
+        equip_sets: [
+          { index: 1, weapon: { equipment_id: 'W1' } },
+          { index: 2, weapon: { equipment_id: 'W2' }, arm: { equipment_id: 'A2' } },
+        ],
+      };
+      const box = {
+        equipments: [{ equipment_id: 'W1', mst_equipment_id: 1 }, { equipment_id: 'W2', mst_equipment_id: 2 }],
+        partners: [],
+      };
+      const mockDoc = {
+        id: 'user-1',
+        equipset,
+        toObject() { return { _id: 'user-1', box, equipset }; },
+      };
+      vi.mocked(User.findOne).mockResolvedValue(mockDoc as never);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+      vi.mocked(User.updateOne).mockResolvedValue(null as never);
+
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1',
+        equip_sets: [{ index: 1, weapon: { equipment_id: 'W1' }, arm: { equipment_id: 'A1' } }],
+        selected_equip_set_index: 2,
+        capacity_eqp_set: 5,
+      });
+
+      await equipSetSet(req, res);
+
+      const salvati = vi.mocked(User.updateOne).mock.calls[0]![1] as { $set: { 'equipset.equip_sets': { index: number; arm?: { equipment_id: string } }[] } };
+      const set = salvati.$set['equipset.equip_sets'];
+      expect(set.map((s) => s.index)).toEqual([1, 2]);
+      expect(set[0]!.arm?.equipment_id).toBe('A1');
+      expect(set[1]!.arm?.equipment_id).toBe('A2');
+    });
+
+    it('saves the selected index even when no sets are sent', async () => {
+      const equipset = { capacity_eqp_set: 5, selected_equip_set_index: 1, equip_sets: [{ index: 1, weapon: { equipment_id: 'W1' } }] };
+      const box = { equipments: [{ equipment_id: 'W1', mst_equipment_id: 1 }], partners: [] };
+      const mockDoc = {
+        id: 'user-1',
+        equipset,
+        toObject() { return { _id: 'user-1', box, equipset }; },
+      };
+      vi.mocked(User.findOne).mockResolvedValue(mockDoc as never);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1',
+        equip_sets: [],
+        selected_equip_set_index: 3,
+        capacity_eqp_set: 5,
+      });
+
+      await equipSetSet(req, res);
+
+      expect(User.findByIdAndUpdate).toHaveBeenCalledWith(
+        'user-1',
+        expect.objectContaining({ 'equipset.selected_equip_set_index': 3 }),
+      );
     });
   });
 

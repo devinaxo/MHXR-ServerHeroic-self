@@ -80,6 +80,7 @@ regenerate manifests, publish a new `RES_VER`.
 | `docs/MATERIAL-NAMES-WRAP.md` | shorter material names + controlled line wrap |
 | `docs/PARTNER-SKILLS-TRANSLATION.md` | partner skill names/descriptions |
 | `docs/OTOMO-PALICO.md` | Palico random encounters, subskill slots and English names |
+| `docs/EQUIP-SETS.md` | player equipment sets + partner/mercenary sets (save/load rules) |
 | `docs/SKILL-TRANSLATION.md` | hunter arts / skills / melodies |
 | `docs/DIALOGUE-TRANSLATION.md` | story/event dialogue (GMD in GUI.78 to GUI.94) |
 | `docs/STRING-EDITS.md` | editing strings inside XFS/ARC/FPK safely |
