@@ -354,3 +354,121 @@ body <= 7 lines, name <= 30). Names follow the GUI.78-94 dialogue and
 `Monster.json`. Full procedure in
 `lavoro-traduzione/collection/README.md`. `traduci-rsdnt-arc.cjs` reports
 550/550 keys used, 46/46 tables clean, and only `item_collection` changes.
+
+## res 379: short forms, loading tips, dialogue coherence
+
+Published 2026-10-18 as `res 379`, 13 packs.
+
+### UI short forms (GUI.00)
+
+| i | was | now |
+| --- | --- | --- |
+| 1002 | `Special Condition` | `Conditions` |
+| 1004 | `Weakness: ` | `Weak: ` |
+| 1025 | `Special Request` | `Request` |
+| 1043 | `Effective Weapon` | `Recommended` |
+| 1087 | `Effective Weapon: ` | `Recommended: ` |
+
+### Loading tips
+
+The `Navi_load_menu` and `Navi_load_quest` tips (25 strings) were rewrapped to
+the tip box width, at word boundaries, so no line runs off the panel. The
+narrowest ones (e.g. `Multiplayer Trivia 2`) also lost a few words. The box
+width was measured from the visible cut in game: about 34 characters on the
+`<TEX 5>` tips, wider for the smaller `<TEX 0/1>` fonts; each tip was capped at
+the length of its Japanese original scaled to the same pixel width.
+
+### Dialogue coherence (GUI.78-93)
+
+Proper-noun normalizations in the story dialogue, dictionary
+`lavoro-traduzione/dialogue/normalizza-nomi.json`, applied with
+`lavoro-traduzione/dialogue/normalizza.cjs`: `Devilu` -> `Deviloo`,
+`Melynx Gang` -> `Dronneko Gang`, `Dronneko gang` -> `Dronneko Gang`,
+`Amenoma` -> `Amemona`, `Andora` -> `Andra`, `Vald` -> `Valt`,
+`Solfin` -> `Solphine`, `Elisa` -> `Eliza`, `Apippos`/`Apipos` -> `Apypos`.
+Also the Speaker name table (`Story_Character_Name`). See the README there.
+
+`resident.00.fpk`: the two map-note mentions of `Apipos`/`Great Apipos` became
+`Apypos`/`Great Apypos` to match. The `isole.json` dictionary is updated.
+
+### Still open
+
+Resolved in res 380: the family reads `Jaggi` / `Jaggia` / `Great Jaggi`, with
+`Jagginos` removed from `Monster.json` and the encyclopedia.
+
+## res 381: shorter effective-weapon label
+
+`res 379` set 特効武器 to `Recommended`, but the weapon icons beside the hunt's
+recommended-weapon list start clipping it. Published 2026-10-18 as `res 381`:
+
+| i | 379 had | 381 now |
+| --- | --- | --- |
+| 1043 | `Recommended` | `Eff.` |
+| 1087 | `Recommended: ` | `Eff.: ` |
+| 1004 | `Weak: ` | `Weak` |
+
+`MenuCmn[245]` (オススメ, the generic `Recommended`) is left alone. The
+`Navi_load_quest` tip still says "Recommended weapons" in full, where there is
+room, and it explains the abbreviation. GUI_msg only.
+
+## res 383: monster class names
+
+`Monster_jpn` (GUI.00) class names 587-597 wrap mid-word because the label is a
+fixed pixel width with no word preference (the Japanese classes are 3-4 full
+width characters, so they fit one line).
+
+| i | jp | now |
+| --- | --- | --- |
+| 587 | 鳥竜種 | `Bird\r\nWyvern` |
+| 588 | 飛竜種 | `Flying\r\nWyvern` |
+| 589 | 獣竜種 | `Brute\r\nWyvern` |
+| 590 | 魚竜種 | `Piscine\r\nWyvern` |
+| 591 | 海竜種 | `<SIZE 18>Leviathan</SIZE>` |
+| 592 | 牙竜種 | `Fanged\r\nWyvern` |
+| 593 | 牙獣種 | `Fanged\r\nBeast` |
+| 594 | 古龍種 | `Elder\r\nDragon` |
+| 596 | 草食種 | `<SIZE 18>Herbivore</SIZE>` |
+| 597 | 甲虫種 | `<SIZE 18>Neopteron</SIZE>` |
+
+Multi-word classes break cleanly at the space. The three 9-letter single words
+are the test: if the class label honours `<SIZE>`, they shrink and fit; if it
+does not, the tags render literally and those three should be replaced with a
+hyphen break (`Levia-\r\nthan`, `Herbi-\r\nvore`, `Neopte-\r\nron`).
+
+## res 384: results-screen strings + class-name fallback
+
+Published 2026-10-18 as `res 384` (GUI_msg only).
+
+| i | was | now |
+| --- | --- | --- |
+| 558 | `Current Experience` | `Current Exp.` |
+| 975 | `Weapon：` | `Wpn:` |
+| 1152 | `Treasure Details` | `Details` |
+| 1166 | `Use %d Hunter Coins to multiply the rewards of all 12 slots by %d?` | `Use %d Hunter Gems to multiply all rewards by %d?` |
+| 1167 | `Opening them all lets you further multiply by %d using Hunter Coins` | `Opening all chests lets you multiply rewards by %d` |
+| 1168 | `Check the Reward When Used` | `Check` |
+| 1169 | `Multiply Reward by %d with Hunter Coins` | `Multiply Rewards by %d with Gems` |
+| 1173 | `Consume Hunter Coins to multiply the reward by %d. Is that OK?` | `Use Hunter Gems to multiply rewards by %d? Is that OK?` |
+| ver09_03_00 1 | `Great Luck` | `G.Luck` |
+
+The `%d` are kept: the multiplier buttons offer x2 / x3 / x5 and the coin cost
+can differ, so a literal `5` / `2` would be wrong on the other buttons.
+
+### Class-name fallback
+
+The class label does not honour `<SIZE>` (res 383 showed the tag literally), so
+`Leviathan`, `Herbivore` and `Neopteron` now use a hyphen break instead:
+`Levia-` / `than`, `Herbi-` / `vore`, `Neopte-` / `ron`. The `\r\n` breaks on
+the multi-word classes from 383 stay (`Bird` / `Wyvern`, `Elder` / `Dragon`).
+
+## res 385: quest time-result condition
+
+Published 2026-10-18 as `res 385`. The time-result row is four strings glued by
+the client (`time`, condition, `---`, rank). The condition is now a symbol:
+
+| i | was | now |
+| --- | --- | --- |
+| 24 | `Or More` | `>` |
+| 25 | `Or Less` | `<` |
+
+So the row reads `01:30 > --- S`. GUI_msg only.

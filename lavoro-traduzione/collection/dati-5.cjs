@@ -97,8 +97,8 @@ module.exports = {
     text: 'An insect of the desert, but poor at\nburrowing into sand. Instead, to\nshield itself from sun and foes, it\nplasters leaves and thorns all over\nits body. Its look is less mimicry\nthan armament.',
   },
   '女傑ジャギィノス': {
-    name: 'Heroine Jagginos',
-    text: 'A strong individual of the largest\nsize. The growing size of island\nJagginos is thought to be because\nGreat Jaggi numbers fall short from\nturf wars with Apypos.',
+    name: 'Heroine Jaggia',
+    text: 'A strong individual of the largest\nsize. The growing size of island\nJaggia is thought to be because\nGreat Jaggi numbers fall short from\nturf wars with Apypos.',
   },
   'ソルトトルソ': {
     name: 'Salt Torso',

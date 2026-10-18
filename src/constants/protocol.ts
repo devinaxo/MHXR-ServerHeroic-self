@@ -163,10 +163,48 @@ export const PROTOCOL = {
    * rsdnt_property.arc :: item_collection - all 275 Discovery Encyclopedia
    * entries translated (mCollectionName + mExplanation) with
    * lavoro-traduzione/collection/collezione.json (550 strings); names follow the
-   * GUI.78-94 dialogue and Monster.json (Jaggi, Jagginos, Delex, Apypos, ...).
+   * GUI.78-94 dialogue and Monster.json (Jaggi, Jaggia, Delex, Apypos, ...).
    * See docs/STRING-EDITS.md and lavoro-traduzione/collection/README.md.
+   * 379: more UI short forms, loading-tip rewrap and dialogue name coherence.
+   * GUI.00.fpk (GUI_msg.arc): labels 特殊条件 -> "Conditions", 弱点 -> "Weak",
+   * 特別依頼 -> "Request", 特効武器 -> "Recommended" (both entries); the
+   * Navi_load_menu / Navi_load_quest loading tips are rewrapped to the box width
+   * so they stop clipping (25 strings). GUI.78-93.fpk: proper-noun
+   * normalizations in the story dialogue via
+   * lavoro-traduzione/dialogue/normalizza-nomi.json: Devilu -> Deviloo,
+   * Melynx Gang -> Dronneko Gang, Dronneko gang -> Dronneko Gang, Amenoma ->
+   * Amemona, Andora -> Andra, Vald -> Valt, Solfin -> Solphine, Elisa -> Eliza,
+   * Apippos/Apipos -> Apypos. resident.00.fpk: the two map-note Apipos -> Apypos.
+   * See docs/STRING-EDITS.md.
+   * 380: the Jaggi family reads Jaggi / Jaggia / Great Jaggi; there is no
+   * "Jagginos". GUI.00.fpk :: Monster_jpn (ジャギィノス) and resident.00.fpk ::
+   * rsdnt_property.arc :: item_collection (狗竜の女王, 女傑ジャギィノス). No
+   * textures.
+   * 381: shorter effective-weapon label and the weakness label. MenuCmn 1043
+   * 特効武器 -> "Eff." and 1087 -> "Eff.: " (the icons beside the weapon list
+   * used to clip "Recommended"), and 1004 弱点 -> "Weak" (no colon). GUI_msg
+   * only, no textures.
+   * 382: effective-weapon label back to the full word: MenuCmn 1043 -> "Effective"
+   * and 1087 -> "Effective: " (was "Eff." / "Eff.: " in 381). GUI_msg only.
+   * 383: monster class names (Monster_jpn 587-597). Multi-word classes get an
+   * explicit break at the space (Bird / Wyvern, Elder / Dragon); the three
+   * 9-letter single words (Leviathan, Herbivore, Neopteron) are wrapped in
+   * <SIZE 18> to try to stop the fixed-width mid-word wrap. If the class label
+   * does not honour <SIZE>, those three show the tag literally and must be
+   * reverted to a hyphen break.
+   * 384: results-screen strings. MenuCmn 558 "Current Experience" -> "Current
+   * Exp.", 975 武器 -> "Wpn:", 1152 -> "Details", 1166/1169 "Hunter Coins" ->
+   * "Hunter Gems" with shorter wording, 1167 -> "Opening all chests lets you
+   * multiply rewards by %d", 1168 -> "Check", 1173 -> shorter "Use Hunter Gems
+   * to multiply rewards..." (it clipped). ver09_03_00 豪運 -> "G.Luck".
+   * Monster_jpn 591/596/597: the class label does not honour <SIZE>, so
+   * Leviathan/Herbivore/Neopteron now use a hyphen break; the 383 \r\n breaks
+   * on the multi-word classes stay. GUI_msg only.
+   * 385: quest time-result condition MenuCmn 24 以上 -> ">" and 25 以下 -> "<"
+   * (were "Or More" / "Or Less"), so the row reads like "01:30 > --- S". GUI_msg
+   * only.
    */
-  RES_VER: 378,
+  RES_VER: 385,
   BANNER_VER: 91, // If set to 0 /api/banner/dllist/get is not called; incremental update trigger
   APP_VER: '09.03.06',
   BLOCK_SEQ: 0, // Possibly need to increment for cycling encryption (client ignores if 0)

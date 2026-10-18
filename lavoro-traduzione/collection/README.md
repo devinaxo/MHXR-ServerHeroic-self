@@ -13,7 +13,7 @@ resident.00.fpk
 
 There are 275 entries, all Japanese on the pristine packs. The English names
 follow the story/camp dialogue (`GUI.78`-`GUI.94`) and `lavoro-traduzione/trad/
-Monster.json`: Jaggi, Jagginos, Great Jaggi, Baggi, Wroggi, Bnahabra, Bullfango,
+Monster.json`: Jaggi, Jaggia, Great Jaggi, Baggi, Wroggi, Bnahabra, Bullfango,
 Delex, Apypos, Rathian.
 
 ## Files

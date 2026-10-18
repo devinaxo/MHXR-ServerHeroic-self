@@ -114,13 +114,13 @@ const ISOLE = {
     nome: 'Labrau Island',
     prima:
       'Now seen as the first island of this\nnewly found Archipelago. Hopes rest on\nwhy it turned to desert and its isles sank.',
-    dopo: 'A new small monster, the Apipos, was\nfound. A Guild undersea survey also found\nover 20 traces of sunken islands nearby.',
+    dopo: 'A new small monster, the Apypos, was\nfound. A Guild undersea survey also found\nover 20 traces of sunken islands nearby.',
   },
   イシルルタ島: {
     nome: 'Isilruta Island',
     prima:
       'The new monster and resonance crystal\nfound on Labrau Island raise hopes for\nmore. Yet desert covers much of this isle.',
-    dopo: "A new monster, the Great Apipos, was\nfound. As the search for the desert's\ncause goes on, a native girl is sighted.",
+    dopo: "A new monster, the Great Apypos, was\nfound. As the search for the desert's\ncause goes on, a native girl is sighted.",
   },
   ウルス島: {
     nome: 'Urus Island',

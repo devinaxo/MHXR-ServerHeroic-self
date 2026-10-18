@@ -116,7 +116,10 @@ The dictionaries ship in this repo:
 - [`lavoro-traduzione/collection/`](lavoro-traduzione/collection) for the
   Discovery Encyclopedia (`resident.00.fpk` :: `rsdnt_property.arc` ::
   `item_collection`), see
-  [`lavoro-traduzione/collection/README.md`](lavoro-traduzione/collection/README.md).
+  [`lavoro-traduzione/collection/README.md`](lavoro-traduzione/collection/README.md);
+- [`lavoro-traduzione/dialogue/`](lavoro-traduzione/dialogue) for proper-noun
+  coherence in the story dialogue (`GUI.78`-`GUI.94.fpk`), see
+  [`lavoro-traduzione/dialogue/README.md`](lavoro-traduzione/dialogue/README.md).
 
 Per-table coverage and details:
 [`docs/HANDOFF-QUEST-TRANSLATION.md`](docs/HANDOFF-QUEST-TRANSLATION.md),

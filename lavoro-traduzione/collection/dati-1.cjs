@@ -111,7 +111,7 @@ module.exports = {
   },
   '狗竜の女王': {
     name: 'Queen of the Dog Wyverns',
-    text: 'A female Jaggi that took the\nthrone meant for a Great Jaggi.\nStronger than ordinary Jaggi and\nJagginos, it seems to lack the\ngreat power of a Great Jaggi.',
+    text: 'A female Jaggi that took the\nthrone meant for a Great Jaggi.\nStronger than ordinary Jaggi and\nJaggia, it seems to lack the\ngreat power of a Great Jaggi.',
   },
   '寒がりバギィ': {
     name: 'Cold-Shy Baggi',

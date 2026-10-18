@@ -122,12 +122,12 @@
  {
   "i": 24,
   "jp": "以上",
-  "en": "Or More"
+  "en": ">"
  },
  {
   "i": 25,
   "jp": "以下",
-  "en": "Or Less"
+  "en": "<"
  },
  {
   "i": 26,
@@ -2792,7 +2792,7 @@
  {
   "i": 558,
   "jp": "現在の経験値",
-  "en": "Current Experience"
+  "en": "Current Exp."
  },
  {
   "i": 559,
@@ -4877,7 +4877,7 @@
  {
   "i": 975,
   "jp": "武器：",
-  "en": "Weapon："
+  "en": "Wpn:"
  },
  {
   "i": 976,
@@ -5012,7 +5012,7 @@
  {
   "i": 1002,
   "jp": "特殊条件",
-  "en": "Special Condition"
+  "en": "Conditions"
  },
  {
   "i": 1003,
@@ -5022,7 +5022,7 @@
  {
   "i": 1004,
   "jp": "弱点：",
-  "en": "Weakness: "
+  "en": "Weak"
  },
  {
   "i": 1005,
@@ -5127,7 +5127,7 @@
  {
   "i": 1025,
   "jp": "特別依頼",
-  "en": "Special Request"
+  "en": "Request"
  },
  {
   "i": 1026,
@@ -5217,7 +5217,7 @@
  {
   "i": 1043,
   "jp": "特効武器",
-  "en": "Effective Weapon"
+  "en": "Effective"
  },
  {
   "i": 1044,
@@ -5437,7 +5437,7 @@
  {
   "i": 1087,
   "jp": "特効武器:",
-  "en": "Effective Weapon: "
+  "en": "Effective: "
  },
  {
   "i": 1088,
@@ -5762,7 +5762,7 @@
  {
   "i": 1152,
   "jp": "お宝の詳細",
-  "en": "Treasure Details"
+  "en": "Details"
  },
  {
   "i": 1153,
@@ -5832,22 +5832,22 @@
  {
   "i": 1166,
   "jp": "狩玉を%d個消費して\r\n12枠全ての報酬を%d倍にしますか ？",
-  "en": "Use %d Hunter Coins\r\nto multiply the rewards of all 12 slots by %d?"
+  "en": "Use %d Hunter Gems\r\nto multiply all rewards by %d?"
  },
  {
   "i": 1167,
   "jp": "全て開けると狩玉で更に%d倍にすることができます",
-  "en": "Opening them all lets you further multiply by %d using Hunter Coins"
+  "en": "Opening all chests lets you\nmultiply rewards by %d"
  },
  {
   "i": 1168,
   "jp": "使用した際の\r\n報酬を確認",
-  "en": "Check the Reward\r\nWhen Used"
+  "en": "Check"
  },
  {
   "i": 1169,
   "jp": "狩玉で報酬を%d倍にする",
-  "en": "Multiply Reward by %d with Hunter Coins"
+  "en": "Multiply Rewards by %d with Gems"
  },
  {
   "i": 1170,
@@ -5867,7 +5867,7 @@
  {
   "i": 1173,
   "jp": "狩玉を消費して報酬を%d倍にします。\r\nよろしいですか ？",
-  "en": "Consume Hunter Coins to multiply the reward by %d.\r\nIs that OK?"
+  "en": "Use Hunter Gems to multiply\nrewards by %d?\r\nIs that OK?"
  },
  {
   "i": 1174,

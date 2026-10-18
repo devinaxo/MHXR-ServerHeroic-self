@@ -2,17 +2,17 @@
  {
   "i": 0,
   "jp": "<TEX 0><COL 004AD1FF>武技発動</COL>には<COL 004AD1FF>武技Ｐが必要</COL>です\r\nモンスターを攻撃することで\r\n武技Ｐが蓄積されます",
-  "en": "<TEX 0>Activating a <COL 004AD1FF>Weapon Art</COL> requires\r\n<COL 004AD1FF>Weapon Art Points</COL>\r\nwhich build up as you attack monsters"
+  "en": "<TEX 0><COL 004AD1FF>Weapon Arts</COL> need\r\n<COL 004AD1FF>Weapon Art Points</COL>,\r\nbuilt up by attacking monsters"
  },
  {
   "i": 1,
   "jp": "<TEX 0>特定の部位を破壊したい時は\r\nその<COL 004AD1FF>部位をタップ</COL>することで\r\n<COL 004AD1FF>ターゲットを変更</COL>できます",
-  "en": "<TEX 0>If you want to break a specific part,\r\nyou can <COL 004AD1FF>tap that part</COL>\r\nto <COL 004AD1FF>change your target</COL>"
+  "en": "<TEX 0>To break a specific part,\r\n<COL 004AD1FF>tap that part</COL> to\r\n<COL 004AD1FF>change your target</COL>"
  },
  {
   "i": 2,
   "jp": "<TEX 0><COL 004AD1FF>防具の技玉を揃える</COL>ことで\r\n武技を発動する準備が整います\r\n必要技玉数は武器毎に違います",
-  "en": "<TEX 0>By <COL 004AD1FF>gathering Art Orbs on your armor</COL>,\r\nyou get ready to activate a Weapon Art\r\nThe number of Art Orbs needed differs by weapon"
+  "en": "<TEX 0><COL 004AD1FF>Gathering Art Orbs on armor</COL>\r\ngets you ready to use Weapon Art\r\nOrb counts differ by weapon"
  },
  {
   "i": 3,
@@ -22,12 +22,12 @@
  {
   "i": 4,
   "jp": "<TEX 0>遠距離武器やハンマー・狩猟笛は\r\n尻尾を切断することができません",
-  "en": "<TEX 0>Ranged weapons, Hammers, and Hunting Horns\r\ncannot sever a monster's tail"
+  "en": "<TEX 0>Ranged weapons, Hammers, and\r\nHunting Horns cannot sever\r\na monster's tail"
  },
  {
   "i": 5,
   "jp": "<TEX 0>ガンランスの竜撃砲は\r\nコンボをつなげると\r\n威力が上昇します",
-  "en": "<TEX 0>The Gunlance's Wyvern's Fire\r\ndeals more damage\r\nwhen chained into a combo"
+  "en": "<TEX 0>Gunlance Wyvern's Fire\r\ndeals more damage\r\nwhen chained in a combo"
  },
  {
   "i": 6,
@@ -37,12 +37,12 @@
  {
   "i": 7,
   "jp": "<TEX 0>片手剣は罠や回復薬など\r\n多種多様なアイテムを\r\n使用できます",
-  "en": "<TEX 0>The Sword And Shield lets you use\r\na wide variety of items,\r\nsuch as traps and potions"
+  "en": "<TEX 0>Sword And Shield can use\r\na wide range of items,\r\nsuch as traps and potions"
  },
  {
   "i": 8,
   "jp": "<TEX 0>ハンマーと狩猟笛は\r\n他の武器よりモンスターへ\r\nめまいを起こしやすいです",
-  "en": "<TEX 0>Hammers and Hunting Horns are\r\nmore likely to stun monsters\r\nthan other weapons"
+  "en": "<TEX 0>Hammers and Hunting Horns\r\nare more likely to stun\r\nmonsters than other weapons"
  },
  {
   "i": 9,
@@ -62,12 +62,12 @@
  {
   "i": 12,
   "jp": "<TEX 0>双剣は通常攻撃で鬼人ゲージを\r\n蓄積し鬼人乱舞を放つとゲージを\r\n全て消費します",
-  "en": "<TEX 0>Normal attacks with Dual Blades build\r\nup the Demon Gauge, and unleashing\r\nDemon Flurry Rush consumes the entire gauge"
+  "en": "<TEX 0>Normal attacks with Dual Blades\r\nbuild the Demon Gauge, and\r\nDemon Flurry Rush drains it all"
  },
  {
   "i": 13,
   "jp": "<TEX 0>スラッシュアックスは\r\nスラッシュゲージを溜めて放つ\r\n属性解放突きが強力です",
-  "en": "<TEX 0>The Switch Axe's Element Discharge,\r\nreleased after charging the\r\nSwitch Gauge, is powerful"
+  "en": "<TEX 0>Switch Axe Element Discharge,\r\nreleased after charging the\r\nSwitch Gauge, is powerful"
  },
  {
   "i": 14,
@@ -77,27 +77,27 @@
  {
   "i": 15,
   "jp": "<TEX 0>チャージアックスの溜め二段斬りと\r\n属性解放斬りを当てることで当てた\r\n部位への与ダメージがアップします",
-  "en": "<TEX 0>Landing the Charge Axe's charged\r\ntwo-hit slash and Element Discharge Slash\r\nincreases damage dealt to the part hit"
+  "en": "<TEX 0>Landing the Charge Axe's charged\r\ntwo-hit slash and Element\r\nDischarge Slash raises part damage"
  },
  {
   "i": 16,
   "jp": "<TEX 1><COL 004AD1FF>モンスターの弱点属性</COL>は\r\nクエストを選択する画面で\r\n確認できます",
-  "en": "<TEX 1>You can check a\r\n<COL 004AD1FF>monster's weak element</COL>\r\non the quest selection screen"
+  "en": "<TEX 1>You can check a\r\n<COL 004AD1FF>monster's weak element</COL>\r\non the quest select screen"
  },
  {
   "i": 17,
   "jp": "<TEX 1><COL 004AD1FF>発見物ごと</COL>に<COL 004AD1FF>出現確率が異なる</COL>ため\r\n見つからなくても何度か\r\n同じクエストに行ってみましょう",
-  "en": "<TEX 1>Since <COL 004AD1FF>each discovery</COL> has a\r\n<COL 004AD1FF>different appearance rate</COL>, try the\r\nsame quest a few times even if you don't find it"
+  "en": "<TEX 1><COL 004AD1FF>Each discovery</COL> has a\r\n<COL 004AD1FF>different appearance rate</COL>,\r\nso try the same quest a few times"
  },
  {
   "i": 18,
   "jp": "<TEX 1><COL 004AD1FF>発見物ごと</COL>に<COL 004AD1FF>出現確率が異なる</COL>ため\r\n見つからなくても何度か\r\n同じクエストに行ってみましょう",
-  "en": "<TEX 1>Since <COL 004AD1FF>each discovery</COL> has a\r\n<COL 004AD1FF>different appearance rate</COL>, try the\r\nsame quest a few times even if you don't find it"
+  "en": "<TEX 1><COL 004AD1FF>Each discovery</COL> has a\r\n<COL 004AD1FF>different appearance rate</COL>,\r\nso try the same quest a few times"
  },
  {
   "i": 19,
   "jp": "<TEX 1><COL 004AD1FF>発見物ごと</COL>に<COL 004AD1FF>出現確率が異なる</COL>ため\r\n見つからなくても何度か\r\n同じクエストに行ってみましょう",
-  "en": "<TEX 1>Since <COL 004AD1FF>each discovery</COL> has a\r\n<COL 004AD1FF>different appearance rate</COL>, try the\r\nsame quest a few times even if you don't find it"
+  "en": "<TEX 1><COL 004AD1FF>Each discovery</COL> has a\r\n<COL 004AD1FF>different appearance rate</COL>,\r\nso try the same quest a few times"
  },
  {
   "i": 20,
@@ -117,12 +117,12 @@
  {
   "i": 23,
   "jp": "<TEX 0><COL 004AD1FF>特効武器を用いる</COL>と通常よりも\r\n大きなダメージを与えられたり\r\n部位を壊しやすくなったりします",
-  "en": "<TEX 0>Using a <COL 004AD1FF>weapon with a special\r\nadvantage</COL> lets you deal more damage\r\nand break parts more easily than usual"
+  "en": "<TEX 0><COL 004AD1FF>Recommended weapons</COL>\r\ndeal more damage and break\r\nparts more easily than usual"
  },
  {
   "i": 24,
   "jp": "<TEX 0>操虫棍は<COL 004AD1FF>エキスを採取</COL>することで\r\n<COL 004AD1FF>操虫レベルが上がり</COL>ハンターや猟虫\r\nを強くする様々な効果が発動します",
-  "en": "<TEX 0>With the Insect Glaive, <COL 004AD1FF>gathering\r\nextracts</COL> <COL 004AD1FF>raises your Kinsect Level</COL>,\r\ntriggering various effects that strengthen the hunter and Kinsect"
+  "en": "<TEX 0><COL 004AD1FF>Gathering extracts</COL> with the\r\nInsect Glaive raises Kinsect Level\r\nand strengthens hunter and Kinsect"
  },
  {
   "i": 25,
@@ -132,7 +132,7 @@
  {
   "i": 26,
   "jp": "<TEX 1>クエストを中断した場合\r\n出発から72時間が過ぎると\r\nクエストを再開できません",
-  "en": "<TEX 1>If you suspend a quest,\r\nyou can no longer resume it once\r\n72 hours have passed since departure"
+  "en": "<TEX 1>If you suspend a quest,\r\nyou cannot resume it once\r\n72 hours have passed"
  },
  {
   "i": 27,
@@ -152,7 +152,7 @@
  {
   "i": 30,
   "jp": "<TEX 0><COL 004AD1FF>期間限定</COL>と表示されている<COL 004AD1FF>装備</COL>は\r\n開催中のイベントで\r\n<COL 004AD1FF>期間限定スキル</COL>を発動できます",
-  "en": "<TEX 0><COL 004AD1FF>Equipment</COL> marked as\r\n<COL 004AD1FF>Limited-Time</COL> can activate a\r\n<COL 004AD1FF>Limited-Time Skill</COL> during ongoing events"
+  "en": "<TEX 0><COL 004AD1FF>Limited-Time equipment</COL>\r\ncan activate a Limited-Time Skill\r\nduring ongoing events"
  },
  {
   "i": 31,
@@ -167,7 +167,7 @@
  {
   "i": 33,
   "jp": "<TEX 0><COL 004AD1FF>豪運</COL>の数値は、クエスト報酬の\r\n二列目が運で解放された際に\r\n<COL 004AD1FF>三列目が解放</COL>できる確率です",
-  "en": "<TEX 0>The <COL 004AD1FF>Great Luck</COL> value is the chance\r\nfor the <COL 004AD1FF>third row to unlock</COL>\r\nafter the second row of quest rewards unlocks via Luck"
+  "en": "<TEX 0><COL 004AD1FF>Great Luck</COL> is the chance\r\nthe third reward row opens once\r\nthe second row unlocked via Luck"
  },
  {
   "i": 34,
