@@ -757,7 +757,7 @@
  {
   "i": 151,
   "jp": "所有狩玉",
-  "en": "Hunter Coins Owned"
+  "en": "Hunter G."
  },
  {
   "i": 152,
@@ -1467,7 +1467,7 @@
  {
   "i": 293,
   "jp": "パートナー酒場",
-  "en": "Partner's Tavern"
+  "en": "Partner's Pub"
  },
  {
   "i": 294,
@@ -1477,7 +1477,7 @@
  {
   "i": 295,
   "jp": "狩友",
-  "en": "Hunting Friend"
+  "en": "Friends"
  },
  {
   "i": 296,
@@ -1512,12 +1512,12 @@
  {
   "i": 302,
   "jp": "宝物庫",
-  "en": "Treasure Vault"
+  "en": "Vault"
  },
  {
   "i": 303,
   "jp": "訓練所",
-  "en": "Training Hall"
+  "en": "Training"
  },
  {
   "i": 304,
@@ -2027,7 +2027,7 @@
  {
   "i": 405,
   "jp": "報酬受取",
-  "en": "Receive Reward"
+  "en": "Receive"
  },
  {
   "i": 406,
@@ -2067,7 +2067,7 @@
  {
   "i": 413,
   "jp": "\r\n\r\nニャン検隊が\r\n≪%s≫の\r\n探検から帰ってきました !\r\n\r\n探検の成果を確認してください",
-  "en": "\r\n\r\nThe Meowxpedition Squad has\r\nreturned from the\r\n《%s》 expedition!\r\n\r\nPlease check the results of the expedition"
+  "en": "\r\n\r\nThe Meowxpedition Squad has\r\nreturned from the\r\n《%s》 expedition!\r\n\r\nPlease check the results!"
  },
  {
   "i": 414,
@@ -2177,7 +2177,7 @@
  {
   "i": 435,
   "jp": "探検の成果を見るニャ !",
-  "en": "Check the expedition results, nya!"
+  "en": "The meowxpedition is back!"
  },
  {
   "i": 436,
@@ -2512,7 +2512,7 @@
  {
   "i": 502,
   "jp": "装備図鑑",
-  "en": "Equipment Encyclopedia"
+  "en": "Equip.Encyc."
  },
  {
   "i": 503,
@@ -2522,12 +2522,12 @@
  {
   "i": 504,
   "jp": "発見図鑑",
-  "en": "Discovery Encyclopedia"
+  "en": "Disc.Encyc."
  },
  {
   "i": 505,
   "jp": "探検記",
-  "en": "Expedition Log"
+  "en": "Exp.Log"
  },
  {
   "i": 506,
@@ -2577,12 +2577,12 @@
  {
   "i": 515,
   "jp": "報酬未受け取りの\r\n項目のみ表示",
-  "en": "Show Only Items\r\nwith Unclaimed Rewards"
+  "en": "Unclaimed"
  },
  {
   "i": 516,
   "jp": "達成状況",
-  "en": "Completion Status"
+  "en": "Status"
  },
  {
   "i": 517,
@@ -2862,7 +2862,7 @@
  {
   "i": 572,
   "jp": "装備画像を<COL FEEB4EFF>長押し</COL>で詳細を確認できます",
-  "en": "<COL FEEB4EFF>Long-press</COL> the equipment image to check details"
+  "en": "<COL FEEB4EFF>Long-press</COL> the equip. icon to check details"
  },
  {
   "i": 573,
@@ -3022,7 +3022,7 @@
  {
   "i": 604,
   "jp": "装備の画像を<COL FEEB4EFF>長押し</COL>して詳細を確認できます",
-  "en": "<COL FEEB4EFF>Long-press</COL> the equipment image to check details"
+  "en": "<COL FEEB4EFF>Long-press</COL> the equip. icon to check details"
  },
  {
   "i": 605,
@@ -3277,12 +3277,12 @@
  {
   "i": 655,
   "jp": "見た目装備",
-  "en": "AppearanceEquipment"
+  "en": "Layered"
  },
  {
   "i": 656,
   "jp": "見た目装備を有効にするにはONにしてください",
-  "en": "Please turn ON to enable AppearanceEquipment"
+  "en": "Please turn ON to enable Layered"
  },
  {
   "i": 657,
@@ -3292,12 +3292,12 @@
  {
   "i": 658,
   "jp": "見た目装備が変更されています\r\n変更内容を保存しますか？",
-  "en": "Your AppearanceEquipment has been changed\r\nWould you like to save the changes?"
+  "en": "Your Layered equipment has been changed\r\nWould you like to save the changes?"
  },
  {
   "i": 659,
   "jp": "見た目装備を変更するハンターを\r\n選択して下さい",
-  "en": "Please select the hunter\r\nwhose AppearanceEquipment you want to change"
+  "en": "Please select the hunter\r\nwhose Layered equipment you want to change"
  },
  {
   "i": 660,
@@ -4187,7 +4187,7 @@
  {
   "i": 837,
   "jp": "達成状況 ：",
-  "en": "Completion Status: "
+  "en": "Status: "
  },
  {
   "i": 838,
@@ -4677,7 +4677,7 @@
  {
   "i": 935,
   "jp": "強化・詳細",
-  "en": "Upgrade / Details"
+  "en": "Upg. / Details"
  },
  {
   "i": 936,
@@ -4857,17 +4857,17 @@
  {
   "i": 971,
   "jp": "発生率：低",
-  "en": "Occurrence Rate: Low"
+  "en": "Rate: Low"
  },
  {
   "i": 972,
   "jp": "発生率：中",
-  "en": "Occurrence Rate: Medium"
+  "en": "Rate: Medium"
  },
  {
   "i": 973,
   "jp": "発生率：高",
-  "en": "Occurrence Rate: High"
+  "en": "Rate: High"
  },
  {
   "i": 974,
@@ -5097,7 +5097,7 @@
  {
   "i": 1019,
   "jp": "所有狩玉",
-  "en": "Hunter Coins Owned"
+  "en": "Hunter G."
  },
  {
   "i": 1020,
@@ -5717,7 +5717,7 @@
  {
   "i": 1143,
   "jp": "\r\n<SIZE 25>%s</SIZE>\r\n\r\n<SIZE 28>達成状況 ： %d / %d</SIZE>",
-  "en": "\r\n<SIZE 25>%s</SIZE>\r\n\r\n<SIZE 28>Completion Status: %d / %d</SIZE>"
+  "en": "\r\n<SIZE 25>%s</SIZE>\r\n\r\n<SIZE 28>Status: %d / %d</SIZE>"
  },
  {
   "i": 1144,
@@ -7197,7 +7197,7 @@
  {
   "i": 1439,
   "jp": "装備画像を長押しで\r\n詳細を確認できます",
-  "en": "Long-press the equipment image\r\nto check details"
+  "en": "Long-press the equip. icon\r\nto check details"
  },
  {
   "i": 1440,

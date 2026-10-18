@@ -297,3 +297,18 @@
 # Palico (otomo) names translated (Cacao, Souffle, Waffle, Macarona, ...).
 # Romanizations, single line, no textures. See docs/OTOMO-PALICO.md.
 376 cmn/resident.00.fpk
+# 377: menu label short forms in GUI.00.fpk (GUI_msg.arc): Friends, Partner's Pub,
+# Vault, Training, Market, Upg. / Details, Equip.Encyc., Disc.Encyc., Exp.Log,
+# Status, Rate: Low/Medium/High, Unclaimed, Hunter G., Layered, "equip. icon",
+# "The meowxpedition is back!", "Please check the results!", one nyan button now
+# "Receive". Island map notes in resident.00.fpk (rsdnt_map.arc :: part_info):
+# all 18 islands (names + mDescBefore/mDescAfter), dictionary
+# lavoro-traduzione/map/isole.json. Full list in docs/STRING-EDITS.md.
+377 cmn/GUI.00.fpk cmn/resident.00.fpk
+# 378: corrections to 377 plus the Discovery Encyclopedia. GUI.00.fpk: the nyan
+# popup button is now "Receive" (MenuCmn 405), 409 stays "Receive Reward"; the
+# Town tab label is MenuCmn 295 "Friends", the 149 count label stays "Hunting
+# Friends". resident.00.fpk :: rsdnt_property.arc :: item_collection: all 275
+# Discovery Encyclopedia entries (mCollectionName + mExplanation) translated,
+# 550 strings, dictionary lavoro-traduzione/collection/collezione.json.
+378 cmn/GUI.00.fpk cmn/resident.00.fpk

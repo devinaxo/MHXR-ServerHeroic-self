@@ -146,8 +146,27 @@ export const PROTOCOL = {
    * ships the server-side random Palico encounter at the end of island quests
    * (services/otomoEncounter.ts, OTOMO_ENCOUNTER_CHANCE, default 20 percent).
    * See docs/OTOMO-PALICO.md.
+   * 377: menu label short forms (GUI.00.fpk :: GUI_msg.arc) + the island map
+   * notes (resident.00.fpk :: rsdnt_map.arc :: part_info). GUI: 29 strings
+   * shortened so narrow boxes stop clipping: Friends, Partner's Pub, Vault,
+   * Training, Market, Upg. / Details, Equip.Encyc., Disc.Encyc., Exp.Log,
+   * Status, Rate: Low/Medium/High, Unclaimed, Hunter G., Layered, "equip. icon",
+   * "The meowxpedition is back!", "Please check the results!", and one nyan
+   * button now reads "Receive". Full before/after list in docs/STRING-EDITS.md.
+   * Map: all 18 islands (mPartName/mDescBefore/mDescAfter) translated with
+   * lavoro-traduzione/map/isole.json, names matching the GUI.78-94 dialogue;
+   * see lavoro-traduzione/map/README.md. No textures.
+   * 378: corrections + the Discovery Encyclopedia. GUI.00.fpk: the nyan popup
+   * button is the one now reading "Receive" (405); 409 stays "Receive Reward"
+   * (it was the top-bar label). The Town tab label is MenuCmn 295 "Friends"
+   * (the 149 count label stays "Hunting Friends"). resident.00.fpk ::
+   * rsdnt_property.arc :: item_collection - all 275 Discovery Encyclopedia
+   * entries translated (mCollectionName + mExplanation) with
+   * lavoro-traduzione/collection/collezione.json (550 strings); names follow the
+   * GUI.78-94 dialogue and Monster.json (Jaggi, Jagginos, Delex, Apypos, ...).
+   * See docs/STRING-EDITS.md and lavoro-traduzione/collection/README.md.
    */
-  RES_VER: 376,
+  RES_VER: 378,
   BANNER_VER: 91, // If set to 0 /api/banner/dllist/get is not called; incremental update trigger
   APP_VER: '09.03.06',
   BLOCK_SEQ: 0, // Possibly need to increment for cycling encryption (client ignores if 0)

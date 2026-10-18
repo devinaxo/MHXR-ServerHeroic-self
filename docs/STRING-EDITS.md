@@ -284,3 +284,73 @@ docker compose -f docker-compose.prod.yml up -d --build server
 into `backups/`. The backup from this release was
 `build/GUI.00_backup_pre_strings.fpk` (md5 `56762eb4f726cb8cb2bc2a7d0e09532d`).
 `GUI.00_backup.fpk` and `GUI.00_backup_pre_calib.fpk` are from the texture work.
+## Menu-label batch (res 377)
+
+Published 2026-10-18 as `res 377`. Two of these were corrected in 378: see
+`res 378` below (the nyan button and the Town Friends label). Edited in
+`lavoro-traduzione/trad/MenuCmn.json` and `ver09_01_00.json`. Rebuilt in
+full, the dictionary differs from the previous live `GUI_msg.arc` in 29 strings:
+
+| i | was | now |
+| --- | --- | --- |
+| 149 | `Hunting Friends` | `Friends` |
+| 151, 1019 | `Hunter Coins Owned` | `Hunter G.` |
+| 293 | `Partner's Tavern` | `Partner's Pub` |
+| 302 | `Treasure Vault` | `Vault` |
+| 303 | `Training Hall` | `Training` |
+| 409 | `Receive Reward` | `Receive` |
+| 413 | `...Please check the results of the expedition` | `...Please check the results!` |
+| 435 | `Check the expedition results, nya!` | `The meowxpedition is back!` |
+| 502 | `Equipment Encyclopedia` | `Equip.Encyc.` |
+| 504 | `Discovery Encyclopedia` | `Disc.Encyc.` |
+| 505 | `Expedition Log` | `Exp.Log` |
+| 515 | `Show Only Items\r\nwith Unclaimed Rewards` | `Unclaimed` |
+| 516 | `Completion Status` | `Status` |
+| 572, 604, 1439 | `Long-press the equipment image...` | `Long-press the equip. icon...` |
+| 655 | `AppearanceEquipment` | `Layered` |
+| 656, 658, 659 | `...AppearanceEquipment...` | `...Layered equipment...` |
+| 837 | `Completion Status: ` | `Status: ` |
+| 935 | `Upgrade / Details` | `Upg. / Details` |
+| 971-973 | `Occurrence Rate: Low/Medium/High` | `Rate: Low/Medium/High` |
+| 1143 | `Completion Status: %d / %d` | `Status: %d / %d` |
+| ver09_01_00 9 | `Trade Market` | `Market` |
+| ver09_01_00 10 | `Exchange at the Trade Market` | `Exchange at the Market` |
+
+`build-msg-arc.cjs --check` against the live pack reports
+`stringhe identiche: 10353, diverse: 29` and no per-file string-count change.
+
+There is no standalone `Hunter Gems Owned` string in the packs: `Hunter Gems`
+is the resident `item_payment` name, shown next to a generic `Owned`. The two
+`Hunter Coins Owned` indices were shortened to `Hunter G.`.
+
+### Island notes
+
+The map note (`resident.00.fpk :: rsdnt_map.arc :: part_info`) now has a
+dictionary for all 18 islands, `lavoro-traduzione/map/isole.json` (54 entries:
+18 names + 36 descriptions). Full procedure in
+`lavoro-traduzione/map/README.md`. Applying it changes only `part_info`;
+`traduci-rsdnt-arc.cjs` reports 54/54 keys used and 9/9 tables clean.
+
+## res 378: corrections + Discovery Encyclopedia
+
+Published 2026-10-18 as `res 378`, one bump over two packs.
+
+### Corrections to 377
+
+| i | 377 had | 378 now | why |
+| --- | --- | --- | --- |
+| 405 | `Receive Reward` | `Receive` | this is the nyan popup confirm button |
+| 409 | `Receive` | `Receive Reward` | 377 changed the wrong one; 409 is the top-bar label |
+| 295 | `Hunting Friend` | `Friends` | the Town tab entry (狩友); 377 missed it |
+| 149 | `Friends` | `Hunting Friends` | 149 is 狩友数, a count label, not the Town tab |
+
+### Discovery Encyclopedia
+
+`resident.00.fpk :: rsdnt_property.arc :: item_collection`, all 275 entries
+(`mCollectionName` + `mExplanation`, 550 strings). Dictionary
+`lavoro-traduzione/collection/collezione.json`, built from the five
+`dati-1..5.cjs` chunks and checked by `genera-collezione.cjs` (line <= 44,
+body <= 7 lines, name <= 30). Names follow the GUI.78-94 dialogue and
+`Monster.json`. Full procedure in
+`lavoro-traduzione/collection/README.md`. `traduci-rsdnt-arc.cjs` reports
+550/550 keys used, 46/46 tables clean, and only `item_collection` changes.

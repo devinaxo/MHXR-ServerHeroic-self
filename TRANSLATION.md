@@ -109,7 +109,14 @@ The dictionaries ship in this repo:
 - [`lavoro-traduzione/otomo/otomo-nomi.json`](lavoro-traduzione/otomo/otomo-nomi.json)
   for the 53 Palico names (`resident.00.fpk` ::
   `rsdnt_otomo.arc` :: `OtomoParam.mOtomoName`), see
-  [`docs/OTOMO-PALICO.md`](docs/OTOMO-PALICO.md).
+  [`docs/OTOMO-PALICO.md`](docs/OTOMO-PALICO.md);
+- [`lavoro-traduzione/map/`](lavoro-traduzione/map) for the island notes the
+  map screen shows (`resident.00.fpk` :: `rsdnt_map.arc` :: `part_info`), see
+  [`lavoro-traduzione/map/README.md`](lavoro-traduzione/map/README.md);
+- [`lavoro-traduzione/collection/`](lavoro-traduzione/collection) for the
+  Discovery Encyclopedia (`resident.00.fpk` :: `rsdnt_property.arc` ::
+  `item_collection`), see
+  [`lavoro-traduzione/collection/README.md`](lavoro-traduzione/collection/README.md).
 
 Per-table coverage and details:
 [`docs/HANDOFF-QUEST-TRANSLATION.md`](docs/HANDOFF-QUEST-TRANSLATION.md),
