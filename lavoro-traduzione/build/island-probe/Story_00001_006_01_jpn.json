@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,2,0><CV 1,65>Come, let's head to the next island!\r\nI'll definitely find its relic too!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 1,0,1,0,8><CV 1,54>We need Argo to get us\r\nlanding permission for the next island!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 1,0,1,2,3><CV 1,9>Then let's go quickly!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -103,6 +103,60 @@ for (const [block, parti] of Object.entries(BLOCCHI)) {
 }
 
 /**
+ * Blocco -> scena di COMPLETAMENTO della richiesta (討伐依頼): la prima parte
+ * dopo l'ultima che porta il markup POP. Per un blocco di richiesta le parti
+ * sono _01 richiesta, _02 richiesta, _03 "ce l'abbiamo fatta", _04 epilogo: la
+ * completamento e' la _03.
+ */
+const COMPLETAMENTO_BLOCCO = new Map<string, number>();
+{
+  const ultimaRichiesta = new Map<string, number>();
+  for (const r of RICHIESTE) {
+    if (!r.story) continue;
+    const cur = ultimaRichiesta.get(r.block) ?? -1;
+    if (r.part > cur) ultimaRichiesta.set(r.block, r.part);
+  }
+  for (const [block, parti] of PARTI_BLOCCO) {
+    const ultima = ultimaRichiesta.get(block);
+    if (ultima == null) continue;
+    const dopo = parti.find((p) => p.part > ultima);
+    if (dopo) COMPLETAMENTO_BLOCCO.set(block, dopo.story);
+  }
+}
+
+/*
+ * Isola -> scene di consegna (le _02 dei blocchi che hanno una variante _92: sono
+ * esattamente le 30 scene con mItemList). Servono per l'OGGETTO del paesaggio:
+ * il client ricostruisce gli oggetti dell'isola dalla mappa a ogni caricamento
+ * (sQuestWorkspace::createObjectList), quindi la cutscene di consegna da sola non
+ * lascia traccia - se il server non rimanda l'oggetto, il ponte/le macerie
+ * tornano come prima. Si mostra l'oggetto (mObjectState finale) quando almeno una
+ * consegna dell'isola e' stata vista.
+ */
+const CONSEGNA_PER_ISOLA = new Map<number, number[]>();
+{
+  const pref2isola = new Map<string, number>();
+  const isoleJson = (storyRequests as unknown as { islands?: Record<string, { content: string }[]> }).islands ?? {};
+  for (const [isl, parti] of Object.entries(isoleJson)) {
+    for (const p of parti) {
+      const m = /^(Story_[0-9]+_[0-9]+)_/.exec(p.content);
+      if (m) pref2isola.set(m[1]!, Number(isl));
+    }
+  }
+  for (const [block, parti] of Object.entries(BLOCCHI)) {
+    if (!parti.some((p) => p.part === 92)) continue;
+    const m = /^(Story_[0-9]+_[0-9]+)$/.exec(block);
+    const isola = m ? pref2isola.get(m[1]!) : undefined;
+    const consegna = parti.find((p) => p.part === 2);
+    if (isola != null && consegna?.story) {
+      const arr = CONSEGNA_PER_ISOLA.get(isola) ?? [];
+      arr.push(consegna.story);
+      CONSEGNA_PER_ISOLA.set(isola, arr);
+    }
+  }
+}
+
+/**
  * La scena da mostrare per un nodo: la parte del SUO blocco successiva a quella
  * piu' avanti gia' vista (`storie_viste`). Il client segna come vista ogni parte
  * che riproduce, quindi la progressione e' dentro il blocco: _01 -> _02 -> _03 ->
@@ -112,7 +166,20 @@ for (const [block, parti] of Object.entries(BLOCCHI)) {
  * sbloccate comprese). Non serve avanzare fra blocchi: la mappa assegna un solo
  * blocco a ciascun nodo-storia (t1 porto, t3 passaggi, t4 uscita), in ordine.
  */
-function parteDaMostrare(storyAttuale: number, storieViste: Set<number>): number {
+function parteDaMostrare(storyAttuale: number, storieViste: Set<number>, nodiEsauditi: Set<number>): number {
+  /*
+   * Richiesta di sottomissione (討伐依頼) esaudita: la scena salta alla parte di
+   * completamento del blocco (_03). Un tempo lo si otteneva segnando il NODO con
+   * state 3, ma nel client lo stato del nodo crea una "event notice" che la
+   * routine di cambio isola poi dereferenzia dopo averla liberata (SIGSEGV/SIGBUS
+   * su uMap::tqIslandChange -> setVisibleEventNotice). Si avanza quindi con la
+   * sola storia, lasciando il nodo al suo state normale.
+   */
+  const req = RICHIESTA_PER_STORIA.get(storyAttuale);
+  if (req && nodiEsauditi.has(req.target)) {
+    const fine = COMPLETAMENTO_BLOCCO.get(req.block);
+    if (fine) return fine;
+  }
   const b = BLOCCO_PER_STORIA.get(storyAttuale);
   if (!b) return storyAttuale;
   const parti = PARTI_BLOCCO.get(b.block);
@@ -279,9 +346,6 @@ export async function enrichOceanData(
         const nodeQuests = nodeQuestMap.get(nodeID) || [];
         const day_quest_list: QuestObject[] = [];
         const night_quest_list: QuestObject[] = [];
-        // Una "Special Request" (討伐依頼) soddisfatta: la scena di storia legata a
-        // questo nodo puo' proseguire, quindi il nodo va segnato come concluso.
-        let richiestaSoddisfatta = false;
 
         for (const nq of nodeQuests) {
           const questID = Number(nq.mQuestHash);
@@ -289,7 +353,6 @@ export async function enrichOceanData(
           if (!quest) continue;
 
           const clearedQuest = cleared_quests.find((q) => q.mst_quest_id === questID);
-          if (clearedQuest && nq.QuestType === 'Subjugation') richiestaSoddisfatta = true;
 
           let state = 1; // default = NEW
           if (clearedQuest) {
@@ -327,11 +390,11 @@ export async function enrichOceanData(
           ...node,
           day_quest_list,
           night_quest_list,
-          // La 討伐依頼 del nodo e' stata esaudita: il nodo risulta concluso, cosi'
-          // la scena di storia che l'aveva richiesta puo' andare avanti.
-          state: richiestaSoddisfatta ? 3 : node.state,
-          // ...e la scena avanza dentro il suo blocco (una parte per volta).
-          mst_story_id: parteDaMostrare(Number(node.mst_story_id ?? 0), storieViste),
+          // NON si tocca `state`: alzarlo a 3 per una richiesta esaudita creava
+          // una "event notice" che faceva crashare la mappa (vedi parteDaMostrare).
+          // La scena avanza dentro il suo blocco (una parte per volta) e, per una
+          // richiesta esaudita, parteDaMostrare salta alla parte di completamento.
+          mst_story_id: parteDaMostrare(Number(node.mst_story_id ?? 0), storieViste, nodiEsauditi),
         };
       });
 
@@ -1141,10 +1204,17 @@ export const islandMapAll = async (req: Request, res: Response) => {
     }
 
     const plainDoc = doc.toObject();
+    const storieVisteDoc = new Set<number>((plainDoc as { storie_viste?: number[] }).storie_viste ?? []);
+    // Isole la cui consegna e' gia' stata vista: per quelle la mappa rimanda
+    // l'oggetto del paesaggio (vedi CONSEGNA_PER_ISOLA), altrimenti si perde.
+    const isoleConsegna = new Set<number>();
+    for (const [isola, scene] of CONSEGNA_PER_ISOLA) {
+      if (scene.some((s) => storieVisteDoc.has(s))) isoleConsegna.add(isola);
+    }
     // Tutorial finito: la mappa con la progressione vera (progressione_storia,
     // acceso per tutti), o la mappa completa per chi ha l'interruttore spento.
     const oceanPlain = plainDoc.tutorial_step == 0xffff
-      ? (plainDoc.progressione_storia ? mappaProgressiva(full_island, missioniCompletate(plainDoc.cleared_quests)) : full_island)
+      ? (plainDoc.progressione_storia ? mappaProgressiva(full_island, missioniCompletate(plainDoc.cleared_quests), isoleConsegna) : full_island)
       : plainDoc.ocean_list;
     const clearedPlain = plainDoc.cleared_quests;
 

@@ -1,0 +1,82 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,1><BGM 0,0,502><CHAR 5,1,7,0,0><CHAR 1,3,1,0,3><TALK 1><NAME 1>Hello.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 5,0,7,0,8><TALK 5><NAME 10><CV 5,37>Ah, you've come.\r\nForgive me, but may I start at once?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 1,0,1,0,0><TALK 1><NAME 1><CV 1,4>Yes, Dr. Andra.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 5,0,7,0,0><TALK 5><NAME 10>This hunting request I'm about to give —\r\nI want you two to take the vanguard.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 1,0,1,0,8><TALK 1><NAME 1><CV 1,84>What kind of request is it?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 5,0,7,0,0><TALK 5><NAME 10>In the Isles there are monsters\r\nour hunts have never reached.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 1,0,1,0,2><TALK 1><NAME 1><CV 1,73>Which means...\r\nis there some reason?",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CHAR 5,0,7,0,0><TALK 5><NAME 10>Mm. Monsters dwelling in the island's\r\nmost rugged areas — left alone\r\nfor their devilish strength.",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "Now the hunters' ranks are full,\r\nso the time is ripe; we've decided\r\nto proceed with the hunt.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CV 5,1>I'd like you to lead the hunt.\r\nThe guild will repay you with its\r\ndeepest thanks and a 「special title」.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "What matters is not strength,\r\nbut a 「proud soul」.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CHAR 1,0,1,0,2><TALK 1><NAME 1><CV 1,89>Um... that means...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CHAR 5,0,7,0,1><TALK 5><NAME 10><CV 5,20>Oho, you'll take it on!\r\nSplendid! Do your best!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "「Hunting is fun because of the thrill」 —\r\nisn't that so!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CHAR 1,0,1,0,0><TALK 1><NAME 1><CV 1,11>W-wah, understood.\r\nWe'll go!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

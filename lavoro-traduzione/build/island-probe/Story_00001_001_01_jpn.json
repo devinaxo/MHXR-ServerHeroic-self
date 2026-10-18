@@ -1,0 +1,42 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 6,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,0,0><CV 1,1>We've arrived.\r\nThis is the first island, <COL C70101FF>Malakhja Island</COL>!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<NAME 9><TALK 5><CHAR 5,1,8,7,0><CV 2,1>This time for sure, nya!\r\nFeel free to take your first step, nya!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,0>At last, a full-fledged investigator...\r\nI'm sure to find a <COL C70101FF>≪Relic≫</COL>!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 1,0,1,0,8><CV 1,47>Oh, a <COL C70101FF>≪Relic≫</COL> is the most\r\nvaluable of all the discoveries\r\nscattered across the Fractured Isles.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 1,54><COL C70101FF><COL C70101FF>≪Relics≫</COL> are very important\r\nto the study of the Fractured Isles.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "Now I'm finally an explorer too,\r\nso I'll definitely find one!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 1,0,1,0,3><CV 1,9>Then let's go!\r\nOnward to the uncharted Fractured Isles!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

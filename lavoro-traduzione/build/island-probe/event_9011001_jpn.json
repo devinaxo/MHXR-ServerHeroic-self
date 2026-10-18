@@ -1,0 +1,132 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 11,0><BGM 0,0,503><TALK 5><NAME 13><CHAR 1,1,1,0,0><CHAR 5,5,11,0,0><CV 16,18>Eliza, Hunter!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8>Yuno!\r\nWhat's wrong?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 13><CV 16,6>Um, it's Solphine...\r\nSolphine is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1>Calm down, Yuno!\r\nWhat happened to Solphine...?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 5,7,12,0,0><CV 1,98>Solphine!\r\nWhat's wrong!?\r\nYou look so haggard...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 5,4,12,0,0><CHAR 3,5,12,0,0><CHAR 1,4,1,0,0><TALK 3><NAME 14><CV 17,39>Ugh...\r\nI will never lose to a nightmare!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 3,12,12,0,0><TALK 1><NAME 1><CV 1,76><CHAR 1,3,1,0,0>Solphine!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 13><CHAR 5,1,11,0,0>Lately she's been tossing in her sleep...\r\nbut she won't tell us what happened!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "Truly, what happened...",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "Eliza, Hunter!\r\nPlease help Solphine!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<STBG 11,2><CHAR 1,2,1,0,0><CHAR 5,2,11,0,0><CHAR 3,11,0,0,0><STBG 8,1><CHAR 3,1,22,0,0><MWT 2>...........",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 3><NAME 22>Hmm, so that's how it is...\r\nMy lord, I may know that symptom.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "It is caused by a demon called a succubus\r\nin the place I came from.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "That is a demon that clings to men.\r\nNo wonder he looks so drained.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "What, my lord, you ask what\r\na succubus does...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CV 1005,37>Mm, that sort of thing is... troubling...",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<ITEM PCOIN00084,0,1>But I recall the cure:\r\nthe extract of a Dark Bat.\r\nThat is the means of recovery.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "Yet in the Dark Bat's habitat,\r\nPumpkin Uragaan lurk in numbers.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<ITEM AD_BODY129,0,1>To slay them, you'd best gather\r\nMagyul gear, strong against Pumpkin.",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<ITEM 0,0,0>Also, the Pumpkin species seems\r\nto drop a strange ticket.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<ITEM AD_HEAD2075,0,1>Guided by that ticket, it is said\r\nyou can meet powerful gear\r\nbearing this strange air.",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "Collecting them while treating him\r\nwould be good too.",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<ITEM 0,0,0>Before that man says\r\n「after all, I couldn't beat\r\nthe nightmare」...",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "The legend of a bat incarnate\r\nfighting a demon has been told\r\nfor ages.",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "Be careful too, my lord,\r\nlest you be taken by that demon.",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><NAME 7>I am the bone of my sword...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "Unknown to Death. Nor known to Life",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "■■■―――unlimited blade works.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": ".........",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<STBG 7,2><CHAR 1,7,0,0,0><STBG 7,1><TALK 1><NAME 1><CHAR 1,1,1,0,8><BGM 0,0,504><CV 1,18>Wait... what in the world...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "Hey, on the ground...\r\nsomething looks like it's stuck in it...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<ITEM PCOIN00054,1,1>Wait, is this... a sword!?\r\nAnd so many of them...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "But why in the world...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<ITEM 0,1,0><MWT 3>Gwooooooooh",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<BGM 1,0,504><BGM 0,0,505><TALK 1><NAME 1><CHAR 1,0,1,0,8>Diablos...\r\nbut those horns... red...",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 5><NAME 10><CHAR 5,5,7,0,0><CV 5,25>Hmm...\r\nso this is the place in question...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1><ITEM PCOIN00054,1,1>Dr. Andra!\r\nWhat in the world is this...?",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 5><NAME 10><CV 5,35>Hmm, a gilded monster,\r\nand swords stuck in the wasteland...",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "This resembles a legend\r\nof a struggle over a chalice.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<ITEM 0,1,0><CV 5,26>According to the tablet, if this\r\nstruggle continues, evil will overflow\r\nand swallow the world. This is dire...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CV 5,7>Both of you, I ask you to slay that\r\ngilded monster and recover the ≪Projection≫\r\nswords stuck in the wasteland.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<ITEM WD_WSWORD181,1,1><CV 5,20>As thanks, though it is a poor word,\r\nI'll give you the legendary gear left\r\nfrom the struggle over the chalice.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<ITEM 0,1,0><TALK 5><NAME 10><CV 5,19>Both of you, I leave it to you!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 1><NAME 1><CV 1,11>Understood!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

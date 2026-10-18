@@ -1,0 +1,52 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 8,3><BGM 0,0,505><CHAR 3,1,25,0,0><CV 23,16><TALK 3><NAME 33>The wind... is undulating...\r\nThat <COL C70101FF>≪Crystal≫</COL>... Nef-Garmat...?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "No... something is different...\r\na red radiance...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "The Isles are... nearly breaking...\r\nsuch power...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "Will you go...?\r\nIt may be dangerous...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 23,38>...Perhaps\r\nI faintly remember...\r\na tale told among a distant tribe...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "「The crystal dragon... in the earth\r\nit devours... the sky-crystal\r\ndragon descends」",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "「Its form... shines like the sun...\r\nwhen it appears... the wind undulates...\r\nand grants the earth great power...」",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "Its name is... <COL C70101FF>≪Eo Garudia≫</COL>",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CV 23,20>A being of far too many mysteries...\r\nPlease... do take care...",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

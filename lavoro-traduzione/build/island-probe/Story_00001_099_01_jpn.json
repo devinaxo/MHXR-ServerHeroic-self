@@ -1,0 +1,57 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,507><TALK 1><NAME 1><CHAR 1,1,1,3,0><CV 1,15>We did it!\r\nNow we're explorers too!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 1,47><CHAR 1,0,1,2,0>An explorer is the general term for\r\nthose who study the Fractured Isles.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 9><CHAR 5,1,8,5,0><CV 2,5>You lot have become fine explorers,\r\nso how about a new group name, nya?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 5,1,8,4,3><CV 2,5>That's it, nya!\r\nHow about 「Lord Argo & Minions」, nya?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7><CV 1,61>Um, minions?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 9><CV 2,15>Nya nya? You don't like it, nya?\r\nThen 「Self-Styled Pioneers」, nya!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8><CV 1,63>Self-styled!?\r\nThat sounds so shady!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 9><CV 2,7>Such a fussy one, nya!\r\n「Rift Realm Castaways」!\r\nHow about that, nya!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,1><CV 1,62>What even is that!?\r\nWe haven't even entered the Fractured Isles!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<MWT 2>Thus, after a long half-day of discussion,\r\nthe team name was... postponed.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

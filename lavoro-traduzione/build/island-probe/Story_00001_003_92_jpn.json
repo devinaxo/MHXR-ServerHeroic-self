@@ -1,0 +1,52 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 2,0><BGM 0,0,503><TALK 5><NAME 8><CHAR 5,1,10,0,0><CHAR 1,1,1,0,0><CV 11,8>Hey there!\r\nDid you find the Monster Body Fluid?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<NAME 1><TALK 1><CV 1,8>Yes, um...\r\nis this it...?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 8><CHAR 5,0,10,0,8><CV 11,5>Whoa!\r\nNice going!\r\nNow we can build the bridge!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 5,0,10,0,1>Hey, you lot!\r\nThese two brought us the\r\nMonster Body Fluid!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Alright, let's get to it!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 0><NAME 0>「「「Yeeesss sirrrr!!!!」」」",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<STBG 2,2><CHAR 1,2,1,0,0><CHAR 5,2,10,0,0><STBG 2,1><MWT 2>………",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "Rocket Lance, ready to fire!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 8><CHAR 5,5,10,0,8><CV 11,22>Alright, here we gooo!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

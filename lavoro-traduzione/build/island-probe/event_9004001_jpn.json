@@ -1,0 +1,57 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 11,0><BGM 0,0,505><CHAR 1,1,1,0,0><CHAR 5,1,8,6,5><TALK 5><NAME 9><CV 2,2>Big trouble, nya!\r\nMonsters seem to be fighting nearby, nya!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,20><CHAR 1,0,1,0,1>No way...!\r\nWhat could it be...?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 9><CV 2,16>It seems to be a turf war, nya.\r\nBut that energy — they look like\r\nthey're after unifying the land, nya!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CV 2,1>A crescent-marked Felyne calls it\r\n「the coolest, flashiest party ever」, nya!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7><CV 1,39>Such a turf war could hurt\r\nthe surrounding environment...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 1,0,1,0,0><CV 1,9>We must stop it before it gets hotter!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 5><NAME 9><CV 2,1><ITEM EVENTPOINT9003001,1,1>I'm counting on you, nya!\r\nSlay them and the guild will give\r\nyou these <COL C70101FF>≪Koban≫</COL>, nya.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 2,5><CHAR 5,0,8,7,0>Gather Koban and trade them\r\nat the Exchange for good things, nya!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<ITEM 0,1,0><CHAR 5,0,8,5,0><CV 2,7>A red-headbanded Felyne says there was\r\nsomething that could truly unify the land —\r\nsomething 「buzzing with poweeer」, nya!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CHAR 5,0,8,7,0><CV 2,8>Then, collecting the Koban, please, nya!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 5,1><BGM 0,0,506><MWT 2>Suddenly appearing in the Fractured Isles,\r\n<COL C70101FF>≪It≫</COL> is the endpoint where\r\n<COL C70101FF>≪Wandering Isle Fragments≫</COL> gather―",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<MWT 2>If you think desert, it becomes seaside;\r\nif a snow mountain, it becomes a volcano.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<MWT 2>Amid ceaseless storm, thunder and eruption,\r\nit changes form and environment moment by\r\nmoment, bewildering explorers.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<MWT 2>The guild unravelled the Isles' history\r\nand reached a certain finding.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<MWT 2>...It was the legend of\r\n<COL C70101FF>the island that changes form</COL>.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<STBG 3,1><CHAR 1,1,1,0,0><CHAR 5,1,25,0,0><MWT 0><TALK 5><NAME 33><CV 23,26>I will... show you the way.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "A form like a phantom...\r\nThat island's name is <COL C70101FF>≪Phantom Deep Realm≫</COL>.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7><CV 1,39><COL C70101FF><COL C70101FF>The environment changes dizzyingly</COL>...\r\nCan we investigate safely and return...?",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 31><MWT 3><BGM 0,0,503><CV 21,2><CHAR 1,0,1,0,1><CHAR 5,0,25,0,1>Wait just a miiiinute!!!!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CHAR 1,0,1,0,0><CHAR 5,4,25,0,0><CHAR 5,5,23,0,0><MWT 0><CV 21,27>Ah... good, I made it in time.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CHAR 1,0,1,0,2><TALK 1><NAME 1><CV 1,28>Amenoma! In such a hurry...\r\nwhat are those yellow ore and the liquid\r\nyou're carrying...?",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CHAR 1,0,1,0,0><TALK 5><NAME 31><CV 21,3><ITEM DEEP_FUEL_00002,1,1>This yellow liquid is <COL C70101FF>≪Exploration Fuel≫</COL>.\r\nBy reacting to the ore and emitting a\r\nwavelength, it grasps our current position.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "So place a <COL C70101FF>flag with the ore</COL>\r\nat good stopping points, and set\r\n<COL C70101FF>markers</COL> so others don't get lost.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<CHAR 1,0,1,2,4><TALK 1><NAME 1><CV 1,12>I see... with the marker flags and this\r\nExploration Fuel, we can investigate the\r\nPhantom Deep Realm without getting lost!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CHAR 1,0,1,0,0><CHAR 5,0,23,0,5><TALK 5><NAME 31><CV 21,1><ITEM 0,1,0>But I can only make a little at a time,\r\nso wait until the fuel builds up.\r\n...Sorry 'bout that.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 5,0,23,0,0><ITEM AD_ARM724,1,1>And I made gear like this.\r\nBased on that ore, it's\r\n<COL C70101FF>specially made for the Deep Realm</COL>!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 5,0,23,0,4><ITEM 0,1,0><ITEM EVENTPOINTDEEP0001,1,1><CV 21,3>Also, the guild is running a\r\n<COL C70101FF>≪Lottery≫</COL> where you trade\r\nexploration info and rewards!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CHAR 5,0,23,0,0><CHAR 1,0,1,2,4><TALK 1><NAME 1><CV 1,54><ITEM 0,1,0>Suddenly a giant island appeared, and\r\nthough I was startled it feels like a\r\nfestival — I think my tension eased.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CHAR 1,0,1,2,0><CHAR 5,4,23,0,0><CHAR 5,5,25,0,7><TALK 5><NAME 33><CV 23,23>Truly...\r\nthe guild's people are resilient...",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<MWT 3><CV 21,1><CHAR 1,0,1,0,1><CHAR 5,0,25,0,1><COL C70101FF>Don't forget to peek at\r\n<COL C70101FF>Exploration Navi</COL> too!!!!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<MWT 0><CHAR 1,0,1,0,2><CHAR 5,0,25,0,0><TALK 1><NAME 1><CV 1,90>Eh... what, what? <COL C70101FF>Exploration Navi</COL>\r\nhas <COL C70101FF>lavish items</COL> needed for\r\nexploring... piled in, that's what it said?",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CHAR 1,0,1,1,5><CV 1,60>Truly... how reassuring.",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CHAR 1,0,1,0,0><TALK 5><NAME 33><CV 23,45>Then let us head out... to the\r\n<COL C70101FF>≪Phantom Deep Realm≫</COL>.",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

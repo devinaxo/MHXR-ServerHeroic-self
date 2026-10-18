@@ -1,0 +1,112 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,1><CHAR 1,0,1,0,0><CHAR 5,5,7,0,0><TALK 5><NAME 10><BGM 0,0,503><CV 5,25>You lot, may I have a moment?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 1,0,1,0,0><TALK 1><NAME 1><CV 1,90>Dr. Andra.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 5,0,7,0,2><TALK 5><NAME 10><CV 5,42>Do you know that something like\r\na labyrinth has been found in each corner\r\nof the island?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "I take it for a dungeon of metal\r\nartefacts, as written in old books.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 5,33>In its depths lies an item of immense\r\npower, and whoever holds it is said\r\nto become king.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 1,0,1,2,1><TALK 1><NAME 1><CV 1,29>Amazing!\r\nI want to investigate it too!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 5,0,7,0,3><TALK 5><NAME 10><CV 5,1>As a researcher, it fascinates me!\r\nThe guild plans to send a large survey team.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CHAR 5,0,7,0,2><TALK 5><NAME 10><CV 5,5>Of course, I want you to come along.\r\nWill you lend your strength?",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CHAR 1,0,1,0,3><TALK 1><NAME 1><CV 1,11>Of course!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<ITEM PCOIN00199,1,1><CHAR 5,0,7,0,0><TALK 5><NAME 10><CV 5,19>Then first, secure the food we'll need\r\nduring the survey. Catch this fish\r\nin great numbers.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "Depending on this food supply\r\nand your efforts...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<ITEM WD_LSWORD2215,1,1>I hear that those who once cleared\r\nthe dungeon will have their gear\r\ngiven as a reward...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "How about it?\r\nAre you getting motivated?",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<ITEM 0,1,0><CHAR 1,0,1,2,3><TALK 1><NAME 1><CV 1,4>Yes!\r\nLeave it to us!\r\nI can't wait for an unknown dungeon!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "Precious discoveries and beautiful vistas\r\none after another — walking alone\r\nwould be a joy...!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 5,0,7,0,0><TALK 5><NAME 10><CV 5,33>muscled limbs, a giant old man in a sword!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 1,0,1,1,5><TALK 1><NAME 1><CV 1,94>...Huh? Not what I expected...\r\nAh, Doctor, my stomach feels...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CHAR 5,0,7,0,3><TALK 5><NAME 10><CV 5,1>Moreover, unknown protozoa and\r\nskewer traps — full of thrills!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CHAR 1,0,1,1,7><TALK 1><NAME 1><CV 1,22>Ugh, now fever and dizziness too...",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CHAR 5,0,7,0,1><TALK 5><NAME 10><CV 5,18>An unprecedented discovery is just ahead!\r\nLet's go!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CHAR 5,6,7,0,0><CHAR 1,0,1,1,5><TALK 1><NAME 1><CV 1,35>Ah, he's not listening...",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

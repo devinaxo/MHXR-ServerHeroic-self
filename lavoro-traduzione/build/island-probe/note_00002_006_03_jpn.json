@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,0><CHAR 1,1,1,0,0>That Web Gallery from before...\r\nthe guild survey team is examining it.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "But even following the map,\r\nthey seem to come out somewhere else...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Coming out somewhere different each time —\r\nif this were a game, it would be fun...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

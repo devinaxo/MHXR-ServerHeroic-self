@@ -1,0 +1,142 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 100,1><BGM 0,0,506><MWT 2>Every year I think it — the unchanging\r\nNew Year's osechi dishes—",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<MWT 3>New possibilities for osechi!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<STBG 100,2><STBG 15,1><MWT 2>The hunter asked to investigate took\r\na <COL C70101FF>≪Large Stacked Box≫</COL> and\r\ndescended into the uncharted land.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<MWT 2>Seeking new flavours to fill\r\nthis <COL C70101FF>stacked box</COL>...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<MWT 2>New flavours.........",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<STBG 15,3><MWT 2>..............",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<BGM 1,2000,506><STBG 15,2><STBG 100,1><BGM 0,2000,509><MWT 0><TALK 3><NAME 7><CV 1001,27>Hey...! You! Hey, listen to me!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<STBG 100,2><STBG 3,1><CHAR 3,1,18,0,2><MWT 0><NAME 18><CV 1001,38>What's wrong? You were staring off.",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CHAR 3,0,18,0,7><COL C70101FF>You dreamed of exploring the Fractured\r\nIsles with a <COL C70101FF>large black box</COL>?",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CV 1001,5><CHAR 3,0,18,0,1>...! Could that have been a prophetic dream!\r\nI had just the thing to ask you!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CHAR 3,0,18,0,7><CV 1001,51>My lunch shop... we've been selling osechi\r\nfor the New Year, but each year\r\nfewer customers come...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CV 1001,12><CHAR 3,0,18,0,3>So I thought we'd make a\r\n<COL C70101FF>≪Bold New Osechi≫</COL> and\r\nboost sales!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CHAR 3,0,18,0,8><CV 1001,33>The Phantom Deep Realm is\r\n<COL C70101FF>an uncharted land that changes form</COL>...?\r\nUncharted means unseen ingredients!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<CHAR 3,0,18,0,2><CV 1001,52><MWT 2>So I want to seek\r\n<COL C70101FF>new possibilities for osechi</COL>!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CHAR 3,0,18,0,4><MWT 0><NAME 18><CV 1001,7>..............",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 3,0,18,0,3><CV 1001,50>I knew you'd say that!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 3,6,18,0,0><STBG 100,1><TALK 1><MWT 0><NAME 7><CV 18,25>Searching ingredients and cooking both\r\nwould be hard, so this time I called\r\nin a powerful helper!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CHAR 3,5,18,0,8><STBG 3,1><MWT 0><TALK 3><NAME 18><CV 1001,50>Hello......",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CHAR 3,0,18,0,5>This is my helper, Natalie!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CHAR 3,0,18,0,3><CV 1001,5>She's shy, so she won't show her face\r\noutside the guild, apparently...",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<STBG 100,1><TALK 1><MWT 0><NAME 41><CV 18,29><CHAR 3,6,18,0,0>But her talent for inventing recipes\r\nis first-rate!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "Once you've explored a bit, please come\r\nto the <COL C70101FF>Lottery</COL>...\r\nI'll work hard on a recipe...",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CHAR 3,5,18,0,0><STBG 3,1><TALK 3><MWT 0><NAME 18><CHAR 3,0,18,0,5><CV 1001,51>W-well then......",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<CHAR 3,2,18,0,0><TALK 5><CHAR 5,1,18,0,4><CV 1001,50><ITEM AD_HEAD1141,1,1>Sh-she left...\r\nOh, and also! This time I prepared\r\ngear like this!",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "<CHAR 5,0,18,0,3><CV 1001,17><ITEM WD_PIPE222,1,1>It was sleeping in the lunch shop's\r\nstorehouse, but you may use it!",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<CHAR 5,0,18,0,0><COL C70101FF>Also, if you explore quite hard,\r\nthey seem to throw in an amazing\r\n<COL C70101FF>≪Mastery Unlocked≫</COL> one too!",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<ITEM 0,1,1><CHAR 5,2,18,0,0><TALK 3><CHAR 3,1,18,0,3><CV 1001,15>Do peek at <COL C70101FF>Exploration Navi</COL>!",
+  "en": ""
+ },
+ {
+  "i": 27,
+  "jp": "<BGM 1,1000,509><CLS>Alright! Phantom Deep Realm osechi survey!\r\nLet's do our best—!",
+  "en": ""
+ }
+]

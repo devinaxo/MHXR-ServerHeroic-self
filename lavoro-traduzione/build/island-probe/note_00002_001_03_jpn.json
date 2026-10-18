@@ -1,0 +1,27 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,0><CHAR 1,1,1,0,0>About that relic from before —\r\nwe finally know whose chalice it is.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "It seems to be one for offering\r\na monster's blood.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Offering a monster's blood,\r\nboth giving thanks and mourning it,\r\nwas its intent, they say.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "A proof that monsters and people\r\nonce lived side by side.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,52 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 1><NAME 1><CHAR 5,1,6,0,0><CHAR 1,1,1,2,0><CV 1,5>Dr. Sharon!\r\nI found a mask I've never seen,\r\nso I came to report it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CV 4,2>Good of you to come. Let me see!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 4,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "This is... a mask, isn't it...\r\nIt's terribly corroded, though...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<MWT 2>Sizzle...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "Huh?\r\nSome kind of poison has soaked into it.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "A mask like this —\r\nwhat in the world was it used for...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "A Festering Mask, one might call it...\r\nAnyway, this is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 1><CV 1,10><CHAR 1,0,1,3,0>We did it, Hunter!\r\nA great discovery!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

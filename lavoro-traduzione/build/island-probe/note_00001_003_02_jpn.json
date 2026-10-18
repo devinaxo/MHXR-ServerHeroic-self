@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><TALK 1><NAME 1><BGM 0,0,502><CHAR 5,1,6,0,0><CHAR 1,1,1,2,0><CV 1,5>Dr. Sharon!\r\nI found a crystal I've never seen,\r\nso I came to report it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CV 4,2>Good of you to come. Let me see!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 4,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "What is it...?\r\nI can hear a sound from the crystal!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Like a human voice...\r\nCould that voice from the cave be...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "That's it.\r\nThis voice was echoing in the cave.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "A singing crystal, one might call it...\r\nAnyway, this is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CV 1,10><CHAR 1,0,1,3,0>We did it, Hunter!\r\nA great discovery!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

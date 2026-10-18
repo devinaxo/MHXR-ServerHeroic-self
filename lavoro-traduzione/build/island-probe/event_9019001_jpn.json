@@ -1,0 +1,82 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 4,1><TALK 5><NAME 40><BGM 0,0,503><OTM OT_OTOMO_CHAR_ID_117,2>That lady there and the Hunter...!\r\nPlease hear my request, nya!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 1,0,1,0,2><TALK 1><NAME 1><CV 1,90>Hm?\r\nCould you be KIRIMI-chan?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 1,0,1,1,7><TALK 1><NAME 1><CV 1,72>But you just said 「nya」...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 1,0,1,0,0><TALK 5><NAME 40>That doesn't matter now, nya...!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Right now... my friend is\r\nin a huge pinch, nya...!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "We all brought sweets and...\r\nwere having a party, nya...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "But that was... on top of a sleeping\r\nTigrex, nya...!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "He ate the sweets, nya...!\r\nWe were startled, nya...!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "My friend Melody-chan...\r\nhad her precious plush taken,\r\nand she's in such trouble, nya...",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "Please get back the taken sweets\r\nand plush, nya...!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CHAR 1,0,1,0,1><TALK 1><NAME 1><CV 1,87>Understood, leave it to us!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 5><NAME 40>Yay, thank you, nya...!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "As thanks... I'll prepare\r\npopular gear for the Nyan Search\r\nCorps, so...",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "Eat it well, nya...!\r\n...No, that's not it,\r\nbring it back safely, nya...!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CHAR 1,0,1,0,0><TALK 1><NAME 1><CV 1,9>Whoever it is, if they're in trouble\r\nI can't ignore it. Hunter, let's go!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

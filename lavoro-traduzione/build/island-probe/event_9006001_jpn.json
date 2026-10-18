@@ -1,0 +1,112 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 100,0><BGM 0,0,504><NAME 7>I proclaim it, nya!\r\nYour body is mine, nya;\r\nmy fate is your sword, nya!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "Seven heavens clad in the three\r\ngreat words, come from the ring\r\nof restraint, guardian of scales, nya!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<STBG 100,2><CHAR 1,7,0,0,0><CHAR 5,7,0,0,0><STBG 3,1><CHAR 1,1,1,0,2><CHAR 5,1,8,4,0><CV 1,61><TALK 1><NAME 1><BGM 1,0,504><BGM 0,0,508>Um...\r\nwhat is that...?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 9><CV 2,4>It was written in a book I picked up —\r\na spell to grant wishes, apparently, nya!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<MWT 3>Gwoooooooh",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 5,0,8,5,3><CV 2,5>We did it, nya!\r\nThe ritual succeeded for sure, nya!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 5,0,8,5,3><CV 2,11>..........Nya nya?",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CHAR 5,4,8,4,0><CHAR 5,5,6,0,0><CHAR 1,5,8,0,0><TALK 5><NAME 12><CV 4,22><BGM 1,0,508><BGM 0,0,505>Big trouble!\r\nA red-horned monster I've never\r\nseen is on a rampage!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 9><CV 2,2>No way, nya!\r\nThe ritual was supposed to be perfect, nya!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CV 2,8>I said the spell properly too, nya.\r\nThe timing, too...",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CV 2,3><CHAR 1,0,8,2,0>Nya nya!\r\nYou got the timing wrong, nya!!!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 5><NAME 12><CV 4,23>That's not all!\r\nA lot of treasure appeared nearby!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CV 4,27><ITEM PCOIN00051,1,1>According to the old texts, I think\r\nit's the treasure of ≪Babylon≫,\r\nbut this can't be allowed.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "Because of this ≪Babylon≫ treasure,\r\nthe island's treasure history\r\nmight be lost!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<ITEM 0,1,0><CV 4,7>Anyway, I want you to recover\r\nthe ≪Babylon≫ treasure no matter what.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 1,0,1,0,0><CV 1,11><TALK 1><NAME 1>Understood!\r\nWe'll go.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<TALK 5><NAME 12><CV 4,28>I'm counting on you!\r\nRecover the treasure and I'll give\r\nyou good equipment to match!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<ITEM WD_LSWORD176,1,1>Especially this weapon — it's said\r\nto be modelled on a weapon that shone\r\nin a similar crisis long ago.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "Not just strong — it has the strange\r\neffect of hiding its blade.",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<ITEM 0,1,0><CV 4,18>It's strange gear, so do try to\r\ncollect it! Then, I leave it to you!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CV 1,7><TALK 1><NAME 1>Yes!\r\nUnderstood!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

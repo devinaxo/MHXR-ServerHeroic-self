@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 5,0><BGM 0,0,504><MWT 5><COL FEEB4EFF>Deep in the <COL FEEB4EFF>Surbi Dunes</COL> where <COL FEEB4EFF>Melynx</COL> stand,\r\nthere were traces of trees.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<MWT 4>I searched deeper for supplies,\r\nbut all were tainted by poison.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<MWT 4>This poison is natural —\r\nlong ago this must have been\r\na poison forest...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

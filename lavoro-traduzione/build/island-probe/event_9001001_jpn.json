@@ -1,0 +1,67 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,503><CHAR 1,1,1,0,0><CHAR 5,1,8,6,7><TALK 5><NAME 9><CV 2,6>Today I remembered, nya...\r\nthe terror of monsters ruling us, nya...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,28><CHAR 1,0,1,0,2>Argo!\r\nWhat happened?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 9><CV 2,2><ITEM EVENTPOINT9001001,1,0>The storehouse wall was smashed...\r\nthis <COL C70101FF>≪Steamed Potato≫</COL>\r\nwas stolen, nya!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1><CV 1,20>No way...\r\nWhat could it be...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<ITEM 0,1,0><TALK 5><NAME 9><CHAR 5,0,8,4,1><CV 2,10>It must be the giant Arzuros\r\nthe Felynes have been whispering about, nya!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CV 2,1><CHAR 5,0,8,4,7>Maybe the gold and silver Felynes\r\nare in on it too, nya!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 5,0,8,4,0><CV 2,2>Anyway, please gather the steamed\r\npotatoes, nya! Otherwise there's no\r\npotato party, nya!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 2,7><CHAR 5,0,8,7,0>Once gathered, trade them at the\r\n<COL C70101FF>≪Exchange≫</COL> for\r\ntreasured collections, nya!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 1><CV 1,11>Understood!\r\nWe'll gather every last one!\r\nLet's go, Hunter!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 5><NAME 9><CV 2,1>I'm counting on you, nya!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CV 2,12><CHAR 5,0,8,4,7>There's talk of a mystery monster\r\ncommanding a giant Arzuros, nya.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CHAR 5,0,8,7,1><CV 2,8>Be careful, nya!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

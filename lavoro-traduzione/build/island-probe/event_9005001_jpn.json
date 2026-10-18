@@ -1,0 +1,117 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,505><TALK 5><NAME 6><CHAR 5,5,5,0,0><CHAR 1,1,1,0,1><CV 3,21>The Attack on Titan text goes here.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,20><CHAR 1,0,1,1,8>They say... a dangerous monster\r\nhas appeared.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 6><CV 3,29>No way...\r\nWhat does that mean?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "Apparently... a Diablos with\r\na nasty colour is on a rampage.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 3,43>The person earlier said that\r\nif left alone it might\r\ndestroy the island...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "If that's true...\r\nthis island is in danger!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "Invalid Message",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 10><CHAR 5,5,7,0,0><CV 5,1>Understood. We'll go slay it!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8>Dr. Andra!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 5><NAME 10><CV 5,25>I was examining that monster,\r\nand I found an ancient hunting art.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CV 5,34>It is called the\r\n<COL C70101FF>≪Sixteen-Hunter Great Hunt≫</COL>.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CV 5,35>Four groups of four sortie\r\nin a special hunting art...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "Even in ancient times, it was allowed\r\nonly against monsters deemed\r\nespecially dangerous.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 1><NAME 1><CV 1,63><CHAR 1,0,1,0,1>Such a thing...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 5><NAME 10><CV 5,42>By custom it must be four hunters,\r\nbut against a monster like this\r\nthere's no room to choose our means...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CV 5,20>Please, let this slaying\r\nsucceed...",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<TALK 1><NAME 1><CV 1,11>...Understood!\r\nHunter, let's do our best!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 5><NAME 10><CV 5,33>According to legend,\r\na legendary unidentified equipment\r\nis said to appear.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CV 5,35>As other rewards, ≪Co-op Points≫\r\nand distinctive talismans\r\nare also prepared.",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "That the guild considers this matter\r\nso gravely shows how serious it is.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CV 5,19>I leave the hunt to you!\r\nI believe you two\r\ncan manage it!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<TALK 1><NAME 1><CV 1,4>Yes!\r\nUnderstood!",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

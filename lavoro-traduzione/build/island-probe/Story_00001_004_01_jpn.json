@@ -1,0 +1,52 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 5><NAME 6><CHAR 5,1,5,0,8><CHAR 1,1,1,0,0><CV 3,24>Oh, you two!\r\nDo you have a moment?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,2><CV 1,28>Dr. Hawk!\r\nWhat's the matter?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 6><CV 3,41>I was advancing for research,\r\nbut I woke a sleeping monster.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CV 3,11>It might head for the town.\r\nCould you do something?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,1><CV 1,63>The town!?\r\nThat's terrible!!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,5><CV 3,44>Please!\r\nIf the guild slays it now,\r\nI'll have to write an apology...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CV 3,18>It should be at Roselle Stream!\r\nI'm counting on you two!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CV 1,11>Understood!\r\nWe'll go slay it!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<POP1 16,PART00001_NODE00004>",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

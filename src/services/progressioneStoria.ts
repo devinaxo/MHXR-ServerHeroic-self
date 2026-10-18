@@ -99,7 +99,7 @@ type OceanoMappa = { mst_ocean_id: number; part_list: IsolaMappa[] };
 const notaTesoro = new Map(STORIA.flatMap((o) => o.isole.map((i) => [i.mst_part_id, i.nota_tesoro] as const)));
 
 /** La mappa completa ridotta a cio' che il giocatore ha davvero aperto. Non modifica `completa`. */
-export function mappaProgressiva<T extends OceanoMappa>(completa: T[], completate: Set<number>): T[] {
+export function mappaProgressiva<T extends OceanoMappa>(completa: T[], completate: Set<number>, isoleConsegna?: Set<number>): T[] {
   const s = statoStoria(completate);
   const copia = structuredClone(completa);
   return copia
@@ -110,12 +110,16 @@ export function mappaProgressiva<T extends OceanoMappa>(completa: T[], completat
         .filter((p) => s.isole.has(p.mst_part_id))
         .map((p) => {
           const preso = s.tesori.has(p.mst_part_id);
+          // L'oggetto del paesaggio (ponte, macerie, ...) esiste quando il
+          // giocatore ha visto una consegna dell'isola o ha preso il tesoro.
+          // Senza, il client lo ricostruisce vuoto e la modifica sparisce.
+          const paesaggio = preso || (isoleConsegna?.has(p.mst_part_id) ?? false);
           const nota = notaTesoro.get(p.mst_part_id);
           return {
             ...p,
             node_list: p.node_list.filter((n) => s.nodi.has(n.mst_node_id)),
             // Il piedistallo del tesoro: vuoto come per un giocatore nuovo finche' non e' preso.
-            object_list: preso ? p.object_list : [],
+            object_list: paesaggio ? p.object_list : [],
             exploration_note: p.exploration_note && {
               ...p.exploration_note,
               note_contents: (p.exploration_note.note_contents ?? []).map((c) =>

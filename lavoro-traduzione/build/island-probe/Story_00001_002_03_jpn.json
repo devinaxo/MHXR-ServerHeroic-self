@@ -1,0 +1,37 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 4,0><BGM 0,0,503><TALK 4><NAME 9><CHAR 4,1,8,1,0><CHAR 1,1,1,0,0><CV 2,5>Thanks, nya!\r\nShe's grateful too, we're even now, nya!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 4,0,8,0,0><CV 2,10>Once you're an explorer, people ask you\r\nfor all sorts of things, nya!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 2,1>This time it was a hunt,\r\nbut sometimes they ask you\r\nto gather materials instead, nya!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "It should do you good too, mister Hunter,\r\nso you may as well help them, nya!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 2,15>Of course, my own requests too, nya!\r\nSome of them even want to be Otomo,\r\nso they'll be a help to you, nya!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1><CV 1,4>Yes!\r\nCall on us again if anything comes up!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

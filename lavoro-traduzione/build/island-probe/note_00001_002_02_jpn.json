@@ -1,0 +1,92 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 5,0><BGM 0,0,504><MWT 2>On Adopo Hill I saw a stone monument.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<MWT 2>A picture of a hunter is\r\ndrawn upon it.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<MWT 2>I wonder if that monument\r\naided hunters of ancient times.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 1,7,0,0,0><STBG 5,2><STBG 2,1><CHAR 1,1,1,0,0><BGM 1,0,504><BGM 0,0,503><TALK 1><NAME 1>This monument certainly resembles\r\nthat description...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Could it really be a discovery!?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "Anyway, I must go and report to the doctor!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<STBG 2,2><CHAR 1,2,1,0,0><CHAR 5,7,0,0,0><STBG 3,1><CHAR 1,1,1,2,0><CHAR 5,1,5,0,0><BGM 1,0,503><BGM 0,0,502><CV 1,5>Dr. Hawk!\r\nI found a monument I've never seen,\r\nso I came to report it!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 6><CV 3,2>Eliza!\r\nGood of you to come. Let me see.",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CV 3,3>Hmm... this is!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "This is...\r\na picture of a hunter is drawn on it.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "And this hollow...\r\nthis is, perhaps, from the old texts...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "Yes, it must be the\r\n<COL C70101FF>≪Ancient Stele of Growth≫</COL>...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "To think it truly exists...\r\nOh, I've had a good idea!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "As thanks for the discovery,\r\nI'll have the guild send you something.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<COL C70101FF>Try it on the <COL C70101FF>Ancient Stele of Growth</COL>.\r\nIt should surprise you!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "If you keep showing me new finds,\r\nI'll send the same each time.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "Right, I'll inform the other doctors.\r\nCreatures to me, minerals to Dr. Sharon,\r\nanything else to Dr. Andra.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

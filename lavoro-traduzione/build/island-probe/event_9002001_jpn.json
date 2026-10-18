@@ -1,0 +1,67 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,0,8><MWT 2>(Help me...)",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 1,19>What is this?\r\nWhere is it coming from!?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<MWT 2>(Help me...\r\nHelp me, please.)",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "This is...\r\nYes, what should I do?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<MWT 2>(A strange monster is on a rampage.)",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<MWT 2>(An Arzuros smelling of sweets,\r\nand a monster of unknown identity.)",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<MWT 2>(At this rate it may harm\r\nthe ecosystem too.\r\nIt is very dangerous!)",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 1,20>No way...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<MWT 2>(So I want you to slay it!\r\nOf course, not for free.)",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<MWT 2>(Gather the <COL C70101FF>≪Grief Seeds≫</COL>\r\nmonsters drop, and at the <COL C70101FF>≪Exchange≫</COL>\r\nI'll trade for what you want.)",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<MWT 2>(For example, a weapon with\r\nan unusual Art — how about that?\r\nI'll leave it at the Exchange!)",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<MWT 2>(Then, I leave the slaying to you!)",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

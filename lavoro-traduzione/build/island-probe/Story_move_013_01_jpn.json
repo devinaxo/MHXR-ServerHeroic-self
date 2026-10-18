@@ -1,0 +1,62 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 100,0><BGM 0,0,506><TALK 0><NAME 10>In the Tabuladin Isles,\r\na monster we had never met before",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "seemed so unlike anything real\r\nthat one might take it for a creature\r\nfrom a desert land's fairy tale...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Its ecology, embedding blue crystal\r\nat its sturdy tail's tip, all mystery.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 3,1,7,0,0><TALK 3><NAME 10>...A winged monster that claims the desert\r\nas its territory and is violent enough\r\nto allow no intruders.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "That such dangerous monsters lived here\r\nin such numbers across these isles",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "why had it gone unknown until today!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "As one devoted to studying the\r\nFractured Isles, I can only feel shame...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<STBG 13,1>...But for now, as a monster of ruin,\r\nwe must meet it in battle.",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "The monster we have named ≪Nef-Garmat≫.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "Yes, let us stamp the guild's approval\r\non the hunting request.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 3><NAME 10><CV 5,19>Now then, explorers, I leave it to you!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

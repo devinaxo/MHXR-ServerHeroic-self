@@ -1,0 +1,127 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><CHAR 1,0,1,0,2><CV 1,90><NAME 1><TALK 1><BGM 0,0,503>Hm? Hunter, there's something here.\r\nThis is a diary... I think.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<STBG 5,1><CHAR 1,2,1,0,0><MWT 5>~Experiment Day 1~\r\nI found a plant secreting special nectar!\r\nI begin researching the nectar.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<MWT 5>~Experiment Day 2~\r\nThe nectar has a strong sweet component.\r\nLet's let everyone try a little.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<MWT 5><BGM 1,1000,503><BGM 0,2000,505>~Experiment Day 3~\r\nBody <COL C70101FF>itchiness</COL> tremendous.\r\nIs it this nectar's fault?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<MWT 5><SPD 4>~Experiment Day 4~\r\n<SPD 5>tasty <COL C70101FF>nectar</COL> body <COL C70101FF>bad effect</COL>\r\n<COL C70101FF>Andra</COL> doctor tasty</SPD>",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<MWT 5><SPD 4>~Experiment <COL C70101FF>Day 5</COL>~\r\n<SPD 10><COL C70101FF>itchy</COL></SPD>\r\n<SPD 12><COL C70101FF>tasty</COL></SPD>",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<STBG 3,1><CHAR 1,0,1,1,0><NAME 1><TALK 1><SPD 8><SPD 8>Hiee... </SPD>itchy... tasty...?\r\nWh-what on earth is happening...?",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<STBG 3,3><CHAR 5,5,7,0,0><NAME 10><TALK 5><MWT 3><CV 5,18><BGM 1,500,505>Hihiiiiin!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CHAR 1,0,1,0,1><NAME 1><TALK 2><MWT 0><CV 1,19>Wah!?",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CHAR 5,0,7,0,7><NAME 10><TALK 5><SPD 7>......   ......",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CHAR 1,0,1,0,2><NAME 1><TALK 1><SPD 7>......   ......",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<BGM 0,1000,502><CHAR 5,0,7,0,1><CV 5,22><NAME 10><TALK 5>Oh no, the 「tasty」 neigh came out again!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CHAR 1,0,1,0,2><CV 1,94><NAME 1><TALK 1>A-Andra, Doctor,\r\nwhat happened...?",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<CHAR 5,0,7,0,0><CV 5,42><NAME 10><TALK 5>For some reason, I've started neighing\r\nlike a horse... hihin...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CV 5,21>This must be that nectar's doing!\r\nSeveral others seem to have it too.\r\nM-my body itches, brrrrr!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 1,0,1,1,0><NAME 1><TALK 1><CV 1,20>Th-that can't be...!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 5,0,7,0,0><CV 5,7><NAME 10><TALK 5><ITEM PCOIN00172,1,1>So I want you to gather a certain\r\nherb with healing properties.\r\nHihin!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "A monster scattering dangerous virus is\r\nsaid to appear where it grows, so I'll\r\nsupport you as much as I can! Hihiiin!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CHAR 1,0,1,0,0><ITEM AD_HEAD2193,1,1>Besides special armour modelled on\r\na certain virus incident...",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CV 5,1><ITEM WD_HBOWGUN179,1,1>I've also recreated this weapon that\r\nfires powerful shells, and prepared it\r\nwith the Nyan Search Corps! Hihiiin!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CV 5,19>Use these and save the guild!\r\nPlease, I beg you! Hihin!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CHAR 5,0,7,0,1><MWT 3><ITEM 0,1,0>Brrrrrrrrr\r\nrrrrrrrrrr!",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CV 1,4><NAME 1><TALK 1>Y-yes, leave it to us!",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<BGM 1,1000,502><CHAR 1,0,1,1,0>(The tension somehow doesn't come across...)",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

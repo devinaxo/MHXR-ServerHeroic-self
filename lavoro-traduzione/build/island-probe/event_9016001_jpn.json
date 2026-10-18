@@ -1,0 +1,107 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,503><MWT 2>~ Yucan-certified Pro Hunter Course\r\nOpening Commemorative Gift ~",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,3,1,0,2><CV 1,78>I wonder what this box is...?\r\nInside is 「Pinsleur French\r\nListening Materials」...?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 8><CHAR 5,5,10,0,3><CV 11,33>Ooh, that sounds fun.\r\nLet me hear it too!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<NAME 34><CHAR 5,0,10,0,1><BGM 1,0,503><TALK 5>Un nouveau monde s'offre à nous. Merci !",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<NAME 35><CHAR 5,5,6,0,3><CV 4,35>On est avec toi. Courage !",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,2><CV 1,90>Huh? Huh?",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<BGM 0,0,507><TALK 3><NAME 36><CHAR 5,0,0,0,0><CHAR 1,0,0,0,0><CHAR 3,3,1,3,1>J'ai compris !",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 37><CHAR 3,0,0,0,0><CHAR 1,5,1,2,0><CHAR 5,5,12,0,7><CV 17,39>Perdón,\r\npero yo no os entiendo...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 3><NAME 38><CHAR 3,7,7,0,0><CV 5,35>Non c'è qualcuno che parla giapponese?",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 5><NAME 6><CHAR 5,7,5,0,4><CV 3,3>Great pronunciation! Now we can\r\nrelease the worldwide version of\r\nMonster Hunter Explore!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 1><NAME 39><CHAR 1,3,23,0,3>Hurra!\r\nKommt, lasst uns feiern!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CHAR 5,2,5,0,0><CHAR 3,2,7,0,0><CHAR 1,2,23,0,0><BGM 1,2000,507><STBG 100,1><MWT 2>............",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<BGM 0,0,503><STBG 2,1><MWT 2>............",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 3><NAME 30><CHAR 3,1,103,0,7>What should I do...\r\nI handed everyone the wrong script...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 3><NAME 30><CHAR 3,0,103,0,5>Actually, the worldwide release is\r\nan April Fool's joke...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 3,0,103,0,1>But the Yucan-certified event,\r\nthe Pro Hunter Course,\r\nis really opening!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 3,0,103,0,3>Do try the Pro Hunter Course\r\nfrom the Nyan Search Corps.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 5><CHAR 5,3,103,0,0><CHAR 3,0,0,0,0><ITEM OD_OMA771,1,1>The talisman <COL C70101FF>≪Course Ticket≫</COL>\r\ncan be evolved into a <COL C70101FF>≪Certificate≫</COL>.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<ITEM 0,1,0><TALK 3><CHAR 5,0,0,0,0><CHAR 3,5,103,0,4>Then if you <COL C70101FF>attempt the Pro Hunter\r\nqualification exam</COL>, you can get the\r\n<COL C70101FF>Pro Hunter talisman</COL>!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<ITEM 0,1,0><CHAR 3,0,103,0,1>Yucan x Monster Hunter Explore\r\nPro Hunter Course now enrolling!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

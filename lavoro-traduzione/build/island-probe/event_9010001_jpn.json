@@ -1,0 +1,132 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,503><CHAR 5,0,6,0,0><TALK 1><NAME 1><CHAR 1,3,1,0,3><CV 1,57>Dr. Sharon,\r\nwe're back from our expedition—",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,1>Oh, it's you two!\r\nYou're still here?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<BGM 1,0,503><BGM 0,0,505><TALK 1><NAME 1><CHAR 1,0,1,1,2><CV 1,28>What happened?\r\nDid something happen?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,5>A powerful monster has invaded.\r\nA first-class evacuation order is out...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "...The alarm didn't reach you.\r\nHere, you!\r\nWait over there with Eliza.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 1,2,1,1,0><CHAR 5,2,6,0,0><STBG 3,2><NAME 0><TALK 0><MWT 2>...........",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 3,1,7,0,0><STBG 3,1><TALK 3><NAME 10><CV 5,17>...Everyone, it is Andra.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "First, those who wish to remain here\r\nagainst their will and evacuate\r\nmay step back...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CHAR 3,0,7,0,3><CV 5,34>...Oho, that spirit, splendid!\r\nI thank every one of you here.\r\nNow, let us get to the point.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "...An Angel has invaded the sunken forest.\r\nIt is the <COL C70101FF>≪Tenth Angel Gore Magala≫</COL>...",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "If it advances further,\r\nthe island's survival is at stake...\r\nWe must never allow it.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CV 5,19>Now then, Dr. Sharon,\r\nI leave the rest to you.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<NAME 0><TALK 0><CHAR 3,2,7,0,0><TALK 3><NAME 12><CHAR 3,1,6,0,0><CV 4,17>I'm Sharon, temporary Operations Chief,\r\nin charge of this mission.\r\nFirst, look at this.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<ITEM PCOIN00078,0,1>This is called the <COL C70101FF>≪Angel Core≫</COL>.\r\nYes, it has been found to be the source\r\nof this monster's power.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<ITEM AD_BODY2031,0,1>Next, look at the Plug Suit gear.\r\nThis series is confirmed to resonate\r\nwith the Angel Core.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "The first operation uses this trait:\r\nwe gather the Plug Suit gear.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<ITEM AD_BODY2073,0,1>By evolving this gear, it manifests\r\nthat trait and lets us advance\r\nthis operation favourably.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<ITEM 0,0,0><CV 4,20>Now, let me explain how to\r\ngather the Angel Cores.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CV 4,11>Meet and slay the monsters that come\r\none after another on the defence line!\r\nRecover every last Angel Core!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CV 4,19>This is the work of explorers\r\nwho master the Arts.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "And the second operation, running\r\nin parallel, I ask of the\r\n<COL C70101FF>≪Nyan Search Corps≫</COL>.",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CV 4,20>Along the routes the monsters advanced,\r\nspecial gear has been confirmed\r\nto exist across the whole area.",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "Some of the special gear cannot be got\r\nby slaying the Tenth Angel Gore Magala.",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<CV 4,7>The Nyan Search Corps must recover\r\nthis and bring it back, no matter what.",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "So, as of this moment, we launch the\r\ntwo-front operation: recover the Angel\r\nCores and slay the Tenth Angel.",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

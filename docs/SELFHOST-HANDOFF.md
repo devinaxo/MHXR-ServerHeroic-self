@@ -1102,6 +1102,62 @@ Request / subjugation ones like 3-9/3-10), then
 only lists a node's main quests, so a Special Request hunt used to fall back to
 island 1 and dump the player there.
 
+### Island map crashed (SIGSEGV/SIGBUS) after a delivery: node `state: 3`
+
+Found 2026-10-18 from a device tombstone (see
+`lavoro-traduzione/build/logcat-watch.log`). The backtrace is entirely in the map
+UI, not the drama engine:
+
+```
+uGUIBase::getObjectCast<cGUIObject>  <- jumps through a freed vtable
+uGUIBase::setVisibleObject
+uGUIMapIslandMap::setVisibleEventNotice
+uMap::tqIslandChange
+uMap::updateTreasureQuest        (a sMain job)
+```
+
+The client builds an "event notice" for every map node whose **state** is >= 2
+(`uGUIMapIslandMap::createEventNotice` -> `createEventNoticeSub`; the field at
+`cNodeData + 0xc` is `mNodeState`, read out of
+`nQuestWorkspace::cNodeData::createProperty`). `tqIslandChange` then walks that
+list in `setVisibleEventNotice` and dereferences a notice object that was already
+freed when the map was rebuilt. With an empty list the routine is a no-op.
+
+The rework's subjugation fix is what filled the list: it forced
+`state: richiestaSoddisfatta ? 3 : node.state` in `enrichOceanData`, so every
+node with a cleared Subjugation quest became `state: 3`. That turned the routine
+from a no-op into the crashing path, which is why the delivery landscape
+cutscenes worked before the rework and crashed after. Reproduced twice on
+island 6, on different nodes.
+
+Fixed by dropping the `state: 3` override. Subjugation progress now travels on
+the story: `parteDaMostrare` returns the block's completion part (`_03`) when the
+request scene's target node is fulfilled (`nodiEsauditi` + `RICHIESTA_PER_STORIA`
++ `COMPLETAMENTO_BLOCCO`, all previously unused). No node is above `state: 1`, so
+the notice list stays empty.
+
+Related, re-confirmed: a node whose `mst_story_id` is `0` starts nothing
+(`requestDramaStory` only fires when `[node+0x10]` is non-zero), so setting it to
+0 to stop replay makes every story node inert. That was tried again here and
+reverted for exactly the reason noted in "Story scenes replayed on every visit".
+
+### The delivery landscape change was not persisted
+
+The client rebuilds an island's objects from the map on every load
+(`sQuestWorkspace::createObjectList`, which copies `cObjectData` `mObjectHash` /
+`mObjectState`), so the delivery cutscene alone leaves no trace: without the
+object in the map the bridge / cleared debris reverts. `mappaProgressiva` was
+sending `object_list: []` for every island until the treasure was taken
+(`preso`), so a mid-island delivery never came back.
+
+Now `mappaProgressiva(completa, completate, isoleConsegna)` also keeps the object
+when one of the island's delivery scenes has been seen. `CONSEGNA_PER_ISOLA` in
+`questIsland.controller.ts` maps each island to its delivery scenes (the `_02`
+parts of the blocks that have a `_92` variant: exactly the 30 scenes with a
+`story_info.mItemList`), and `islandMapAll` passes the set of islands whose
+delivery is in `storie_viste`. Some islands have no object in the base data
+(e.g. island 5), so there is nothing to show there.
+
 
 
 

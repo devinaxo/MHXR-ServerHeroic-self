@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 4,0><BGM 0,0,503><TALK 4><NAME 9><CHAR 4,1,8,0,0><CHAR 1,1,1,0,0><CV 2,4>Is the exploration going well, nya?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,4>Argo!\r\nYes, it's going well!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 4><NAME 9><CV 2,8>I have a favour to ask you, nya!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "Please help my cousin's friend's\r\nsister's best friend, nya!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 2,2>She went on a picnic and got spotted\r\nby a <COL C70101FF>Wroggi</COL> and can't move, nya!\r\nShe's in a huge pinch, nya!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1><CV 1,7>Understood!\r\nWe'll go rescue her!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 4><NAME 9><CV 2,8>I'm counting on you, nya!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<POP1 45,PART00001_NODE00002>",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

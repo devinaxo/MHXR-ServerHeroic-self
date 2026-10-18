@@ -1,0 +1,52 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,1><BGM 0,0,505><CHAR 3,1,9,0,0><TALK 3><NAME 11><CV 10,6>Listen, explorers.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "Suddenly appearing, it attacked\r\nthe survey team — a mystery monster\r\nwith black-crown horns.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "We investigators studied the black stele\r\nfragments that drifted in with its arrival,\r\nand read its identity from the inscription.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "「the loathed mad king\r\nwho wears the black crown, Morudomunto」",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "「Its wings devour all creation,\r\nits madness rains spears\r\nthat pierce the earth.」",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "As the inscription says, with\r\notherworldly wings and black spears\r\nit ravages the Isles.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "As one who has studied the Isles for years,\r\nI cannot overlook this ruin.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "Explorers, I command you\r\nas chief of the survey.",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CV 10,12>Slay the black-crowned mad king\r\nthat menaces the Isles!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

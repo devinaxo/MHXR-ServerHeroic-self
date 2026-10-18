@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><TALK 1><NAME 1><BGM 0,0,502><CHAR 5,1,7,0,0><CHAR 1,1,1,2,0><CV 1,5>Dr. Andra!\r\nI found a strange mirror,\r\nso I came to report it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 10><CV 5,2>Oh, you found it?\r\nLet me see...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 5,3>Oho, this is...!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "An offering, it seems...\r\nHmm, there is writing here.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Hmm hmm, this is...\r\nIt seems to be an offering to one\r\nwho died in a ruler's place!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "This offering...\r\nthe loyalty of the people is plain to see...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "A Tenarai Mirror, one might say.\r\nThis is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CV 1,10><CHAR 1,0,1,3,0>We did it, Hunter!\r\nA great discovery!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

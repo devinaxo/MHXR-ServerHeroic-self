@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><TALK 5><NAME 12><BGM 0,0,502><CHAR 5,1,6,0,0><CHAR 1,1,1,0,0>The singing crystal you found before —\r\nit seems to have caught the eye\r\nof some theatre folk.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,2>What do you mean?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 12>A friend says it automatically produces\r\nambient crowd noise, and they're\r\ninterested in it...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

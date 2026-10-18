@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 6><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0>The Parasite Bug you found before —\r\nit contributes much to the ecosystem.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "By leading animals to water,\r\nit seems to feed aquatic life.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Without knowing it, its actions\r\nhelp other creatures...\r\nWhat a relationship.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

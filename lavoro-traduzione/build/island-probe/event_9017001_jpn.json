@@ -1,0 +1,87 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><CHAR 1,0,1,0,2><CHAR 5,0,23,0,0><CV 1,90><NAME 1><TALK 1>Hm? Hunter, there's something here.\r\nWanted posters of great criminals...?\r\nLet me see...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 1,0,1,1,1><CV 1,22><BGM 0,500,503>「Crime of Curiosity」 Eliza!?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 1,63>And more...\r\n「Crime of Flaunting the Flesh」 Sage,\r\n「Crime of Always Wearing Shoes」 Argo...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "Th-this is outrageous!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<NAME 31><TALK 5><CV 21,11>「Crime of a Strange Dialect」 Amenoma!?\r\nI'll give you a beating!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 5,2,23,0,0><CHAR 5,5,7,0,0><NAME 10><TALK 5><CV 5,21><BGM 0,500,505>That odd poster is the work of the\r\nDronneko gang! It bears on our reputation,\r\nso I want you to deal with it at once!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 1,0,1,0,0><CV 5,27><ITEM PCOIN00163,1,1>They go around the taverns of each land,\r\nhanding out posters! Inspect the <COL C70101FF>leftovers</COL>\r\nthey leave and grasp their trail!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<ITEM WD_STICK162,1,1>Also, they've recreated gear used by\r\na legendary knight order and prepared it\r\nwith the Nyan Search Corps!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "A treasure worthy of the name divine —\r\ndo make use of it!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<ITEM AD_BODY2135,1,1>Further, as for armour, guild craft lets\r\nyou evolve it into any form you like.\r\nEvolve it actively!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<ITEM 0,1,0><CV 5,20>You must resolve this case!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CHAR 1,0,1,0,0><NAME 1><TALK 1><CV 1,87>Understood, Dr. Andra!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "(What intensity...\r\nAs expected, your sense of justice\r\nis second to none.)",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<NAME 10><TALK 5><CV 5,42>Honestly, 「Crime of the Braided Beard」\r\nAndra...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "My cute little one is pitiable...\r\nRight, Mit-chan? Yes, indeed.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<BGM 1,0,505><CHAR 5,0,7,0,0><CHAR 1,0,1,1,7><NAME 1><TALK 1><CV 1,83><SPD 5>(He's talking to his braid...?)",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

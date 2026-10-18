@@ -1,0 +1,117 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><TALK 5><NAME 10><BGM 0,0,502><CHAR 5,1,7,0,8><CV 5,1>Foh foh foh!\r\nWhat brings you here?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,2,3><CV 1,5>I found something remarkable,\r\nso I came to report it!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,2>Let me see, let me see.\r\nShow me, if you would...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<ITEM COLLECTION01001,1,1><TALK 5><NAME 10><CHAR 5,0,7,0,1><CV 5,3>...Oho, what is this!?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 5,0,7,0,3>This is a dragon's claw.\r\nA genuine claw is used here.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "It is coated in resin to\r\nprevent it from decaying.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "Could this be a crown?\r\nBut... hmm, this is indeed...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "「The worn claw, by its power,\r\nturns knowledge into wisdom.\r\nThat is the treasure.」",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CV 5,4>Yes, it matches the tablet's wording.\r\nThis is unmistakably a relic!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,3,0><CV 1,15>So this is a <COL C70101FF>≪Relic≫</COL>!\r\nWe did it!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<ITEM 0,1,0><TALK 1><NAME 1><CHAR 1,0,1,2,3><CV 1,26><COL C70101FF><COL C70101FF>≪Relics≫</COL> are the most valuable\r\nof the discoveries here.\r\nA big step toward great explorer!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 5><NAME 10>And this I am reading is a copy of\r\nthe tablet about this island's\r\nrelic legend.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8>Could that be...\r\nthe one in the expedition journal...",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 5><NAME 10>So that journal, is it...\r\nIt even has that written in it...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "This tablet was found on Malakhja Island.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "This tablet is the only clue\r\nto the history of the Fractured Isles.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "The deciphering is not yet done,\r\nbut as you find discoveries,\r\nmore will become clear...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "Anyway, I'll look into the relic more.\r\nDrop by again if you're nearby.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,4><CV 1,12>Thank you!\r\nPlease keep up the research!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0>This relic, and more besides —\r\nthe Fractured Isles still hold\r\nmany mysteries, many discoveries.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8><CV 1,4>Yes!\r\nWe'll keep discovering more!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CHAR 1,0,1,0,1>Wait, what...?\r\nThe relic is...",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,0,1><CV 1,5>Dr. Hawk! We've slain it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 6><CHAR 5,1,5,0,0><CV 3,10>Thank you, both of you!\r\nThat really saved me!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 3,34>A guild apology...\r\nThat's a real ordeal!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1><CV 1,62>Honestly, Doctor!\r\nPlease be more careful!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 5><NAME 6><CV 3,20><CHAR 5,0,5,0,5>Sorry, sorry.\r\nI had to investigate something...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1><CV 1,28><CHAR 1,0,1,0,8>Did something happen?",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 5><NAME 6><CV 3,41>I'm looking into the ≪Crest Stone≫ now.\r\nIt seems tied to the relics...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,2><CV 1,60>The relics?",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 6>The Crest Stone is needed for relics.\r\nBut it also attracts\r\nstrong monsters.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CV 3,18>You two be careful as well!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

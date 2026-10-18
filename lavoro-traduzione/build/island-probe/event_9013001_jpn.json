@@ -1,0 +1,137 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 11,1><BGM 0,0,503><TALK 5><NAME 9><CHAR 5,5,8,5,0><CHAR 1,1,1,0,0><CV 2,4>I'm back, nya!\r\nIt was a fun gathering, nya~",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,2><CV 1,90>Argo, where had you gone?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 9><CV 2,15><CHAR 5,0,8,7,0>I don't really get it, nya!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1><CV 1,74><CHAR 1,0,1,0,7>Um...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 5><NAME 9><CV 2,1><CHAR 5,0,8,4,0>I got lost on the island,\r\nand ended up somewhere strange, nya!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CV 2,5><CHAR 5,0,8,5,4>There were cute plush-like folk\r\nwho said 「kupo」, nya.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CV 2,7><CHAR 5,0,8,5,3>Good folk, they were, nya.\r\nWe talked all night about the\r\nwoes of being a mascot, nya!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CHAR 5,0,8,7,0><CV 2,15>And since we hit it off,\r\nI had them come, nya!\r\nLook over there, nya!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<BGM 1,0,503><STBG 11,3><CHAR 5,0,8,4,0><MWT 3>Gwooooooooh",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7>.........",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 5><NAME 9><CHAR 5,0,8,6,7>.........",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1><CV 1,74>Um, that monster is...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 5><NAME 9><CV 2,2><CHAR 5,0,8,4,7>Nya nya, no, that's wrong, nya!\r\nI didn't call that one, nya!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 5><NAME 6><CHAR 5,5,5,0,0><CV 3,21><BGM 0,500,505>Big trouble!\r\nA monster I've never seen suddenly...!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CV 3,43><CHAR 5,0,5,0,5>Wah, here too...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 5><NAME 9><CHAR 5,7,8,4,0><CV 2,10>Nya nya, I get it, nya!\r\nIt's that thing called\r\n「the terrifying monster-kupo」, nya!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 5,0,8,6,0><CV 2,6>This is bad, nya!\r\nIf it comes out onto the island,\r\nit'll be terrible, nya!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CHAR 5,0,8,4,1><CV 2,2>We have to slay it, nya!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 1><NAME 1><CV 1,11><CHAR 1,0,1,0,0>...Understood.\r\nLet's go!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<TALK 5><NAME 9><ITEM AD_BODY526,1,1><CV 2,7>They said 「amazing gear drops, kupo!」,\r\nnya.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<TALK 1><NAME 1>Amazing gear...?",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<TALK 5><NAME 9><ITEM AD_BODY527,1,1><CV 2,1>Nya! It can evolve, and\r\n<COL C70101FF>it shows special power\r\nagainst that monster</COL> — top-notch, nya!",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<ITEM WD_LSWORD203,1,1><CV 2,5>And they said 「there's legendary gear\r\nlike this too, kupo!」, nya!",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<CHAR 5,0,8,6,0><CV 2,6>This time it's my fault, so I'll ask\r\na Nyan Search acquaintance\r\nto look for that gear, nya!",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "<CHAR 5,0,8,7,0><CV 2,8><ITEM 0,1,0>I hear it's a scary monster\r\nthat rains down fire, nya!\r\nBe careful hunting it, nya!",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<TALK 1><NAME 1><CV 1,7>Yes!\r\nUnderstood!",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

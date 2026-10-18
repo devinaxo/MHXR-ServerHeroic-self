@@ -1,0 +1,232 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,1><MWT 2>One day, month unknown\r\nFractured Isles, Guild Grand Court",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<BGM 0,2000,505><TALK 3><NAME 10><CHAR 3,1,7,0,0><CV 5,1>Court is now in session.\r\nProsecution, are you ready?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 3,4,7,0,0><CHAR 5,5,9,0,0><TALK 5><NAME 11><CV 10,4>No problem.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 3,3,7,0,0><CHAR 5,6,9,0,0><TALK 3><NAME 10>Defence...\r\nDefence!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 3,6,7,0,0><CHAR 1,3,1,0,0><MWT 2>………",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<SLCT 2><CHC 6,Um...><CHC 10,The defence is ready>Um...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><JUMP 7>Hunter!\r\nAre you sure you're ready?",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<SLCT 2><CHC 8,No, I've no idea...><CHC 10,The defence is ready>No, I've no idea...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 1>Let's face reality a bit more!\r\nHunter!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<SLCT 1><CHC 10,...The defence is ready>...The defence is ready",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CHAR 3,5,7,0,0><CHAR 1,4,1,0,0><TALK 3><NAME 10>This court will try\r\nthe theft case.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "Now, prosecution, present your case.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CHAR 3,4,7,0,0><CHAR 5,5,9,0,0><TALK 5><NAME 11>The incident occurred the night before last,\r\nwhile the victim was bathing.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "Argo was confirmed walking\r\nin the vicinity.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CHAR 3,5,8,2,0><CHAR 5,4,9,0,0><TALK 3><NAME 9>I didn't steal anything, meow...\r\nI was just taking a night walk, meow!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CHAR 3,5,23,0,0><TALK 3><NAME 31>No way, that ain't so!\r\nThe one who stole my precious necklace\r\nwas you!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "This necklace, y'see...\r\nit's our family treasure that gave the hint\r\nfor the resonance crystal!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<MWT 2><CHAR 3,4,23,0,0><CHAR 1,5,1,1,0><BGM 1,1000,505>………",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<SLCT 1><CHC 19,...Um, isn't it around your neck?>",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CHAR 3,3,23,0,0><CHAR 1,6,1,1,0><TALK 3><NAME 31><MWT 1><CV 21,8>What did you say!?",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CHAR 3,6,23,0,0><CHAR 5,3,9,0,0><TALK 5><NAME 11><MWT 1><CV 10,39>What...!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<MWT 2><CHAR 3,3,7,0,0><CHAR 5,6,9,0,0>………",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<TALK 3><NAME 10><BGM 0,1000,502>The defence has presented a new possibility:\r\n'actually, she's wearing it right now'.",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "This court recognises\r\nthe need for further deliberation.",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "Defence,\r\nbring evidence that 'it's being worn now'\r\nby the next court session!",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<ITEM AD_HEAD2091,0,1>Also, near the scene\r\ngear like this seems to have been dropped.",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<ITEM AD_HEAD2093,0,1>This gear can evolve and\r\nseems to have a strong effect against\r\nmonsters near the scene.",
+  "en": ""
+ },
+ {
+  "i": 27,
+  "jp": "<ITEM 0,0,0>If there are no other objections,\r\nthis court is adjourned.",
+  "en": ""
+ },
+ {
+  "i": 28,
+  "jp": "<SLCT 1><CHC 29,Evidence or not, it's on right now...>Evidence or not, it's on right now...",
+  "en": ""
+ },
+ {
+  "i": 29,
+  "jp": "<NAME 10>Then, the court is adjourned!",
+  "en": ""
+ },
+ {
+  "i": 30,
+  "jp": "<STBG 3,2><STBG 100,1><CHAR 3,2,7,0,0><MWT 2><BGM 1,2000,502>………",
+  "en": ""
+ },
+ {
+  "i": 31,
+  "jp": "<STBG 100,2><CHAR 5,11,0,0,0><CHAR 1,11,0,0,0><STBG 2,1><CHAR 5,1,23,0,0><CHAR 1,1,1,0,0><TALK 5><NAME 31><BGM 0,2000,503>Hunter, not bad at all.\r\nTo think you'd find the possibility\r\nthat I'm wearing it right now...",
+  "en": ""
+ },
+ {
+  "i": 32,
+  "jp": "I look forward to what evidence\r\ncomes out by the next court session!",
+  "en": ""
+ },
+ {
+  "i": 33,
+  "jp": "<TALK 1><NAME 1>No, I just barely\r\nhung on by a thread...\r\nWhat happens next...",
+  "en": ""
+ },
+ {
+  "i": 34,
+  "jp": "<SLCT 1><CHC 35,So, evidence or not...>So, evidence or not...",
+  "en": ""
+ },
+ {
+  "i": 35,
+  "jp": "<TALK 5><NAME 31>For your sharpness, I'll\r\nteach you a good thing!",
+  "en": ""
+ },
+ {
+  "i": 36,
+  "jp": "<SLCT 2><CHC 37,Janet...><CHC 38,Amenoma...>",
+  "en": ""
+ },
+ {
+  "i": 37,
+  "jp": "<CHAR 5,0,23,0,6><CV 21,7>Wh-who're you callin'\r\n'Miss Janet'!?",
+  "en": ""
+ },
+ {
+  "i": 38,
+  "jp": "Since I caused you trouble,\r\nreturning the favour is only natural.",
+  "en": ""
+ },
+ {
+  "i": 39,
+  "jp": "Anyway, it seems the Nyan Search Corps\r\nhas found new gear again!",
+  "en": ""
+ },
+ {
+  "i": 40,
+  "jp": "<ITEM WD_LANCE215,1,1>This gear in particular,\r\nit seems to resemble the Hunter's\r\nvaliant look from a moment ago!",
+  "en": ""
+ },
+ {
+  "i": 41,
+  "jp": "It seems you'll be able to use\r\nnever-before-seen martial arts!",
+  "en": ""
+ },
+ {
+  "i": 42,
+  "jp": "Well then, keep it up next time!",
+  "en": ""
+ },
+ {
+  "i": 43,
+  "jp": "<TALK 1><NAME 1><ITEM 0,1,0><CHAR 5,6,23,0,0><BGM 1,2000,503><BGM 0,2000,506>.........\r\nArgo... I hope she's alright...",
+  "en": ""
+ },
+ {
+  "i": 44,
+  "jp": "To prove her innocence,\r\nlet's work hard gathering evidence!",
+  "en": ""
+ },
+ {
+  "i": 45,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

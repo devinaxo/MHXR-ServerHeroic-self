@@ -1,0 +1,42 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 2,0><BGM 0,0,503><TALK 5><NAME 8><CHAR 5,1,10,0,1><CV 11,9>It's done!\r\nThanks a lot!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<NAME 1><TALK 1><CHAR 1,1,1,0,3><CV 1,54>Incredible...\r\nA bridge built like this...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 8><CHAR 5,0,10,0,3><CV 11,8>Heh, this is our job, after all!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "We support explorers like this!\r\nYou two, keep up the explorer work!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 5,0,10,0,8>While I'm at it, that's right!\r\nDeep in this island there's\r\na <COL C70101FF>powerful monster</COL>, apparently.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CHAR 5,0,10,0,0><CV 11,33>The one that broke this bridge is surely it.\r\nDon't let your guard down.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<NAME 1><TALK 1><CV 1,12>Thank you!\r\nWe'll be careful!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

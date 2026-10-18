@@ -1,0 +1,17 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 2,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,2,0><CV 1,54>To build a bridge like that...\r\nI couldn't have imagined it.\r\nWhat a way to do things!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 1,0,1,0,3><CV 1,6>It's about time we moved on.\r\nSo many discoveries are still waiting!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 4,0><BGM 0,0,503><TALK 1><NAME 9><CHAR 1,1,8,0,0><CV 2,8>Mister Hunter!\r\nPlease hurry and help, nya!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 2,2>My cousin's friend's sister's best friend\r\nis in trouble, nya!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<POP1 45,PART00001_NODE00002>",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

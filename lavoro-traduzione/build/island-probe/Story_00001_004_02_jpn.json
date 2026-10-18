@@ -1,0 +1,27 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 5><NAME 6><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0><CV 3,39>How's it going?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,5><CV 1,60>Sorry, not yet.\r\nHunter, let's hurry!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 6><CV 3,18>I'm counting on you!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<POP1 16,PART00001_NODE00004>",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

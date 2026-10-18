@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><TALK 5><NAME 6><BGM 0,0,502><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0>The Mirror Butterfly you found before —\r\nfarmers seem to have taken an interest.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "They mean to use the principle to\r\ngive plants even light.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 3,33>If it makes tastier vegetables,\r\nI'd gladly help all I can!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

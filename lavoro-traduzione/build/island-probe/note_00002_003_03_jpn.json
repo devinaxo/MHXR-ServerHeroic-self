@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 12><CHAR 5,1,6,0,0><CHAR 1,1,1,0,0>That Festering Mask from before...\r\nIt seems it was originally a gas mask.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "But it went into poisoned land too often\r\nand the poison soaked in.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 5,0,6,0,5>Good thing you didn't wear it on impulse!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

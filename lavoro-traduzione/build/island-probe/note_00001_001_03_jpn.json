@@ -1,0 +1,27 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,0><CHAR 1,1,1,0,0>I've learned more about the relic.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "The dragon-claw silver ring, it seems,\r\nwas something given to the wise.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "This whole area once held dragon worship,\r\nand a claw that touches many things\r\nsymbolised knowledge.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "But a piece this finely made —\r\nthere must have been a great artisan.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

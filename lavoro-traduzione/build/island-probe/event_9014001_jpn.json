@@ -1,0 +1,157 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,1><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,2,0><CV 1,90>Sage inviting us to a party,\r\nthat's a surprise.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "I wonder what kind of party!\r\nHellooo!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 10><CHAR 5,5,7,0,0><CV 5,18><MWT 3><BGM 1,0,503>Fiiiiiiire!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8><CV 1,90>Huh?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<BGM 0,0,503><CHAR 1,2,1,0,0><CHAR 2,0,10,0,0><TALK 2><NAME 8><CV 11,40>Uncle Andra!\r\nThat won't make fire, y'know!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 10><CV 5,43>Hmm...\r\neven if you say so...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 2><NAME 8><CHAR 2,0,10,0,0>Wait, whoa!\r\nIt's the young lady and the Hunter!\r\nYou came!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CV 1,74><CHAR 2,6,10,0,0><CHAR 5,3,10,0,0><CHAR 1,1,1,0,0>That just now was...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 8><CV 11,8>Ah, we were thinking of forming a party!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "Andra the uncle as mage,\r\nAmenoma as engineer,\r\nthe Hunter as hunter.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CV 11,33>In theory, a perfect party!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1><CV 1,61>A party, like that...?\r\nWhat about you, Sage?",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 5><NAME 8>That's obvious!\r\nSage, of course.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 1><NAME 1><CV 1,94><CHAR 1,0,1,1,2>...Er, what?",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 5><NAME 8><CV 11,8>There's no role for me\r\nother than Sage, is there!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 1><NAME 1><CV 1,61>Ah, yes...\r\nI suppose so...",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<CHAR 1,0,1,0,0><CV 1,89>But a party for what, exactly...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 5><NAME 10><CV 5,35><CHAR 5,0,7,0,0>Hmm, I shall explain.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CV 5,21>The Zinogre appeared again.",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CV 5,42>And this time, <COL C70101FF>with a different element\r\nthan before</COL>... I mean to go hunt it.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<TALK 5><NAME 8><CV 11,34><CHAR 5,0,10,0,0><ITEM AD_BODY519,1,1>And there's a rumour that monster\r\ncarries this amazing gear.",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<ITEM AD_BODY521,1,1><CV 11,30>Gear that evolves, too —\r\nthat's the word on this powerful gear!",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CV 11,25>So that's why we're forming a party\r\nto face it!",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<CV 11,20><ITEM WD_BOW163,1,1>And the Nyan Search Corps found\r\namazing gear on another route, they say!",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "<ITEM 0,1,0><CV 11,2>So let's party up and\r\ngo hunt it together!",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<TALK 1><NAME 1><CV 1,74><CHAR 1,0,1,0,7>No, that party is a bit...\r\nWe'll hunt separately!",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<TALK 5><NAME 8><CV 11,41>Damn, turned down!\r\nAlright, next is Dr. Sharon.",
+  "en": ""
+ },
+ {
+  "i": 27,
+  "jp": "<CV 11,22>She'd surely suit a dancer role.\r\nLet's go ask!",
+  "en": ""
+ },
+ {
+  "i": 28,
+  "jp": "<CHAR 5,6,10,0,0><TALK 1><NAME 1><CV 1,61><CHAR 1,0,1,1,5>.........",
+  "en": ""
+ },
+ {
+  "i": 29,
+  "jp": "<CV 1,6><CHAR 1,0,1,0,0>Anyway, it looks like a dangerous\r\nmonster, so let's go slay it!",
+  "en": ""
+ },
+ {
+  "i": 30,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

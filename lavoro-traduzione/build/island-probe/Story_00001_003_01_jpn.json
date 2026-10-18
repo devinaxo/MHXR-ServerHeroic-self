@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 2,0><BGM 0,0,503><TALK 5><NAME 7><CHAR 5,1,10,0,0><CV 11,13>Hold on a moment!\r\nYou can't pass through here right now.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<NAME 1><TALK 1><CHAR 1,0,1,0,2><CV 1,28>Did something happen?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<NAME 7><TALK 5><CHAR 5,0,10,0,7><CV 11,16>Ah, seems a monster\r\nbroke the bridge...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<NAME 8>We're doing repairs now.\r\nI'm Sage, the foreman...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 5,0,10,0,8><CV 11,7>That's right!\r\nBy your look, you're explorers, huh?\r\nCould I ask a small favour?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "To reach the far shore we need\r\na ≪Rocket Lance≫, but its fuel —\r\n<COL C70101FF>≪Monster Body Fluid≫</COL> — is short.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<NAME 1><TALK 1><CHAR 1,0,1,0,8><CV 1,11><COL C70101FF>≪Monster Body Fluid≫</COL>, you say...\r\nWe can't have you stuck either,\r\nso we'll go look for it!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<NAME 8><TALK 5><CHAR 5,0,10,0,0><CV 11,2>Sorry 'bout this!\r\n<COL C70101FF>≪Monster Body Fluid≫</COL> should be\r\ngatherable from any monster!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

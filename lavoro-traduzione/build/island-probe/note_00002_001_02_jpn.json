@@ -1,0 +1,97 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,8><CV 5,1>Foh foh foh!\r\nWhat brings you here?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,2,3><CV 1,5>I found something remarkable,\r\nso I came to report it!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,2>Let me see, let me see...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<ITEM COLLECTION02001,1,1><TALK 5><NAME 10><CHAR 5,0,7,0,1><CV 5,3>Oho, this is...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "This is a chalice.\r\nIt seems made of shark scales.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "And this jagged rim —\r\nthis is a shark's tooth.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "But this gold —\r\nnot paint, it is its natural colour.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "A golden shark...!\r\nDid such things exist in ancient times!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "「The offered shark's chalice:\r\na blood pact offered to the gods;\r\nits golden treasure heals impurity.」",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CV 5,4>Yes, it matches the tablet's wording.\r\nThis is unmistakably a relic.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "I'll look into it in more detail.\r\nDrop by again if you're nearby.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,4><ITEM 0,1,0><CV 1,12>Thank you!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CHAR 1,0,1,0,0><CV 1,21>And yet, the Dronneko gang!\r\nI just cannot forgive them!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 5><NAME 10>The Dronneko gang...?",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7><CV 1,35>Those people called the Dronneko gang\r\nkeep getting in the way of exploration.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 5><NAME 10><CV 5,42>Hmm...\r\nAre they explorers?",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "What a nuisance...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CV 5,20>Take care out there!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,1><BGM 0,0,503><TALK 5><NAME 6><CHAR 5,1,5,0,3><CV 3,36>Eliza, may I have a word?\r\nDo you know of Yoga?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,0,2><CV 1,89>Yoga...?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,0>Yes, Yoga is, you see,\r\nan art and practice handed down\r\nsince ancient times.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,8><CV 3,18>So I'd like you, Eliza,\r\nto master Yoga by all means.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,3><CV 1,4>Yes!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<BGM 1,0,503><BGM 0,0,505><TALK 1><NAME 1><CHAR 1,0,1,0,2><CV 1,90>...Yes?",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,0><CV 3,22>With Yoga,\r\nI want you to stretch your arms.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,7>…",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,0>With Yoga,\r\nI want you to breathe fire.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,1><CV 3,5>With Yoga,\r\nI want you to... float!\r\nYou!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,5><CHAR 5,0,5,0,0><CV 1,94>...Er, um...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,0><CV 3,27>Eliza, in fact, when I looked into you,\r\nI found you had the gift to grasp\r\nYoga's essence, 'Harmony'...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,8><CV 3,5>So I want you\r\nto train in Yoga.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,7><CV 1,24>No no no...\r\nLook, I'm busy exploring...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,4><CV 3,22>It's fine.\r\nDid you know that 'Yoga Species'\r\nhave been appearing lately?",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,0><CV 3,27>Slay them,\r\nand you seem able to grasp\r\nthe very essence of Yoga.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,5><CV 1,94>That's impossible!\r\nBesides, I'm not even flexible...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<BGM 1,0,505><BGM 0,0,508><TALK 5><NAME 14><CHAR 5,5,12,0,0><CV 17,4>That's right, Eliza.\r\nWith your current body it's unreasonable.",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,8><CV 1,26>Solphine!\r\nSo it IS impossible!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<TALK 5><NAME 14><CHAR 5,0,12,0,0><CV 17,12>Yes... so first,\r\nlet's try removing a joint.",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<BGM 1,0,508><BGM 0,0,505><TALK 1><NAME 1><CHAR 1,0,1,1,0>Huh?",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,8><CV 3,29>To know that...\r\nhave you too practiced Yoga...?",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<TALK 1><NAME 14><CHAR 1,0,12,0,0><CV 17,21>Yes, I aimed for it...\r\nthinking it might guard Lady Yuno...",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<TALK 1><NAME 14><CHAR 1,0,12,0,7>But Yoga's essence, Harmony...\r\nI never came to understand what it is,\r\nand in the end couldn't master it.",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "<TALK 1><NAME 14><CHAR 1,0,12,0,0><CV 17,19>Eliza...\r\nif you have that gift... would you inherit\r\nmy will and master Yoga...?",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,0>Oh, um...",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<TALK 1><NAME 14><CHAR 1,0,12,0,0><CV 17,12>This is my wish.",
+  "en": ""
+ },
+ {
+  "i": 27,
+  "jp": "<TALK 1><NAME 14><CV 17,18>If it is fulfilled,\r\nas a master of arts and harmony,\r\nI want to welcome you into our clan.",
+  "en": ""
+ },
+ {
+  "i": 28,
+  "jp": "<TALK 1><NAME 14><CHAR 1,0,12,0,8><ITEM AD_BODY495,1,1><CV 17,19>Slay the Yoga Species,\r\nand once you are versed in Yoga...\r\nwe shall gift you this clan-heirloom gear.",
+  "en": ""
+ },
+ {
+  "i": 29,
+  "jp": "<TALK 1><NAME 14><CHAR 1,0,12,0,1>I hear it is gear imitating a legendary\r\nmartial artist. Evolving makes it stronger.",
+  "en": ""
+ },
+ {
+  "i": 30,
+  "jp": "<BGM 1,0,505><BGM 0,0,507><ITEM 0,1,0><TALK 5><NAME 6><CHAR 5,0,5,0,8><CV 3,29>Solphine...\r\nso you too were bewitched by Yoga.",
+  "en": ""
+ },
+ {
+  "i": 31,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,0>Eliza... inherit our will,\r\nand master the path of Yoga!",
+  "en": ""
+ },
+ {
+  "i": 32,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,0><CV 1,61>……",
+  "en": ""
+ },
+ {
+  "i": 33,
+  "jp": "<TALK 5><NAME 6><ITEM LIMITED00086,1,1><CHAR 5,0,5,0,8>Yes, the Yoga Species came with this info:\r\nslay one and you can get\r\na great ticket, apparently.",
+  "en": ""
+ },
+ {
+  "i": 34,
+  "jp": "<ITEM 0,1,0><TALK 1><NAME 1><CHAR 1,0,1,1,2>...a ticket?",
+  "en": ""
+ },
+ {
+  "i": 35,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,8><ITEM AD_BODY2079,1,1><CV 3,13>Yes, gather those tickets and\r\nyou can surely obtain the gear of the\r\nlegendary martial artist everyone knows of.",
+  "en": ""
+ },
+ {
+  "i": 36,
+  "jp": "<ITEM 0,1,0><TALK 5><NAME 6><CHAR 5,0,5,0,3><CV 3,18>Then, I leave it to you!",
+  "en": ""
+ },
+ {
+  "i": 37,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7>……………\r\n………",
+  "en": ""
+ },
+ {
+  "i": 38,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,0>Could you... remove a joint for me instead?",
+  "en": ""
+ },
+ {
+  "i": 39,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]
