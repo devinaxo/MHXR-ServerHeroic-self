@@ -12,6 +12,11 @@ The long-term aim is to get the server stable enough to open it up so people can
 again. It is not there yet — see [Current state](#current-state).
 
 > **Owner:** [@Heroic853](https://github.com/Heroic853) — everyone else contributes.
+>
+> **English translation (work in progress).** A community English translation
+> covering most of the main game flow — UI, quests, skills, items and dialogue.
+> See **[TRANSLATION.md](TRANSLATION.md)** for what it covers, how to apply it
+> to your own server, and screenshots.
 
 ---
 

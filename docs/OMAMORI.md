@@ -23,7 +23,7 @@ All 2,465 `mOmamoriName` strings + the 5 `omamori_trigger` conditions were
 translated (`crcjam a22fda10`). The names are `{theme}の{X}{宝石|貴石}【variant】`;
 e.g. `卯月暴征の火宝石【壱】` → `Uzuki Conquest Fire Jewel [I]`,
 `禁断大剣の宝紋Ⅰ` → `Forbidden Great Sword Crest I`. Single line, ≤46 cells.
-Generator: `/tmp/opencode/skillfix/oma_tr.py`; applied with the table-restricted
+Generator: `lavoro-traduzione/skill/oma_tr.py`; applied with the table-restricted
 `traduci-rsdnt-arc.cjs` (`ONLY=omamori_series,omamori_trigger`).
 
 ## Unlocking (server: `box/equipment/awake`)
