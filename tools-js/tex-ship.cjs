@@ -25,7 +25,7 @@ const arg = (name, dflt) => {
 };
 
 const PACK_DIR = arg('pack-dir', 'src/public/res/download/android/v0286/stdDL/cmn');
-const OUT = arg('out', '/tmp/opencode/ship');
+const OUT = arg('out', 'build/ship');
 const PY = arg('py', 'python3');
 const DRY = argv.includes('--dry-run');
 

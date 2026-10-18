@@ -106,8 +106,8 @@ The client needs Tailscale running on the phone, since the APK points at
 ## Step 3 — take a screenshot
 
 ```bash
-adb exec-out screencap -p > /tmp/shot.png
-python3 -c "from PIL import Image; im=Image.open('/tmp/shot.png'); print(im.size, im.mode)"
+adb exec-out screencap -p > build/shot.png
+python3 -c "from PIL import Image; im=Image.open('build/shot.png'); print(im.size, im.mode)"
 ```
 
 ---
@@ -120,7 +120,7 @@ Navigate to a screen with a button whose art you know — the home screen is fin
 it has the nav bar and `クエストへ`. Then:
 
 ```bash
-adb exec-out screencap -p > /tmp/opencode/re/ref_home.png
+adb exec-out screencap -p > build/palette/ref_home.png
 ```
 
 Do this on a **quiet screen** (no toast, no popup, no animation). Stop the
@@ -142,7 +142,7 @@ Generate the calibration PNG with the tool already in the repo:
 ```bash
 python3 tools-js/tex_index_tool.py decode \
     sprites/extracted_GUI/tex/menu/menu_home_parts00_LP4_NOMIP_jpn \
-    /tmp/opencode/re/parts00_index.png
+    build/palette/parts00_index.png
 ```
 
 then paint the swatches onto a copy:
@@ -150,7 +150,7 @@ then paint the swatches onto a copy:
 ```bash
 python3 - <<'PY'
 from PIL import Image
-im = Image.open('/tmp/opencode/re/parts00_index.png').convert('RGB')
+im = Image.open('build/palette/parts00_index.png').convert('RGB')
 LEG = [(255,0,255),(255,0,0),(0,255,0),(0,0,255),(255,255,0),(255,128,0),
        (0,255,255),(255,0,128),(128,255,0),(0,128,255),(128,0,255),(255,255,128),
        (0,255,128),(128,0,128),(128,128,128),(255,255,255)]
@@ -159,7 +159,7 @@ for i in range(16):
     for y in range(113):
         for x in range(i * 32, (i + 1) * 32):
             im.putpixel((x, y), LEG[i])
-im.save('/tmp/opencode/re/parts00_calib.png')
+im.save('build/palette/parts00_calib.png')
 print('calibration texture written: 16 columns, 32px wide each, rows 0..112')
 PY
 ```
@@ -169,8 +169,8 @@ Encode it back:
 ```bash
 python3 tools-js/tex_index_tool.py encode \
     sprites/extracted_GUI/tex/menu/menu_home_parts00_LP4_NOMIP_jpn \
-    /tmp/opencode/re/parts00_calib.png \
-    /tmp/opencode/re/parts00_calib.tex
+    build/palette/parts00_calib.png \
+    build/palette/parts00_calib.tex
 ```
 
 `encode` refuses any colour that is not in the legend, so it cannot silently
@@ -190,14 +190,14 @@ directions and self-verifies.
 ```bash
 cd /home/nacho/Documents/mhxr/MHXR-ServerHeroic-self
 cp src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk \
-   /tmp/opencode/GUI.00_backup_pre_calib.fpk
-ls -la /tmp/opencode/GUI.00_backup_pre_calib.fpk
+   build/GUI.00_backup_pre_calib.fpk
+ls -la build/GUI.00_backup_pre_calib.fpk
 ```
 
 ### 6b. Copy the calibration texture into the container
 
 ```bash
-sg docker -c 'docker cp /tmp/opencode/re/parts00_calib.tex \
+sg docker -c 'docker cp build/palette/parts00_calib.tex \
   mhxr-serverheroic-self-server-1:/app/tools/calib.tex'
 ```
 
@@ -205,8 +205,8 @@ sg docker -c 'docker cp /tmp/opencode/re/parts00_calib.tex \
 
 ```bash
 # work on a copy, never on the live pack
-sg docker -c 'docker cp mhxr-serverheroic-self-server-1:/app/src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk /tmp/opencode/re/GUI.00.fpk'
-sg docker -c 'docker cp /tmp/opencode/re/GUI.00.fpk mhxr-serverheroic-self-server-1:/app/tools/GUI.00.fpk'
+sg docker -c 'docker cp mhxr-serverheroic-self-server-1:/app/src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk build/palette/GUI.00.fpk'
+sg docker -c 'docker cp build/palette/GUI.00.fpk mhxr-serverheroic-self-server-1:/app/tools/GUI.00.fpk'
 
 sg docker -c 'docker exec mhxr-serverheroic-self-server-1 node /app/tools/fpk-pull.cjs \
   fpk-pull /app/tools/GUI.00.fpk /app/tools/home_top.arc GUI_home_top.arc'
@@ -247,13 +247,13 @@ not appear, stop — do not copy the file over the live pack.**
 ### 6f. Install it and regenerate the manifest
 
 ```bash
-sg docker -c 'docker cp mhxr-serverheroic-self-server-1:/app/tools/GUI.00.new.fpk /tmp/opencode/re/GUI.00.calib.fpk'
+sg docker -c 'docker cp mhxr-serverheroic-self-server-1:/app/tools/GUI.00.new.fpk build/palette/GUI.00.calib.fpk'
 
 # sanity: the CRC must differ from the backup, proving the file really changed
-python3 tools-js/crcjam.py /tmp/opencode/GUI.00_backup_pre_calib.fpk \
-                         /tmp/opencode/re/GUI.00.calib.fpk
+python3 tools-js/crcjam.py build/GUI.00_backup_pre_calib.fpk \
+                         build/palette/GUI.00.calib.fpk
 
-cp /tmp/opencode/re/GUI.00.calib.fpk \
+cp build/palette/GUI.00.calib.fpk \
    src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk
 
 find src/public/res/download/android -name download.list -delete
@@ -297,7 +297,7 @@ Expect `PASS: 1/1 packs verified`. Only then launch the game on the phone.
 Launch the game, reach the screen with the swatches, and capture:
 
 ```bash
-adb exec-out screencap -p > /tmp/opencode/re/calib_shot.png
+adb exec-out screencap -p > build/palette/calib_shot.png
 ```
 
 Then sample each bar. Adjust `BAR_X0`/`BAR_W` to wherever the swatches actually
@@ -307,7 +307,7 @@ landed on screen:
 python3 - <<'PY'
 from PIL import Image
 from collections import Counter
-im = Image.open('/tmp/opencode/re/calib_shot.png').convert('RGB')
+im = Image.open('build/palette/calib_shot.png').convert('RGB')
 W, H = im.size
 print('screenshot', W, H)
 BAR_X0, BAR_W, BAR_H = 40, 20, 60      # <-- tune to match what you see
@@ -369,12 +369,12 @@ ignore absolute values.
 
 ## Safety
 
-Everything happens in `/tmp/opencode/re`. The only write to the served tree is
+Everything happens in `build/palette`. The only write to the served tree is
 the `GUI.00.fpk` swap in step 6, and there is a backup command right above it.
 If anything looks wrong, restore and restart:
 
 ```bash
-cp /tmp/opencode/GUI.00_backup_pre_calib.fpk \
+cp build/GUI.00_backup_pre_calib.fpk \
    src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk
 find src/public/res/download/android -name download.list -delete
 sg docker -c 'docker compose -f docker-compose.prod.yml restart server'

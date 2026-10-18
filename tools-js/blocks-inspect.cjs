@@ -1,7 +1,7 @@
 /*
  * Guarda dentro un file di area (es. m12a01) per capire come sono descritti i
  * blocchi e se contengono l'id del nemico.
- *   docker compose -f docker-compose.prod.yml exec -T server node /app/tools/blocks-inspect.cjs /tmp/blk/quest_block_lv90_m12_m12a01
+ *   docker compose -f docker-compose.prod.yml exec -T server node /app/tools/blocks-inspect.cjs build/blk/quest_block_lv90_m12_m12a01
  */
 const fs = require('fs');
 

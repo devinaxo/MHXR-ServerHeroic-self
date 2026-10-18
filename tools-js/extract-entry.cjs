@@ -7,7 +7,7 @@ const path = require('path');
 
 const RES = '/app/dist/public/res/download/android';
 const RE = new RegExp(process.argv[2], 'i');
-const OUT = process.argv[3] || '/tmp/entry.bin';
+const OUT = process.argv[3] || 'build/entry.bin';
 
 function parseFpk(buf) {
   if (buf.length < 16 || buf.toString('ascii', 0, 4) !== 'FPK\0') return null;

@@ -172,7 +172,7 @@
 # mano: l'intero set e' stato riscaricato pulito dal server di Heroic
 # (http://57.131.193.244/) con tools/Download-Packs.cjs e la copia integra e'
 # in heroic-packs-pristine/ (ignorata da git). Le traduzioni delle texture sono
-# conservate in translations/textures/ e in /tmp/opencode/translated-backup/.
+# conservate in translations/textures/ (e le copie di lavoro locali, ignorate).
 # 325: cambio di set completo. RES_VER passa a 325 con un salto di 11: il client
 # (fermo alla 314) chiede la cartella v0325/ e riscarica tutto, invece di seguire
 # passo passo una storia di versioni che non descrive piu' questi file.
@@ -259,7 +259,7 @@
 365 cmn/resident.00.fpk
 # 366: ripristino di TUTTE le traduzioni tolte dal 365, con i size dei CLASSREF corretti. Nuovo tool unisci-traduzione.cjs: prende la tabella PRISTINE (struttura/size originali) e quella TRADOTTA (testo inglese) e le unisce -> size = size_pristine + delta stringhe. Fedele su ogni tabella (weapon/series compreso). Recupera kariwaza (486), equipSkill, item_material, partner/otomo skill, higi, omamori.
 366 cmn/resident.00.fpk
-# 367: testi delle QUEST EVENTO (collab). Tradotti i nomi quest in rsdnt_quest.arc::questData/event (594) e questData/ticket (184) [due righe, il box le mostra a capo], le spiegazioni technicalQuestInfo (362), field_skill_param, equip_hint, karidamaPowerUp, subTargetList. 0 stringhe JP rimaste in rsdnt_quest.arc. Dizionario in /tmp/opencode/skillfix/quest_all_en.json.
+# 367: testi delle QUEST EVENTO (collab). Tradotti i nomi quest in rsdnt_quest.arc::questData/event (594) e questData/ticket (184) [due righe, il box le mostra a capo], le spiegazioni technicalQuestInfo (362), field_skill_param, equip_hint, karidamaPowerUp, subTargetList. 0 stringhe JP rimaste in rsdnt_quest.arc. Dizionario in lavoro-traduzione/quest/quest_all_en.json.
 367 cmn/resident.00.fpk
 # 368: rimesse le 7 texture finora scartate (event_parts04_LP4, nyanken_parts00
 # BM + LP4, town_koukan_parts, town_koukan_parts02, town_koukanjyo,

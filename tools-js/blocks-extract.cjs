@@ -2,7 +2,7 @@
  * Estrae le definizioni dei blocchi mappa dagli archivi del gioco.
  *
  *   docker compose -f docker-compose.prod.yml exec -T server node /app/tools/blocks-extract.cjs l90 m12
- *   ... l90 m12 --dump=/tmp/blk     salva i file estratti per ispezionarli
+ *   ... l90 m12 --dump=build/blk     salva i file estratti per ispezionarli
  *
  * I blocchi si chiamano l90_m12_a01_0011 e nel gioco stanno in
  *   /arc_cmn/quest/block/l90/m12.arc   dentro uno degli archivi quest.*.fpk

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import json,io,unicodedata
+import json,io,unicodedata,os
+_IN=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','inputs')+os.sep
 def cell(s): return sum(2 if unicodedata.east_asian_width(c) in ('W','F') else 1 for c in s)
 def wrap(s,maxw=32):
     out=[]
@@ -241,5 +242,5 @@ badn=[(k,v) for k,v in N.items() if cell(v)>32]
 badb=[(k,l) for k,v in B.items() for l in v.split('\n') if cell(l)>32]
 print('names',len(N),'over32',badn)
 print('bases',len(B),'overlong lines',badb)
-io.open('/tmp/opencode/skillfix/higi_en_part2.json','w',encoding='utf-8').write(json.dumps({'name':N,'base':B,'lv':L},ensure_ascii=False,indent=1))
+io.open(_IN+'higi_en_part2.json','w',encoding='utf-8').write(json.dumps({'name':N,'base':B,'lv':L},ensure_ascii=False,indent=1))
 print('saved part2')

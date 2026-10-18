@@ -1,0 +1,7802 @@
+[
+ {
+  "i": 0,
+  "mName": ""
+ },
+ {
+  "i": 1,
+  "mName": "Flash Strike [Impact]"
+ },
+ {
+  "i": 2,
+  "mName": "Flash Strike [Wildfire]"
+ },
+ {
+  "i": 3,
+  "mName": "Flash Strike [Red-Hot]"
+ },
+ {
+  "i": 4,
+  "mName": "Flash Strike [Ice]"
+ },
+ {
+  "i": 5,
+  "mName": "Flash Strike [Glacier]"
+ },
+ {
+  "i": 6,
+  "mName": "Flash Strike [White Snow]"
+ },
+ {
+  "i": 7,
+  "mName": "Flash Strike [Earth]"
+ },
+ {
+  "i": 8,
+  "mName": "Flash Strike [Rubble]"
+ },
+ {
+  "i": 9,
+  "mName": "Flash Strike [Ebon Rock]"
+ },
+ {
+  "i": 10,
+  "mName": "Flash Strike [Thunder]"
+ },
+ {
+  "i": 11,
+  "mName": "Flash Strike [Thundercall]"
+ },
+ {
+  "i": 12,
+  "mName": "Flash Strike [Violet Bolt]"
+ },
+ {
+  "i": 13,
+  "mName": "Flash Strike [Water]"
+ },
+ {
+  "i": 14,
+  "mName": "Flash Strike [Flowing Water]"
+ },
+ {
+  "i": 15,
+  "mName": "Flash Strike [Azure Droplet]"
+ },
+ {
+  "i": 16,
+  "mName": "Sweeping Slash [Fire]"
+ },
+ {
+  "i": 17,
+  "mName": "Sweeping Slash [Flying Sparks]"
+ },
+ {
+  "i": 18,
+  "mName": "Sweeping Slash [Flame Tempest]"
+ },
+ {
+  "i": 19,
+  "mName": "Sweeping Slash [Ice]"
+ },
+ {
+  "i": 20,
+  "mName": "Sweeping Slash [Ice Cascade]"
+ },
+ {
+  "i": 21,
+  "mName": "Sweeping Slash [Blizzard]"
+ },
+ {
+  "i": 22,
+  "mName": "Sweeping Slash [Earth]"
+ },
+ {
+  "i": 23,
+  "mName": "Sweeping Slash [Mudcoat]"
+ },
+ {
+  "i": 24,
+  "mName": "Sweeping Slash [Rising Rock]"
+ },
+ {
+  "i": 25,
+  "mName": "Sweeping Slash [Thunder]"
+ },
+ {
+  "i": 26,
+  "mName": "Sweeping Slash [Voltbolt]"
+ },
+ {
+  "i": 27,
+  "mName": "Sweeping Slash [Lightning]"
+ },
+ {
+  "i": 28,
+  "mName": "Sweeping Slash [Water]"
+ },
+ {
+  "i": 29,
+  "mName": "Sweeping Slash [Current]"
+ },
+ {
+  "i": 30,
+  "mName": "Sweeping Slash [Waterfall]"
+ },
+ {
+  "i": 31,
+  "mName": "Reckless Abandon [Form I]"
+ },
+ {
+  "i": 32,
+  "mName": "Reckless Abandon [Form II]"
+ },
+ {
+  "i": 33,
+  "mName": "Reckless Abandon [Form III]"
+ },
+ {
+  "i": 34,
+  "mName": "Reckless Abandon [Final Form]"
+ },
+ {
+  "i": 35,
+  "mName": "Instant Hellhunt [Annihilate]"
+ },
+ {
+  "i": 36,
+  "mName": "Mighty Strength [Attack]"
+ },
+ {
+  "i": 37,
+  "mName": "Mighty Strength [Fierce]"
+ },
+ {
+  "i": 38,
+  "mName": "Mighty Strength [Bravery]"
+ },
+ {
+  "i": 39,
+  "mName": "Sage's Power [Skill]"
+ },
+ {
+  "i": 40,
+  "mName": "Sage's Power [Craft]"
+ },
+ {
+  "i": 41,
+  "mName": "Sage's Power [Mastery]"
+ },
+ {
+  "i": 42,
+  "mName": "Flash Power [Swift]"
+ },
+ {
+  "i": 43,
+  "mName": "Flash Power [Instant]"
+ },
+ {
+  "i": 44,
+  "mName": "Flash Power [Instant Speed]"
+ },
+ {
+  "i": 45,
+  "mName": "Blast Power [Destruction]"
+ },
+ {
+  "i": 46,
+  "mName": "Blast Power [Annihilation]"
+ },
+ {
+  "i": 47,
+  "mName": "Blast Power [Total Annihilation]"
+ },
+ {
+  "i": 48,
+  "mName": "Hunter's Sword [White Belt]"
+ },
+ {
+  "i": 49,
+  "mName": "Hunter's Sword [Black Belt]"
+ },
+ {
+  "i": 50,
+  "mName": "Hunter's Sword [Master]"
+ },
+ {
+  "i": 51,
+  "mName": "Hunter's Sword [Fire]"
+ },
+ {
+  "i": 52,
+  "mName": "Hunter's Sword [Firebreath]"
+ },
+ {
+  "i": 53,
+  "mName": "Hunter's Sword [Scorching Flame]"
+ },
+ {
+  "i": 54,
+  "mName": "Hunter's Sword [Ice]"
+ },
+ {
+  "i": 55,
+  "mName": "Hunter's Sword [Icicle]"
+ },
+ {
+  "i": 56,
+  "mName": "Hunter's Sword [Frost Blade]"
+ },
+ {
+  "i": 57,
+  "mName": "Hunter's Sword [Earth]"
+ },
+ {
+  "i": 58,
+  "mName": "Hunter's Sword [Landslide]"
+ },
+ {
+  "i": 59,
+  "mName": "Hunter's Sword [Rock Fist]"
+ },
+ {
+  "i": 60,
+  "mName": "Hunter's Sword [Thunder]"
+ },
+ {
+  "i": 61,
+  "mName": "Hunter's Sword [Lightning Stream]"
+ },
+ {
+  "i": 62,
+  "mName": "Hunter's Sword [Flash]"
+ },
+ {
+  "i": 63,
+  "mName": "Hunter's Sword [Water]"
+ },
+ {
+  "i": 64,
+  "mName": "Hunter's Sword [Spraywater]"
+ },
+ {
+  "i": 65,
+  "mName": "Hunter's Sword [Slashing Rain]"
+ },
+ {
+  "i": 66,
+  "mName": "Poison Honey [Atonement]"
+ },
+ {
+  "i": 67,
+  "mName": "Deadly Poison Honey [Wager]"
+ },
+ {
+  "i": 68,
+  "mName": "Blood Blade [Crimson Cloud]"
+ },
+ {
+  "i": 69,
+  "mName": "Blood Blade [Crimson Rain]"
+ },
+ {
+  "i": 70,
+  "mName": "Hunter's Armor [Water]"
+ },
+ {
+  "i": 71,
+  "mName": "Hunter's Armor [Water Veil]"
+ },
+ {
+  "i": 72,
+  "mName": "Hunter's Armor [Fire]"
+ },
+ {
+  "i": 73,
+  "mName": "Hunter's Armor [Flame Veil]"
+ },
+ {
+  "i": 74,
+  "mName": "Hunter's Armor [Ice]"
+ },
+ {
+  "i": 75,
+  "mName": "Hunter's Armor [Ice Veil]"
+ },
+ {
+  "i": 76,
+  "mName": "Hunter's Armor [Earth]"
+ },
+ {
+  "i": 77,
+  "mName": "Hunter's Armor [Earth Veil]"
+ },
+ {
+  "i": 78,
+  "mName": "Hunter's Armor [Thunder]"
+ },
+ {
+  "i": 79,
+  "mName": "Hunter's Armor [Thunder Veil]"
+ },
+ {
+  "i": 80,
+  "mName": "Spirit's Blessing [Water]"
+ },
+ {
+  "i": 81,
+  "mName": "Spirit's Blessing [Water Wall]"
+ },
+ {
+  "i": 82,
+  "mName": "Spirit's Blessing [Water Shell]"
+ },
+ {
+  "i": 83,
+  "mName": "Spirit's Blessing [Fire]"
+ },
+ {
+  "i": 84,
+  "mName": "Spirit's Blessing [Fire Wall]"
+ },
+ {
+  "i": 85,
+  "mName": "Spirit's Blessing [Flame Hall]"
+ },
+ {
+  "i": 86,
+  "mName": "Spirit's Blessing [Ice]"
+ },
+ {
+  "i": 87,
+  "mName": "Spirit's Blessing [Ice Wall]"
+ },
+ {
+  "i": 88,
+  "mName": "Spirit's Blessing [Ice Prison]"
+ },
+ {
+  "i": 89,
+  "mName": "Spirit's Blessing [Earth]"
+ },
+ {
+  "i": 90,
+  "mName": "Spirit's Blessing [Earth Wall]"
+ },
+ {
+  "i": 91,
+  "mName": "Spirit's Blessing [Earth Fortress]"
+ },
+ {
+  "i": 92,
+  "mName": "Spirit's Blessing [Thunder]"
+ },
+ {
+  "i": 93,
+  "mName": "Spirit's Blessing [Thunder Wall]"
+ },
+ {
+  "i": 94,
+  "mName": "Spirit's Blessing [Thundercloud]"
+ },
+ {
+  "i": 95,
+  "mName": "Thrust [Collapse]"
+ },
+ {
+  "i": 96,
+  "mName": "Thrust [Castlebreaker]"
+ },
+ {
+  "i": 97,
+  "mName": "Thrust [Landslide]"
+ },
+ {
+  "i": 98,
+  "mName": "Poison Rigging [Bite]"
+ },
+ {
+  "i": 99,
+  "mName": "Poison Rigging [Corrosion]"
+ },
+ {
+  "i": 100,
+  "mName": "Poison Rigging [Erosion]"
+ },
+ {
+  "i": 101,
+  "mName": "Healing Power [Overcome]"
+ },
+ {
+  "i": 102,
+  "mName": "Healing Power [Recovery]"
+ },
+ {
+  "i": 103,
+  "mName": "Healing Power [Rebloom]"
+ },
+ {
+  "i": 104,
+  "mName": "Light of Healing [Comfort]"
+ },
+ {
+  "i": 105,
+  "mName": "Light of Healing [Ecstasy]"
+ },
+ {
+  "i": 106,
+  "mName": "Light of Healing [Paradise]"
+ },
+ {
+  "i": 107,
+  "mName": "Hospitality of Life [Feast]"
+ },
+ {
+  "i": 108,
+  "mName": "Adrenaline Power [Adversity]"
+ },
+ {
+  "i": 109,
+  "mName": "Adrenaline Power [Crisis]"
+ },
+ {
+  "i": 110,
+  "mName": "Adrenaline Power [Last Stand]"
+ },
+ {
+  "i": 111,
+  "mName": "Body and Soul [Single-Minded]"
+ },
+ {
+  "i": 112,
+  "mName": "Headlong Hunt [Advance]"
+ },
+ {
+  "i": 113,
+  "mName": "Headlong Hunt [Onslaught]"
+ },
+ {
+  "i": 114,
+  "mName": "Siege Formation [Firm]"
+ },
+ {
+  "i": 115,
+  "mName": "Siege Formation [Impregnable]"
+ },
+ {
+  "i": 116,
+  "mName": "Hunter's Guard Wall [Unbreakable]"
+ },
+ {
+  "i": 117,
+  "mName": "Indomitable Spirit [Immovable]"
+ },
+ {
+  "i": 118,
+  "mName": "Provoke [Lure]"
+ },
+ {
+  "i": 119,
+  "mName": "Provoke [Enticement]"
+ },
+ {
+  "i": 120,
+  "mName": "Provoke [Summon]"
+ },
+ {
+  "i": 121,
+  "mName": "Mist Concealment [Shadow]"
+ },
+ {
+  "i": 122,
+  "mName": "Mist Concealment [Ambush]"
+ },
+ {
+  "i": 123,
+  "mName": "Mist Concealment [Sneak Attack]"
+ },
+ {
+  "i": 124,
+  "mName": "Hunting Instinct [Slash]"
+ },
+ {
+  "i": 125,
+  "mName": "Hunting Instinct [Mighty Slash]"
+ },
+ {
+  "i": 126,
+  "mName": "Hunting Instinct [Ironclad Slash]"
+ },
+ {
+  "i": 127,
+  "mName": "Hunting Instinct [Skill]"
+ },
+ {
+  "i": 128,
+  "mName": "Hunting Instinct [Technique]"
+ },
+ {
+  "i": 129,
+  "mName": "Hunting Instinct [Masterful Technique]"
+ },
+ {
+  "i": 130,
+  "mName": "Hunting Instinct [Guard]"
+ },
+ {
+  "i": 131,
+  "mName": "Hunting Instinct [Hunter's Guard]"
+ },
+ {
+  "i": 132,
+  "mName": "Hunting Instinct [Guardian God]"
+ },
+ {
+  "i": 133,
+  "mName": "Hunting Instinct [Collapse]"
+ },
+ {
+  "i": 134,
+  "mName": "Hunting Instinct [Destruction]"
+ },
+ {
+  "i": 135,
+  "mName": "Hunting Instinct [Great Destruction]"
+ },
+ {
+  "i": 136,
+  "mName": "Hunting Instinct [Pierce]"
+ },
+ {
+  "i": 137,
+  "mName": "Hunting Instinct [Rock Piercer]"
+ },
+ {
+  "i": 138,
+  "mName": "Hunting Instinct [Instant Rock Piercer]"
+ },
+ {
+  "i": 139,
+  "mName": "Hunting Instinct [Roar]"
+ },
+ {
+  "i": 140,
+  "mName": "Hunting Instinct [Roaring Blast]"
+ },
+ {
+  "i": 141,
+  "mName": "Hunting Instinct [Furious Roaring Blast]"
+ },
+ {
+  "i": 142,
+  "mName": "Hunting Instinct [Dance]"
+ },
+ {
+  "i": 143,
+  "mName": "Hunting Instinct [War Dance]"
+ },
+ {
+  "i": 144,
+  "mName": "Hunting Instinct [Frenzied War Dance]"
+ },
+ {
+  "i": 145,
+  "mName": "Hunting Instinct [Rend]"
+ },
+ {
+  "i": 146,
+  "mName": "Hunting Instinct [Rending Wave]"
+ },
+ {
+  "i": 147,
+  "mName": "Hunting Instinct [Leaping Rending Wave]"
+ },
+ {
+  "i": 148,
+  "mName": "Hunting Instinct [Dash]"
+ },
+ {
+  "i": 149,
+  "mName": "Hunting Instinct [Skydash]"
+ },
+ {
+  "i": 150,
+  "mName": "Hunting Instinct [Sky-Soaring Dash]"
+ },
+ {
+  "i": 151,
+  "mName": "Hunting Instinct [Illusion]"
+ },
+ {
+  "i": 152,
+  "mName": "Hunting Instinct [Transformation]"
+ },
+ {
+  "i": 153,
+  "mName": "Hunting Instinct [Shifting Light]"
+ },
+ {
+  "i": 154,
+  "mName": "Hunting Instinct [Blast]"
+ },
+ {
+  "i": 155,
+  "mName": "Hunting Instinct [Blast Chain]"
+ },
+ {
+  "i": 156,
+  "mName": "Hunting Instinct [Rapid Blast Chain]"
+ },
+ {
+  "i": 157,
+  "mName": "Hunting Instinct [Melody]"
+ },
+ {
+  "i": 158,
+  "mName": "Hunting Instinct [Passionate Melody]"
+ },
+ {
+  "i": 159,
+  "mName": "Hunting Instinct [Intense Passionate Melody]"
+ },
+ {
+  "i": 160,
+  "mName": "Flash Strike [Fire]"
+ },
+ {
+  "i": 161,
+  "mName": "Bottomless Curiosity [Fire Treasure]"
+ },
+ {
+  "i": 162,
+  "mName": "Bottomless Curiosity [Ice Treasure]"
+ },
+ {
+  "i": 163,
+  "mName": "Grand Blaze [Supremacy]"
+ },
+ {
+  "i": 164,
+  "mName": "Grand Blaze [Zenith]"
+ },
+ {
+  "i": 165,
+  "mName": "Grand Blaze [Heaven]"
+ },
+ {
+  "i": 166,
+  "mName": "Spirit's Blessing [Protection]"
+ },
+ {
+  "i": 167,
+  "mName": "3D Maneuver"
+ },
+ {
+  "i": 168,
+  "mName": "3D Maneuver Custom"
+ },
+ {
+  "i": 169,
+  "mName": "Hit-and-Run Tactics"
+ },
+ {
+  "i": 170,
+  "mName": "True Hit-and-Run Tactics"
+ },
+ {
+  "i": 171,
+  "mName": "There Are Miracles and Magic Too"
+ },
+ {
+  "i": 172,
+  "mName": "Being Alone Is Lonely, Isn't It"
+ },
+ {
+  "i": 173,
+  "mName": "Don't Tell the Whole Class"
+ },
+ {
+  "i": 174,
+  "mName": "Tiro Finale"
+ },
+ {
+  "i": 175,
+  "mName": "Trick or Treat"
+ },
+ {
+  "i": 176,
+  "mName": "Let's Party!"
+ },
+ {
+  "i": 177,
+  "mName": "Don't Get Hooked"
+ },
+ {
+  "i": 178,
+  "mName": "S-U-R-G-I-N-G, AAAH!!"
+ },
+ {
+  "i": 179,
+  "mName": "Burn, My Soul!"
+ },
+ {
+  "i": 180,
+  "mName": "Frost Fang [Keen]"
+ },
+ {
+  "i": 181,
+  "mName": "Frost Fang [Crisp]"
+ },
+ {
+  "i": 182,
+  "mName": "Frost Fang [Zero]"
+ },
+ {
+  "i": 183,
+  "mName": "Guardian of Peace, Ally of Justice!"
+ },
+ {
+  "i": 184,
+  "mName": "Objection! [Turnabout]"
+ },
+ {
+  "i": 185,
+  "mName": "Are You Ready?"
+ },
+ {
+  "i": 186,
+  "mName": "Fighting Spirit, Ultimate Cry!"
+ },
+ {
+  "i": 187,
+  "mName": "Treasure Hammer [Luster]"
+ },
+ {
+  "i": 188,
+  "mName": "Fierce Glaive [Crimson]"
+ },
+ {
+  "i": 189,
+  "mName": "Fierce Glaive [Vermilion]"
+ },
+ {
+  "i": 190,
+  "mName": "Fierce Glaive [Scarlet]"
+ },
+ {
+  "i": 191,
+  "mName": "Rampaging Water [Wild]"
+ },
+ {
+  "i": 192,
+  "mName": "Rampaging Water [Frenzy]"
+ },
+ {
+  "i": 193,
+  "mName": "Rampaging Water [Chaos]"
+ },
+ {
+  "i": 194,
+  "mName": "Rampaging Water [Ferocity]"
+ },
+ {
+  "i": 195,
+  "mName": "Gale [Falcon]"
+ },
+ {
+  "i": 196,
+  "mName": "Gale [Raging Waves]"
+ },
+ {
+  "i": 197,
+  "mName": "Gale [Thunderbolt]"
+ },
+ {
+  "i": 198,
+  "mName": "Spearpoint Formation [Pierce]"
+ },
+ {
+  "i": 199,
+  "mName": "Spearpoint Formation [Pressure Point]"
+ },
+ {
+  "i": 200,
+  "mName": "Spearpoint Formation [Perforation]"
+ },
+ {
+  "i": 201,
+  "mName": "Rousing Encouragement [Courage]"
+ },
+ {
+  "i": 202,
+  "mName": "Rousing Encouragement [Spirit]"
+ },
+ {
+  "i": 203,
+  "mName": "Rousing Encouragement [Fortitude]"
+ },
+ {
+  "i": 204,
+  "mName": "Winter Love"
+ },
+ {
+  "i": 205,
+  "mName": "Silent Night"
+ },
+ {
+  "i": 206,
+  "mName": "Christmas Carol"
+ },
+ {
+  "i": 207,
+  "mName": "White Lover"
+ },
+ {
+  "i": 208,
+  "mName": "Jingle Bell"
+ },
+ {
+  "i": 209,
+  "mName": "Fortune Favors the Laughing Hunt"
+ },
+ {
+  "i": 210,
+  "mName": "The Year's Hunting Begins on New Year's Day"
+ },
+ {
+  "i": 211,
+  "mName": "Light of Healing [Dreamlike Bliss]"
+ },
+ {
+  "i": 212,
+  "mName": "Willow Green Wind [Elegance]"
+ },
+ {
+  "i": 213,
+  "mName": "Willow Green Wind [Radiant Clarity]"
+ },
+ {
+  "i": 214,
+  "mName": "Hunter's Guardian Robe [Cocoon]"
+ },
+ {
+  "i": 215,
+  "mName": "Hunter's Guardian Robe [Armored Cocoon]"
+ },
+ {
+  "i": 216,
+  "mName": "Happy Valentine"
+ },
+ {
+  "i": 217,
+  "mName": "Special Chocolate"
+ },
+ {
+  "i": 218,
+  "mName": "Thunder Petal Blizzard"
+ },
+ {
+  "i": 219,
+  "mName": "Flame Petal Blizzard"
+ },
+ {
+  "i": 220,
+  "mName": "Snow Petal Blizzard"
+ },
+ {
+  "i": 221,
+  "mName": "Water Petal Blizzard"
+ },
+ {
+  "i": 222,
+  "mName": "Earth Petal Blizzard"
+ },
+ {
+  "i": 223,
+  "mName": "Devil Trigger"
+ },
+ {
+  "i": 224,
+  "mName": "Burst Attack"
+ },
+ {
+  "i": 225,
+  "mName": "Phantom Blade"
+ },
+ {
+  "i": 226,
+  "mName": "Devil Bringer"
+ },
+ {
+  "i": 227,
+  "mName": "Black Blight [Darkness]"
+ },
+ {
+  "i": 228,
+  "mName": "Black Blight [Jet Black]"
+ },
+ {
+  "i": 229,
+  "mName": "Black Blight [Netherworld]"
+ },
+ {
+  "i": 230,
+  "mName": "Black Blight [Devour]"
+ },
+ {
+  "i": 231,
+  "mName": "Heaven's Blessing [Purity]"
+ },
+ {
+  "i": 232,
+  "mName": "Heaven's Blessing [Divine Water]"
+ },
+ {
+  "i": 233,
+  "mName": "Center Stance [Nothingness]"
+ },
+ {
+  "i": 234,
+  "mName": "Center Stance [Devotion]"
+ },
+ {
+  "i": 235,
+  "mName": "Diamond Stance [Power]"
+ },
+ {
+  "i": 236,
+  "mName": "Diamond Stance [Fortitude]"
+ },
+ {
+  "i": 237,
+  "mName": "Dark Pact [Oath]"
+ },
+ {
+  "i": 238,
+  "mName": "Dark Pact [Nether Vow]"
+ },
+ {
+  "i": 239,
+  "mName": "Fighting Spirit Boost [Passion]"
+ },
+ {
+  "i": 240,
+  "mName": "Fighting Spirit Boost [Passionate Flame]"
+ },
+ {
+  "i": 241,
+  "mName": "Fighting Spirit Boost [Elation]"
+ },
+ {
+  "i": 242,
+  "mName": "Fighting Spirit Boost [Furor]"
+ },
+ {
+  "i": 243,
+  "mName": "Water-Wrapped Dance [Radiance]"
+ },
+ {
+  "i": 244,
+  "mName": "Water-Wrapped Dance [Sublime]"
+ },
+ {
+  "i": 245,
+  "mName": "Flame-Wrapped Dance [Radiance]"
+ },
+ {
+  "i": 246,
+  "mName": "Flame-Wrapped Dance [Sublime]"
+ },
+ {
+  "i": 247,
+  "mName": "Ice-Wrapped Dance [Radiance]"
+ },
+ {
+  "i": 248,
+  "mName": "Ice-Wrapped Dance [Sublime]"
+ },
+ {
+  "i": 249,
+  "mName": "Earth-Wrapped Dance [Radiance]"
+ },
+ {
+  "i": 250,
+  "mName": "Earth-Wrapped Dance [Sublime]"
+ },
+ {
+  "i": 251,
+  "mName": "Thunder-Wrapped Dance [Radiance]"
+ },
+ {
+  "i": 252,
+  "mName": "Thunder-Wrapped Dance [Sublime]"
+ },
+ {
+  "i": 253,
+  "mName": "Painful Blow [Fierce]"
+ },
+ {
+  "i": 254,
+  "mName": "Painful Blow [Demon Heart]"
+ },
+ {
+  "i": 255,
+  "mName": "Concentrated Fire [Aim]"
+ },
+ {
+  "i": 256,
+  "mName": "Concentrated Fire [Perforation]"
+ },
+ {
+  "i": 257,
+  "mName": "Wyvern Takedown [King]"
+ },
+ {
+  "i": 258,
+  "mName": "Wyvern Takedown [Peerless]"
+ },
+ {
+  "i": 259,
+  "mName": "Sea Dragon Sinking [King]"
+ },
+ {
+  "i": 260,
+  "mName": "Sea Dragon Sinking [Peerless]"
+ },
+ {
+  "i": 261,
+  "mName": "Piscine Wyvern Big Catch [King]"
+ },
+ {
+  "i": 262,
+  "mName": "Piscine Wyvern Big Catch [Peerless]"
+ },
+ {
+  "i": 263,
+  "mName": "Fanged Wyvern Crusher [King]"
+ },
+ {
+  "i": 264,
+  "mName": "Fanged Wyvern Crusher [Peerless]"
+ },
+ {
+  "i": 265,
+  "mName": "Fanged Beast Slayer [King]"
+ },
+ {
+  "i": 266,
+  "mName": "Fanged Beast Slayer [Peerless]"
+ },
+ {
+  "i": 267,
+  "mName": "Elder Dragon Annihilator [King]"
+ },
+ {
+  "i": 268,
+  "mName": "Elder Dragon Annihilator [Peerless]"
+ },
+ {
+  "i": 269,
+  "mName": "Bird Wyvern Exterminator [King]"
+ },
+ {
+  "i": 270,
+  "mName": "Bird Wyvern Exterminator [Peerless]"
+ },
+ {
+  "i": 271,
+  "mName": "Fanged Beast Basher [King]"
+ },
+ {
+  "i": 272,
+  "mName": "Fanged Beast Basher [Peerless]"
+ },
+ {
+  "i": 273,
+  "mName": "Hammer of Destruction [Crush]"
+ },
+ {
+  "i": 274,
+  "mName": "Hammer of Destruction [Smash]"
+ },
+ {
+  "i": 275,
+  "mName": "Roar of Destruction [Cry]"
+ },
+ {
+  "i": 276,
+  "mName": "Roar of Destruction [Tremor]"
+ },
+ {
+  "i": 277,
+  "mName": "Lion's Clash [Impact]"
+ },
+ {
+  "i": 278,
+  "mName": "Lion's Clash [Head-On]"
+ },
+ {
+  "i": 279,
+  "mName": "Oni Dance [Chaos]"
+ },
+ {
+  "i": 280,
+  "mName": "Oni Dance [Mad Bloom]"
+ },
+ {
+  "i": 281,
+  "mName": "Spring Slumber [Sunshine]"
+ },
+ {
+  "i": 282,
+  "mName": "Spring Slumber [Thaw]"
+ },
+ {
+  "i": 283,
+  "mName": "Hunting Instinct [Crush]"
+ },
+ {
+  "i": 284,
+  "mName": "Hunting Instinct [Shatter]"
+ },
+ {
+  "i": 285,
+  "mName": "True Hunter's Power [Slash]"
+ },
+ {
+  "i": 286,
+  "mName": "True Hunter's Power [Mighty Slash]"
+ },
+ {
+  "i": 287,
+  "mName": "True Hunter's Power [Guard]"
+ },
+ {
+  "i": 288,
+  "mName": "True Hunter's Power [Hunter's Guard]"
+ },
+ {
+  "i": 289,
+  "mName": "True Hunter's Power [Collapse]"
+ },
+ {
+  "i": 290,
+  "mName": "True Hunter's Power [Destruction]"
+ },
+ {
+  "i": 291,
+  "mName": "True Hunter's Power [Pierce]"
+ },
+ {
+  "i": 292,
+  "mName": "True Hunter's Power [Rock Piercer]"
+ },
+ {
+  "i": 293,
+  "mName": "True Hunter's Power [Roar]"
+ },
+ {
+  "i": 294,
+  "mName": "True Hunter's Power [Roaring Blast]"
+ },
+ {
+  "i": 295,
+  "mName": "True Hunter's Power [Dance]"
+ },
+ {
+  "i": 296,
+  "mName": "True Hunter's Power [War Dance]"
+ },
+ {
+  "i": 297,
+  "mName": "True Hunter's Power [Rend]"
+ },
+ {
+  "i": 298,
+  "mName": "True Hunter's Power [Rending Wave]"
+ },
+ {
+  "i": 299,
+  "mName": "True Hunter's Power [Dash]"
+ },
+ {
+  "i": 300,
+  "mName": "True Hunter's Power [Skydash]"
+ },
+ {
+  "i": 301,
+  "mName": "True Hunter's Power [Illusion]"
+ },
+ {
+  "i": 302,
+  "mName": "True Hunter's Power [Transformation]"
+ },
+ {
+  "i": 303,
+  "mName": "True Hunter's Power [Blast]"
+ },
+ {
+  "i": 304,
+  "mName": "True Hunter's Power [Blast Chain]"
+ },
+ {
+  "i": 305,
+  "mName": "Hazy Spear [Fleeting]"
+ },
+ {
+  "i": 306,
+  "mName": "Hazy Spear [Bubble]"
+ },
+ {
+  "i": 307,
+  "mName": "Dragon Counter [Void]"
+ },
+ {
+  "i": 308,
+  "mName": "Dragon Counter [Dream]"
+ },
+ {
+  "i": 309,
+  "mName": "True Colors [Sincerity]"
+ },
+ {
+  "i": 310,
+  "mName": "True Colors [Unmatched]"
+ },
+ {
+  "i": 311,
+  "mName": "Proof of Training [Craftsman]"
+ },
+ {
+  "i": 312,
+  "mName": "Proof of Training [Secret Art]"
+ },
+ {
+  "i": 313,
+  "mName": "Limit Break [Heaven]"
+ },
+ {
+  "i": 314,
+  "mName": "Limit Break [Blue Sky]"
+ },
+ {
+  "i": 315,
+  "mName": "Undying Hunter's Soul [Pierce]"
+ },
+ {
+  "i": 316,
+  "mName": "Undying Hunter's Soul [Rock Piercer]"
+ },
+ {
+  "i": 317,
+  "mName": "Undying Hunter's Soul [Roar]"
+ },
+ {
+  "i": 318,
+  "mName": "Undying Hunter's Soul [Roaring Blast]"
+ },
+ {
+  "i": 319,
+  "mName": "Undying Hunter's Soul [Dance]"
+ },
+ {
+  "i": 320,
+  "mName": "Undying Hunter's Soul [War Dance]"
+ },
+ {
+  "i": 321,
+  "mName": "Undying Hunter's Soul [Rend]"
+ },
+ {
+  "i": 322,
+  "mName": "Undying Hunter's Soul [Rending Wave]"
+ },
+ {
+  "i": 323,
+  "mName": "Undying Hunter's Soul [Dash]"
+ },
+ {
+  "i": 324,
+  "mName": "Undying Hunter's Soul [Skydash]"
+ },
+ {
+  "i": 325,
+  "mName": "Breath of Fire"
+ },
+ {
+  "i": 326,
+  "mName": "Guardians of the White Dragon"
+ },
+ {
+  "i": 327,
+  "mName": "I'm the Strongest Big Brother"
+ },
+ {
+  "i": 328,
+  "mName": "Song of the Dragon"
+ },
+ {
+  "i": 329,
+  "mName": "Full Acceleration [Rapid]"
+ },
+ {
+  "i": 330,
+  "mName": "Full Acceleration [Ascent]"
+ },
+ {
+  "i": 331,
+  "mName": "Reckless Valor Shield [Risk]"
+ },
+ {
+  "i": 332,
+  "mName": "Reckless Valor Shield [Resolve]"
+ },
+ {
+  "i": 333,
+  "mName": "Collapse Strike [Fire]"
+ },
+ {
+  "i": 334,
+  "mName": "Collapse Strike [Blazing Fire]"
+ },
+ {
+  "i": 335,
+  "mName": "Collapse Strike [Ice]"
+ },
+ {
+  "i": 336,
+  "mName": "Collapse Strike [Fine Ice]"
+ },
+ {
+  "i": 337,
+  "mName": "Collapse Strike [Earth]"
+ },
+ {
+  "i": 338,
+  "mName": "Collapse Strike [Earth Tide]"
+ },
+ {
+  "i": 339,
+  "mName": "Collapse Strike [Thunder]"
+ },
+ {
+  "i": 340,
+  "mName": "Collapse Strike [Thunder Revel]"
+ },
+ {
+  "i": 341,
+  "mName": "Collapse Strike [Water]"
+ },
+ {
+  "i": 342,
+  "mName": "Collapse Strike [Water Summit]"
+ },
+ {
+  "i": 343,
+  "mName": "Restraint [Chains]"
+ },
+ {
+  "i": 344,
+  "mName": "Restraint [Dragon Bind]"
+ },
+ {
+  "i": 345,
+  "mName": "Fighting Spirit Boost [Shout]"
+ },
+ {
+  "i": 346,
+  "mName": "Fighting Spirit Boost [Cheers]"
+ },
+ {
+  "i": 347,
+  "mName": "Provocation of Fury [Anger]"
+ },
+ {
+  "i": 348,
+  "mName": "Provocation of Fury [Wrath]"
+ },
+ {
+  "i": 349,
+  "mName": "Gospel of Life [Salvation]"
+ },
+ {
+  "i": 350,
+  "mName": "Gospel of Life [Heavenly Voice]"
+ },
+ {
+  "i": 351,
+  "mName": "Sacrifice [Love]"
+ },
+ {
+  "i": 352,
+  "mName": "Sacrifice [Friendship]"
+ },
+ {
+  "i": 353,
+  "mName": "Forced Breakthrough [Pierce]"
+ },
+ {
+  "i": 354,
+  "mName": "Forced Breakthrough [Rock Drill]"
+ },
+ {
+  "i": 355,
+  "mName": "Iron-Crushing Blade [Severance]"
+ },
+ {
+  "i": 356,
+  "mName": "Iron-Crushing Blade [Steel Slash]"
+ },
+ {
+  "i": 357,
+  "mName": "Sword of Arithmetic [△]"
+ },
+ {
+  "i": 358,
+  "mName": "Youth Victory Ball [Hardball]"
+ },
+ {
+  "i": 359,
+  "mName": "Homing Instinct [Twin Wheels]"
+ },
+ {
+  "i": 360,
+  "mName": "Fantasy School Anthem [Intense Performance]"
+ },
+ {
+  "i": 361,
+  "mName": "Tragic Fate Manuscript [Homework]"
+ },
+ {
+  "i": 362,
+  "mName": "Destined Hit [Love Letter]"
+ },
+ {
+  "i": 363,
+  "mName": "Sealed Power Release [Flame Crystal]"
+ },
+ {
+  "i": 364,
+  "mName": "Sealed Power Release [Frost Crystal]"
+ },
+ {
+  "i": 365,
+  "mName": "Sealed Power Release [Rock Crystal]"
+ },
+ {
+  "i": 366,
+  "mName": "Sealed Power Release [Droplet Crystal]"
+ },
+ {
+  "i": 367,
+  "mName": "Undying Hunter's Soul [Guard]"
+ },
+ {
+  "i": 368,
+  "mName": "狩魂不滅【狩護】"
+ },
+ {
+  "i": 369,
+  "mName": "Undying Hunter's Soul [Collapse]"
+ },
+ {
+  "i": 370,
+  "mName": "Undying Hunter's Soul [Destruction]"
+ },
+ {
+  "i": 371,
+  "mName": "Undying Hunter's Soul [Blast]"
+ },
+ {
+  "i": 372,
+  "mName": "狩魂不滅【爆連】"
+ },
+ {
+  "i": 373,
+  "mName": "大狩猟劇【舞】"
+ },
+ {
+  "i": 374,
+  "mName": "大狩猟劇【舞闘】"
+ },
+ {
+  "i": 375,
+  "mName": "大狩猟劇【爆】"
+ },
+ {
+  "i": 376,
+  "mName": "大狩猟劇【爆連】"
+ },
+ {
+  "i": 377,
+  "mName": "百花猟乱【舞】"
+ },
+ {
+  "i": 378,
+  "mName": "百花猟乱【舞闘】"
+ },
+ {
+  "i": 379,
+  "mName": "百花猟乱【爆】"
+ },
+ {
+  "i": 380,
+  "mName": "百花猟乱【爆連】"
+ },
+ {
+  "i": 381,
+  "mName": "Beast Power [Fire]"
+ },
+ {
+  "i": 382,
+  "mName": "獣力【火猿】"
+ },
+ {
+  "i": 383,
+  "mName": "Beast Power [Ice]"
+ },
+ {
+  "i": 384,
+  "mName": "獣力【氷虎】"
+ },
+ {
+  "i": 385,
+  "mName": "Beast Power [Earth]"
+ },
+ {
+  "i": 386,
+  "mName": "獣力【土蛇】"
+ },
+ {
+  "i": 387,
+  "mName": "Beast Power [Thunder]"
+ },
+ {
+  "i": 388,
+  "mName": "獣力【雷狐】"
+ },
+ {
+  "i": 389,
+  "mName": "Beast Power [Water]"
+ },
+ {
+  "i": 390,
+  "mName": "獣力【水狼】"
+ },
+ {
+  "i": 391,
+  "mName": "Sea God's Breath [Envelop]"
+ },
+ {
+  "i": 392,
+  "mName": "海神の息吹【加護】"
+ },
+ {
+  "i": 393,
+  "mName": "Flame God's Breath [Envelop]"
+ },
+ {
+  "i": 394,
+  "mName": "焔神の息吹【加護】"
+ },
+ {
+  "i": 395,
+  "mName": "氷神の息吹【包】"
+ },
+ {
+  "i": 396,
+  "mName": "氷神の息吹【加護】"
+ },
+ {
+  "i": 397,
+  "mName": "Mountain God's Breath [Envelop]"
+ },
+ {
+  "i": 398,
+  "mName": "山神の息吹【加護】"
+ },
+ {
+  "i": 399,
+  "mName": "雷神の息吹【包】"
+ },
+ {
+  "i": 400,
+  "mName": "雷神の息吹【加護】"
+ },
+ {
+  "i": 401,
+  "mName": "Vicious Mystery [Calamity]"
+ },
+ {
+  "i": 402,
+  "mName": "Vicious Mystery [Murk]"
+ },
+ {
+  "i": 403,
+  "mName": "Vicious Mystery [Intensity]"
+ },
+ {
+  "i": 404,
+  "mName": "Playing Innocent"
+ },
+ {
+  "i": 405,
+  "mName": "Pearls Before Swine"
+ },
+ {
+  "i": 406,
+  "mName": "猫だまし"
+ },
+ {
+  "i": 407,
+  "mName": "Wind King's Hammer"
+ },
+ {
+  "i": 408,
+  "mName": "Unlimited Blade Works"
+ },
+ {
+  "i": 409,
+  "mName": "Spear of Piercing Death"
+ },
+ {
+  "i": 410,
+  "mName": "Projection: Fake Spiral Sword"
+ },
+ {
+  "i": 411,
+  "mName": "Ruler of the Seven Seas"
+ },
+ {
+  "i": 412,
+  "mName": "Life Wolf [Return]"
+ },
+ {
+  "i": 413,
+  "mName": "Life Wolf [Eternity]"
+ },
+ {
+  "i": 414,
+  "mName": "Life Wolf [Ascend]"
+ },
+ {
+  "i": 415,
+  "mName": "Life Wolf [Ultimate]"
+ },
+ {
+  "i": 416,
+  "mName": "Butterfly Arc Rhythm [Wingbeat]"
+ },
+ {
+  "i": 417,
+  "mName": "Butterfly Arc Rhythm [Rock Sound]"
+ },
+ {
+  "i": 418,
+  "mName": "Butterfly Arc Rhythm [Grass Rustle]"
+ },
+ {
+  "i": 419,
+  "mName": "Butterfly Arc Rhythm [Rain Sound]"
+ },
+ {
+  "i": 420,
+  "mName": "Butterfly Arc Rhythm [Wind Sound]"
+ },
+ {
+  "i": 421,
+  "mName": "Butterfly Arc Rhythm [Flower Sound]"
+ },
+ {
+  "i": 422,
+  "mName": "Follow-Up Strike [Heavy]"
+ },
+ {
+  "i": 423,
+  "mName": "追撃【畳掛】"
+ },
+ {
+  "i": 424,
+  "mName": "Great Follow-Up Strike [Heavy]"
+ },
+ {
+  "i": 425,
+  "mName": "Great Follow-Up Strike [Rapid Barrage]"
+ },
+ {
+  "i": 426,
+  "mName": "活性【解】"
+ },
+ {
+  "i": 427,
+  "mName": "活性【克己】"
+ },
+ {
+  "i": 428,
+  "mName": "Rescue [Aid]"
+ },
+ {
+  "i": 429,
+  "mName": "救援【補翼】"
+ },
+ {
+  "i": 430,
+  "mName": "大轟令【火】"
+ },
+ {
+  "i": 431,
+  "mName": "大轟令【火輪】"
+ },
+ {
+  "i": 432,
+  "mName": "大轟令【氷】"
+ },
+ {
+  "i": 433,
+  "mName": "大轟令【氷輪】"
+ },
+ {
+  "i": 434,
+  "mName": "大轟令【土】"
+ },
+ {
+  "i": 435,
+  "mName": "大轟令【土輪】"
+ },
+ {
+  "i": 436,
+  "mName": "大轟令【雷】"
+ },
+ {
+  "i": 437,
+  "mName": "大轟令【雷輪】"
+ },
+ {
+  "i": 438,
+  "mName": "大轟令【水】"
+ },
+ {
+  "i": 439,
+  "mName": "大轟令【水輪】"
+ },
+ {
+  "i": 440,
+  "mName": "Island Crusher [Fall]"
+ },
+ {
+  "i": 441,
+  "mName": "島崩し【全壊】"
+ },
+ {
+  "i": 442,
+  "mName": "Phantom [Remnant]"
+ },
+ {
+  "i": 443,
+  "mName": "幻影【木葉】"
+ },
+ {
+  "i": 444,
+  "mName": "Hunter's Favorable Wind [Wing]"
+ },
+ {
+  "i": 445,
+  "mName": "狩気順風【翔鳥】"
+ },
+ {
+  "i": 446,
+  "mName": "本猟発揮【砕】"
+ },
+ {
+  "i": 447,
+  "mName": "本猟発揮【破砕】"
+ },
+ {
+  "i": 448,
+  "mName": "Flower Mist [Fragrance]"
+ },
+ {
+  "i": 449,
+  "mName": "花霧【朝凪】"
+ },
+ {
+  "i": 450,
+  "mName": "Great Hunting Drama [Collapse]"
+ },
+ {
+  "i": 451,
+  "mName": "Great Hunting Drama [Destruction]"
+ },
+ {
+  "i": 452,
+  "mName": "3D Maneuver [Surprise Attack]"
+ },
+ {
+  "i": 453,
+  "mName": "Hit-and-Run Tactics [Counterattack]"
+ },
+ {
+  "i": 454,
+  "mName": "Butterfly Arc Rhythm [Heartbeat]"
+ },
+ {
+  "i": 455,
+  "mName": "War Hell [Black Chalice]"
+ },
+ {
+  "i": 456,
+  "mName": "War Hell [Bewitching Ruin]"
+ },
+ {
+  "i": 457,
+  "mName": "War Hell [Mad Melody]"
+ },
+ {
+  "i": 458,
+  "mName": "War Hell [Demon's Tear]"
+ },
+ {
+  "i": 459,
+  "mName": "War Hell [Tyrant King]"
+ },
+ {
+  "i": 460,
+  "mName": "War Hell [Burning Wing]"
+ },
+ {
+  "i": 461,
+  "mName": "War Hell [Thousand Grudges]"
+ },
+ {
+  "i": 462,
+  "mName": "Nether Crystal [Blade Wheel]"
+ },
+ {
+  "i": 463,
+  "mName": "Nether Crystal [Dark Abyss]"
+ },
+ {
+  "i": 464,
+  "mName": "Nether Crystal [Tearflame]"
+ },
+ {
+  "i": 465,
+  "mName": "Nether Crystal [Dragon Spiral]"
+ },
+ {
+  "i": 466,
+  "mName": "Nether Crystal [Woodwheel]"
+ },
+ {
+  "i": 467,
+  "mName": "Nether Crystal [Root Annihilation]"
+ },
+ {
+  "i": 468,
+  "mName": "Nether Crystal [Endurance]"
+ },
+ {
+  "i": 469,
+  "mName": "I Mustn't Run Away...!"
+ },
+ {
+  "i": 470,
+  "mName": "Are You Stupid?"
+ },
+ {
+  "i": 471,
+  "mName": "Now, It's Time for the Promise"
+ },
+ {
+  "i": 472,
+  "mName": "You Will Not Die"
+ },
+ {
+  "i": 473,
+  "mName": "Raging Watermelon Splitting"
+ },
+ {
+  "i": 474,
+  "mName": "Light-Speed Watermelon Seed Spitting"
+ },
+ {
+  "i": 475,
+  "mName": "抗毒防壁【衛】"
+ },
+ {
+  "i": 476,
+  "mName": "抗毒防壁【銀楼】"
+ },
+ {
+  "i": 477,
+  "mName": "抗電防壁【衛】"
+ },
+ {
+  "i": 478,
+  "mName": "抗電防壁【銀楼】"
+ },
+ {
+  "i": 479,
+  "mName": "Water-Resistant Barrier [Guard]"
+ },
+ {
+  "i": 480,
+  "mName": "抗水防壁【銀楼】"
+ },
+ {
+  "i": 481,
+  "mName": "Restoration [Mend]"
+ },
+ {
+  "i": 482,
+  "mName": "復元【建直】"
+ },
+ {
+  "i": 483,
+  "mName": "Mighty Strike [Fire]"
+ },
+ {
+  "i": 484,
+  "mName": "剛撃【火熊】"
+ },
+ {
+  "i": 485,
+  "mName": "Mighty Strike [Ice]"
+ },
+ {
+  "i": 486,
+  "mName": "剛撃【氷鯨】"
+ },
+ {
+  "i": 487,
+  "mName": "剛撃【土】"
+ },
+ {
+  "i": 488,
+  "mName": "剛撃【土鰐】"
+ },
+ {
+  "i": 489,
+  "mName": "剛撃【雷】"
+ },
+ {
+  "i": 490,
+  "mName": "剛撃【雷象】"
+ },
+ {
+  "i": 491,
+  "mName": "Mighty Strike [Water]"
+ },
+ {
+  "i": 492,
+  "mName": "剛撃【水犀】"
+ },
+ {
+  "i": 493,
+  "mName": "The Way of the Hunt [Martial]"
+ },
+ {
+  "i": 494,
+  "mName": "The Way of the Hunt [Origin]"
+ },
+ {
+  "i": 495,
+  "mName": "Flesh Offering [Crimson]"
+ },
+ {
+  "i": 496,
+  "mName": "身削ぎ【咲乱】"
+ },
+ {
+  "i": 497,
+  "mName": "All-Out Hunter [Run]"
+ },
+ {
+  "i": 498,
+  "mName": "全力狩人【疾走】"
+ },
+ {
+  "i": 499,
+  "mName": "練気功【丹】"
+ },
+ {
+  "i": 500,
+  "mName": "練気功【仙道】"
+ },
+ {
+  "i": 501,
+  "mName": "静流の構え【空】"
+ },
+ {
+  "i": 502,
+  "mName": "静流の構え【涼風】"
+ },
+ {
+  "i": 503,
+  "mName": "Heavenly Power [Vessel]"
+ },
+ {
+  "i": 504,
+  "mName": "Heavenly Power [Gift]"
+ },
+ {
+  "i": 505,
+  "mName": "獅子奮迅【雄】"
+ },
+ {
+  "i": 506,
+  "mName": "獅子奮迅【不敵】"
+ },
+ {
+  "i": 507,
+  "mName": "Ashura [Demon]"
+ },
+ {
+  "i": 508,
+  "mName": "Ashura [Battle Demon]"
+ },
+ {
+  "i": 509,
+  "mName": "Prison Scale [Lantern]"
+ },
+ {
+  "i": 510,
+  "mName": "獄鱗【龍燈】"
+ },
+ {
+  "i": 511,
+  "mName": "覚醒【器】"
+ },
+ {
+  "i": 512,
+  "mName": "覚醒【天賦】"
+ },
+ {
+  "i": 513,
+  "mName": "Ray of Light [Flash]"
+ },
+ {
+  "i": 514,
+  "mName": "光芒【天川】"
+ },
+ {
+  "i": 515,
+  "mName": "神力【迦】"
+ },
+ {
+  "i": 516,
+  "mName": "神力【天照】"
+ },
+ {
+  "i": 517,
+  "mName": "狩矢倉【郭】"
+ },
+ {
+  "i": 518,
+  "mName": "狩矢倉【絶郭】"
+ },
+ {
+  "i": 519,
+  "mName": "One-Strike Fang [Wolf]"
+ },
+ {
+  "i": 520,
+  "mName": "一撃牙【白狼】"
+ },
+ {
+  "i": 521,
+  "mName": "三刻爪【獣】"
+ },
+ {
+  "i": 522,
+  "mName": "三刻爪【闇獣】"
+ },
+ {
+  "i": 523,
+  "mName": "抗痺防壁【衛】"
+ },
+ {
+  "i": 524,
+  "mName": "抗痺防壁【銀楼】"
+ },
+ {
+  "i": 525,
+  "mName": "胆力【気】"
+ },
+ {
+  "i": 526,
+  "mName": "胆力【肝魂】"
+ },
+ {
+  "i": 527,
+  "mName": "Hundredfold Spray [Fire]"
+ },
+ {
+  "i": 528,
+  "mName": "百噴き【火祭】"
+ },
+ {
+  "i": 529,
+  "mName": "百噴き【氷】"
+ },
+ {
+  "i": 530,
+  "mName": "百噴き【氷棘】"
+ },
+ {
+  "i": 531,
+  "mName": "百噴き【土】"
+ },
+ {
+  "i": 532,
+  "mName": "百噴き【土礫】"
+ },
+ {
+  "i": 533,
+  "mName": "Hundredfold Spray [Thunder]"
+ },
+ {
+  "i": 534,
+  "mName": "百噴き【雷波】"
+ },
+ {
+  "i": 535,
+  "mName": "百噴き【水】"
+ },
+ {
+  "i": 536,
+  "mName": "百噴き【水沫】"
+ },
+ {
+  "i": 537,
+  "mName": "千咲き【火】"
+ },
+ {
+  "i": 538,
+  "mName": "千咲き【火桜】"
+ },
+ {
+  "i": 539,
+  "mName": "千咲き【氷】"
+ },
+ {
+  "i": 540,
+  "mName": "千咲き【氷蓮】"
+ },
+ {
+  "i": 541,
+  "mName": "千咲き【土】"
+ },
+ {
+  "i": 542,
+  "mName": "千咲き【土藤】"
+ },
+ {
+  "i": 543,
+  "mName": "千咲き【雷】"
+ },
+ {
+  "i": 544,
+  "mName": "千咲き【雷蘭】"
+ },
+ {
+  "i": 545,
+  "mName": "千咲き【水】"
+ },
+ {
+  "i": 546,
+  "mName": "千咲き【水菊】"
+ },
+ {
+  "i": 547,
+  "mName": "天恵【虹回廊】"
+ },
+ {
+  "i": 548,
+  "mName": "Undying Hunter's Soul [Slash]"
+ },
+ {
+  "i": 549,
+  "mName": "Undying Hunter's Soul [Mighty Slash]"
+ },
+ {
+  "i": 550,
+  "mName": "大狩猟劇【斬】"
+ },
+ {
+  "i": 551,
+  "mName": "大狩猟劇【豪斬】"
+ },
+ {
+  "i": 552,
+  "mName": "百花猟乱【斬】"
+ },
+ {
+  "i": 553,
+  "mName": "百花猟乱【豪斬】"
+ },
+ {
+  "i": 554,
+  "mName": "True Hunter's Power [Skill]"
+ },
+ {
+  "i": 555,
+  "mName": "True Hunter's Power [Technique]"
+ },
+ {
+  "i": 556,
+  "mName": "狩魂不滅【巧】"
+ },
+ {
+  "i": 557,
+  "mName": "狩魂不滅【技巧】"
+ },
+ {
+  "i": 558,
+  "mName": "大狩猟劇【巧】"
+ },
+ {
+  "i": 559,
+  "mName": "大狩猟劇【技巧】"
+ },
+ {
+  "i": 560,
+  "mName": "百花猟乱【巧】"
+ },
+ {
+  "i": 561,
+  "mName": "百花猟乱【技巧】"
+ },
+ {
+  "i": 562,
+  "mName": "大狩猟劇【護】"
+ },
+ {
+  "i": 563,
+  "mName": "大狩猟劇【狩護】"
+ },
+ {
+  "i": 564,
+  "mName": "百花猟乱【護】"
+ },
+ {
+  "i": 565,
+  "mName": "百花猟乱【狩護】"
+ },
+ {
+  "i": 566,
+  "mName": "百花猟乱【崩】"
+ },
+ {
+  "i": 567,
+  "mName": "百花猟乱【崩塊】"
+ },
+ {
+  "i": 568,
+  "mName": "Great Hunting Drama [Pierce]"
+ },
+ {
+  "i": 569,
+  "mName": "大狩猟劇【穿岩】"
+ },
+ {
+  "i": 570,
+  "mName": "Wildflower Hunt [Pierce]"
+ },
+ {
+  "i": 571,
+  "mName": "百花猟乱【穿岩】"
+ },
+ {
+  "i": 572,
+  "mName": "Great Hunting Drama [Roar]"
+ },
+ {
+  "i": 573,
+  "mName": "大狩猟劇【轟爆】"
+ },
+ {
+  "i": 574,
+  "mName": "百花猟乱【轟】"
+ },
+ {
+  "i": 575,
+  "mName": "百花猟乱【轟爆】"
+ },
+ {
+  "i": 576,
+  "mName": "Great Hunting Drama [Rend]"
+ },
+ {
+  "i": 577,
+  "mName": "Great Hunting Drama [Rending Wave]"
+ },
+ {
+  "i": 578,
+  "mName": "百花猟乱【裂】"
+ },
+ {
+  "i": 579,
+  "mName": "百花猟乱【裂波】"
+ },
+ {
+  "i": 580,
+  "mName": "Great Hunting Drama [Dash]"
+ },
+ {
+  "i": 581,
+  "mName": "Great Hunting Drama [Skydash]"
+ },
+ {
+  "i": 582,
+  "mName": "Wildflower Hunt [Dash]"
+ },
+ {
+  "i": 583,
+  "mName": "Wildflower Hunt [Skydash]"
+ },
+ {
+  "i": 584,
+  "mName": "狩魂不滅【幻】"
+ },
+ {
+  "i": 585,
+  "mName": "狩魂不滅【変幻】"
+ },
+ {
+  "i": 586,
+  "mName": "大狩猟劇【幻】"
+ },
+ {
+  "i": 587,
+  "mName": "大狩猟劇【変幻】"
+ },
+ {
+  "i": 588,
+  "mName": "百花猟乱【幻】"
+ },
+ {
+  "i": 589,
+  "mName": "百花猟乱【変幻】"
+ },
+ {
+  "i": 590,
+  "mName": "True Hunter's Power [Melody]"
+ },
+ {
+  "i": 591,
+  "mName": "True Hunter's Power [Passionate Melody]"
+ },
+ {
+  "i": 592,
+  "mName": "狩魂不滅【奏】"
+ },
+ {
+  "i": 593,
+  "mName": "狩魂不滅【熱奏】"
+ },
+ {
+  "i": 594,
+  "mName": "大狩猟劇【奏】"
+ },
+ {
+  "i": 595,
+  "mName": "大狩猟劇【熱奏】"
+ },
+ {
+  "i": 596,
+  "mName": "百花猟乱【奏】"
+ },
+ {
+  "i": 597,
+  "mName": "百花猟乱【熱奏】"
+ },
+ {
+  "i": 598,
+  "mName": "Undying Hunter's Soul [Crush]"
+ },
+ {
+  "i": 599,
+  "mName": "Undying Hunter's Soul [Shatter]"
+ },
+ {
+  "i": 600,
+  "mName": "大狩猟劇【砕】"
+ },
+ {
+  "i": 601,
+  "mName": "大狩猟劇【破砕】"
+ },
+ {
+  "i": 602,
+  "mName": "百花猟乱【砕】"
+ },
+ {
+  "i": 603,
+  "mName": "百花猟乱【破砕】"
+ },
+ {
+  "i": 604,
+  "mName": "Cutting Off the Tail, That's My Job!"
+ },
+ {
+  "i": 605,
+  "mName": "Change Immortal"
+ },
+ {
+  "i": 606,
+  "mName": "Earth Spirit Blade"
+ },
+ {
+  "i": 607,
+  "mName": "Chain Technique [Heavy]"
+ },
+ {
+  "i": 608,
+  "mName": "Chain Technique [Dream Layer]"
+ },
+ {
+  "i": 609,
+  "mName": "連術【袷】"
+ },
+ {
+  "i": 610,
+  "mName": "連術【影袷】"
+ },
+ {
+  "i": 611,
+  "mName": "連術【響】"
+ },
+ {
+  "i": 612,
+  "mName": "連術【玉響】"
+ },
+ {
+  "i": 613,
+  "mName": "狩猟本能【操】"
+ },
+ {
+  "i": 614,
+  "mName": "狩猟本能【操龍】"
+ },
+ {
+  "i": 615,
+  "mName": "本猟発揮【操】"
+ },
+ {
+  "i": 616,
+  "mName": "本猟発揮【操龍】"
+ },
+ {
+  "i": 617,
+  "mName": "狩魂不滅【操】"
+ },
+ {
+  "i": 618,
+  "mName": "狩魂不滅【操龍】"
+ },
+ {
+  "i": 619,
+  "mName": "大狩猟劇【操】"
+ },
+ {
+  "i": 620,
+  "mName": "大狩猟劇【操龍】"
+ },
+ {
+  "i": 621,
+  "mName": "百花猟乱【操】"
+ },
+ {
+  "i": 622,
+  "mName": "百花猟乱【操龍】"
+ },
+ {
+  "i": 623,
+  "mName": "Chivalry [War God]"
+ },
+ {
+  "i": 624,
+  "mName": "Chivalry [Fortitude]"
+ },
+ {
+  "i": 625,
+  "mName": "Chivalry [Noble Heart]"
+ },
+ {
+  "i": 626,
+  "mName": "Chivalry [Loyalty]"
+ },
+ {
+  "i": 627,
+  "mName": "Chivalry [Ocean Expanse]"
+ },
+ {
+  "i": 628,
+  "mName": "Chivalry [Compassion]"
+ },
+ {
+  "i": 629,
+  "mName": "Chivalry [Courtesy]"
+ },
+ {
+  "i": 630,
+  "mName": "Chivalry [Sublimity]"
+ },
+ {
+  "i": 631,
+  "mName": "Chivalry [Faith]"
+ },
+ {
+  "i": 632,
+  "mName": "Chivalry [Unyielding]"
+ },
+ {
+  "i": 633,
+  "mName": "Chivalry [Justice]"
+ },
+ {
+  "i": 634,
+  "mName": "原始の鉄槌【巨星】"
+ },
+ {
+  "i": 635,
+  "mName": "原始の鉄槌【超巨星】"
+ },
+ {
+  "i": 636,
+  "mName": "Ultimate Shooting Star [Myriad]"
+ },
+ {
+  "i": 637,
+  "mName": "Ultimate Shooting Star [Countless Millions]"
+ },
+ {
+  "i": 638,
+  "mName": "Thunder Scale [Armored Cage]"
+ },
+ {
+  "i": 639,
+  "mName": "Thunder Scale [Sevenfold Armored Cage]"
+ },
+ {
+  "i": 640,
+  "mName": "Ice and Snow Lance [Ages]"
+ },
+ {
+  "i": 641,
+  "mName": "Ice and Snow Lance [Ageless Claw]"
+ },
+ {
+  "i": 642,
+  "mName": "乱れ氷扇【十重】"
+ },
+ {
+  "i": 643,
+  "mName": "乱れ氷扇【二十重】"
+ },
+ {
+  "i": 644,
+  "mName": "氷牙封龍【逆咲】"
+ },
+ {
+  "i": 645,
+  "mName": "氷牙封龍【逆咲蕾】"
+ },
+ {
+  "i": 646,
+  "mName": "瀑水球【砲王】"
+ },
+ {
+  "i": 647,
+  "mName": "瀑水球【砲王騎】"
+ },
+ {
+  "i": 648,
+  "mName": "炎龍花火【翼園】"
+ },
+ {
+  "i": 649,
+  "mName": "炎龍花火【金翼園】"
+ },
+ {
+  "i": 650,
+  "mName": "荒ぶる暴火【狂鳳】"
+ },
+ {
+  "i": 651,
+  "mName": "荒ぶる暴火【狂鳳伏】"
+ },
+ {
+  "i": 652,
+  "mName": "月砕きの角【掌】"
+ },
+ {
+  "i": 653,
+  "mName": "月砕きの角【穿掌】"
+ },
+ {
+  "i": 654,
+  "mName": "月砕きの角【天限掌】"
+ },
+ {
+  "i": 655,
+  "mName": "爆ぜ燃ゆる角【掌】"
+ },
+ {
+  "i": 656,
+  "mName": "爆ぜ燃ゆる角【穿掌】"
+ },
+ {
+  "i": 657,
+  "mName": "爆ぜ燃ゆる角【天限掌】"
+ },
+ {
+  "i": 658,
+  "mName": "焦げ凍える角【掌】"
+ },
+ {
+  "i": 659,
+  "mName": "焦げ凍える角【穿掌】"
+ },
+ {
+  "i": 660,
+  "mName": "焦げ凍える角【天限掌】"
+ },
+ {
+  "i": 661,
+  "mName": "Heaven-and-Earth-Splitting Horn [Palm]"
+ },
+ {
+  "i": 662,
+  "mName": "天地割く角【穿掌】"
+ },
+ {
+  "i": 663,
+  "mName": "天地割く角【天限掌】"
+ },
+ {
+  "i": 664,
+  "mName": "Blue Roaring Horn [Palm]"
+ },
+ {
+  "i": 665,
+  "mName": "蒼き轟の角【穿掌】"
+ },
+ {
+  "i": 666,
+  "mName": "蒼き轟の角【天限掌】"
+ },
+ {
+  "i": 667,
+  "mName": "朧に霞む角【掌】"
+ },
+ {
+  "i": 668,
+  "mName": "朧に霞む角【穿掌】"
+ },
+ {
+  "i": 669,
+  "mName": "朧に霞む角【天限掌】"
+ },
+ {
+  "i": 670,
+  "mName": "吃驚仰天【覚】"
+ },
+ {
+  "i": 671,
+  "mName": "吃驚仰天【開帳】"
+ },
+ {
+  "i": 672,
+  "mName": "Critical Arts: Vega"
+ },
+ {
+  "i": 673,
+  "mName": "Psycho Inferno"
+ },
+ {
+  "i": 674,
+  "mName": "Model 12 Rumbling Engine [Sky Weave]"
+ },
+ {
+  "i": 675,
+  "mName": "Model 12 Rumbling Engine [Subjugation]"
+ },
+ {
+  "i": 676,
+  "mName": "Model 12 Rumbling Engine [Hatch]"
+ },
+ {
+  "i": 677,
+  "mName": "Model 12 Rumbling Engine [Nine Hares]"
+ },
+ {
+  "i": 678,
+  "mName": "Model 12 Rumbling Engine [Curtain Cut]"
+ },
+ {
+  "i": 679,
+  "mName": "Model 12 Rumbling Engine [Cruel Claw]"
+ },
+ {
+  "i": 680,
+  "mName": "Model 12 Rumbling Engine [Dream String]"
+ },
+ {
+  "i": 681,
+  "mName": "Model 12 Rumbling Engine [Gnashing]"
+ },
+ {
+  "i": 682,
+  "mName": "Model 12 Rumbling Engine [Phantom Rig]"
+ },
+ {
+  "i": 683,
+  "mName": "不屈の魂【鋼】"
+ },
+ {
+  "i": 684,
+  "mName": "不屈の魂【鉄衣】"
+ },
+ {
+  "i": 685,
+  "mName": "羅刹【業】"
+ },
+ {
+  "i": 686,
+  "mName": "羅刹【劫火】"
+ },
+ {
+  "i": 687,
+  "mName": "炎鱗【鎧籠】"
+ },
+ {
+  "i": 688,
+  "mName": "炎鱗【七鎧籠】"
+ },
+ {
+  "i": 689,
+  "mName": "氷鱗【鎧籠】"
+ },
+ {
+  "i": 690,
+  "mName": "氷鱗【七鎧籠】"
+ },
+ {
+  "i": 691,
+  "mName": "岩鱗【鎧籠】"
+ },
+ {
+  "i": 692,
+  "mName": "岩鱗【七鎧籠】"
+ },
+ {
+  "i": 693,
+  "mName": "水鱗【鎧籠】"
+ },
+ {
+  "i": 694,
+  "mName": "水鱗【七鎧籠】"
+ },
+ {
+  "i": 695,
+  "mName": "獄炎槍【幾世】"
+ },
+ {
+  "i": 696,
+  "mName": "獄炎槍【幾世爪】"
+ },
+ {
+  "i": 697,
+  "mName": "黒耀槍【幾世】"
+ },
+ {
+  "i": 698,
+  "mName": "黒耀槍【幾世爪】"
+ },
+ {
+  "i": 699,
+  "mName": "天雷槍【幾世】"
+ },
+ {
+  "i": 700,
+  "mName": "天雪槍【幾世爪】"
+ },
+ {
+  "i": 701,
+  "mName": "叢雨槍【幾世】"
+ },
+ {
+  "i": 702,
+  "mName": "叢雨槍【幾世爪】"
+ },
+ {
+  "i": 703,
+  "mName": "灼熱球【砲王】"
+ },
+ {
+  "i": 704,
+  "mName": "灼熱球【砲王騎】"
+ },
+ {
+  "i": 705,
+  "mName": "氷晶球【砲王】"
+ },
+ {
+  "i": 706,
+  "mName": "氷晶球【砲王騎】"
+ },
+ {
+  "i": 707,
+  "mName": "岩山球【砲王】"
+ },
+ {
+  "i": 708,
+  "mName": "岩山球【砲王騎】"
+ },
+ {
+  "i": 709,
+  "mName": "雷光球【砲王】"
+ },
+ {
+  "i": 710,
+  "mName": "雷光球【砲王騎】"
+ },
+ {
+  "i": 711,
+  "mName": "凍てつく暴氷【狂鳳】"
+ },
+ {
+  "i": 712,
+  "mName": "凍てつく暴氷【狂鳳伏】"
+ },
+ {
+  "i": 713,
+  "mName": "震わす暴土【狂鳳】"
+ },
+ {
+  "i": 714,
+  "mName": "震わす暴土【狂鳳伏】"
+ },
+ {
+  "i": 715,
+  "mName": "渦巻く暴雷【狂鳳】"
+ },
+ {
+  "i": 716,
+  "mName": "渦巻く暴雷【狂鳳伏】"
+ },
+ {
+  "i": 717,
+  "mName": "沸き立つ暴水【狂鳳】"
+ },
+ {
+  "i": 718,
+  "mName": "沸き立つ暴水【狂鳳伏】"
+ },
+ {
+  "i": 719,
+  "mName": "Wyvern Takedown [Solitary Peak]"
+ },
+ {
+  "i": 720,
+  "mName": "海竜轟沈【孤峰】"
+ },
+ {
+  "i": 721,
+  "mName": "魚竜爆釣【孤峰】"
+ },
+ {
+  "i": 722,
+  "mName": "牙竜粉砕【孤峰】"
+ },
+ {
+  "i": 723,
+  "mName": "獣竜斬破【孤峰】"
+ },
+ {
+  "i": 724,
+  "mName": "Elder Dragon Annihilator [Solitary Peak]"
+ },
+ {
+  "i": 725,
+  "mName": "鳥竜殲滅【孤峰】"
+ },
+ {
+  "i": 726,
+  "mName": "牙獣猛打【孤峰】"
+ },
+ {
+  "i": 727,
+  "mName": "Phantom Beast [Kirin]"
+ },
+ {
+  "i": 728,
+  "mName": "Phantom Beast [Towering Arc]"
+ },
+ {
+  "i": 729,
+  "mName": "Phantom Beast [Flame Steed]"
+ },
+ {
+  "i": 730,
+  "mName": "Phantom Beast [Nether Seeker]"
+ },
+ {
+  "i": 731,
+  "mName": "Phantom Beast [Kakutan]"
+ },
+ {
+  "i": 732,
+  "mName": "Phantom Beast [Azure Horn]"
+ },
+ {
+  "i": 733,
+  "mName": "Blazing Storm"
+ },
+ {
+  "i": 734,
+  "mName": "Innocent Glow"
+ },
+ {
+  "i": 735,
+  "mName": "Shining Nova"
+ },
+ {
+  "i": 736,
+  "mName": "Heaven's Judgment"
+ },
+ {
+  "i": 737,
+  "mName": "Roaring Tiger [Gatekeeper]"
+ },
+ {
+  "i": 738,
+  "mName": "Roaring Tiger [Four Bears]"
+ },
+ {
+  "i": 739,
+  "mName": "Roaring Tiger [White Hawk]"
+ },
+ {
+  "i": 740,
+  "mName": "Roaring Tiger [Ninefold]"
+ },
+ {
+  "i": 741,
+  "mName": "Roaring Tiger [Demon Realm]"
+ },
+ {
+  "i": 742,
+  "mName": "Roaring Tiger [Thunder and Lightning]"
+ },
+ {
+  "i": 743,
+  "mName": "Roaring Tiger [Zenith]"
+ },
+ {
+  "i": 744,
+  "mName": "Roaring Tiger [Thousand Koku]"
+ },
+ {
+  "i": 745,
+  "mName": "Scorching Heat [First Flame]"
+ },
+ {
+  "i": 746,
+  "mName": "Scorching Heat [Eternal Flame]"
+ },
+ {
+  "i": 747,
+  "mName": "Scorching Heat [Eon Flame]"
+ },
+ {
+  "i": 748,
+  "mName": "Scorching Heat [Endless Flame]"
+ },
+ {
+  "i": 749,
+  "mName": "Scorching Heat [Lasting Flame]"
+ },
+ {
+  "i": 750,
+  "mName": "Scorching Heat [Ultimate Flame]"
+ },
+ {
+  "i": 751,
+  "mName": "Hunter's Tale [Sea Princess]"
+ },
+ {
+  "i": 752,
+  "mName": "Hunter's Tale [Cinder Princess]"
+ },
+ {
+  "i": 753,
+  "mName": "Hunter's Tale [Three Pigs]"
+ },
+ {
+  "i": 754,
+  "mName": "Hunter's Tale [Snow Princess]"
+ },
+ {
+  "i": 755,
+  "mName": "Hunter's Tale [Swan]"
+ },
+ {
+  "i": 756,
+  "mName": "Hunter's Tale [Frog King]"
+ },
+ {
+  "i": 757,
+  "mName": "Hunter's Tale [Red Hood]"
+ },
+ {
+  "i": 758,
+  "mName": "爆弾小僧【煩】"
+ },
+ {
+  "i": 759,
+  "mName": "爆弾小僧【煩夢】"
+ },
+ {
+  "i": 760,
+  "mName": "猟風一陣【斬】"
+ },
+ {
+  "i": 761,
+  "mName": "猟風一陣【豪斬】"
+ },
+ {
+  "i": 762,
+  "mName": "猟風一陣【巧】"
+ },
+ {
+  "i": 763,
+  "mName": "猟風一陣【技巧】"
+ },
+ {
+  "i": 764,
+  "mName": "猟風一陣【護】"
+ },
+ {
+  "i": 765,
+  "mName": "猟風一陣【狩護】"
+ },
+ {
+  "i": 766,
+  "mName": "猟風一陣【崩】"
+ },
+ {
+  "i": 767,
+  "mName": "猟風一陣【崩塊】"
+ },
+ {
+  "i": 768,
+  "mName": "猟風一陣【穿】"
+ },
+ {
+  "i": 769,
+  "mName": "猟風一陣【穿岩】"
+ },
+ {
+  "i": 770,
+  "mName": "猟風一陣【轟】"
+ },
+ {
+  "i": 771,
+  "mName": "猟風一陣【轟爆】"
+ },
+ {
+  "i": 772,
+  "mName": "猟風一陣【舞】"
+ },
+ {
+  "i": 773,
+  "mName": "猟風一陣【舞闘】"
+ },
+ {
+  "i": 774,
+  "mName": "猟風一陣【裂】"
+ },
+ {
+  "i": 775,
+  "mName": "猟風一陣【裂波】"
+ },
+ {
+  "i": 776,
+  "mName": "猟風一陣【駆】"
+ },
+ {
+  "i": 777,
+  "mName": "猟風一陣【天駆】"
+ },
+ {
+  "i": 778,
+  "mName": "猟風一陣【幻】"
+ },
+ {
+  "i": 779,
+  "mName": "猟風一陣【変幻】"
+ },
+ {
+  "i": 780,
+  "mName": "猟風一陣【爆】"
+ },
+ {
+  "i": 781,
+  "mName": "猟風一陣【爆連】"
+ },
+ {
+  "i": 782,
+  "mName": "猟風一陣【奏】"
+ },
+ {
+  "i": 783,
+  "mName": "猟風一陣【熱奏】"
+ },
+ {
+  "i": 784,
+  "mName": "猟風一陣【砕】"
+ },
+ {
+  "i": 785,
+  "mName": "猟風一陣【破砕】"
+ },
+ {
+  "i": 786,
+  "mName": "猟風一陣【操】"
+ },
+ {
+  "i": 787,
+  "mName": "猟風一陣【操龍】"
+ },
+ {
+  "i": 788,
+  "mName": "一刀猟断【斬】"
+ },
+ {
+  "i": 789,
+  "mName": "一刀猟断【豪斬】"
+ },
+ {
+  "i": 790,
+  "mName": "一刀猟断【巧】"
+ },
+ {
+  "i": 791,
+  "mName": "一刀猟断【技巧】"
+ },
+ {
+  "i": 792,
+  "mName": "一刀猟断【護】"
+ },
+ {
+  "i": 793,
+  "mName": "一刀猟断【狩護】"
+ },
+ {
+  "i": 794,
+  "mName": "一刀猟断【崩】"
+ },
+ {
+  "i": 795,
+  "mName": "一刀猟断【崩塊】"
+ },
+ {
+  "i": 796,
+  "mName": "一刀猟断【穿】"
+ },
+ {
+  "i": 797,
+  "mName": "一刀猟断【穿岩】"
+ },
+ {
+  "i": 798,
+  "mName": "一刀猟断【轟】"
+ },
+ {
+  "i": 799,
+  "mName": "一刀猟断【轟爆】"
+ },
+ {
+  "i": 800,
+  "mName": "一刀猟断【舞】"
+ },
+ {
+  "i": 801,
+  "mName": "一刀猟断【舞闘】"
+ },
+ {
+  "i": 802,
+  "mName": "一刀猟断【裂】"
+ },
+ {
+  "i": 803,
+  "mName": "一刀猟断【裂波】"
+ },
+ {
+  "i": 804,
+  "mName": "一刀猟断【駆】"
+ },
+ {
+  "i": 805,
+  "mName": "一刀猟断【天駆】"
+ },
+ {
+  "i": 806,
+  "mName": "一刀猟断【幻】"
+ },
+ {
+  "i": 807,
+  "mName": "一刀猟断【変幻】"
+ },
+ {
+  "i": 808,
+  "mName": "一刀猟断【爆】"
+ },
+ {
+  "i": 809,
+  "mName": "一刀猟断【爆連】"
+ },
+ {
+  "i": 810,
+  "mName": "一刀猟断【奏】"
+ },
+ {
+  "i": 811,
+  "mName": "一刀猟断【熱奏】"
+ },
+ {
+  "i": 812,
+  "mName": "一刀猟断【砕】"
+ },
+ {
+  "i": 813,
+  "mName": "一刀猟断【破砕】"
+ },
+ {
+  "i": 814,
+  "mName": "一刀猟断【操】"
+ },
+ {
+  "i": 815,
+  "mName": "一刀猟断【操龍】"
+ },
+ {
+  "i": 816,
+  "mName": "Merry Christmas"
+ },
+ {
+  "i": 817,
+  "mName": "Christmas Present"
+ },
+ {
+  "i": 818,
+  "mName": "1 Hunt, 2 Barrel, 3 Raw Meat"
+ },
+ {
+  "i": 819,
+  "mName": "Scorching Heat [Infinite Flame]"
+ },
+ {
+  "i": 820,
+  "mName": "Scorching Heat [Deep Flame]"
+ },
+ {
+  "i": 821,
+  "mName": "Scorching Heat [Ancient Flame]"
+ },
+ {
+  "i": 822,
+  "mName": "Objection!"
+ },
+ {
+  "i": 823,
+  "mName": "When It Counts, I Deliver!"
+ },
+ {
+  "i": 824,
+  "mName": "Catch My Love...!"
+ },
+ {
+  "i": 825,
+  "mName": "I Was Watching You Sleep"
+ },
+ {
+  "i": 826,
+  "mName": "Mechanical Contraption [Steam Slash]"
+ },
+ {
+  "i": 827,
+  "mName": "Mechanical Contraption [Heat Surge]"
+ },
+ {
+  "i": 828,
+  "mName": "Mechanical Contraption [Scorch Grip]"
+ },
+ {
+  "i": 829,
+  "mName": "Mechanical Contraption [Gear]"
+ },
+ {
+  "i": 830,
+  "mName": "Mechanical Contraption [Fine Craft]"
+ },
+ {
+  "i": 831,
+  "mName": "Mechanical Contraption [Rust Wing]"
+ },
+ {
+  "i": 832,
+  "mName": "Mechanical Contraption [Air Tube]"
+ },
+ {
+  "i": 833,
+  "mName": "Thousand Blades [Seven Stars]"
+ },
+ {
+  "i": 834,
+  "mName": "Thousand Blades [Iwatoshi]"
+ },
+ {
+  "i": 835,
+  "mName": "Thousand Blades [Onikiri]"
+ },
+ {
+  "i": 836,
+  "mName": "Thousand Blades [Kusanagi]"
+ },
+ {
+  "i": 837,
+  "mName": "Thousand Blades [Kagemitsu]"
+ },
+ {
+  "i": 838,
+  "mName": "Thousand Blades [Hotarumaru]"
+ },
+ {
+  "i": 839,
+  "mName": "Thousand Blades [Totsuka]"
+ },
+ {
+  "i": 840,
+  "mName": "Thousand Blades [Muramasa]"
+ },
+ {
+  "i": 841,
+  "mName": "Thousand Blades [Raikiri]"
+ },
+ {
+  "i": 842,
+  "mName": "Thousand Blades [Kotetsu]"
+ },
+ {
+  "i": 843,
+  "mName": "闘志解放【熱】"
+ },
+ {
+  "i": 844,
+  "mName": "闘志解放【情炎】"
+ },
+ {
+  "i": 845,
+  "mName": "剛転術【廻】"
+ },
+ {
+  "i": 846,
+  "mName": "剛転術【廻遁】"
+ },
+ {
+  "i": 847,
+  "mName": "休転術【廻】"
+ },
+ {
+  "i": 848,
+  "mName": "休転術【廻遁】"
+ },
+ {
+  "i": 849,
+  "mName": "撃衝【薙】"
+ },
+ {
+  "i": 850,
+  "mName": "撃衝【墓薙】"
+ },
+ {
+  "i": 851,
+  "mName": "風林火山【舞】"
+ },
+ {
+  "i": 852,
+  "mName": "風林火山【舞闘】"
+ },
+ {
+  "i": 853,
+  "mName": "風林火山【裂】"
+ },
+ {
+  "i": 854,
+  "mName": "風林火山【裂波】"
+ },
+ {
+  "i": 855,
+  "mName": "風林火山【爆】"
+ },
+ {
+  "i": 856,
+  "mName": "風林火山【爆連】"
+ },
+ {
+  "i": 857,
+  "mName": "風林火山【奏】"
+ },
+ {
+  "i": 858,
+  "mName": "風林火山【熱奏】"
+ },
+ {
+  "i": 859,
+  "mName": "Wind Soar [Ice Dust]"
+ },
+ {
+  "i": 860,
+  "mName": "Wind Soar [Thin Ice]"
+ },
+ {
+  "i": 861,
+  "mName": "Wind Soar [Frost-Coated Trees]"
+ },
+ {
+  "i": 862,
+  "mName": "Wind Soar [Ice Forest]"
+ },
+ {
+  "i": 863,
+  "mName": "Wind Soar [Ice Blossom]"
+ },
+ {
+  "i": 864,
+  "mName": "Wind Soar [Fine Ice]"
+ },
+ {
+  "i": 865,
+  "mName": "Wind Soar [Rime Frost]"
+ },
+ {
+  "i": 866,
+  "mName": "Wind Soar [Hanging Icicle]"
+ },
+ {
+  "i": 867,
+  "mName": "Wind Soar [Ice Sky]"
+ },
+ {
+  "i": 868,
+  "mName": "覇気解放【撃】"
+ },
+ {
+  "i": 869,
+  "mName": "覇気解放【練撃】"
+ },
+ {
+  "i": 870,
+  "mName": "覇気解放【力】"
+ },
+ {
+  "i": 871,
+  "mName": "覇気解放【練力】"
+ },
+ {
+  "i": 872,
+  "mName": "覇気解放【体】"
+ },
+ {
+  "i": 873,
+  "mName": "覇気解放【練体】"
+ },
+ {
+  "i": 874,
+  "mName": "覇気解放【癒】"
+ },
+ {
+  "i": 875,
+  "mName": "覇気解放【練癒】"
+ },
+ {
+  "i": 876,
+  "mName": "覇気解放【斬】"
+ },
+ {
+  "i": 877,
+  "mName": "覇気解放【豪斬】"
+ },
+ {
+  "i": 878,
+  "mName": "覇気解放【巧】"
+ },
+ {
+  "i": 879,
+  "mName": "覇気解放【技巧】"
+ },
+ {
+  "i": 880,
+  "mName": "覇気解放【護】"
+ },
+ {
+  "i": 881,
+  "mName": "覇気解放【狩護】"
+ },
+ {
+  "i": 882,
+  "mName": "覇気解放【崩】"
+ },
+ {
+  "i": 883,
+  "mName": "覇気解放【崩塊】"
+ },
+ {
+  "i": 884,
+  "mName": "覇気解放【穿】"
+ },
+ {
+  "i": 885,
+  "mName": "覇気解放【穿岩】"
+ },
+ {
+  "i": 886,
+  "mName": "覇気解放【轟】"
+ },
+ {
+  "i": 887,
+  "mName": "覇気解放【轟爆】"
+ },
+ {
+  "i": 888,
+  "mName": "覇気解放【舞】"
+ },
+ {
+  "i": 889,
+  "mName": "覇気解放【舞闘】"
+ },
+ {
+  "i": 890,
+  "mName": "覇気解放【裂】"
+ },
+ {
+  "i": 891,
+  "mName": "覇気解放【裂波】"
+ },
+ {
+  "i": 892,
+  "mName": "覇気解放【駆】"
+ },
+ {
+  "i": 893,
+  "mName": "覇気解放【天駆】"
+ },
+ {
+  "i": 894,
+  "mName": "覇気解放【幻】"
+ },
+ {
+  "i": 895,
+  "mName": "覇気解放【変幻】"
+ },
+ {
+  "i": 896,
+  "mName": "覇気解放【爆】"
+ },
+ {
+  "i": 897,
+  "mName": "覇気解放【爆連】"
+ },
+ {
+  "i": 898,
+  "mName": "覇気解放【奏】"
+ },
+ {
+  "i": 899,
+  "mName": "覇気解放【熱奏】"
+ },
+ {
+  "i": 900,
+  "mName": "覇気解放【砕】"
+ },
+ {
+  "i": 901,
+  "mName": "覇気解放【破砕】"
+ },
+ {
+  "i": 902,
+  "mName": "覇気解放【操】"
+ },
+ {
+  "i": 903,
+  "mName": "覇気解放【操龍】"
+ },
+ {
+  "i": 904,
+  "mName": "For You, I Can Become Strong"
+ },
+ {
+  "i": 905,
+  "mName": "Taking Aim at Your Heart★"
+ },
+ {
+  "i": 906,
+  "mName": "More Than Flowers, More Than Dumplings, It's You"
+ },
+ {
+  "i": 907,
+  "mName": "Seven Saints Formation [Purification]"
+ },
+ {
+  "i": 908,
+  "mName": "Seven Saints Formation [Impurity]"
+ },
+ {
+  "i": 909,
+  "mName": "Seven Saints Formation [Iron Hammer]"
+ },
+ {
+  "i": 910,
+  "mName": "Seven Saints Formation [Divine Fire]"
+ },
+ {
+  "i": 911,
+  "mName": "Seven Saints Formation [Exorcism]"
+ },
+ {
+  "i": 912,
+  "mName": "Seven Saints Formation [Soul Transformation]"
+ },
+ {
+  "i": 913,
+  "mName": "七聖陣【祈道】"
+ },
+ {
+  "i": 914,
+  "mName": "Jet-Black Wings [Dark Kite]"
+ },
+ {
+  "i": 915,
+  "mName": "Jet-Black Wings [Dark Cormorant]"
+ },
+ {
+  "i": 916,
+  "mName": "Jet-Black Wings [Ink Warbler]"
+ },
+ {
+  "i": 917,
+  "mName": "Jet-Black Wings [Scorched Gull]"
+ },
+ {
+  "i": 918,
+  "mName": "Jet-Black Wings [Shadow Owl]"
+ },
+ {
+  "i": 919,
+  "mName": "Jet-Black Wings [Smoke Crow]"
+ },
+ {
+  "i": 920,
+  "mName": "Jet-Black Wings [Ash Hawk]"
+ },
+ {
+  "i": 921,
+  "mName": "Jet-Black Wings [Night Pheasant]"
+ },
+ {
+  "i": 922,
+  "mName": "Jet-Black Wings [Shadow Sparrow]"
+ },
+ {
+  "i": 923,
+  "mName": "漆黒ノ翼【幽鷲】"
+ },
+ {
+  "i": 924,
+  "mName": "Jet-Black Wings [Nether Swallow]"
+ },
+ {
+  "i": 925,
+  "mName": "Crimson Blazing Sun [Heaven's Path]"
+ },
+ {
+  "i": 926,
+  "mName": "Azure Starry Sky [Moon Shadow]"
+ },
+ {
+  "i": 927,
+  "mName": "紅き炎陽【火輪】"
+ },
+ {
+  "i": 928,
+  "mName": "Crimson Blazing Sun [Scorching Star]"
+ },
+ {
+  "i": 929,
+  "mName": "Azure Starry Sky [Moon Brow]"
+ },
+ {
+  "i": 930,
+  "mName": "Crimson Blazing Sun [Golden Crow]"
+ },
+ {
+  "i": 931,
+  "mName": "Azure Starry Sky [Jade Rabbit]"
+ },
+ {
+  "i": 932,
+  "mName": "Heaven's Wheel [Skyfall]"
+ },
+ {
+  "i": 933,
+  "mName": "Heaven's Wheel [Heavenly Return]"
+ },
+ {
+  "i": 934,
+  "mName": "Heaven's Wheel [Heavenly Bewilderment]"
+ },
+ {
+  "i": 935,
+  "mName": "Heaven's Wheel [Forbidden History]"
+ },
+ {
+  "i": 936,
+  "mName": "Heaven's Wheel [Reincarnation]"
+ },
+ {
+  "i": 937,
+  "mName": "Heaven's Wheel [Warped Cloud]"
+ },
+ {
+  "i": 938,
+  "mName": "Heaven's Wheel [Void]"
+ },
+ {
+  "i": 939,
+  "mName": "Heaven's Wheel [Mad Realm]"
+ },
+ {
+  "i": 940,
+  "mName": "Heaven's Wheel [Eclipse Wound]"
+ },
+ {
+  "i": 941,
+  "mName": "Heaven's Wheel [Calamity Tremor]"
+ },
+ {
+  "i": 942,
+  "mName": "Heaven's Wheel [White Dark]"
+ },
+ {
+  "i": 943,
+  "mName": "Heaven's Wheel [Wicked Radiance]"
+ },
+ {
+  "i": 944,
+  "mName": "Heaven's Wheel [Murky Light]"
+ },
+ {
+  "i": 945,
+  "mName": "Heaven's Wheel [Quiet Tempest]"
+ },
+ {
+  "i": 946,
+  "mName": "竜血喰らい【召】"
+ },
+ {
+  "i": 947,
+  "mName": "竜血喰らい【猛摂】"
+ },
+ {
+  "i": 948,
+  "mName": "無双衣【憑】"
+ },
+ {
+  "i": 949,
+  "mName": "無双衣【星袷】"
+ },
+ {
+  "i": 950,
+  "mName": "Model 12 Rumbling Engine: Custom [Sky Weave]"
+ },
+ {
+  "i": 951,
+  "mName": "Model 12 Rumbling Engine: Custom [Subjugation]"
+ },
+ {
+  "i": 952,
+  "mName": "Model 12 Rumbling Engine: Custom [Hatch]"
+ },
+ {
+  "i": 953,
+  "mName": "Model 12 Rumbling Engine: Custom [Nine Hares]"
+ },
+ {
+  "i": 954,
+  "mName": "Model 12 Rumbling Engine: Custom [Curtain Cut]"
+ },
+ {
+  "i": 955,
+  "mName": "Model 12 Rumbling Engine: Custom [Cruel Claw]"
+ },
+ {
+  "i": 956,
+  "mName": "Model 12 Rumbling Engine: Custom [Dream String]"
+ },
+ {
+  "i": 957,
+  "mName": "Model 12 Rumbling Engine: Custom [Gnashing]"
+ },
+ {
+  "i": 958,
+  "mName": "Model 12 Rumbling Engine: Custom [Phantom Rig]"
+ },
+ {
+  "i": 959,
+  "mName": "War Hell: Heaven [Black Chalice]"
+ },
+ {
+  "i": 960,
+  "mName": "戦獄・天【妖滅】"
+ },
+ {
+  "i": 961,
+  "mName": "War Hell: Heaven [Mad Melody]"
+ },
+ {
+  "i": 962,
+  "mName": "War Hell: Heaven [Demon's Tear]"
+ },
+ {
+  "i": 963,
+  "mName": "戦獄・天【虐王】"
+ },
+ {
+  "i": 964,
+  "mName": "戦獄・天【焼翼】"
+ },
+ {
+  "i": 965,
+  "mName": "War Hell: Heaven [Thousand Grudges]"
+ },
+ {
+  "i": 966,
+  "mName": "弧蝶拍子・律【羽音】"
+ },
+ {
+  "i": 967,
+  "mName": "Butterfly Arc Rhythm: Cadence [Rock Sound]"
+ },
+ {
+  "i": 968,
+  "mName": "Butterfly Arc Rhythm: Cadence [Grass Rustle]"
+ },
+ {
+  "i": 969,
+  "mName": "弧蝶拍子・律【雨音】"
+ },
+ {
+  "i": 970,
+  "mName": "Butterfly Arc Rhythm: Cadence [Wind Sound]"
+ },
+ {
+  "i": 971,
+  "mName": "Butterfly Arc Rhythm: Cadence [Flower Sound]"
+ },
+ {
+  "i": 972,
+  "mName": "Butterfly Arc Rhythm: Cadence [Heartbeat]"
+ },
+ {
+  "i": 973,
+  "mName": "Lion-Dragon's Heavenly Ascent [Dragon Pearl]"
+ },
+ {
+  "i": 974,
+  "mName": "Lion-Dragon's Heavenly Ascent [Dragon Vein]"
+ },
+ {
+  "i": 975,
+  "mName": "Lion-Dragon's Heavenly Ascent [Twin Dragons]"
+ },
+ {
+  "i": 976,
+  "mName": "Lion-Dragon's Heavenly Ascent [Cloud Eater]"
+ },
+ {
+  "i": 977,
+  "mName": "Lion-Dragon's Heavenly Ascent [Toy Dragon]"
+ },
+ {
+  "i": 978,
+  "mName": "Lion-Dragon's Heavenly Ascent [Dragon Gate]"
+ },
+ {
+  "i": 979,
+  "mName": "Lion-Dragon's Heavenly Ascent [Dancing Swim]"
+ },
+ {
+  "i": 980,
+  "mName": "Feeling Warm and Cozy"
+ },
+ {
+  "i": 981,
+  "mName": "I Think You Should Just Smile"
+ },
+ {
+  "i": 982,
+  "mName": "It Smells Like LCL"
+ },
+ {
+  "i": 983,
+  "mName": "I See... I Can Still Smile"
+ },
+ {
+  "i": 984,
+  "mName": "Volt Dragon [Emerald Wing]"
+ },
+ {
+  "i": 985,
+  "mName": "Volt Dragon [Phantom Princess]"
+ },
+ {
+  "i": 986,
+  "mName": "Volt Dragon [Thunder Clash]"
+ },
+ {
+  "i": 987,
+  "mName": "Volt Dragon [Ferocious Whip]"
+ },
+ {
+  "i": 988,
+  "mName": "Volt Dragon [Vicious Blade]"
+ },
+ {
+  "i": 989,
+  "mName": "Volt Dragon [Twin Bolts]"
+ },
+ {
+  "i": 990,
+  "mName": "Volt Dragon [Vicious Cry]"
+ },
+ {
+  "i": 991,
+  "mName": "Volt Dragon [Lightning]"
+ },
+ {
+  "i": 992,
+  "mName": "Volt Dragon [Rebellion]"
+ },
+ {
+  "i": 993,
+  "mName": "Volt Dragon [Ultimate Shot]"
+ },
+ {
+  "i": 994,
+  "mName": "Volt Dragon [Green Flame]"
+ },
+ {
+  "i": 995,
+  "mName": "Volt Dragon [Cerulean Cannon]"
+ },
+ {
+  "i": 996,
+  "mName": "Volt Dragon [Thunder Lord]"
+ },
+ {
+  "i": 997,
+  "mName": "Volt Dragon [Scorching Thunder]"
+ },
+ {
+  "i": 998,
+  "mName": "Bubblefox [Dark Melt]"
+ },
+ {
+  "i": 999,
+  "mName": "Bubblefox [Scattered Blossoms]"
+ },
+ {
+  "i": 1000,
+  "mName": "Bubblefox [Ultimate Dream]"
+ },
+ {
+  "i": 1001,
+  "mName": "Bubblefox [Nightfall]"
+ },
+ {
+  "i": 1002,
+  "mName": "Bubblefox [Starless]"
+ },
+ {
+  "i": 1003,
+  "mName": "Bubblefox [Twilight Fall]"
+ },
+ {
+  "i": 1004,
+  "mName": "Bubblefox [Withered Tears]"
+ },
+ {
+  "i": 1005,
+  "mName": "Bubblefox [Mist Manifest]"
+ },
+ {
+  "i": 1006,
+  "mName": "Bubblefox [Skycrossing]"
+ },
+ {
+  "i": 1007,
+  "mName": "Bubblefox [Cold Silence]"
+ },
+ {
+  "i": 1008,
+  "mName": "Bubblefox [Meditation Hour]"
+ },
+ {
+  "i": 1009,
+  "mName": "Bubblefox [Endless Thought]"
+ },
+ {
+  "i": 1010,
+  "mName": "Bubblefox [Empty Spring]"
+ },
+ {
+  "i": 1011,
+  "mName": "Bubblefox [Grave Weeping]"
+ },
+ {
+  "i": 1012,
+  "mName": "Hunt in Full Bloom [Springwood]"
+ },
+ {
+  "i": 1013,
+  "mName": "Hunt in Full Bloom [Cherry Blossom]"
+ },
+ {
+  "i": 1014,
+  "mName": "Hunt in Full Bloom [Lily]"
+ },
+ {
+  "i": 1015,
+  "mName": "Hunt in Full Bloom [Golden Scent]"
+ },
+ {
+  "i": 1016,
+  "mName": "Four Martial Arts [Black Sword]"
+ },
+ {
+  "i": 1017,
+  "mName": "Four Martial Arts [Vermilion Coin]"
+ },
+ {
+  "i": 1018,
+  "mName": "Four Martial Arts [Lacquer Staff]"
+ },
+ {
+  "i": 1019,
+  "mName": "Four Martial Arts [Red Cup]"
+ },
+ {
+  "i": 1020,
+  "mName": "紅き炎陽・焔【天道】"
+ },
+ {
+  "i": 1021,
+  "mName": "蒼き星天・煌【月影】"
+ },
+ {
+  "i": 1022,
+  "mName": "Crimson Blazing Sun: Flame [Fire Ring]"
+ },
+ {
+  "i": 1023,
+  "mName": "紅き炎陽・焔【灼星】"
+ },
+ {
+  "i": 1024,
+  "mName": "Azure Starry Sky: Radiance [Moon Brow]"
+ },
+ {
+  "i": 1025,
+  "mName": "紅き炎陽・焔【金烏】"
+ },
+ {
+  "i": 1026,
+  "mName": "Azure Starry Sky: Radiance [Jade Rabbit]"
+ },
+ {
+  "i": 1027,
+  "mName": "Light a Fire in My Heart"
+ },
+ {
+  "i": 1028,
+  "mName": "Blessed with Every Flower I Have"
+ },
+ {
+  "i": 1029,
+  "mName": "Cutting the Cake Is Every Maiden's Dream"
+ },
+ {
+  "i": 1030,
+  "mName": "Cheat on Me and I'll Hit You Right on the Head!"
+ },
+ {
+  "i": 1031,
+  "mName": "The Faithful Follower"
+ },
+ {
+  "i": 1032,
+  "mName": "Relative Maneuver"
+ },
+ {
+  "i": 1033,
+  "mName": "Glavenus [Empty Sheath]"
+ },
+ {
+  "i": 1034,
+  "mName": "Glavenus [Scarlet Sword]"
+ },
+ {
+  "i": 1035,
+  "mName": "Glavenus [Eternal Blaze]"
+ },
+ {
+  "i": 1036,
+  "mName": "Glavenus [Flame Halberd]"
+ },
+ {
+  "i": 1037,
+  "mName": "Glavenus [Burning Guard]"
+ },
+ {
+  "i": 1038,
+  "mName": "Glavenus [Scorch Rend]"
+ },
+ {
+  "i": 1039,
+  "mName": "Glavenus [Flame Talisman]"
+ },
+ {
+  "i": 1040,
+  "mName": "Glavenus [Boiling Tail]"
+ },
+ {
+  "i": 1041,
+  "mName": "Glavenus [Lantern Blade]"
+ },
+ {
+  "i": 1042,
+  "mName": "Glavenus [Fire Run]"
+ },
+ {
+  "i": 1043,
+  "mName": "Glavenus [Blazing Inscription]"
+ },
+ {
+  "i": 1044,
+  "mName": "Glavenus [Heat Cannon]"
+ },
+ {
+  "i": 1045,
+  "mName": "Glavenus [Searing Edge]"
+ },
+ {
+  "i": 1046,
+  "mName": "Glavenus [Scorching Heat]"
+ },
+ {
+  "i": 1047,
+  "mName": "Mechanical Contraption: Custom [Steam Slash]"
+ },
+ {
+  "i": 1048,
+  "mName": "Mechanical Contraption: Custom [Heat Surge]"
+ },
+ {
+  "i": 1049,
+  "mName": "Mechanical Contraption: Custom [Scorch Grip]"
+ },
+ {
+  "i": 1050,
+  "mName": "機々械々・改【歯車】"
+ },
+ {
+  "i": 1051,
+  "mName": "機々械々・改【機品】"
+ },
+ {
+  "i": 1052,
+  "mName": "Mechanical Contraption: Custom [Rust Wing]"
+ },
+ {
+  "i": 1053,
+  "mName": "Mechanical Contraption: Custom [Air Tube]"
+ },
+ {
+  "i": 1054,
+  "mName": "Milky Way"
+ },
+ {
+  "i": 1055,
+  "mName": "Splendor of the Stars"
+ },
+ {
+  "i": 1056,
+  "mName": "A Thousand Wishes"
+ },
+ {
+  "i": 1057,
+  "mName": "Rustling Bamboo Leaves"
+ },
+ {
+  "i": 1058,
+  "mName": "Giant Beast [Head Blade]"
+ },
+ {
+  "i": 1059,
+  "mName": "Giant Beast [Unbending Will]"
+ },
+ {
+  "i": 1060,
+  "mName": "Giant Beast [Smiting Fall]"
+ },
+ {
+  "i": 1061,
+  "mName": "Giant Beast [Hunting Rite]"
+ },
+ {
+  "i": 1062,
+  "mName": "Giant Beast [Limb Blade]"
+ },
+ {
+  "i": 1063,
+  "mName": "Giant Beast [Cutting Pain]"
+ },
+ {
+  "i": 1064,
+  "mName": "Giant Beast [War Sound]"
+ },
+ {
+  "i": 1065,
+  "mName": "Giant Beast [Furious Guard]"
+ },
+ {
+  "i": 1066,
+  "mName": "Giant Beast [Fang Mechanism]"
+ },
+ {
+  "i": 1067,
+  "mName": "Giant Beast [Head Bow]"
+ },
+ {
+  "i": 1068,
+  "mName": "Giant Beast [Ballista]"
+ },
+ {
+  "i": 1069,
+  "mName": "Giant Beast [Blast Cannon]"
+ },
+ {
+  "i": 1070,
+  "mName": "Giant Beast [Gear Style]"
+ },
+ {
+  "i": 1071,
+  "mName": "Giant Beast [Dancing Feather]"
+ },
+ {
+  "i": 1072,
+  "mName": "Enchantment: Hellfire"
+ },
+ {
+  "i": 1073,
+  "mName": "Ascension Meteor"
+ },
+ {
+  "i": 1074,
+  "mName": "Memory of the Scab"
+ },
+ {
+  "i": 1075,
+  "mName": "Eighth Form: \"Garden of Flower Grains\""
+ },
+ {
+  "i": 1076,
+  "mName": "Revenge Counter"
+ },
+ {
+  "i": 1077,
+  "mName": "聖剣鋼斬【耀】"
+ },
+ {
+  "i": 1078,
+  "mName": "神剣魔葬【裁】"
+ },
+ {
+  "i": 1079,
+  "mName": "魔剣召獣【降】"
+ },
+ {
+  "i": 1080,
+  "mName": "Raging Water [Land Sweep]"
+ },
+ {
+  "i": 1081,
+  "mName": "Raging Water [Wind Battle]"
+ },
+ {
+  "i": 1082,
+  "mName": "Raging Water [Deep Current]"
+ },
+ {
+  "i": 1083,
+  "mName": "Raging Water [Depths Lure]"
+ },
+ {
+  "i": 1084,
+  "mName": "Raging Water [Realm Bewilderment]"
+ },
+ {
+  "i": 1085,
+  "mName": "Raging Water [Fire Eater]"
+ },
+ {
+  "i": 1086,
+  "mName": "Raging Water [Droplet Dance]"
+ },
+ {
+  "i": 1087,
+  "mName": "Raging Water [Earth Piercer]"
+ },
+ {
+  "i": 1088,
+  "mName": "Raging Water [Dragon Swallower]"
+ },
+ {
+  "i": 1089,
+  "mName": "Raging Water [Soul Chill]"
+ },
+ {
+  "i": 1090,
+  "mName": "Raging Water [Falcon-Swift]"
+ },
+ {
+  "i": 1091,
+  "mName": "Raging Water [Flame Sweep]"
+ },
+ {
+  "i": 1092,
+  "mName": "CODE: Zero"
+ },
+ {
+  "i": 1093,
+  "mName": "CODE: Spirit"
+ },
+ {
+  "i": 1094,
+  "mName": "CODE: Double"
+ },
+ {
+  "i": 1095,
+  "mName": "CODE: Beat"
+ },
+ {
+  "i": 1096,
+  "mName": "CODE: Rain"
+ },
+ {
+  "i": 1097,
+  "mName": "CODE: Trans"
+ },
+ {
+  "i": 1098,
+  "mName": "CODE: Wing"
+ },
+ {
+  "i": 1099,
+  "mName": "CODE: Magnum"
+ },
+ {
+  "i": 1100,
+  "mName": "Hunting Rite [Strength Test]"
+ },
+ {
+  "i": 1101,
+  "mName": "Hunting Rite [Shield Mirror]"
+ },
+ {
+  "i": 1102,
+  "mName": "Hunting Rite [Starbind]"
+ },
+ {
+  "i": 1103,
+  "mName": "Hunting Rite [Forge]"
+ },
+ {
+  "i": 1104,
+  "mName": "Hunting Rite [Blade Gauge]"
+ },
+ {
+  "i": 1105,
+  "mName": "Hunting Rite [Sketch Stab]"
+ },
+ {
+  "i": 1106,
+  "mName": "Hunting Rite [Cycle Play]"
+ },
+ {
+  "i": 1107,
+  "mName": "Azure Starry Sky: Radiance [Curved Lantern]"
+ },
+ {
+  "i": 1108,
+  "mName": "Azure Starry Sky: Radiance [Hidden Flame]"
+ },
+ {
+  "i": 1109,
+  "mName": "Phantom Beast Hunting Technique [King]"
+ },
+ {
+  "i": 1110,
+  "mName": "Nether Crystal Hunting Technique [King]"
+ },
+ {
+  "i": 1111,
+  "mName": "Tigrex Hunting Technique [King]"
+ },
+ {
+  "i": 1112,
+  "mName": "Thousand Blades Hunting Technique [King]"
+ },
+ {
+  "i": 1113,
+  "mName": "Wind Soar Hunting Technique [King]"
+ },
+ {
+  "i": 1114,
+  "mName": "Blew the Dog Whistle"
+ },
+ {
+  "i": 1115,
+  "mName": "Give It Everything You've Got!"
+ },
+ {
+  "i": 1116,
+  "mName": "Run to That Mansion!"
+ },
+ {
+  "i": 1117,
+  "mName": "Blastfrost [Crimson Ice]"
+ },
+ {
+  "i": 1118,
+  "mName": "Blastfrost [Arm Grenade]"
+ },
+ {
+  "i": 1119,
+  "mName": "Blastfrost [Raging Flame]"
+ },
+ {
+  "i": 1120,
+  "mName": "Blastfrost [Thousand Zero]"
+ },
+ {
+  "i": 1121,
+  "mName": "Blastfrost [Cold Steam]"
+ },
+ {
+  "i": 1122,
+  "mName": "Blastfrost [Freeze-Melt]"
+ },
+ {
+  "i": 1123,
+  "mName": "Blastfrost [Sliding Melody]"
+ },
+ {
+  "i": 1124,
+  "mName": "Blastfrost [Heat Crystal]"
+ },
+ {
+  "i": 1125,
+  "mName": "Blastfrost [Snowless]"
+ },
+ {
+  "i": 1126,
+  "mName": "Blastfrost [Burning Silver]"
+ },
+ {
+  "i": 1127,
+  "mName": "Blastfrost [White Bullet]"
+ },
+ {
+  "i": 1128,
+  "mName": "Blastfrost [Hail Flame]"
+ },
+ {
+  "i": 1129,
+  "mName": "Blastfrost [Frostbrew]"
+ },
+ {
+  "i": 1130,
+  "mName": "Blastfrost [Hail Control]"
+ },
+ {
+  "i": 1131,
+  "mName": "Blastfrost [Scorched Track]"
+ },
+ {
+  "i": 1132,
+  "mName": "Special Suppression Technique [Silent Pressure]"
+ },
+ {
+  "i": 1133,
+  "mName": "Special Suppression Technique [Judgment]"
+ },
+ {
+  "i": 1134,
+  "mName": "Special Suppression Technique [Zero Chain]"
+ },
+ {
+  "i": 1135,
+  "mName": "Special Suppression Technique [Violent Judgment]"
+ },
+ {
+  "i": 1136,
+  "mName": "Special Suppression Technique [Shield Judge]"
+ },
+ {
+  "i": 1137,
+  "mName": "Special Suppression Technique [Tuned Strike]"
+ },
+ {
+  "i": 1138,
+  "mName": "Special Suppression Technique [Bind Run]"
+ },
+ {
+  "i": 1139,
+  "mName": "Chivalry: Precept [War God]"
+ },
+ {
+  "i": 1140,
+  "mName": "騎士道・戒【剛胆】"
+ },
+ {
+  "i": 1141,
+  "mName": "騎士道・戒【貴心】"
+ },
+ {
+  "i": 1142,
+  "mName": "Chivalry: Precept [Loyalty]"
+ },
+ {
+  "i": 1143,
+  "mName": "騎士道・戒【海原】"
+ },
+ {
+  "i": 1144,
+  "mName": "Chivalry: Precept [Compassion]"
+ },
+ {
+  "i": 1145,
+  "mName": "騎士道・戒【礼節】"
+ },
+ {
+  "i": 1146,
+  "mName": "騎士道・戒【崇高】"
+ },
+ {
+  "i": 1147,
+  "mName": "騎士道・戒【信心】"
+ },
+ {
+  "i": 1148,
+  "mName": "Chivalry: Precept [Unyielding]"
+ },
+ {
+  "i": 1149,
+  "mName": "Chivalry: Precept [Justice]"
+ },
+ {
+  "i": 1150,
+  "mName": "Ultimate Shooting Star [Solitary]"
+ },
+ {
+  "i": 1151,
+  "mName": "極流星【孤光】"
+ },
+ {
+  "i": 1152,
+  "mName": "狩猟本能【瞬】"
+ },
+ {
+  "i": 1153,
+  "mName": "狩猟本能【爆瞬】"
+ },
+ {
+  "i": 1154,
+  "mName": "本猟発揮【瞬】"
+ },
+ {
+  "i": 1155,
+  "mName": "本猟発揮【爆瞬】"
+ },
+ {
+  "i": 1156,
+  "mName": "狩魂不滅【瞬】"
+ },
+ {
+  "i": 1157,
+  "mName": "狩魂不滅【爆瞬】"
+ },
+ {
+  "i": 1158,
+  "mName": "大狩猟劇【瞬】"
+ },
+ {
+  "i": 1159,
+  "mName": "大狩猟劇【爆瞬】"
+ },
+ {
+  "i": 1160,
+  "mName": "百花猟乱【瞬】"
+ },
+ {
+  "i": 1161,
+  "mName": "百花猟乱【爆瞬】"
+ },
+ {
+  "i": 1162,
+  "mName": "猟風一陣【瞬】"
+ },
+ {
+  "i": 1163,
+  "mName": "猟風一陣【爆瞬】"
+ },
+ {
+  "i": 1164,
+  "mName": "一刀猟断【瞬】"
+ },
+ {
+  "i": 1165,
+  "mName": "一刀猟断【爆瞬】"
+ },
+ {
+  "i": 1166,
+  "mName": "覇気解放【瞬】"
+ },
+ {
+  "i": 1167,
+  "mName": "覇気解放【爆瞬】"
+ },
+ {
+  "i": 1168,
+  "mName": "Trigger Burst"
+ },
+ {
+  "i": 1169,
+  "mName": "Fierce Wind Phantom Blade"
+ },
+ {
+  "i": 1170,
+  "mName": "Devil Buster"
+ },
+ {
+  "i": 1171,
+  "mName": "Burst Attack 2"
+ },
+ {
+  "i": 1172,
+  "mName": "Eyes of Rebellion"
+ },
+ {
+  "i": 1173,
+  "mName": "Thunder Emperor [Ultimate Thunder]"
+ },
+ {
+  "i": 1174,
+  "mName": "Thunder Emperor [First Thunder]"
+ },
+ {
+  "i": 1175,
+  "mName": "Thunder Emperor [Thunder God]"
+ },
+ {
+  "i": 1176,
+  "mName": "Thunder Emperor [Phantom Yellow]"
+ },
+ {
+  "i": 1177,
+  "mName": "Thunder Emperor [Myriad Thunder]"
+ },
+ {
+  "i": 1178,
+  "mName": "Thunder Emperor [Thunder King]"
+ },
+ {
+  "i": 1179,
+  "mName": "Thunder Emperor [Heaven's Light]"
+ },
+ {
+  "i": 1180,
+  "mName": "Jet-Black Wings [Black Falcon]"
+ },
+ {
+  "i": 1181,
+  "mName": "Mechanical Contraption [Blast Steam]"
+ },
+ {
+  "i": 1182,
+  "mName": "機々械々・改【爆汽】"
+ },
+ {
+  "i": 1183,
+  "mName": "Enjoy the Seafood Shot"
+ },
+ {
+  "i": 1184,
+  "mName": "Good Raw, Good Grilled, Good as a Weapon"
+ },
+ {
+  "i": 1185,
+  "mName": "This Is a Hunter's Knife Skill"
+ },
+ {
+  "i": 1186,
+  "mName": "Holy Night"
+ },
+ {
+  "i": 1187,
+  "mName": "Santa Claus Kiss"
+ },
+ {
+  "i": 1188,
+  "mName": "First Hunt of the Year"
+ },
+ {
+  "i": 1189,
+  "mName": "Happy New Hunting Year"
+ },
+ {
+  "i": 1190,
+  "mName": "100 Apples' Worth of Love"
+ },
+ {
+  "i": 1191,
+  "mName": "Heroine of the Fillet World!"
+ },
+ {
+  "i": 1192,
+  "mName": "Sparkly Fluffy★Shooting Star in the Sky"
+ },
+ {
+  "i": 1193,
+  "mName": "Starting Tomorrow, I'll Go All Out..."
+ },
+ {
+  "i": 1194,
+  "mName": "Secret Technique, an Adult's Privilege"
+ },
+ {
+  "i": 1195,
+  "mName": "Masterful Technique, an Adult's Excuse"
+ },
+ {
+  "i": 1196,
+  "mName": "Absolute Growth!"
+ },
+ {
+  "i": 1197,
+  "mName": "Heaven! Supremacy! Ultimate! Spear!"
+ },
+ {
+  "i": 1198,
+  "mName": "Onward I Charge!"
+ },
+ {
+  "i": 1199,
+  "mName": "The One-Eyed Dragon Is No Mere Name"
+ },
+ {
+  "i": 1200,
+  "mName": "My Loooord!!"
+ },
+ {
+  "i": 1201,
+  "mName": "Hour of Awakening [Ancient Sea]"
+ },
+ {
+  "i": 1202,
+  "mName": "Hour of Awakening [Judging Wave]"
+ },
+ {
+  "i": 1203,
+  "mName": "Hour of Awakening [Harp]"
+ },
+ {
+  "i": 1204,
+  "mName": "Hour of Awakening [Shark Blade]"
+ },
+ {
+  "i": 1205,
+  "mName": "目醒の刻【斬浪】"
+ },
+ {
+  "i": 1206,
+  "mName": "Hour of Awakening [Octopus Trap]"
+ },
+ {
+  "i": 1207,
+  "mName": "Hour of Awakening [Sea Control]"
+ },
+ {
+  "i": 1208,
+  "mName": "Sealed Power Release: Supremacy [Flame Crystal]"
+ },
+ {
+  "i": 1209,
+  "mName": "Sealed Power Release: Supremacy [Frost Crystal]"
+ },
+ {
+  "i": 1210,
+  "mName": "Sealed Power Release: Supremacy [Rock Crystal]"
+ },
+ {
+  "i": 1211,
+  "mName": "Sealed Power Release: Supremacy [Droplet Crystal]"
+ },
+ {
+  "i": 1212,
+  "mName": "Ridge Blast [Blast of Love]"
+ },
+ {
+  "i": 1213,
+  "mName": "Ridge Blast [Blast Flip]"
+ },
+ {
+  "i": 1214,
+  "mName": "Ridge Blast [Blast Stab]"
+ },
+ {
+  "i": 1215,
+  "mName": "Ridge Blast [Blast Extreme]"
+ },
+ {
+  "i": 1216,
+  "mName": "Ridge Blast [Blast Felling]"
+ },
+ {
+  "i": 1217,
+  "mName": "Ridge Blast [Blast Steal]"
+ },
+ {
+  "i": 1218,
+  "mName": "Ridge Blast [Blast Burial]"
+ },
+ {
+  "i": 1219,
+  "mName": "The Spirit of 'Go for Broke'"
+ },
+ {
+  "i": 1220,
+  "mName": "I'll Win Your Heart!"
+ },
+ {
+  "i": 1221,
+  "mName": "My Soul's Tingling, Nya~!"
+ },
+ {
+  "i": 1222,
+  "mName": "Press of Death"
+ },
+ {
+  "i": 1223,
+  "mName": "Psycho Crusher"
+ },
+ {
+  "i": 1224,
+  "mName": "Golden Lion [Abyss Slash]"
+ },
+ {
+  "i": 1225,
+  "mName": "Golden Lion [Reverse Scale]"
+ },
+ {
+  "i": 1226,
+  "mName": "Golden Lion [Fury]"
+ },
+ {
+  "i": 1227,
+  "mName": "Golden Lion [Wrath]"
+ },
+ {
+  "i": 1228,
+  "mName": "Golden Lion [Thunder Quake]"
+ },
+ {
+  "i": 1229,
+  "mName": "Golden Lion [Erupting Lightning]"
+ },
+ {
+  "i": 1230,
+  "mName": "Golden Lion [Super Beast]"
+ },
+ {
+  "i": 1231,
+  "mName": "Golden Lion [Bristling Rage]"
+ },
+ {
+  "i": 1232,
+  "mName": "Golden Lion [Demon Ape]"
+ },
+ {
+  "i": 1233,
+  "mName": "Golden Lion [Fighting Spirit]"
+ },
+ {
+  "i": 1234,
+  "mName": "Golden Lion [Light Cannon]"
+ },
+ {
+  "i": 1235,
+  "mName": "Golden Lion [Rakshasa]"
+ },
+ {
+  "i": 1236,
+  "mName": "Golden Lion [Golden Demon]"
+ },
+ {
+  "i": 1237,
+  "mName": "Golden Lion [Thunder Spiral]"
+ },
+ {
+  "i": 1238,
+  "mName": "覇王宿臨せし【臥セ】"
+ },
+ {
+  "i": 1239,
+  "mName": "覇王宿臨せし【奉レ】"
+ },
+ {
+  "i": 1240,
+  "mName": "覇王宿臨せし【従エ】"
+ },
+ {
+  "i": 1241,
+  "mName": "覇王宿臨せし【崇メ】"
+ },
+ {
+  "i": 1242,
+  "mName": "覇王宿臨せし【跪ケ】"
+ },
+ {
+  "i": 1243,
+  "mName": "覇王宿臨せし【噤メ】"
+ },
+ {
+  "i": 1244,
+  "mName": "覇王宿臨せし【敬エ】"
+ },
+ {
+  "i": 1245,
+  "mName": "覇王宿臨せし【讃エ】"
+ },
+ {
+  "i": 1246,
+  "mName": "The Overlord's Descent [Mist]"
+ },
+ {
+  "i": 1247,
+  "mName": "覇王宿臨せし【請エ】"
+ },
+ {
+  "i": 1248,
+  "mName": "覇王宿臨せし【澱メ】"
+ },
+ {
+  "i": 1249,
+  "mName": "覇王宿臨せし【哭ケ】"
+ },
+ {
+  "i": 1250,
+  "mName": "The Overlord's Descent [Sing]"
+ },
+ {
+  "i": 1251,
+  "mName": "覇王宿臨せし【渇ケ】"
+ },
+ {
+  "i": 1252,
+  "mName": "Golden Masterful Technique [Mighty Radiance]"
+ },
+ {
+  "i": 1253,
+  "mName": "Golden Masterful Technique [Light Wall]"
+ },
+ {
+  "i": 1254,
+  "mName": "Golden Masterful Technique [Flower Mass]"
+ },
+ {
+  "i": 1255,
+  "mName": "Golden Masterful Technique [Radiant Thrust]"
+ },
+ {
+  "i": 1256,
+  "mName": "黄金傑技【金麗】"
+ },
+ {
+  "i": 1257,
+  "mName": "Golden Masterful Technique [Radiant Dance]"
+ },
+ {
+  "i": 1258,
+  "mName": "Golden Masterful Technique [Dazzling Talisman]"
+ },
+ {
+  "i": 1259,
+  "mName": "Golden Masterful Technique [Blast Gain]"
+ },
+ {
+  "i": 1260,
+  "mName": "Golden Masterful Technique [Glitter]"
+ },
+ {
+  "i": 1261,
+  "mName": "黄金傑技【燦弾】"
+ },
+ {
+  "i": 1262,
+  "mName": "Golden Masterful Technique [Heavy Shine]"
+ },
+ {
+  "i": 1263,
+  "mName": "Golden Masterful Technique [War Coin]"
+ },
+ {
+  "i": 1264,
+  "mName": "Golden Masterful Technique [Star Flash]"
+ },
+ {
+  "i": 1265,
+  "mName": "Scattered Snow, Moon, and Flowers"
+ },
+ {
+  "i": 1266,
+  "mName": "Immovable Blade"
+ },
+ {
+  "i": 1267,
+  "mName": "Wild Arrow"
+ },
+ {
+  "i": 1268,
+  "mName": "Winter Storm"
+ },
+ {
+  "i": 1269,
+  "mName": "Lightning Annihilation Blade"
+ },
+ {
+  "i": 1270,
+  "mName": "Flame Chancellor's Rending Blade"
+ },
+ {
+  "i": 1271,
+  "mName": "Water God's Sea Summon"
+ },
+ {
+  "i": 1272,
+  "mName": "Resonance Staff"
+ },
+ {
+  "i": 1273,
+  "mName": "Mist Dragon [Mist Concealment]"
+ },
+ {
+  "i": 1274,
+  "mName": "Mist Dragon [Nokizaru]"
+ },
+ {
+  "i": 1275,
+  "mName": "Mist Dragon [Hidden Scheme]"
+ },
+ {
+  "i": 1276,
+  "mName": "Mist Dragon [Shinobi Domain]"
+ },
+ {
+  "i": 1277,
+  "mName": "Mist Dragon [Fuma]"
+ },
+ {
+  "i": 1278,
+  "mName": "Mist Dragon [Shadow Strike]"
+ },
+ {
+  "i": 1279,
+  "mName": "Mist Dragon [Mock Escape]"
+ },
+ {
+  "i": 1280,
+  "mName": "Mist Dragon [Fog Wrap]"
+ },
+ {
+  "i": 1281,
+  "mName": "Mist Dragon [Purple Spy]"
+ },
+ {
+  "i": 1282,
+  "mName": "Mist Dragon [Silver Tongue]"
+ },
+ {
+  "i": 1283,
+  "mName": "Mist Dragon [Forest Deceiver]"
+ },
+ {
+  "i": 1284,
+  "mName": "Mist Dragon [Vicious Poison]"
+ },
+ {
+  "i": 1285,
+  "mName": "Transcendent Technique [Hero]"
+ },
+ {
+  "i": 1286,
+  "mName": "Transcendent Technique [Duel]"
+ },
+ {
+  "i": 1287,
+  "mName": "超絶技巧【獅狩】"
+ },
+ {
+  "i": 1288,
+  "mName": "超絶技巧【剣舞】"
+ },
+ {
+  "i": 1289,
+  "mName": "Transcendent Technique [Reverberation]"
+ },
+ {
+  "i": 1290,
+  "mName": "Transcendent Technique [Resonance]"
+ },
+ {
+  "i": 1291,
+  "mName": "Transcendent Technique [Splendor]"
+ },
+ {
+  "i": 1292,
+  "mName": "超絶技巧【暴風】"
+ },
+ {
+  "i": 1293,
+  "mName": "岩船【不動】"
+ },
+ {
+  "i": 1294,
+  "mName": "岩船【激震】"
+ },
+ {
+  "i": 1295,
+  "mName": "岩船【撃龍】"
+ },
+ {
+  "i": 1296,
+  "mName": "岩船【決戦】"
+ },
+ {
+  "i": 1297,
+  "mName": "岩船【捻込】"
+ },
+ {
+  "i": 1298,
+  "mName": "岩船【砂泳】"
+ },
+ {
+  "i": 1299,
+  "mName": "岩船【砂海】"
+ },
+ {
+  "i": 1300,
+  "mName": "Rock Ship [Devour Rend]"
+ },
+ {
+  "i": 1301,
+  "mName": "Secret Art! A Fine Day to Go Home"
+ },
+ {
+  "i": 1302,
+  "mName": "Secret Art! The Iron Castle's Shuttle Car"
+ },
+ {
+  "i": 1303,
+  "mName": "Secret Art! Blissful Homecoming"
+ },
+ {
+  "i": 1304,
+  "mName": "The Farewell Magic Pitch"
+ },
+ {
+  "i": 1305,
+  "mName": "Ironclad Defense of the Final Hour"
+ },
+ {
+  "i": 1306,
+  "mName": "Taping Manager"
+ },
+ {
+  "i": 1307,
+  "mName": "Morning-Practice Style: Thousand Shots, Ten Thousand Arrows"
+ },
+ {
+  "i": 1308,
+  "mName": "Flame Emperor [Scorch Annihilation]"
+ },
+ {
+  "i": 1309,
+  "mName": "Flame Emperor [Scarlet Crest]"
+ },
+ {
+  "i": 1310,
+  "mName": "Flame Emperor [Red Cliff]"
+ },
+ {
+  "i": 1311,
+  "mName": "Flame Emperor [Eruption Pierce]"
+ },
+ {
+  "i": 1312,
+  "mName": "Flame Emperor [Crimson Flash]"
+ },
+ {
+  "i": 1313,
+  "mName": "Flame Emperor [Fire Dance]"
+ },
+ {
+  "i": 1314,
+  "mName": "Flame Emperor [Flame Fang]"
+ },
+ {
+  "i": 1315,
+  "mName": "Flame Emperor [Valiant Blaze]"
+ },
+ {
+  "i": 1316,
+  "mName": "Flame Emperor [Radiant Roar]"
+ },
+ {
+  "i": 1317,
+  "mName": "Flame Emperor [Blast Star]"
+ },
+ {
+  "i": 1318,
+  "mName": "Ashen Blue Engineering [Wing Blade]"
+ },
+ {
+  "i": 1319,
+  "mName": "Ashen Blue Engineering [Broken String]"
+ },
+ {
+  "i": 1320,
+  "mName": "Honor of the Hunt [Valor]"
+ },
+ {
+  "i": 1321,
+  "mName": "Honor of the Hunt [Elegance]"
+ },
+ {
+  "i": 1322,
+  "mName": "Seven Saint Dragons Formation [Purification]"
+ },
+ {
+  "i": 1323,
+  "mName": "Seven Saint Dragons Formation [Impurity]"
+ },
+ {
+  "i": 1324,
+  "mName": "Seven Saint Dragons Formation [Iron Hammer]"
+ },
+ {
+  "i": 1325,
+  "mName": "七聖竜陣【神火】"
+ },
+ {
+  "i": 1326,
+  "mName": "七聖竜陣【破魔】"
+ },
+ {
+  "i": 1327,
+  "mName": "七聖竜陣【魂化】"
+ },
+ {
+  "i": 1328,
+  "mName": "七聖竜陣【祈道】"
+ },
+ {
+  "i": 1329,
+  "mName": "\"Shiranui Style\" Crimson Phoenix Sword"
+ },
+ {
+  "i": 1330,
+  "mName": "Open, Gate of Aquarius!"
+ },
+ {
+  "i": 1331,
+  "mName": "Ice Demon Zero's Breaking Bow"
+ },
+ {
+  "i": 1332,
+  "mName": "Heaven's Ring: Sword of Wild Riot"
+ },
+ {
+  "i": 1333,
+  "mName": "Black Crown [Devouring Wing]"
+ },
+ {
+  "i": 1334,
+  "mName": "Black Crown [Mad Feast]"
+ },
+ {
+  "i": 1335,
+  "mName": "Black Crown [Blood Feast]"
+ },
+ {
+  "i": 1336,
+  "mName": "Black Crown [Wet Feather]"
+ },
+ {
+  "i": 1337,
+  "mName": "Black Crown [Black King]"
+ },
+ {
+  "i": 1338,
+  "mName": "Black Crown [Claw Scratch]"
+ },
+ {
+  "i": 1339,
+  "mName": "Blacksmith's Passion [Artisan Flame]"
+ },
+ {
+  "i": 1340,
+  "mName": "Blacksmith's Passion [Unsigned]"
+ },
+ {
+  "i": 1341,
+  "mName": "Escape from the Nightmare"
+ },
+ {
+  "i": 1342,
+  "mName": "The Finishing Hellfire!"
+ },
+ {
+  "i": 1343,
+  "mName": "Summer Fruit Smash!!"
+ },
+ {
+  "i": 1344,
+  "mName": "Black Crown: Extreme [Malice]"
+ },
+ {
+  "i": 1345,
+  "mName": "Overlord Dragon [Black Fang]"
+ },
+ {
+  "i": 1346,
+  "mName": "Overlord Dragon [Crumbling Tile]"
+ },
+ {
+  "i": 1347,
+  "mName": "Overlord Dragon: Extreme [Sharp Thorn]"
+ },
+ {
+  "i": 1348,
+  "mName": "Overlord Dragon [Sun Eater]"
+ },
+ {
+  "i": 1349,
+  "mName": "Overlord Dragon [Crushing Blow]"
+ },
+ {
+  "i": 1350,
+  "mName": "Overlord Dragon [Ruin]"
+ },
+ {
+  "i": 1351,
+  "mName": "覇竜【波動】"
+ },
+ {
+  "i": 1352,
+  "mName": "Overlord Dragon [Roaring Crush]"
+ },
+ {
+  "i": 1353,
+  "mName": "Overlord Dragon [Wild Stomp]"
+ },
+ {
+  "i": 1354,
+  "mName": "Radiant Knight [Soaring Dance]"
+ },
+ {
+  "i": 1355,
+  "mName": "Radiant Knight [Dashing]"
+ },
+ {
+  "i": 1356,
+  "mName": "麗騎【英聖】"
+ },
+ {
+  "i": 1357,
+  "mName": "麗騎【威風】"
+ },
+ {
+  "i": 1358,
+  "mName": "Radiant Knight [Serenity]"
+ },
+ {
+  "i": 1359,
+  "mName": "Radiant Knight [Flower Echo]"
+ },
+ {
+  "i": 1360,
+  "mName": "Radiant Knight [Heroic Resolve]"
+ },
+ {
+  "i": 1361,
+  "mName": "麗騎【耀昂】"
+ },
+ {
+  "i": 1362,
+  "mName": "Radiant Knight [Solemn Majesty]"
+ },
+ {
+  "i": 1363,
+  "mName": "麗騎【風雅】"
+ },
+ {
+  "i": 1364,
+  "mName": "Radiant Knight [Triumphant Cheer]"
+ },
+ {
+  "i": 1365,
+  "mName": "Radiant Knight [Pure Chill]"
+ },
+ {
+  "i": 1366,
+  "mName": "Grant Me Permission to Slay!"
+ },
+ {
+  "i": 1367,
+  "mName": "We Are the Proud Saika Clan"
+ },
+ {
+  "i": 1368,
+  "mName": "Dawnmaru Activation"
+ },
+ {
+  "i": 1369,
+  "mName": "雷泡【眩鏡】"
+ },
+ {
+  "i": 1370,
+  "mName": "Thunder Bubble [Flashing Scenery]"
+ },
+ {
+  "i": 1371,
+  "mName": "Thunder Bubble [Approaching Cry]"
+ },
+ {
+  "i": 1372,
+  "mName": "Thunder Bubble [Dawn Cloud]"
+ },
+ {
+  "i": 1373,
+  "mName": "Thunder Bubble: Extreme [Rain Shelter]"
+ },
+ {
+  "i": 1374,
+  "mName": "Thunder Bubble [Ghost Pearl]"
+ },
+ {
+  "i": 1375,
+  "mName": "Thunder Bubble [Afterimage]"
+ },
+ {
+  "i": 1376,
+  "mName": "Thunder Bubble [Falling Cherry Blossoms]"
+ },
+ {
+  "i": 1377,
+  "mName": "Thunder Bubble [Swift Season]"
+ },
+ {
+  "i": 1378,
+  "mName": "Exciting Charm"
+ },
+ {
+  "i": 1379,
+  "mName": "Warm and Cozy Charm"
+ },
+ {
+  "i": 1380,
+  "mName": "Heart-Pounding Charm"
+ },
+ {
+  "i": 1381,
+  "mName": "ピカピカなおまじない"
+ },
+ {
+  "i": 1382,
+  "mName": "Head-Over-Heels Charm"
+ },
+ {
+  "i": 1383,
+  "mName": "Fluffy Charm"
+ },
+ {
+  "i": 1384,
+  "mName": "Sparkling Charm"
+ },
+ {
+  "i": 1385,
+  "mName": "狩爛漫・開【木春】"
+ },
+ {
+  "i": 1386,
+  "mName": "Hunt in Full Bloom: Blossoming [Cherry Blossom]"
+ },
+ {
+  "i": 1387,
+  "mName": "Hunt in Full Bloom: Blossoming [Lily]"
+ },
+ {
+  "i": 1388,
+  "mName": "Hunt in Full Bloom: Blossoming [Golden Scent]"
+ },
+ {
+  "i": 1389,
+  "mName": "Gaze Upon Me in Awe!"
+ },
+ {
+  "i": 1390,
+  "mName": "Yoga Sunburst"
+ },
+ {
+  "i": 1391,
+  "mName": "Sonic Tempest"
+ },
+ {
+  "i": 1392,
+  "mName": "Groan in Despair!"
+ },
+ {
+  "i": 1393,
+  "mName": "Famine [Armor Strip]"
+ },
+ {
+  "i": 1394,
+  "mName": "Famine [Throat Growl]"
+ },
+ {
+  "i": 1395,
+  "mName": "Famine: Extreme [Total Devour]"
+ },
+ {
+  "i": 1396,
+  "mName": "Famine [Hollow Hunger]"
+ },
+ {
+  "i": 1397,
+  "mName": "Famine [Scorched Flesh]"
+ },
+ {
+  "i": 1398,
+  "mName": "Famine [Bone Gnaw]"
+ },
+ {
+  "i": 1399,
+  "mName": "Famine [Scorching Drool]"
+ },
+ {
+  "i": 1400,
+  "mName": "飢餓【暴食】"
+ },
+ {
+  "i": 1401,
+  "mName": "飢餓【赤潤】"
+ },
+ {
+  "i": 1402,
+  "mName": "Blood-Dripping Fierce Fang"
+ },
+ {
+  "i": 1403,
+  "mName": "闇灯ス眼光"
+ },
+ {
+  "i": 1404,
+  "mName": "奈落ノ断末魔"
+ },
+ {
+  "i": 1405,
+  "mName": "Altar of the Underworld"
+ },
+ {
+  "i": 1406,
+  "mName": "Defiled Offering"
+ },
+ {
+  "i": 1407,
+  "mName": "Vessel of the Dead"
+ },
+ {
+  "i": 1408,
+  "mName": "暴虐ナル業火"
+ },
+ {
+  "i": 1409,
+  "mName": "Temptation of Grudges"
+ },
+ {
+  "i": 1410,
+  "mName": "Blood Demon Art: Blood Burst"
+ },
+ {
+  "i": 1411,
+  "mName": "Thunder Breathing: Thunderclap and Flash"
+ },
+ {
+  "i": 1412,
+  "mName": "Charge Ahead, Full Force!!"
+ },
+ {
+  "i": 1413,
+  "mName": "Go Tanjiro, Go!!"
+ },
+ {
+  "i": 1414,
+  "mName": "Black Crown [Calamity Rain]"
+ },
+ {
+  "i": 1415,
+  "mName": "黒冠【槍棘】"
+ },
+ {
+  "i": 1416,
+  "mName": "Pursuit of Wisdom [Wind Flower]"
+ },
+ {
+  "i": 1417,
+  "mName": "Pursuit of Wisdom [Azure Heaven]"
+ },
+ {
+  "i": 1418,
+  "mName": "Pursuit of Wisdom [Lake Moon]"
+ },
+ {
+  "i": 1419,
+  "mName": "Pursuit of Wisdom [Dragonfly]"
+ },
+ {
+  "i": 1420,
+  "mName": "Pursuit of Wisdom [Misty Cloud]"
+ },
+ {
+  "i": 1421,
+  "mName": "Pursuit of Wisdom [Immortal Realm]"
+ },
+ {
+  "i": 1422,
+  "mName": "Pursuit of Wisdom [Mountain Violet]"
+ },
+ {
+  "i": 1423,
+  "mName": "Shattered Earth [Snow Fang]"
+ },
+ {
+  "i": 1424,
+  "mName": "Heavenly Crystal [Sun Disc]"
+ },
+ {
+  "i": 1425,
+  "mName": "Heavenly Crystal [Ruby]"
+ },
+ {
+  "i": 1426,
+  "mName": "Heavenly Crystal [Mighty Wing]"
+ },
+ {
+  "i": 1427,
+  "mName": "Heavenly Crystal [Round Sun]"
+ },
+ {
+  "i": 1428,
+  "mName": "Heavenly Crystal [Heat Spiral]"
+ },
+ {
+  "i": 1429,
+  "mName": "Heavenly Crystal [Shining Eye]"
+ },
+ {
+  "i": 1430,
+  "mName": "Heavenly Crystal: Extreme [Hurricane]"
+ },
+ {
+  "i": 1431,
+  "mName": "Rhapsody Chapter [Salvation]"
+ },
+ {
+  "i": 1432,
+  "mName": "Rhapsody Chapter [Sinner]"
+ },
+ {
+  "i": 1433,
+  "mName": "Rhapsody Chapter [Judgment]"
+ },
+ {
+  "i": 1434,
+  "mName": "Rhapsody Chapter [Downfall]"
+ },
+ {
+  "i": 1435,
+  "mName": "Rhapsody Chapter [Precept]"
+ },
+ {
+  "i": 1436,
+  "mName": "Rhapsody Chapter [Spiral]"
+ },
+ {
+  "i": 1437,
+  "mName": "Rhapsody Chapter [Defection]"
+ },
+ {
+  "i": 1438,
+  "mName": "Shattered Earth [Boulder Claw]"
+ },
+ {
+  "i": 1439,
+  "mName": "Joyeuse Ordre"
+ },
+ {
+  "i": 1440,
+  "mName": "Applause Like Clashing Blades"
+ },
+ {
+  "i": 1441,
+  "mName": "La Black Luna"
+ },
+ {
+  "i": 1442,
+  "mName": "The Saint's Number"
+ },
+ {
+  "i": 1443,
+  "mName": "四武戯・印【黒剣】"
+ },
+ {
+  "i": 1444,
+  "mName": "四武戯・印【朱貨】"
+ },
+ {
+  "i": 1445,
+  "mName": "Four Martial Arts: Mark [Lacquer Staff]"
+ },
+ {
+  "i": 1446,
+  "mName": "四武戯・印【赤杯】"
+ },
+ {
+  "i": 1447,
+  "mName": "Radiant Hammer [Ice Murk]"
+ },
+ {
+  "i": 1448,
+  "mName": "Radiant Hammer [Avalanche]"
+ },
+ {
+  "i": 1449,
+  "mName": "Radiant Hammer: Extreme [Purple Hail]"
+ },
+ {
+  "i": 1450,
+  "mName": "Radiant Hammer [Ugly Ice]"
+ },
+ {
+  "i": 1451,
+  "mName": "Radiant Hammer [Hail Rock]"
+ },
+ {
+  "i": 1452,
+  "mName": "Radiant Hammer [Ice Ore]"
+ },
+ {
+  "i": 1453,
+  "mName": "Radiant Hammer [Hailstrike]"
+ },
+ {
+  "i": 1454,
+  "mName": "Radiant Hammer [Frozen Mass]"
+ },
+ {
+  "i": 1455,
+  "mName": "Shattered Earth [Thunder Cleave]"
+ },
+ {
+  "i": 1456,
+  "mName": "Golden Masterful Technique [Brocade Dash]"
+ },
+ {
+  "i": 1457,
+  "mName": "That's Why I'll Save You Now!"
+ },
+ {
+  "i": 1458,
+  "mName": "You're Really Such a Kid"
+ },
+ {
+  "i": 1459,
+  "mName": "I'll Make You Happy, I Promise"
+ },
+ {
+  "i": 1460,
+  "mName": "I'm Not a Doll"
+ },
+ {
+  "i": 1461,
+  "mName": "陸征【剪壊】"
+ },
+ {
+  "i": 1462,
+  "mName": "Land Conquest [Stonecrawl]"
+ },
+ {
+  "i": 1463,
+  "mName": "Land Conquest [Gravel Layer]"
+ },
+ {
+  "i": 1464,
+  "mName": "Land Conquest [Flow Pattern]"
+ },
+ {
+  "i": 1465,
+  "mName": "陸征【輝崗】"
+ },
+ {
+  "i": 1466,
+  "mName": "Land Conquest [Crushed Debris]"
+ },
+ {
+  "i": 1467,
+  "mName": "Land Conquest: Extreme [Boulder Might]"
+ },
+ {
+  "i": 1468,
+  "mName": "Land Conquest [Wild Thunderclap]"
+ },
+ {
+  "i": 1469,
+  "mName": "Transcendent Technique [Valor]"
+ },
+ {
+  "i": 1470,
+  "mName": "超絶技巧【吟遊】"
+ },
+ {
+  "i": 1471,
+  "mName": "Transcendent Technique [Fierce Fight]"
+ },
+ {
+  "i": 1472,
+  "mName": "Transcendent Technique [Ringflame]"
+ },
+ {
+  "i": 1473,
+  "mName": "超絶技巧【悪戯】"
+ },
+ {
+  "i": 1474,
+  "mName": "Transcendent Technique [Ice Shrine Maiden]"
+ },
+ {
+  "i": 1475,
+  "mName": "超絶技巧【賛美】"
+ },
+ {
+  "i": 1476,
+  "mName": "Transcendent Technique [Mechanism]"
+ },
+ {
+  "i": 1477,
+  "mName": "Transcendent Technique [Scorpion Hunt]"
+ },
+ {
+  "i": 1478,
+  "mName": "Transcendent Technique [A5]"
+ },
+ {
+  "i": 1479,
+  "mName": "Shattered Earth [Cascade Wind]"
+ },
+ {
+  "i": 1480,
+  "mName": "Rokudan Melody"
+ },
+ {
+  "i": 1481,
+  "mName": "New Hunt, Boundless Fortune"
+ },
+ {
+  "i": 1482,
+  "mName": "Welcoming the Hunt, Ten Thousand Years"
+ },
+ {
+  "i": 1483,
+  "mName": "The Sea Bream Chased by the Cat: Finest"
+ },
+ {
+  "i": 1484,
+  "mName": "Elegant Reverie [Glorious Rank]"
+ },
+ {
+  "i": 1485,
+  "mName": "雅遊陶酔【銀零】"
+ },
+ {
+  "i": 1486,
+  "mName": "Exotic Melody [Three Fans]"
+ },
+ {
+  "i": 1487,
+  "mName": "I Have the Strongest Eyes, You Know"
+ },
+ {
+  "i": 1488,
+  "mName": "The Artful Alchemy Passed Down Through Generations"
+ },
+ {
+  "i": 1489,
+  "mName": "I'll Show You the Difference in Our Class!"
+ },
+ {
+  "i": 1490,
+  "mName": "You Toyed With a Maiden's Pure Heart!"
+ },
+ {
+  "i": 1491,
+  "mName": "Shooting Star"
+ },
+ {
+  "i": 1492,
+  "mName": "Tactical Shell: Flame"
+ },
+ {
+  "i": 1493,
+  "mName": "Tactical Shell: Thunder"
+ },
+ {
+  "i": 1494,
+  "mName": "Princess's Melody [Lustrous]"
+ },
+ {
+  "i": 1495,
+  "mName": "Princess's Melody [Clear Tone]"
+ },
+ {
+  "i": 1496,
+  "mName": "Princess's Melody [Vast Distance]"
+ },
+ {
+  "i": 1497,
+  "mName": "Princess's Melody [Grand Vigor]"
+ },
+ {
+  "i": 1498,
+  "mName": "Princess's Melody [Grand Era]"
+ },
+ {
+  "i": 1499,
+  "mName": "姫奏楽【鼓翼】"
+ },
+ {
+  "i": 1500,
+  "mName": "Princess's Melody [Sultry Song]"
+ },
+ {
+  "i": 1501,
+  "mName": "Princess's Melody [Roaring Cry]"
+ },
+ {
+  "i": 1502,
+  "mName": "Princess's Melody [Clear Resonance]"
+ },
+ {
+  "i": 1503,
+  "mName": "Princess's Melody [Glorious Scale]"
+ },
+ {
+  "i": 1504,
+  "mName": "姫奏楽【慧眼】"
+ },
+ {
+  "i": 1505,
+  "mName": "Lion-Dragon's Heavenly Ascent: Tempest [Dragon Pearl]"
+ },
+ {
+  "i": 1506,
+  "mName": "Lion-Dragon's Heavenly Ascent: Tempest [Dragon Vein]"
+ },
+ {
+  "i": 1507,
+  "mName": "獅子龍天昇・嵐【双竜】"
+ },
+ {
+  "i": 1508,
+  "mName": "Lion-Dragon's Heavenly Ascent: Tempest [Cloud Eater]"
+ },
+ {
+  "i": 1509,
+  "mName": "Lion-Dragon's Heavenly Ascent: Tempest [Toy Dragon]"
+ },
+ {
+  "i": 1510,
+  "mName": "獅子龍天昇・嵐【登竜】"
+ },
+ {
+  "i": 1511,
+  "mName": "獅子龍天昇・嵐【舞泳】"
+ },
+ {
+  "i": 1512,
+  "mName": "S Crush Buster"
+ },
+ {
+  "i": 1513,
+  "mName": "Ironclad Helmet"
+ },
+ {
+  "i": 1514,
+  "mName": "Phantom Dream Zero"
+ },
+ {
+  "i": 1515,
+  "mName": "B-Rank Irregular Hunter"
+ },
+ {
+  "i": 1516,
+  "mName": "械式号令【枢軸】"
+ },
+ {
+  "i": 1517,
+  "mName": "Mechanical Command [Screw]"
+ },
+ {
+  "i": 1518,
+  "mName": "械式号令【重構】"
+ },
+ {
+  "i": 1519,
+  "mName": "Mechanical Command [Tailor's Cut]"
+ },
+ {
+  "i": 1520,
+  "mName": "Mechanical Command [Legacy]"
+ },
+ {
+  "i": 1521,
+  "mName": "Mechanical Command [Steel Core]"
+ },
+ {
+  "i": 1522,
+  "mName": "Mechanical Command [Brass String]"
+ },
+ {
+  "i": 1523,
+  "mName": "昂獅子【戊申】"
+ },
+ {
+  "i": 1524,
+  "mName": "Raging Lion: Extreme [Bloodshot Eyes]"
+ },
+ {
+  "i": 1525,
+  "mName": "昂獅子【狂躁】"
+ },
+ {
+  "i": 1526,
+  "mName": "Raging Lion [Uproar]"
+ },
+ {
+  "i": 1527,
+  "mName": "Raging Lion [Fighting Aura]"
+ },
+ {
+  "i": 1528,
+  "mName": "昂獅子【荒息】"
+ },
+ {
+  "i": 1529,
+  "mName": "Raging Lion [Wild Fury]"
+ },
+ {
+  "i": 1530,
+  "mName": "Raging Lion [Surging Vigor]"
+ },
+ {
+  "i": 1531,
+  "mName": "昂獅子【金欄】"
+ },
+ {
+  "i": 1532,
+  "mName": "Raging Lion [Hannya]"
+ },
+ {
+  "i": 1533,
+  "mName": "Twilight Ritual [Corpse]"
+ },
+ {
+  "i": 1534,
+  "mName": "逢魔祀典【宵闇】"
+ },
+ {
+  "i": 1535,
+  "mName": "逢魔祀典【虚空】"
+ },
+ {
+  "i": 1536,
+  "mName": "Twilight Ritual [Demise]"
+ },
+ {
+  "i": 1537,
+  "mName": "Twilight Ritual [Pathos]"
+ },
+ {
+  "i": 1538,
+  "mName": "Twilight Ritual [Anguish]"
+ },
+ {
+  "i": 1539,
+  "mName": "Twilight Ritual [Cold Severity]"
+ },
+ {
+  "i": 1540,
+  "mName": "Song of Sunlit Blossom"
+ },
+ {
+  "i": 1541,
+  "mName": "Song of Cool Fragrance"
+ },
+ {
+  "i": 1542,
+  "mName": "Song of a Thousand Purples"
+ },
+ {
+  "i": 1543,
+  "mName": "Song of Peach Crimson"
+ },
+ {
+  "i": 1544,
+  "mName": "Song of Twilight"
+ },
+ {
+  "i": 1545,
+  "mName": "歌唄ノ柳吹"
+ },
+ {
+  "i": 1546,
+  "mName": "歌唄ノ鳥調"
+ },
+ {
+  "i": 1547,
+  "mName": "Song of the Butterfly Dance"
+ },
+ {
+  "i": 1548,
+  "mName": "歌唄ノ蒼然"
+ },
+ {
+  "i": 1549,
+  "mName": "Song of Wind and Frost"
+ },
+ {
+  "i": 1550,
+  "mName": "歌唄ノ水天"
+ },
+ {
+  "i": 1551,
+  "mName": "歌唄ノ春燈"
+ },
+ {
+  "i": 1552,
+  "mName": "Shattered Earth [Flame Strike]"
+ },
+ {
+  "i": 1553,
+  "mName": "特装総覇術【圧黙】"
+ },
+ {
+  "i": 1554,
+  "mName": "Special Grand Overlord Technique [Judgment]"
+ },
+ {
+  "i": 1555,
+  "mName": "特装総覇術【零鎖】"
+ },
+ {
+  "i": 1556,
+  "mName": "特装総覇術【暴裁】"
+ },
+ {
+  "i": 1557,
+  "mName": "特装総覇術【盾審】"
+ },
+ {
+  "i": 1558,
+  "mName": "特装総覇術【調撃】"
+ },
+ {
+  "i": 1559,
+  "mName": "特装総覇術【縛走】"
+ },
+ {
+  "i": 1560,
+  "mName": "Rough Cutting"
+ },
+ {
+  "i": 1561,
+  "mName": "Razor's Edge Slash"
+ },
+ {
+  "i": 1562,
+  "mName": "Close-Call Shooting"
+ },
+ {
+  "i": 1563,
+  "mName": "Edge-of-the-Line Shoot"
+ },
+ {
+  "i": 1564,
+  "mName": "Raging Torrent: Extreme [Roar of the Tide]"
+ },
+ {
+  "i": 1565,
+  "mName": "Raging Torrent [Rain Carp]"
+ },
+ {
+  "i": 1566,
+  "mName": "激流【滝滴】"
+ },
+ {
+  "i": 1567,
+  "mName": "Raging Torrent [Flood Wave]"
+ },
+ {
+  "i": 1568,
+  "mName": "激流【濁水】"
+ },
+ {
+  "i": 1569,
+  "mName": "Raging Torrent [Strange Scale]"
+ },
+ {
+  "i": 1570,
+  "mName": "激流【飛冷】"
+ },
+ {
+  "i": 1571,
+  "mName": "Raging Torrent [Keen Veil]"
+ },
+ {
+  "i": 1572,
+  "mName": "激流【白礁】"
+ },
+ {
+  "i": 1573,
+  "mName": "激流【水禍】"
+ },
+ {
+  "i": 1574,
+  "mName": "Raging Torrent [Gentle Current]"
+ },
+ {
+  "i": 1575,
+  "mName": "Phantom Mystery Tale [Anomaly]"
+ },
+ {
+  "i": 1576,
+  "mName": "Phantom Mystery Tale [Void]"
+ },
+ {
+  "i": 1577,
+  "mName": "Phantom Mystery Tale [Hidden Demon]"
+ },
+ {
+  "i": 1578,
+  "mName": "Phantom Mystery Tale [Will-o'-the-Wisp]"
+ },
+ {
+  "i": 1579,
+  "mName": "Phantom Mystery Tale [Possession]"
+ },
+ {
+  "i": 1580,
+  "mName": "Phantom Mystery Tale [Hour of the Ox]"
+ },
+ {
+  "i": 1581,
+  "mName": "Phantom Mystery Tale [Cloud Mirror]"
+ },
+ {
+  "i": 1582,
+  "mName": "Train Slash!"
+ },
+ {
+  "i": 1583,
+  "mName": "My Ultimate Move!"
+ },
+ {
+  "i": 1584,
+  "mName": "Critical Finish"
+ },
+ {
+  "i": 1585,
+  "mName": "Ba-Konk!"
+ },
+ {
+  "i": 1586,
+  "mName": "Shattered Earth [Ice Domain]"
+ },
+ {
+  "i": 1587,
+  "mName": "Black Dragon [Evil Cannon]"
+ },
+ {
+  "i": 1588,
+  "mName": "Purgatory [Searing Extreme]"
+ },
+ {
+  "i": 1589,
+  "mName": "煉獄【赤幽】"
+ },
+ {
+  "i": 1590,
+  "mName": "Purgatory [Flame Journey]"
+ },
+ {
+  "i": 1591,
+  "mName": "煉獄【焦昇】"
+ },
+ {
+  "i": 1592,
+  "mName": "Purgatory [Blazing Spring]"
+ },
+ {
+  "i": 1593,
+  "mName": "煉獄【果葬】"
+ },
+ {
+  "i": 1594,
+  "mName": "煉獄【永燃】"
+ },
+ {
+  "i": 1595,
+  "mName": "Purgatory [Purifying Flame]"
+ },
+ {
+  "i": 1596,
+  "mName": "Spirit-Rending Ninjutsu [Flash Counter]"
+ },
+ {
+  "i": 1597,
+  "mName": "Twin-Handed Ninjutsu [Windmill]"
+ },
+ {
+  "i": 1598,
+  "mName": "Strike-and-Turn Ninjutsu [Twilight Cut]"
+ },
+ {
+  "i": 1599,
+  "mName": "穿貫忍法【百中り】"
+ },
+ {
+  "i": 1600,
+  "mName": "Shapeshifting Ninjutsu [Heat Haze Drop]"
+ },
+ {
+  "i": 1601,
+  "mName": "Insect-Control Ninjutsu [Bug Hiding]"
+ },
+ {
+  "i": 1602,
+  "mName": "Blast-Speed Ninjutsu [Sky Runner]"
+ },
+ {
+  "i": 1603,
+  "mName": "歌詠ノ暁天"
+ },
+ {
+  "i": 1604,
+  "mName": "Poem of the Crimson Mirror"
+ },
+ {
+  "i": 1605,
+  "mName": "歌詠ノ銀鉤"
+ },
+ {
+  "i": 1606,
+  "mName": "Poem of Starlight Shadow"
+ },
+ {
+  "i": 1607,
+  "mName": "歌詠ノ黄昏"
+ },
+ {
+  "i": 1608,
+  "mName": "歌詠ノ玉響"
+ },
+ {
+  "i": 1609,
+  "mName": "歌詠ノ彼方"
+ },
+ {
+  "i": 1610,
+  "mName": "歌詠ノ白虹"
+ },
+ {
+  "i": 1611,
+  "mName": "Undying Path of Supremacy [Great Talent]"
+ },
+ {
+  "i": 1612,
+  "mName": "Frost Fang: Mighty [Keen]"
+ },
+ {
+  "i": 1613,
+  "mName": "Frost Fang: Mighty [Crisp]"
+ },
+ {
+  "i": 1614,
+  "mName": "Frost Fang: Mighty [Zero]"
+ },
+ {
+  "i": 1615,
+  "mName": "Frost Fang: Mighty [Crystal]"
+ },
+ {
+  "i": 1616,
+  "mName": "Hero's Soul [Immortality]"
+ },
+ {
+  "i": 1617,
+  "mName": "英雄の魂【闘志】"
+ },
+ {
+  "i": 1618,
+  "mName": "Hero's Soul [Valor and Justice]"
+ },
+ {
+  "i": 1619,
+  "mName": "Hero's Soul [Prodigy]"
+ },
+ {
+  "i": 1620,
+  "mName": "英雄の魂【名流】"
+ },
+ {
+  "i": 1621,
+  "mName": "Butterfly Dance, Bee Sting [Heaven's Sound]"
+ },
+ {
+  "i": 1622,
+  "mName": "蝶舞蜂刺【花風】"
+ },
+ {
+  "i": 1623,
+  "mName": "Butterfly Dance, Bee Sting [Colored Form]"
+ },
+ {
+  "i": 1624,
+  "mName": "Butterfly Dance, Bee Sting [Dance]"
+ },
+ {
+  "i": 1625,
+  "mName": "蝶舞蜂刺【流線】"
+ },
+ {
+  "i": 1626,
+  "mName": "蝶舞蜂刺【優雅】"
+ },
+ {
+  "i": 1627,
+  "mName": "蝶舞蜂刺【翻弄】"
+ },
+ {
+  "i": 1628,
+  "mName": "Noble Azure Star [Highest Heaven]"
+ },
+ {
+  "i": 1629,
+  "mName": "Noble Azure Star [Azure Heaven]"
+ },
+ {
+  "i": 1630,
+  "mName": "Noble Azure Star [Vast Sky]"
+ },
+ {
+  "i": 1631,
+  "mName": "気高き蒼星【炎天】"
+ },
+ {
+  "i": 1632,
+  "mName": "気高き蒼星【玄天】"
+ },
+ {
+  "i": 1633,
+  "mName": "Noble Azure Star [Changing Sky]"
+ },
+ {
+  "i": 1634,
+  "mName": "気高き蒼星【幽天】"
+ },
+ {
+  "i": 1635,
+  "mName": "気高き蒼星【朱天】"
+ },
+ {
+  "i": 1636,
+  "mName": "Noble Azure Star [Sunlit Sky]"
+ },
+ {
+  "i": 1637,
+  "mName": "気高き蒼星【上天】"
+ },
+ {
+  "i": 1638,
+  "mName": "気高き蒼星【旻天】"
+ },
+ {
+  "i": 1639,
+  "mName": "気高き蒼星【夜天】"
+ },
+ {
+  "i": 1640,
+  "mName": "Ice Beast Slaying Technique [Ambition]"
+ },
+ {
+  "i": 1641,
+  "mName": "Earth Beast Slaying Technique [Ambition]"
+ },
+ {
+  "i": 1642,
+  "mName": "Thunder Beast Slaying Technique [Ambition]"
+ },
+ {
+  "i": 1643,
+  "mName": "Water Beast Slaying Technique [Ambition]"
+ },
+ {
+  "i": 1644,
+  "mName": "Fire Beast Slaying Technique [Ambition]"
+ },
+ {
+  "i": 1645,
+  "mName": "Black Blight: Mighty [Darkness]"
+ },
+ {
+  "i": 1646,
+  "mName": "Black Blight: Mighty [Netherworld]"
+ },
+ {
+  "i": 1647,
+  "mName": "Black Blight: Mighty [Devour]"
+ },
+ {
+  "i": 1648,
+  "mName": "Black Blight: Mighty [Jet Black]"
+ },
+ {
+  "i": 1649,
+  "mName": "SIXTH HEAVEN"
+ },
+ {
+  "i": 1650,
+  "mName": "NEAR HEAVEN"
+ },
+ {
+  "i": 1651,
+  "mName": "HIDDEN HEAVEN"
+ },
+ {
+  "i": 1652,
+  "mName": "DESIRE HEAVEN"
+ },
+ {
+  "i": 1653,
+  "mName": "RED HEAVEN"
+ },
+ {
+  "i": 1654,
+  "mName": "GUILTY HEAVEN"
+ },
+ {
+  "i": 1655,
+  "mName": "ENDLESS HEAVEN"
+ },
+ {
+  "i": 1656,
+  "mName": "CHAOS HEAVEN"
+ },
+ {
+  "i": 1657,
+  "mName": "END OF HEAVEN"
+ },
+ {
+  "i": 1658,
+  "mName": "DIRTY HEAVEN"
+ },
+ {
+  "i": 1659,
+  "mName": "HOT HEAVEN"
+ },
+ {
+  "i": 1660,
+  "mName": "BREAK HEAVEN"
+ },
+ {
+  "i": 1661,
+  "mName": "SHINING HEAVEN"
+ },
+ {
+  "i": 1662,
+  "mName": "TOP OF HEAVEN"
+ },
+ {
+  "i": 1663,
+  "mName": "EVIL HEAVEN"
+ },
+ {
+  "i": 1664,
+  "mName": "BLOODY HEAVEN"
+ },
+ {
+  "i": 1665,
+  "mName": "CLOSED HEAVEN"
+ },
+ {
+  "i": 1666,
+  "mName": "SHADOW HEAVEN"
+ },
+ {
+  "i": 1667,
+  "mName": "NO HEAVEN"
+ },
+ {
+  "i": 1668,
+  "mName": "MAD HEAVEN"
+ },
+ {
+  "i": 1669,
+  "mName": "BEAR HEAVEN"
+ },
+ {
+  "i": 1670,
+  "mName": "劇的奮戦【試練】"
+ },
+ {
+  "i": 1671,
+  "mName": "劇的奮戦【入魂】"
+ },
+ {
+  "i": 1672,
+  "mName": "フワフワ☆クッキー"
+ },
+ {
+  "i": 1673,
+  "mName": "Undying Path of Supremacy [Natural Gift]"
+ },
+ {
+  "i": 1674,
+  "mName": "Volt Dragon: Mighty [Thunder Lord]"
+ },
+ {
+  "i": 1675,
+  "mName": "Volt Dragon: Mighty [Vicious Cry]"
+ },
+ {
+  "i": 1676,
+  "mName": "Volt Dragon: Mighty [Ultimate Shot]"
+ },
+ {
+  "i": 1677,
+  "mName": "Volt Dragon: Mighty [Rebellion]"
+ },
+ {
+  "i": 1678,
+  "mName": "Deep Crimson Black Orb [Unmatched]"
+ },
+ {
+  "i": 1679,
+  "mName": "Deep Crimson Black Orb [Paragon]"
+ },
+ {
+  "i": 1680,
+  "mName": "Deep Crimson Black Orb [Outstanding Might]"
+ },
+ {
+  "i": 1681,
+  "mName": "Undying Path of Supremacy [Unfallen]"
+ },
+ {
+  "i": 1682,
+  "mName": "Raging Water: Mighty [Depths Lure]"
+ },
+ {
+  "i": 1683,
+  "mName": "Raging Water: Mighty [Deep Current]"
+ },
+ {
+  "i": 1684,
+  "mName": "Raging Water: Mighty [Flame Sweep]"
+ },
+ {
+  "i": 1685,
+  "mName": "Raging Water: Mighty [Earth Piercer]"
+ },
+ {
+  "i": 1686,
+  "mName": "Brilliant Talent in Bloom [Pure White]"
+ },
+ {
+  "i": 1687,
+  "mName": "Brilliant Talent in Bloom [Snow Cherry Blossom]"
+ },
+ {
+  "i": 1688,
+  "mName": "Brilliant Talent in Bloom [Crimson Hat]"
+ },
+ {
+  "i": 1689,
+  "mName": "Brilliant Talent in Bloom [Turmeric Gold]"
+ },
+ {
+  "i": 1690,
+  "mName": "Brilliant Talent in Bloom [Winter Crimson]"
+ },
+ {
+  "i": 1691,
+  "mName": "Brilliant Talent in Bloom [Blessing of Children]"
+ },
+ {
+  "i": 1692,
+  "mName": "Brilliant Talent in Bloom [Double-Layered]"
+ },
+ {
+  "i": 1693,
+  "mName": "Death Butterfly Offbeat [Wingbeat]"
+ },
+ {
+  "i": 1694,
+  "mName": "Death Butterfly Offbeat [Rock Sound]"
+ },
+ {
+  "i": 1695,
+  "mName": "Death Butterfly Offbeat [Grass Rustle]"
+ },
+ {
+  "i": 1696,
+  "mName": "Death Butterfly Offbeat [Rain Sound]"
+ },
+ {
+  "i": 1697,
+  "mName": "Death Butterfly Offbeat [Wind Sound]"
+ },
+ {
+  "i": 1698,
+  "mName": "Undying Path of Supremacy [Heavenly Conquest]"
+ },
+ {
+  "i": 1699,
+  "mName": "Glavenus: Mighty [Eternal Blaze]"
+ },
+ {
+  "i": 1700,
+  "mName": "Glavenus: Mighty [Flame Talisman]"
+ },
+ {
+  "i": 1701,
+  "mName": "Glavenus: Mighty [Blazing Inscription]"
+ },
+ {
+  "i": 1702,
+  "mName": "Glavenus: Mighty [Searing Edge]"
+ },
+ {
+  "i": 1703,
+  "mName": "Demon Knight [Dashing]"
+ },
+ {
+  "i": 1704,
+  "mName": "Demon Knight [Serenity]"
+ },
+ {
+  "i": 1705,
+  "mName": "Demon Knight [Flower Echo]"
+ },
+ {
+  "i": 1706,
+  "mName": "Demon Knight [Heroic Resolve]"
+ },
+ {
+  "i": 1707,
+  "mName": "Demon Knight [Radiant Elation]"
+ },
+ {
+  "i": 1708,
+  "mName": "Demon Knight [Solemn Majesty]"
+ },
+ {
+  "i": 1709,
+  "mName": "Undying Path of Supremacy [Hero of Might]"
+ },
+ {
+  "i": 1710,
+  "mName": "Radiant Hammer: Mighty [Ugly Ice]"
+ },
+ {
+  "i": 1711,
+  "mName": "Radiant Hammer: Mighty [Hail Rock]"
+ },
+ {
+  "i": 1712,
+  "mName": "Radiant Hammer: Mighty [Frozen Mass]"
+ },
+ {
+  "i": 1713,
+  "mName": "Radiant Hammer: Mighty [Ice Ore]"
+ },
+ {
+  "i": 1714,
+  "mName": "Beast Blood Fervor [Boiling]"
+ },
+ {
+  "i": 1715,
+  "mName": "Beast Blood Fervor [Frenzy]"
+ },
+ {
+  "i": 1716,
+  "mName": "Beast Blood Fervor [Unstoppable]"
+ },
+ {
+  "i": 1717,
+  "mName": "Beast Blood Fervor [Ferocity]"
+ },
+ {
+  "i": 1718,
+  "mName": "Beast Blood Fervor [Mad Tempest]"
+ },
+ {
+  "i": 1719,
+  "mName": "Beast Blood Fervor [Sharp Ascent]"
+ },
+ {
+  "i": 1720,
+  "mName": "True Scarlet Power [Deep Red]"
+ },
+ {
+  "i": 1721,
+  "mName": "True Scarlet Power [Crimson Lotus]"
+ },
+ {
+  "i": 1722,
+  "mName": "True Scarlet Power [Pale Crimson]"
+ },
+ {
+  "i": 1723,
+  "mName": "True Scarlet Power [Dusk Madder]"
+ },
+ {
+  "i": 1724,
+  "mName": "Undying Path of Supremacy [Valiant Leap]"
+ },
+ {
+  "i": 1725,
+  "mName": "Windfang: Mighty [Tempest]"
+ },
+ {
+  "i": 1726,
+  "mName": "Windfang: Mighty [Violence]"
+ },
+ {
+  "i": 1727,
+  "mName": "Windfang: Mighty [Ferocity]"
+ },
+ {
+  "i": 1728,
+  "mName": "Windfang: Mighty [Wild]"
+ },
+ {
+  "i": 1729,
+  "mName": "Undying Path of Supremacy [Martyr]"
+ },
+ {
+  "i": 1730,
+  "mName": "Raging Lion: Mighty [Hannya]"
+ },
+ {
+  "i": 1731,
+  "mName": "Raging Lion: Mighty [Wild Fury]"
+ },
+ {
+  "i": 1732,
+  "mName": "Raging Lion: Mighty [Surging Vigor]"
+ },
+ {
+  "i": 1733,
+  "mName": "Raging Lion: Mighty [Ragged Breath]"
+ },
+ {
+  "i": 1734,
+  "mName": "Undying Path of Supremacy [Iron Will]"
+ },
+ {
+  "i": 1735,
+  "mName": "Gold Horn"
+ },
+ {
+  "i": 1736,
+  "mName": "Raging Torrent: Mighty [Roar of the Tide]"
+ },
+ {
+  "i": 1737,
+  "mName": "Raging Torrent: Mighty [Flood Wave]"
+ },
+ {
+  "i": 1738,
+  "mName": "Raging Torrent: Mighty [Gentle Current]"
+ },
+ {
+  "i": 1739,
+  "mName": "Raging Torrent: Mighty [White Reef]"
+ },
+ {
+  "i": 1740,
+  "mName": "Undying Path of Supremacy [Fierce Heart]"
+ },
+ {
+  "i": 1741,
+  "mName": "Scorching Heat: Mighty [First Flame]"
+ },
+ {
+  "i": 1742,
+  "mName": "Scorching Heat: Mighty [Ancient Flame]"
+ },
+ {
+  "i": 1743,
+  "mName": "Scorching Heat: Mighty [Ultimate Flame]"
+ },
+ {
+  "i": 1744,
+  "mName": "Scorching Heat: Mighty [Deep Flame]"
+ },
+ {
+  "i": 1745,
+  "mName": "Model 42 Rumbling Engine [Sky Weave]"
+ },
+ {
+  "i": 1746,
+  "mName": "Model 42 Rumbling Engine [Hatch]"
+ },
+ {
+  "i": 1747,
+  "mName": "Model 42 Rumbling Engine [Curtain Cut]"
+ },
+ {
+  "i": 1748,
+  "mName": "Model 42 Rumbling Engine [Gnashing]"
+ },
+ {
+  "i": 1749,
+  "mName": "Model 42 Rumbling Engine [Phantom Rig]"
+ },
+ {
+  "i": 1750,
+  "mName": "Undying Path of Supremacy [Towering Stature]"
+ },
+ {
+  "i": 1751,
+  "mName": "Wind Soar: Mighty [Hanging Icicle]"
+ },
+ {
+  "i": 1752,
+  "mName": "Wind Soar: Mighty [Frost-Coated Trees]"
+ },
+ {
+  "i": 1753,
+  "mName": "Wind Soar: Mighty [Fine Ice]"
+ },
+ {
+  "i": 1754,
+  "mName": "Wind Soar: Mighty [Ice Blossom]"
+ },
+ {
+  "i": 1755,
+  "mName": "Black Chivalry [Noble Heart]"
+ },
+ {
+  "i": 1756,
+  "mName": "Brilliant Radiance [Cloudless]"
+ },
+ {
+  "i": 1757,
+  "mName": "Brilliant Radiance [Source of Shine]"
+ },
+ {
+  "i": 1758,
+  "mName": "Brilliant Radiance [Clear Light]"
+ },
+ {
+  "i": 1759,
+  "mName": "Undying Path of Supremacy [Unrivaled]"
+ },
+ {
+  "i": 1760,
+  "mName": "Overlord Dragon: Mighty [Crumbling Tile]"
+ },
+ {
+  "i": 1761,
+  "mName": "Overlord Dragon: Mighty [Wild Stomp]"
+ },
+ {
+  "i": 1762,
+  "mName": "Overlord Dragon: Mighty [Roaring Crush]"
+ },
+ {
+  "i": 1763,
+  "mName": "Overlord Dragon: Mighty [Wave Pulse]"
+ },
+ {
+  "i": 1764,
+  "mName": "Dreamlike Divine Punishment [Sacred Hammer]"
+ },
+ {
+  "i": 1765,
+  "mName": "Undying Path of Supremacy [Vigor]"
+ },
+ {
+  "i": 1766,
+  "mName": "Thunder Bubble: Mighty [Falling Cherry Blossoms]"
+ },
+ {
+  "i": 1767,
+  "mName": "Thunder Bubble: Mighty [Flashing Scenery]"
+ },
+ {
+  "i": 1768,
+  "mName": "Thunder Bubble: Mighty [Ghost Pearl]"
+ },
+ {
+  "i": 1769,
+  "mName": "Thunder Bubble: Mighty [Dazzling Mirror]"
+ },
+ {
+  "i": 1770,
+  "mName": "Ninth Heaven Constellation [Spirit Design]"
+ },
+ {
+  "i": 1771,
+  "mName": "Ninth Heaven Constellation [Shell]"
+ },
+ {
+  "i": 1772,
+  "mName": "Ninth Heaven Constellation [Boat Guard]"
+ },
+ {
+  "i": 1773,
+  "mName": "Ninth Heaven Constellation [Pleiades]"
+ },
+ {
+  "i": 1774,
+  "mName": "Undying Path of Supremacy [Triumphant Return]"
+ },
+ {
+  "i": 1775,
+  "mName": "Mist Dragon: Mighty [Vicious Poison]"
+ },
+ {
+  "i": 1776,
+  "mName": "Mist Dragon: Mighty [Forest Deceiver]"
+ },
+ {
+  "i": 1777,
+  "mName": "Mist Dragon: Mighty [Purple Spy]"
+ },
+ {
+  "i": 1778,
+  "mName": "Mist Dragon: Mighty [Mock Escape]"
+ },
+ {
+  "i": 1779,
+  "mName": "Undying Path of Supremacy [Hunter's Crown]"
+ },
+ {
+  "i": 1780,
+  "mName": "Shatter Dragon: Mighty [Bombardment]"
+ },
+ {
+  "i": 1781,
+  "mName": "Shatter Dragon: Mighty [Blast Arm]"
+ },
+ {
+  "i": 1782,
+  "mName": "Shatter Dragon: Mighty [Blast Spore]"
+ },
+ {
+  "i": 1783,
+  "mName": "Shatter Dragon: Mighty [Blast Chain]"
+ },
+ {
+  "i": 1784,
+  "mName": "Demonic Dread War Art [Demon Sweep]"
+ },
+ {
+  "i": 1785,
+  "mName": "Heaven's Hell [Black Chalice]"
+ },
+ {
+  "i": 1786,
+  "mName": "Heaven's Hell [Bewitching Ruin]"
+ },
+ {
+  "i": 1787,
+  "mName": "Heaven's Hell [Mad Melody]"
+ },
+ {
+  "i": 1788,
+  "mName": "Undying Path of Supremacy [Anthem]"
+ },
+ {
+  "i": 1789,
+  "mName": "Undying Path of Supremacy [Hunter's Soul]"
+ },
+ {
+  "i": 1790,
+  "mName": "Hero's Soul: Zero [Valor and Justice]"
+ },
+ {
+  "i": 1791,
+  "mName": "Transcendent Technique: Zero [Ice Shrine Maiden]"
+ },
+ {
+  "i": 1792,
+  "mName": "Butterfly Dance, Bee Sting: Zero [Colored Form]"
+ },
+ {
+  "i": 1793,
+  "mName": "Noble Azure Star: Zero [Sunlit Sky]"
+ },
+ {
+  "i": 1794,
+  "mName": "Twilight Ritual: Zero [Anguish]"
+ },
+ {
+  "i": 1795,
+  "mName": "Transcendent Technique: Zero [A5]"
+ },
+ {
+  "i": 1796,
+  "mName": "Poem of Starlight Shadow: Zero"
+ },
+ {
+  "i": 1797,
+  "mName": "Undying Path of Supremacy: Zero [Great Talent]"
+ },
+ {
+  "i": 1798,
+  "mName": "Princess's Melody: Zero [Grand Era]"
+ },
+ {
+  "i": 1799,
+  "mName": "Butterfly Dance, Bee Sting: Zero [Heaven's Sound]"
+ },
+ {
+  "i": 1800,
+  "mName": "Song of Peach Crimson: Zero"
+ },
+ {
+  "i": 1801,
+  "mName": "Honor of the Hunt: Zero [Valor]"
+ },
+ {
+  "i": 1802,
+  "mName": "Twilight Ritual: Zero [Cold Severity]"
+ },
+ {
+  "i": 1803,
+  "mName": "Phantom Mystery Tale: Zero [Hour of the Ox]"
+ },
+ {
+  "i": 1804,
+  "mName": "MAD HEAVEN 2"
+ },
+ {
+  "i": 1805,
+  "mName": "Undying Path of Supremacy: Zero [Natural Gift]"
+ },
+ {
+  "i": 1806,
+  "mName": "Hero's Soul: Zero [Immortality]"
+ },
+ {
+  "i": 1807,
+  "mName": "Hero's Soul: Zero [Prodigy]"
+ },
+ {
+  "i": 1808,
+  "mName": "Deep Crimson Black Orb: Zero [Paragon]"
+ },
+ {
+  "i": 1809,
+  "mName": "Song of Cool Fragrance: Zero"
+ },
+ {
+  "i": 1810,
+  "mName": "Transcendent Technique: Zero [Reverberation]"
+ },
+ {
+  "i": 1811,
+  "mName": "Transcendent Technique: Zero [Mechanism]"
+ },
+ {
+  "i": 1812,
+  "mName": "Noble Azure Star: Zero [Vast Sky]"
+ },
+ {
+  "i": 1813,
+  "mName": "Undying Path of Supremacy: Zero [Unfallen]"
+ },
+ {
+  "i": 1814,
+  "mName": "Brilliant Talent in Bloom: Zero [Pure White]"
+ },
+ {
+  "i": 1815,
+  "mName": "TOP OF HEAVEN 2"
+ },
+ {
+  "i": 1816,
+  "mName": "Brilliant Talent in Bloom: Zero [Snow Cherry Blossom]"
+ },
+ {
+  "i": 1817,
+  "mName": "Transcendent Technique: Zero [Scorpion Hunt]"
+ },
+ {
+  "i": 1818,
+  "mName": "Death Butterfly Offbeat: Zero [Rock Sound]"
+ },
+ {
+  "i": 1819,
+  "mName": "Death Butterfly Offbeat: Zero [Wingbeat]"
+ },
+ {
+  "i": 1820,
+  "mName": "Death Butterfly Offbeat: Zero [Wind Sound]"
+ },
+ {
+  "i": 1821,
+  "mName": "Undying Path of Supremacy: Zero [Heavenly Conquest]"
+ },
+ {
+  "i": 1822,
+  "mName": "Demon Knight: Zero [Flower Echo]"
+ },
+ {
+  "i": 1823,
+  "mName": "Death Butterfly Offbeat: Zero [Grass Rustle]"
+ },
+ {
+  "i": 1824,
+  "mName": "Death Butterfly Offbeat: Zero [Rain Sound]"
+ },
+ {
+  "i": 1825,
+  "mName": "Noble Azure Star: Zero [Highest Heaven]"
+ },
+ {
+  "i": 1826,
+  "mName": "Princess's Melody: Zero [Grand Vigor]"
+ },
+ {
+  "i": 1827,
+  "mName": "Deep Crimson Black Orb: Zero [Unmatched]"
+ },
+ {
+  "i": 1828,
+  "mName": "Special Suppression Technique: Zero [Violent Judgment]"
+ },
+ {
+  "i": 1829,
+  "mName": "Undying Path of Supremacy: Zero [Hero of Might]"
+ },
+ {
+  "i": 1830,
+  "mName": "Blood-Dripping Fierce Fang: Zero"
+ },
+ {
+  "i": 1831,
+  "mName": "Beast Blood Fervor: Zero [Sharp Ascent]"
+ },
+ {
+  "i": 1832,
+  "mName": "Hunting Rite: Zero [Forge]"
+ },
+ {
+  "i": 1833,
+  "mName": "Four Martial Arts: Zero [Vermilion Coin]"
+ },
+ {
+  "i": 1834,
+  "mName": "ENDLESS HEAVEN 2"
+ },
+ {
+  "i": 1835,
+  "mName": "Deep Crimson Black Orb: Zero [Outstanding Might]"
+ },
+ {
+  "i": 1836,
+  "mName": "True Scarlet Power: Zero [Crimson Lotus]"
+ },
+ {
+  "i": 1837,
+  "mName": "Undying Path of Supremacy: Zero [Valiant Leap]"
+ },
+ {
+  "i": 1838,
+  "mName": "Special Suppression Technique: Zero [Tuned Strike]"
+ },
+ {
+  "i": 1839,
+  "mName": "Exciting Charm 2"
+ },
+ {
+  "i": 1840,
+  "mName": "True Scarlet Power: Zero [Deep Red]"
+ },
+ {
+  "i": 1841,
+  "mName": "Brilliant Talent in Bloom: Zero [Crimson Hat]"
+ },
+ {
+  "i": 1842,
+  "mName": "Rhapsody Chapter: Zero [Downfall]"
+ },
+ {
+  "i": 1843,
+  "mName": "Hour of Awakening: Zero [Harp]"
+ },
+ {
+  "i": 1844,
+  "mName": "Noble Azure Star: Zero [Azure Heaven]"
+ },
+ {
+  "i": 1845,
+  "mName": "Undying Path of Supremacy: Zero [Martyr]"
+ },
+ {
+  "i": 1846,
+  "mName": "Hour of Awakening: Zero [Judging Wave]"
+ },
+ {
+  "i": 1847,
+  "mName": "Hunting Rite: Zero [Cycle Play]"
+ },
+ {
+  "i": 1848,
+  "mName": "Heart-Pounding Charm 2"
+ },
+ {
+  "i": 1849,
+  "mName": "Transcendent Technique: Zero [Valor]"
+ },
+ {
+  "i": 1850,
+  "mName": "Hunter's Tale: Zero [Cinder Princess]"
+ },
+ {
+  "i": 1851,
+  "mName": "Gold Horn 2"
+ },
+ {
+  "i": 1852,
+  "mName": "True Scarlet Power: Zero [Dusk Madder]"
+ },
+ {
+  "i": 1853,
+  "mName": "Undying Path of Supremacy: Zero [Iron Will]"
+ },
+ {
+  "i": 1854,
+  "mName": "Beast Blood Fervor: Zero [Ferocity]"
+ },
+ {
+  "i": 1855,
+  "mName": "Hunter's Tale: Zero [Three Pigs]"
+ },
+ {
+  "i": 1856,
+  "mName": "SHINING HEAVEN 2"
+ },
+ {
+  "i": 1857,
+  "mName": "Beast Blood Fervor: Zero [Boiling]"
+ },
+ {
+  "i": 1858,
+  "mName": "Special Suppression Technique: Zero [Silent Pressure]"
+ },
+ {
+  "i": 1859,
+  "mName": "Transcendent Technique: Zero [Splendor]"
+ },
+ {
+  "i": 1860,
+  "mName": "Hunting Rite: Zero [Blade Gauge]"
+ },
+ {
+  "i": 1861,
+  "mName": "Undying Path of Supremacy: Zero [Fierce Heart]"
+ },
+ {
+  "i": 1862,
+  "mName": "Demon Knight: Zero [Radiant Elation]"
+ },
+ {
+  "i": 1863,
+  "mName": "Demon Knight: Zero [Serenity]"
+ },
+ {
+  "i": 1864,
+  "mName": "Demon Knight: Zero [Dashing]"
+ },
+ {
+  "i": 1865,
+  "mName": "Demon Knight: Zero [Heroic Resolve]"
+ },
+ {
+  "i": 1866,
+  "mName": "Model 42 Rumbling Engine: Zero [Curtain Cut]"
+ },
+ {
+  "i": 1867,
+  "mName": "Model 42 Rumbling Engine: Zero [Sky Weave]"
+ },
+ {
+  "i": 1868,
+  "mName": "Model 42 Rumbling Engine: Zero [Phantom Rig]"
+ },
+ {
+  "i": 1869,
+  "mName": "Undying Path of Supremacy: Zero [Towering Stature]"
+ },
+ {
+  "i": 1870,
+  "mName": "Beast Blood Fervor: Zero [Unstoppable]"
+ },
+ {
+  "i": 1871,
+  "mName": "Phantom Mystery Tale: Zero [Void]"
+ },
+ {
+  "i": 1872,
+  "mName": "Brilliant Radiance: Zero [Clear Light]"
+ },
+ {
+  "i": 1873,
+  "mName": "Brilliant Radiance: Zero [Source of Shine]"
+ },
+ {
+  "i": 1874,
+  "mName": "Mechanical Command: Zero [Brass String]"
+ },
+ {
+  "i": 1875,
+  "mName": "Seven Saints Formation: Zero [Divine Fire]"
+ },
+ {
+  "i": 1876,
+  "mName": "GUILTY HEAVEN 2"
+ },
+ {
+  "i": 1877,
+  "mName": "Undying Path of Supremacy: Zero [Unrivaled]"
+ },
+ {
+  "i": 1878,
+  "mName": "Model 42 Rumbling Engine: Zero [Gnashing]"
+ },
+ {
+  "i": 1879,
+  "mName": "Model 42 Rumbling Engine: Zero [Hatch]"
+ },
+ {
+  "i": 1880,
+  "mName": "HIDDEN HEAVEN 2"
+ },
+ {
+  "i": 1881,
+  "mName": "True Scarlet Power: Zero [Pale Crimson]"
+ },
+ {
+  "i": 1882,
+  "mName": "Rhapsody Chapter: Zero [Sinner]"
+ },
+ {
+  "i": 1883,
+  "mName": "Demon Knight: Zero [Solemn Majesty]"
+ },
+ {
+  "i": 1884,
+  "mName": "Dreamlike Divine Punishment: Zero [Sacred Hammer]"
+ },
+ {
+  "i": 1885,
+  "mName": "Undying Path of Supremacy: Zero [Vigor]"
+ },
+ {
+  "i": 1886,
+  "mName": "Brilliant Radiance: Zero [Cloudless]"
+ },
+ {
+  "i": 1887,
+  "mName": "Brilliant Talent in Bloom: Zero [Turmeric Gold]"
+ },
+ {
+  "i": 1888,
+  "mName": "Ninth Heaven Constellation: Zero [Boat Guard]"
+ },
+ {
+  "i": 1889,
+  "mName": "Ninth Heaven Constellation: Zero [Spirit Design]"
+ },
+ {
+  "i": 1890,
+  "mName": "Brilliant Talent in Bloom: Zero [Blessing of Children]"
+ },
+ {
+  "i": 1891,
+  "mName": "Ninth Heaven Constellation: Zero [Shell]"
+ },
+ {
+  "i": 1892,
+  "mName": "Jet-Black Wings: Zero [Ash Hawk]"
+ },
+ {
+  "i": 1893,
+  "mName": "Undying Path of Supremacy: Zero [Triumphant Return]"
+ },
+ {
+  "i": 1894,
+  "mName": "Song of Sunlit Blossom: Zero"
+ },
+ {
+  "i": 1895,
+  "mName": "Transcendent Technique: Zero [Fierce Fight]"
+ },
+ {
+  "i": 1896,
+  "mName": "Vessel of the Dead: Zero"
+ },
+ {
+  "i": 1897,
+  "mName": "Beast Blood Fervor: Zero [Mad Tempest]"
+ },
+ {
+  "i": 1898,
+  "mName": "Beast Blood Fervor: Zero [Frenzy]"
+ },
+ {
+  "i": 1899,
+  "mName": "Ninth Heaven Constellation: Zero [Pleiades]"
+ },
+ {
+  "i": 1900,
+  "mName": "Butterfly Dance, Bee Sting: Zero [Dance]"
+ },
+ {
+  "i": 1901,
+  "mName": "Undying Path of Supremacy: Zero [Hunter's Crown]"
+ },
+ {
+  "i": 1902,
+  "mName": "Demonic Dread War Art: Zero [Demon Sweep]"
+ },
+ {
+  "i": 1903,
+  "mName": "Noble Azure Star: Zero [Changing Sky]"
+ },
+ {
+  "i": 1904,
+  "mName": "Transcendent Technique: Zero [Ringflame]"
+ },
+ {
+  "i": 1905,
+  "mName": "Transcendent Technique: Zero [Hero]"
+ },
+ {
+  "i": 1906,
+  "mName": "Heaven's Hell: Zero [Mad Melody]"
+ },
+ {
+  "i": 1907,
+  "mName": "Heaven's Hell: Zero [Bewitching Ruin]"
+ },
+ {
+  "i": 1908,
+  "mName": "Heaven's Hell: Zero [Black Chalice]"
+ },
+ {
+  "i": 1909,
+  "mName": "Undying Path of Supremacy: Zero [Anthem]"
+ },
+ {
+  "i": 1910,
+  "mName": "EVIL HEAVEN 2"
+ },
+ {
+  "i": 1911,
+  "mName": "Insect-Control Ninjutsu: Zero [Bug Hiding]"
+ },
+ {
+  "i": 1912,
+  "mName": "CLOSED HEAVEN 2"
+ },
+ {
+  "i": 1913,
+  "mName": "Brilliant Talent in Bloom: Zero [Winter Crimson]"
+ },
+ {
+  "i": 1914,
+  "mName": "Song of the Butterfly Dance: Zero"
+ },
+ {
+  "i": 1915,
+  "mName": "Poem of the Crimson Mirror: Zero"
+ },
+ {
+  "i": 1916,
+  "mName": "Brilliant Talent in Bloom: Zero [Double-Layered]"
+ },
+ {
+  "i": 1917,
+  "mName": "Undying Path of Supremacy: Zero [Hunter's Soul]"
+ },
+ {
+  "i": 1918,
+  "mName": "Hero's Soul: Ultimate [Valor and Justice]"
+ },
+ {
+  "i": 1919,
+  "mName": "Transcendent Technique: Ultimate [Ice Shrine Maiden]"
+ },
+ {
+  "i": 1920,
+  "mName": "Butterfly Dance, Bee Sting: Ultimate [Colored Form]"
+ },
+ {
+  "i": 1921,
+  "mName": "Noble Azure Star: Ultimate [Sunlit Sky]"
+ },
+ {
+  "i": 1922,
+  "mName": "Twilight Ritual: Ultimate [Anguish]"
+ },
+ {
+  "i": 1923,
+  "mName": "Transcendent Technique: Ultimate [A5]"
+ },
+ {
+  "i": 1924,
+  "mName": "Poem of Starlight Shadow: Ultimate"
+ },
+ {
+  "i": 1925,
+  "mName": "Undying Path of Supremacy: Ultimate [Great Talent]"
+ },
+ {
+  "i": 1926,
+  "mName": "Princess's Melody: Ultimate [Grand Era]"
+ },
+ {
+  "i": 1927,
+  "mName": "Butterfly Dance, Bee Sting: Ultimate [Heaven's Sound]"
+ },
+ {
+  "i": 1928,
+  "mName": "Song of Peach Crimson: Ultimate"
+ },
+ {
+  "i": 1929,
+  "mName": "Honor of the Hunt: Ultimate [Valor]"
+ },
+ {
+  "i": 1930,
+  "mName": "Twilight Ritual: Ultimate [Cold Severity]"
+ },
+ {
+  "i": 1931,
+  "mName": "Phantom Mystery Tale: Ultimate [Hour of the Ox]"
+ },
+ {
+  "i": 1932,
+  "mName": "MAD HEAVEN 3"
+ },
+ {
+  "i": 1933,
+  "mName": "Undying Path of Supremacy: Ultimate [Natural Gift]"
+ },
+ {
+  "i": 1934,
+  "mName": "Hero's Soul: Ultimate [Immortality]"
+ },
+ {
+  "i": 1935,
+  "mName": "Hero's Soul: Ultimate [Prodigy]"
+ },
+ {
+  "i": 1936,
+  "mName": "Deep Crimson Black Orb: Ultimate [Paragon]"
+ },
+ {
+  "i": 1937,
+  "mName": "Song of Cool Fragrance: Ultimate"
+ },
+ {
+  "i": 1938,
+  "mName": "Transcendent Technique: Ultimate [Reverberation]"
+ },
+ {
+  "i": 1939,
+  "mName": "Transcendent Technique: Ultimate [Mechanism]"
+ },
+ {
+  "i": 1940,
+  "mName": "Noble Azure Star: Ultimate [Vast Sky]"
+ },
+ {
+  "i": 1941,
+  "mName": "Undying Path of Supremacy: Ultimate [Unfallen]"
+ },
+ {
+  "i": 1942,
+  "mName": "Brilliant Talent in Bloom: Ultimate [Pure White]"
+ },
+ {
+  "i": 1943,
+  "mName": "TOP OF HEAVEN 3"
+ },
+ {
+  "i": 1944,
+  "mName": "Brilliant Talent in Bloom: Ultimate [Snow Cherry Blossom]"
+ },
+ {
+  "i": 1945,
+  "mName": "Transcendent Technique: Ultimate [Scorpion Hunt]"
+ },
+ {
+  "i": 1946,
+  "mName": "Death Butterfly Offbeat: Ultimate [Rock Sound]"
+ },
+ {
+  "i": 1947,
+  "mName": "Death Butterfly Offbeat: Ultimate [Wingbeat]"
+ },
+ {
+  "i": 1948,
+  "mName": "Death Butterfly Offbeat: Ultimate [Wind Sound]"
+ },
+ {
+  "i": 1949,
+  "mName": "Undying Path of Supremacy: Ultimate [Heavenly Conquest]"
+ }
+]

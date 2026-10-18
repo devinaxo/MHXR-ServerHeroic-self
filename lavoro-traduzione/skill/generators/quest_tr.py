@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import io, re, json
-S='/tmp/opencode/skillfix/'
+import os as _os
+S=_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'..','inputs')+_os.sep
 frags=[l for l in io.open(S+'quest_fragments.txt',encoding='utf-8').read().split('\n') if l]
 
 MONTH={'橘月':'Tachibana','鳴神月':'Narukami','愛逢月':'Love','月見月':'Moon-View','紅葉月':'Maple',

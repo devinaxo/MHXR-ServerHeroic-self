@@ -64,11 +64,11 @@ well as the `α/β/γ` markers, are preserved.
 PACK=src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk
 # 1. pull the property arc from the LIVE pack (it already holds the English
 #    names to replace) and apply the {old_en: new_en} dictionary
-node tools-js/fpk-pull.cjs fpk-pull "$PACK" /tmp/prop.arc rsdnt_property.arc
-node tools-js/traduci-rsdnt-arc.cjs /tmp/prop.arc /tmp/item-name-fix.json /tmp/prop_en.arc
+node tools-js/fpk-pull.cjs fpk-pull "$PACK" build/prop.arc rsdnt_property.arc
+node tools-js/traduci-rsdnt-arc.cjs build/prop.arc build/item-name-fix.json build/prop_en.arc
 # 2. put it back
-node tools-js/fpk-replace.cjs "$PACK" /tmp/res.new.fpk rsdnt_property.arc /tmp/prop_en.arc
-cp /tmp/res.new.fpk "$PACK"
+node tools-js/fpk-replace.cjs "$PACK" build/res.new.fpk rsdnt_property.arc build/prop_en.arc
+cp build/res.new.fpk "$PACK"
 # 3. regenerate manifests, publish, bump RES_VER, verify
 find src/public/res/download/android -name download.list -delete
 sg docker -c 'docker compose -f docker-compose.prod.yml up -d --build server'
@@ -77,13 +77,15 @@ node tools-js/verify-bump.cjs http://127.0.0.1:8081 356 357   # PASS
 ```
 
 `traduci-rsdnt-arc.cjs`: 2,400/2,400 keys used, 46/46 tables re-read clean.
+(`build/item-name-fix.json` above was a session-local `{old_en: new_en}` map and
+was not committed; the resulting names are in the published pack.)
 `fpk-replace.cjs`: 17/17 entries byte-identical, replaced entry matches.
 `verify-bump`: `d0356_0357` → resident.00.fpk `crcjam 7bef25a7`,
 4,181,304 bytes, **PASS**.
 
 ## Backup / rollback
 
-- Pre-change pack kept at `/tmp/opencode/itemfix/resident.00.pre357.fpk`.
+- Pre-change pack was backed up locally during the operation (not shipped).
 - Auto-snapshot of the published bytes: `backups/res-0357/cmn/resident.00.fpk`.
 - To roll back: restore the pre-change pack, delete `download.list`, rebuild,
   and publish a **higher** version (the client only moves forward).

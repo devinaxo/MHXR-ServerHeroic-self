@@ -12,7 +12,7 @@ letting the client download the new one.
 # 2. see what would change, without writing anything:
 node tools-js/publish-msg-arc.cjs --dry
 # 3. when it looks right:
-cp src/public/res/download/android/v0287/stdDL/cmn/GUI.00.fpk /tmp/opencode/   # backup!
+cp src/public/res/download/android/v0287/stdDL/cmn/GUI.00.fpk build/   # backup!
 node tools-js/publish-msg-arc.cjs
 sh tools-js/pubblica-risorse.sh $(grep -oP 'RES_VER: \K\d+' src/constants/protocol.ts)
 docker compose -f docker-compose.prod.yml up -d --build server
@@ -266,10 +266,10 @@ are gitignored anyway). Take the copy first.
 ```bash
 # before publishing
 cp src/public/res/download/android/v0287/stdDL/cmn/GUI.00.fpk \
-   /tmp/opencode/GUI.00_backup_pre_strings.fpk
+   build/GUI.00_backup_pre_strings.fpk
 
 # to undo the 288 strings release
-cp /tmp/opencode/GUI.00_backup_pre_strings.fpk \
+cp build/GUI.00_backup_pre_strings.fpk \
    src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk
 rm -rf src/public/res/download/android/d0287_0288 \
        src/public/res/download/android/d0288_0289 \
@@ -280,6 +280,7 @@ find src/public/res/download/android -name download.list -delete
 docker compose -f docker-compose.prod.yml up -d --build server
 ```
 
-`/tmp` may not survive a reboot. The backup from this release is
-`/tmp/opencode/GUI.00_backup_pre_strings.fpk` (md5 `56762eb4f726cb8cb2bc2a7d0e09532d`).
+`build/` is throwaway scratch, so keep a real backup — publishing auto-snapshots
+into `backups/`. The backup from this release was
+`build/GUI.00_backup_pre_strings.fpk` (md5 `56762eb4f726cb8cb2bc2a7d0e09532d`).
 `GUI.00_backup.fpk` and `GUI.00_backup_pre_calib.fpk` are from the texture work.

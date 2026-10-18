@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import json, io, re, unicodedata
 def cell(s): return sum(2 if unicodedata.east_asian_width(c) in ('W','F') else 1 for c in s)
-S='/tmp/opencode/skillfix/'
+import os as _os
+S=_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'..','inputs')+_os.sep
 recs=json.load(io.open(S+'omamori_names.json',encoding='utf-8'))
 names=[r['name'] for r in recs]
 

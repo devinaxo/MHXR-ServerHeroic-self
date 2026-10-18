@@ -63,7 +63,7 @@ node translations/textures/apply.cjs /path/to/res/download/android/v0282/stdDL/c
 node translations/textures/apply.cjs <dir> --dry-run
 ```
 
-It writes rebuilt packs to `/tmp/mhxr-translate-out` (override with `--out`).
+It writes rebuilt packs to `build/mhxr-translate-out` (override with `--out`).
 It never modifies your packs in place.
 
 Each step is verified: every `arc-edit` confirms all entries read back
@@ -73,7 +73,7 @@ intent, and `fpk-align` proves no entry is left off the 8-byte block grid.
 ## Deploying
 
 ```bash
-cp /tmp/mhxr-translate-out/GUI.00.fpk <your pack folder>/GUI.00.fpk
+cp build/mhxr-translate-out/GUI.00.fpk <your pack folder>/GUI.00.fpk
 find <your res dir> -name download.list -delete      # regenerated on startup
 # bump the resource version constant, then rebuild and restart the server
 ```

@@ -60,3 +60,6 @@ scripts/patcher/out/
 
 # Per-publish resource pack snapshots (Capcom content, local only)
 /backups/
+
+# Scratch working dir for the recipes in docs/ (throwaway intermediates)
+/build/

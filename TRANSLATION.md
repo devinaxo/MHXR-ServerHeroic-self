@@ -46,7 +46,7 @@ works on any `res_ver` or layout.
 node translations/textures/apply.cjs /path/to/res/download/android/v0282/stdDL/cmn
 ```
 
-It never edits packs in place — rebuilt packs go to `/tmp/mhxr-translate-out`.
+It never edits packs in place — rebuilt packs go to `build/mhxr-translate-out`.
 See [`translations/textures/README.md`](translations/textures/README.md) for the
 details and the tooling notes, including the FPK `+0x48` size-field crash fix
 that a correct repacker must handle.
@@ -76,13 +76,13 @@ byte-identical:
 ```bash
 # quest names (dictionary ships in this repo)
 node tools-js/fpk-pull.cjs fpk-pull \
-  src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk /tmp/q.arc rsdnt_quest.arc
-node tools-js/traduci-rsdnt-arc.cjs /tmp/q.arc \
-  lavoro-traduzione/quest/quest-nomi.json /tmp/q_en.arc
+  src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk build/q.arc rsdnt_quest.arc
+node tools-js/traduci-rsdnt-arc.cjs build/q.arc \
+  lavoro-traduzione/quest/quest-nomi.json build/q_en.arc
 node tools-js/fpk-replace.cjs \
-  src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk /tmp/res.new.fpk \
-  rsdnt_quest.arc /tmp/q_en.arc
-cp /tmp/res.new.fpk src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk
+  src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk build/res.new.fpk \
+  rsdnt_quest.arc build/q_en.arc
+cp build/res.new.fpk src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk
 ```
 
 The same pattern applies to the skill and item tables (`rsdnt_player.arc`,

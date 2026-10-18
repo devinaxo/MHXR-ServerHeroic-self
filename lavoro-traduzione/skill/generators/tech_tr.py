@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import io,re,json
-S='/tmp/opencode/skillfix/'
+import os as _os
+S=_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'..','inputs')+_os.sep
 W={'大剣':'Great Sword','片手剣':'Sword & Shield','双剣':'Dual Blades','太刀':'Long Sword','鎚':'Hammer',
 'ハンマー':'Hammer','狩猟笛':'Hunting Horn','ランス':'Lance','ガンランス':'Gunlance','剣斧':'Switch Axe',
 'スラッシュアックス':'Switch Axe','盾斧':'Charge Blade','操虫棍':'Insect Glaive','弓':'Bow','軽弩':'Light Bowgun',

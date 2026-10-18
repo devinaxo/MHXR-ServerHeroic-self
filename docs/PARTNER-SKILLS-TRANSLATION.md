@@ -53,11 +53,11 @@ the elemental Stances, Evasion, Guard Reduction, Command, and the per-weapon
 
 ```bash
 PACK=src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk
-node tools-js/fpk-pull.cjs  fpk-pull  heroic-packs-pristine/android/v0282/stdDL/cmn/resident.00.fpk /tmp/player.arc rsdnt_player.arc
-node tools-js/traduci-rsdnt-arc.cjs /tmp/player.arc \
-     lavoro-traduzione/partner/partner-skill.json /tmp/player_en.arc
-node tools-js/fpk-replace.cjs "$PACK" /tmp/res.new.fpk rsdnt_player.arc /tmp/player_en.arc
-cp /tmp/res.new.fpk "$PACK"
+node tools-js/fpk-pull.cjs  fpk-pull  heroic-packs-pristine/android/v0282/stdDL/cmn/resident.00.fpk build/player.arc rsdnt_player.arc
+node tools-js/traduci-rsdnt-arc.cjs build/player.arc \
+     lavoro-traduzione/partner/partner-skill.json build/player_en.arc
+node tools-js/fpk-replace.cjs "$PACK" build/res.new.fpk rsdnt_player.arc build/player_en.arc
+cp build/res.new.fpk "$PACK"
 find src/public/res/download/android -name download.list -delete
 sg docker -c 'docker compose -f docker-compose.prod.yml up -d --build server'  # regen manifests
 sh tools-js/pubblica-risorse.sh 354                                            # diff + auto-backup
@@ -74,8 +74,8 @@ replaced entry matches. `verify-bump`: `d0353_0354` → resident.00.fpk
 
 - Pre-change pack saved to `backups/res-0354/` is the **new** bytes (the
   auto-snapshot). A copy of the **old** pack (crcjam `11585fd6`, md5
-  `11585fd6bf60b86f2b04de82e463487d`) and the translated arc were kept under
-  `/tmp/opencode/partner-backup/` during the operation.
+  `11585fd6bf60b86f2b04de82e463487d`) and the translated arc were kept locally
+  during the operation (not shipped).
 - To roll back: restore the pre-change pack into
   `src/public/res/download/android/v0282/stdDL/cmn/resident.00.fpk`, delete
   `download.list`, rebuild, and publish a **higher** version (the client only

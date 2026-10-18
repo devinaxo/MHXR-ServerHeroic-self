@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import json,io,unicodedata
+import json,io,unicodedata,os
+_OUT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')+os.sep
 def cell(s): return sum(2 if unicodedata.east_asian_width(c) in ('W','F') else 1 for c in s)
 def wrap(s,maxw=32):
     out=[]
@@ -86,5 +87,5 @@ print('names',len(NM),'over',[k for k,v in NM.items() if cell(v)>32])
 print('status',len(ST),'over',[v for v in ST.values() if cell(v)>32])
 print('explain',len(EX),'overlines',[ (k,l) for k,v in EX.items() for l in wrap(v).split('\n') if cell(l)>32])
 json.dump({'name':NM,'status':ST,'explain':{k:wrap(v) for k,v in EX.items()},'explainStatus':ES},
-          io.open('/tmp/opencode/skillfix/melody_en.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
+          io.open(_OUT+'melody_en.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
 print('saved melody_en.json')

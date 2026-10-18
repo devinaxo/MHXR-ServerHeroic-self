@@ -3,7 +3,7 @@
  *
  *   docker compose -f docker-compose.prod.yml exec -T server node /app/tools/fpk-list.cjs quest
  *   ... quest --filter=block        mostra solo i file che contengono "block" nel nome
- *   ... quest --extract=/tmp/out    estrae davvero i file
+ *   ... quest --extract=build/out    estrae davvero i file
  *
  * Il formato e' quello implementato in src/tools/fpk/formats/fpk.ts della nuova
  * versione, riportato qui in CommonJS perche' quello e' TypeScript e nel

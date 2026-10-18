@@ -23,7 +23,7 @@ version serves. There is no per-version storage.
 
 The packs are also **gitignored** (`git status` never lists them), so
 `git checkout` cannot bring one back. For a long time the only copies that
-existed were ad-hoc ones in `/tmp`, which a reboot deletes.
+existed were ad-hoc temp copies, which a reboot deletes.
 
 Net effect: edit a pack, publish, and the previous bytes are simply gone. That
 is how an earlier bad `GUI.00.fpk` was shipped twice with no way back except a

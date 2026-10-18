@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
-import json,io,re,unicodedata
+import json,io,re,unicodedata,os
+_IN=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','inputs')+os.sep
+_OUT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')+os.sep
 def w(s): return sum(2 if unicodedata.east_asian_width(c) in ('W','F') else 1 for c in s)
 JP=re.compile(r'[\u3041-\u30ff\u4e00-\u9fff]')
-d=json.load(io.open('/tmp/opencode/skillfix/kariwaza.json',encoding='utf-8'))
+d=json.load(io.open(_IN+'kariwaza.json',encoding='utf-8'))
 
 FAM={
 "狩魂不滅":"Undying Hunter",
@@ -221,4 +223,4 @@ for r in d:
     if w(en)>32: long.append((w(en),en))
 print('translated',len(out),'problems',len(long))
 for x in long[:60]: print('  ',x)
-io.open('/tmp/opencode/skillfix/kariwaza_jp_en.json','w',encoding='utf-8').write(json.dumps(out,ensure_ascii=False,indent=1))
+io.open(_OUT+'kariwaza_jp_en.json','w',encoding='utf-8').write(json.dumps(out,ensure_ascii=False,indent=1))

@@ -24,15 +24,21 @@ Scope, coverage and the per-table work log: [`docs/SKILL-TRANSLATION.md`](../../
 half-width cells and does **not** wrap, so long English names were shortened
 (`Golden Masterful Technique → Golden Mastery`) after the first translation.
 
+## Inputs
+
+`inputs/` holds the table extracts the generators read — `kariwaza.json`,
+`equipSkillList.json`, `omamori_names.json`, `quest_fragments.txt`,
+`tech_jp.txt` — so the scripts run straight from the repo.
+
 ## Generators (provenance)
 
 [`generators/`](generators) holds the **one-off** scripts that produced these
 dictionaries from the game data (`translate_kariwaza.py`, `translate_equip.py`,
 `translate_higi_p1.py`, `translate_higi_p2.py`, `translate_melody.py`,
-`oma_tr.py`, `quest_tr.py`, `tech_tr.py`). They were written for a single session
-and read intermediate extracts (JP table dumps) from that session's working
-directory, so they are kept as a record of the *method*, not as turnkey tools.
-The reproducible source is the flat dictionaries in this folder.
+`oma_tr.py`, `quest_tr.py`, `tech_tr.py`). They read the extracts in
+[`inputs/`](inputs) and write their outputs here (intermediates go back into
+`inputs/`), so they are reproducible from the repo. The published source is the
+flat dictionaries in this folder.
 
 [`traduci-arc-only.cjs`](traduci-arc-only.cjs) is the table-restricted copy of
 [`../../tools-js/traduci-rsdnt-arc.cjs`](../../tools-js/traduci-rsdnt-arc.cjs)

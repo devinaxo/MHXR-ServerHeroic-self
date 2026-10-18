@@ -4,7 +4,7 @@
 //
 // <pack-dir> is the folder holding the .fpk files (e.g. the cmn/ folder with
 // GUI.00.fpk). Nothing is modified there: rebuilt packs are written to --out
-// (default /tmp/mhxr-translate-out) and you copy them into place yourself.
+// (default build/mhxr-translate-out) and you copy them into place yourself.
 //
 // This does NOT need a decoded dump. The pristine texture header for each edit
 // is read straight out of the target pack, so the same patch applies to any
@@ -32,7 +32,7 @@ const arg = (n, d) => {
   return i !== -1 && argv[i + 1] ? argv[i + 1] : d;
 };
 const PACK_DIR = argv.find((a) => !a.startsWith('-'));
-const OUT = arg('out', path.join(os.tmpdir(), 'mhxr-translate-out'));
+const OUT = arg('out', path.join(process.cwd(), 'build', 'mhxr-translate-out'));
 const MANIFEST_PATH = arg('manifest', path.join(HERE, 'manifest.json'));
 const PNG_DIR = arg('png-dir', path.join(HERE, 'png'));
 const DRY = argv.includes('--dry-run');

@@ -488,8 +488,8 @@ rewrites only +0x44/+0x48/+0x4c, so +0x40 survives. That is why the earlier
 texture work never hit this.
 
 ### Backup
-`/tmp/opencode/GUI.00_backup_pre_strings.fpk` (md5 `56762eb4f726cb8cb2bc2a7d0e09532d`)
-is the last known-good pack, taken before 288.
+A local backup of the last known-good pack (md5 `56762eb4f726cb8cb2bc2a7d0e09532d`)
+was taken before 288 (not shipped).
 
 ---
 

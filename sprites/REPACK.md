@@ -146,10 +146,10 @@ replaced with a byte-identical-in-layout copy whose `menu_home_SimaMulti` entry
 has three bytes flipped at ~50% offset. Nothing visual changed — it was a
 write-path test, not a content change.
 
-Original backed up at `/tmp/opencode/GUI.00_backup.fpk`. To revert:
+Original backed up locally (not shipped). To revert:
 
 ```bash
-cp /tmp/opencode/GUI.00_backup.fpk src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk
+cp build/GUI.00_backup.fpk src/public/res/download/android/v0282/stdDL/cmn/GUI.00.fpk
 find src/public/res/download/android -name download.list -delete
 sg docker -c 'docker compose -f docker-compose.prod.yml restart server'
 ```

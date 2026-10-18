@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-import json,io,re,unicodedata
+import json,io,re,unicodedata,os
+_IN=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','inputs')+os.sep
 def cell(s): return sum(2 if unicodedata.east_asian_width(c) in ('W','F') else 1 for c in s)
-d=json.load(io.open('/tmp/opencode/skillfix/equipSkillList.json',encoding='utf-8'))
+d=json.load(io.open(_IN+'equipSkillList.json',encoding='utf-8'))
 JP=re.compile(r'[\u3041-\u30ff\u4e00-\u9fff]')
 bases=[]
 for r in d:
@@ -158,4 +159,4 @@ for b in bases:
     else: NM[b]=en
 print('bases',len(bases),'translated',len(NM),'missing',len(miss))
 for b in miss: print('   MISS',b)
-io.open('/tmp/opencode/skillfix/equipfilter_miss.txt','w',encoding='utf-8').write('\n'.join(miss))
+io.open(_IN+'equipfilter_miss.txt','w',encoding='utf-8').write('\n'.join(miss))

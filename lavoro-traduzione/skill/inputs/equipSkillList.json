@@ -1,0 +1,9197 @@
+[
+ {
+  "i": 0,
+  "mListText": "表示しない",
+  "mFilterFindName": "表示しない"
+ },
+ {
+  "i": 1,
+  "mListText": "Evade Window (S)",
+  "mFilterFindName": "Evade Window (S)"
+ },
+ {
+  "i": 2,
+  "mListText": "Evade Window (L)",
+  "mFilterFindName": "Evade Window (L)"
+ },
+ {
+  "i": 3,
+  "mListText": "Evade Extender (S)",
+  "mFilterFindName": "Evade Extender (S)"
+ },
+ {
+  "i": 4,
+  "mListText": "Evade Extender (L)",
+  "mFilterFindName": "Evade Extender (L)"
+ },
+ {
+  "i": 5,
+  "mListText": "Recoil Recovery",
+  "mFilterFindName": "Recoil Recovery"
+ },
+ {
+  "i": 6,
+  "mListText": "Guts",
+  "mFilterFindName": "Guts"
+ },
+ {
+  "i": 7,
+  "mListText": "Divine Blessing",
+  "mFilterFindName": "Divine Blessing"
+ },
+ {
+  "i": 8,
+  "mListText": "Taunt (S)",
+  "mFilterFindName": "Taunt (S)"
+ },
+ {
+  "i": 9,
+  "mListText": "Taunt (L)",
+  "mFilterFindName": "Taunt (L)"
+ },
+ {
+  "i": 10,
+  "mListText": "Stealth (S)",
+  "mFilterFindName": "Stealth (S)"
+ },
+ {
+  "i": 11,
+  "mListText": "Stealth (L)",
+  "mFilterFindName": "Stealth (L)"
+ },
+ {
+  "i": 12,
+  "mListText": "毒耐性+%d％",
+  "mFilterFindName": "毒耐性"
+ },
+ {
+  "i": 13,
+  "mListText": "麻痺耐性+%d％",
+  "mFilterFindName": "麻痺耐性"
+ },
+ {
+  "i": 14,
+  "mListText": "睡眠耐性+%d％",
+  "mFilterFindName": "睡眠耐性"
+ },
+ {
+  "i": 15,
+  "mListText": "気絶耐性+%d％",
+  "mFilterFindName": "気絶耐性"
+ },
+ {
+  "i": 16,
+  "mListText": "火傷耐性+%d％",
+  "mFilterFindName": "火傷耐性"
+ },
+ {
+  "i": 17,
+  "mListText": "ずぶ濡れ耐性+%d％",
+  "mFilterFindName": "ずぶ濡れ耐性"
+ },
+ {
+  "i": 18,
+  "mListText": "感電耐性+%d％",
+  "mFilterFindName": "感電耐性"
+ },
+ {
+  "i": 19,
+  "mListText": "雪だるま耐性+%d％",
+  "mFilterFindName": "雪だるま耐性"
+ },
+ {
+  "i": 20,
+  "mListText": "泥まみれ耐性+%d％",
+  "mFilterFindName": "泥まみれ耐性"
+ },
+ {
+  "i": 21,
+  "mListText": "爆破やられ耐性+%d％",
+  "mFilterFindName": "爆破やられ耐性"
+ },
+ {
+  "i": 22,
+  "mListText": "Earplugs",
+  "mFilterFindName": "Earplugs"
+ },
+ {
+  "i": 23,
+  "mListText": "Superior Earplugs",
+  "mFilterFindName": "Superior Earplugs"
+ },
+ {
+  "i": 24,
+  "mListText": "Windproof (S)",
+  "mFilterFindName": "Windproof (S)"
+ },
+ {
+  "i": 25,
+  "mListText": "Windproof (L)",
+  "mFilterFindName": "Windproof (L)"
+ },
+ {
+  "i": 26,
+  "mListText": "Tremor Res",
+  "mFilterFindName": "Tremor Res"
+ },
+ {
+  "i": 27,
+  "mListText": "Great Sword Master",
+  "mFilterFindName": "Great Sword Master"
+ },
+ {
+  "i": 28,
+  "mListText": "Heavy Bowgun Master",
+  "mFilterFindName": "Heavy Bowgun Master"
+ },
+ {
+  "i": 29,
+  "mListText": "Bow Master",
+  "mFilterFindName": "Bow Master"
+ },
+ {
+  "i": 30,
+  "mListText": "Hammer Master",
+  "mFilterFindName": "Hammer Master"
+ },
+ {
+  "i": 31,
+  "mListText": "Sword & Shield Master",
+  "mFilterFindName": "Sword & Shield Master"
+ },
+ {
+  "i": 32,
+  "mListText": "Lance Master",
+  "mFilterFindName": "Lance Master"
+ },
+ {
+  "i": 33,
+  "mListText": "Gunlance Master",
+  "mFilterFindName": "Gunlance Master"
+ },
+ {
+  "i": 34,
+  "mListText": "Dual Blades Master",
+  "mFilterFindName": "Dual Blades Master"
+ },
+ {
+  "i": 35,
+  "mListText": "Long Sword Master",
+  "mFilterFindName": "Long Sword Master"
+ },
+ {
+  "i": 36,
+  "mListText": "Switch Axe Master",
+  "mFilterFindName": "Switch Axe Master"
+ },
+ {
+  "i": 37,
+  "mListText": "Hunting Horn Master",
+  "mFilterFindName": "Hunting Horn Master"
+ },
+ {
+  "i": 38,
+  "mListText": "Light Bowgun Master",
+  "mFilterFindName": "Light Bowgun Master"
+ },
+ {
+  "i": 39,
+  "mListText": "会心+%d％",
+  "mFilterFindName": "会心"
+ },
+ {
+  "i": 40,
+  "mListText": "火耐性+%d",
+  "mFilterFindName": "火耐性"
+ },
+ {
+  "i": 41,
+  "mListText": "水耐性+%d",
+  "mFilterFindName": "水耐性"
+ },
+ {
+  "i": 42,
+  "mListText": "雷耐性+%d",
+  "mFilterFindName": "雷耐性"
+ },
+ {
+  "i": 43,
+  "mListText": "土耐性+%d",
+  "mFilterFindName": "土耐性"
+ },
+ {
+  "i": 44,
+  "mListText": "氷耐性+%d",
+  "mFilterFindName": "氷耐性"
+ },
+ {
+  "i": 45,
+  "mListText": "火属性攻撃+%d",
+  "mFilterFindName": "火属性攻撃"
+ },
+ {
+  "i": 46,
+  "mListText": "水属性攻撃+%d",
+  "mFilterFindName": "水属性攻撃"
+ },
+ {
+  "i": 47,
+  "mListText": "雷属性攻撃+%d",
+  "mFilterFindName": "雷属性攻撃"
+ },
+ {
+  "i": 48,
+  "mListText": "土属性攻撃+%d",
+  "mFilterFindName": "土属性攻撃"
+ },
+ {
+  "i": 49,
+  "mListText": "氷属性攻撃+%d",
+  "mFilterFindName": "氷属性攻撃"
+ },
+ {
+  "i": 50,
+  "mListText": "武技師+%d％",
+  "mFilterFindName": "武技師"
+ },
+ {
+  "i": 51,
+  "mListText": "武技P最大値+%d",
+  "mFilterFindName": "武技P最大値"
+ },
+ {
+  "i": 52,
+  "mListText": "獣人キラー+%d",
+  "mFilterFindName": "獣人キラー"
+ },
+ {
+  "i": 53,
+  "mListText": "草食キラー+%d",
+  "mFilterFindName": "草食キラー"
+ },
+ {
+  "i": 54,
+  "mListText": "甲虫キラー+%d",
+  "mFilterFindName": "甲虫キラー"
+ },
+ {
+  "i": 55,
+  "mListText": "牙獣キラー+%d",
+  "mFilterFindName": "牙獣キラー"
+ },
+ {
+  "i": 56,
+  "mListText": "鳥竜キラー+%d",
+  "mFilterFindName": "鳥竜キラー"
+ },
+ {
+  "i": 57,
+  "mListText": "飛竜キラー+%d",
+  "mFilterFindName": "飛竜キラー"
+ },
+ {
+  "i": 58,
+  "mListText": "魚竜キラー+%d",
+  "mFilterFindName": "魚竜キラー"
+ },
+ {
+  "i": 59,
+  "mListText": "海竜キラー+%d",
+  "mFilterFindName": "海竜キラー"
+ },
+ {
+  "i": 60,
+  "mListText": "獣竜キラー+%d",
+  "mFilterFindName": "獣竜キラー"
+ },
+ {
+  "i": 61,
+  "mListText": "牙竜キラー+%d",
+  "mFilterFindName": "牙竜キラー"
+ },
+ {
+  "i": 62,
+  "mListText": "古龍キラー+%d",
+  "mFilterFindName": "古龍キラー"
+ },
+ {
+  "i": 63,
+  "mListText": "Reaper (S)",
+  "mFilterFindName": "Reaper (S)"
+ },
+ {
+  "i": 64,
+  "mListText": "Long Sleeper",
+  "mFilterFindName": "Long Sleeper"
+ },
+ {
+  "i": 65,
+  "mListText": "挑戦者+%d",
+  "mFilterFindName": "挑戦者"
+ },
+ {
+  "i": 66,
+  "mListText": "休息+%d",
+  "mFilterFindName": "休息"
+ },
+ {
+  "i": 67,
+  "mListText": "破壊手当+%d",
+  "mFilterFindName": "破壊手当"
+ },
+ {
+  "i": 68,
+  "mListText": "Flurry (S)",
+  "mFilterFindName": "Flurry (S)"
+ },
+ {
+  "i": 69,
+  "mListText": "Flurry (L)",
+  "mFilterFindName": "Flurry (L)"
+ },
+ {
+  "i": 70,
+  "mListText": "最大体力+%d",
+  "mFilterFindName": "最大体力"
+ },
+ {
+  "i": 71,
+  "mListText": "Recovery Up (S)",
+  "mFilterFindName": "Recovery Up (S)"
+ },
+ {
+  "i": 72,
+  "mListText": "Recovery Up (L)",
+  "mFilterFindName": "Recovery Up (L)"
+ },
+ {
+  "i": 73,
+  "mListText": "Refinement (S)",
+  "mFilterFindName": "Refinement (S)"
+ },
+ {
+  "i": 74,
+  "mListText": "Refinement (L)",
+  "mFilterFindName": "Refinement (L)"
+ },
+ {
+  "i": 75,
+  "mListText": "Hungry Wolf (S)",
+  "mFilterFindName": "Hungry Wolf (S)"
+ },
+ {
+  "i": 76,
+  "mListText": "Hungry Wolf (L)",
+  "mFilterFindName": "Hungry Wolf (L)"
+ },
+ {
+  "i": 77,
+  "mListText": "Reckless",
+  "mFilterFindName": "Reckless"
+ },
+ {
+  "i": 78,
+  "mListText": "Sealed: Health Up",
+  "mFilterFindName": "Sealed: Health Up"
+ },
+ {
+  "i": 79,
+  "mListText": "Martial Art P Loss (S)",
+  "mFilterFindName": "Martial Art P Loss (S)"
+ },
+ {
+  "i": 80,
+  "mListText": "Martial Art P Loss (L)",
+  "mFilterFindName": "Martial Art P Loss (L)"
+ },
+ {
+  "i": 81,
+  "mListText": "Poison Double",
+  "mFilterFindName": "Poison Double"
+ },
+ {
+  "i": 82,
+  "mListText": "Stun Double",
+  "mFilterFindName": "Stun Double"
+ },
+ {
+  "i": 83,
+  "mListText": "Paralysis Double",
+  "mFilterFindName": "Paralysis Double"
+ },
+ {
+  "i": 84,
+  "mListText": "ブースター+%d",
+  "mFilterFindName": "ブースター"
+ },
+ {
+  "i": 85,
+  "mListText": "Speed Hunt (S)",
+  "mFilterFindName": "Speed Hunt (S)"
+ },
+ {
+  "i": 86,
+  "mListText": "Speed Hunt (M)",
+  "mFilterFindName": "Speed Hunt (M)"
+ },
+ {
+  "i": 87,
+  "mListText": "Speed Hunt (L)",
+  "mFilterFindName": "Speed Hunt (L)"
+ },
+ {
+  "i": 88,
+  "mListText": "武技効果時間延長+%d",
+  "mFilterFindName": "武技効果時間延長"
+ },
+ {
+  "i": 89,
+  "mListText": "ダメージ武技強化+%d",
+  "mFilterFindName": "ダメージ武技強化"
+ },
+ {
+  "i": 90,
+  "mListText": "武技回復量増加+%d",
+  "mFilterFindName": "武技回復量増加"
+ },
+ {
+  "i": 91,
+  "mListText": "攻撃解放+%d",
+  "mFilterFindName": "攻撃解放"
+ },
+ {
+  "i": 92,
+  "mListText": "防御解放+%d",
+  "mFilterFindName": "防御解放"
+ },
+ {
+  "i": 93,
+  "mListText": "体力解放+%d",
+  "mFilterFindName": "体力解放"
+ },
+ {
+  "i": 94,
+  "mListText": "防御力+%d",
+  "mFilterFindName": "defense power"
+ },
+ {
+  "i": 95,
+  "mListText": "吸血+%d",
+  "mFilterFindName": "吸血"
+ },
+ {
+  "i": 96,
+  "mListText": "Critical Boost (S)",
+  "mFilterFindName": "Critical Boost (S)"
+ },
+ {
+  "i": 97,
+  "mListText": "Critical Boost (M)",
+  "mFilterFindName": "Critical Boost (M)"
+ },
+ {
+  "i": 98,
+  "mListText": "Critical Boost (L)",
+  "mFilterFindName": "Critical Boost (L)"
+ },
+ {
+  "i": 99,
+  "mListText": "Fortitude",
+  "mFilterFindName": "Fortitude"
+ },
+ {
+  "i": 100,
+  "mListText": "Wrath",
+  "mFilterFindName": "Wrath"
+ },
+ {
+  "i": 101,
+  "mListText": "Faster Cooling (S)",
+  "mFilterFindName": "Faster Cooling (S)"
+ },
+ {
+  "i": 102,
+  "mListText": "Faster Cooling (M)",
+  "mFilterFindName": "Faster Cooling (M)"
+ },
+ {
+  "i": 103,
+  "mListText": "Faster Cooling (L)",
+  "mFilterFindName": "Faster Cooling (L)"
+ },
+ {
+  "i": 104,
+  "mListText": "防衛者+%d",
+  "mFilterFindName": "防衛者"
+ },
+ {
+  "i": 105,
+  "mListText": "Opening Signal (S)",
+  "mFilterFindName": "Opening Signal (S)"
+ },
+ {
+  "i": 106,
+  "mListText": "Opening Signal (M)",
+  "mFilterFindName": "Opening Signal (M)"
+ },
+ {
+  "i": 107,
+  "mListText": "Opening Signal (L)",
+  "mFilterFindName": "Opening Signal (L)"
+ },
+ {
+  "i": 108,
+  "mListText": "高揚+%d",
+  "mFilterFindName": "高揚"
+ },
+ {
+  "i": 109,
+  "mListText": "抵抗者+%d",
+  "mFilterFindName": "抵抗者"
+ },
+ {
+  "i": 110,
+  "mListText": "Antibody (S)",
+  "mFilterFindName": "Antibody (S)"
+ },
+ {
+  "i": 111,
+  "mListText": "Antibody (M)",
+  "mFilterFindName": "Antibody (M)"
+ },
+ {
+  "i": 112,
+  "mListText": "Antibody (L)",
+  "mFilterFindName": "Antibody (L)"
+ },
+ {
+  "i": 113,
+  "mListText": "Faster Item Use",
+  "mFilterFindName": "Faster Item Use"
+ },
+ {
+  "i": 114,
+  "mListText": "Counterattack",
+  "mFilterFindName": "Counterattack"
+ },
+ {
+  "i": 115,
+  "mListText": "Wyvernfire Master",
+  "mFilterFindName": "Wyvernfire Master"
+ },
+ {
+  "i": 116,
+  "mListText": "Energy Amplifier",
+  "mFilterFindName": "Energy Amplifier"
+ },
+ {
+  "i": 117,
+  "mListText": "Spirit Activation",
+  "mFilterFindName": "Spirit Activation"
+ },
+ {
+  "i": 118,
+  "mListText": "Crush",
+  "mFilterFindName": "Crush"
+ },
+ {
+  "i": 119,
+  "mListText": "Element Release",
+  "mFilterFindName": "Element Release"
+ },
+ {
+  "i": 120,
+  "mListText": "Reload Boost",
+  "mFilterFindName": "Reload Boost"
+ },
+ {
+  "i": 121,
+  "mListText": "Flowing Shot",
+  "mFilterFindName": "Flowing Shot"
+ },
+ {
+  "i": 122,
+  "mListText": "Mighty Slash",
+  "mFilterFindName": "Mighty Slash"
+ },
+ {
+  "i": 123,
+  "mListText": "Quick Cooling",
+  "mFilterFindName": "Quick Cooling"
+ },
+ {
+  "i": 124,
+  "mListText": "Blade Dancer",
+  "mFilterFindName": "Blade Dancer"
+ },
+ {
+  "i": 125,
+  "mListText": "Dancing Demon",
+  "mFilterFindName": "Dancing Demon"
+ },
+ {
+  "i": 126,
+  "mListText": "Bow Demon",
+  "mFilterFindName": "Bow Demon"
+ },
+ {
+  "i": 127,
+  "mListText": "Mighty Cannon",
+  "mFilterFindName": "Mighty Cannon"
+ },
+ {
+  "i": 128,
+  "mListText": "Shot Boost",
+  "mFilterFindName": "Shot Boost"
+ },
+ {
+  "i": 129,
+  "mListText": "Rapid Fire",
+  "mFilterFindName": "Rapid Fire"
+ },
+ {
+  "i": 130,
+  "mListText": "Thrift",
+  "mFilterFindName": "Thrift"
+ },
+ {
+  "i": 131,
+  "mListText": "Mighty Spirit",
+  "mFilterFindName": "Mighty Spirit"
+ },
+ {
+  "i": 132,
+  "mListText": "Mighty Blade",
+  "mFilterFindName": "Mighty Blade"
+ },
+ {
+  "i": 133,
+  "mListText": "Hunting Musician",
+  "mFilterFindName": "Hunting Musician"
+ },
+ {
+  "i": 134,
+  "mListText": "序章撃+%d",
+  "mFilterFindName": "序章撃"
+ },
+ {
+  "i": 135,
+  "mListText": "終章撃+%d",
+  "mFilterFindName": "終章撃"
+ },
+ {
+  "i": 136,
+  "mListText": "Target Visualizer",
+  "mFilterFindName": "Target Visualizer"
+ },
+ {
+  "i": 137,
+  "mListText": "Partbreaker King (S)",
+  "mFilterFindName": "Partbreaker King (S)"
+ },
+ {
+  "i": 138,
+  "mListText": "Partbreaker King (M)",
+  "mFilterFindName": "Partbreaker King (M)"
+ },
+ {
+  "i": 139,
+  "mListText": "Partbreaker King (L)",
+  "mFilterFindName": "Partbreaker King (L)"
+ },
+ {
+  "i": 140,
+  "mListText": "Breath Reduction (S)",
+  "mFilterFindName": "Breath Reduction (S)"
+ },
+ {
+  "i": 141,
+  "mListText": "Breath Reduction (M)",
+  "mFilterFindName": "Breath Reduction (M)"
+ },
+ {
+  "i": 142,
+  "mListText": "Breath Reduction (L)",
+  "mFilterFindName": "Breath Reduction (L)"
+ },
+ {
+  "i": 143,
+  "mListText": "Martial Body Return (S)",
+  "mFilterFindName": "Martial Body Return (S)"
+ },
+ {
+  "i": 144,
+  "mListText": "Martial Body Return (M)",
+  "mFilterFindName": "Martial Body Return (M)"
+ },
+ {
+  "i": 145,
+  "mListText": "Martial Body Return (L)",
+  "mFilterFindName": "Martial Body Return (L)"
+ },
+ {
+  "i": 146,
+  "mListText": "気迫護+%d",
+  "mFilterFindName": "気迫護"
+ },
+ {
+  "i": 147,
+  "mListText": "気迫撃+%d",
+  "mFilterFindName": "気迫撃"
+ },
+ {
+  "i": 148,
+  "mListText": "Rally (S)",
+  "mFilterFindName": "Rally (S)"
+ },
+ {
+  "i": 149,
+  "mListText": "Rally (M)",
+  "mFilterFindName": "Rally (M)"
+ },
+ {
+  "i": 150,
+  "mListText": "Rally (L)",
+  "mFilterFindName": "Rally (L)"
+ },
+ {
+  "i": 151,
+  "mListText": "Fire Breath Reduction (S)",
+  "mFilterFindName": "Fire Breath Reduction (S)"
+ },
+ {
+  "i": 152,
+  "mListText": "Fire Breath Reduction (M)",
+  "mFilterFindName": "Fire Breath Reduction (M)"
+ },
+ {
+  "i": 153,
+  "mListText": "Fire Breath Reduction (L)",
+  "mFilterFindName": "Fire Breath Reduction (L)"
+ },
+ {
+  "i": 154,
+  "mListText": "Water Breath Reduction (S)",
+  "mFilterFindName": "Water Breath Reduction (S)"
+ },
+ {
+  "i": 155,
+  "mListText": "Water Breath Reduction (M)",
+  "mFilterFindName": "Water Breath Reduction (M)"
+ },
+ {
+  "i": 156,
+  "mListText": "Water Breath Reduction (L)",
+  "mFilterFindName": "Water Breath Reduction (L)"
+ },
+ {
+  "i": 157,
+  "mListText": "Thunder Breath Reduction (S)",
+  "mFilterFindName": "Thunder Breath Reduction (S)"
+ },
+ {
+  "i": 158,
+  "mListText": "Thunder Breath Reduction (M)",
+  "mFilterFindName": "Thunder Breath Reduction (M)"
+ },
+ {
+  "i": 159,
+  "mListText": "Thunder Breath Reduction (L)",
+  "mFilterFindName": "Thunder Breath Reduction (L)"
+ },
+ {
+  "i": 160,
+  "mListText": "Earth Breath Reduction (S)",
+  "mFilterFindName": "Earth Breath Reduction (S)"
+ },
+ {
+  "i": 161,
+  "mListText": "Earth Breath Reduction (M)",
+  "mFilterFindName": "Earth Breath Reduction (M)"
+ },
+ {
+  "i": 162,
+  "mListText": "Earth Breath Reduction (L)",
+  "mFilterFindName": "Earth Breath Reduction (L)"
+ },
+ {
+  "i": 163,
+  "mListText": "Ice Breath Reduction (S)",
+  "mFilterFindName": "Ice Breath Reduction (S)"
+ },
+ {
+  "i": 164,
+  "mListText": "Ice Breath Reduction (M)",
+  "mFilterFindName": "Ice Breath Reduction (M)"
+ },
+ {
+  "i": 165,
+  "mListText": "Ice Breath Reduction (L)",
+  "mFilterFindName": "Ice Breath Reduction (L)"
+ },
+ {
+  "i": 166,
+  "mListText": "Counter Artisan (S)",
+  "mFilterFindName": "Counter Artisan (S)"
+ },
+ {
+  "i": 167,
+  "mListText": "Counter Artisan (M)",
+  "mFilterFindName": "Counter Artisan (M)"
+ },
+ {
+  "i": 168,
+  "mListText": "Counter Artisan (L)",
+  "mFilterFindName": "Counter Artisan (L)"
+ },
+ {
+  "i": 169,
+  "mListText": "Swift Cannon (S)",
+  "mFilterFindName": "Swift Cannon (S)"
+ },
+ {
+  "i": 170,
+  "mListText": "Swift Cannon (M)",
+  "mFilterFindName": "Swift Cannon (M)"
+ },
+ {
+  "i": 171,
+  "mListText": "Swift Cannon (L)",
+  "mFilterFindName": "Swift Cannon (L)"
+ },
+ {
+  "i": 172,
+  "mListText": "装填技法+%d",
+  "mFilterFindName": "装填技法"
+ },
+ {
+  "i": 173,
+  "mListText": "Reload Speed Up (S)",
+  "mFilterFindName": "Reload Speed Up (S)"
+ },
+ {
+  "i": 174,
+  "mListText": "Reload Speed Up (M)",
+  "mFilterFindName": "Reload Speed Up (M)"
+ },
+ {
+  "i": 175,
+  "mListText": "Reload Speed Up (L)",
+  "mFilterFindName": "Reload Speed Up (L)"
+ },
+ {
+  "i": 176,
+  "mListText": "双剣馴らし+%d％",
+  "mFilterFindName": "双剣馴らし"
+ },
+ {
+  "i": 177,
+  "mListText": "Gale Sword (S)",
+  "mFilterFindName": "Gale Sword (S)"
+ },
+ {
+  "i": 178,
+  "mListText": "Gale Sword (M)",
+  "mFilterFindName": "Gale Sword (M)"
+ },
+ {
+  "i": 179,
+  "mListText": "Gale Sword (L)",
+  "mFilterFindName": "Gale Sword (L)"
+ },
+ {
+  "i": 180,
+  "mListText": "Long Sword Maestro",
+  "mFilterFindName": "Long Sword Maestro"
+ },
+ {
+  "i": 181,
+  "mListText": "剣斧馴らし+%d％",
+  "mFilterFindName": "剣斧馴らし"
+ },
+ {
+  "i": 182,
+  "mListText": "笛馴らし+%d％",
+  "mFilterFindName": "笛馴らし"
+ },
+ {
+  "i": 183,
+  "mListText": "Gale Hammer (S)",
+  "mFilterFindName": "Gale Hammer (S)"
+ },
+ {
+  "i": 184,
+  "mListText": "Gale Hammer (M)",
+  "mFilterFindName": "Gale Hammer (M)"
+ },
+ {
+  "i": 185,
+  "mListText": "Gale Hammer (L)",
+  "mFilterFindName": "Gale Hammer (L)"
+ },
+ {
+  "i": 186,
+  "mListText": "Stance Keeper",
+  "mFilterFindName": "Stance Keeper"
+ },
+ {
+  "i": 187,
+  "mListText": "盾斧馴らし+%d％",
+  "mFilterFindName": "盾斧馴らし"
+ },
+ {
+  "i": 188,
+  "mListText": "Quick Strike",
+  "mFilterFindName": "Quick Strike"
+ },
+ {
+  "i": 189,
+  "mListText": "All-Direction Guard",
+  "mFilterFindName": "All-Direction Guard"
+ },
+ {
+  "i": 190,
+  "mListText": "暴征翼キラー+%d",
+  "mFilterFindName": "暴征翼キラー"
+ },
+ {
+  "i": 191,
+  "mListText": "暴征翼耐性+%d",
+  "mFilterFindName": "暴征翼耐性"
+ },
+ {
+  "i": 192,
+  "mListText": "開眼火撃+%d",
+  "mFilterFindName": "開眼火撃"
+ },
+ {
+  "i": 193,
+  "mListText": "開眼水撃+%d",
+  "mFilterFindName": "開眼水撃"
+ },
+ {
+  "i": 194,
+  "mListText": "開眼雷撃+%d",
+  "mFilterFindName": "開眼雷撃"
+ },
+ {
+  "i": 195,
+  "mListText": "開眼土撃+%d",
+  "mFilterFindName": "開眼土撃"
+ },
+ {
+  "i": 196,
+  "mListText": "開眼氷撃+%d",
+  "mFilterFindName": "開眼氷撃"
+ },
+ {
+  "i": 197,
+  "mListText": "開眼火護+%d",
+  "mFilterFindName": "開眼火護"
+ },
+ {
+  "i": 198,
+  "mListText": "開眼水護+%d",
+  "mFilterFindName": "開眼水護"
+ },
+ {
+  "i": 199,
+  "mListText": "開眼雷護+%d",
+  "mFilterFindName": "開眼雷護"
+ },
+ {
+  "i": 200,
+  "mListText": "開眼土護+%d",
+  "mFilterFindName": "開眼土護"
+ },
+ {
+  "i": 201,
+  "mListText": "開眼氷護+%d",
+  "mFilterFindName": "開眼氷護"
+ },
+ {
+  "i": 202,
+  "mListText": "熟成火撃+%d",
+  "mFilterFindName": "熟成火撃"
+ },
+ {
+  "i": 203,
+  "mListText": "熟成水撃+%d",
+  "mFilterFindName": "熟成水撃"
+ },
+ {
+  "i": 204,
+  "mListText": "熟成雷撃+%d",
+  "mFilterFindName": "熟成雷撃"
+ },
+ {
+  "i": 205,
+  "mListText": "熟成土撃+%d",
+  "mFilterFindName": "熟成土撃"
+ },
+ {
+  "i": 206,
+  "mListText": "熟成氷撃+%d",
+  "mFilterFindName": "熟成氷撃"
+ },
+ {
+  "i": 207,
+  "mListText": "熟成火護+%d",
+  "mFilterFindName": "熟成火護"
+ },
+ {
+  "i": 208,
+  "mListText": "熟成水護+%d",
+  "mFilterFindName": "熟成水護"
+ },
+ {
+  "i": 209,
+  "mListText": "熟成雷護+%d",
+  "mFilterFindName": "熟成雷護"
+ },
+ {
+  "i": 210,
+  "mListText": "熟成土護+%d",
+  "mFilterFindName": "熟成土護"
+ },
+ {
+  "i": 211,
+  "mListText": "熟成氷護+%d",
+  "mFilterFindName": "熟成氷護"
+ },
+ {
+  "i": 212,
+  "mListText": "覇道火属性攻撃+%d",
+  "mFilterFindName": "覇道火属性攻撃"
+ },
+ {
+  "i": 213,
+  "mListText": "覇道水属性攻撃+%d",
+  "mFilterFindName": "覇道水属性攻撃"
+ },
+ {
+  "i": 214,
+  "mListText": "覇道雷属性攻撃+%d",
+  "mFilterFindName": "覇道雷属性攻撃"
+ },
+ {
+  "i": 215,
+  "mListText": "覇道土属性攻撃+%d",
+  "mFilterFindName": "覇道土属性攻撃"
+ },
+ {
+  "i": 216,
+  "mListText": "覇道氷属性攻撃+%d",
+  "mFilterFindName": "覇道氷属性攻撃"
+ },
+ {
+  "i": 217,
+  "mListText": "覇道火耐性+%d",
+  "mFilterFindName": "覇道火耐性"
+ },
+ {
+  "i": 218,
+  "mListText": "覇道水耐性+%d",
+  "mFilterFindName": "覇道水耐性"
+ },
+ {
+  "i": 219,
+  "mListText": "覇道雷耐性+%d",
+  "mFilterFindName": "覇道雷耐性"
+ },
+ {
+  "i": 220,
+  "mListText": "覇道土耐性+%d",
+  "mFilterFindName": "覇道土耐性"
+ },
+ {
+  "i": 221,
+  "mListText": "覇道氷耐性+%d",
+  "mFilterFindName": "覇道氷耐性"
+ },
+ {
+  "i": 222,
+  "mListText": "凶暴個体キラー+%d",
+  "mFilterFindName": "凶暴個体キラー"
+ },
+ {
+  "i": 223,
+  "mListText": "凶暴個体耐性+%d",
+  "mFilterFindName": "凶暴個体耐性"
+ },
+ {
+  "i": 224,
+  "mListText": "豪火竜キラー+%d",
+  "mFilterFindName": "豪火竜キラー"
+ },
+ {
+  "i": 225,
+  "mListText": "豪火竜耐性+%d",
+  "mFilterFindName": "豪火竜耐性"
+ },
+ {
+  "i": 226,
+  "mListText": "凍牙竜キラー+%d",
+  "mFilterFindName": "凍牙竜キラー"
+ },
+ {
+  "i": 227,
+  "mListText": "凍牙竜耐性+%d",
+  "mFilterFindName": "凍牙竜耐性"
+ },
+ {
+  "i": 228,
+  "mListText": "黒蝕竜キラー+%d",
+  "mFilterFindName": "黒蝕竜キラー"
+ },
+ {
+  "i": 229,
+  "mListText": "黒蝕竜耐性+%d",
+  "mFilterFindName": "黒蝕竜耐性"
+ },
+ {
+  "i": 230,
+  "mListText": "凶怪竜キラー+%d",
+  "mFilterFindName": "凶怪竜キラー"
+ },
+ {
+  "i": 231,
+  "mListText": "凶怪竜耐性+%d",
+  "mFilterFindName": "凶怪竜耐性"
+ },
+ {
+  "i": 232,
+  "mListText": "天雷騎キラー+%d",
+  "mFilterFindName": "天雷騎キラー"
+ },
+ {
+  "i": 233,
+  "mListText": "天雷騎耐性+%d",
+  "mFilterFindName": "天雷騎耐性"
+ },
+ {
+  "i": 234,
+  "mListText": "銀火竜キラー+%d",
+  "mFilterFindName": "銀火竜キラー"
+ },
+ {
+  "i": 235,
+  "mListText": "銀火竜耐性+%d",
+  "mFilterFindName": "銀火竜耐性"
+ },
+ {
+  "i": 236,
+  "mListText": "K.O.術+%d％",
+  "mFilterFindName": "K.O.術"
+ },
+ {
+  "i": 237,
+  "mListText": "バビロンコイン+%d％",
+  "mFilterFindName": "バビロンコイン"
+ },
+ {
+  "i": 238,
+  "mListText": "投影コイン+%d％",
+  "mFilterFindName": "投影コイン"
+ },
+ {
+  "i": 239,
+  "mListText": "冥晶龍キラー+%d",
+  "mFilterFindName": "冥晶龍キラー"
+ },
+ {
+  "i": 240,
+  "mListText": "冥晶龍耐性+%d",
+  "mFilterFindName": "冥晶龍耐性"
+ },
+ {
+  "i": 241,
+  "mListText": "金火竜キラー+%d",
+  "mFilterFindName": "金火竜キラー"
+ },
+ {
+  "i": 242,
+  "mListText": "金火竜耐性+%d",
+  "mFilterFindName": "金火竜耐性"
+ },
+ {
+  "i": 243,
+  "mListText": "命狼竜キラー+%d",
+  "mFilterFindName": "命狼竜キラー"
+ },
+ {
+  "i": 244,
+  "mListText": "命狼竜耐性+%d",
+  "mFilterFindName": "命狼竜耐性"
+ },
+ {
+  "i": 245,
+  "mListText": "Suction Reduction",
+  "mFilterFindName": "Suction Reduction"
+ },
+ {
+  "i": 246,
+  "mListText": "Absorption Negated",
+  "mFilterFindName": "Absorption Negated"
+ },
+ {
+  "i": 247,
+  "mListText": "Accelerated Water Strike",
+  "mFilterFindName": "Accelerated Water Strike"
+ },
+ {
+  "i": 248,
+  "mListText": "Accelerated Fire Strike",
+  "mFilterFindName": "Accelerated Fire Strike"
+ },
+ {
+  "i": 249,
+  "mListText": "Accelerated Ice Strike",
+  "mFilterFindName": "Accelerated Ice Strike"
+ },
+ {
+  "i": 250,
+  "mListText": "Accelerated Earth Strike",
+  "mFilterFindName": "Accelerated Earth Strike"
+ },
+ {
+  "i": 251,
+  "mListText": "Accelerated Thunder Strike",
+  "mFilterFindName": "Accelerated Thunder Strike"
+ },
+ {
+  "i": 252,
+  "mListText": "Rapid Water Strike",
+  "mFilterFindName": "Rapid Water Strike"
+ },
+ {
+  "i": 253,
+  "mListText": "Rapid Fire Strike",
+  "mFilterFindName": "Rapid Fire Strike"
+ },
+ {
+  "i": 254,
+  "mListText": "Rapid Ice Strike",
+  "mFilterFindName": "Rapid Ice Strike"
+ },
+ {
+  "i": 255,
+  "mListText": "Rapid Earth Strike",
+  "mFilterFindName": "Rapid Earth Strike"
+ },
+ {
+  "i": 256,
+  "mListText": "Rapid Thunder Strike",
+  "mFilterFindName": "Rapid Thunder Strike"
+ },
+ {
+  "i": 257,
+  "mListText": "会心手当+%d",
+  "mFilterFindName": "会心手当"
+ },
+ {
+  "i": 258,
+  "mListText": "感染耐性+%d％",
+  "mFilterFindName": "感染耐性"
+ },
+ {
+  "i": 259,
+  "mListText": "軽銃射程+%d％",
+  "mFilterFindName": "軽銃射程"
+ },
+ {
+  "i": 260,
+  "mListText": "Super Guts",
+  "mFilterFindName": "Super Guts"
+ },
+ {
+  "i": 261,
+  "mListText": "Tenacity",
+  "mFilterFindName": "Tenacity"
+ },
+ {
+  "i": 262,
+  "mListText": "Critical Resonance",
+  "mFilterFindName": "Critical Resonance"
+ },
+ {
+  "i": 263,
+  "mListText": "狂撃+%d％",
+  "mFilterFindName": "狂撃"
+ },
+ {
+  "i": 264,
+  "mListText": "静養+%d",
+  "mFilterFindName": "静養"
+ },
+ {
+  "i": 265,
+  "mListText": "Comeback (S)",
+  "mFilterFindName": "Comeback (S)"
+ },
+ {
+  "i": 266,
+  "mListText": "Comeback (M)",
+  "mFilterFindName": "Comeback (M)"
+ },
+ {
+  "i": 267,
+  "mListText": "Comeback (L)",
+  "mFilterFindName": "Comeback (L)"
+ },
+ {
+  "i": 268,
+  "mListText": "Iron Armor (S)",
+  "mFilterFindName": "Iron Armor (S)"
+ },
+ {
+  "i": 269,
+  "mListText": "Iron Armor (M)",
+  "mFilterFindName": "Iron Armor (M)"
+ },
+ {
+  "i": 270,
+  "mListText": "Iron Armor (L)",
+  "mFilterFindName": "Iron Armor (L)"
+ },
+ {
+  "i": 271,
+  "mListText": "敏捷+%d％",
+  "mFilterFindName": "敏捷"
+ },
+ {
+  "i": 272,
+  "mListText": "連装填+%d％",
+  "mFilterFindName": "連装填"
+ },
+ {
+  "i": 273,
+  "mListText": "おまけ術+%d％",
+  "mFilterFindName": "おまけ術"
+ },
+ {
+  "i": 274,
+  "mListText": "一気集中+%d％",
+  "mFilterFindName": "一気集中"
+ },
+ {
+  "i": 275,
+  "mListText": "薬師+%d％",
+  "mFilterFindName": "薬師"
+ },
+ {
+  "i": 276,
+  "mListText": "溜め砲術+%d％",
+  "mFilterFindName": "溜め砲術"
+ },
+ {
+  "i": 277,
+  "mListText": "練気洗練+%d％",
+  "mFilterFindName": "練気洗練"
+ },
+ {
+  "i": 278,
+  "mListText": "守備の奏+%d％",
+  "mFilterFindName": "守備の奏"
+ },
+ {
+  "i": 279,
+  "mListText": "Blast Hunter",
+  "mFilterFindName": "Blast Hunter"
+ },
+ {
+  "i": 280,
+  "mListText": "凶暴抑止+%d％",
+  "mFilterFindName": "凶暴抑止"
+ },
+ {
+  "i": 281,
+  "mListText": "Artisan Technique",
+  "mFilterFindName": "Artisan Technique"
+ },
+ {
+  "i": 282,
+  "mListText": "黒獄卿キラー+%d",
+  "mFilterFindName": "黒獄卿キラー"
+ },
+ {
+  "i": 283,
+  "mListText": "黒獄卿耐性+%d",
+  "mFilterFindName": "黒獄卿耐性"
+ },
+ {
+  "i": 284,
+  "mListText": "Nya-nya Wonderful (S)",
+  "mFilterFindName": "Nya-nya Wonderful (S)"
+ },
+ {
+  "i": 285,
+  "mListText": "Nya-nya Wonderful (M)",
+  "mFilterFindName": "Nya-nya Wonderful (M)"
+ },
+ {
+  "i": 286,
+  "mListText": "Nya-nya Wonderful (L)",
+  "mFilterFindName": "Nya-nya Wonderful (L)"
+ },
+ {
+  "i": 287,
+  "mListText": "Nya-nya Marvelous (S)",
+  "mFilterFindName": "Nya-nya Marvelous (S)"
+ },
+ {
+  "i": 288,
+  "mListText": "Nya-nya Marvelous (M)",
+  "mFilterFindName": "Nya-nya Marvelous (M)"
+ },
+ {
+  "i": 289,
+  "mListText": "Nya-nya Marvelous (L)",
+  "mFilterFindName": "Nya-nya Marvelous (L)"
+ },
+ {
+  "i": 290,
+  "mListText": "Frenzy Suppression (S)",
+  "mFilterFindName": "Frenzy Suppression (S)"
+ },
+ {
+  "i": 291,
+  "mListText": "Frenzy Suppression (M)",
+  "mFilterFindName": "Frenzy Suppression (M)"
+ },
+ {
+  "i": 292,
+  "mListText": "Frenzy Suppression (L)",
+  "mFilterFindName": "Frenzy Suppression (L)"
+ },
+ {
+  "i": 293,
+  "mListText": "花火コイン+%d％",
+  "mFilterFindName": "花火コイン"
+ },
+ {
+  "i": 294,
+  "mListText": "ムラオサコイン+%d％",
+  "mFilterFindName": "ムラオサコイン"
+ },
+ {
+  "i": 295,
+  "mListText": "幸運+%d％",
+  "mFilterFindName": "幸運"
+ },
+ {
+  "i": 296,
+  "mListText": "Money Luck",
+  "mFilterFindName": "Money Luck"
+ },
+ {
+  "i": 297,
+  "mListText": "Refinement (M)",
+  "mFilterFindName": "Refinement (M)"
+ },
+ {
+  "i": 298,
+  "mListText": "Flurry (M)",
+  "mFilterFindName": "Flurry (M)"
+ },
+ {
+  "i": 299,
+  "mListText": "Hungry Wolf (M)",
+  "mFilterFindName": "Hungry Wolf (M)"
+ },
+ {
+  "i": 300,
+  "mListText": "鋼膜個体キラー+%d",
+  "mFilterFindName": "鋼膜個体キラー"
+ },
+ {
+  "i": 301,
+  "mListText": "鋼膜個体耐性+%d",
+  "mFilterFindName": "鋼膜個体耐性"
+ },
+ {
+  "i": 302,
+  "mListText": "月迅竜キラー+%d",
+  "mFilterFindName": "月迅竜キラー"
+ },
+ {
+  "i": 303,
+  "mListText": "月迅竜耐性+%d",
+  "mFilterFindName": "月迅竜耐性"
+ },
+ {
+  "i": 304,
+  "mListText": "冥海竜キラー+%d",
+  "mFilterFindName": "冥海竜キラー"
+ },
+ {
+  "i": 305,
+  "mListText": "冥海竜耐性+%d",
+  "mFilterFindName": "冥海竜耐性"
+ },
+ {
+  "i": 306,
+  "mListText": "使徒種キラー+%d",
+  "mFilterFindName": "使徒種キラー"
+ },
+ {
+  "i": 307,
+  "mListText": "使徒種耐性+%d",
+  "mFilterFindName": "使徒種耐性"
+ },
+ {
+  "i": 308,
+  "mListText": "使徒のコアコイン+%d％",
+  "mFilterFindName": "使徒のコアコイン"
+ },
+ {
+  "i": 309,
+  "mListText": "Last Bastion",
+  "mFilterFindName": "Last Bastion"
+ },
+ {
+  "i": 310,
+  "mListText": "Rapid Arrows (S)",
+  "mFilterFindName": "Rapid Arrows (S)"
+ },
+ {
+  "i": 311,
+  "mListText": "Rapid Arrows (M)",
+  "mFilterFindName": "Rapid Arrows (M)"
+ },
+ {
+  "i": 312,
+  "mListText": "Rapid Arrows (L)",
+  "mFilterFindName": "Rapid Arrows (L)"
+ },
+ {
+  "i": 313,
+  "mListText": "弓極+%d％",
+  "mFilterFindName": "弓極"
+ },
+ {
+  "i": 314,
+  "mListText": "Guardian Evade (S)",
+  "mFilterFindName": "Guardian Evade (S)"
+ },
+ {
+  "i": 315,
+  "mListText": "Guardian Evade (M)",
+  "mFilterFindName": "Guardian Evade (M)"
+ },
+ {
+  "i": 316,
+  "mListText": "Guardian Evade (L)",
+  "mFilterFindName": "Guardian Evade (L)"
+ },
+ {
+  "i": 317,
+  "mListText": "ガード装填+%d％",
+  "mFilterFindName": "ガード装填"
+ },
+ {
+  "i": 318,
+  "mListText": "Quick Evade (S)",
+  "mFilterFindName": "Quick Evade (S)"
+ },
+ {
+  "i": 319,
+  "mListText": "Quick Evade (M)",
+  "mFilterFindName": "Quick Evade (M)"
+ },
+ {
+  "i": 320,
+  "mListText": "Quick Evade (L)",
+  "mFilterFindName": "Quick Evade (L)"
+ },
+ {
+  "i": 321,
+  "mListText": "Nice-to-Meet-You Armor",
+  "mFilterFindName": "Nice-to-Meet-You Armor"
+ },
+ {
+  "i": 322,
+  "mListText": "Nice-to-Meet-You Full Armor",
+  "mFilterFindName": "Nice-to-Meet-You Full Armor"
+ },
+ {
+  "i": 323,
+  "mListText": "Insect Glaive Master",
+  "mFilterFindName": "Insect Glaive Master"
+ },
+ {
+  "i": 324,
+  "mListText": "Kinsect Boost",
+  "mFilterFindName": "Kinsect Boost"
+ },
+ {
+  "i": 325,
+  "mListText": "Extract Gather Up",
+  "mFilterFindName": "Extract Gather Up"
+ },
+ {
+  "i": 326,
+  "mListText": "Trait Change [Recovery]",
+  "mFilterFindName": "Trait Change [Recovery]"
+ },
+ {
+  "i": 327,
+  "mListText": "Trait Change [Martial Art]",
+  "mFilterFindName": "Trait Change [Martial Art]"
+ },
+ {
+  "i": 328,
+  "mListText": "Trait Change [Reduction]",
+  "mFilterFindName": "Trait Change [Reduction]"
+ },
+ {
+  "i": 329,
+  "mListText": "Trait Change [Attack]",
+  "mFilterFindName": "Trait Change [Attack]"
+ },
+ {
+  "i": 330,
+  "mListText": "スタミナ最大数+%d",
+  "mFilterFindName": "スタミナ最大数"
+ },
+ {
+  "i": 331,
+  "mListText": "Dash Start",
+  "mFilterFindName": "Dash Start"
+ },
+ {
+  "i": 332,
+  "mListText": "ハイセンス+%d％",
+  "mFilterFindName": "ハイセンス"
+ },
+ {
+  "i": 333,
+  "mListText": "Resourcefulness",
+  "mFilterFindName": "Resourcefulness"
+ },
+ {
+  "i": 334,
+  "mListText": "Swift Legs",
+  "mFilterFindName": "Swift Legs"
+ },
+ {
+  "i": 335,
+  "mListText": "Invincibility Extension (S)",
+  "mFilterFindName": "Invincibility Extension (S)"
+ },
+ {
+  "i": 336,
+  "mListText": "Invincibility Extension (M)",
+  "mFilterFindName": "Invincibility Extension (M)"
+ },
+ {
+  "i": 337,
+  "mListText": "Invincibility Extension (L)",
+  "mFilterFindName": "Invincibility Extension (L)"
+ },
+ {
+  "i": 338,
+  "mListText": "ダークバット+%d％",
+  "mFilterFindName": "ダークバット"
+ },
+ {
+  "i": 339,
+  "mListText": "かぼちゃの力+%d",
+  "mFilterFindName": "かぼちゃの力"
+ },
+ {
+  "i": 340,
+  "mListText": "かぼちゃの加護+%d",
+  "mFilterFindName": "かぼちゃの加護"
+ },
+ {
+  "i": 341,
+  "mListText": "轟暴震耐性+%d",
+  "mFilterFindName": "轟暴震耐性"
+ },
+ {
+  "i": 342,
+  "mListText": "轟暴震キラー+%d",
+  "mFilterFindName": "轟暴震キラー"
+ },
+ {
+  "i": 343,
+  "mListText": "Transformation Recovery (S)",
+  "mFilterFindName": "Transformation Recovery (S)"
+ },
+ {
+  "i": 344,
+  "mListText": "Transformation Recovery (M)",
+  "mFilterFindName": "Transformation Recovery (M)"
+ },
+ {
+  "i": 345,
+  "mListText": "Transformation Recovery (L)",
+  "mFilterFindName": "Transformation Recovery (L)"
+ },
+ {
+  "i": 346,
+  "mListText": "Invincible Spinning Slash",
+  "mFilterFindName": "Invincible Spinning Slash"
+ },
+ {
+  "i": 347,
+  "mListText": "Swift Finish (S)",
+  "mFilterFindName": "Swift Finish (S)"
+ },
+ {
+  "i": 348,
+  "mListText": "Swift Finish (M)",
+  "mFilterFindName": "Swift Finish (M)"
+ },
+ {
+  "i": 349,
+  "mListText": "Swift Finish (L)",
+  "mFilterFindName": "Swift Finish (L)"
+ },
+ {
+  "i": 350,
+  "mListText": "Quick Demon Mode",
+  "mFilterFindName": "Quick Demon Mode"
+ },
+ {
+  "i": 351,
+  "mListText": "サイコの力+%d",
+  "mFilterFindName": "サイコの力"
+ },
+ {
+  "i": 352,
+  "mListText": "サイコの加護+%d",
+  "mFilterFindName": "サイコの加護"
+ },
+ {
+  "i": 353,
+  "mListText": "Gale Dual (S)",
+  "mFilterFindName": "Gale Dual (S)"
+ },
+ {
+  "i": 354,
+  "mListText": "Gale Dual (M)",
+  "mFilterFindName": "Gale Dual (M)"
+ },
+ {
+  "i": 355,
+  "mListText": "Gale Dual (L)",
+  "mFilterFindName": "Gale Dual (L)"
+ },
+ {
+  "i": 356,
+  "mListText": "Spirit Primer",
+  "mFilterFindName": "Spirit Primer"
+ },
+ {
+  "i": 357,
+  "mListText": "Heavy Burst (S)",
+  "mFilterFindName": "Heavy Burst (S)"
+ },
+ {
+  "i": 358,
+  "mListText": "Heavy Burst (M)",
+  "mFilterFindName": "Heavy Burst (M)"
+ },
+ {
+  "i": 359,
+  "mListText": "Heavy Burst (L)",
+  "mFilterFindName": "Heavy Burst (L)"
+ },
+ {
+  "i": 360,
+  "mListText": "Demon Hunt",
+  "mFilterFindName": "Demon Hunt"
+ },
+ {
+  "i": 361,
+  "mListText": "ファイトマネー+%d％",
+  "mFilterFindName": "ファイトマネー"
+ },
+ {
+  "i": 362,
+  "mListText": "クリスタルの力+%d",
+  "mFilterFindName": "クリスタルの力"
+ },
+ {
+  "i": 363,
+  "mListText": "クリスタルの加護+%d",
+  "mFilterFindName": "クリスタルの加護"
+ },
+ {
+  "i": 364,
+  "mListText": "スタークォーツ+%d％",
+  "mFilterFindName": "スタークォーツ"
+ },
+ {
+  "i": 365,
+  "mListText": "Evade Window (M)",
+  "mFilterFindName": "Evade Window (M)"
+ },
+ {
+  "i": 366,
+  "mListText": "Evade Extender (M)",
+  "mFilterFindName": "Evade Extender (M)"
+ },
+ {
+  "i": 367,
+  "mListText": "Dragon Wind Pressure Negated",
+  "mFilterFindName": "Dragon Wind Pressure Negated"
+ },
+ {
+  "i": 368,
+  "mListText": "Heal Guardian (S)",
+  "mFilterFindName": "Heal Guardian (S)"
+ },
+ {
+  "i": 369,
+  "mListText": "Heal Guardian (M)",
+  "mFilterFindName": "Heal Guardian (M)"
+ },
+ {
+  "i": 370,
+  "mListText": "Heal Guardian (L)",
+  "mFilterFindName": "Heal Guardian (L)"
+ },
+ {
+  "i": 371,
+  "mListText": "Lance Combo (S)",
+  "mFilterFindName": "Lance Combo (S)"
+ },
+ {
+  "i": 372,
+  "mListText": "Lance Combo (M)",
+  "mFilterFindName": "Lance Combo (M)"
+ },
+ {
+  "i": 373,
+  "mListText": "Lance Combo (L)",
+  "mFilterFindName": "Lance Combo (L)"
+ },
+ {
+  "i": 374,
+  "mListText": "Guard Drain Up (S)",
+  "mFilterFindName": "Guard Drain Up (S)"
+ },
+ {
+  "i": 375,
+  "mListText": "Guard Drain Up (M)",
+  "mFilterFindName": "Guard Drain Up (M)"
+ },
+ {
+  "i": 376,
+  "mListText": "Guard Drain Up (L)",
+  "mFilterFindName": "Guard Drain Up (L)"
+ },
+ {
+  "i": 377,
+  "mListText": "Quick Shot (S)",
+  "mFilterFindName": "Quick Shot (S)"
+ },
+ {
+  "i": 378,
+  "mListText": "Quick Shot (M)",
+  "mFilterFindName": "Quick Shot (M)"
+ },
+ {
+  "i": 379,
+  "mListText": "Quick Shot (L)",
+  "mFilterFindName": "Quick Shot (L)"
+ },
+ {
+  "i": 380,
+  "mListText": "ガンスリンガー+%d",
+  "mFilterFindName": "ガンスリンガー"
+ },
+ {
+  "i": 381,
+  "mListText": "Beast Hopper",
+  "mFilterFindName": "Beast Hopper"
+ },
+ {
+  "i": 382,
+  "mListText": "Willow Wind Cannon",
+  "mFilterFindName": "Willow Wind Cannon"
+ },
+ {
+  "i": 383,
+  "mListText": "最大体力-%d",
+  "mFilterFindName": "最大体力"
+ },
+ {
+  "i": 384,
+  "mListText": "防御力-%d",
+  "mFilterFindName": "defense power"
+ },
+ {
+  "i": 385,
+  "mListText": "Clumsy Evader",
+  "mFilterFindName": "Clumsy Evader"
+ },
+ {
+  "i": 386,
+  "mListText": "Guard Drain Down (S)",
+  "mFilterFindName": "Guard Drain Down (S)"
+ },
+ {
+  "i": 387,
+  "mListText": "Guard Drain Down (M)",
+  "mFilterFindName": "Guard Drain Down (M)"
+ },
+ {
+  "i": 388,
+  "mListText": "Guard Drain Down (L)",
+  "mFilterFindName": "Guard Drain Down (L)"
+ },
+ {
+  "i": 389,
+  "mListText": "Speed Down (S)",
+  "mFilterFindName": "Speed Down (S)"
+ },
+ {
+  "i": 390,
+  "mListText": "Speed Down (M)",
+  "mFilterFindName": "Speed Down (M)"
+ },
+ {
+  "i": 391,
+  "mListText": "Speed Down (L)",
+  "mFilterFindName": "Speed Down (L)"
+ },
+ {
+  "i": 392,
+  "mListText": "Switch Axe First Strike",
+  "mFilterFindName": "Switch Axe First Strike"
+ },
+ {
+  "i": 393,
+  "mListText": "Charge Blade First Strike",
+  "mFilterFindName": "Charge Blade First Strike"
+ },
+ {
+  "i": 394,
+  "mListText": "Great Martial Body Return (S)",
+  "mFilterFindName": "Great Martial Body Return (S)"
+ },
+ {
+  "i": 395,
+  "mListText": "Great Martial Body Return (M)",
+  "mFilterFindName": "Great Martial Body Return (M)"
+ },
+ {
+  "i": 396,
+  "mListText": "Great Martial Body Return (L)",
+  "mFilterFindName": "Great Martial Body Return (L)"
+ },
+ {
+  "i": 397,
+  "mListText": "星黒獣耐性+%d",
+  "mFilterFindName": "星黒獣耐性"
+ },
+ {
+  "i": 398,
+  "mListText": "星黒獣キラー+%d",
+  "mFilterFindName": "星黒獣キラー"
+ },
+ {
+  "i": 399,
+  "mListText": "第9回討伐P+%d％",
+  "mFilterFindName": "第9回討伐P"
+ },
+ {
+  "i": 400,
+  "mListText": "第10回討伐P+%d％",
+  "mFilterFindName": "第10回討伐P"
+ },
+ {
+  "i": 401,
+  "mListText": "轟竜キラー+%d",
+  "mFilterFindName": "轟竜キラー"
+ },
+ {
+  "i": 402,
+  "mListText": "轟竜耐性+%d",
+  "mFilterFindName": "轟竜耐性"
+ },
+ {
+  "i": 403,
+  "mListText": "幻獣キラー+%d",
+  "mFilterFindName": "幻獣キラー"
+ },
+ {
+  "i": 404,
+  "mListText": "幻獣耐性+%d",
+  "mFilterFindName": "幻獣耐性"
+ },
+ {
+  "i": 405,
+  "mListText": "Charge Blade Morph Evade",
+  "mFilterFindName": "Charge Blade Morph Evade"
+ },
+ {
+  "i": 406,
+  "mListText": "Switch Axe Morph Evade",
+  "mFilterFindName": "Switch Axe Morph Evade"
+ },
+ {
+  "i": 407,
+  "mListText": "Higan Formation (S)",
+  "mFilterFindName": "Higan Formation (S)"
+ },
+ {
+  "i": 408,
+  "mListText": "Higan Formation (M)",
+  "mFilterFindName": "Higan Formation (M)"
+ },
+ {
+  "i": 409,
+  "mListText": "Higan Formation (L)",
+  "mFilterFindName": "Higan Formation (L)"
+ },
+ {
+  "i": 410,
+  "mListText": "Higan Spring (S)",
+  "mFilterFindName": "Higan Spring (S)"
+ },
+ {
+  "i": 411,
+  "mListText": "Higan Spring (M)",
+  "mFilterFindName": "Higan Spring (M)"
+ },
+ {
+  "i": 412,
+  "mListText": "Higan Spring (L)",
+  "mFilterFindName": "Higan Spring (L)"
+ },
+ {
+  "i": 413,
+  "mListText": "Step Fire",
+  "mFilterFindName": "Step Fire"
+ },
+ {
+  "i": 414,
+  "mListText": "裂傷耐性+%d％",
+  "mFilterFindName": "裂傷耐性"
+ },
+ {
+  "i": 415,
+  "mListText": "Critical-Hit Invincibility (S)",
+  "mFilterFindName": "Critical-Hit Invincibility (S)"
+ },
+ {
+  "i": 416,
+  "mListText": "Critical-Hit Invincibility (M)",
+  "mFilterFindName": "Critical-Hit Invincibility (M)"
+ },
+ {
+  "i": 417,
+  "mListText": "Critical-Hit Invincibility (L)",
+  "mFilterFindName": "Critical-Hit Invincibility (L)"
+ },
+ {
+  "i": 418,
+  "mListText": "Limit Reload (S)",
+  "mFilterFindName": "Limit Reload (S)"
+ },
+ {
+  "i": 419,
+  "mListText": "Limit Reload (M)",
+  "mFilterFindName": "Limit Reload (M)"
+ },
+ {
+  "i": 420,
+  "mListText": "Limit Reload (L)",
+  "mFilterFindName": "Limit Reload (L)"
+ },
+ {
+  "i": 421,
+  "mListText": "Auto-Guard (S)",
+  "mFilterFindName": "Auto-Guard (S)"
+ },
+ {
+  "i": 422,
+  "mListText": "Auto-Guard (M)",
+  "mFilterFindName": "Auto-Guard (M)"
+ },
+ {
+  "i": 423,
+  "mListText": "Auto-Guard (L)",
+  "mFilterFindName": "Auto-Guard (L)"
+ },
+ {
+  "i": 424,
+  "mListText": "Partbreaker (S)",
+  "mFilterFindName": "Partbreaker (S)"
+ },
+ {
+  "i": 425,
+  "mListText": "Partbreaker (M)",
+  "mFilterFindName": "Partbreaker (M)"
+ },
+ {
+  "i": 426,
+  "mListText": "Partbreaker (L)",
+  "mFilterFindName": "Partbreaker (L)"
+ },
+ {
+  "i": 427,
+  "mListText": "Last Stand",
+  "mFilterFindName": "Last Stand"
+ },
+ {
+  "i": 428,
+  "mListText": "Demonic Barrier (S)",
+  "mFilterFindName": "Demonic Barrier (S)"
+ },
+ {
+  "i": 429,
+  "mListText": "Demonic Barrier (M)",
+  "mFilterFindName": "Demonic Barrier (M)"
+ },
+ {
+  "i": 430,
+  "mListText": "Demonic Barrier (L)",
+  "mFilterFindName": "Demonic Barrier (L)"
+ },
+ {
+  "i": 431,
+  "mListText": "Melee Recovery (S)",
+  "mFilterFindName": "Melee Recovery (S)"
+ },
+ {
+  "i": 432,
+  "mListText": "Melee Recovery (M)",
+  "mFilterFindName": "Melee Recovery (M)"
+ },
+ {
+  "i": 433,
+  "mListText": "Melee Recovery (L)",
+  "mFilterFindName": "Melee Recovery (L)"
+ },
+ {
+  "i": 434,
+  "mListText": "Natural Recovery (S)",
+  "mFilterFindName": "Natural Recovery (S)"
+ },
+ {
+  "i": 435,
+  "mListText": "Natural Recovery (M)",
+  "mFilterFindName": "Natural Recovery (M)"
+ },
+ {
+  "i": 436,
+  "mListText": "Natural Recovery (L)",
+  "mFilterFindName": "Natural Recovery (L)"
+ },
+ {
+  "i": 437,
+  "mListText": "Guard Gale (S)",
+  "mFilterFindName": "Guard Gale (S)"
+ },
+ {
+  "i": 438,
+  "mListText": "Guard Gale (M)",
+  "mFilterFindName": "Guard Gale (M)"
+ },
+ {
+  "i": 439,
+  "mListText": "Guard Gale (L)",
+  "mFilterFindName": "Guard Gale (L)"
+ },
+ {
+  "i": 440,
+  "mListText": "Demon Power Burst (S)",
+  "mFilterFindName": "Demon Power Burst (S)"
+ },
+ {
+  "i": 441,
+  "mListText": "Demon Power Burst (M)",
+  "mFilterFindName": "Demon Power Burst (M)"
+ },
+ {
+  "i": 442,
+  "mListText": "Demon Power Burst (L)",
+  "mFilterFindName": "Demon Power Burst (L)"
+ },
+ {
+  "i": 443,
+  "mListText": "Spirits' Protection",
+  "mFilterFindName": "Spirits' Protection"
+ },
+ {
+  "i": 444,
+  "mListText": "Reaper (M)",
+  "mFilterFindName": "Reaper (M)"
+ },
+ {
+  "i": 445,
+  "mListText": "Reaper (L)",
+  "mFilterFindName": "Reaper (L)"
+ },
+ {
+  "i": 446,
+  "mListText": "廻世主耐性+%d",
+  "mFilterFindName": "廻世主耐性"
+ },
+ {
+  "i": 447,
+  "mListText": "廻世主キラー+%d",
+  "mFilterFindName": "廻世主キラー"
+ },
+ {
+  "i": 448,
+  "mListText": "第11回討伐P+%d％",
+  "mFilterFindName": "第11回討伐P"
+ },
+ {
+  "i": 449,
+  "mListText": "千刃竜キラー+%d",
+  "mFilterFindName": "千刃竜キラー"
+ },
+ {
+  "i": 450,
+  "mListText": "千刃竜耐性+%d",
+  "mFilterFindName": "千刃竜耐性"
+ },
+ {
+  "i": 451,
+  "mListText": "とのさまんじゅう＋%d％",
+  "mFilterFindName": "とのさまんじゅう＋"
+ },
+ {
+  "i": 452,
+  "mListText": "カカオ＋%d％",
+  "mFilterFindName": "カカオ＋"
+ },
+ {
+  "i": 453,
+  "mListText": "トノサマンの力+%d",
+  "mFilterFindName": "トノサマンの力"
+ },
+ {
+  "i": 454,
+  "mListText": "トノサマンの加護+%d",
+  "mFilterFindName": "トノサマンの加護"
+ },
+ {
+  "i": 455,
+  "mListText": "ときめきの力+%d",
+  "mFilterFindName": "ときめきの力"
+ },
+ {
+  "i": 456,
+  "mListText": "ときめきの加護+%d",
+  "mFilterFindName": "ときめきの加護"
+ },
+ {
+  "i": 457,
+  "mListText": "対凶怪竜+%d",
+  "mFilterFindName": "対凶怪竜"
+ },
+ {
+  "i": 458,
+  "mListText": "対紫水獣【鋼膜】+%d",
+  "mFilterFindName": "対紫水獣【鋼膜】"
+ },
+ {
+  "i": 459,
+  "mListText": "対水竜【凶暴】+%d",
+  "mFilterFindName": "対水竜【凶暴】"
+ },
+ {
+  "i": 460,
+  "mListText": "全襲来キラー+%d",
+  "mFilterFindName": "全襲来キラー"
+ },
+ {
+  "i": 461,
+  "mListText": "Counter Mastery",
+  "mFilterFindName": "Counter Mastery"
+ },
+ {
+  "i": 462,
+  "mListText": "Great Sword Burst",
+  "mFilterFindName": "Great Sword Burst"
+ },
+ {
+  "i": 463,
+  "mListText": "Critical Reload (S)",
+  "mFilterFindName": "Critical Reload (S)"
+ },
+ {
+  "i": 464,
+  "mListText": "Critical Reload (M)",
+  "mFilterFindName": "Critical Reload (M)"
+ },
+ {
+  "i": 465,
+  "mListText": "Critical Reload (L)",
+  "mFilterFindName": "Critical Reload (L)"
+ },
+ {
+  "i": 466,
+  "mListText": "Perfect Guard (S)",
+  "mFilterFindName": "Perfect Guard (S)"
+ },
+ {
+  "i": 467,
+  "mListText": "Perfect Guard (M)",
+  "mFilterFindName": "Perfect Guard (M)"
+ },
+ {
+  "i": 468,
+  "mListText": "Perfect Guard (L)",
+  "mFilterFindName": "Perfect Guard (L)"
+ },
+ {
+  "i": 469,
+  "mListText": "Martial Art P Efficiency (S)",
+  "mFilterFindName": "Martial Art P Efficiency (S)"
+ },
+ {
+  "i": 470,
+  "mListText": "Martial Art P Efficiency (M)",
+  "mFilterFindName": "Martial Art P Efficiency (M)"
+ },
+ {
+  "i": 471,
+  "mListText": "Martial Art P Efficiency (L)",
+  "mFilterFindName": "Martial Art P Efficiency (L)"
+ },
+ {
+  "i": 472,
+  "mListText": "Dragon Wind Pierce",
+  "mFilterFindName": "Dragon Wind Pierce"
+ },
+ {
+  "i": 473,
+  "mListText": "Buildup Power (S)",
+  "mFilterFindName": "Buildup Power (S)"
+ },
+ {
+  "i": 474,
+  "mListText": "Buildup Power (M)",
+  "mFilterFindName": "Buildup Power (M)"
+ },
+ {
+  "i": 475,
+  "mListText": "Buildup Power (L)",
+  "mFilterFindName": "Buildup Power (L)"
+ },
+ {
+  "i": 476,
+  "mListText": "Spirits' Calm",
+  "mFilterFindName": "Spirits' Calm"
+ },
+ {
+  "i": 477,
+  "mListText": "パンケーキ+%d％",
+  "mFilterFindName": "パンケーキ"
+ },
+ {
+  "i": 478,
+  "mListText": "フルーツ狩人の力+%d",
+  "mFilterFindName": "フルーツ狩人の力"
+ },
+ {
+  "i": 479,
+  "mListText": "フルーツ狩人の加護+%d",
+  "mFilterFindName": "フルーツ狩人の加護"
+ },
+ {
+  "i": 480,
+  "mListText": "対豪火竜+%d",
+  "mFilterFindName": "対豪火竜"
+ },
+ {
+  "i": 481,
+  "mListText": "対金火竜+%d",
+  "mFilterFindName": "対金火竜"
+ },
+ {
+  "i": 482,
+  "mListText": "対銀火竜+%d",
+  "mFilterFindName": "対銀火竜"
+ },
+ {
+  "i": 483,
+  "mListText": "対鋼鎚竜【凶暴】+%d",
+  "mFilterFindName": "対鋼鎚竜【凶暴】"
+ },
+ {
+  "i": 484,
+  "mListText": "鋼龍キラー+%d",
+  "mFilterFindName": "鋼龍キラー"
+ },
+ {
+  "i": 485,
+  "mListText": "鋼龍耐性+%d",
+  "mFilterFindName": "鋼龍耐性"
+ },
+ {
+  "i": 486,
+  "mListText": "Martial Art Power Up (S)",
+  "mFilterFindName": "Martial Art Power Up (S)"
+ },
+ {
+  "i": 487,
+  "mListText": "Martial Art Power Up (M)",
+  "mFilterFindName": "Martial Art Power Up (M)"
+ },
+ {
+  "i": 488,
+  "mListText": "Martial Art Power Up (L)",
+  "mFilterFindName": "Martial Art Power Up (L)"
+ },
+ {
+  "i": 489,
+  "mListText": "Water Res Boost (S)",
+  "mFilterFindName": "Water Res Boost (S)"
+ },
+ {
+  "i": 490,
+  "mListText": "Water Res Boost (M)",
+  "mFilterFindName": "Water Res Boost (M)"
+ },
+ {
+  "i": 491,
+  "mListText": "Water Res Boost (L)",
+  "mFilterFindName": "Water Res Boost (L)"
+ },
+ {
+  "i": 492,
+  "mListText": "Fire Res Boost (S)",
+  "mFilterFindName": "Fire Res Boost (S)"
+ },
+ {
+  "i": 493,
+  "mListText": "Fire Res Boost (M)",
+  "mFilterFindName": "Fire Res Boost (M)"
+ },
+ {
+  "i": 494,
+  "mListText": "Fire Res Boost (L)",
+  "mFilterFindName": "Fire Res Boost (L)"
+ },
+ {
+  "i": 495,
+  "mListText": "Ice Res Boost (S)",
+  "mFilterFindName": "Ice Res Boost (S)"
+ },
+ {
+  "i": 496,
+  "mListText": "Ice Res Boost (M)",
+  "mFilterFindName": "Ice Res Boost (M)"
+ },
+ {
+  "i": 497,
+  "mListText": "Ice Res Boost (L)",
+  "mFilterFindName": "Ice Res Boost (L)"
+ },
+ {
+  "i": 498,
+  "mListText": "Earth Res Boost (S)",
+  "mFilterFindName": "Earth Res Boost (S)"
+ },
+ {
+  "i": 499,
+  "mListText": "Earth Res Boost (M)",
+  "mFilterFindName": "Earth Res Boost (M)"
+ },
+ {
+  "i": 500,
+  "mListText": "Earth Res Boost (L)",
+  "mFilterFindName": "Earth Res Boost (L)"
+ },
+ {
+  "i": 501,
+  "mListText": "Thunder Res Boost (S)",
+  "mFilterFindName": "Thunder Res Boost (S)"
+ },
+ {
+  "i": 502,
+  "mListText": "Thunder Res Boost (M)",
+  "mFilterFindName": "Thunder Res Boost (M)"
+ },
+ {
+  "i": 503,
+  "mListText": "Thunder Res Boost (L)",
+  "mFilterFindName": "Thunder Res Boost (L)"
+ },
+ {
+  "i": 504,
+  "mListText": "Water Attack Boost (S)",
+  "mFilterFindName": "Water Attack Boost (S)"
+ },
+ {
+  "i": 505,
+  "mListText": "Water Attack Boost (M)",
+  "mFilterFindName": "Water Attack Boost (M)"
+ },
+ {
+  "i": 506,
+  "mListText": "Water Attack Boost (L)",
+  "mFilterFindName": "Water Attack Boost (L)"
+ },
+ {
+  "i": 507,
+  "mListText": "Fire Attack Boost (S)",
+  "mFilterFindName": "Fire Attack Boost (S)"
+ },
+ {
+  "i": 508,
+  "mListText": "Fire Attack Boost (M)",
+  "mFilterFindName": "Fire Attack Boost (M)"
+ },
+ {
+  "i": 509,
+  "mListText": "Fire Attack Boost (L)",
+  "mFilterFindName": "Fire Attack Boost (L)"
+ },
+ {
+  "i": 510,
+  "mListText": "Ice Attack Boost (S)",
+  "mFilterFindName": "Ice Attack Boost (S)"
+ },
+ {
+  "i": 511,
+  "mListText": "Ice Attack Boost (M)",
+  "mFilterFindName": "Ice Attack Boost (M)"
+ },
+ {
+  "i": 512,
+  "mListText": "Ice Attack Boost (L)",
+  "mFilterFindName": "Ice Attack Boost (L)"
+ },
+ {
+  "i": 513,
+  "mListText": "Earth Attack Boost (S)",
+  "mFilterFindName": "Earth Attack Boost (S)"
+ },
+ {
+  "i": 514,
+  "mListText": "Earth Attack Boost (M)",
+  "mFilterFindName": "Earth Attack Boost (M)"
+ },
+ {
+  "i": 515,
+  "mListText": "Earth Attack Boost (L)",
+  "mFilterFindName": "Earth Attack Boost (L)"
+ },
+ {
+  "i": 516,
+  "mListText": "Thunder Attack Boost (S)",
+  "mFilterFindName": "Thunder Attack Boost (S)"
+ },
+ {
+  "i": 517,
+  "mListText": "Thunder Attack Boost (M)",
+  "mFilterFindName": "Thunder Attack Boost (M)"
+ },
+ {
+  "i": 518,
+  "mListText": "Thunder Attack Boost (L)",
+  "mFilterFindName": "Thunder Attack Boost (L)"
+ },
+ {
+  "i": 519,
+  "mListText": "Critical Spinning Slash",
+  "mFilterFindName": "Critical Spinning Slash"
+ },
+ {
+  "i": 520,
+  "mListText": "Forward Roll Attack (S)",
+  "mFilterFindName": "Forward Roll Attack (S)"
+ },
+ {
+  "i": 521,
+  "mListText": "Forward Roll Attack (M)",
+  "mFilterFindName": "Forward Roll Attack (M)"
+ },
+ {
+  "i": 522,
+  "mListText": "Forward Roll Attack (L)",
+  "mFilterFindName": "Forward Roll Attack (L)"
+ },
+ {
+  "i": 523,
+  "mListText": "Defenseless Charge (S)",
+  "mFilterFindName": "Defenseless Charge (S)"
+ },
+ {
+  "i": 524,
+  "mListText": "Defenseless Charge (M)",
+  "mFilterFindName": "Defenseless Charge (M)"
+ },
+ {
+  "i": 525,
+  "mListText": "Defenseless Charge (L)",
+  "mFilterFindName": "Defenseless Charge (L)"
+ },
+ {
+  "i": 526,
+  "mListText": "Defenseless Evade (S)",
+  "mFilterFindName": "Defenseless Evade (S)"
+ },
+ {
+  "i": 527,
+  "mListText": "Defenseless Evade (M)",
+  "mFilterFindName": "Defenseless Evade (M)"
+ },
+ {
+  "i": 528,
+  "mListText": "Defenseless Evade (L)",
+  "mFilterFindName": "Defenseless Evade (L)"
+ },
+ {
+  "i": 529,
+  "mListText": "Moving Recovery (S)",
+  "mFilterFindName": "Moving Recovery (S)"
+ },
+ {
+  "i": 530,
+  "mListText": "Moving Recovery (M)",
+  "mFilterFindName": "Moving Recovery (M)"
+ },
+ {
+  "i": 531,
+  "mListText": "Moving Recovery (L)",
+  "mFilterFindName": "Moving Recovery (L)"
+ },
+ {
+  "i": 532,
+  "mListText": "Ranged Damage Reduction (S)",
+  "mFilterFindName": "Ranged Damage Reduction (S)"
+ },
+ {
+  "i": 533,
+  "mListText": "Ranged Damage Reduction (M)",
+  "mFilterFindName": "Ranged Damage Reduction (M)"
+ },
+ {
+  "i": 534,
+  "mListText": "Ranged Damage Reduction (L)",
+  "mFilterFindName": "Ranged Damage Reduction (L)"
+ },
+ {
+  "i": 535,
+  "mListText": "Vanguard Arrow (S)",
+  "mFilterFindName": "Vanguard Arrow (S)"
+ },
+ {
+  "i": 536,
+  "mListText": "Vanguard Arrow (M)",
+  "mFilterFindName": "Vanguard Arrow (M)"
+ },
+ {
+  "i": 537,
+  "mListText": "Vanguard Arrow (L)",
+  "mFilterFindName": "Vanguard Arrow (L)"
+ },
+ {
+  "i": 538,
+  "mListText": "Stack Charge (S)",
+  "mFilterFindName": "Stack Charge (S)"
+ },
+ {
+  "i": 539,
+  "mListText": "Stack Charge (M)",
+  "mFilterFindName": "Stack Charge (M)"
+ },
+ {
+  "i": 540,
+  "mListText": "Stack Charge (L)",
+  "mFilterFindName": "Stack Charge (L)"
+ },
+ {
+  "i": 541,
+  "mListText": "Overvirus",
+  "mFilterFindName": "Overvirus"
+ },
+ {
+  "i": 542,
+  "mListText": "Paralysis Recovery Strike (S)",
+  "mFilterFindName": "Paralysis Recovery Strike (S)"
+ },
+ {
+  "i": 543,
+  "mListText": "Paralysis Recovery Strike (M)",
+  "mFilterFindName": "Paralysis Recovery Strike (M)"
+ },
+ {
+  "i": 544,
+  "mListText": "Paralysis Recovery Strike (L)",
+  "mFilterFindName": "Paralysis Recovery Strike (L)"
+ },
+ {
+  "i": 545,
+  "mListText": "Mighty Charge",
+  "mFilterFindName": "Mighty Charge"
+ },
+ {
+  "i": 546,
+  "mListText": "危機会心+%d％",
+  "mFilterFindName": "危機会心"
+ },
+ {
+  "i": 547,
+  "mListText": "Guard Attack (S)",
+  "mFilterFindName": "Guard Attack (S)"
+ },
+ {
+  "i": 548,
+  "mListText": "Guard Attack (M)",
+  "mFilterFindName": "Guard Attack (M)"
+ },
+ {
+  "i": 549,
+  "mListText": "Guard Attack (L)",
+  "mFilterFindName": "Guard Attack (L)"
+ },
+ {
+  "i": 550,
+  "mListText": "Charge Power Up (S)",
+  "mFilterFindName": "Charge Power Up (S)"
+ },
+ {
+  "i": 551,
+  "mListText": "Charge Power Up (M)",
+  "mFilterFindName": "Charge Power Up (M)"
+ },
+ {
+  "i": 552,
+  "mListText": "Charge Power Up (L)",
+  "mFilterFindName": "Charge Power Up (L)"
+ },
+ {
+  "i": 553,
+  "mListText": "Faster Charged Shot Stance",
+  "mFilterFindName": "Faster Charged Shot Stance"
+ },
+ {
+  "i": 554,
+  "mListText": "Great Sword Charge Recovery (S)",
+  "mFilterFindName": "Great Sword Charge Recovery (S)"
+ },
+ {
+  "i": 555,
+  "mListText": "Great Sword Charge Recovery (M)",
+  "mFilterFindName": "Great Sword Charge Recovery (M)"
+ },
+ {
+  "i": 556,
+  "mListText": "Great Sword Charge Recovery (L)",
+  "mFilterFindName": "Great Sword Charge Recovery (L)"
+ },
+ {
+  "i": 557,
+  "mListText": "Item Use Recovery (S)",
+  "mFilterFindName": "Item Use Recovery (S)"
+ },
+ {
+  "i": 558,
+  "mListText": "Item Use Recovery (M)",
+  "mFilterFindName": "Item Use Recovery (M)"
+ },
+ {
+  "i": 559,
+  "mListText": "Item Use Recovery (L)",
+  "mFilterFindName": "Item Use Recovery (L)"
+ },
+ {
+  "i": 560,
+  "mListText": "Hammer Charge Recovery (S)",
+  "mFilterFindName": "Hammer Charge Recovery (S)"
+ },
+ {
+  "i": 561,
+  "mListText": "Hammer Charge Recovery (M)",
+  "mFilterFindName": "Hammer Charge Recovery (M)"
+ },
+ {
+  "i": 562,
+  "mListText": "Hammer Charge Recovery (L)",
+  "mFilterFindName": "Hammer Charge Recovery (L)"
+ },
+ {
+  "i": 563,
+  "mListText": "Counter Recovery (S)",
+  "mFilterFindName": "Counter Recovery (S)"
+ },
+ {
+  "i": 564,
+  "mListText": "Counter Recovery (M)",
+  "mFilterFindName": "Counter Recovery (M)"
+ },
+ {
+  "i": 565,
+  "mListText": "Counter Recovery (L)",
+  "mFilterFindName": "Counter Recovery (L)"
+ },
+ {
+  "i": 566,
+  "mListText": "Reload Recovery (S)",
+  "mFilterFindName": "Reload Recovery (S)"
+ },
+ {
+  "i": 567,
+  "mListText": "Reload Recovery (M)",
+  "mFilterFindName": "Reload Recovery (M)"
+ },
+ {
+  "i": 568,
+  "mListText": "Reload Recovery (L)",
+  "mFilterFindName": "Reload Recovery (L)"
+ },
+ {
+  "i": 569,
+  "mListText": "Charged Shot Recovery (S)",
+  "mFilterFindName": "Charged Shot Recovery (S)"
+ },
+ {
+  "i": 570,
+  "mListText": "Charged Shot Recovery (M)",
+  "mFilterFindName": "Charged Shot Recovery (M)"
+ },
+ {
+  "i": 571,
+  "mListText": "Charged Shot Recovery (L)",
+  "mFilterFindName": "Charged Shot Recovery (L)"
+ },
+ {
+  "i": 572,
+  "mListText": "Spinning Slash Recovery (S)",
+  "mFilterFindName": "Spinning Slash Recovery (S)"
+ },
+ {
+  "i": 573,
+  "mListText": "Spinning Slash Recovery (M)",
+  "mFilterFindName": "Spinning Slash Recovery (M)"
+ },
+ {
+  "i": 574,
+  "mListText": "Spinning Slash Recovery (L)",
+  "mFilterFindName": "Spinning Slash Recovery (L)"
+ },
+ {
+  "i": 575,
+  "mListText": "Element Discharge Thrust Recovery (S)",
+  "mFilterFindName": "Element Discharge Thrust Recovery (S)"
+ },
+ {
+  "i": 576,
+  "mListText": "Element Discharge Thrust Recovery (M)",
+  "mFilterFindName": "Element Discharge Thrust Recovery (M)"
+ },
+ {
+  "i": 577,
+  "mListText": "Element Discharge Thrust Recovery (L)",
+  "mFilterFindName": "Element Discharge Thrust Recovery (L)"
+ },
+ {
+  "i": 578,
+  "mListText": "Extra Reload Recovery (S)",
+  "mFilterFindName": "Extra Reload Recovery (S)"
+ },
+ {
+  "i": 579,
+  "mListText": "Extra Reload Recovery (M)",
+  "mFilterFindName": "Extra Reload Recovery (M)"
+ },
+ {
+  "i": 580,
+  "mListText": "Extra Reload Recovery (L)",
+  "mFilterFindName": "Extra Reload Recovery (L)"
+ },
+ {
+  "i": 581,
+  "mListText": "Arc Shot Recovery (S)",
+  "mFilterFindName": "Arc Shot Recovery (S)"
+ },
+ {
+  "i": 582,
+  "mListText": "Arc Shot Recovery (M)",
+  "mFilterFindName": "Arc Shot Recovery (M)"
+ },
+ {
+  "i": 583,
+  "mListText": "Arc Shot Recovery (L)",
+  "mFilterFindName": "Arc Shot Recovery (L)"
+ },
+ {
+  "i": 584,
+  "mListText": "Demon Mode Recovery (S)",
+  "mFilterFindName": "Demon Mode Recovery (S)"
+ },
+ {
+  "i": 585,
+  "mListText": "Demon Mode Recovery (M)",
+  "mFilterFindName": "Demon Mode Recovery (M)"
+ },
+ {
+  "i": 586,
+  "mListText": "Demon Mode Recovery (L)",
+  "mFilterFindName": "Demon Mode Recovery (L)"
+ },
+ {
+  "i": 587,
+  "mListText": "Performance Recovery (S)",
+  "mFilterFindName": "Performance Recovery (S)"
+ },
+ {
+  "i": 588,
+  "mListText": "Performance Recovery (M)",
+  "mFilterFindName": "Performance Recovery (M)"
+ },
+ {
+  "i": 589,
+  "mListText": "Performance Recovery (L)",
+  "mFilterFindName": "Performance Recovery (L)"
+ },
+ {
+  "i": 590,
+  "mListText": "Element Discharge Slash Recovery (S)",
+  "mFilterFindName": "Element Discharge Slash Recovery (S)"
+ },
+ {
+  "i": 591,
+  "mListText": "Element Discharge Slash Recovery (M)",
+  "mFilterFindName": "Element Discharge Slash Recovery (M)"
+ },
+ {
+  "i": 592,
+  "mListText": "Element Discharge Slash Recovery (L)",
+  "mFilterFindName": "Element Discharge Slash Recovery (L)"
+ },
+ {
+  "i": 593,
+  "mListText": "Extract Recovery (S)",
+  "mFilterFindName": "Extract Recovery (S)"
+ },
+ {
+  "i": 594,
+  "mListText": "Extract Recovery (M)",
+  "mFilterFindName": "Extract Recovery (M)"
+ },
+ {
+  "i": 595,
+  "mListText": "Extract Recovery (L)",
+  "mFilterFindName": "Extract Recovery (L)"
+ },
+ {
+  "i": 596,
+  "mListText": "天廻龍キラー+%d",
+  "mFilterFindName": "天廻龍キラー"
+ },
+ {
+  "i": 597,
+  "mListText": "天廻龍耐性+%d",
+  "mFilterFindName": "天廻龍耐性"
+ },
+ {
+  "i": 598,
+  "mListText": "対凍牙竜+%d",
+  "mFilterFindName": "対凍牙竜"
+ },
+ {
+  "i": 599,
+  "mListText": "耐凍牙竜+%d",
+  "mFilterFindName": "耐凍牙竜"
+ },
+ {
+  "i": 600,
+  "mListText": "対月迅竜+%d",
+  "mFilterFindName": "対月迅竜"
+ },
+ {
+  "i": 601,
+  "mListText": "耐月迅竜+%d",
+  "mFilterFindName": "耐月迅竜"
+ },
+ {
+  "i": 602,
+  "mListText": "対白兎獣【鋼膜】+%d",
+  "mFilterFindName": "対白兎獣【鋼膜】"
+ },
+ {
+  "i": 603,
+  "mListText": "耐白兎獣【鋼膜】+%d",
+  "mFilterFindName": "耐白兎獣【鋼膜】"
+ },
+ {
+  "i": 604,
+  "mListText": "対毒怪竜【凶暴】+%d",
+  "mFilterFindName": "対毒怪竜【凶暴】"
+ },
+ {
+  "i": 605,
+  "mListText": "耐毒怪竜【凶暴】+%d",
+  "mFilterFindName": "耐毒怪竜【凶暴】"
+ },
+ {
+  "i": 606,
+  "mListText": "対冥晶龍+%d",
+  "mFilterFindName": "対冥晶龍"
+ },
+ {
+  "i": 607,
+  "mListText": "耐冥晶龍+%d",
+  "mFilterFindName": "耐冥晶龍"
+ },
+ {
+  "i": 608,
+  "mListText": "対幻獣+%d",
+  "mFilterFindName": "対幻獣"
+ },
+ {
+  "i": 609,
+  "mListText": "耐幻獣+%d",
+  "mFilterFindName": "耐幻獣"
+ },
+ {
+  "i": 610,
+  "mListText": "対翔刃脚+%d",
+  "mFilterFindName": "Anti-Soaring Blade"
+ },
+ {
+  "i": 611,
+  "mListText": "耐翔刃脚+%d",
+  "mFilterFindName": "Soaring Blade Guard"
+ },
+ {
+  "i": 612,
+  "mListText": "第13回討伐P+%d％",
+  "mFilterFindName": "第13回討伐P"
+ },
+ {
+  "i": 613,
+  "mListText": "対プロハンター検定+%d",
+  "mFilterFindName": "Anti-Pro Hunter Exam"
+ },
+ {
+  "i": 614,
+  "mListText": "耐プロハンター検定+%d",
+  "mFilterFindName": "Pro Hunter Exam Guard"
+ },
+ {
+  "i": 615,
+  "mListText": "Survival Instinct (S)",
+  "mFilterFindName": "Survival Instinct (S)"
+ },
+ {
+  "i": 616,
+  "mListText": "Survival Instinct (M)",
+  "mFilterFindName": "Survival Instinct (M)"
+ },
+ {
+  "i": 617,
+  "mListText": "Survival Instinct (L)",
+  "mFilterFindName": "Survival Instinct (L)"
+ },
+ {
+  "i": 618,
+  "mListText": "Lingering Spring (S)",
+  "mFilterFindName": "Lingering Spring (S)"
+ },
+ {
+  "i": 619,
+  "mListText": "Lingering Spring (M)",
+  "mFilterFindName": "Lingering Spring (M)"
+ },
+ {
+  "i": 620,
+  "mListText": "Lingering Spring (L)",
+  "mFilterFindName": "Lingering Spring (L)"
+ },
+ {
+  "i": 621,
+  "mListText": "感電攻撃減少+%d％",
+  "mFilterFindName": "Thunderblight Attack Reduction"
+ },
+ {
+  "i": 622,
+  "mListText": "火傷攻撃減少+%d％",
+  "mFilterFindName": "Fireblight Attack Reduction"
+ },
+ {
+  "i": 623,
+  "mListText": "ずぶ濡れ攻撃減少+%d％",
+  "mFilterFindName": "Waterblight Attack Reduction"
+ },
+ {
+  "i": 624,
+  "mListText": "裂傷攻撃減少+%d％",
+  "mFilterFindName": "Bleeding Attack Reduction"
+ },
+ {
+  "i": 625,
+  "mListText": "泥まみれ攻撃減少+%d％",
+  "mFilterFindName": "Mud Attack Reduction"
+ },
+ {
+  "i": 626,
+  "mListText": "雪だるま攻撃減少+%d％",
+  "mFilterFindName": "Snowman Attack Reduction"
+ },
+ {
+  "i": 627,
+  "mListText": "毒攻撃減少+%d％",
+  "mFilterFindName": "Poison Attack Reduction"
+ },
+ {
+  "i": 628,
+  "mListText": "Mind's Eye Charge (S)",
+  "mFilterFindName": "Mind's Eye Charge (S)"
+ },
+ {
+  "i": 629,
+  "mListText": "Mind's Eye Charge (M)",
+  "mFilterFindName": "Mind's Eye Charge (M)"
+ },
+ {
+  "i": 630,
+  "mListText": "Mind's Eye Charge (L)",
+  "mFilterFindName": "Mind's Eye Charge (L)"
+ },
+ {
+  "i": 631,
+  "mListText": "Linked Recovery: Martial (S)",
+  "mFilterFindName": "Linked Recovery: Martial (S)"
+ },
+ {
+  "i": 632,
+  "mListText": "Linked Recovery: Martial (M)",
+  "mFilterFindName": "Linked Recovery: Martial (M)"
+ },
+ {
+  "i": 633,
+  "mListText": "Linked Recovery: Martial (L)",
+  "mFilterFindName": "Linked Recovery: Martial (L)"
+ },
+ {
+  "i": 634,
+  "mListText": "Linked Recovery: Health (S)",
+  "mFilterFindName": "Linked Recovery: Health (S)"
+ },
+ {
+  "i": 635,
+  "mListText": "Linked Recovery: Health (M)",
+  "mFilterFindName": "Linked Recovery: Health (M)"
+ },
+ {
+  "i": 636,
+  "mListText": "Linked Recovery: Health (L)",
+  "mFilterFindName": "Linked Recovery: Health (L)"
+ },
+ {
+  "i": 637,
+  "mListText": "対黒蝕竜+%d",
+  "mFilterFindName": "対黒蝕竜"
+ },
+ {
+  "i": 638,
+  "mListText": "耐黒蝕竜+%d",
+  "mFilterFindName": "耐黒蝕竜"
+ },
+ {
+  "i": 639,
+  "mListText": "対土砂竜【凶暴】+%d",
+  "mFilterFindName": "対土砂竜【凶暴】"
+ },
+ {
+  "i": 640,
+  "mListText": "耐土砂竜【凶暴】+%d",
+  "mFilterFindName": "耐土砂竜【凶暴】"
+ },
+ {
+  "i": 641,
+  "mListText": "対緑迅竜【鋼膜】+%d",
+  "mFilterFindName": "対緑迅竜【鋼膜】"
+ },
+ {
+  "i": 642,
+  "mListText": "耐緑迅竜【鋼膜】+%d",
+  "mFilterFindName": "耐緑迅竜【鋼膜】"
+ },
+ {
+  "i": 643,
+  "mListText": "対轟竜+%d",
+  "mFilterFindName": "対轟竜"
+ },
+ {
+  "i": 644,
+  "mListText": "耐轟竜+%d",
+  "mFilterFindName": "耐轟竜"
+ },
+ {
+  "i": 645,
+  "mListText": "第14回討伐P+%d％",
+  "mFilterFindName": "第14回討伐P"
+ },
+ {
+  "i": 646,
+  "mListText": "割れた使徒のコア+%d％",
+  "mFilterFindName": "Cracked Angel Core"
+ },
+ {
+  "i": 647,
+  "mListText": "シンクロ率上昇・攻+%d",
+  "mFilterFindName": "シンクロ率上昇・攻"
+ },
+ {
+  "i": 648,
+  "mListText": "シンクロ率上昇・防+%d",
+  "mFilterFindName": "シンクロ率上昇・防"
+ },
+ {
+  "i": 649,
+  "mListText": "対電竜+%d",
+  "mFilterFindName": "対電竜"
+ },
+ {
+  "i": 650,
+  "mListText": "耐電竜+%d",
+  "mFilterFindName": "耐電竜"
+ },
+ {
+  "i": 651,
+  "mListText": "対巨獣+%d",
+  "mFilterFindName": "対巨獣"
+ },
+ {
+  "i": 652,
+  "mListText": "耐巨獣+%d",
+  "mFilterFindName": "耐巨獣"
+ },
+ {
+  "i": 653,
+  "mListText": "対斬竜+%d",
+  "mFilterFindName": "対斬竜"
+ },
+ {
+  "i": 654,
+  "mListText": "耐斬竜+%d",
+  "mFilterFindName": "耐斬竜"
+ },
+ {
+  "i": 655,
+  "mListText": "対泡狐竜+%d",
+  "mFilterFindName": "対泡狐竜"
+ },
+ {
+  "i": 656,
+  "mListText": "耐泡狐竜+%d",
+  "mFilterFindName": "耐泡狐竜"
+ },
+ {
+  "i": 657,
+  "mListText": "対天廻龍+%d",
+  "mFilterFindName": "対天廻龍"
+ },
+ {
+  "i": 658,
+  "mListText": "耐天廻龍+%d",
+  "mFilterFindName": "耐天廻龍"
+ },
+ {
+  "i": 659,
+  "mListText": "ゲストカード+%d％",
+  "mFilterFindName": "Guest Card"
+ },
+ {
+  "i": 660,
+  "mListText": "不滅の愛の力+%d",
+  "mFilterFindName": "不滅の愛の力"
+ },
+ {
+  "i": 661,
+  "mListText": "不滅の愛の加護+%d",
+  "mFilterFindName": "不滅の愛の加護"
+ },
+ {
+  "i": 662,
+  "mListText": "Miracle",
+  "mFilterFindName": "Miracle"
+ },
+ {
+  "i": 663,
+  "mListText": "Natural Healing (S)",
+  "mFilterFindName": "Natural Healing (S)"
+ },
+ {
+  "i": 664,
+  "mListText": "Natural Healing (M)",
+  "mFilterFindName": "Natural Healing (M)"
+ },
+ {
+  "i": 665,
+  "mListText": "Natural Healing (L)",
+  "mFilterFindName": "Natural Healing (L)"
+ },
+ {
+  "i": 666,
+  "mListText": "Grace: Health (S)",
+  "mFilterFindName": "Grace: Health (S)"
+ },
+ {
+  "i": 667,
+  "mListText": "Grace: Health (M)",
+  "mFilterFindName": "Grace: Health (M)"
+ },
+ {
+  "i": 668,
+  "mListText": "Grace: Health (L)",
+  "mFilterFindName": "Grace: Health (L)"
+ },
+ {
+  "i": 669,
+  "mListText": "Grace: Martial (S)",
+  "mFilterFindName": "Grace: Martial (S)"
+ },
+ {
+  "i": 670,
+  "mListText": "Grace: Martial (M)",
+  "mFilterFindName": "Grace: Martial (M)"
+ },
+ {
+  "i": 671,
+  "mListText": "Grace: Martial (L)",
+  "mFilterFindName": "Grace: Martial (L)"
+ },
+ {
+  "i": 672,
+  "mListText": "Latent Power (S)",
+  "mFilterFindName": "Latent Power (S)"
+ },
+ {
+  "i": 673,
+  "mListText": "Latent Power (M)",
+  "mFilterFindName": "Latent Power (M)"
+ },
+ {
+  "i": 674,
+  "mListText": "Latent Power (L)",
+  "mFilterFindName": "Latent Power (L)"
+ },
+ {
+  "i": 675,
+  "mListText": "Guardian Critical (S)",
+  "mFilterFindName": "Guardian Critical (S)"
+ },
+ {
+  "i": 676,
+  "mListText": "Guardian Critical (M)",
+  "mFilterFindName": "Guardian Critical (M)"
+ },
+ {
+  "i": 677,
+  "mListText": "Guardian Critical (L)",
+  "mFilterFindName": "Guardian Critical (L)"
+ },
+ {
+  "i": 678,
+  "mListText": "Evade Recovery: Martial",
+  "mFilterFindName": "Evade Recovery: Martial"
+ },
+ {
+  "i": 679,
+  "mListText": "True Swift Finish (S)",
+  "mFilterFindName": "True Swift Finish (S)"
+ },
+ {
+  "i": 680,
+  "mListText": "True Swift Finish (M)",
+  "mFilterFindName": "True Swift Finish (M)"
+ },
+ {
+  "i": 681,
+  "mListText": "True Swift Finish (L)",
+  "mFilterFindName": "True Swift Finish (L)"
+ },
+ {
+  "i": 682,
+  "mListText": "対命狼竜+%d",
+  "mFilterFindName": "対命狼竜"
+ },
+ {
+  "i": 683,
+  "mListText": "耐命狼竜+%d",
+  "mFilterFindName": "耐命狼竜"
+ },
+ {
+  "i": 684,
+  "mListText": "対紅彩鳥【凶暴】+%d",
+  "mFilterFindName": "対紅彩鳥【凶暴】"
+ },
+ {
+  "i": 685,
+  "mListText": "耐紅彩鳥【凶暴】+%d",
+  "mFilterFindName": "耐紅彩鳥【凶暴】"
+ },
+ {
+  "i": 686,
+  "mListText": "対雷狼竜【鋼膜】+%d",
+  "mFilterFindName": "対雷狼竜【鋼膜】"
+ },
+ {
+  "i": 687,
+  "mListText": "耐雷狼竜【鋼膜】+%d",
+  "mFilterFindName": "耐雷狼竜【鋼膜】"
+ },
+ {
+  "i": 688,
+  "mListText": "対千刃竜+%d",
+  "mFilterFindName": "対千刃竜"
+ },
+ {
+  "i": 689,
+  "mListText": "耐千刃竜+%d",
+  "mFilterFindName": "耐千刃竜"
+ },
+ {
+  "i": 690,
+  "mListText": "対大首領+%d",
+  "mFilterFindName": "Anti-Grand Boss"
+ },
+ {
+  "i": 691,
+  "mListText": "耐大首領+%d",
+  "mFilterFindName": "Grand Boss Guard"
+ },
+ {
+  "i": 692,
+  "mListText": "第15回討伐P+%d％",
+  "mFilterFindName": "第15回討伐P"
+ },
+ {
+  "i": 693,
+  "mListText": "歯車コイン+%d％",
+  "mFilterFindName": "歯車コイン"
+ },
+ {
+  "i": 694,
+  "mListText": "Brutal Strike (S)",
+  "mFilterFindName": "Brutal Strike (S)"
+ },
+ {
+  "i": 695,
+  "mListText": "Brutal Strike (M)",
+  "mFilterFindName": "Brutal Strike (M)"
+ },
+ {
+  "i": 696,
+  "mListText": "Brutal Strike (L)",
+  "mFilterFindName": "Brutal Strike (L)"
+ },
+ {
+  "i": 697,
+  "mListText": "Follow-up (S)",
+  "mFilterFindName": "Follow-up (S)"
+ },
+ {
+  "i": 698,
+  "mListText": "Follow-up (M)",
+  "mFilterFindName": "Follow-up (M)"
+ },
+ {
+  "i": 699,
+  "mListText": "Follow-up (L)",
+  "mFilterFindName": "Follow-up (L)"
+ },
+ {
+  "i": 700,
+  "mListText": "Bed Rest (S)",
+  "mFilterFindName": "Bed Rest (S)"
+ },
+ {
+  "i": 701,
+  "mListText": "Bed Rest (M)",
+  "mFilterFindName": "Bed Rest (M)"
+ },
+ {
+  "i": 702,
+  "mListText": "Bed Rest (L)",
+  "mFilterFindName": "Bed Rest (L)"
+ },
+ {
+  "i": 703,
+  "mListText": "Carelessness",
+  "mFilterFindName": "Carelessness"
+ },
+ {
+  "i": 704,
+  "mListText": "Wastefulness",
+  "mFilterFindName": "Wastefulness"
+ },
+ {
+  "i": 705,
+  "mListText": "Resurgence",
+  "mFilterFindName": "Resurgence"
+ },
+ {
+  "i": 706,
+  "mListText": "Breather (S)",
+  "mFilterFindName": "Breather (S)"
+ },
+ {
+  "i": 707,
+  "mListText": "Breather (M)",
+  "mFilterFindName": "Breather (M)"
+ },
+ {
+  "i": 708,
+  "mListText": "Breather (L)",
+  "mFilterFindName": "Breather (L)"
+ },
+ {
+  "i": 709,
+  "mListText": "Proficiency (S)",
+  "mFilterFindName": "Proficiency (S)"
+ },
+ {
+  "i": 710,
+  "mListText": "Proficiency (M)",
+  "mFilterFindName": "Proficiency (M)"
+ },
+ {
+  "i": 711,
+  "mListText": "Proficiency (L)",
+  "mFilterFindName": "Proficiency (L)"
+ },
+ {
+  "i": 712,
+  "mListText": "Supreme Orb Hammer Master (S)",
+  "mFilterFindName": "Supreme Orb Hammer Master (S)"
+ },
+ {
+  "i": 713,
+  "mListText": "Supreme Orb Hammer Master (M)",
+  "mFilterFindName": "Supreme Orb Hammer Master (M)"
+ },
+ {
+  "i": 714,
+  "mListText": "Supreme Orb Hammer Master (L)",
+  "mFilterFindName": "Supreme Orb Hammer Master (L)"
+ },
+ {
+  "i": 715,
+  "mListText": "Soar (S)",
+  "mFilterFindName": "Soar (S)"
+ },
+ {
+  "i": 716,
+  "mListText": "Soar (M)",
+  "mFilterFindName": "Soar (M)"
+ },
+ {
+  "i": 717,
+  "mListText": "Soar (L)",
+  "mFilterFindName": "Soar (L)"
+ },
+ {
+  "i": 718,
+  "mListText": "Deflect",
+  "mFilterFindName": "Deflect"
+ },
+ {
+  "i": 719,
+  "mListText": "Back-Shot Evade Distance (S)",
+  "mFilterFindName": "Back-Shot Evade Distance (S)"
+ },
+ {
+  "i": 720,
+  "mListText": "Back-Shot Evade Distance (M)",
+  "mFilterFindName": "Back-Shot Evade Distance (M)"
+ },
+ {
+  "i": 721,
+  "mListText": "Back-Shot Evade Distance (L)",
+  "mFilterFindName": "Back-Shot Evade Distance (L)"
+ },
+ {
+  "i": 722,
+  "mListText": "天晶龍杯狩猟祭フラッグ+%d",
+  "mFilterFindName": "天晶龍杯狩猟祭フラッグ"
+ },
+ {
+  "i": 723,
+  "mListText": "耐凶怪竜+%d",
+  "mFilterFindName": "耐凶怪竜"
+ },
+ {
+  "i": 724,
+  "mListText": "耐紫水獣【鋼膜】+%d",
+  "mFilterFindName": "耐紫水獣【鋼膜】"
+ },
+ {
+  "i": 725,
+  "mListText": "耐水竜【凶暴】+%d",
+  "mFilterFindName": "耐水竜【凶暴】"
+ },
+ {
+  "i": 726,
+  "mListText": "対鋼龍+%d",
+  "mFilterFindName": "対鋼龍"
+ },
+ {
+  "i": 727,
+  "mListText": "耐鋼龍+%d",
+  "mFilterFindName": "耐鋼龍"
+ },
+ {
+  "i": 728,
+  "mListText": "第16回討伐P+%d％",
+  "mFilterFindName": "第16回討伐P"
+ },
+ {
+  "i": 729,
+  "mListText": "織姫の涙の力+%d",
+  "mFilterFindName": "織姫の涙の力"
+ },
+ {
+  "i": 730,
+  "mListText": "織姫の涙の加護+%d",
+  "mFilterFindName": "織姫の涙の加護"
+ },
+ {
+  "i": 731,
+  "mListText": "泡耐性+%d％",
+  "mFilterFindName": "泡耐性"
+ },
+ {
+  "i": 732,
+  "mListText": "Dodge (S)",
+  "mFilterFindName": "Dodge (S)"
+ },
+ {
+  "i": 733,
+  "mListText": "Dodge (M)",
+  "mFilterFindName": "Dodge (M)"
+ },
+ {
+  "i": 734,
+  "mListText": "Dodge (L)",
+  "mFilterFindName": "Dodge (L)"
+ },
+ {
+  "i": 735,
+  "mListText": "Re-fire Cannon (S)",
+  "mFilterFindName": "Re-fire Cannon (S)"
+ },
+ {
+  "i": 736,
+  "mListText": "Re-fire Cannon (M)",
+  "mFilterFindName": "Re-fire Cannon (M)"
+ },
+ {
+  "i": 737,
+  "mListText": "Re-fire Cannon (L)",
+  "mFilterFindName": "Re-fire Cannon (L)"
+ },
+ {
+  "i": 738,
+  "mListText": "Interception (S)",
+  "mFilterFindName": "Interception (S)"
+ },
+ {
+  "i": 739,
+  "mListText": "Interception (M)",
+  "mFilterFindName": "Interception (M)"
+ },
+ {
+  "i": 740,
+  "mListText": "Interception (L)",
+  "mFilterFindName": "Interception (L)"
+ },
+ {
+  "i": 741,
+  "mListText": "Heated Part Hunt (S)",
+  "mFilterFindName": "Heated Part Hunt (S)"
+ },
+ {
+  "i": 742,
+  "mListText": "Heated Part Hunt (M)",
+  "mFilterFindName": "Heated Part Hunt (M)"
+ },
+ {
+  "i": 743,
+  "mListText": "Heated Part Hunt (L)",
+  "mFilterFindName": "Heated Part Hunt (L)"
+ },
+ {
+  "i": 744,
+  "mListText": "武技師-%d％",
+  "mFilterFindName": "武技師"
+ },
+ {
+  "i": 745,
+  "mListText": "Curse: Waterblight",
+  "mFilterFindName": "Curse: Waterblight"
+ },
+ {
+  "i": 746,
+  "mListText": "Curse: Thunderblight",
+  "mFilterFindName": "Curse: Thunderblight"
+ },
+ {
+  "i": 747,
+  "mListText": "Curse: Fireblight",
+  "mFilterFindName": "Curse: Fireblight"
+ },
+ {
+  "i": 748,
+  "mListText": "Double Slash Transition (S)",
+  "mFilterFindName": "Double Slash Transition (S)"
+ },
+ {
+  "i": 749,
+  "mListText": "Double Slash Transition (M)",
+  "mFilterFindName": "Double Slash Transition (M)"
+ },
+ {
+  "i": 750,
+  "mListText": "Double Slash Transition (L)",
+  "mFilterFindName": "Double Slash Transition (L)"
+ },
+ {
+  "i": 751,
+  "mListText": "Supreme Orb Hammer Charge (S)",
+  "mFilterFindName": "Supreme Orb Hammer Charge (S)"
+ },
+ {
+  "i": 752,
+  "mListText": "Supreme Orb Hammer Charge (M)",
+  "mFilterFindName": "Supreme Orb Hammer Charge (M)"
+ },
+ {
+  "i": 753,
+  "mListText": "Supreme Orb Hammer Charge (L)",
+  "mFilterFindName": "Supreme Orb Hammer Charge (L)"
+ },
+ {
+  "i": 754,
+  "mListText": "Supreme Orb Lance Charge (S)",
+  "mFilterFindName": "Supreme Orb Lance Charge (S)"
+ },
+ {
+  "i": 755,
+  "mListText": "Supreme Orb Lance Charge (M)",
+  "mFilterFindName": "Supreme Orb Lance Charge (M)"
+ },
+ {
+  "i": 756,
+  "mListText": "Supreme Orb Lance Charge (L)",
+  "mFilterFindName": "Supreme Orb Lance Charge (L)"
+ },
+ {
+  "i": 757,
+  "mListText": "Heat Sensitive",
+  "mFilterFindName": "Heat Sensitive"
+ },
+ {
+  "i": 758,
+  "mListText": "耐豪火竜+%d",
+  "mFilterFindName": "耐豪火竜"
+ },
+ {
+  "i": 759,
+  "mListText": "耐金火竜+%d",
+  "mFilterFindName": "耐金火竜"
+ },
+ {
+  "i": 760,
+  "mListText": "耐銀火竜+%d",
+  "mFilterFindName": "耐銀火竜"
+ },
+ {
+  "i": 761,
+  "mListText": "耐鋼鎚竜【凶暴】+%d",
+  "mFilterFindName": "耐鋼鎚竜【凶暴】"
+ },
+ {
+  "i": 762,
+  "mListText": "対災凶+%d",
+  "mFilterFindName": "Anti-Calamity"
+ },
+ {
+  "i": 763,
+  "mListText": "耐災凶+%d",
+  "mFilterFindName": "Calamity Guard"
+ },
+ {
+  "i": 764,
+  "mListText": "第17回討伐P+%d％",
+  "mFilterFindName": "第17回討伐P"
+ },
+ {
+  "i": 765,
+  "mListText": "＜強欲の罪＞+%d",
+  "mFilterFindName": "＜強欲の罪＞"
+ },
+ {
+  "i": 766,
+  "mListText": "女神の使徒の力+%d",
+  "mFilterFindName": "女神の使徒の力"
+ },
+ {
+  "i": 767,
+  "mListText": "女神の使徒の加護+%d",
+  "mFilterFindName": "女神の使徒の加護"
+ },
+ {
+  "i": 768,
+  "mListText": "Gale Switch Axe (S)",
+  "mFilterFindName": "Gale Switch Axe (S)"
+ },
+ {
+  "i": 769,
+  "mListText": "Gale Switch Axe (M)",
+  "mFilterFindName": "Gale Switch Axe (M)"
+ },
+ {
+  "i": 770,
+  "mListText": "Gale Switch Axe (L)",
+  "mFilterFindName": "Gale Switch Axe (L)"
+ },
+ {
+  "i": 771,
+  "mListText": "Flight Art: Spirit Combo (S)",
+  "mFilterFindName": "Flight Art: Spirit Combo (S)"
+ },
+ {
+  "i": 772,
+  "mListText": "Flight Art: Spirit Combo (M)",
+  "mFilterFindName": "Flight Art: Spirit Combo (M)"
+ },
+ {
+  "i": 773,
+  "mListText": "Flight Art: Spirit Combo (L)",
+  "mFilterFindName": "Flight Art: Spirit Combo (L)"
+ },
+ {
+  "i": 774,
+  "mListText": "Lingering Spring EX (S)",
+  "mFilterFindName": "Lingering Spring EX (S)"
+ },
+ {
+  "i": 775,
+  "mListText": "Lingering Spring EX (M)",
+  "mFilterFindName": "Lingering Spring EX (M)"
+ },
+ {
+  "i": 776,
+  "mListText": "Lingering Spring EX (L)",
+  "mFilterFindName": "Lingering Spring EX (L)"
+ },
+ {
+  "i": 777,
+  "mListText": "Ninja Run (S)",
+  "mFilterFindName": "Ninja Run (S)"
+ },
+ {
+  "i": 778,
+  "mListText": "Ninja Run (M)",
+  "mFilterFindName": "Ninja Run (M)"
+ },
+ {
+  "i": 779,
+  "mListText": "Ninja Run (L)",
+  "mFilterFindName": "Ninja Run (L)"
+ },
+ {
+  "i": 780,
+  "mListText": "Reserved Raid (S)",
+  "mFilterFindName": "Reserved Raid (S)"
+ },
+ {
+  "i": 781,
+  "mListText": "Reserved Raid (M)",
+  "mFilterFindName": "Reserved Raid (M)"
+ },
+ {
+  "i": 782,
+  "mListText": "Reserved Raid (L)",
+  "mFilterFindName": "Reserved Raid (L)"
+ },
+ {
+  "i": 783,
+  "mListText": "Poison Erosion (S)",
+  "mFilterFindName": "Poison Erosion (S)"
+ },
+ {
+  "i": 784,
+  "mListText": "Poison Erosion (M)",
+  "mFilterFindName": "Poison Erosion (M)"
+ },
+ {
+  "i": 785,
+  "mListText": "Poison Erosion (L)",
+  "mFilterFindName": "Poison Erosion (L)"
+ },
+ {
+  "i": 786,
+  "mListText": "Zanshin: Blade [Spirit Roundslash]",
+  "mFilterFindName": "Zanshin: Blade [Spirit Roundslash]"
+ },
+ {
+  "i": 787,
+  "mListText": "Zanshin: Sheath [Spirit Roundslash]",
+  "mFilterFindName": "Zanshin: Sheath [Spirit Roundslash]"
+ },
+ {
+  "i": 788,
+  "mListText": "Zanshin: Eye [Spirit Roundslash]",
+  "mFilterFindName": "Zanshin: Eye [Spirit Roundslash]"
+ },
+ {
+  "i": 789,
+  "mListText": "Extreme Focus",
+  "mFilterFindName": "Extreme Focus"
+ },
+ {
+  "i": 790,
+  "mListText": "Zanshin: Blade [Parry Slash]",
+  "mFilterFindName": "Zanshin: Blade [Parry Slash]"
+ },
+ {
+  "i": 791,
+  "mListText": "Zanshin: Sheath [Parry Slash]",
+  "mFilterFindName": "Zanshin: Sheath [Parry Slash]"
+ },
+ {
+  "i": 792,
+  "mListText": "Zanshin: Eye [Parry Slash]",
+  "mFilterFindName": "Zanshin: Eye [Parry Slash]"
+ },
+ {
+  "i": 793,
+  "mListText": "True Horn Breaker (S)",
+  "mFilterFindName": "True Horn Breaker (S)"
+ },
+ {
+  "i": 794,
+  "mListText": "True Horn Breaker (M)",
+  "mFilterFindName": "True Horn Breaker (M)"
+ },
+ {
+  "i": 795,
+  "mListText": "True Horn Breaker (L)",
+  "mFilterFindName": "True Horn Breaker (L)"
+ },
+ {
+  "i": 796,
+  "mListText": "True Hundred Thrust (S)",
+  "mFilterFindName": "True Hundred Thrust (S)"
+ },
+ {
+  "i": 797,
+  "mListText": "True Hundred Thrust (M)",
+  "mFilterFindName": "True Hundred Thrust (M)"
+ },
+ {
+  "i": 798,
+  "mListText": "True Hundred Thrust (L)",
+  "mFilterFindName": "True Hundred Thrust (L)"
+ },
+ {
+  "i": 799,
+  "mListText": "Blessed Guard (S)",
+  "mFilterFindName": "Blessed Guard (S)"
+ },
+ {
+  "i": 800,
+  "mListText": "Blessed Guard (M)",
+  "mFilterFindName": "Blessed Guard (M)"
+ },
+ {
+  "i": 801,
+  "mListText": "Blessed Guard (L)",
+  "mFilterFindName": "Blessed Guard (L)"
+ },
+ {
+  "i": 802,
+  "mListText": "Iron Wall Guard (S)",
+  "mFilterFindName": "Iron Wall Guard (S)"
+ },
+ {
+  "i": 803,
+  "mListText": "Iron Wall Guard (M)",
+  "mFilterFindName": "Iron Wall Guard (M)"
+ },
+ {
+  "i": 804,
+  "mListText": "Iron Wall Guard (L)",
+  "mFilterFindName": "Iron Wall Guard (L)"
+ },
+ {
+  "i": 805,
+  "mListText": "Power Guard Charge (S)",
+  "mFilterFindName": "Power Guard Charge (S)"
+ },
+ {
+  "i": 806,
+  "mListText": "Power Guard Charge (M)",
+  "mFilterFindName": "Power Guard Charge (M)"
+ },
+ {
+  "i": 807,
+  "mListText": "Power Guard Charge (L)",
+  "mFilterFindName": "Power Guard Charge (L)"
+ },
+ {
+  "i": 808,
+  "mListText": "Swift Guard (S)",
+  "mFilterFindName": "Swift Guard (S)"
+ },
+ {
+  "i": 809,
+  "mListText": "Swift Guard (M)",
+  "mFilterFindName": "Swift Guard (M)"
+ },
+ {
+  "i": 810,
+  "mListText": "Swift Guard (L)",
+  "mFilterFindName": "Swift Guard (L)"
+ },
+ {
+  "i": 811,
+  "mListText": "Skilled Evade Swing (S)",
+  "mFilterFindName": "Skilled Evade Swing (S)"
+ },
+ {
+  "i": 812,
+  "mListText": "Skilled Evade Swing (M)",
+  "mFilterFindName": "Skilled Evade Swing (M)"
+ },
+ {
+  "i": 813,
+  "mListText": "Skilled Evade Swing (L)",
+  "mFilterFindName": "Skilled Evade Swing (L)"
+ },
+ {
+  "i": 814,
+  "mListText": "Skilled Reload Shot (S)",
+  "mFilterFindName": "Skilled Reload Shot (S)"
+ },
+ {
+  "i": 815,
+  "mListText": "Skilled Reload Shot (M)",
+  "mFilterFindName": "Skilled Reload Shot (M)"
+ },
+ {
+  "i": 816,
+  "mListText": "Skilled Reload Shot (L)",
+  "mFilterFindName": "Skilled Reload Shot (L)"
+ },
+ {
+  "i": 817,
+  "mListText": "True Drive Shot (S)",
+  "mFilterFindName": "True Drive Shot (S)"
+ },
+ {
+  "i": 818,
+  "mListText": "True Drive Shot (M)",
+  "mFilterFindName": "True Drive Shot (M)"
+ },
+ {
+  "i": 819,
+  "mListText": "True Drive Shot (L)",
+  "mFilterFindName": "True Drive Shot (L)"
+ },
+ {
+  "i": 820,
+  "mListText": "第18回討伐P+%d％",
+  "mFilterFindName": "第18回討伐P"
+ },
+ {
+  "i": 821,
+  "mListText": "Critical Charged Slash (S)",
+  "mFilterFindName": "Critical Charged Slash (S)"
+ },
+ {
+  "i": 822,
+  "mListText": "Critical Charged Slash (M)",
+  "mFilterFindName": "Critical Charged Slash (M)"
+ },
+ {
+  "i": 823,
+  "mListText": "Critical Charged Slash (L)",
+  "mFilterFindName": "Critical Charged Slash (L)"
+ },
+ {
+  "i": 824,
+  "mListText": "Break Buildup (S)",
+  "mFilterFindName": "Break Buildup (S)"
+ },
+ {
+  "i": 825,
+  "mListText": "Break Buildup (M)",
+  "mFilterFindName": "Break Buildup (M)"
+ },
+ {
+  "i": 826,
+  "mListText": "Break Buildup (L)",
+  "mFilterFindName": "Break Buildup (L)"
+ },
+ {
+  "i": 827,
+  "mListText": "Counter Stance (S)",
+  "mFilterFindName": "Counter Stance (S)"
+ },
+ {
+  "i": 828,
+  "mListText": "Counter Stance (M)",
+  "mFilterFindName": "Counter Stance (M)"
+ },
+ {
+  "i": 829,
+  "mListText": "Counter Stance (L)",
+  "mFilterFindName": "Counter Stance (L)"
+ },
+ {
+  "i": 830,
+  "mListText": "Self-Defense (S)",
+  "mFilterFindName": "Self-Defense (S)"
+ },
+ {
+  "i": 831,
+  "mListText": "Self-Defense (M)",
+  "mFilterFindName": "Self-Defense (M)"
+ },
+ {
+  "i": 832,
+  "mListText": "Self-Defense (L)",
+  "mFilterFindName": "Self-Defense (L)"
+ },
+ {
+  "i": 833,
+  "mListText": "Double Hunt (S)",
+  "mFilterFindName": "Double Hunt (S)"
+ },
+ {
+  "i": 834,
+  "mListText": "Double Hunt (M)",
+  "mFilterFindName": "Double Hunt (M)"
+ },
+ {
+  "i": 835,
+  "mListText": "Double Hunt (L)",
+  "mFilterFindName": "Double Hunt (L)"
+ },
+ {
+  "i": 836,
+  "mListText": "Double Hunt Prep (S)",
+  "mFilterFindName": "Double Hunt Prep (S)"
+ },
+ {
+  "i": 837,
+  "mListText": "Double Hunt Prep (M)",
+  "mFilterFindName": "Double Hunt Prep (M)"
+ },
+ {
+  "i": 838,
+  "mListText": "Double Hunt Prep (L)",
+  "mFilterFindName": "Double Hunt Prep (L)"
+ },
+ {
+  "i": 839,
+  "mListText": "Critical Kinsect (S)",
+  "mFilterFindName": "Critical Kinsect (S)"
+ },
+ {
+  "i": 840,
+  "mListText": "Critical Kinsect (M)",
+  "mFilterFindName": "Critical Kinsect (M)"
+ },
+ {
+  "i": 841,
+  "mListText": "Critical Kinsect (L)",
+  "mFilterFindName": "Critical Kinsect (L)"
+ },
+ {
+  "i": 842,
+  "mListText": "Linked Reduction: Martial (S)",
+  "mFilterFindName": "Linked Reduction: Martial (S)"
+ },
+ {
+  "i": 843,
+  "mListText": "Linked Reduction: Martial (M)",
+  "mFilterFindName": "Linked Reduction: Martial (M)"
+ },
+ {
+  "i": 844,
+  "mListText": "Linked Reduction: Martial (L)",
+  "mFilterFindName": "Linked Reduction: Martial (L)"
+ },
+ {
+  "i": 845,
+  "mListText": "Combo Buildup (S)",
+  "mFilterFindName": "Combo Buildup (S)"
+ },
+ {
+  "i": 846,
+  "mListText": "Combo Buildup (M)",
+  "mFilterFindName": "Combo Buildup (M)"
+ },
+ {
+  "i": 847,
+  "mListText": "Combo Buildup (L)",
+  "mFilterFindName": "Combo Buildup (L)"
+ },
+ {
+  "i": 848,
+  "mListText": "Blast Axe Master (S)",
+  "mFilterFindName": "Blast Axe Master (S)"
+ },
+ {
+  "i": 849,
+  "mListText": "Blast Axe Master (M)",
+  "mFilterFindName": "Blast Axe Master (M)"
+ },
+ {
+  "i": 850,
+  "mListText": "Blast Axe Master (L)",
+  "mFilterFindName": "Blast Axe Master (L)"
+ },
+ {
+  "i": 851,
+  "mListText": "True Burst Slash (S)",
+  "mFilterFindName": "True Burst Slash (S)"
+ },
+ {
+  "i": 852,
+  "mListText": "True Burst Slash (M)",
+  "mFilterFindName": "True Burst Slash (M)"
+ },
+ {
+  "i": 853,
+  "mListText": "True Burst Slash (L)",
+  "mFilterFindName": "True Burst Slash (L)"
+ },
+ {
+  "i": 854,
+  "mListText": "Swift Dash (S)",
+  "mFilterFindName": "Swift Dash (S)"
+ },
+ {
+  "i": 855,
+  "mListText": "Swift Dash (M)",
+  "mFilterFindName": "Swift Dash (M)"
+ },
+ {
+  "i": 856,
+  "mListText": "Swift Dash (L)",
+  "mFilterFindName": "Swift Dash (L)"
+ },
+ {
+  "i": 857,
+  "mListText": "Mighty Dash",
+  "mFilterFindName": "Mighty Dash"
+ },
+ {
+  "i": 858,
+  "mListText": "Brave Aerial",
+  "mFilterFindName": "Brave Aerial"
+ },
+ {
+  "i": 859,
+  "mListText": "Skilled Burst Slash",
+  "mFilterFindName": "Skilled Burst Slash"
+ },
+ {
+  "i": 860,
+  "mListText": "捜査能力+%d",
+  "mFilterFindName": "捜査能力"
+ },
+ {
+  "i": 861,
+  "mListText": "S.T.A.R.S.の力+%d",
+  "mFilterFindName": "S.T.A.R.S.の力"
+ },
+ {
+  "i": 862,
+  "mListText": "S.T.A.R.S.の加護+%d",
+  "mFilterFindName": "S.T.A.R.S.の加護"
+ },
+ {
+  "i": 863,
+  "mListText": "第2回衝突戦P+%d％",
+  "mFilterFindName": "第2回衝突戦P"
+ },
+ {
+  "i": 864,
+  "mListText": "Anti-Slip",
+  "mFilterFindName": "Anti-Slip"
+ },
+ {
+  "i": 865,
+  "mListText": "Horn Bash (S)",
+  "mFilterFindName": "Horn Bash (S)"
+ },
+ {
+  "i": 866,
+  "mListText": "Horn Bash (M)",
+  "mFilterFindName": "Horn Bash (M)"
+ },
+ {
+  "i": 867,
+  "mListText": "Horn Bash (L)",
+  "mFilterFindName": "Horn Bash (L)"
+ },
+ {
+  "i": 868,
+  "mListText": "Heavy Armor (S)",
+  "mFilterFindName": "Heavy Armor (S)"
+ },
+ {
+  "i": 869,
+  "mListText": "Heavy Armor (M)",
+  "mFilterFindName": "Heavy Armor (M)"
+ },
+ {
+  "i": 870,
+  "mListText": "Heavy Armor (L)",
+  "mFilterFindName": "Heavy Armor (L)"
+ },
+ {
+  "i": 871,
+  "mListText": "Vengeance (S)",
+  "mFilterFindName": "Vengeance (S)"
+ },
+ {
+  "i": 872,
+  "mListText": "Vengeance (M)",
+  "mFilterFindName": "Vengeance (M)"
+ },
+ {
+  "i": 873,
+  "mListText": "Vengeance (L)",
+  "mFilterFindName": "Vengeance (L)"
+ },
+ {
+  "i": 874,
+  "mListText": "Wound Poison (S)",
+  "mFilterFindName": "Wound Poison (S)"
+ },
+ {
+  "i": 875,
+  "mListText": "Wound Poison (M)",
+  "mFilterFindName": "Wound Poison (M)"
+ },
+ {
+  "i": 876,
+  "mListText": "Wound Poison (L)",
+  "mFilterFindName": "Wound Poison (L)"
+ },
+ {
+  "i": 877,
+  "mListText": "Prodigy's Charged Slash (S)",
+  "mFilterFindName": "Prodigy's Charged Slash (S)"
+ },
+ {
+  "i": 878,
+  "mListText": "Prodigy's Charged Slash (M)",
+  "mFilterFindName": "Prodigy's Charged Slash (M)"
+ },
+ {
+  "i": 879,
+  "mListText": "Prodigy's Charged Slash (L)",
+  "mFilterFindName": "Prodigy's Charged Slash (L)"
+ },
+ {
+  "i": 880,
+  "mListText": "Rallying Guard (S)",
+  "mFilterFindName": "Rallying Guard (S)"
+ },
+ {
+  "i": 881,
+  "mListText": "Rallying Guard (M)",
+  "mFilterFindName": "Rallying Guard (M)"
+ },
+ {
+  "i": 882,
+  "mListText": "Rallying Guard (L)",
+  "mFilterFindName": "Rallying Guard (L)"
+ },
+ {
+  "i": 883,
+  "mListText": "Healing Guard (S)",
+  "mFilterFindName": "Healing Guard (S)"
+ },
+ {
+  "i": 884,
+  "mListText": "Healing Guard (M)",
+  "mFilterFindName": "Healing Guard (M)"
+ },
+ {
+  "i": 885,
+  "mListText": "Healing Guard (L)",
+  "mFilterFindName": "Healing Guard (L)"
+ },
+ {
+  "i": 886,
+  "mListText": "軽銃長射程+%d％",
+  "mFilterFindName": "軽銃長射程"
+ },
+ {
+  "i": 887,
+  "mListText": "Insect Master's Dance",
+  "mFilterFindName": "Insect Master's Dance"
+ },
+ {
+  "i": 888,
+  "mListText": "Power Flowing Shot",
+  "mFilterFindName": "Power Flowing Shot"
+ },
+ {
+  "i": 889,
+  "mListText": "Parry Stance (S)",
+  "mFilterFindName": "Parry Stance (S)"
+ },
+ {
+  "i": 890,
+  "mListText": "Parry Stance (M)",
+  "mFilterFindName": "Parry Stance (M)"
+ },
+ {
+  "i": 891,
+  "mListText": "Parry Stance (L)",
+  "mFilterFindName": "Parry Stance (L)"
+ },
+ {
+  "i": 892,
+  "mListText": "Lion Great Sword User (S)",
+  "mFilterFindName": "Lion Great Sword User (S)"
+ },
+ {
+  "i": 893,
+  "mListText": "Lion Great Sword User (M)",
+  "mFilterFindName": "Lion Great Sword User (M)"
+ },
+ {
+  "i": 894,
+  "mListText": "Lion Great Sword User (L)",
+  "mFilterFindName": "Lion Great Sword User (L)"
+ },
+ {
+  "i": 895,
+  "mListText": "パートナーの心【鋼】+%d％",
+  "mFilterFindName": "パートナーの心【鋼】"
+ },
+ {
+  "i": 896,
+  "mListText": "きのこコイン+%d％",
+  "mFilterFindName": "きのこコイン"
+ },
+ {
+  "i": 897,
+  "mListText": "鍋奉行の力+%d",
+  "mFilterFindName": "鍋奉行の力"
+ },
+ {
+  "i": 898,
+  "mListText": "鍋奉行の加護+%d",
+  "mFilterFindName": "鍋奉行の加護"
+ },
+ {
+  "i": 899,
+  "mListText": "Martial Body Resonance",
+  "mFilterFindName": "Martial Body Resonance"
+ },
+ {
+  "i": 900,
+  "mListText": "Indomitable Soul (S)",
+  "mFilterFindName": "Indomitable Soul (S)"
+ },
+ {
+  "i": 901,
+  "mListText": "Indomitable Soul (M)",
+  "mFilterFindName": "Indomitable Soul (M)"
+ },
+ {
+  "i": 902,
+  "mListText": "Indomitable Soul (L)",
+  "mFilterFindName": "Indomitable Soul (L)"
+ },
+ {
+  "i": 903,
+  "mListText": "Reverse Martial Artist (S)",
+  "mFilterFindName": "Reverse Martial Artist (S)"
+ },
+ {
+  "i": 904,
+  "mListText": "Reverse Martial Artist (M)",
+  "mFilterFindName": "Reverse Martial Artist (M)"
+ },
+ {
+  "i": 905,
+  "mListText": "Reverse Martial Artist (L)",
+  "mFilterFindName": "Reverse Martial Artist (L)"
+ },
+ {
+  "i": 906,
+  "mListText": "Turning Defense (S)",
+  "mFilterFindName": "Turning Defense (S)"
+ },
+ {
+  "i": 907,
+  "mListText": "Turning Defense (M)",
+  "mFilterFindName": "Turning Defense (M)"
+ },
+ {
+  "i": 908,
+  "mListText": "Turning Defense (L)",
+  "mFilterFindName": "Turning Defense (L)"
+ },
+ {
+  "i": 909,
+  "mListText": "Restoring Defense",
+  "mFilterFindName": "Restoring Defense"
+ },
+ {
+  "i": 910,
+  "mListText": "Body Hardening (S)",
+  "mFilterFindName": "Body Hardening (S)"
+ },
+ {
+  "i": 911,
+  "mListText": "Body Hardening (M)",
+  "mFilterFindName": "Body Hardening (M)"
+ },
+ {
+  "i": 912,
+  "mListText": "Body Hardening (L)",
+  "mFilterFindName": "Body Hardening (L)"
+ },
+ {
+  "i": 913,
+  "mListText": "Mini Barrel Bomb Art (S)",
+  "mFilterFindName": "Mini Barrel Bomb Art (S)"
+ },
+ {
+  "i": 914,
+  "mListText": "Mini Barrel Bomb Art (M)",
+  "mFilterFindName": "Mini Barrel Bomb Art (M)"
+ },
+ {
+  "i": 915,
+  "mListText": "Mini Barrel Bomb Art (L)",
+  "mFilterFindName": "Mini Barrel Bomb Art (L)"
+ },
+ {
+  "i": 916,
+  "mListText": "Swift Shield Run (S)",
+  "mFilterFindName": "Swift Shield Run (S)"
+ },
+ {
+  "i": 917,
+  "mListText": "Swift Shield Run (M)",
+  "mFilterFindName": "Swift Shield Run (M)"
+ },
+ {
+  "i": 918,
+  "mListText": "Swift Shield Run (L)",
+  "mFilterFindName": "Swift Shield Run (L)"
+ },
+ {
+  "i": 919,
+  "mListText": "True Demon Evade+ (S)",
+  "mFilterFindName": "True Demon Evade+ (S)"
+ },
+ {
+  "i": 920,
+  "mListText": "True Demon Evade+ (M)",
+  "mFilterFindName": "True Demon Evade+ (M)"
+ },
+ {
+  "i": 921,
+  "mListText": "True Demon Evade+ (L)",
+  "mFilterFindName": "True Demon Evade+ (L)"
+ },
+ {
+  "i": 922,
+  "mListText": "True Demon Dance+ (S)",
+  "mFilterFindName": "True Demon Dance+ (S)"
+ },
+ {
+  "i": 923,
+  "mListText": "True Demon Dance+ (M)",
+  "mFilterFindName": "True Demon Dance+ (M)"
+ },
+ {
+  "i": 924,
+  "mListText": "True Demon Dance+ (L)",
+  "mFilterFindName": "True Demon Dance+ (L)"
+ },
+ {
+  "i": 925,
+  "mListText": "Power Spring Cannon (S)",
+  "mFilterFindName": "Power Spring Cannon (S)"
+ },
+ {
+  "i": 926,
+  "mListText": "Power Spring Cannon (M)",
+  "mFilterFindName": "Power Spring Cannon (M)"
+ },
+ {
+  "i": 927,
+  "mListText": "Power Spring Cannon (L)",
+  "mFilterFindName": "Power Spring Cannon (L)"
+ },
+ {
+  "i": 928,
+  "mListText": "Spirit Recovery Art (S)",
+  "mFilterFindName": "Spirit Recovery Art (S)"
+ },
+ {
+  "i": 929,
+  "mListText": "Spirit Recovery Art (M)",
+  "mFilterFindName": "Spirit Recovery Art (M)"
+ },
+ {
+  "i": 930,
+  "mListText": "Spirit Recovery Art (L)",
+  "mFilterFindName": "Spirit Recovery Art (L)"
+ },
+ {
+  "i": 931,
+  "mListText": "Swift Lunge (S)",
+  "mFilterFindName": "Swift Lunge (S)"
+ },
+ {
+  "i": 932,
+  "mListText": "Swift Lunge (M)",
+  "mFilterFindName": "Swift Lunge (M)"
+ },
+ {
+  "i": 933,
+  "mListText": "Swift Lunge (L)",
+  "mFilterFindName": "Swift Lunge (L)"
+ },
+ {
+  "i": 934,
+  "mListText": "Heal Guardian EX (S)",
+  "mFilterFindName": "Heal Guardian EX (S)"
+ },
+ {
+  "i": 935,
+  "mListText": "Heal Guardian EX (M)",
+  "mFilterFindName": "Heal Guardian EX (M)"
+ },
+ {
+  "i": 936,
+  "mListText": "Heal Guardian EX (L)",
+  "mFilterFindName": "Heal Guardian EX (L)"
+ },
+ {
+  "i": 937,
+  "mListText": "Superior Earplugs (Super)",
+  "mFilterFindName": "Superior Earplugs (Super)"
+ },
+ {
+  "i": 938,
+  "mListText": "リンゴの落しもの+%d％",
+  "mFilterFindName": "リンゴの落しもの"
+ },
+ {
+  "i": 939,
+  "mListText": "カワイイの力+%d",
+  "mFilterFindName": "カワイイの力"
+ },
+ {
+  "i": 940,
+  "mListText": "カワイイの加護+%d",
+  "mFilterFindName": "カワイイの加護"
+ },
+ {
+  "i": 941,
+  "mListText": "ご祝儀コイン+%d％",
+  "mFilterFindName": "ご祝儀コイン"
+ },
+ {
+  "i": 942,
+  "mListText": "自由と責任の力+%d",
+  "mFilterFindName": "自由と責任の力"
+ },
+ {
+  "i": 943,
+  "mListText": "自由と責任の加護+%d",
+  "mFilterFindName": "自由と責任の加護"
+ },
+ {
+  "i": 944,
+  "mListText": "第3回衝突P+%d％",
+  "mFilterFindName": "第3回衝突P"
+ },
+ {
+  "i": 945,
+  "mListText": "第4回衝突P+%d％",
+  "mFilterFindName": "第4回衝突P"
+ },
+ {
+  "i": 946,
+  "mListText": "年末年始衝突P+%d％",
+  "mFilterFindName": "年末年始衝突P"
+ },
+ {
+  "i": 947,
+  "mListText": "Great Resurrection (S)",
+  "mFilterFindName": "Great Resurrection (S)"
+ },
+ {
+  "i": 948,
+  "mListText": "Great Resurrection (M)",
+  "mFilterFindName": "Great Resurrection (M)"
+ },
+ {
+  "i": 949,
+  "mListText": "Great Resurrection (L)",
+  "mFilterFindName": "Great Resurrection (L)"
+ },
+ {
+  "i": 950,
+  "mListText": "Break Martial Artist (S)",
+  "mFilterFindName": "Break Martial Artist (S)"
+ },
+ {
+  "i": 951,
+  "mListText": "Break Martial Artist (M)",
+  "mFilterFindName": "Break Martial Artist (M)"
+ },
+ {
+  "i": 952,
+  "mListText": "Break Martial Artist (L)",
+  "mFilterFindName": "Break Martial Artist (L)"
+ },
+ {
+  "i": 953,
+  "mListText": "Turning Recovery: Martial (S)",
+  "mFilterFindName": "Turning Recovery: Martial (S)"
+ },
+ {
+  "i": 954,
+  "mListText": "Turning Recovery: Martial (M)",
+  "mFilterFindName": "Turning Recovery: Martial (M)"
+ },
+ {
+  "i": 955,
+  "mListText": "Turning Recovery: Martial (L)",
+  "mFilterFindName": "Turning Recovery: Martial (L)"
+ },
+ {
+  "i": 956,
+  "mListText": "Endurance (S)",
+  "mFilterFindName": "Endurance (S)"
+ },
+ {
+  "i": 957,
+  "mListText": "Endurance (M)",
+  "mFilterFindName": "Endurance (M)"
+ },
+ {
+  "i": 958,
+  "mListText": "Endurance (L)",
+  "mFilterFindName": "Endurance (L)"
+ },
+ {
+  "i": 959,
+  "mListText": "Life Extension (S)",
+  "mFilterFindName": "Life Extension (S)"
+ },
+ {
+  "i": 960,
+  "mListText": "Life Extension (M)",
+  "mFilterFindName": "Life Extension (M)"
+ },
+ {
+  "i": 961,
+  "mListText": "Life Extension (L)",
+  "mFilterFindName": "Life Extension (L)"
+ },
+ {
+  "i": 962,
+  "mListText": "活力回避+%d",
+  "mFilterFindName": "活力回避"
+ },
+ {
+  "i": 963,
+  "mListText": "After-Breaker (S)",
+  "mFilterFindName": "After-Breaker (S)"
+ },
+ {
+  "i": 964,
+  "mListText": "After-Breaker (M)",
+  "mFilterFindName": "After-Breaker (M)"
+ },
+ {
+  "i": 965,
+  "mListText": "After-Breaker (L)",
+  "mFilterFindName": "After-Breaker (L)"
+ },
+ {
+  "i": 966,
+  "mListText": "Great Sword Master EX",
+  "mFilterFindName": "Great Sword Master EX"
+ },
+ {
+  "i": 967,
+  "mListText": "Spirit Gauge Keeper",
+  "mFilterFindName": "Spirit Gauge Keeper"
+ },
+ {
+  "i": 968,
+  "mListText": "Item Use Recovery: Martial (S)",
+  "mFilterFindName": "Item Use Recovery: Martial (S)"
+ },
+ {
+  "i": 969,
+  "mListText": "Item Use Recovery: Martial (M)",
+  "mFilterFindName": "Item Use Recovery: Martial (M)"
+ },
+ {
+  "i": 970,
+  "mListText": "Item Use Recovery: Martial (L)",
+  "mFilterFindName": "Item Use Recovery: Martial (L)"
+ },
+ {
+  "i": 971,
+  "mListText": "アイテム活用回復+%d",
+  "mFilterFindName": "アイテム活用回復"
+ },
+ {
+  "i": 972,
+  "mListText": "Supreme Orb Sword & Shield Charge (S)",
+  "mFilterFindName": "Supreme Orb Sword & Shield Charge (S)"
+ },
+ {
+  "i": 973,
+  "mListText": "Supreme Orb Sword & Shield Charge (M)",
+  "mFilterFindName": "Supreme Orb Sword & Shield Charge (M)"
+ },
+ {
+  "i": 974,
+  "mListText": "Supreme Orb Sword & Shield Charge (L)",
+  "mFilterFindName": "Supreme Orb Sword & Shield Charge (L)"
+ },
+ {
+  "i": 975,
+  "mListText": "Faster Demon Spirit Shot (S)",
+  "mFilterFindName": "Faster Demon Spirit Shot (S)"
+ },
+ {
+  "i": 976,
+  "mListText": "Faster Demon Spirit Shot (M)",
+  "mFilterFindName": "Faster Demon Spirit Shot (M)"
+ },
+ {
+  "i": 977,
+  "mListText": "Faster Demon Spirit Shot (L)",
+  "mFilterFindName": "Faster Demon Spirit Shot (L)"
+ },
+ {
+  "i": 978,
+  "mListText": "Iron Charger",
+  "mFilterFindName": "Iron Charger"
+ },
+ {
+  "i": 979,
+  "mListText": "Aftershock Reload",
+  "mFilterFindName": "Aftershock Reload"
+ },
+ {
+  "i": 980,
+  "mListText": "Super Quick Cooling (S)",
+  "mFilterFindName": "Super Quick Cooling (S)"
+ },
+ {
+  "i": 981,
+  "mListText": "Super Quick Cooling (M)",
+  "mFilterFindName": "Super Quick Cooling (M)"
+ },
+ {
+  "i": 982,
+  "mListText": "Super Quick Cooling",
+  "mFilterFindName": "Super Quick Cooling"
+ },
+ {
+  "i": 983,
+  "mListText": "Element Burst Release (S)",
+  "mFilterFindName": "Element Burst Release (S)"
+ },
+ {
+  "i": 984,
+  "mListText": "Element Burst Release (M)",
+  "mFilterFindName": "Element Burst Release (M)"
+ },
+ {
+  "i": 985,
+  "mListText": "Element Burst Release",
+  "mFilterFindName": "Element Burst Release"
+ },
+ {
+  "i": 986,
+  "mListText": "Mighty Drive",
+  "mFilterFindName": "Mighty Drive"
+ },
+ {
+  "i": 987,
+  "mListText": "第5回衝突P+%d％",
+  "mFilterFindName": "第5回衝突P"
+ },
+ {
+  "i": 988,
+  "mListText": "ドーナツ水晶コイン+%d％",
+  "mFilterFindName": "ドーナツ水晶コイン"
+ },
+ {
+  "i": 989,
+  "mListText": "キラメキ☆の力+%d",
+  "mFilterFindName": "キラメキ☆の力"
+ },
+ {
+  "i": 990,
+  "mListText": "キラメキ☆の加護+%d",
+  "mFilterFindName": "キラメキ☆の加護"
+ },
+ {
+  "i": 991,
+  "mListText": "Hit Recovery: Martial (S)",
+  "mFilterFindName": "Hit Recovery: Martial (S)"
+ },
+ {
+  "i": 992,
+  "mListText": "Hit Recovery: Martial (M)",
+  "mFilterFindName": "Hit Recovery: Martial (M)"
+ },
+ {
+  "i": 993,
+  "mListText": "Hit Recovery: Martial (L)",
+  "mFilterFindName": "Hit Recovery: Martial (L)"
+ },
+ {
+  "i": 994,
+  "mListText": "Break Thrift (S)",
+  "mFilterFindName": "Break Thrift (S)"
+ },
+ {
+  "i": 995,
+  "mListText": "Break Thrift (M)",
+  "mFilterFindName": "Break Thrift (M)"
+ },
+ {
+  "i": 996,
+  "mListText": "Break Thrift (L)",
+  "mFilterFindName": "Break Thrift (L)"
+ },
+ {
+  "i": 997,
+  "mListText": "Flesh for Bone (S)",
+  "mFilterFindName": "Flesh for Bone (S)"
+ },
+ {
+  "i": 998,
+  "mListText": "Flesh for Bone (M)",
+  "mFilterFindName": "Flesh for Bone (M)"
+ },
+ {
+  "i": 999,
+  "mListText": "Flesh for Bone (L)",
+  "mFilterFindName": "Flesh for Bone (L)"
+ },
+ {
+  "i": 1000,
+  "mListText": "Last Bastion (S)",
+  "mFilterFindName": "Last Bastion (S)"
+ },
+ {
+  "i": 1001,
+  "mListText": "Last Bastion (M)",
+  "mFilterFindName": "Last Bastion (M)"
+ },
+ {
+  "i": 1002,
+  "mListText": "Last Bastion (L)",
+  "mFilterFindName": "Last Bastion (L)"
+ },
+ {
+  "i": 1003,
+  "mListText": "Break Brute Force (S)",
+  "mFilterFindName": "Break Brute Force (S)"
+ },
+ {
+  "i": 1004,
+  "mListText": "Break Brute Force (M)",
+  "mFilterFindName": "Break Brute Force (M)"
+ },
+ {
+  "i": 1005,
+  "mListText": "Break Brute Force (L)",
+  "mFilterFindName": "Break Brute Force (L)"
+ },
+ {
+  "i": 1006,
+  "mListText": "Poison Critical (S)",
+  "mFilterFindName": "Poison Critical (S)"
+ },
+ {
+  "i": 1007,
+  "mListText": "Poison Critical (M)",
+  "mFilterFindName": "Poison Critical (M)"
+ },
+ {
+  "i": 1008,
+  "mListText": "Poison Critical (L)",
+  "mFilterFindName": "Poison Critical (L)"
+ },
+ {
+  "i": 1009,
+  "mListText": "Offensive Critical (S)",
+  "mFilterFindName": "Offensive Critical (S)"
+ },
+ {
+  "i": 1010,
+  "mListText": "Offensive Critical (M)",
+  "mFilterFindName": "Offensive Critical (M)"
+ },
+ {
+  "i": 1011,
+  "mListText": "Offensive Critical (L)",
+  "mFilterFindName": "Offensive Critical (L)"
+ },
+ {
+  "i": 1012,
+  "mListText": "Linked Boost: Attack (S)",
+  "mFilterFindName": "Linked Boost: Attack (S)"
+ },
+ {
+  "i": 1013,
+  "mListText": "Linked Boost: Attack (M)",
+  "mFilterFindName": "Linked Boost: Attack (M)"
+ },
+ {
+  "i": 1014,
+  "mListText": "Linked Boost: Attack (L)",
+  "mFilterFindName": "Linked Boost: Attack (L)"
+ },
+ {
+  "i": 1015,
+  "mListText": "Break Endurance (S)",
+  "mFilterFindName": "Break Endurance (S)"
+ },
+ {
+  "i": 1016,
+  "mListText": "Break Endurance (M)",
+  "mFilterFindName": "Break Endurance (M)"
+ },
+ {
+  "i": 1017,
+  "mListText": "Break Endurance (L)",
+  "mFilterFindName": "Break Endurance (L)"
+ },
+ {
+  "i": 1018,
+  "mListText": "堅守回避+%d",
+  "mFilterFindName": "堅守回避"
+ },
+ {
+  "i": 1019,
+  "mListText": "Immunity (S)",
+  "mFilterFindName": "Immunity (S)"
+ },
+ {
+  "i": 1020,
+  "mListText": "Immunity (M)",
+  "mFilterFindName": "Immunity (M)"
+ },
+ {
+  "i": 1021,
+  "mListText": "Immunity (L)",
+  "mFilterFindName": "Immunity (L)"
+ },
+ {
+  "i": 1022,
+  "mListText": "Mighty Performance",
+  "mFilterFindName": "Mighty Performance"
+ },
+ {
+  "i": 1023,
+  "mListText": "Mighty Spirit Combo",
+  "mFilterFindName": "Mighty Spirit Combo"
+ },
+ {
+  "i": 1024,
+  "mListText": "True Crag Shot (S)",
+  "mFilterFindName": "True Crag Shot (S)"
+ },
+ {
+  "i": 1025,
+  "mListText": "True Crag Shot (M)",
+  "mFilterFindName": "True Crag Shot (M)"
+ },
+ {
+  "i": 1026,
+  "mListText": "True Crag Shot (L)",
+  "mFilterFindName": "True Crag Shot (L)"
+ },
+ {
+  "i": 1027,
+  "mListText": "True Spread Shot (S)",
+  "mFilterFindName": "True Spread Shot (S)"
+ },
+ {
+  "i": 1028,
+  "mListText": "True Spread Shot (M)",
+  "mFilterFindName": "True Spread Shot (M)"
+ },
+ {
+  "i": 1029,
+  "mListText": "True Spread Shot (L)",
+  "mFilterFindName": "True Spread Shot (L)"
+ },
+ {
+  "i": 1030,
+  "mListText": "True Pierce Shot (S)",
+  "mFilterFindName": "True Pierce Shot (S)"
+ },
+ {
+  "i": 1031,
+  "mListText": "True Pierce Shot (M)",
+  "mFilterFindName": "True Pierce Shot (M)"
+ },
+ {
+  "i": 1032,
+  "mListText": "True Pierce Shot (L)",
+  "mFilterFindName": "True Pierce Shot (L)"
+ },
+ {
+  "i": 1033,
+  "mListText": "Charge Blade Morph Follow-up (S)",
+  "mFilterFindName": "Charge Blade Morph Follow-up (S)"
+ },
+ {
+  "i": 1034,
+  "mListText": "Charge Blade Morph Follow-up (M)",
+  "mFilterFindName": "Charge Blade Morph Follow-up (M)"
+ },
+ {
+  "i": 1035,
+  "mListText": "Charge Blade Morph Follow-up (L)",
+  "mFilterFindName": "Charge Blade Morph Follow-up (L)"
+ },
+ {
+  "i": 1036,
+  "mListText": "Mighty Wyvernfire",
+  "mFilterFindName": "Mighty Wyvernfire"
+ },
+ {
+  "i": 1037,
+  "mListText": "アリババ級の商魂+%d％",
+  "mFilterFindName": "アリババ級の商魂"
+ },
+ {
+  "i": 1038,
+  "mListText": "ソロモンの力+%d",
+  "mFilterFindName": "ソロモンの力"
+ },
+ {
+  "i": 1039,
+  "mListText": "ソロモンの加護+%d",
+  "mFilterFindName": "ソロモンの加護"
+ },
+ {
+  "i": 1040,
+  "mListText": "おもてなし+%d％",
+  "mFilterFindName": "おもてなし"
+ },
+ {
+  "i": 1041,
+  "mListText": "金剛力の力+%d",
+  "mFilterFindName": "金剛力の力"
+ },
+ {
+  "i": 1042,
+  "mListText": "金剛盾の加護+%d",
+  "mFilterFindName": "金剛盾の加護"
+ },
+ {
+  "i": 1043,
+  "mListText": "対爆氷竜+%d",
+  "mFilterFindName": "対爆氷竜"
+ },
+ {
+  "i": 1044,
+  "mListText": "耐爆氷竜+%d",
+  "mFilterFindName": "耐爆氷竜"
+ },
+ {
+  "i": 1045,
+  "mListText": "Break Natural Recovery (S)",
+  "mFilterFindName": "Break Natural Recovery (S)"
+ },
+ {
+  "i": 1046,
+  "mListText": "Break Natural Recovery (M)",
+  "mFilterFindName": "Break Natural Recovery (M)"
+ },
+ {
+  "i": 1047,
+  "mListText": "Break Natural Recovery (L)",
+  "mFilterFindName": "Break Natural Recovery (L)"
+ },
+ {
+  "i": 1048,
+  "mListText": "Desperate Parry (S)",
+  "mFilterFindName": "Desperate Parry (S)"
+ },
+ {
+  "i": 1049,
+  "mListText": "Desperate Parry (M)",
+  "mFilterFindName": "Desperate Parry (M)"
+ },
+ {
+  "i": 1050,
+  "mListText": "Desperate Parry (L)",
+  "mFilterFindName": "Desperate Parry (L)"
+ },
+ {
+  "i": 1051,
+  "mListText": "Blast Axe Jump (S)",
+  "mFilterFindName": "Blast Axe Jump (S)"
+ },
+ {
+  "i": 1052,
+  "mListText": "Blast Axe Jump (M)",
+  "mFilterFindName": "Blast Axe Jump (M)"
+ },
+ {
+  "i": 1053,
+  "mListText": "Blast Axe Jump (L)",
+  "mFilterFindName": "Blast Axe Jump (L)"
+ },
+ {
+  "i": 1054,
+  "mListText": "Mighty Jump",
+  "mFilterFindName": "Mighty Jump"
+ },
+ {
+  "i": 1055,
+  "mListText": "Martial Vitality (S)",
+  "mFilterFindName": "Martial Vitality (S)"
+ },
+ {
+  "i": 1056,
+  "mListText": "Martial Vitality (M)",
+  "mFilterFindName": "Martial Vitality (M)"
+ },
+ {
+  "i": 1057,
+  "mListText": "Martial Vitality (L)",
+  "mFilterFindName": "Martial Vitality (L)"
+ },
+ {
+  "i": 1058,
+  "mListText": "Conversion Regeneration (S)",
+  "mFilterFindName": "Conversion Regeneration (S)"
+ },
+ {
+  "i": 1059,
+  "mListText": "Conversion Regeneration (M)",
+  "mFilterFindName": "Conversion Regeneration (M)"
+ },
+ {
+  "i": 1060,
+  "mListText": "Conversion Regeneration (L)",
+  "mFilterFindName": "Conversion Regeneration (L)"
+ },
+ {
+  "i": 1061,
+  "mListText": "Reload Perfectionist (S)",
+  "mFilterFindName": "Reload Perfectionist (S)"
+ },
+ {
+  "i": 1062,
+  "mListText": "Reload Perfectionist (M)",
+  "mFilterFindName": "Reload Perfectionist (M)"
+ },
+ {
+  "i": 1063,
+  "mListText": "Reload Perfectionist (L)",
+  "mFilterFindName": "Reload Perfectionist (L)"
+ },
+ {
+  "i": 1064,
+  "mListText": "Critical Addiction (S)",
+  "mFilterFindName": "Critical Addiction (S)"
+ },
+ {
+  "i": 1065,
+  "mListText": "Critical Addiction (M)",
+  "mFilterFindName": "Critical Addiction (M)"
+ },
+ {
+  "i": 1066,
+  "mListText": "Critical Addiction (L)",
+  "mFilterFindName": "Critical Addiction (L)"
+ },
+ {
+  "i": 1067,
+  "mListText": "Eardrum Health Method (S)",
+  "mFilterFindName": "Eardrum Health Method (S)"
+ },
+ {
+  "i": 1068,
+  "mListText": "Eardrum Health Method (M)",
+  "mFilterFindName": "Eardrum Health Method (M)"
+ },
+ {
+  "i": 1069,
+  "mListText": "Eardrum Health Method (L)",
+  "mFilterFindName": "Eardrum Health Method (L)"
+ },
+ {
+  "i": 1070,
+  "mListText": "Hit Recovery Up (S)",
+  "mFilterFindName": "Hit Recovery Up (S)"
+ },
+ {
+  "i": 1071,
+  "mListText": "Hit Recovery Up (M)",
+  "mFilterFindName": "Hit Recovery Up (M)"
+ },
+ {
+  "i": 1072,
+  "mListText": "Hit Recovery Up (L)",
+  "mFilterFindName": "Hit Recovery Up (L)"
+ },
+ {
+  "i": 1073,
+  "mListText": "Cooling Technique (S)",
+  "mFilterFindName": "Cooling Technique (S)"
+ },
+ {
+  "i": 1074,
+  "mListText": "Cooling Technique (M)",
+  "mFilterFindName": "Cooling Technique (M)"
+ },
+ {
+  "i": 1075,
+  "mListText": "Cooling Technique (L)",
+  "mFilterFindName": "Cooling Technique (L)"
+ },
+ {
+  "i": 1076,
+  "mListText": "Missed Shot Boost (S)",
+  "mFilterFindName": "Missed Shot Boost (S)"
+ },
+ {
+  "i": 1077,
+  "mListText": "Missed Shot Boost (M)",
+  "mFilterFindName": "Missed Shot Boost (M)"
+ },
+ {
+  "i": 1078,
+  "mListText": "Missed Shot Boost (L)",
+  "mFilterFindName": "Missed Shot Boost (L)"
+ },
+ {
+  "i": 1079,
+  "mListText": "Swift Combo Finish",
+  "mFilterFindName": "Swift Combo Finish"
+ },
+ {
+  "i": 1080,
+  "mListText": "Swift Combo Finish EX",
+  "mFilterFindName": "Swift Combo Finish EX"
+ },
+ {
+  "i": 1081,
+  "mListText": "Charge Blade Morph Boost (S)",
+  "mFilterFindName": "Charge Blade Morph Boost (S)"
+ },
+ {
+  "i": 1082,
+  "mListText": "Charge Blade Morph Boost (M)",
+  "mFilterFindName": "Charge Blade Morph Boost (M)"
+ },
+ {
+  "i": 1083,
+  "mListText": "Charge Blade Morph Boost (L)",
+  "mFilterFindName": "Charge Blade Morph Boost (L)"
+ },
+ {
+  "i": 1084,
+  "mListText": "Switch Axe Morph Boost (S)",
+  "mFilterFindName": "Switch Axe Morph Boost (S)"
+ },
+ {
+  "i": 1085,
+  "mListText": "Switch Axe Morph Boost (M)",
+  "mFilterFindName": "Switch Axe Morph Boost (M)"
+ },
+ {
+  "i": 1086,
+  "mListText": "Switch Axe Morph Boost (L)",
+  "mFilterFindName": "Switch Axe Morph Boost (L)"
+ },
+ {
+  "i": 1087,
+  "mListText": "Item Substitute (S)",
+  "mFilterFindName": "Item Substitute (S)"
+ },
+ {
+  "i": 1088,
+  "mListText": "Item Substitute (M)",
+  "mFilterFindName": "Item Substitute (M)"
+ },
+ {
+  "i": 1089,
+  "mListText": "Item Substitute (L)",
+  "mFilterFindName": "Item Substitute (L)"
+ },
+ {
+  "i": 1090,
+  "mListText": "顧問の裁量+%d",
+  "mFilterFindName": "顧問の裁量"
+ },
+ {
+  "i": 1091,
+  "mListText": "応援団の力+%d",
+  "mFilterFindName": "応援団の力"
+ },
+ {
+  "i": 1092,
+  "mListText": "応援団の加護+%d",
+  "mFilterFindName": "応援団の加護"
+ },
+ {
+  "i": 1093,
+  "mListText": "対金獅子+%d",
+  "mFilterFindName": "対金獅子"
+ },
+ {
+  "i": 1094,
+  "mListText": "耐金獅子+%d",
+  "mFilterFindName": "耐金獅子"
+ },
+ {
+  "i": 1095,
+  "mListText": "対尾爆竜+%d",
+  "mFilterFindName": "対尾爆竜"
+ },
+ {
+  "i": 1096,
+  "mListText": "耐尾爆竜+%d",
+  "mFilterFindName": "耐尾爆竜"
+ },
+ {
+  "i": 1097,
+  "mListText": "第6回衝突P+%d",
+  "mFilterFindName": "第6回衝突P"
+ },
+ {
+  "i": 1098,
+  "mListText": "Poison Spread (S)",
+  "mFilterFindName": "Poison Spread (S)"
+ },
+ {
+  "i": 1099,
+  "mListText": "Poison Spread (M)",
+  "mFilterFindName": "Poison Spread (M)"
+ },
+ {
+  "i": 1100,
+  "mListText": "Poison Spread (L)",
+  "mFilterFindName": "Poison Spread (L)"
+ },
+ {
+  "i": 1101,
+  "mListText": "Initial Momentum (S)",
+  "mFilterFindName": "Initial Momentum (S)"
+ },
+ {
+  "i": 1102,
+  "mListText": "Initial Momentum (M)",
+  "mFilterFindName": "Initial Momentum (M)"
+ },
+ {
+  "i": 1103,
+  "mListText": "Initial Momentum (L)",
+  "mFilterFindName": "Initial Momentum (L)"
+ },
+ {
+  "i": 1104,
+  "mListText": "Faster Aerial Attacks (S)",
+  "mFilterFindName": "Faster Aerial Attacks (S)"
+ },
+ {
+  "i": 1105,
+  "mListText": "Faster Aerial Attacks (M)",
+  "mFilterFindName": "Faster Aerial Attacks (M)"
+ },
+ {
+  "i": 1106,
+  "mListText": "Faster Aerial Attacks (L)",
+  "mFilterFindName": "Faster Aerial Attacks (L)"
+ },
+ {
+  "i": 1107,
+  "mListText": "Kinsect Follow-up Boost (S)",
+  "mFilterFindName": "Kinsect Follow-up Boost (S)"
+ },
+ {
+  "i": 1108,
+  "mListText": "Kinsect Follow-up Boost (M)",
+  "mFilterFindName": "Kinsect Follow-up Boost (M)"
+ },
+ {
+  "i": 1109,
+  "mListText": "Kinsect Follow-up Boost (L)",
+  "mFilterFindName": "Kinsect Follow-up Boost (L)"
+ },
+ {
+  "i": 1110,
+  "mListText": "Supreme Orb Heavy Bowgun Charge (S)",
+  "mFilterFindName": "Supreme Orb Heavy Bowgun Charge (S)"
+ },
+ {
+  "i": 1111,
+  "mListText": "Supreme Orb Heavy Bowgun Charge (M)",
+  "mFilterFindName": "Supreme Orb Heavy Bowgun Charge (M)"
+ },
+ {
+  "i": 1112,
+  "mListText": "Supreme Orb Heavy Bowgun Charge (L)",
+  "mFilterFindName": "Supreme Orb Heavy Bowgun Charge (L)"
+ },
+ {
+  "i": 1113,
+  "mListText": "Supreme Orb Heavy Bowgun Thrift (S)",
+  "mFilterFindName": "Supreme Orb Heavy Bowgun Thrift (S)"
+ },
+ {
+  "i": 1114,
+  "mListText": "Supreme Orb Heavy Bowgun Thrift (M)",
+  "mFilterFindName": "Supreme Orb Heavy Bowgun Thrift (M)"
+ },
+ {
+  "i": 1115,
+  "mListText": "Supreme Orb Heavy Bowgun Thrift (L)",
+  "mFilterFindName": "Supreme Orb Heavy Bowgun Thrift (L)"
+ },
+ {
+  "i": 1116,
+  "mListText": "Charged Shot Evade Distance (S)",
+  "mFilterFindName": "Charged Shot Evade Distance (S)"
+ },
+ {
+  "i": 1117,
+  "mListText": "Charged Shot Evade Distance (M)",
+  "mFilterFindName": "Charged Shot Evade Distance (M)"
+ },
+ {
+  "i": 1118,
+  "mListText": "Charged Shot Evade Distance (L)",
+  "mFilterFindName": "Charged Shot Evade Distance (L)"
+ },
+ {
+  "i": 1119,
+  "mListText": "Poison Counter (S)",
+  "mFilterFindName": "Poison Counter (S)"
+ },
+ {
+  "i": 1120,
+  "mListText": "Poison Counter (M)",
+  "mFilterFindName": "Poison Counter (M)"
+ },
+ {
+  "i": 1121,
+  "mListText": "Poison Counter (L)",
+  "mFilterFindName": "Poison Counter (L)"
+ },
+ {
+  "i": 1122,
+  "mListText": "Break Follow-up (S)",
+  "mFilterFindName": "Break Follow-up (S)"
+ },
+ {
+  "i": 1123,
+  "mListText": "Break Follow-up (M)",
+  "mFilterFindName": "Break Follow-up (M)"
+ },
+ {
+  "i": 1124,
+  "mListText": "Break Follow-up (L)",
+  "mFilterFindName": "Break Follow-up (L)"
+ },
+ {
+  "i": 1125,
+  "mListText": "Performance Extension (S)",
+  "mFilterFindName": "Performance Extension (S)"
+ },
+ {
+  "i": 1126,
+  "mListText": "Performance Extension (M)",
+  "mFilterFindName": "Performance Extension (M)"
+ },
+ {
+  "i": 1127,
+  "mListText": "Performance Extension (L)",
+  "mFilterFindName": "Performance Extension (L)"
+ },
+ {
+  "i": 1128,
+  "mListText": "Health Conversion (S)",
+  "mFilterFindName": "Health Conversion (S)"
+ },
+ {
+  "i": 1129,
+  "mListText": "Health Conversion (M)",
+  "mFilterFindName": "Health Conversion (M)"
+ },
+ {
+  "i": 1130,
+  "mListText": "Health Conversion (L)",
+  "mFilterFindName": "Health Conversion (L)"
+ },
+ {
+  "i": 1131,
+  "mListText": "Power of Sorrow (S)",
+  "mFilterFindName": "Power of Sorrow (S)"
+ },
+ {
+  "i": 1132,
+  "mListText": "Power of Sorrow (M)",
+  "mFilterFindName": "Power of Sorrow (M)"
+ },
+ {
+  "i": 1133,
+  "mListText": "Power of Sorrow (L)",
+  "mFilterFindName": "Power of Sorrow (L)"
+ },
+ {
+  "i": 1134,
+  "mListText": "Guard Recovery: Martial (S)",
+  "mFilterFindName": "Guard Recovery: Martial (S)"
+ },
+ {
+  "i": 1135,
+  "mListText": "Guard Recovery: Martial (M)",
+  "mFilterFindName": "Guard Recovery: Martial (M)"
+ },
+ {
+  "i": 1136,
+  "mListText": "Guard Recovery: Martial (L)",
+  "mFilterFindName": "Guard Recovery: Martial (L)"
+ },
+ {
+  "i": 1137,
+  "mListText": "Critical Reduction (S)",
+  "mFilterFindName": "Critical Reduction (S)"
+ },
+ {
+  "i": 1138,
+  "mListText": "Critical Reduction (M)",
+  "mFilterFindName": "Critical Reduction (M)"
+ },
+ {
+  "i": 1139,
+  "mListText": "Critical Reduction (L)",
+  "mFilterFindName": "Critical Reduction (L)"
+ },
+ {
+  "i": 1140,
+  "mListText": "Shield Meteor Boost (S)",
+  "mFilterFindName": "Shield Meteor Boost (S)"
+ },
+ {
+  "i": 1141,
+  "mListText": "Shield Meteor Boost (M)",
+  "mFilterFindName": "Shield Meteor Boost (M)"
+ },
+ {
+  "i": 1142,
+  "mListText": "Shield Meteor Boost (L)",
+  "mFilterFindName": "Shield Meteor Boost (L)"
+ },
+ {
+  "i": 1143,
+  "mListText": "After-Critical (S)",
+  "mFilterFindName": "After-Critical (S)"
+ },
+ {
+  "i": 1144,
+  "mListText": "After-Critical (M)",
+  "mFilterFindName": "After-Critical (M)"
+ },
+ {
+  "i": 1145,
+  "mListText": "After-Critical (L)",
+  "mFilterFindName": "After-Critical (L)"
+ },
+ {
+  "i": 1146,
+  "mListText": "Guard Maniac (S)",
+  "mFilterFindName": "Guard Maniac (S)"
+ },
+ {
+  "i": 1147,
+  "mListText": "Guard Maniac (M)",
+  "mFilterFindName": "Guard Maniac (M)"
+ },
+ {
+  "i": 1148,
+  "mListText": "Guard Maniac (L)",
+  "mFilterFindName": "Guard Maniac (L)"
+ },
+ {
+  "i": 1149,
+  "mListText": "Life-Cutting Performance (S)",
+  "mFilterFindName": "Life-Cutting Performance (S)"
+ },
+ {
+  "i": 1150,
+  "mListText": "Life-Cutting Performance (M)",
+  "mFilterFindName": "Life-Cutting Performance (M)"
+ },
+ {
+  "i": 1151,
+  "mListText": "Life-Cutting Performance (L)",
+  "mFilterFindName": "Life-Cutting Performance (L)"
+ },
+ {
+  "i": 1152,
+  "mListText": "Overcharge (S)",
+  "mFilterFindName": "Overcharge (S)"
+ },
+ {
+  "i": 1153,
+  "mListText": "Overcharge (M)",
+  "mFilterFindName": "Overcharge (M)"
+ },
+ {
+  "i": 1154,
+  "mListText": "Overcharge (L)",
+  "mFilterFindName": "Overcharge (L)"
+ },
+ {
+  "i": 1155,
+  "mListText": "炎まといダメージ減少+%d",
+  "mFilterFindName": "炎まといダメージ減少"
+ },
+ {
+  "i": 1156,
+  "mListText": "Flame Coat Pierce",
+  "mFilterFindName": "Flame Coat Pierce"
+ },
+ {
+  "i": 1157,
+  "mListText": "第7回衝突P+%d",
+  "mFilterFindName": "第7回衝突P"
+ },
+ {
+  "i": 1158,
+  "mListText": "月の魔力+%d",
+  "mFilterFindName": "月の魔力"
+ },
+ {
+  "i": 1159,
+  "mListText": "滅竜魔道士の力+%d",
+  "mFilterFindName": "滅竜魔道士の力"
+ },
+ {
+  "i": 1160,
+  "mListText": "滅竜魔道士の加護+%d",
+  "mFilterFindName": "滅竜魔道士の加護"
+ },
+ {
+  "i": 1161,
+  "mListText": "Full Burst Reduction (S)",
+  "mFilterFindName": "Full Burst Reduction (S)"
+ },
+ {
+  "i": 1162,
+  "mListText": "Full Burst Reduction (M)",
+  "mFilterFindName": "Full Burst Reduction (M)"
+ },
+ {
+  "i": 1163,
+  "mListText": "Full Burst Reduction (L)",
+  "mFilterFindName": "Full Burst Reduction (L)"
+ },
+ {
+  "i": 1164,
+  "mListText": "第8回衝突P+%d",
+  "mFilterFindName": "第8回衝突P"
+ },
+ {
+  "i": 1165,
+  "mListText": "サバイバル能力+%d",
+  "mFilterFindName": "サバイバル能力"
+ },
+ {
+  "i": 1166,
+  "mListText": "R.P.D.の力+%d",
+  "mFilterFindName": "R.P.D.の力"
+ },
+ {
+  "i": 1167,
+  "mListText": "R.P.D.の加護+%d",
+  "mFilterFindName": "R.P.D.の加護"
+ },
+ {
+  "i": 1168,
+  "mListText": "対霞龍+%d",
+  "mFilterFindName": "対霞龍"
+ },
+ {
+  "i": 1169,
+  "mListText": "耐霞龍+%d",
+  "mFilterFindName": "耐霞龍"
+ },
+ {
+  "i": 1170,
+  "mListText": "被ダメージアップ耐性+%d％",
+  "mFilterFindName": "被ダメージアップ耐性"
+ },
+ {
+  "i": 1171,
+  "mListText": "Encore Agility (S)",
+  "mFilterFindName": "Encore Agility (S)"
+ },
+ {
+  "i": 1172,
+  "mListText": "Encore Agility (M)",
+  "mFilterFindName": "Encore Agility (M)"
+ },
+ {
+  "i": 1173,
+  "mListText": "Encore Agility (L)",
+  "mFilterFindName": "Encore Agility (L)"
+ },
+ {
+  "i": 1174,
+  "mListText": "Echo Wave Boost (S)",
+  "mFilterFindName": "Echo Wave Boost (S)"
+ },
+ {
+  "i": 1175,
+  "mListText": "Echo Wave Boost (M)",
+  "mFilterFindName": "Echo Wave Boost (M)"
+ },
+ {
+  "i": 1176,
+  "mListText": "Echo Wave Boost (L)",
+  "mFilterFindName": "Echo Wave Boost (L)"
+ },
+ {
+  "i": 1177,
+  "mListText": "Echo Boost: Attack (S)",
+  "mFilterFindName": "Echo Boost: Attack (S)"
+ },
+ {
+  "i": 1178,
+  "mListText": "Echo Boost: Attack (M)",
+  "mFilterFindName": "Echo Boost: Attack (M)"
+ },
+ {
+  "i": 1179,
+  "mListText": "Echo Boost: Attack (L)",
+  "mFilterFindName": "Echo Boost: Attack (L)"
+ },
+ {
+  "i": 1180,
+  "mListText": "Echo Boost: Healing (S)",
+  "mFilterFindName": "Echo Boost: Healing (S)"
+ },
+ {
+  "i": 1181,
+  "mListText": "Echo Boost: Healing (M)",
+  "mFilterFindName": "Echo Boost: Healing (M)"
+ },
+ {
+  "i": 1182,
+  "mListText": "Echo Boost: Healing (L)",
+  "mFilterFindName": "Echo Boost: Healing (L)"
+ },
+ {
+  "i": 1183,
+  "mListText": "Mighty Encore",
+  "mFilterFindName": "Mighty Encore"
+ },
+ {
+  "i": 1184,
+  "mListText": "Shelling Retreat Master (S)",
+  "mFilterFindName": "Shelling Retreat Master (S)"
+ },
+ {
+  "i": 1185,
+  "mListText": "Shelling Retreat Master (M)",
+  "mFilterFindName": "Shelling Retreat Master (M)"
+ },
+ {
+  "i": 1186,
+  "mListText": "Shelling Retreat Master (L)",
+  "mFilterFindName": "Shelling Retreat Master (L)"
+ },
+ {
+  "i": 1187,
+  "mListText": "Kinsect Stamina Recovery (S)",
+  "mFilterFindName": "Kinsect Stamina Recovery (S)"
+ },
+ {
+  "i": 1188,
+  "mListText": "Kinsect Stamina Recovery (M)",
+  "mFilterFindName": "Kinsect Stamina Recovery (M)"
+ },
+ {
+  "i": 1189,
+  "mListText": "Kinsect Stamina Recovery (L)",
+  "mFilterFindName": "Kinsect Stamina Recovery (L)"
+ },
+ {
+  "i": 1190,
+  "mListText": "七夕祭衝突P+%d",
+  "mFilterFindName": "七夕祭衝突P"
+ },
+ {
+  "i": 1191,
+  "mListText": "戦国の覇者+%d",
+  "mFilterFindName": "戦国の覇者"
+ },
+ {
+  "i": 1192,
+  "mListText": "一騎当千の力+%d",
+  "mFilterFindName": "一騎当千の力"
+ },
+ {
+  "i": 1193,
+  "mListText": "一騎当千の加護+%d",
+  "mFilterFindName": "一騎当千の加護"
+ },
+ {
+  "i": 1194,
+  "mListText": "対炎王龍+%d",
+  "mFilterFindName": "対炎王龍"
+ },
+ {
+  "i": 1195,
+  "mListText": "耐炎王龍+%d",
+  "mFilterFindName": "耐炎王龍"
+ },
+ {
+  "i": 1196,
+  "mListText": "Spread Power Shot Boost (S)",
+  "mFilterFindName": "Spread Power Shot Boost (S)"
+ },
+ {
+  "i": 1197,
+  "mListText": "Spread Power Shot Boost (M)",
+  "mFilterFindName": "Spread Power Shot Boost (M)"
+ },
+ {
+  "i": 1198,
+  "mListText": "Spread Power Shot Boost (L)",
+  "mFilterFindName": "Spread Power Shot Boost (L)"
+ },
+ {
+  "i": 1199,
+  "mListText": "Flying Power Shot Boost (S)",
+  "mFilterFindName": "Flying Power Shot Boost (S)"
+ },
+ {
+  "i": 1200,
+  "mListText": "Flying Power Shot Boost (M)",
+  "mFilterFindName": "Flying Power Shot Boost (M)"
+ },
+ {
+  "i": 1201,
+  "mListText": "Flying Power Shot Boost (L)",
+  "mFilterFindName": "Flying Power Shot Boost (L)"
+ },
+ {
+  "i": 1202,
+  "mListText": "Heaven Shot Boost (S)",
+  "mFilterFindName": "Heaven Shot Boost (S)"
+ },
+ {
+  "i": 1203,
+  "mListText": "Heaven Shot Boost (M)",
+  "mFilterFindName": "Heaven Shot Boost (M)"
+ },
+ {
+  "i": 1204,
+  "mListText": "Heaven Shot Boost (L)",
+  "mFilterFindName": "Heaven Shot Boost (L)"
+ },
+ {
+  "i": 1205,
+  "mListText": "Supreme Orb Bow Charge (S)",
+  "mFilterFindName": "Supreme Orb Bow Charge (S)"
+ },
+ {
+  "i": 1206,
+  "mListText": "Supreme Orb Bow Charge (M)",
+  "mFilterFindName": "Supreme Orb Bow Charge (M)"
+ },
+ {
+  "i": 1207,
+  "mListText": "Supreme Orb Bow Charge (L)",
+  "mFilterFindName": "Supreme Orb Bow Charge (L)"
+ },
+ {
+  "i": 1208,
+  "mListText": "Supreme Orb Bow Master (S)",
+  "mFilterFindName": "Supreme Orb Bow Master (S)"
+ },
+ {
+  "i": 1209,
+  "mListText": "Supreme Orb Bow Master (M)",
+  "mFilterFindName": "Supreme Orb Bow Master (M)"
+ },
+ {
+  "i": 1210,
+  "mListText": "Supreme Orb Bow Master (L)",
+  "mFilterFindName": "Supreme Orb Bow Master (L)"
+ },
+ {
+  "i": 1211,
+  "mListText": "Swift Power Shot (S)",
+  "mFilterFindName": "Swift Power Shot (S)"
+ },
+ {
+  "i": 1212,
+  "mListText": "Swift Power Shot (M)",
+  "mFilterFindName": "Swift Power Shot (M)"
+ },
+ {
+  "i": 1213,
+  "mListText": "Swift Power Shot (L)",
+  "mFilterFindName": "Swift Power Shot (L)"
+ },
+ {
+  "i": 1214,
+  "mListText": "夏恋祭衝突P+%d",
+  "mFilterFindName": "夏恋祭衝突P"
+ },
+ {
+  "i": 1215,
+  "mListText": "拳を極めし者+%d",
+  "mFilterFindName": "拳を極めし者"
+ },
+ {
+  "i": 1216,
+  "mListText": "無の拳の力+%d",
+  "mFilterFindName": "無の拳の力"
+ },
+ {
+  "i": 1217,
+  "mListText": "無の拳の加護+%d",
+  "mFilterFindName": "無の拳の加護"
+ },
+ {
+  "i": 1218,
+  "mListText": "対黒冠龍+%d",
+  "mFilterFindName": "対黒冠龍"
+ },
+ {
+  "i": 1219,
+  "mListText": "耐黒冠龍+%d",
+  "mFilterFindName": "耐黒冠龍"
+ },
+ {
+  "i": 1220,
+  "mListText": "運+%d",
+  "mFilterFindName": "運"
+ },
+ {
+  "i": 1221,
+  "mListText": "Superior Earplugs (Super) (Long Sword/Heavy Bowgun)",
+  "mFilterFindName": "Superior Earplugs (Super) (Long Sword/Heavy Bowgun)"
+ },
+ {
+  "i": 1222,
+  "mListText": "第11回衝突P+%d",
+  "mFilterFindName": "第11回衝突P"
+ },
+ {
+  "i": 1223,
+  "mListText": "対魔力+%d",
+  "mFilterFindName": "対魔力"
+ },
+ {
+  "i": 1224,
+  "mListText": "耐天晶龍+%d",
+  "mFilterFindName": "耐天晶龍"
+ },
+ {
+  "i": 1225,
+  "mListText": "激雷攻撃+%d",
+  "mFilterFindName": "激雷攻撃"
+ },
+ {
+  "i": 1226,
+  "mListText": "水霧攻撃+%d",
+  "mFilterFindName": "水霧攻撃"
+ },
+ {
+  "i": 1227,
+  "mListText": "輝鎚竜杯狩猟祭フラッグ+%d",
+  "mFilterFindName": "輝鎚竜杯狩猟祭フラッグ"
+ },
+ {
+  "i": 1228,
+  "mListText": "第9回衝突P+%d",
+  "mFilterFindName": "第9回衝突P"
+ },
+ {
+  "i": 1229,
+  "mListText": "鬼滅の恩寵+%d",
+  "mFilterFindName": "鬼滅の恩寵"
+ },
+ {
+  "i": 1230,
+  "mListText": "鬼滅の力+%d",
+  "mFilterFindName": "鬼滅の力"
+ },
+ {
+  "i": 1231,
+  "mListText": "鬼滅の加護+%d",
+  "mFilterFindName": "鬼滅の加護"
+ },
+ {
+  "i": 1232,
+  "mListText": "対覇竜+%d",
+  "mFilterFindName": "対覇竜"
+ },
+ {
+  "i": 1233,
+  "mListText": "耐覇竜+%d",
+  "mFilterFindName": "耐覇竜"
+ },
+ {
+  "i": 1234,
+  "mListText": "Auto-Play Defense (S)",
+  "mFilterFindName": "Auto-Play Defense (S)"
+ },
+ {
+  "i": 1235,
+  "mListText": "Auto-Play Defense (M)",
+  "mFilterFindName": "Auto-Play Defense (M)"
+ },
+ {
+  "i": 1236,
+  "mListText": "Auto-Play Defense (L)",
+  "mFilterFindName": "Auto-Play Defense (L)"
+ },
+ {
+  "i": 1237,
+  "mListText": "Near-Death Regeneration (S)",
+  "mFilterFindName": "Near-Death Regeneration (S)"
+ },
+ {
+  "i": 1238,
+  "mListText": "Near-Death Regeneration (M)",
+  "mFilterFindName": "Near-Death Regeneration (M)"
+ },
+ {
+  "i": 1239,
+  "mListText": "Near-Death Regeneration (L)",
+  "mFilterFindName": "Near-Death Regeneration (L)"
+ },
+ {
+  "i": 1240,
+  "mListText": "Resuscitation (S)",
+  "mFilterFindName": "Resuscitation (S)"
+ },
+ {
+  "i": 1241,
+  "mListText": "Resuscitation (M)",
+  "mFilterFindName": "Resuscitation (M)"
+ },
+ {
+  "i": 1242,
+  "mListText": "Resuscitation (L)",
+  "mFilterFindName": "Resuscitation (L)"
+ },
+ {
+  "i": 1243,
+  "mListText": "Martial Art P Thrift (S)",
+  "mFilterFindName": "Martial Art P Thrift (S)"
+ },
+ {
+  "i": 1244,
+  "mListText": "Martial Art P Thrift (M)",
+  "mFilterFindName": "Martial Art P Thrift (M)"
+ },
+ {
+  "i": 1245,
+  "mListText": "Martial Art P Thrift (L)",
+  "mFilterFindName": "Martial Art P Thrift (L)"
+ },
+ {
+  "i": 1246,
+  "mListText": "Crisis Martial Power (S)",
+  "mFilterFindName": "Crisis Martial Power (S)"
+ },
+ {
+  "i": 1247,
+  "mListText": "Crisis Martial Power (M)",
+  "mFilterFindName": "Crisis Martial Power (M)"
+ },
+ {
+  "i": 1248,
+  "mListText": "Crisis Martial Power (L)",
+  "mFilterFindName": "Crisis Martial Power (L)"
+ },
+ {
+  "i": 1249,
+  "mListText": "Intensive Care (S)",
+  "mFilterFindName": "Intensive Care (S)"
+ },
+ {
+  "i": 1250,
+  "mListText": "Intensive Care (M)",
+  "mFilterFindName": "Intensive Care (M)"
+ },
+ {
+  "i": 1251,
+  "mListText": "Intensive Care (L)",
+  "mFilterFindName": "Intensive Care (L)"
+ },
+ {
+  "i": 1252,
+  "mListText": "地殻調査+%d",
+  "mFilterFindName": "地殻調査"
+ },
+ {
+  "i": 1253,
+  "mListText": "幻界深域の力+%d",
+  "mFilterFindName": "幻界深域の力"
+ },
+ {
+  "i": 1254,
+  "mListText": "幻界深域の加護+%d",
+  "mFilterFindName": "幻界深域の加護"
+ },
+ {
+  "i": 1255,
+  "mListText": "地殻攻撃+%d",
+  "mFilterFindName": "地殻攻撃"
+ },
+ {
+  "i": 1256,
+  "mListText": "地殻防御+%d",
+  "mFilterFindName": "地殻防御"
+ },
+ {
+  "i": 1257,
+  "mListText": "第9回衝突戦の力+%d",
+  "mFilterFindName": "第9回衝突戦の力"
+ },
+ {
+  "i": 1258,
+  "mListText": "対雷狐竜+%d",
+  "mFilterFindName": "対雷狐竜"
+ },
+ {
+  "i": 1259,
+  "mListText": "耐雷狐竜+%d",
+  "mFilterFindName": "耐雷狐竜"
+ },
+ {
+  "i": 1260,
+  "mListText": "対兇暴竜+%d",
+  "mFilterFindName": "対兇暴竜"
+ },
+ {
+  "i": 1261,
+  "mListText": "耐兇暴竜+%d",
+  "mFilterFindName": "耐兇暴竜"
+ },
+ {
+  "i": 1262,
+  "mListText": "鬼滅の強撃+%d％",
+  "mFilterFindName": "鬼滅の強撃"
+ },
+ {
+  "i": 1263,
+  "mListText": "幻界深域の強撃+%d％",
+  "mFilterFindName": "幻界深域の強撃"
+ },
+ {
+  "i": 1264,
+  "mListText": "Supreme Orb Blast Axe Charge (S)",
+  "mFilterFindName": "Supreme Orb Blast Axe Charge (S)"
+ },
+ {
+  "i": 1265,
+  "mListText": "Supreme Orb Blast Axe Charge (M)",
+  "mFilterFindName": "Supreme Orb Blast Axe Charge (M)"
+ },
+ {
+  "i": 1266,
+  "mListText": "Supreme Orb Blast Axe Charge (L)",
+  "mFilterFindName": "Supreme Orb Blast Axe Charge (L)"
+ },
+ {
+  "i": 1267,
+  "mListText": "Supreme Orb Blast Axe Master (S)",
+  "mFilterFindName": "Supreme Orb Blast Axe Master (S)"
+ },
+ {
+  "i": 1268,
+  "mListText": "Supreme Orb Blast Axe Master (M)",
+  "mFilterFindName": "Supreme Orb Blast Axe Master (M)"
+ },
+ {
+  "i": 1269,
+  "mListText": "Supreme Orb Blast Axe Master (L)",
+  "mFilterFindName": "Supreme Orb Blast Axe Master (L)"
+ },
+ {
+  "i": 1270,
+  "mListText": "Supreme Orb Blast Axe Taming (S)",
+  "mFilterFindName": "Supreme Orb Blast Axe Taming (S)"
+ },
+ {
+  "i": 1271,
+  "mListText": "Supreme Orb Blast Axe Taming (M)",
+  "mFilterFindName": "Supreme Orb Blast Axe Taming (M)"
+ },
+ {
+  "i": 1272,
+  "mListText": "Supreme Orb Blast Axe Taming (L)",
+  "mFilterFindName": "Supreme Orb Blast Axe Taming (L)"
+ },
+ {
+  "i": 1273,
+  "mListText": "Aerial Dash Slash Secret",
+  "mFilterFindName": "Aerial Dash Slash Secret"
+ },
+ {
+  "i": 1274,
+  "mListText": "Ancient Stone Power [HR360]",
+  "mFilterFindName": "Ancient Stone Power [HR360]"
+ },
+ {
+  "i": 1275,
+  "mListText": "Elixir Art (S)",
+  "mFilterFindName": "Elixir Art (S)"
+ },
+ {
+  "i": 1276,
+  "mListText": "Elixir Art (M)",
+  "mFilterFindName": "Elixir Art (M)"
+ },
+ {
+  "i": 1277,
+  "mListText": "Elixir Art (L)",
+  "mFilterFindName": "Elixir Art (L)"
+ },
+ {
+  "i": 1278,
+  "mListText": "Revival Recovery: Martial (S)",
+  "mFilterFindName": "Revival Recovery: Martial (S)"
+ },
+ {
+  "i": 1279,
+  "mListText": "Revival Recovery: Martial (M)",
+  "mFilterFindName": "Revival Recovery: Martial (M)"
+ },
+ {
+  "i": 1280,
+  "mListText": "Revival Recovery: Martial (L)",
+  "mFilterFindName": "Revival Recovery: Martial (L)"
+ },
+ {
+  "i": 1281,
+  "mListText": "Revival Dodge (S)",
+  "mFilterFindName": "Revival Dodge (S)"
+ },
+ {
+  "i": 1282,
+  "mListText": "Revival Dodge (M)",
+  "mFilterFindName": "Revival Dodge (M)"
+ },
+ {
+  "i": 1283,
+  "mListText": "Revival Dodge (L)",
+  "mFilterFindName": "Revival Dodge (L)"
+ },
+ {
+  "i": 1284,
+  "mListText": "Spartan Training (S)",
+  "mFilterFindName": "Spartan Training (S)"
+ },
+ {
+  "i": 1285,
+  "mListText": "Spartan Training (M)",
+  "mFilterFindName": "Spartan Training (M)"
+ },
+ {
+  "i": 1286,
+  "mListText": "Spartan Training (L)",
+  "mFilterFindName": "Spartan Training (L)"
+ },
+ {
+  "i": 1287,
+  "mListText": "Devoted Support (S)",
+  "mFilterFindName": "Devoted Support (S)"
+ },
+ {
+  "i": 1288,
+  "mListText": "Devoted Support (M)",
+  "mFilterFindName": "Devoted Support (M)"
+ },
+ {
+  "i": 1289,
+  "mListText": "Devoted Support (L)",
+  "mFilterFindName": "Devoted Support (L)"
+ },
+ {
+  "i": 1290,
+  "mListText": "Offensive Iron Wall (S)",
+  "mFilterFindName": "Offensive Iron Wall (S)"
+ },
+ {
+  "i": 1291,
+  "mListText": "Offensive Iron Wall (M)",
+  "mFilterFindName": "Offensive Iron Wall (M)"
+ },
+ {
+  "i": 1292,
+  "mListText": "Offensive Iron Wall (L)",
+  "mFilterFindName": "Offensive Iron Wall (L)"
+ },
+ {
+  "i": 1293,
+  "mListText": "対天晶龍+%d",
+  "mFilterFindName": "対天晶龍"
+ },
+ {
+  "i": 1294,
+  "mListText": "第10回衝突P+%d",
+  "mFilterFindName": "第10回衝突P"
+ },
+ {
+  "i": 1295,
+  "mListText": "激雷調査+%d",
+  "mFilterFindName": "激雷調査"
+ },
+ {
+  "i": 1296,
+  "mListText": "激雷防御+%d",
+  "mFilterFindName": "激雷防御"
+ },
+ {
+  "i": 1297,
+  "mListText": "黄金律+%d",
+  "mFilterFindName": "黄金律"
+ },
+ {
+  "i": 1298,
+  "mListText": "魔力放出+%d",
+  "mFilterFindName": "魔力放出"
+ },
+ {
+  "i": 1299,
+  "mListText": "武の祝福+%d％",
+  "mFilterFindName": "武の祝福"
+ },
+ {
+  "i": 1300,
+  "mListText": "Superior Earplugs (Super) (Horn/Bow)",
+  "mFilterFindName": "Superior Earplugs (Super) (Horn/Bow)"
+ },
+ {
+  "i": 1301,
+  "mListText": "【登竜門】対覇竜+%d",
+  "mFilterFindName": "【登竜門】対覇竜"
+ },
+ {
+  "i": 1302,
+  "mListText": "【登竜門】耐覇竜+%d",
+  "mFilterFindName": "【登竜門】耐覇竜"
+ },
+ {
+  "i": 1303,
+  "mListText": "Heavy Bowgun Upgrade (S)",
+  "mFilterFindName": "Heavy Bowgun Upgrade (S)"
+ },
+ {
+  "i": 1304,
+  "mListText": "Heavy Bowgun Upgrade (M)",
+  "mFilterFindName": "Heavy Bowgun Upgrade (M)"
+ },
+ {
+  "i": 1305,
+  "mListText": "Heavy Bowgun Upgrade (L)",
+  "mFilterFindName": "Heavy Bowgun Upgrade (L)"
+ },
+ {
+  "i": 1306,
+  "mListText": "Supreme Orb Hunting Horn Charge (S)",
+  "mFilterFindName": "Supreme Orb Hunting Horn Charge (S)"
+ },
+ {
+  "i": 1307,
+  "mListText": "Supreme Orb Hunting Horn Charge (M)",
+  "mFilterFindName": "Supreme Orb Hunting Horn Charge (M)"
+ },
+ {
+  "i": 1308,
+  "mListText": "Supreme Orb Hunting Horn Charge (L)",
+  "mFilterFindName": "Supreme Orb Hunting Horn Charge (L)"
+ },
+ {
+  "i": 1309,
+  "mListText": "Wyvernsnipe Control",
+  "mFilterFindName": "Wyvernsnipe Control"
+ },
+ {
+  "i": 1310,
+  "mListText": "Full Burst Thrift",
+  "mFilterFindName": "Full Burst Thrift"
+ },
+ {
+  "i": 1311,
+  "mListText": "Thousand Thrusts (S)",
+  "mFilterFindName": "Thousand Thrusts (S)"
+ },
+ {
+  "i": 1312,
+  "mListText": "Thousand Thrusts (M)",
+  "mFilterFindName": "Thousand Thrusts (M)"
+ },
+ {
+  "i": 1313,
+  "mListText": "Thousand Thrusts (L)",
+  "mFilterFindName": "Thousand Thrusts (L)"
+ },
+ {
+  "i": 1314,
+  "mListText": "Switch Axe Morph Follow-up (S)",
+  "mFilterFindName": "Switch Axe Morph Follow-up (S)"
+ },
+ {
+  "i": 1315,
+  "mListText": "Switch Axe Morph Follow-up (M)",
+  "mFilterFindName": "Switch Axe Morph Follow-up (M)"
+ },
+ {
+  "i": 1316,
+  "mListText": "Switch Axe Morph Follow-up (L)",
+  "mFilterFindName": "Switch Axe Morph Follow-up (L)"
+ },
+ {
+  "i": 1317,
+  "mListText": "Charged Double Slash Master (S)",
+  "mFilterFindName": "Charged Double Slash Master (S)"
+ },
+ {
+  "i": 1318,
+  "mListText": "Charged Double Slash Master (M)",
+  "mFilterFindName": "Charged Double Slash Master (M)"
+ },
+ {
+  "i": 1319,
+  "mListText": "Charged Double Slash Master (L)",
+  "mFilterFindName": "Charged Double Slash Master (L)"
+ },
+ {
+  "i": 1320,
+  "mListText": "Guard Barrier Restoration (S)",
+  "mFilterFindName": "Guard Barrier Restoration (S)"
+ },
+ {
+  "i": 1321,
+  "mListText": "Guard Barrier Restoration (M)",
+  "mFilterFindName": "Guard Barrier Restoration (M)"
+ },
+ {
+  "i": 1322,
+  "mListText": "Guard Barrier Restoration (L)",
+  "mFilterFindName": "Guard Barrier Restoration (L)"
+ },
+ {
+  "i": 1323,
+  "mListText": "Parry Demon (S)",
+  "mFilterFindName": "Parry Demon (S)"
+ },
+ {
+  "i": 1324,
+  "mListText": "Parry Demon (M)",
+  "mFilterFindName": "Parry Demon (M)"
+ },
+ {
+  "i": 1325,
+  "mListText": "Parry Demon (L)",
+  "mFilterFindName": "Parry Demon (L)"
+ },
+ {
+  "i": 1326,
+  "mListText": "Demon Spirit Killing Art (S)",
+  "mFilterFindName": "Demon Spirit Killing Art (S)"
+ },
+ {
+  "i": 1327,
+  "mListText": "Demon Spirit Killing Art (M)",
+  "mFilterFindName": "Demon Spirit Killing Art (M)"
+ },
+ {
+  "i": 1328,
+  "mListText": "Demon Spirit Killing Art (L)",
+  "mFilterFindName": "Demon Spirit Killing Art (L)"
+ },
+ {
+  "i": 1329,
+  "mListText": "対輝鎚竜+%d",
+  "mFilterFindName": "対輝鎚竜"
+ },
+ {
+  "i": 1330,
+  "mListText": "耐輝鎚竜+%d",
+  "mFilterFindName": "耐輝鎚竜"
+ },
+ {
+  "i": 1331,
+  "mListText": "水霧調査+%d",
+  "mFilterFindName": "水霧調査"
+ },
+ {
+  "i": 1332,
+  "mListText": "水霧防御+%d",
+  "mFilterFindName": "水霧防御"
+ },
+ {
+  "i": 1333,
+  "mListText": "L.C.L.+%d",
+  "mFilterFindName": "L.C.L."
+ },
+ {
+  "i": 1334,
+  "mListText": "プラグ深度オーバー攻+%d",
+  "mFilterFindName": "プラグ深度オーバー攻"
+ },
+ {
+  "i": 1335,
+  "mListText": "プラグ深度オーバー防+%d",
+  "mFilterFindName": "プラグ深度オーバー防"
+ },
+ {
+  "i": 1336,
+  "mListText": "プラグ深度オーバー撃+%d％",
+  "mFilterFindName": "プラグ深度オーバー撃"
+ },
+ {
+  "i": 1337,
+  "mListText": "Heavy Bowgun Evasion",
+  "mFilterFindName": "Heavy Bowgun Evasion"
+ },
+ {
+  "i": 1338,
+  "mListText": "ドライブ蓄積術+%d％",
+  "mFilterFindName": "ドライブ蓄積術"
+ },
+ {
+  "i": 1339,
+  "mListText": "Offensive K.O. (S)",
+  "mFilterFindName": "Offensive K.O. (S)"
+ },
+ {
+  "i": 1340,
+  "mListText": "Offensive K.O. (M)",
+  "mFilterFindName": "Offensive K.O. (M)"
+ },
+ {
+  "i": 1341,
+  "mListText": "Offensive K.O. (L)",
+  "mFilterFindName": "Offensive K.O. (L)"
+ },
+ {
+  "i": 1342,
+  "mListText": "二連斬り蓄積術+%d％",
+  "mFilterFindName": "二連斬り蓄積術"
+ },
+ {
+  "i": 1343,
+  "mListText": "真属性解放蓄積術+%d％",
+  "mFilterFindName": "真属性解放蓄積術"
+ },
+ {
+  "i": 1344,
+  "mListText": "角砕き蓄積術+%d％",
+  "mFilterFindName": "角砕き蓄積術"
+ },
+ {
+  "i": 1345,
+  "mListText": "Heavy Guard Barrier (S)",
+  "mFilterFindName": "Heavy Guard Barrier (S)"
+ },
+ {
+  "i": 1346,
+  "mListText": "Heavy Guard Barrier (M)",
+  "mFilterFindName": "Heavy Guard Barrier (M)"
+ },
+ {
+  "i": 1347,
+  "mListText": "Heavy Guard Barrier (L)",
+  "mFilterFindName": "Heavy Guard Barrier (L)"
+ },
+ {
+  "i": 1348,
+  "mListText": "Great Sword Counter (S)",
+  "mFilterFindName": "Great Sword Counter (S)"
+ },
+ {
+  "i": 1349,
+  "mListText": "Great Sword Counter (M)",
+  "mFilterFindName": "Great Sword Counter (M)"
+ },
+ {
+  "i": 1350,
+  "mListText": "Great Sword Counter (L)",
+  "mFilterFindName": "Great Sword Counter (L)"
+ },
+ {
+  "i": 1351,
+  "mListText": "対陸海竜+%d",
+  "mFilterFindName": "対陸海竜"
+ },
+ {
+  "i": 1352,
+  "mListText": "耐陸海竜+%d",
+  "mFilterFindName": "耐陸海竜"
+ },
+ {
+  "i": 1353,
+  "mListText": "第12回衝突P+%d",
+  "mFilterFindName": "第12回衝突P"
+ },
+ {
+  "i": 1354,
+  "mListText": "陽炎調査+%d",
+  "mFilterFindName": "陽炎調査"
+ },
+ {
+  "i": 1355,
+  "mListText": "陽炎攻撃+%d",
+  "mFilterFindName": "陽炎攻撃"
+ },
+ {
+  "i": 1356,
+  "mListText": "陽炎防御+%d",
+  "mFilterFindName": "陽炎防御"
+ },
+ {
+  "i": 1357,
+  "mListText": "錬金術の恩寵+%d",
+  "mFilterFindName": "錬金術の恩寵"
+ },
+ {
+  "i": 1358,
+  "mListText": "錬金術の力+%d",
+  "mFilterFindName": "錬金術の力"
+ },
+ {
+  "i": 1359,
+  "mListText": "錬金術の加護+%d",
+  "mFilterFindName": "錬金術の加護"
+ },
+ {
+  "i": 1360,
+  "mListText": "錬金術の強撃+%d％",
+  "mFilterFindName": "錬金術の強撃"
+ },
+ {
+  "i": 1361,
+  "mListText": "Gunlance Taming (S)",
+  "mFilterFindName": "Gunlance Taming (S)"
+ },
+ {
+  "i": 1362,
+  "mListText": "Gunlance Taming (M)",
+  "mFilterFindName": "Gunlance Taming (M)"
+ },
+ {
+  "i": 1363,
+  "mListText": "Gunlance Taming (L)",
+  "mFilterFindName": "Gunlance Taming (L)"
+ },
+ {
+  "i": 1364,
+  "mListText": "おせち調査+%d",
+  "mFilterFindName": "おせち調査"
+ },
+ {
+  "i": 1365,
+  "mListText": "おせち攻撃+%d",
+  "mFilterFindName": "おせち攻撃"
+ },
+ {
+  "i": 1366,
+  "mListText": "おせち防御+%d",
+  "mFilterFindName": "おせち防御"
+ },
+ {
+  "i": 1367,
+  "mListText": "鬼武者の恩寵+%d",
+  "mFilterFindName": "鬼武者の恩寵"
+ },
+ {
+  "i": 1368,
+  "mListText": "鬼武者の力+%d",
+  "mFilterFindName": "鬼武者の力"
+ },
+ {
+  "i": 1369,
+  "mListText": "鬼武者の加護+%d",
+  "mFilterFindName": "鬼武者の加護"
+ },
+ {
+  "i": 1370,
+  "mListText": "鬼武者の強撃+%d％",
+  "mFilterFindName": "鬼武者の強撃"
+ },
+ {
+  "i": 1371,
+  "mListText": "新春の恩寵+%d",
+  "mFilterFindName": "新春の恩寵"
+ },
+ {
+  "i": 1372,
+  "mListText": "新春の力+%d",
+  "mFilterFindName": "新春の力"
+ },
+ {
+  "i": 1373,
+  "mListText": "新春の加護+%d",
+  "mFilterFindName": "新春の加護"
+ },
+ {
+  "i": 1374,
+  "mListText": "新春の強撃+%d％",
+  "mFilterFindName": "新春の強撃"
+ },
+ {
+  "i": 1375,
+  "mListText": "Focused Rest (S)",
+  "mFilterFindName": "Focused Rest (S)"
+ },
+ {
+  "i": 1376,
+  "mListText": "Focused Rest (M)",
+  "mFilterFindName": "Focused Rest (M)"
+ },
+ {
+  "i": 1377,
+  "mListText": "Focused Rest (L)",
+  "mFilterFindName": "Focused Rest (L)"
+ },
+ {
+  "i": 1378,
+  "mListText": "Evade Boost: Poison",
+  "mFilterFindName": "Evade Boost: Poison"
+ },
+ {
+  "i": 1379,
+  "mListText": "Evade Boost: Paralysis",
+  "mFilterFindName": "Evade Boost: Paralysis"
+ },
+ {
+  "i": 1380,
+  "mListText": "Evade Boost: Sleep",
+  "mFilterFindName": "Evade Boost: Sleep"
+ },
+ {
+  "i": 1381,
+  "mListText": "Evade Boost: Stun",
+  "mFilterFindName": "Evade Boost: Stun"
+ },
+ {
+  "i": 1382,
+  "mListText": "Evade Boost: Fireblight",
+  "mFilterFindName": "Evade Boost: Fireblight"
+ },
+ {
+  "i": 1383,
+  "mListText": "Evade Boost: Waterblight",
+  "mFilterFindName": "Evade Boost: Waterblight"
+ },
+ {
+  "i": 1384,
+  "mListText": "Evade Boost: Thunderblight",
+  "mFilterFindName": "Evade Boost: Thunderblight"
+ },
+ {
+  "i": 1385,
+  "mListText": "Evade Boost: Snowman",
+  "mFilterFindName": "Evade Boost: Snowman"
+ },
+ {
+  "i": 1386,
+  "mListText": "Evade Boost: Mud",
+  "mFilterFindName": "Evade Boost: Mud"
+ },
+ {
+  "i": 1387,
+  "mListText": "Evade Boost: Blastblight",
+  "mFilterFindName": "Evade Boost: Blastblight"
+ },
+ {
+  "i": 1388,
+  "mListText": "Evade Boost: Bleeding",
+  "mFilterFindName": "Evade Boost: Bleeding"
+ },
+ {
+  "i": 1389,
+  "mListText": "Evade Boost: Bubble",
+  "mFilterFindName": "Evade Boost: Bubble"
+ },
+ {
+  "i": 1390,
+  "mListText": "Evade Boost: Damage Taken Up",
+  "mFilterFindName": "Evade Boost: Damage Taken Up"
+ },
+ {
+  "i": 1391,
+  "mListText": "Super Brutal Strike (S)",
+  "mFilterFindName": "Super Brutal Strike (S)"
+ },
+ {
+  "i": 1392,
+  "mListText": "Super Brutal Strike (M)",
+  "mFilterFindName": "Super Brutal Strike (M)"
+ },
+ {
+  "i": 1393,
+  "mListText": "Super Brutal Strike (L)",
+  "mFilterFindName": "Super Brutal Strike (L)"
+ },
+ {
+  "i": 1394,
+  "mListText": "Encore Evasion (S)",
+  "mFilterFindName": "Encore Evasion (S)"
+ },
+ {
+  "i": 1395,
+  "mListText": "Encore Evasion (M)",
+  "mFilterFindName": "Encore Evasion (M)"
+ },
+ {
+  "i": 1396,
+  "mListText": "Encore Evasion (L)",
+  "mFilterFindName": "Encore Evasion (L)"
+ },
+ {
+  "i": 1397,
+  "mListText": "Overheal: Martial (S)",
+  "mFilterFindName": "Overheal: Martial (S)"
+ },
+ {
+  "i": 1398,
+  "mListText": "Overheal: Martial (M)",
+  "mFilterFindName": "Overheal: Martial (M)"
+ },
+ {
+  "i": 1399,
+  "mListText": "Overheal: Martial (L)",
+  "mFilterFindName": "Overheal: Martial (L)"
+ },
+ {
+  "i": 1400,
+  "mListText": "Overheal Boost: Reduction (S)",
+  "mFilterFindName": "Overheal Boost: Reduction (S)"
+ },
+ {
+  "i": 1401,
+  "mListText": "Overheal Boost: Reduction (M)",
+  "mFilterFindName": "Overheal Boost: Reduction (M)"
+ },
+ {
+  "i": 1402,
+  "mListText": "Overheal Boost: Reduction (L)",
+  "mFilterFindName": "Overheal Boost: Reduction (L)"
+ },
+ {
+  "i": 1403,
+  "mListText": "Break Booster (S)",
+  "mFilterFindName": "Break Booster (S)"
+ },
+ {
+  "i": 1404,
+  "mListText": "Break Booster (M)",
+  "mFilterFindName": "Break Booster (M)"
+ },
+ {
+  "i": 1405,
+  "mListText": "Break Booster (L)",
+  "mFilterFindName": "Break Booster (L)"
+ },
+ {
+  "i": 1406,
+  "mListText": "対激昂金獅子+%d",
+  "mFilterFindName": "対激昂金獅子"
+ },
+ {
+  "i": 1407,
+  "mListText": "耐激昂金獅子+%d",
+  "mFilterFindName": "耐激昂金獅子"
+ },
+ {
+  "i": 1408,
+  "mListText": "第13回衝突P+%d",
+  "mFilterFindName": "第13回衝突P"
+ },
+ {
+  "i": 1409,
+  "mListText": "アイテムレーダー+%d",
+  "mFilterFindName": "アイテムレーダー"
+ },
+ {
+  "i": 1410,
+  "mListText": "パワードライブ+%d",
+  "mFilterFindName": "パワードライブ"
+ },
+ {
+  "i": 1411,
+  "mListText": "ショックアブソーバー+%d",
+  "mFilterFindName": "ショックアブソーバー"
+ },
+ {
+  "i": 1412,
+  "mListText": "ウェポンドライブ+%d％",
+  "mFilterFindName": "ウェポンドライブ"
+ },
+ {
+  "i": 1413,
+  "mListText": "Super Dash Start (S)",
+  "mFilterFindName": "Super Dash Start (S)"
+ },
+ {
+  "i": 1414,
+  "mListText": "Super Dash Start (M)",
+  "mFilterFindName": "Super Dash Start (M)"
+ },
+ {
+  "i": 1415,
+  "mListText": "Super Dash Start (L)",
+  "mFilterFindName": "Super Dash Start (L)"
+ },
+ {
+  "i": 1416,
+  "mListText": "Training Boost: Reduction (S)",
+  "mFilterFindName": "Training Boost: Reduction (S)"
+ },
+ {
+  "i": 1417,
+  "mListText": "Training Boost: Reduction (M)",
+  "mFilterFindName": "Training Boost: Reduction (M)"
+ },
+ {
+  "i": 1418,
+  "mListText": "Training Boost: Reduction (L)",
+  "mFilterFindName": "Training Boost: Reduction (L)"
+ },
+ {
+  "i": 1419,
+  "mListText": "Support Boost: Reduction (S)",
+  "mFilterFindName": "Support Boost: Reduction (S)"
+ },
+ {
+  "i": 1420,
+  "mListText": "Support Boost: Reduction (M)",
+  "mFilterFindName": "Support Boost: Reduction (M)"
+ },
+ {
+  "i": 1421,
+  "mListText": "Support Boost: Reduction (L)",
+  "mFilterFindName": "Support Boost: Reduction (L)"
+ },
+ {
+  "i": 1422,
+  "mListText": "Life Extension Boost: Martial (S)",
+  "mFilterFindName": "Life Extension Boost: Martial (S)"
+ },
+ {
+  "i": 1423,
+  "mListText": "Life Extension Boost: Martial (M)",
+  "mFilterFindName": "Life Extension Boost: Martial (M)"
+ },
+ {
+  "i": 1424,
+  "mListText": "Life Extension Boost: Martial (L)",
+  "mFilterFindName": "Life Extension Boost: Martial (L)"
+ },
+ {
+  "i": 1425,
+  "mListText": "Body Hardening Boost: Martial (S)",
+  "mFilterFindName": "Body Hardening Boost: Martial (S)"
+ },
+ {
+  "i": 1426,
+  "mListText": "Body Hardening Boost: Martial (M)",
+  "mFilterFindName": "Body Hardening Boost: Martial (M)"
+ },
+ {
+  "i": 1427,
+  "mListText": "Body Hardening Boost: Martial (L)",
+  "mFilterFindName": "Body Hardening Boost: Martial (L)"
+ },
+ {
+  "i": 1428,
+  "mListText": "Over Martial Artist I: Max Martial (S)",
+  "mFilterFindName": "Over Martial Artist I: Max Martial (S)"
+ },
+ {
+  "i": 1429,
+  "mListText": "Over Martial Artist I: Max Martial (M)",
+  "mFilterFindName": "Over Martial Artist I: Max Martial (M)"
+ },
+ {
+  "i": 1430,
+  "mListText": "Over Martial Artist I: Max Martial (L)",
+  "mFilterFindName": "Over Martial Artist I: Max Martial (L)"
+ },
+ {
+  "i": 1431,
+  "mListText": "Over Martial Artist II: Max Martial (S)",
+  "mFilterFindName": "Over Martial Artist II: Max Martial (S)"
+ },
+ {
+  "i": 1432,
+  "mListText": "Over Martial Artist II: Max Martial (M)",
+  "mFilterFindName": "Over Martial Artist II: Max Martial (M)"
+ },
+ {
+  "i": 1433,
+  "mListText": "Over Martial Artist II: Max Martial (L)",
+  "mFilterFindName": "Over Martial Artist II: Max Martial (L)"
+ },
+ {
+  "i": 1434,
+  "mListText": "Double Hunt: Ice (S)",
+  "mFilterFindName": "Double Hunt: Ice (S)"
+ },
+ {
+  "i": 1435,
+  "mListText": "Double Hunt: Ice (M)",
+  "mFilterFindName": "Double Hunt: Ice (M)"
+ },
+ {
+  "i": 1436,
+  "mListText": "Double Hunt: Ice (L)",
+  "mFilterFindName": "Double Hunt: Ice (L)"
+ },
+ {
+  "i": 1437,
+  "mListText": "Double Hunt: Fire (S)",
+  "mFilterFindName": "Double Hunt: Fire (S)"
+ },
+ {
+  "i": 1438,
+  "mListText": "Double Hunt: Fire (M)",
+  "mFilterFindName": "Double Hunt: Fire (M)"
+ },
+ {
+  "i": 1439,
+  "mListText": "Double Hunt: Fire (L)",
+  "mFilterFindName": "Double Hunt: Fire (L)"
+ },
+ {
+  "i": 1440,
+  "mListText": "Double Hunt: Water (S)",
+  "mFilterFindName": "Double Hunt: Water (S)"
+ },
+ {
+  "i": 1441,
+  "mListText": "Double Hunt: Water (M)",
+  "mFilterFindName": "Double Hunt: Water (M)"
+ },
+ {
+  "i": 1442,
+  "mListText": "Double Hunt: Water (L)",
+  "mFilterFindName": "Double Hunt: Water (L)"
+ },
+ {
+  "i": 1443,
+  "mListText": "Double Hunt: Thunder (S)",
+  "mFilterFindName": "Double Hunt: Thunder (S)"
+ },
+ {
+  "i": 1444,
+  "mListText": "Double Hunt: Thunder (M)",
+  "mFilterFindName": "Double Hunt: Thunder (M)"
+ },
+ {
+  "i": 1445,
+  "mListText": "Double Hunt: Thunder (L)",
+  "mFilterFindName": "Double Hunt: Thunder (L)"
+ },
+ {
+  "i": 1446,
+  "mListText": "Double Hunt: Earth (S)",
+  "mFilterFindName": "Double Hunt: Earth (S)"
+ },
+ {
+  "i": 1447,
+  "mListText": "Double Hunt: Earth (M)",
+  "mFilterFindName": "Double Hunt: Earth (M)"
+ },
+ {
+  "i": 1448,
+  "mListText": "Double Hunt: Earth (L)",
+  "mFilterFindName": "Double Hunt: Earth (L)"
+ },
+ {
+  "i": 1449,
+  "mListText": "Double Hunt Prep: Ice (S)",
+  "mFilterFindName": "Double Hunt Prep: Ice (S)"
+ },
+ {
+  "i": 1450,
+  "mListText": "Double Hunt Prep: Ice (M)",
+  "mFilterFindName": "Double Hunt Prep: Ice (M)"
+ },
+ {
+  "i": 1451,
+  "mListText": "Double Hunt Prep: Ice (L)",
+  "mFilterFindName": "Double Hunt Prep: Ice (L)"
+ },
+ {
+  "i": 1452,
+  "mListText": "Double Hunt Prep: Fire (S)",
+  "mFilterFindName": "Double Hunt Prep: Fire (S)"
+ },
+ {
+  "i": 1453,
+  "mListText": "Double Hunt Prep: Fire (M)",
+  "mFilterFindName": "Double Hunt Prep: Fire (M)"
+ },
+ {
+  "i": 1454,
+  "mListText": "Double Hunt Prep: Fire (L)",
+  "mFilterFindName": "Double Hunt Prep: Fire (L)"
+ },
+ {
+  "i": 1455,
+  "mListText": "Double Hunt Prep: Water (S)",
+  "mFilterFindName": "Double Hunt Prep: Water (S)"
+ },
+ {
+  "i": 1456,
+  "mListText": "Double Hunt Prep: Water (M)",
+  "mFilterFindName": "Double Hunt Prep: Water (M)"
+ },
+ {
+  "i": 1457,
+  "mListText": "Double Hunt Prep: Water (L)",
+  "mFilterFindName": "Double Hunt Prep: Water (L)"
+ },
+ {
+  "i": 1458,
+  "mListText": "Double Hunt Prep: Thunder (S)",
+  "mFilterFindName": "Double Hunt Prep: Thunder (S)"
+ },
+ {
+  "i": 1459,
+  "mListText": "Double Hunt Prep: Thunder (M)",
+  "mFilterFindName": "Double Hunt Prep: Thunder (M)"
+ },
+ {
+  "i": 1460,
+  "mListText": "Double Hunt Prep: Thunder (L)",
+  "mFilterFindName": "Double Hunt Prep: Thunder (L)"
+ },
+ {
+  "i": 1461,
+  "mListText": "Double Hunt Prep: Earth (S)",
+  "mFilterFindName": "Double Hunt Prep: Earth (S)"
+ },
+ {
+  "i": 1462,
+  "mListText": "Double Hunt Prep: Earth (M)",
+  "mFilterFindName": "Double Hunt Prep: Earth (M)"
+ },
+ {
+  "i": 1463,
+  "mListText": "Double Hunt Prep: Earth (L)",
+  "mFilterFindName": "Double Hunt Prep: Earth (L)"
+ },
+ {
+  "i": 1464,
+  "mListText": "継承者の善徳+%d",
+  "mFilterFindName": "継承者の善徳"
+ },
+ {
+  "i": 1465,
+  "mListText": "歴代ライダーの力+%d",
+  "mFilterFindName": "歴代ライダーの力"
+ },
+ {
+  "i": 1466,
+  "mListText": "歴代ライダーの加護+%d",
+  "mFilterFindName": "歴代ライダーの加護"
+ },
+ {
+  "i": 1467,
+  "mListText": "歴代ライダーの絶技+%d％",
+  "mFilterFindName": "歴代ライダーの絶技"
+ },
+ {
+  "i": 1468,
+  "mListText": "氷河調査+%d",
+  "mFilterFindName": "氷河調査"
+ },
+ {
+  "i": 1469,
+  "mListText": "氷河攻撃+%d",
+  "mFilterFindName": "氷河攻撃"
+ },
+ {
+  "i": 1470,
+  "mListText": "氷河防御+%d",
+  "mFilterFindName": "氷河防御"
+ },
+ {
+  "i": 1471,
+  "mListText": "麻痺攻撃減少+%d％",
+  "mFilterFindName": "麻痺攻撃減少"
+ },
+ {
+  "i": 1472,
+  "mListText": "Dual Blades Charge (S)",
+  "mFilterFindName": "Dual Blades Charge (S)"
+ },
+ {
+  "i": 1473,
+  "mListText": "Dual Blades Charge (M)",
+  "mFilterFindName": "Dual Blades Charge (M)"
+ },
+ {
+  "i": 1474,
+  "mListText": "Dual Blades Charge (L)",
+  "mFilterFindName": "Dual Blades Charge (L)"
+ },
+ {
+  "i": 1475,
+  "mListText": "Supreme Orb Dual Blades Charge (S)",
+  "mFilterFindName": "Supreme Orb Dual Blades Charge (S)"
+ },
+ {
+  "i": 1476,
+  "mListText": "Supreme Orb Dual Blades Charge (M)",
+  "mFilterFindName": "Supreme Orb Dual Blades Charge (M)"
+ },
+ {
+  "i": 1477,
+  "mListText": "Supreme Orb Dual Blades Charge (L)",
+  "mFilterFindName": "Supreme Orb Dual Blades Charge (L)"
+ },
+ {
+  "i": 1478,
+  "mListText": "Mighty True Demon Dance",
+  "mFilterFindName": "Mighty True Demon Dance"
+ },
+ {
+  "i": 1479,
+  "mListText": "Supreme Orb Blast Axe Secret (S)",
+  "mFilterFindName": "Supreme Orb Blast Axe Secret (S)"
+ },
+ {
+  "i": 1480,
+  "mListText": "Supreme Orb Blast Axe Secret (M)",
+  "mFilterFindName": "Supreme Orb Blast Axe Secret (M)"
+ },
+ {
+  "i": 1481,
+  "mListText": "Supreme Orb Blast Axe Secret (L)",
+  "mFilterFindName": "Supreme Orb Blast Axe Secret (L)"
+ },
+ {
+  "i": 1482,
+  "mListText": "Supreme Orb Bow Taming (S)",
+  "mFilterFindName": "Supreme Orb Bow Taming (S)"
+ },
+ {
+  "i": 1483,
+  "mListText": "Supreme Orb Bow Taming (M)",
+  "mFilterFindName": "Supreme Orb Bow Taming (M)"
+ },
+ {
+  "i": 1484,
+  "mListText": "Supreme Orb Bow Taming (L)",
+  "mFilterFindName": "Supreme Orb Bow Taming (L)"
+ },
+ {
+  "i": 1485,
+  "mListText": "Power Shot Combo",
+  "mFilterFindName": "Power Shot Combo"
+ },
+ {
+  "i": 1486,
+  "mListText": "Fast Strong Power Shot",
+  "mFilterFindName": "Fast Strong Power Shot"
+ },
+ {
+  "i": 1487,
+  "mListText": "Fast Strong Heaven Shot",
+  "mFilterFindName": "Fast Strong Heaven Shot"
+ },
+ {
+  "i": 1488,
+  "mListText": "Supreme Orb Bow Agile Master",
+  "mFilterFindName": "Supreme Orb Bow Agile Master"
+ },
+ {
+  "i": 1489,
+  "mListText": "Heaven Shot Power Up",
+  "mFilterFindName": "Heaven Shot Power Up"
+ },
+ {
+  "i": 1490,
+  "mListText": "天才ゲーマーMの直感+%d",
+  "mFilterFindName": "天才ゲーマーMの直感"
+ },
+ {
+  "i": 1491,
+  "mListText": "天才ゲーマーMの力+%d",
+  "mFilterFindName": "天才ゲーマーMの力"
+ },
+ {
+  "i": 1492,
+  "mListText": "天才ゲーマーMの加護+%d",
+  "mFilterFindName": "天才ゲーマーMの加護"
+ },
+ {
+  "i": 1493,
+  "mListText": "天才ゲーマーMの絶技+%d％",
+  "mFilterFindName": "天才ゲーマーMの絶技"
+ },
+ {
+  "i": 1494,
+  "mListText": "焦土調査+%d",
+  "mFilterFindName": "焦土調査"
+ },
+ {
+  "i": 1495,
+  "mListText": "焦土攻撃+%d",
+  "mFilterFindName": "焦土攻撃"
+ },
+ {
+  "i": 1496,
+  "mListText": "焦土防御+%d",
+  "mFilterFindName": "焦土防御"
+ },
+ {
+  "i": 1497,
+  "mListText": "対鞠水竜+%d",
+  "mFilterFindName": "対鞠水竜"
+ },
+ {
+  "i": 1498,
+  "mListText": "耐鞠水竜+%d",
+  "mFilterFindName": "耐鞠水竜"
+ },
+ {
+  "i": 1499,
+  "mListText": "第14回衝突P+%d",
+  "mFilterFindName": "第14回衝突P"
+ },
+ {
+  "i": 1500,
+  "mListText": "睡眠攻撃減少+%d％",
+  "mFilterFindName": "睡眠攻撃減少"
+ },
+ {
+  "i": 1501,
+  "mListText": "気絶攻撃減少+%d％",
+  "mFilterFindName": "気絶攻撃減少"
+ },
+ {
+  "i": 1502,
+  "mListText": "爆破やられ攻撃減少+%d％",
+  "mFilterFindName": "爆破やられ攻撃減少"
+ },
+ {
+  "i": 1503,
+  "mListText": "感染攻撃減少+%d％",
+  "mFilterFindName": "感染攻撃減少"
+ },
+ {
+  "i": 1504,
+  "mListText": "泡攻撃減少+%d％",
+  "mFilterFindName": "泡攻撃減少"
+ },
+ {
+  "i": 1505,
+  "mListText": "被ダメアップ攻撃減少+%d％",
+  "mFilterFindName": "被ダメアップ攻撃減少"
+ },
+ {
+  "i": 1506,
+  "mListText": "特異点の恩恵+%d",
+  "mFilterFindName": "特異点の恩恵"
+ },
+ {
+  "i": 1507,
+  "mListText": "特異点の力+%d",
+  "mFilterFindName": "特異点の力"
+ },
+ {
+  "i": 1508,
+  "mListText": "特異点の加護+%d",
+  "mFilterFindName": "特異点の加護"
+ },
+ {
+  "i": 1509,
+  "mListText": "特異点の絶技+%d％",
+  "mFilterFindName": "特異点の絶技"
+ },
+ {
+  "i": 1510,
+  "mListText": "支援者の恩寵+%d",
+  "mFilterFindName": "支援者の恩寵"
+ },
+ {
+  "i": 1511,
+  "mListText": "支援者の力+%d",
+  "mFilterFindName": "支援者の力"
+ },
+ {
+  "i": 1512,
+  "mListText": "支援者の加護+%d",
+  "mFilterFindName": "支援者の加護"
+ },
+ {
+  "i": 1513,
+  "mListText": "支援者の強撃+%d％",
+  "mFilterFindName": "支援者の強撃"
+ },
+ {
+  "i": 1514,
+  "mListText": "対噴戈竜+%d",
+  "mFilterFindName": "対噴戈竜"
+ },
+ {
+  "i": 1515,
+  "mListText": "耐噴戈竜+%d",
+  "mFilterFindName": "耐噴戈竜"
+ },
+ {
+  "i": 1516,
+  "mListText": "氷極地【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1517,
+  "mListText": "氷極地【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1518,
+  "mListText": "氷極地【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1519,
+  "mListText": "土極地【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1520,
+  "mListText": "土極地【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1521,
+  "mListText": "土極地【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1522,
+  "mListText": "雷極地【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1523,
+  "mListText": "雷極地【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1524,
+  "mListText": "雷極地【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1525,
+  "mListText": "橘月討伐P+%d",
+  "mFilterFindName": "橘月討伐P"
+ },
+ {
+  "i": 1526,
+  "mListText": "橘月の力+%d",
+  "mFilterFindName": "橘月の力"
+ },
+ {
+  "i": 1527,
+  "mListText": "橘月の加護+%d",
+  "mFilterFindName": "橘月の加護"
+ },
+ {
+  "i": 1528,
+  "mListText": "橘月の絶技+%d％",
+  "mFilterFindName": "橘月の絶技"
+ },
+ {
+  "i": 1529,
+  "mListText": "氷極地の絶技+%d％",
+  "mFilterFindName": "氷極地の絶技"
+ },
+ {
+  "i": 1530,
+  "mListText": "土極地の絶技+%d％",
+  "mFilterFindName": "土極地の絶技"
+ },
+ {
+  "i": 1531,
+  "mListText": "雷極地の絶技+%d％",
+  "mFilterFindName": "雷極地の絶技"
+ },
+ {
+  "i": 1532,
+  "mListText": "氷極地【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1533,
+  "mListText": "氷極地【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1534,
+  "mListText": "氷極地【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1535,
+  "mListText": "水極地【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1536,
+  "mListText": "水極地【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1537,
+  "mListText": "水極地【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1538,
+  "mListText": "水極地の絶技+%d％",
+  "mFilterFindName": "水極地の絶技"
+ },
+ {
+  "i": 1539,
+  "mListText": "火極地【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1540,
+  "mListText": "火極地【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1541,
+  "mListText": "火極地【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1542,
+  "mListText": "火極地の絶技+%d％",
+  "mFilterFindName": "火極地の絶技"
+ },
+ {
+  "i": 1543,
+  "mListText": "氷極地2【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地2【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1544,
+  "mListText": "氷極地2【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地2【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1545,
+  "mListText": "氷極地2【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地2【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1546,
+  "mListText": "氷極地2の絶技+%d％",
+  "mFilterFindName": "氷極地2の絶技"
+ },
+ {
+  "i": 1547,
+  "mListText": "土極地2【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地2【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1548,
+  "mListText": "土極地2【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地2【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1549,
+  "mListText": "土極地2【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地2【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1550,
+  "mListText": "土極地2の絶技+%d％",
+  "mFilterFindName": "土極地2の絶技"
+ },
+ {
+  "i": 1551,
+  "mListText": "雷極地2【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地2【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1552,
+  "mListText": "雷極地2【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地2【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1553,
+  "mListText": "雷極地2【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地2【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1554,
+  "mListText": "雷極地2の絶技+%d％",
+  "mFilterFindName": "雷極地2の絶技"
+ },
+ {
+  "i": 1555,
+  "mListText": "水極地2【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地2【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1556,
+  "mListText": "水極地2【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地2【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1557,
+  "mListText": "水極地2【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地2【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1558,
+  "mListText": "水極地2の絶技+%d％",
+  "mFilterFindName": "水極地2の絶技"
+ },
+ {
+  "i": 1559,
+  "mListText": "火極地2【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地2【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1560,
+  "mListText": "火極地2【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地2【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1561,
+  "mListText": "火極地2【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地2【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1562,
+  "mListText": "火極地2の絶技+%d％",
+  "mFilterFindName": "火極地2の絶技"
+ },
+ {
+  "i": 1563,
+  "mListText": "氷極地3【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地3【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1564,
+  "mListText": "氷極地3【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地3【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1565,
+  "mListText": "氷極地3【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地3【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1566,
+  "mListText": "氷極地3の絶技+%d％",
+  "mFilterFindName": "氷極地3の絶技"
+ },
+ {
+  "i": 1567,
+  "mListText": "土極地3【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地3【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1568,
+  "mListText": "土極地3【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地3【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1569,
+  "mListText": "土極地3【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地3【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1570,
+  "mListText": "土極地3の絶技+%d％",
+  "mFilterFindName": "土極地3の絶技"
+ },
+ {
+  "i": 1571,
+  "mListText": "雷極地3【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地3【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1572,
+  "mListText": "雷極地3【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地3【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1573,
+  "mListText": "雷極地3【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地3【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1574,
+  "mListText": "雷極地3の絶技+%d％",
+  "mFilterFindName": "雷極地3の絶技"
+ },
+ {
+  "i": 1575,
+  "mListText": "水極地3【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地3【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1576,
+  "mListText": "水極地3【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地3【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1577,
+  "mListText": "水極地3【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地3【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1578,
+  "mListText": "水極地3の絶技+%d％",
+  "mFilterFindName": "水極地3の絶技"
+ },
+ {
+  "i": 1579,
+  "mListText": "火極地3【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地3【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1580,
+  "mListText": "火極地3【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地3【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1581,
+  "mListText": "火極地3【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地3【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1582,
+  "mListText": "火極地3の絶技+%d％",
+  "mFilterFindName": "火極地3の絶技"
+ },
+ {
+  "i": 1583,
+  "mListText": "氷極地4【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地4【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1584,
+  "mListText": "氷極地4【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地4【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1585,
+  "mListText": "氷極地4【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地4【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1586,
+  "mListText": "氷極地4の絶技+%d％",
+  "mFilterFindName": "氷極地4の絶技"
+ },
+ {
+  "i": 1587,
+  "mListText": "土極地4【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地4【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1588,
+  "mListText": "土極地4【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地4【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1589,
+  "mListText": "土極地4【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地4【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1590,
+  "mListText": "土極地4の絶技+%d％",
+  "mFilterFindName": "土極地4の絶技"
+ },
+ {
+  "i": 1591,
+  "mListText": "雷極地4【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地4【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1592,
+  "mListText": "雷極地4【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地4【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1593,
+  "mListText": "雷極地4【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地4【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1594,
+  "mListText": "雷極地4の絶技+%d％",
+  "mFilterFindName": "雷極地4の絶技"
+ },
+ {
+  "i": 1595,
+  "mListText": "水極地4【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地4【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1596,
+  "mListText": "水極地4【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地4【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1597,
+  "mListText": "水極地4【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地4【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1598,
+  "mListText": "水極地4の絶技+%d％",
+  "mFilterFindName": "水極地4の絶技"
+ },
+ {
+  "i": 1599,
+  "mListText": "火極地4【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地4【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1600,
+  "mListText": "火極地4【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地4【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1601,
+  "mListText": "火極地4【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地4【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1602,
+  "mListText": "火極地4の絶技+%d％",
+  "mFilterFindName": "火極地4の絶技"
+ },
+ {
+  "i": 1603,
+  "mListText": "氷極地5【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地5【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1604,
+  "mListText": "氷極地5【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地5【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1605,
+  "mListText": "氷極地5【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地5【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1606,
+  "mListText": "氷極地5の絶技+%d％",
+  "mFilterFindName": "氷極地5の絶技"
+ },
+ {
+  "i": 1607,
+  "mListText": "土極地5【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地5【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1608,
+  "mListText": "土極地5【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地5【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1609,
+  "mListText": "土極地5【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地5【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1610,
+  "mListText": "土極地5の絶技+%d％",
+  "mFilterFindName": "土極地5の絶技"
+ },
+ {
+  "i": 1611,
+  "mListText": "雷極地5【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地5【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1612,
+  "mListText": "雷極地5【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地5【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1613,
+  "mListText": "雷極地5【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地5【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1614,
+  "mListText": "雷極地5の絶技+%d％",
+  "mFilterFindName": "雷極地5の絶技"
+ },
+ {
+  "i": 1615,
+  "mListText": "水極地5【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地5【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1616,
+  "mListText": "水極地5【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地5【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1617,
+  "mListText": "水極地5【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地5【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1618,
+  "mListText": "水極地5の絶技+%d％",
+  "mFilterFindName": "水極地5の絶技"
+ },
+ {
+  "i": 1619,
+  "mListText": "火極地5【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地5【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1620,
+  "mListText": "火極地5【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地5【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1621,
+  "mListText": "火極地5【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地5【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1622,
+  "mListText": "火極地5の絶技+%d％",
+  "mFilterFindName": "火極地5の絶技"
+ },
+ {
+  "i": 1623,
+  "mListText": "氷極地6【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地6【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1624,
+  "mListText": "氷極地6【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地6【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1625,
+  "mListText": "氷極地6【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地6【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1626,
+  "mListText": "氷極地6の絶技+%d％",
+  "mFilterFindName": "氷極地6の絶技"
+ },
+ {
+  "i": 1627,
+  "mListText": "土極地6【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地6【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1628,
+  "mListText": "土極地6【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地6【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1629,
+  "mListText": "土極地6【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地6【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1630,
+  "mListText": "土極地6の絶技+%d％",
+  "mFilterFindName": "土極地6の絶技"
+ },
+ {
+  "i": 1631,
+  "mListText": "雷極地6【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地6【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1632,
+  "mListText": "雷極地6【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地6【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1633,
+  "mListText": "雷極地6【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地6【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1634,
+  "mListText": "雷極地6の絶技+%d％",
+  "mFilterFindName": "雷極地6の絶技"
+ },
+ {
+  "i": 1635,
+  "mListText": "水極地6【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地6【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1636,
+  "mListText": "水極地6【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地6【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1637,
+  "mListText": "水極地6【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地6【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1638,
+  "mListText": "水極地6の絶技+%d％",
+  "mFilterFindName": "水極地6の絶技"
+ },
+ {
+  "i": 1639,
+  "mListText": "火極地6【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地6【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1640,
+  "mListText": "火極地6【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地6【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1641,
+  "mListText": "火極地6【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地6【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1642,
+  "mListText": "火極地6の絶技+%d％",
+  "mFilterFindName": "火極地6の絶技"
+ },
+ {
+  "i": 1643,
+  "mListText": "氷極地7【深度Ⅰ】耐性%d",
+  "mFilterFindName": "氷極地7【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1644,
+  "mListText": "氷極地7【深度Ⅱ】耐性%d",
+  "mFilterFindName": "氷極地7【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1645,
+  "mListText": "氷極地7【深度Ⅲ】耐性%d",
+  "mFilterFindName": "氷極地7【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1646,
+  "mListText": "氷極地7の絶技+%d％",
+  "mFilterFindName": "氷極地7の絶技"
+ },
+ {
+  "i": 1647,
+  "mListText": "土極地7【深度Ⅰ】耐性%d",
+  "mFilterFindName": "土極地7【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1648,
+  "mListText": "土極地7【深度Ⅱ】耐性%d",
+  "mFilterFindName": "土極地7【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1649,
+  "mListText": "土極地7【深度Ⅲ】耐性%d",
+  "mFilterFindName": "土極地7【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1650,
+  "mListText": "土極地7の絶技+%d％",
+  "mFilterFindName": "土極地7の絶技"
+ },
+ {
+  "i": 1651,
+  "mListText": "雷極地7【深度Ⅰ】耐性%d",
+  "mFilterFindName": "雷極地7【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1652,
+  "mListText": "雷極地7【深度Ⅱ】耐性%d",
+  "mFilterFindName": "雷極地7【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1653,
+  "mListText": "雷極地7【深度Ⅲ】耐性%d",
+  "mFilterFindName": "雷極地7【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1654,
+  "mListText": "雷極地7の絶技+%d％",
+  "mFilterFindName": "雷極地7の絶技"
+ },
+ {
+  "i": 1655,
+  "mListText": "水極地7【深度Ⅰ】耐性%d",
+  "mFilterFindName": "水極地7【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1656,
+  "mListText": "水極地7【深度Ⅱ】耐性%d",
+  "mFilterFindName": "水極地7【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1657,
+  "mListText": "水極地7【深度Ⅲ】耐性%d",
+  "mFilterFindName": "水極地7【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1658,
+  "mListText": "水極地7の絶技+%d％",
+  "mFilterFindName": "水極地7の絶技"
+ },
+ {
+  "i": 1659,
+  "mListText": "火極地7【深度Ⅰ】耐性%d",
+  "mFilterFindName": "火極地7【深度Ⅰ】耐性"
+ },
+ {
+  "i": 1660,
+  "mListText": "火極地7【深度Ⅱ】耐性%d",
+  "mFilterFindName": "火極地7【深度Ⅱ】耐性"
+ },
+ {
+  "i": 1661,
+  "mListText": "火極地7【深度Ⅲ】耐性%d",
+  "mFilterFindName": "火極地7【深度Ⅲ】耐性"
+ },
+ {
+  "i": 1662,
+  "mListText": "火極地7の絶技+%d％",
+  "mFilterFindName": "火極地7の絶技"
+ },
+ {
+  "i": 1663,
+  "mListText": "鳴神月討伐P+%d",
+  "mFilterFindName": "鳴神月討伐P"
+ },
+ {
+  "i": 1664,
+  "mListText": "鳴神月の力+%d",
+  "mFilterFindName": "鳴神月の力"
+ },
+ {
+  "i": 1665,
+  "mListText": "鳴神月の加護+%d",
+  "mFilterFindName": "鳴神月の加護"
+ },
+ {
+  "i": 1666,
+  "mListText": "鳴神月の絶技+%d％",
+  "mFilterFindName": "鳴神月の絶技"
+ },
+ {
+  "i": 1667,
+  "mListText": "愛逢月討伐P+%d",
+  "mFilterFindName": "愛逢月討伐P"
+ },
+ {
+  "i": 1668,
+  "mListText": "愛逢月の力+%d",
+  "mFilterFindName": "愛逢月の力"
+ },
+ {
+  "i": 1669,
+  "mListText": "愛逢月の加護+%d",
+  "mFilterFindName": "愛逢月の加護"
+ },
+ {
+  "i": 1670,
+  "mListText": "愛逢月の絶技+%d％",
+  "mFilterFindName": "愛逢月の絶技"
+ },
+ {
+  "i": 1671,
+  "mListText": "月見月討伐P+%d",
+  "mFilterFindName": "月見月討伐P"
+ },
+ {
+  "i": 1672,
+  "mListText": "月見月の力+%d",
+  "mFilterFindName": "月見月の力"
+ },
+ {
+  "i": 1673,
+  "mListText": "月見月の加護+%d",
+  "mFilterFindName": "月見月の加護"
+ },
+ {
+  "i": 1674,
+  "mListText": "月見月の絶技+%d％",
+  "mFilterFindName": "月見月の絶技"
+ },
+ {
+  "i": 1675,
+  "mListText": "紅葉月討伐P+%d",
+  "mFilterFindName": "紅葉月討伐P"
+ },
+ {
+  "i": 1676,
+  "mListText": "紅葉月の力+%d",
+  "mFilterFindName": "紅葉月の力"
+ },
+ {
+  "i": 1677,
+  "mListText": "紅葉月の加護+%d",
+  "mFilterFindName": "紅葉月の加護"
+ },
+ {
+  "i": 1678,
+  "mListText": "紅葉月の絶技+%d％",
+  "mFilterFindName": "紅葉月の絶技"
+ },
+ {
+  "i": 1679,
+  "mListText": "鏡祭月討伐P+%d",
+  "mFilterFindName": "鏡祭月討伐P"
+ },
+ {
+  "i": 1680,
+  "mListText": "鏡祭月の力+%d",
+  "mFilterFindName": "鏡祭月の力"
+ },
+ {
+  "i": 1681,
+  "mListText": "鏡祭月の加護+%d",
+  "mFilterFindName": "鏡祭月の加護"
+ },
+ {
+  "i": 1682,
+  "mListText": "鏡祭月の絶技+%d％",
+  "mFilterFindName": "鏡祭月の絶技"
+ },
+ {
+  "i": 1683,
+  "mListText": "竜潜月討伐P+%d",
+  "mFilterFindName": "竜潜月討伐P"
+ },
+ {
+  "i": 1684,
+  "mListText": "竜潜月の力+%d",
+  "mFilterFindName": "竜潜月の力"
+ },
+ {
+  "i": 1685,
+  "mListText": "竜潜月の加護+%d",
+  "mFilterFindName": "竜潜月の加護"
+ },
+ {
+  "i": 1686,
+  "mListText": "竜潜月の絶技+%d％",
+  "mFilterFindName": "竜潜月の絶技"
+ },
+ {
+  "i": 1687,
+  "mListText": "氷月討伐P+%d",
+  "mFilterFindName": "氷月討伐P"
+ },
+ {
+  "i": 1688,
+  "mListText": "氷月の力+%d",
+  "mFilterFindName": "氷月の力"
+ },
+ {
+  "i": 1689,
+  "mListText": "氷月の加護+%d",
+  "mFilterFindName": "氷月の加護"
+ },
+ {
+  "i": 1690,
+  "mListText": "氷月の絶技+%d％",
+  "mFilterFindName": "氷月の絶技"
+ },
+ {
+  "i": 1691,
+  "mListText": "初春月討伐P+%d",
+  "mFilterFindName": "初春月討伐P"
+ },
+ {
+  "i": 1692,
+  "mListText": "初春月の力+%d",
+  "mFilterFindName": "初春月の力"
+ },
+ {
+  "i": 1693,
+  "mListText": "初春月の加護+%d",
+  "mFilterFindName": "初春月の加護"
+ },
+ {
+  "i": 1694,
+  "mListText": "初春月の絶技+%d％",
+  "mFilterFindName": "初春月の絶技"
+ },
+ {
+  "i": 1695,
+  "mListText": "麗月討伐P+%d",
+  "mFilterFindName": "麗月討伐P"
+ },
+ {
+  "i": 1696,
+  "mListText": "麗月の力+%d",
+  "mFilterFindName": "麗月の力"
+ },
+ {
+  "i": 1697,
+  "mListText": "麗月の加護+%d",
+  "mFilterFindName": "麗月の加護"
+ },
+ {
+  "i": 1698,
+  "mListText": "麗月の絶技+%d％",
+  "mFilterFindName": "麗月の絶技"
+ },
+ {
+  "i": 1699,
+  "mListText": "夢見月討伐P+%d",
+  "mFilterFindName": "夢見月討伐P"
+ },
+ {
+  "i": 1700,
+  "mListText": "夢見月の力+%d",
+  "mFilterFindName": "夢見月の力"
+ },
+ {
+  "i": 1701,
+  "mListText": "夢見月の加護+%d",
+  "mFilterFindName": "夢見月の加護"
+ },
+ {
+  "i": 1702,
+  "mListText": "夢見月の絶技+%d％",
+  "mFilterFindName": "夢見月の絶技"
+ },
+ {
+  "i": 1703,
+  "mListText": "花残月討伐P+%d",
+  "mFilterFindName": "花残月討伐P"
+ },
+ {
+  "i": 1704,
+  "mListText": "花残月の力+%d",
+  "mFilterFindName": "花残月の力"
+ },
+ {
+  "i": 1705,
+  "mListText": "花残月の加護+%d",
+  "mFilterFindName": "花残月の加護"
+ },
+ {
+  "i": 1706,
+  "mListText": "花残月の絶技+%d％",
+  "mFilterFindName": "花残月の絶技"
+ },
+ {
+  "i": 1707,
+  "mListText": "狭雲月討伐P+%d",
+  "mFilterFindName": "狭雲月討伐P"
+ },
+ {
+  "i": 1708,
+  "mListText": "狭雲月の力+%d",
+  "mFilterFindName": "狭雲月の力"
+ },
+ {
+  "i": 1709,
+  "mListText": "狭雲月の加護+%d",
+  "mFilterFindName": "狭雲月の加護"
+ },
+ {
+  "i": 1710,
+  "mListText": "狭雲月の絶技+%d％",
+  "mFilterFindName": "狭雲月の絶技"
+ },
+ {
+  "i": 1711,
+  "mListText": "常夏月討伐P+%d",
+  "mFilterFindName": "常夏月討伐P"
+ },
+ {
+  "i": 1712,
+  "mListText": "常夏月の力+%d",
+  "mFilterFindName": "常夏月の力"
+ },
+ {
+  "i": 1713,
+  "mListText": "常夏月の加護+%d",
+  "mFilterFindName": "常夏月の加護"
+ },
+ {
+  "i": 1714,
+  "mListText": "常夏月の絶技+%d％",
+  "mFilterFindName": "常夏月の絶技"
+ },
+ {
+  "i": 1715,
+  "mListText": "涼月討伐P+%d",
+  "mFilterFindName": "涼月討伐P"
+ },
+ {
+  "i": 1716,
+  "mListText": "涼月の力+%d",
+  "mFilterFindName": "涼月の力"
+ },
+ {
+  "i": 1717,
+  "mListText": "涼月の加護+%d",
+  "mFilterFindName": "涼月の加護"
+ },
+ {
+  "i": 1718,
+  "mListText": "涼月の絶技+%d％",
+  "mFilterFindName": "涼月の絶技"
+ },
+ {
+  "i": 1719,
+  "mListText": "秋風月討伐P+%d",
+  "mFilterFindName": "秋風月討伐P"
+ },
+ {
+  "i": 1720,
+  "mListText": "秋風月の力+%d",
+  "mFilterFindName": "秋風月の力"
+ },
+ {
+  "i": 1721,
+  "mListText": "秋風月の加護+%d",
+  "mFilterFindName": "秋風月の加護"
+ },
+ {
+  "i": 1722,
+  "mListText": "秋風月の絶技+%d％",
+  "mFilterFindName": "秋風月の絶技"
+ },
+ {
+  "i": 1723,
+  "mListText": "菊月討伐P+%d",
+  "mFilterFindName": "菊月討伐P"
+ },
+ {
+  "i": 1724,
+  "mListText": "菊月の力+%d",
+  "mFilterFindName": "菊月の力"
+ },
+ {
+  "i": 1725,
+  "mListText": "菊月の加護+%d",
+  "mFilterFindName": "菊月の加護"
+ },
+ {
+  "i": 1726,
+  "mListText": "菊月の絶技+%d％",
+  "mFilterFindName": "菊月の絶技"
+ },
+ {
+  "i": 1727,
+  "mListText": "時雨月討伐P+%d",
+  "mFilterFindName": "時雨月討伐P"
+ },
+ {
+  "i": 1728,
+  "mListText": "時雨月の力+%d",
+  "mFilterFindName": "時雨月の力"
+ },
+ {
+  "i": 1729,
+  "mListText": "時雨月の加護+%d",
+  "mFilterFindName": "時雨月の加護"
+ },
+ {
+  "i": 1730,
+  "mListText": "時雨月の絶技+%d％",
+  "mFilterFindName": "時雨月の絶技"
+ },
+ {
+  "i": 1731,
+  "mListText": "神楽月討伐P+%d",
+  "mFilterFindName": "神楽月討伐P"
+ },
+ {
+  "i": 1732,
+  "mListText": "神楽月の力+%d",
+  "mFilterFindName": "神楽月の力"
+ },
+ {
+  "i": 1733,
+  "mListText": "神楽月の加護+%d",
+  "mFilterFindName": "神楽月の加護"
+ },
+ {
+  "i": 1734,
+  "mListText": "神楽月の絶技+%d％",
+  "mFilterFindName": "神楽月の絶技"
+ },
+ {
+  "i": 1735,
+  "mListText": "春待月討伐P+%d",
+  "mFilterFindName": "春待月討伐P"
+ },
+ {
+  "i": 1736,
+  "mListText": "春待月の力+%d",
+  "mFilterFindName": "春待月の力"
+ },
+ {
+  "i": 1737,
+  "mListText": "春待月の加護+%d",
+  "mFilterFindName": "春待月の加護"
+ },
+ {
+  "i": 1738,
+  "mListText": "春待月の絶技+%d％",
+  "mFilterFindName": "春待月の絶技"
+ },
+ {
+  "i": 1739,
+  "mListText": "霞初月討伐P+%d",
+  "mFilterFindName": "霞初月討伐P"
+ },
+ {
+  "i": 1740,
+  "mListText": "霞初月の力+%d",
+  "mFilterFindName": "霞初月の力"
+ },
+ {
+  "i": 1741,
+  "mListText": "霞初月の加護+%d",
+  "mFilterFindName": "霞初月の加護"
+ },
+ {
+  "i": 1742,
+  "mListText": "霞初月の絶技+%d％",
+  "mFilterFindName": "霞初月の絶技"
+ },
+ {
+  "i": 1743,
+  "mListText": "初花月討伐P+%d",
+  "mFilterFindName": "初花月討伐P"
+ },
+ {
+  "i": 1744,
+  "mListText": "初花月の力+%d",
+  "mFilterFindName": "初花月の力"
+ },
+ {
+  "i": 1745,
+  "mListText": "初花月の加護+%d",
+  "mFilterFindName": "初花月の加護"
+ },
+ {
+  "i": 1746,
+  "mListText": "初花月の絶技+%d％",
+  "mFilterFindName": "初花月の絶技"
+ },
+ {
+  "i": 1747,
+  "mListText": "桜月討伐P+%d",
+  "mFilterFindName": "桜月討伐P"
+ },
+ {
+  "i": 1748,
+  "mListText": "桜月の力+%d",
+  "mFilterFindName": "桜月の力"
+ },
+ {
+  "i": 1749,
+  "mListText": "桜月の加護+%d",
+  "mFilterFindName": "桜月の加護"
+ },
+ {
+  "i": 1750,
+  "mListText": "桜月の絶技+%d％",
+  "mFilterFindName": "桜月の絶技"
+ },
+ {
+  "i": 1751,
+  "mListText": "卯月討伐P+%d",
+  "mFilterFindName": "卯月討伐P"
+ },
+ {
+  "i": 1752,
+  "mListText": "卯月の力+%d",
+  "mFilterFindName": "卯月の力"
+ },
+ {
+  "i": 1753,
+  "mListText": "卯月の加護+%d",
+  "mFilterFindName": "卯月の加護"
+ },
+ {
+  "i": 1754,
+  "mListText": "卯月の絶技+%d％",
+  "mFilterFindName": "卯月の絶技"
+ },
+ {
+  "i": 1755,
+  "mListText": "皐月討伐P+%d",
+  "mFilterFindName": "皐月討伐P"
+ },
+ {
+  "i": 1756,
+  "mListText": "皐月の力+%d",
+  "mFilterFindName": "皐月の力"
+ },
+ {
+  "i": 1757,
+  "mListText": "皐月の加護+%d",
+  "mFilterFindName": "皐月の加護"
+ },
+ {
+  "i": 1758,
+  "mListText": "皐月の絶技+%d％",
+  "mFilterFindName": "皐月の絶技"
+ },
+ {
+  "i": 1759,
+  "mListText": "水無月討伐P+%d",
+  "mFilterFindName": "水無月討伐P"
+ },
+ {
+  "i": 1760,
+  "mListText": "水無月の力+%d",
+  "mFilterFindName": "水無月の力"
+ },
+ {
+  "i": 1761,
+  "mListText": "水無月の加護+%d",
+  "mFilterFindName": "水無月の加護"
+ },
+ {
+  "i": 1762,
+  "mListText": "水無月の絶技+%d％",
+  "mFilterFindName": "水無月の絶技"
+ },
+ {
+  "i": 1763,
+  "mListText": "文月討伐P+%d",
+  "mFilterFindName": "文月討伐P"
+ },
+ {
+  "i": 1764,
+  "mListText": "文月の力+%d",
+  "mFilterFindName": "文月の力"
+ },
+ {
+  "i": 1765,
+  "mListText": "文月の加護+%d",
+  "mFilterFindName": "文月の加護"
+ },
+ {
+  "i": 1766,
+  "mListText": "文月の絶技+%d％",
+  "mFilterFindName": "文月の絶技"
+ },
+ {
+  "i": 1767,
+  "mListText": "葉月討伐P+%d",
+  "mFilterFindName": "葉月討伐P"
+ },
+ {
+  "i": 1768,
+  "mListText": "葉月の力+%d",
+  "mFilterFindName": "葉月の力"
+ },
+ {
+  "i": 1769,
+  "mListText": "葉月の加護+%d",
+  "mFilterFindName": "葉月の加護"
+ },
+ {
+  "i": 1770,
+  "mListText": "葉月の絶技+%d％",
+  "mFilterFindName": "葉月の絶技"
+ },
+ {
+  "i": 1771,
+  "mListText": "長月討伐P+%d",
+  "mFilterFindName": "長月討伐P"
+ },
+ {
+  "i": 1772,
+  "mListText": "長月の力+%d",
+  "mFilterFindName": "長月の力"
+ },
+ {
+  "i": 1773,
+  "mListText": "長月の加護+%d",
+  "mFilterFindName": "長月の加護"
+ },
+ {
+  "i": 1774,
+  "mListText": "長月の絶技+%d％",
+  "mFilterFindName": "長月の絶技"
+ },
+ {
+  "i": 1775,
+  "mListText": "神無月討伐P+%d",
+  "mFilterFindName": "神無月討伐P"
+ },
+ {
+  "i": 1776,
+  "mListText": "神無月の力+%d",
+  "mFilterFindName": "神無月の力"
+ },
+ {
+  "i": 1777,
+  "mListText": "神無月の加護+%d",
+  "mFilterFindName": "神無月の加護"
+ },
+ {
+  "i": 1778,
+  "mListText": "神無月の絶技+%d％",
+  "mFilterFindName": "神無月の絶技"
+ },
+ {
+  "i": 1779,
+  "mListText": "霜月討伐P+%d",
+  "mFilterFindName": "霜月討伐P"
+ },
+ {
+  "i": 1780,
+  "mListText": "霜月の力+%d",
+  "mFilterFindName": "霜月の力"
+ },
+ {
+  "i": 1781,
+  "mListText": "霜月の加護+%d",
+  "mFilterFindName": "霜月の加護"
+ },
+ {
+  "i": 1782,
+  "mListText": "霜月の絶技+%d％",
+  "mFilterFindName": "霜月の絶技"
+ },
+ {
+  "i": 1783,
+  "mListText": "師走討伐P+%d",
+  "mFilterFindName": "師走討伐P"
+ },
+ {
+  "i": 1784,
+  "mListText": "師走の力+%d",
+  "mFilterFindName": "師走の力"
+ },
+ {
+  "i": 1785,
+  "mListText": "師走の加護+%d",
+  "mFilterFindName": "師走の加護"
+ },
+ {
+  "i": 1786,
+  "mListText": "師走の絶技+%d％",
+  "mFilterFindName": "師走の絶技"
+ },
+ {
+  "i": 1787,
+  "mListText": "睦月討伐P+%d",
+  "mFilterFindName": "睦月討伐P"
+ },
+ {
+  "i": 1788,
+  "mListText": "睦月の力+%d",
+  "mFilterFindName": "睦月の力"
+ },
+ {
+  "i": 1789,
+  "mListText": "睦月の加護+%d",
+  "mFilterFindName": "睦月の加護"
+ },
+ {
+  "i": 1790,
+  "mListText": "睦月の絶技+%d％",
+  "mFilterFindName": "睦月の絶技"
+ },
+ {
+  "i": 1791,
+  "mListText": "如月討伐P+%d",
+  "mFilterFindName": "如月討伐P"
+ },
+ {
+  "i": 1792,
+  "mListText": "如月の力+%d",
+  "mFilterFindName": "如月の力"
+ },
+ {
+  "i": 1793,
+  "mListText": "如月の加護+%d",
+  "mFilterFindName": "如月の加護"
+ },
+ {
+  "i": 1794,
+  "mListText": "如月の絶技+%d％",
+  "mFilterFindName": "如月の絶技"
+ },
+ {
+  "i": 1795,
+  "mListText": "Partbreaker (Special)",
+  "mFilterFindName": "Partbreaker (Special)"
+ },
+ {
+  "i": 1796,
+  "mListText": "Partbreaker (Extreme)",
+  "mFilterFindName": "Partbreaker (Extreme)"
+ },
+ {
+  "i": 1797,
+  "mListText": "Partbreaker (Ultimate)",
+  "mFilterFindName": "Partbreaker (Ultimate)"
+ },
+ {
+  "i": 1798,
+  "mListText": "After-Breaker (Special)",
+  "mFilterFindName": "After-Breaker (Special)"
+ },
+ {
+  "i": 1799,
+  "mListText": "After-Breaker (Extreme)",
+  "mFilterFindName": "After-Breaker (Extreme)"
+ },
+ {
+  "i": 1800,
+  "mListText": "After-Breaker (Ultimate)",
+  "mFilterFindName": "After-Breaker (Ultimate)"
+ },
+ {
+  "i": 1801,
+  "mListText": "Partbreaker King (Special)",
+  "mFilterFindName": "Partbreaker King (Special)"
+ },
+ {
+  "i": 1802,
+  "mListText": "Partbreaker King (Extreme)",
+  "mFilterFindName": "Partbreaker King (Extreme)"
+ },
+ {
+  "i": 1803,
+  "mListText": "Partbreaker King (Ultimate)",
+  "mFilterFindName": "Partbreaker King (Ultimate)"
+ },
+ {
+  "i": 1804,
+  "mListText": "Poison Erosion (Special)",
+  "mFilterFindName": "Poison Erosion (Special)"
+ },
+ {
+  "i": 1805,
+  "mListText": "Poison Erosion (Extreme)",
+  "mFilterFindName": "Poison Erosion (Extreme)"
+ },
+ {
+  "i": 1806,
+  "mListText": "Poison Erosion (Ultimate)",
+  "mFilterFindName": "Poison Erosion (Ultimate)"
+ },
+ {
+  "i": 1807,
+  "mListText": "Follow-up (Special)",
+  "mFilterFindName": "Follow-up (Special)"
+ },
+ {
+  "i": 1808,
+  "mListText": "Follow-up (Extreme)",
+  "mFilterFindName": "Follow-up (Extreme)"
+ },
+ {
+  "i": 1809,
+  "mListText": "Follow-up (Ultimate)",
+  "mFilterFindName": "Follow-up (Ultimate)"
+ },
+ {
+  "i": 1810,
+  "mListText": "Poison Spread (Special)",
+  "mFilterFindName": "Poison Spread (Special)"
+ },
+ {
+  "i": 1811,
+  "mListText": "Poison Spread (Extreme)",
+  "mFilterFindName": "Poison Spread (Extreme)"
+ },
+ {
+  "i": 1812,
+  "mListText": "Poison Spread (Ultimate)",
+  "mFilterFindName": "Poison Spread (Ultimate)"
+ },
+ {
+  "i": 1813,
+  "mListText": "Poison Critical (Special)",
+  "mFilterFindName": "Poison Critical (Special)"
+ },
+ {
+  "i": 1814,
+  "mListText": "Poison Critical (Extreme)",
+  "mFilterFindName": "Poison Critical (Extreme)"
+ },
+ {
+  "i": 1815,
+  "mListText": "Poison Critical (Ultimate)",
+  "mFilterFindName": "Poison Critical (Ultimate)"
+ },
+ {
+  "i": 1816,
+  "mListText": "Dodge (Special)",
+  "mFilterFindName": "Dodge (Special)"
+ },
+ {
+  "i": 1817,
+  "mListText": "Dodge (Extreme)",
+  "mFilterFindName": "Dodge (Extreme)"
+ },
+ {
+  "i": 1818,
+  "mListText": "Dodge (Ultimate)",
+  "mFilterFindName": "Dodge (Ultimate)"
+ },
+ {
+  "i": 1819,
+  "mListText": "Critical Addiction (Special)",
+  "mFilterFindName": "Critical Addiction (Special)"
+ },
+ {
+  "i": 1820,
+  "mListText": "Critical Addiction (Extreme)",
+  "mFilterFindName": "Critical Addiction (Extreme)"
+ },
+ {
+  "i": 1821,
+  "mListText": "Critical Addiction (Ultimate)",
+  "mFilterFindName": "Critical Addiction (Ultimate)"
+ },
+ {
+  "i": 1822,
+  "mListText": "Offensive Critical (Special)",
+  "mFilterFindName": "Offensive Critical (Special)"
+ },
+ {
+  "i": 1823,
+  "mListText": "Offensive Critical (Extreme)",
+  "mFilterFindName": "Offensive Critical (Extreme)"
+ },
+ {
+  "i": 1824,
+  "mListText": "Offensive Critical (Ultimate)",
+  "mFilterFindName": "Offensive Critical (Ultimate)"
+ },
+ {
+  "i": 1825,
+  "mListText": "After-Critical (Special)",
+  "mFilterFindName": "After-Critical (Special)"
+ },
+ {
+  "i": 1826,
+  "mListText": "After-Critical (Extreme)",
+  "mFilterFindName": "After-Critical (Extreme)"
+ },
+ {
+  "i": 1827,
+  "mListText": "After-Critical (Ultimate)",
+  "mFilterFindName": "After-Critical (Ultimate)"
+ },
+ {
+  "i": 1828,
+  "mListText": "増幅パーツブレイカー+%d％",
+  "mFilterFindName": "増幅パーツブレイカー"
+ },
+ {
+  "i": 1829,
+  "mListText": "増幅アフターブレイカー+%d％",
+  "mFilterFindName": "増幅アフターブレイカー"
+ },
+ {
+  "i": 1830,
+  "mListText": "増幅追い打ち+%d％",
+  "mFilterFindName": "増幅追い打ち"
+ },
+ {
+  "i": 1831,
+  "mListText": "増幅乱打+%d％",
+  "mFilterFindName": "増幅乱打"
+ },
+ {
+  "i": 1832,
+  "mListText": "増幅復讐心+%d％",
+  "mFilterFindName": "増幅復讐心"
+ },
+ {
+  "i": 1833,
+  "mListText": "増幅会心中毒+%d％",
+  "mFilterFindName": "増幅会心中毒"
+ },
+ {
+  "i": 1834,
+  "mListText": "増幅攻勢会心術+%d％",
+  "mFilterFindName": "増幅攻勢会心術"
+ },
+ {
+  "i": 1835,
+  "mListText": "増幅会心強化+%d％",
+  "mFilterFindName": "増幅会心強化"
+ },
+ {
+  "i": 1836,
+  "mListText": "増幅最後の抵抗+%d",
+  "mFilterFindName": "増幅最後の抵抗"
+ },
+ {
+  "i": 1837,
+  "mListText": "豪運+%d",
+  "mFilterFindName": "豪運"
+ },
+ {
+  "i": 1838,
+  "mListText": "豪運-%d",
+  "mFilterFindName": "豪運"
+ }
+]
