@@ -88,6 +88,10 @@ regenerate manifests, publish a new `RES_VER`.
 | `docs/RESOURCES-ROLLBACK.md` | rolling resource packs back |
 | `docs/SELFHOST-HANDOFF.md` | running the fork / deployment |
 | `docs/EVENT-QUESTS-BLOCKS.md` | event/ticket quest blocks |
+| `docs/QUEST-BOSS-ORDER.md` | story quest boss order vs the info card |
+| `docs/EVOLUTION.md` | weapon/armour evolution (`box/equipment/evolve`) |
+| `docs/EVENT-SHOP.md` | event shop + Hunt Fest Flag P |
+| `docs/PLUS-VALUE.md` | weapon plus value (potential) upgrade |
 | `docs/QUEST-EQUIP-PREVIEW.md` | quest reward "equipment" panel |
 | `docs/OMAMORI.md`, `docs/ARTS-UPGRADE.md`, `docs/UPGRADE-COSTS.md` | server systems |
 

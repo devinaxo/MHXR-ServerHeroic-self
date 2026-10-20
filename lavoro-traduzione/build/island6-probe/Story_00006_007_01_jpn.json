@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 0,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,2,0><CV 1,54>Hey, listen!\r\nThe landing permit for the next isles came!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 1,27>The Volhier Archipelago,\r\nI wonder what discoveries await!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 1,9>Ah, I can't sit still!\r\nLet's hurry!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

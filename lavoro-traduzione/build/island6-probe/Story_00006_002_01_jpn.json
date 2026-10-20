@@ -1,0 +1,102 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,505><TALK 5><NAME 12><CHAR 5,1,6,0,0><CHAR 1,1,1,0,0><CV 4,22>Hunter, Eliza!\r\nIt's terrible!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 4,42>The island's volcano is about to erupt!\r\nAt this rate,\r\nthe Fractured Isles might sink!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,7><CV 1,20>No way...\r\nWhat does that mean...?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 12><CV 4,27>I was examining the strata just now,\r\nand if this erupts,\r\nit'd trigger other eruptions too.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "If it erupts like this,\r\nthe Fractured Isles are finished!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1>No way!\r\nWhat should we do...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 5><NAME 10><CHAR 5,5,7,0,0><CV 5,1>Foh-foh-foh.\r\nDon't worry.\r\nI was just devising a countermeasure.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,0>Dr. Andra!\r\nDid you find the point?",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,34>Mm, I found a good point\r\nto blast the crater.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "With this we release the volcanic energy\r\nand so delay the eruption!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,1>Blast the crater!?\r\nYou can do that!?",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,35>Mm.\r\nBut it's only a stopgap.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CV 5,6>And there's a problem...",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,0><CV 4,20>Yes.\r\nFor this operation, we need to place\r\nbombs near the crater.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CV 4,41>We'll use a mine cart to transport them,\r\nbut we need heat-resistant rails...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><COL C70101FF>Rathian Bone</COL>, if we use that for rails,\r\nthis operation should succeed.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<TALK 5><NAME 10>Mm, the heat resistance of Rathian bone\r\nshould serve this operation well.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,0><CV 4,19><COL C70101FF>Rathian Bone</COL> can be got from <COL C70101FF>Rathian</COL>.\r\nPlease!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,0><CV 1,11>Understood!\r\nWe'll go gather them!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

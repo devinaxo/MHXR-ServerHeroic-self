@@ -85,10 +85,11 @@ Honest limits:
 - **The arts level cap.** `sPlayer::getBugiLvCap` reads a per-weapon byte from
   the client workspace, not from a table in the repo, so the server does not
   enforce a cap. The client will not send a request past its own cap anyway.
-- **`is_use_reinforcement`** is accepted and ignored, like the levelup route.
+- **`is_use_reinforcement`** uses the same 0/1/2 modes as the levelup route
+  (own materials / blend / 共通秘伝書 only); see `docs/UPGRADE-COSTS.md`.
 
 ## Log line
 
 ```
-arti | <player>: <eqp_obj_id> slv0 -> slv1, zenny 7000 (saldo 93000), materiali 3
+arti | <player>: <eqp_obj_id> slv0 -> slv1, zenny 7000 (saldo 93000), materiali 3, rinforzi 0 (tipo 0)
 ```

@@ -203,8 +203,16 @@ export const PROTOCOL = {
    * 385: quest time-result condition MenuCmn 24 以上 -> ">" and 25 以下 -> "<"
    * (were "Or More" / "Or Less"), so the row reads like "01:30 > --- S". GUI_msg
    * only.
+   * 386: the time-result condition uses full-width glyphs: MenuCmn 24 "＞" and
+   * 25 "＜". A plain "<" opens a GMD markup tag and was swallowed by the text
+   * parser, which is why ">" showed but "<" did not. Same idea as full-width ％.
+   * 387: the time-result condition uses the proper comparison glyphs: MenuCmn
+   * 24 "≥" (以上) and 25 "≤" (以下), replacing the full-width ＞ / ＜.
+   * 388: ROLLBACK of 387. The font has no glyph for ≥ / ≤, so they showed as
+   * the default box symbol. MenuCmn 24 is back to full-width ＞ and 25 to ＜.
+   * GUI_msg only.
    */
-  RES_VER: 385,
+  RES_VER: 388,
   BANNER_VER: 91, // If set to 0 /api/banner/dllist/get is not called; incremental update trigger
   APP_VER: '09.03.06',
   BLOCK_SEQ: 0, // Possibly need to increment for cycling encryption (client ignores if 0)

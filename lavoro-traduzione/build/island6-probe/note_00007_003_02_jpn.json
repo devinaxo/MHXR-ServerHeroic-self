@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 1><NAME 1><CHAR 5,1,5,0,0><CHAR 1,1,1,2,0><CV 1,5>Dr. Hawk!\r\nWe found a newt we've never seen,\r\nso we came to report!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 6><CV 3,2>Eliza!\r\nYou've come. Show me.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 3,3>Hmm... this is!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "This is...\r\nit seems an ordinary newt, but...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Whoa!\r\nIt stole my magnifying glass!\r\nAh, my glasses too...!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "It seems this newt\r\nhas a habit of collecting shiny things.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "One might call it the Snatcher Newt.\r\nThis is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,1,0>Dr. Hawk...\r\nAre you alright...?",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

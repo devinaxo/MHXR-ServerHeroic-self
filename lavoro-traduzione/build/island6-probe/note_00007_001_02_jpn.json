@@ -1,0 +1,97 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,8><CV 5,1>Foh-foh-foh.\r\nWhat is it?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,2,3><CV 1,5>We discovered something that seems amazing,\r\nso we came to report!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,2>Let's see...\r\nWon't you show me?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<ITEM COLLECTION07001,1,1><TALK 5><NAME 10><CHAR 5,0,7,0,1><CV 5,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "This is a censer.\r\nAnd the embedded jewels\r\nare the positions of the stars then.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "And the horns around it...\r\nthese seem to be monster horns\r\nhardened by special processing.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "But this colour...\r\nwhat monster's horn could it be...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "\"The vessel that weaves the stars;\r\n the scent of incense crosses the stars\r\n and points the road we take\"",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CV 5,4>Mm, it matches the words on the tablet.\r\nThis is surely the treasure.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "I'll investigate the details later.\r\nDrop by when you're near.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<ITEM 0,1,0><TALK 5><NAME 13><CHAR 5,0,11,0,1>Um...\r\nthat seems to be the ritual vessel I seek...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1><CV 1,63><CHAR 1,0,1,0,1>Eh!\r\nNo way...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,35>Ritual vessel...\r\nMm, that could be possible.",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "The treasures of the Fractured Isles\r\nall have some story behind them.",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "It wouldn't be strange if some of them\r\nwere ritual vessels...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,1>Then, truly...\r\nThat the treasure was a ritual vessel!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "Yuno, to find your companion too,\r\nlet's do our best together!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CV 1,6>From now on too, nice to meet you!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

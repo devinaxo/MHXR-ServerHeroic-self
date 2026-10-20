@@ -7,6 +7,9 @@ import {
   EquipLevelupSchema,
   EquipAwakeSchema,
   EquipWSkillupSchema,
+  EquipEvolveSchema,
+  PotentialupSchema,
+  PotentialupMaterialSchema,
   MonumentLevelupSchema,
   SaleSchema,
   FavoriteSetSchema,
@@ -34,9 +37,11 @@ boxRouter.post('/storage/content/get', validate(StorageGetSchema), boxController
 
 boxRouter.post('/equipment/levelup', validate(EquipLevelupSchema), boxController.equipLevelup);
 boxRouter.post('/equipment/awake', validate(EquipAwakeSchema), boxController.awake);
-// boxRouter.post("/equipment/evolve", );
+boxRouter.post('/equipment/evolve', validate(EquipEvolveSchema), boxController.equipEvolve);
 // boxRouter.post("/equipment/get", );
 // boxRouter.post("/equipment/potentialup", );
+boxRouter.post('/equipment/potentialup', validate(PotentialupSchema), boxController.potentialup);
+boxRouter.post('/equipment/potentialupmaterial', validate(PotentialupMaterialSchema), boxController.potentialupMaterial);
 boxRouter.post('/equipment/wskillup', validate(EquipWSkillupSchema), boxController.equipWSkillup);
 boxRouter.post('/equipment/potentialup/auto/set', boxController.potentialupAutoSet);
 boxRouter.post('/equipment/favorite/set', validate(FavoriteSetSchema), boxController.favoriteSet);

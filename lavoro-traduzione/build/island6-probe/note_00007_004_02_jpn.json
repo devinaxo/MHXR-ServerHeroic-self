@@ -1,0 +1,42 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 1><NAME 1><CHAR 5,1,6,0,0><CHAR 1,1,1,2,0><CV 1,5>Dr. Sharon!\r\nWe found a smelly stone,\r\nso we came to report!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CV 4,2>You've come. Let me see!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 4,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "Indeed, a very sweet smell...\r\nWhat is this...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Oh, look closely,\r\nthis is a fossil of a fruit!\r\nBut to still smell so much as a fossil...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "One might call it the Fruit Fossil...\r\nAnyway, this is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><CV 1,10><CHAR 1,0,1,3,0>You did it, Hunter!\r\nA huge discovery!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

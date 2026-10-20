@@ -1,0 +1,122 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><CHAR 5,1,8,4,0><TALK 5><NAME 9><CHAR 1,1,1,0,3><CV 2,5>We did it, meow!\r\nThe waterway is restored, meow!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 0><NAME 0>Thank you!\r\nWe thank you on behalf of the villagers!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "With this and the <COL C70101FF>Green Wolf</COL>,\r\nominous things keep happening...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,2><COL C70101FF>Soul-Returning Green Wolf</COL>...?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 5><NAME 9><CV 2,16>It's enshrined in this archipelago, meow!\r\nBut it's been strange lately, meow...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 0><NAME 0>Yes...\r\nTo appease it, Lady Yuno\r\nperforms a rite of gathering vessels.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,1><CV 1,20>Lady Yuno...\r\nYuno!?",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 13><CHAR 4,5,8,4,0><CHAR 5,1,11,0,7>Um, that...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 0><NAME 0>Lady Yuno!?\r\nWhy in such a place...",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "No, you're in the middle of the ritual.\r\nAll the villagers pray for its success!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 5><NAME 13><CHAR 5,0,11,0,7>………",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 4><NAME 9><CV 2,11>Meow meow?\r\nWhy are you hiding, meow!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,7>Yuno...",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "...Let's go on ahead!\r\nExcuse us!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<STBG 1,2><BGM 1,0,503><CHAR 1,2,1,0,0><CHAR 4,2,8,4,0><CHAR 5,2,11,0,0><STBG 2,1><BGM 0,0,503><CHAR 1,1,1,0,0><CHAR 5,1,11,0,0>We came out in a rush,\r\nbut what do we do now...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 5><NAME 13>I'm sorry...",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<TALK 1><NAME 1><CV 1,60>Still, to think Yuno had such a role...\r\nMust be hard alone...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 5><NAME 13>No, um, not alone...\r\nwhile chasing this one, we got separated...",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 1><NAME 1>Then we must reunite with that person...",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "Eh, you'll come along...",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CHAR 1,0,1,0,8>Right!\r\nIf we go to the ritual vessels,\r\nwe might meet that person!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CV 1,6><CHAR 1,0,1,0,0>Yuno, let's look for the vessels together!\r\nTravel's best with company, right!",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<CV 1,9>Anyway, let's do our best together\r\nto the ritual vessels!",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 5><NAME 9><CHAR 5,1,8,0,0><CHAR 1,1,1,0,0><CV 2,4>Did you slay it for me, meow?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,9>Sorry, not yet.\r\nHunter, let's hurry!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<POP1 66,PART00007_NODE00607>",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

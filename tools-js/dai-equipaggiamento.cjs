@@ -20,6 +20,11 @@
  *   node dai-equipaggiamento.cjs --utente=Heroic69
  *   node dai-equipaggiamento.cjs --utente=Heroic69 --per-tipo=10 --elv=50 --slv=10
  *   node dai-equipaggiamento.cjs --utente=Heroic69 --undo
+ *
+ * Modalita' "copie": N esemplari di UN pezzo, scelto per nome (JP o interno)
+ * o per id. Ogni copia ha un equipment_id unico.
+ *   node dai-equipaggiamento.cjs --utente=Heroic69 --id=1024651966 --quantita=20
+ *   node dai-equipaggiamento.cjs --utente=Heroic69 --nome="Zork the Rush Zero I" --quantita=5
  */
 const fs = require('fs');
 const path = require('path');
@@ -44,6 +49,13 @@ const POT = Number(arg('potential', 0));
 // Rarita' minima. Le tabelle *_series del gioco vanno da 1 a 8: con --rarita=8
 // si prendono solo le leggendarie (779 pezzi in tutto).
 const RARITA = Number(arg('rarita', 0));
+// Modalita' "copie": da' N esemplari di UN pezzo scelto per nome o id.
+const NOME = arg('nome', null);
+const ID = arg('id', null);
+const QUANTITA = Math.max(1, Number(arg('quantita', 1)) || 1);
+// Marca temporale condivisa da tutte le copie della stessa esecuzione, per
+// rendere unico ogni equipment_id anche ripetendo il comando.
+const DATA_MARCIA = Date.now();
 
 // kariwaza sono le arti di caccia (mosse), non equipaggiamento: non vanno in box.
 const NON_EQUIPAGGIAMENTO = new Set(['kariwaza']);
@@ -70,6 +82,16 @@ function costruisci(voce) {
     slv: SLV,
     start_remain: 0,
   };
+}
+
+/**
+ * Una copia numerata dello stesso pezzo, per la modalita' --nome/--id con
+ * --quantita. `equipment_id` deve restare unico nella box: due pezzi con lo
+ * stesso id sono il modo classico di rompere l'inventario, quindi ogni copia
+ * porta un suffisso (nome + marca temporale + indice).
+ */
+function costruisciCopia(voce, indice) {
+  return { ...costruisci(voce), equipment_id: `${voce.nome}_C${DATA_MARCIA}_${indice}` };
 }
 
 (async () => {
@@ -105,6 +127,61 @@ function costruisci(voce) {
   }
 
   const tutti = JSON.parse(fs.readFileSync(path.join(__dirname, 'equipaggiamenti.json'), 'utf8'));
+
+  // Modalita' copie: un solo pezzo scelto per nome o id, ripetuto N volte.
+  // Non filtra per rarita' ne' per categoria: chi chiede un pezzo preciso lo
+  // vuole esattamente quello.
+  if (NOME || ID) {
+    const match = tutti.filter((e) => {
+      if (NON_EQUIPAGGIAMENTO.has(e.categoria)) return false;
+      if (ID && String(e.id) !== String(ID)) return false;
+      if (NOME && !`${e.nome} ${e.nomeJp || ''}`.toLowerCase().includes(String(NOME).toLowerCase())) return false;
+      return true;
+    });
+    if (match.length === 0) {
+      console.error(`Nessun pezzo corrisponde a ${NOME ? `nome="${NOME}" ` : ''}${ID ? `id=${ID}` : ''}`.trim());
+      process.exit(1);
+    }
+    if (match.length > 1) {
+      console.error(`Piu' di un pezzo corrisponde (${match.length}); restringi il nome o usa --id:`);
+      for (const e of match.slice(0, 30)) console.error(`   ${e.id}  ${e.nome}  ${e.nomeJp || ''}`);
+      process.exit(1);
+    }
+    const voce = match[0];
+    console.log(`pezzo     : ${voce.nome} (${voce.id}) ${voce.nomeJp || ''}`);
+    console.log(`categoria : ${voce.categoria}  rarita': ${voce.rarita ?? '?'}`);
+    console.log(`copie     : ${QUANTITA}  elv=${ELV} slv=${SLV} potential=${POT}\n`);
+
+    for (const u of elenco) {
+      const esistenti = (u.box && u.box.equipments) || [];
+      const aggiunte = [];
+      for (let i = 0; i < QUANTITA; i++) aggiunte.push(costruisciCopia(voce, i));
+      const finale = [...esistenti, ...aggiunte];
+      const capacitaOra = (u.box && u.box.capacity && u.box.capacity.eqp_box) || 100;
+      const capacitaNuova = Math.max(capacitaOra, finale.length + 50);
+
+      console.log(`--- ${u.character_name || '(senza nome)'} ---`);
+      console.log(`  ha gia'   : ${esistenti.length} pezzi`);
+      console.log(`  aggiungo  : ${aggiunte.length}`);
+      console.log(`  totale    : ${finale.length}`);
+      console.log(`  capacita' : ${capacitaOra} -> ${capacitaNuova}`);
+      if (!DRY) {
+        await users.updateOne({ _id: u._id }, {
+          $set: {
+            'box.equipments': finale,
+            'box.capacity.eqp_box': capacitaNuova,
+            // Salvato una volta sola, come nella modalita' normale.
+            ...(u.boxEquipPrima ? {} : { boxEquipPrima: esistenti }),
+          },
+        });
+        console.log('  scritto.');
+      }
+      console.log('');
+    }
+    if (DRY) console.log('--dry: niente scritto');
+    await mongoose.disconnect();
+    return;
+  }
 
   // Selezione distribuita: invece dei primi N per categoria si prendono N pezzi
   // sparsi su tutto l'intervallo, cosi' arrivano sia i deboli sia i forti e si

@@ -1,0 +1,17 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,505><TALK 0><NAME 1><CHAR 1,1,1,1,0>To think the volcano is nearly spent...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 1,9>This is no time to stop!\r\nLet's hurry!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

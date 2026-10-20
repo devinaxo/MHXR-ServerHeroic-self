@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,505><TALK 5><NAME 6><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0><CV 3,29>In the current situation,\r\nit wouldn't be strange if it erupted.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 3,18>Stop the Uragaan!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<POP1 9,PART00006_NODE00505>",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

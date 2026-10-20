@@ -343,3 +343,13 @@
 # 385: quest time-result condition 以上 -> ">" and 以下 -> "<" (were "Or More" /
 # "Or Less"). MenuCmn 24/25, GUI.00.fpk :: GUI_msg.arc only.
 385 cmn/GUI.00.fpk
+# 386: time-result condition uses full-width glyphs ＞ / ＜ (MenuCmn 24/25).
+# A plain "<" starts a GMD markup tag and disappears; full-width ＜ renders.
+386 cmn/GUI.00.fpk
+# 387: time-result condition uses the proper glyphs 以上 -> "≥" and 以下 -> "≤"
+# (MenuCmn 24/25), replacing the full-width ＞ / ＜ from 386.
+387 cmn/GUI.00.fpk
+# 388: ROLLBACK of 387. The font has no ≥ / ≤ glyphs (they rendered as the
+# default box), so the time-result condition is back to full-width ＞ / ＜ in
+# MenuCmn 24/25. GUI.00.fpk only.
+388 cmn/GUI.00.fpk

@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 6><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0>That Hermit Shell from before -\r\nit seems it isn't a shell after all.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "What was inside weren't shell contents,\r\nbut parasites.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Parasites growing by eating the contents...\r\nwhat a hard way of life...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

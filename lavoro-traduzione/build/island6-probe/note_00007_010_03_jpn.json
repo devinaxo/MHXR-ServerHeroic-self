@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 6><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0>That Smooth Butterfly from before -\r\nit seems its friction is almost zero.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "But one strange thing:\r\nif friction were zero,\r\na butterfly couldn't fly, I think.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Maybe that butterfly\r\nflies by an entirely different mechanism.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -50,6 +50,7 @@ import {
   PUNTI_PER_QUEST,
   PUNTI_PER_RISCATTO,
   TRADE_POINT_ID,
+  HUNT_FEST_POINT_ID,
 } from '../../../services/tradePointsService.js';
 
 function mockReqRes(body: Record<string, unknown> = {}) {
@@ -594,6 +595,29 @@ describe('quest.controller', () => {
         expect(rewards.normal_reward.other_list_add[0]!.item_list.points).toEqual([
           { amount: PUNTI_PER_QUEST, mst_event_point_id: TRADE_POINT_ID },
         ]);
+      } finally {
+        if (prev === undefined) delete process.env.QUEST_CRESCITA_CHANCE;
+        else process.env.QUEST_CRESCITA_CHANCE = prev;
+      }
+    });
+
+    it.runIf((Number(process.env.QUEST_EVENT_FLAGS ?? 5) || 0) > 0)('pays Hunt Fest Flag P for the quest, the same amount the reward screen shows', async () => {
+      const prev = process.env.QUEST_CRESCITA_CHANCE;
+      process.env.QUEST_CRESCITA_CHANCE = '0';
+      try {
+        const flag = Number(process.env.QUEST_EVENT_FLAGS ?? 5) || 0;
+        vi.mocked(QuestSheet.findOne).mockResolvedValue({ mRewardItemList: [] } as never);
+        const box = {
+          points: [] as { mst_event_point_id: number; amount: number }[],
+          materials: [] as { mst_material_id: number; amount: number }[],
+        };
+        vi.mocked(User.findOne).mockResolvedValue({ uu_id: 'uu1', character_name: 'H', cleared_quests: [], box } as never);
+        vi.mocked(User.findOneAndUpdate).mockResolvedValue({});
+
+        const { req, res } = mockReqRes({ mst_quest_id: 200, clear_time: 45, session_id: 'sess-1' });
+        await islandEnd(req, res);
+
+        expect(box.points.find((p) => p.mst_event_point_id === HUNT_FEST_POINT_ID)?.amount).toBe(flag);
       } finally {
         if (prev === undefined) delete process.env.QUEST_CRESCITA_CHANCE;
         else process.env.QUEST_CRESCITA_CHANCE = prev;

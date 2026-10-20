@@ -1,0 +1,77 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 0,0><BGM 0,0,503><TALK 5><NAME 13><CHAR 5,1,11,0,0><CHAR 1,1,1,0,0>Did you gather them?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1>Er, it's this one, right...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<POP0 7,3,3>",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 13><CHAR 5,0,11,0,7><CHAR 1,0,1,1,0>This isn't enough, it seems.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<COL C70101FF>Arzuros Bone</COL>\r\nshould be got from <COL C70101FF>Arzuros</COL>.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "From the Arzuros in the Piabus Snowfield\r\nit should be easy to get.\r\nPlease.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CLS>",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 13><CHAR 5,0,11,0,1><CV 16,5>Thank you!\r\nWith this we can make the medicine.",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<MWT 2>………",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "It seems to have calmed...\r\nGood...",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "This one...\r\nis a Poogie I've had since I was small.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "But lately, somehow,\r\nits condition seems bad...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 1><NAME 1>I see...",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "For Pecola's sake and Yuno's sake,\r\nwe must find the ritual vessel quickly!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

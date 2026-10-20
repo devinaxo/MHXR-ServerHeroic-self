@@ -66,7 +66,9 @@ const check = (label, cond, extra = '') => {
     if (!base) continue;
     const lv = Number(eq.elv ?? 0);
     const cost = Math.floor(((base - 10) * lv) / 16);
-    const set = costs.materialsByStrengthenId[String(mst.strengthenNeedMaterialId)] ?? [];
+    const setIdx = costs.strengthRef[String(mst.strengthenNeedMaterialId)]?.[lv];
+    const set = costs.materialSets[String(setIdx)] ?? [];
+    if (!set.length) continue;
     if (!set.every((m) => (have[m.mst_material_id] ?? 0) >= m.amount)) continue;
     if (cost > 0 && Number(user.box.zeny) >= cost && (!pick || cost < pick.cost)) {
       pick = { eq, lv, cost, base, set };
@@ -93,17 +95,20 @@ const check = (label, cond, extra = '') => {
   console.log(`  error_code : ${reply.error_code}`);
   console.log(`  zeny       : ${reply.zeny}`);
   console.log(`  levelup    : ${reply.levelup ? JSON.stringify(reply.levelup.equipment).slice(0, 120) : 'MISSING'}`);
-  console.log(`  materials  : ${reply.materials ? JSON.stringify(reply.materials).slice(0, 160) : 'MISSING'}`);
+  console.log(`  zeny       : ${reply.levelup?.zeny}`);
+  console.log(`  materials  : ${reply.levelup?.materials ? JSON.stringify(reply.levelup.materials).slice(0, 160) : 'MISSING'}`);
 
   console.log('\n--- checks ---');
   check('error_code is 0', reply.error_code === 0);
-  check('zeny is present and numeric', typeof reply.zeny === 'number' && !Number.isNaN(reply.zeny));
-  check('zeny is not the 999999999 sentinel', reply.zeny !== 999999999);
+  // The client parses zeny and materials INSIDE "levelup" (Response::setup
+  // passes the levelup property as their parent).
+  check('levelup.zeny is present and numeric', typeof reply.levelup?.zeny === 'number' && !Number.isNaN(reply.levelup.zeny));
+  check('levelup.zeny is not the 999999999 sentinel', reply.levelup?.zeny !== 999999999);
   check('levelup.equipment is present', !!reply.levelup?.equipment);
   check('levelup.equipment.elv was raised', reply.levelup?.equipment?.elv === pick.lv + 1);
-  check('materials array is present', Array.isArray(reply.materials));
-  check('zeny equals the old balance minus the cost', reply.zeny === zenyBefore - pick.cost,
-    `(${zenyBefore} - ${pick.cost} = ${zenyBefore - pick.cost}, got ${reply.zeny})`);
+  check('levelup.materials array is present', Array.isArray(reply.levelup?.materials));
+  check('levelup.zeny equals the old balance minus the cost', reply.levelup?.zeny === zenyBefore - pick.cost,
+    `(${zenyBefore} - ${pick.cost} = ${zenyBefore - pick.cost}, got ${reply.levelup?.zeny})`);
 
   // Confirm it really persisted, not just that the reply looks right.
   const after = await db.collection('users').findOne({ current_session: session });

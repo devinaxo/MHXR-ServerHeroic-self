@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><CHAR 1,1,1,0,0><TALK 1><NAME 1><CV 1,1>We've finally reached the village!\r\nI hope we can leave Yuno here...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 9><CHAR 5,5,8,4,0><CV 2,2>You lot, it's terrible, meow!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 1,0,1,0,1><TALK 1><NAME 1>Argo, what's the matter?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 9><CV 2,6>The Felyne in the village ahead says\r\nthe village's water has dried up, meow!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Even trying to open the waterway,\r\na monster nest makes it impossible, meow!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CV 2,8>To help them too,\r\nwe're counting on you to slay it, meow!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><CV 1,7>Understood!\r\nWe'll do our best!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<POP1 66,PART00007_NODE00607>",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 2,0><TALK 1><NAME 1><BGM 0,0,503><CHAR 1,1,1,0,8><CV 1,18>Huh!?\r\nA Poogie in a place like this...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "There there there...\r\nWhose child is this...",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Right, there are monsters, it's dangerous!\r\nAnyway, we'd better protect it.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 1,0,1,0,1><CV 1,19>Wait, kya...\r\nIt ran off...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "Right, let's chase it!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<STBG 2,2><CHAR 1,2,1,0,0><STBG 11,1><CHAR 1,1,1,0,7><CV 1,60>I think it came this way...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CHAR 1,0,1,0,1>Ah, over there!\r\nWait, a girl!?",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 1,28>What's the matter?",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CHAR 5,1,11,0,8><TALK 5><NAME 13>Ah, people...\r\nDid Pecola bring you?",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CHAR 5,0,11,0,1>Um, please help me!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "My leg is stuck...\r\nIt just won't come out...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1><CV 1,60>This is... mud? So sticky...",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "I understand!\r\nHold onto me!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<CHAR 1,0,1,0,1>Here we go!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<CHAR 1,4,1,0,0><CV 1,19><TALK 0>Kya!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 1><CHAR 1,0,1,1,7><CV 1,39>Ouch ouch ouch...\r\nWhat do we do...\r\nPulling won't get it out!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "If we dig around here we might manage!\r\nSomething strong against mud...",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CHAR 1,0,1,0,8>That's it!\r\nWith <COL C70101FF>Gobul Fang</COL>\r\nwe could use it as a shovel!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<COL C70101FF>Gobul Fang</COL> can be gathered\r\nfrom <COL C70101FF>Gobul</COL>!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

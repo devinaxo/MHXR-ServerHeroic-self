@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,505><TALK 5><NAME 6><CHAR 1,1,1,0,0><CHAR 5,1,5,0,0><CV 3,12>It seems you slew it!\r\nI hope this delays the eruption a little...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 3,18>Anyway, at this rate it may erupt any time.\r\nBoth of you, I'm counting on you!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 1><NAME 1>Yes!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,505><TALK 5><NAME 12><CHAR 5,1,6,0,0><CHAR 1,1,1,0,0><CV 4,8>Gathered the materials?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,8>Yes!\r\nUm, it's this, right?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 5,0,6,0,3><CHAR 1,0,1,2,0><TALK 5><NAME 12><CV 4,9>Seems they're gathered.\r\nNow all that's left is to set them...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 8><CHAR 5,5,10,0,7><CV 11,10>Oh, leave that to me!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,1>Sage!\r\nWas the wildfire alright?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 8>Yeah, no worries!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "We'll do it here!\r\nYou two, guard us!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 11,12>We can't fail here.\r\nWe'll help too!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CHAR 5,6,10,0,0><MWT 2>………",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 5><NAME 8><CHAR 5,5,10,0,0><CV 11,9>Good, done!\r\nThen, let's do it!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CHAR 1,0,1,0,8><CV 5,18>FIREEEEEEEEE!!!!!!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

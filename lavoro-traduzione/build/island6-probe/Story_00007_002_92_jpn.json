@@ -1,0 +1,82 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 11,0><BGM 0,0,503><CHAR 1,1,1,0,0><TALK 1><NAME 1><CV 1,59>How? Gathered them?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,3><CV 1,38>Thank you!\r\nThis should do it!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "Rest assured!\r\nJust a little more patience!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<STBG 11,2><CHAR 1,2,1,0,0><STBG 11,1><MWT 2>………",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 1,1,1,0,0>It came out!\r\nAre you alright!?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 13><CHAR 5,1,11,0,0><CV 16,5>Yes, um,\r\nthank you...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1>I'm glad you're safe...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 1,57>I'm Eliza!\r\nAnd this is the Hunter!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 13><CV 16,1>Um, my name is Yuno.",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 1><NAME 1>Yuno!\r\nStill, why are you in a place like this...?",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 5><NAME 13><CV 16,17>Um, I was chasing Pecola...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1>Pecola is that Poogie?",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CV 1,60><CHAR 1,0,1,1,0>But there are monsters, so\r\nstaying here is dangerous!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<CHAR 1,0,1,0,0><CV 1,9>Anyway, we'll take you to the village,\r\nso come along!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 5><NAME 13><CHAR 5,0,11,0,7>………",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

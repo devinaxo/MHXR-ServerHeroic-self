@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 12,0><BGM 0,0,505><TALK 5><NAME 11><CHAR 5,1,9,0,0><CHAR 1,1,1,0,0><CV 10,36>How is it,\r\ngathered?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<POP0 5,2,2>",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 10,15>What are you doing?\r\nGo gather at once!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 1,0,1,0,0><COL C70101FF>Agnaktor Carapace</COL> and <COL C70101FF>Lagiacrus Scale</COL> mean\r\n<COL C70101FF>Agnaktor</COL> and <COL C70101FF>Plesioth</COL>.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CLS>",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "Seems they're gathered.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CV 10,19>Let's go, you lot!\r\nDon't fall behind!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CHAR 5,6,9,0,0><TALK 1><NAME 1>Yes!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

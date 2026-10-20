@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,0,0><CHAR 5,1,8,4,0>We went and slew it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 9><CV 2,1><CHAR 5,0,8,7,0>Thanks, meow!\r\nNow the waterway can be opened, meow!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 2,5>I'll tell them to open the sluice, meow!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -26,6 +26,7 @@ import {
   PUNTI_PER_QUEST,
   PUNTI_PER_RISCATTO,
   TRADE_POINT_ID,
+  HUNT_FEST_POINT_ID,
   aggiungiPunti,
   giornoGioco,
 } from '../../../services/tradePointsService.js';
@@ -89,8 +90,15 @@ const BLOCCHI = storyRequests.blocks as unknown as Record<string, { part: number
 
 /** Per una scena-richiesta: il blocco a cui appartiene e la parte massima con POP. */
 const RICHIESTA_PER_STORIA = new Map<number, { block: string; part: number; target: number }>();
+/** Nodo bersaglio -> scene che lo richiedono (per sapere se la richiesta e' stata vista). */
+const RICHIESTA_PER_NODO = new Map<number, number[]>();
 for (const r of RICHIESTE) {
   if (r.story) RICHIESTA_PER_STORIA.set(r.story, { block: r.block, part: r.part, target: r.target });
+  if (r.story && r.target) {
+    const arr = RICHIESTA_PER_NODO.get(r.target) ?? [];
+    arr.push(r.story);
+    RICHIESTA_PER_NODO.set(r.target, arr);
+  }
 }
 /** Scena -> blocco e parte, per ogni parte di ogni blocco. */
 const BLOCCO_PER_STORIA = new Map<number, { block: string; part: number }>();
@@ -176,7 +184,7 @@ function parteDaMostrare(storyAttuale: number, storieViste: Set<number>, nodiEsa
    * sola storia, lasciando il nodo al suo state normale.
    */
   const req = RICHIESTA_PER_STORIA.get(storyAttuale);
-  if (req && nodiEsauditi.has(req.target)) {
+  if (req && nodiEsauditi.has(req.target) && storieViste.has(storyAttuale)) {
     const fine = COMPLETAMENTO_BLOCCO.get(req.block);
     if (fine) return fine;
   }
@@ -353,6 +361,17 @@ export async function enrichOceanData(
           if (!quest) continue;
 
           const clearedQuest = cleared_quests.find((q) => q.mst_quest_id === questID);
+
+          /*
+           * Una Special Request (討伐依頼) non va offerta in anticipo: si mostra
+           * solo dopo che la scena di storia che la chiede e' stata vista (o se e'
+           * gia' stata completata). Prima era selezionabile subito e il giocatore
+           * poteva farla prima della richiesta, rompendo la progressione.
+           */
+          if (nq.QuestType === 'Subjugation' && !clearedQuest) {
+            const richieste = RICHIESTA_PER_NODO.get(nodeID) ?? [];
+            if (richieste.length && !richieste.some((s) => storieViste.has(s))) continue;
+          }
 
           let state = 1; // default = NEW
           if (clearedQuest) {
@@ -601,6 +620,15 @@ function nuovoEquipaggiamento(idIstanza: string, mstId: number) {
 }
 
 /**
+ * Quanti Hunt Fest Flag P (vedi HUNT_FEST_POINT_ID in tradePointsService) paga
+ * una missione sulle isole. Sono gli stessi che la schermata di fine caccia
+ * mostra nel blocco `extend`: prima erano solo disegnati e non entravano mai in
+ * box.points, quindi l'event shop non aveva nulla da spendere. Env:
+ * QUEST_EVENT_FLAGS (0 disattiva l'accredito).
+ */
+const PUNTI_EVENTO_ISOLA = Number(process.env.QUEST_EVENT_FLAGS ?? 5) || 0;
+
+/**
  * Pesca le ricompense UNA VOLTA SOLA e restituisce due cose: i quattro riquadri
  * per la risposta e la lista di cio' che e' stato pescato, da mettere in
  * inventario.
@@ -698,10 +726,14 @@ function buildRewardSlots(lista?: readonly VoceRicompensa[] | null) {
         { amount: PUNTI_PER_QUEST, mst_event_point_id: TRADE_POINT_ID },
       ];
     }
-    // il primo riquadro porta anche i punti evento, come faceva prima
-    if (conPuntiEvento && idx === 1) {
+    /*
+     * Punti evento (Hunt Fest Flag P): solo se l'evento li paga davvero. Con
+     * QUEST_EVENT_FLAGS=0 il blocco va omesso del tutto, altrimenti il client
+     * disegna comunque l'icona con "0" e mostra la schermata "hai ottenuto 0".
+     */
+    if (conPuntiEvento && idx === 1 && PUNTI_EVENTO_ISOLA > 0) {
       slot.extend = {
-        item_list: { points: [{ amount: 5, mst_event_point_id: 3994654250 }] },
+        item_list: { points: [{ amount: PUNTI_EVENTO_ISOLA, mst_event_point_id: HUNT_FEST_POINT_ID }] },
         zeny: 0,
       };
     }
@@ -965,6 +997,12 @@ export const islandEnd = async (req: Request, res: Response) => {
         const saldoPunti = aggiungiPunti(doc.box, premi.punti);
         log.info('punti di scambio | %s: +%d P per la quest %s (saldo %d)', doc.character_name ?? '?', premi.punti, String(cleared_quest), saldoPunti);
       }
+      // Punti evento (Hunt Fest Flag P): gli stessi 5 mostrati a schermo. Prima
+      // non venivano accreditati, quindi l'event shop restava a zero.
+      if (PUNTI_EVENTO_ISOLA > 0) {
+        const saldoEvento = aggiungiPunti(doc.box, PUNTI_EVENTO_ISOLA, HUNT_FEST_POINT_ID);
+        log.info('punti evento | %s: +%d Hunt Fest Flag P per la quest %s (saldo %d)', doc.character_name ?? '?', PUNTI_EVENTO_ISOLA, String(cleared_quest), saldoEvento);
+      }
       update.box = doc.box;
       log.info(
         'ricompense accreditate | quest=%s materiali=%d crescita=%d limitati=%d equipaggiamenti=%d zenny=%d (saldo %d)',
@@ -1153,7 +1191,10 @@ export const rewardFinal = async (req: Request, res: Response) => {
     if (!doc) {
       return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
     }
-    const box = doc.box as unknown as BoxPremi & { payments?: { mst_payment_id?: number | null; amount?: number | null }[] };
+    const box = doc.box as unknown as BoxPremi & {
+      payments?: { mst_payment_id?: number | null; amount?: number | null }[];
+      points?: { mst_event_point_id?: number | null; amount?: number | null }[];
+    };
     const risposta = () => ({
       is_pop_not_enough_zeny: 0,
       point_info: {
@@ -1176,6 +1217,15 @@ export const rewardFinal = async (req: Request, res: Response) => {
         `狩玉が足りません (Not enough karidama: ${saldoKaridama(box.payments)}/${PREMIO_FINALE.prezzo})`);
     }
     accreditaPremi(box, new Map(ultimi.vinti.map(([id, quanti, famiglia]) => [id, { quanti: quanti * (PREMIO_FINALE.moltiplicatore - 1), famiglia }])));
+    // I punti evento (Hunt Fest Flag P) non sono in `vinti` (non sono ne'
+    // materiali ne' equipaggiamento), ma la schermata li moltiplica comunque
+    // xN: qui si aggiungono gli (N-1) restanti, cosi' il totale accreditato e'
+    // quello che il gioco mostra. La quota base l'ha gia' data islandEnd.
+    if (PUNTI_EVENTO_ISOLA > 0) {
+      const extraEvento = PUNTI_EVENTO_ISOLA * (PREMIO_FINALE.moltiplicatore - 1);
+      const saldoEvento = aggiungiPunti(box, extraEvento, HUNT_FEST_POINT_ID);
+      log.info('punti evento x%d | %s: +%d Hunt Fest Flag P (saldo %d)', PREMIO_FINALE.moltiplicatore, doc.character_name ?? '?', extraEvento, saldoEvento);
+    }
     // Una volta sola: vale solo se i premi da moltiplicare sono ancora quelli letti.
     const r = await User.updateOne(
       { _id: doc._id, 'ultimi_premi.mst_quest_id': ultimi.mst_quest_id },

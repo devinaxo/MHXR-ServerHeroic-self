@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 0,0><BGM 0,0,505><TALK 1><NAME 1><CHAR 1,1,1,0,0><CHAR 5,1,9,0,0><CV 1,20>No way...\r\nIt's always in the sky, I can't reach it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 11><CV 10,4>I've anticipated it.\r\nI have a countermeasure.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 1><NAME 1>That is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 11>A tube made from the materials you gathered.\r\nWith this, we fire a special barrel bomb.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 10,37>If this hits,\r\nwe can drag that thing down to the earth.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CV 10,20>That is our only chance!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CV 10,19>Let's go, you lot!\r\nThe ringleader is right there!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<POP1 92,PART00006_NODE00512>",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

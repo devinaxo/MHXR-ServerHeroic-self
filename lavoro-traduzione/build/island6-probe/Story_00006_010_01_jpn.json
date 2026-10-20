@@ -1,0 +1,52 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 4,0><BGM 0,0,508><TALK 5><NAME 9><CHAR 5,1,8,4,0><CHAR 1,1,1,0,0><CV 2,4>Is the exploration going well, meow?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,4>Argo!\r\nYes, going well!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 9><CV 2,4>Then, I have a request\r\nfor you lot, meow?",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CV 2,5>According to <COL C70101FF>Weekly Legendary Felyne</COL>,\r\nthe Felyne at Karakara Triangle Foot\r\napparently commands an Arzuros, meow!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CHAR 5,0,8,5,0><CV 2,8>Nicknamed 'Blue-Taro with the Axe'.\r\nI'm curious what he's like, meow!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CV 2,12>His underling Arzuros is a strong foe,\r\nso be careful, meow!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><CV 1,11>Understood!\r\nWe'll go look!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 9><CHAR 5,0,8,7,0><CV 2,7>Count on you, meow!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<POP1 42,PART00006_NODE00502>",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

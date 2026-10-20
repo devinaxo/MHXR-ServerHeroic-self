@@ -51,6 +51,15 @@ export const PUNTI_PER_TIER: Record<number, number> = {
 /** The point id the Trading Post is priced in, as sent in every shop row. */
 export const TRADE_POINT_ID = PUNTI_ID.base;
 
+/*
+ * Punti evento dell'evento 狩猟祭 (Hunter Fest): "Hunt Fest Flag P", id
+ * EVENTPOINT7001001 (verificato in rsdnt_property.arc :: item_event_point).
+ * Non e' una delle tre valute del Trading Post: e' la valuta dell'event shop
+ * (event/shop/list e event/shop/buy), e i giocatori la guadagnano a fine
+ * missione sulle isole (vedi questIsland.controller.ts).
+ */
+export const HUNT_FEST_POINT_ID = 3994654250;
+
 /**
  * Daily allowance, in P. With the price table below this buys a generous stack
  * of anything: 1000 of the cheapest material, or 20 of the rarest (50 P each),

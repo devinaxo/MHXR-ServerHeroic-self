@@ -1,0 +1,27 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,0><CHAR 1,1,1,0,0>I've learned more about the treasure.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "This Sun-Weaving Looking Glass,\r\nit seems not a mirror but a shiny ore.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "At night the mirror becomes transparent,\r\nand moonlight reflects onto the disc inside.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "Reading time not just by sun but by moon -\r\nwhat an idea...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

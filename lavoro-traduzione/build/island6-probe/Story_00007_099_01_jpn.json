@@ -1,0 +1,222 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 1,0><BGM 0,0,507><TALK 5><NAME 9><CHAR 5,1,8,5,0><CHAR 1,1,1,0,0><CV 2,5>I'll go tell them to open the sluice, meow!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CHAR 5,0,8,4,0><CV 2,16>Wait, who is this person, meow?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 5,4,8,4,0><CHAR 5,1,11,0,0><CHAR 1,5,8,0,0><TALK 5><NAME 13><CV 16,1>Um, I'm Yuno.\r\nThis one is Pecola.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 9><CV 2,1><CHAR 1,0,8,3,3>Nice to meet you, meow!\r\nStill, what a cute pet, meow!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 0><NAME 7>Well then, nice to meet you!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 9><CV 2,10><CHAR 1,0,8,0,8>Meow meow!\r\nWho's there!?",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 4><NAME 23>It's me, me!\r\nPecola!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 9><CV 2,2><CHAR 1,0,8,0,1>Meow!\r\nPecola talked, meow!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 13><CHAR 5,0,11,0,2>Eh, such a thing, I don't think so...",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 1><NAME 9><CV 2,11>Meow meow!\r\nDidn't you all hear it too, meow?",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,7><CV 1,28>Argo...\r\nDidn't you mishear something?",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 5><NAME 13>Pecola can't talk, you know?",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 4><NAME 23>Boo!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 1><NAME 9><CHAR 1,0,8,2,5><CV 2,16>Meow!\r\nSomething's odd...!",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 4><NAME 23><CHAR 1,0,8,0,8>What're ya tryin' to expose!\r\nMy mascot charm'll be ruined!",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "Daily fur care, a cute cry,\r\nand long baths to remove the smell.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "Only then can one call oneself a mascot!\r\nI ain't like one of those roadside stones!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 1><NAME 9><CV 2,10><CHAR 1,0,8,0,1>Meow meow!\r\nWhat d'you mean, roadside stone, meow!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "<TALK 4><NAME 23>A creature creeping on the ground like you,\r\nthat name's plenty!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "Look at me!\r\nMe, right here in Lady Yuno's chest!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "So different from that little shrimp!",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "Ain't this chest fine!\r\nSo then, how about you too?",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "Just kidding, I won't give up this seat!\r\nYou naked-coat Felyne!",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<TALK 1><NAME 9><CV 2,9><CHAR 1,0,8,0,6>Meow meow!\r\nNow I'm angry, meow!",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "<CHAR 1,6,8,0,0><CHAR 2,3,8,0,0><TALK 5><NAME 13><CHAR 5,0,11,0,1>Kya",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,0,8><CHAR 2,2,8,0,0>Argo!\r\nWhat are you doing!",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<TALK 1><NAME 9><CHAR 1,0,8,0,6><CV 2,12>It's this one's fault, meow!\r\nThe odd-talking Poogie is at fault, meow!",
+  "en": ""
+ },
+ {
+  "i": 27,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,0><CV 1,61>Argo, are you still saying that?\r\nPecola can't talk!",
+  "en": ""
+ },
+ {
+  "i": 28,
+  "jp": "<TALK 5><NAME 13><CV 16,17>Yes!\r\nShe can't talk!",
+  "en": ""
+ },
+ {
+  "i": 29,
+  "jp": "<TALK 4><NAME 23>Boo!",
+  "en": ""
+ },
+ {
+  "i": 30,
+  "jp": "<TALK 1><NAME 1>Argo, if you keep doing that,\r\nwe'll leave you behind!",
+  "en": ""
+ },
+ {
+  "i": 31,
+  "jp": "Yuno, let's go!",
+  "en": ""
+ },
+ {
+  "i": 32,
+  "jp": "<CHAR 5,6,11,0,0><CHAR 1,6,1,0,0><TALK 3><NAME 9><CHAR 3,1,8,2,0>Meow, wait, meow!\r\nListen to me, meow!",
+  "en": ""
+ },
+ {
+  "i": 33,
+  "jp": "<CV 2,3><MWT 1>I'm not in the wrong, meow!",
+  "en": ""
+ },
+ {
+  "i": 34,
+  "jp": "<STBG 1,2><CHAR 3,2,8,2,0><STBG 100,1><TALK 0><NAME 7>...san, Argo!",
+  "en": ""
+ },
+ {
+  "i": 35,
+  "jp": "<STBG 100,2><CHAR 5,7,0,0,0><STBG 1,1><CHAR 5,1,8,4,8><TALK 5><NAME 9><CV 2,10>Meow meow!\r\nWhat was I doing, meow!?",
+  "en": ""
+ },
+ {
+  "i": 36,
+  "jp": "<CHAR 1,1,1,0,0><TALK 1><NAME 1>Argo, are you alright?\r\nWhen opening the sluice you fell...\r\nand seem to have lost consciousness...",
+  "en": ""
+ },
+ {
+  "i": 37,
+  "jp": "<TALK 5><NAME 9><CV 2,2>Meow!\r\nGood, so that just now was a dream, meow!",
+  "en": ""
+ },
+ {
+  "i": 38,
+  "jp": "<CV 2,8>I had a strange dream and was worried, meow!",
+  "en": ""
+ },
+ {
+  "i": 39,
+  "jp": "<TALK 5><NAME 13><CHAR 5,4,8,4,0><CHAR 5,1,11,0,0><CHAR 1,5,8,0,0>You were out for so long, we worried.",
+  "en": ""
+ },
+ {
+  "i": 40,
+  "jp": "<TALK 0><NAME 7>Right.\r\nTruly, I'm glad you're safe.",
+  "en": ""
+ },
+ {
+  "i": 41,
+  "jp": "<TALK 1><NAME 9><CV 2,6>I caused trouble, meow!\r\nI'm sorry, meow!",
+  "en": ""
+ },
+ {
+  "i": 42,
+  "jp": "<CV 2,2><CHAR 1,0,8,0,1>.........Meow meow!?",
+  "en": ""
+ },
+ {
+  "i": 43,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

@@ -1,0 +1,47 @@
+[
+ {
+  "i": 0,
+  "jp": "<BGM 0,0,502><STBG 3,0><TALK 1><NAME 1><CHAR 5,1,6,0,0><CHAR 1,1,1,2,0><CV 1,5>Sharon!\r\nWe found an ancient ornament,\r\nso we came to report!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CV 4,2>You've come. Let me see!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 4,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "A picture of flowers, is it...\r\na very carefully drawn picture.",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "As if you could grasp it...\r\nwait, hold on, this picture...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "As I thought...\r\npictures of extinct flowers are mixed in.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "One might call it the Treasure Craft...\r\nAnyway, this is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1><CV 1,10><CHAR 1,0,1,3,0>You did it, Hunter!\r\nA huge discovery!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

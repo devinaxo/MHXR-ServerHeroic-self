@@ -1,0 +1,37 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 0,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,0,0>So the treasure was the vessel we sought!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "We must do our best for Yuno too!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 1,9>Now, let's hurry!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CHAR 1,6,1,0,0><TALK 0><NAME 0><MWT 2>………",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 5><NAME 3><CHAR 5,1,2,0,0><CV 7,20>Oh?\r\nThose lot are here too...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CV 7,6>The treasure is the Dronneko Gang's!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

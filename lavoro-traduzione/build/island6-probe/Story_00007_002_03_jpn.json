@@ -1,0 +1,17 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 11,0><BGM 0,0,503><TALK 1><NAME 1><CHAR 1,1,1,0,0>Anyway, we must take Yuno\r\nto the nearby village...",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<CV 1,9>Being in a place like this is dangerous!\r\nLet's hurry!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

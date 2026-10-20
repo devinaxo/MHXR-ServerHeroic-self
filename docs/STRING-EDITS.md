@@ -472,3 +472,39 @@ the client (`time`, condition, `---`, rank). The condition is now a symbol:
 | 25 | `Or Less` | `<` |
 
 So the row reads `01:30 > --- S`. GUI_msg only.
+
+## res 386: full-width comparison glyphs
+
+`res 385` used a plain `<` for 以下, but it did not render: in GMD text `<` opens
+a markup tag (`<COL>`, `<SIZE>`, ...), so the parser consumed it. `>` is not
+special and rendered fine. Replaced both with full-width glyphs:
+
+| i | was | now |
+| --- | --- | --- |
+| 24 | `>` | `＞` (U+FF1E) |
+| 25 | `<` | `＜` (U+FF1C) |
+
+Same principle as the full-width `％` used in printed percentages.
+
+## res 387: proper comparison glyphs
+
+Replaced the full-width `＞` / `＜` from 386 with the actual comparison signs:
+
+| i | was | now |
+| --- | --- | --- |
+| 24 | `＞` | `≥` (U+2265, 以上) |
+| 25 | `＜` | `≤` (U+2264, 以下) |
+
+Neither character is a tag delimiter, so neither is swallowed by the GMD parser.
+The row now reads `01:30 ≥ --- S` / `01:30 ≤ --- S`.
+
+## res 388: rollback of 387
+
+`≥` / `≤` have no glyph in the game font and rendered as the default box
+symbol, so 387 was rolled back. The condition is back to the full-width `＞` /
+`＜` that rendered correctly in 386:
+
+| i | 387 had | 388 now |
+| --- | --- | --- |
+| 24 | `≥` | `＞` |
+| 25 | `≤` | `＜` |

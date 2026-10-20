@@ -1,0 +1,42 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><TALK 1><NAME 1><BGM 0,0,502><CHAR 5,1,6,0,0><CHAR 1,1,1,2,0><CV 1,5>Sharon!\r\nWe found a stone we've never seen,\r\nso we came to report!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CV 4,2>You've come. Let me see!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CV 4,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "It does look like an ore...\r\nHey, isn't it dwindling steadily?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "But there's gas around...\r\nDoes it volatilize quickly...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "One might call it the Volatile Ore...\r\nAnyway, this is a new discovery!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1><CV 1,10><CHAR 1,0,1,3,0>You did it, Hunter!\r\nA huge discovery!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

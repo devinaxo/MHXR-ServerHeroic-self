@@ -6,14 +6,16 @@ import User from '../../../model/user.js';
 import { calcMstId as _calcMstId } from '../../../services/defineService.js';
 import prezziVendita from '../../../json/prezzi-vendita.json' with { type: 'json' };
 import COSTI from '../../../json/upgrade-costs.json' with { type: 'json' };
+import POTENZIALI from '../../../json/potential-values.json' with { type: 'json' };
 import ARTS from '../../../json/arts-costs.json' with { type: 'json' };
+import EVOLVE from '../../../json/evolve-costs.json' with { type: 'json' };
 import omamoriData from '../../../json/omamori.json' with { type: 'json' };
 import { KARIDAMA_IDS, spendiKaridama } from '../../../services/karidamaService.js';
 import { saldiPayments, paymentsDaSalvare } from '../../../services/paymentService.js';
 import { expCrescitaPartner, crescitaPerPartner, applicaExpPartner, CRESCITA_PARTNER } from '../../../services/partnerGrow.js';
 import { dimenticaSubSkillOtomo, OTOMO_NO_SKILL } from '../../../services/otomoQuest.js';
 import { sistemaMercenari } from '../../../services/setMercenari.js';
-import type { BoxGetInput, StorageGetInput, EquipLevelupInput, EquipAwakeInput, EquipWSkillupInput, PotentialupAutoSetInput, SaleInput, FavoriteSetInput, MonumentLevelupInput } from './box.schema.js';
+import type { BoxGetInput, StorageGetInput, EquipLevelupInput, EquipAwakeInput, EquipWSkillupInput, EquipEvolveInput, PotentialupAutoSetInput, PotentialupInput, PotentialupMaterialInput, SaleInput, FavoriteSetInput, MonumentLevelupInput } from './box.schema.js';
 import type { SessionOnlyInput } from '../../../schemas/common.schema.js';
 const log = createLogger('box');
 
@@ -40,11 +42,40 @@ interface TabellaArti {
   kariwazaByEquipment: Record<string, number>;
 }
 
+/**
+ * Evolution table (src/json/evolve-costs.json), generated from the game's
+ * evolve_equip master data by tools-js/build-evolve-costs.cjs.
+ */
+interface TabellaEvoluzioni {
+  byEquipment: Record<
+    string,
+    {
+      name: string;
+      after: number;
+      afterName: string;
+      zeny: number;
+      afterLevel: number;
+      materials: { mst_material_id: number; amount: number }[];
+      equipments: { mst_equipment_id: number; minPotential: number }[];
+    }
+  >;
+}
+
 /** A material row in the box. */
 interface VoceMateriale {
   mst_material_id?: number | null;
   amount?: number | null;
 }
+
+/*
+ * Universal upgrade materials (item_define MATERIAL61107 / MATERIAL61108).
+ * Both are substituted for the piece's own material set: 強化材 for equipment
+ * levels and 共通秘伝書 for Arts levels. Their mCommonUpNum is 99999 in
+ * item_material, so ONE unit covers a whole level: the most expensive set in
+ * upgrade-costs.json is a few hundred points.
+ */
+const MATERIALE_RINFORZO = 1921761827; // 強化材 (Upgrade Material)
+const MATERIALE_RINFORZO_ARTI = 3795115954; // 共通秘伝書 (Common Secret Manual)
 
 /**
  * Full growth-item list to hand back to the client.
@@ -633,7 +664,7 @@ export const PaymentGet = async (req: Request, res: Response) => {
  */
 export const equipLevelup = async (req: Request, res: Response) => {
   try {
-    const { session_id, eqp_obj_id, num } = req.body as EquipLevelupInput;
+    const { session_id, eqp_obj_id, num, is_use_reinforcement } = req.body as EquipLevelupInput;
     const filter = { current_session: session_id };
     const doc = await User.findOne(filter);
     if (!doc) {
@@ -691,15 +722,71 @@ export const equipLevelup = async (req: Request, res: Response) => {
      * refused legitimate upgrades with error 81 (MATERIALS_NOT_ENOUGH).
      */
     const ref = tabella.strengthRef[String(mst.strengthenNeedMaterialId)] ?? [];
-    const fabbisogno = new Map<number, number>();
+    // One requirement set per level gained. Keeping the levels separate lets
+    // the blend mode decide per level whether it needs a reinforcement item.
+    const perLivello: { mst_material_id: number; amount: number }[][] = [];
     for (let lv = currentLevel; lv < currentLevel + steps; lv++) {
       const setIdx = ref[lv];
       if (setIdx === undefined || setIdx === -1) continue;
-      for (const m of tabella.materialSets[String(setIdx)] ?? []) {
-        fabbisogno.set(m.mst_material_id, (fabbisogno.get(m.mst_material_id) ?? 0) + Number(m.amount ?? 0));
-      }
+      perLivello.push(
+        (tabella.materialSets[String(setIdx)] ?? []).map((m) => ({
+          mst_material_id: m.mst_material_id,
+          amount: m.amount,
+        })),
+      );
     }
-    const materialSet = [...fabbisogno.entries()].map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    // What the player owns, merged: the box often holds the same material on
+    // several rows (the tutorial creates duplicates).
+    const posseduti = new Map<number, number>();
+    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+      const id = Number(m.mst_material_id);
+      posseduti.set(id, (posseduti.get(id) ?? 0) + Number(m.amount ?? 0));
+    }
+
+    /*
+     * is_use_reinforcement (from libMHS.so):
+     *   0 = the piece's own required materials;
+     *   1 = blend: spend the required materials that are owned and fill the
+     *       shortfall of each level with one 強化材;
+     *   2 = 強化材 only, one per level.
+     * Unknown values fall back to 0, so a bad request cannot upgrade for free.
+     */
+    const tipoMateriale =
+      is_use_reinforcement === 1 || is_use_reinforcement === 2 ? is_use_reinforcement : 0;
+
+    const spesa = new Map<number, number>();
+    const spendi = (id: number, amount: number) => {
+      if (amount > 0) spesa.set(id, (spesa.get(id) ?? 0) + amount);
+    };
+
+    if (tipoMateriale === 0) {
+      // Normal upgrade: the whole set is required.
+      for (const set of perLivello) for (const m of set) spendi(m.mst_material_id, m.amount);
+    } else if (tipoMateriale === 1) {
+      // Blend: take what is owned, then one reinforcement item for each level
+      // that is still short of anything.
+      const restanti = new Map(posseduti);
+      let rinforzi = 0;
+      for (const set of perLivello) {
+        let manca = false;
+        for (const m of set) {
+          const disponibile = restanti.get(m.mst_material_id) ?? 0;
+          const uso = Math.min(disponibile, m.amount);
+          if (uso > 0) {
+            spendi(m.mst_material_id, uso);
+            restanti.set(m.mst_material_id, disponibile - uso);
+          }
+          if (uso < m.amount) manca = true;
+        }
+        if (manca) rinforzi++;
+      }
+      if (rinforzi > 0) spendi(MATERIALE_RINFORZO, rinforzi);
+    } else {
+      // Reinforcement only: one unit per level gained. A level with an empty
+      // material set costs nothing, so it does not ask for a reinforcement.
+      if (perLivello.length > 0) spendi(MATERIALE_RINFORZO, perLivello.length);
+    }
 
     // Enough zenny?
     const zenyPosseduti = Number(doc.box.zeny ?? 0);
@@ -714,25 +801,21 @@ export const equipLevelup = async (req: Request, res: Response) => {
       );
     }
 
-    // Enough of every material? Checked before anything is deducted, so a
-    // refusal leaves the box untouched. (materialSet is already summed over the
-    // levels gained, so it must NOT be multiplied by `steps` again.)
-    const richiesti = materialSet.map((m: { mst_material_id: number; amount: number }) => ({
-      mst_material_id: Number(m.mst_material_id),
-      amount: Number(m.amount ?? 0),
-    }));
-    for (const need of richiesti) {
-      const posseduti = (doc.box.materials ?? [])
-        .filter((m: VoceMateriale) => Number(m.mst_material_id) === need.mst_material_id)
-        .reduce((tot: number, m: VoceMateriale) => tot + Number(m.amount ?? 0), 0);
-      if (posseduti < need.amount) {
+    /*
+     * Enough of everything? Checked before anything is deducted, so a refusal
+     * leaves the box untouched. The spend map is already summed over the levels
+     * gained and already includes the reinforcement item when one is needed.
+     */
+    for (const [id, amount] of spesa) {
+      const disponibili = posseduti.get(id) ?? 0;
+      if (disponibili < amount) {
         return encryptAndSend(
-          { materials: [{ mst_material_id: need.mst_material_id, amount: posseduti }] },
+          { materials: [{ mst_material_id: id, amount: disponibili }] },
           res,
           req,
           ERROR_CODE.MATERIALS_NOT_ENOUGH,
           ERROR_CATEGORY.ERROR_DIALOG,
-          `Material ${need.mst_material_id}: need ${need.amount}, have ${posseduti}`,
+          `Material ${id}: need ${amount}, have ${disponibili}`,
         );
       }
     }
@@ -747,14 +830,8 @@ export const equipLevelup = async (req: Request, res: Response) => {
      * pass has to see the rows the previous ones left alone. Rows are merged
      * so the box does not fill up with duplicates the client counts separately.
      */
-    const perId = new Map<number, number>();
-    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
-      const id = Number(m.mst_material_id);
-      perId.set(id, (perId.get(id) ?? 0) + Number(m.amount ?? 0));
-    }
-    for (const need of richiesti) {
-      perId.set(need.mst_material_id, (perId.get(need.mst_material_id) ?? 0) - need.amount);
-    }
+    const perId = new Map<number, number>(posseduti);
+    for (const [id, amount] of spesa) perId.set(id, (perId.get(id) ?? 0) - amount);
     doc.box.materials = [...perId.entries()]
       .filter(([, amount]) => amount > 0)
       .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
@@ -766,30 +843,40 @@ export const equipLevelup = async (req: Request, res: Response) => {
     await User.findByIdAndUpdate(doc.id, { box: doc.box });
 
     log.info(
-      'potenziamento | %s: %s lv%d -> lv%d, zenny %d (saldo %d), materiali %d',
+      'potenziamento | %s: %s lv%d -> lv%d, zenny %d (saldo %d), materiali %d, rinforzi %d (tipo %d)',
       doc.character_name ?? '?',
       String(equipment.equipment_id),
       currentLevel,
       newLevel,
       zenny,
       Number(doc.box.zeny ?? 0),
-      richiesti.length,
+      spesa.size,
+      spesa.get(MATERIALE_RINFORZO) ?? 0,
+      tipoMateriale,
     );
 
     /*
-     * The client reads the post-transaction box out of this response: the
-     * remaining zenny, the updated piece, and every material row it should
-     * know about. Anything omitted here is what it renders as 999,999,999.
+     * The client's cAPIBoxEquipmentLevelup::Response::setup parses zeny and
+     * materials INSIDE the "levelup" group (the parent passed for both keys is
+     * the levelup property). They used to be sent at the top level, so the
+     * client read neither: it fell back to 999,999,999 zenny and left the
+     * material counts untouched. See docs/UPGRADE-COSTS.md.
+     *
+     * `materials` carries the changed rows only, with the ABSOLUTE amount left:
+     * sServer::setupBoxEquipmentLevelupResponse writes it straight into the box
+     * row (a consumed-out material must be sent as 0 so its row is cleared).
      */
+    const materialiAggiornati = [...spesa.keys()].map((id) => ({
+      mst_material_id: id,
+      amount: perId.get(id) ?? 0,
+    }));
+
     const data = {
       levelup: {
         equipment: equipment,
+        materials: materialiAggiornati,
+        zeny: Number(doc.box.zeny ?? 0),
       },
-      zeny: Number(doc.box.zeny ?? 0),
-      materials: (doc.box.materials ?? []).map((m: VoceMateriale) => ({
-        mst_material_id: Number(m.mst_material_id),
-        amount: Number(m.amount ?? 0),
-      })),
     };
 
     encryptAndSend(data, res, req);
@@ -829,7 +916,7 @@ export const equipLevelup = async (req: Request, res: Response) => {
  */
 export const equipWSkillup = async (req: Request, res: Response) => {
   try {
-    const { session_id, base_equipment_id, num } = req.body as EquipWSkillupInput;
+    const { session_id, base_equipment_id, num, is_use_reinforcement } = req.body as EquipWSkillupInput;
     const doc = await User.findOne({ current_session: session_id });
     if (!doc?.box) {
       return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED); // Not authenticated
@@ -856,15 +943,59 @@ export const equipWSkillup = async (req: Request, res: Response) => {
     const steps = Math.min(100, Math.max(1, num || 1));
     const currentSlv = Number(equipment.slv ?? 0);
 
+    /*
+     * is_use_reinforcement, same three modes as the equipment level-up. The
+     * Arts equivalent of 強化材 is 共通秘伝書 (item_define MATERIAL61108,
+     * mCommonUpNum 99999), so one unit covers a whole step.
+     */
+    const tipoMateriale =
+      is_use_reinforcement === 1 || is_use_reinforcement === 2 ? is_use_reinforcement : 0;
+
     // One material set per step.
-    const fabbisogno = new Map<number, number>();
+    const perPasso: { mst_material_id: number; amount: number }[][] = [];
     for (let s = 0; s < steps; s++) {
-      for (const m of costo.materials) {
-        const id = Number(m.mst_material_id);
-        fabbisogno.set(id, (fabbisogno.get(id) ?? 0) + Number(m.amount ?? 0));
-      }
+      perPasso.push(
+        costo.materials.map((m) => ({
+          mst_material_id: m.mst_material_id,
+          amount: m.amount,
+        })),
+      );
     }
-    const richiesti = [...fabbisogno.entries()].map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    const posseduti = new Map<number, number>();
+    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+      const id = Number(m.mst_material_id);
+      posseduti.set(id, (posseduti.get(id) ?? 0) + Number(m.amount ?? 0));
+    }
+
+    const spesa = new Map<number, number>();
+    const spendi = (id: number, amount: number) => {
+      if (amount > 0) spesa.set(id, (spesa.get(id) ?? 0) + amount);
+    };
+
+    if (tipoMateriale === 0) {
+      for (const set of perPasso) for (const m of set) spendi(m.mst_material_id, m.amount);
+    } else if (tipoMateriale === 1) {
+      // Blend: use what is owned, one 共通秘伝書 for each step still short.
+      const restanti = new Map(posseduti);
+      let rinforzi = 0;
+      for (const set of perPasso) {
+        let manca = false;
+        for (const m of set) {
+          const disponibile = restanti.get(m.mst_material_id) ?? 0;
+          const uso = Math.min(disponibile, m.amount);
+          if (uso > 0) {
+            spendi(m.mst_material_id, uso);
+            restanti.set(m.mst_material_id, disponibile - uso);
+          }
+          if (uso < m.amount) manca = true;
+        }
+        if (manca) rinforzi++;
+      }
+      if (rinforzi > 0) spendi(MATERIALE_RINFORZO_ARTI, rinforzi);
+    } else {
+      spendi(MATERIALE_RINFORZO_ARTI, steps);
+    }
 
     // Flat rarity base per step. Rarity comes from the same master table as
     // box/equipment/levelup (upgrade-costs.json).
@@ -885,18 +1016,16 @@ export const equipWSkillup = async (req: Request, res: Response) => {
     }
 
     // Checked before anything is deducted, so a refusal leaves the box untouched.
-    for (const need of richiesti) {
-      const posseduti = (doc.box.materials ?? [])
-        .filter((m: VoceMateriale) => Number(m.mst_material_id) === need.mst_material_id)
-        .reduce((tot: number, m: VoceMateriale) => tot + Number(m.amount ?? 0), 0);
-      if (posseduti < need.amount) {
+    for (const [id, amount] of spesa) {
+      const disponibili = posseduti.get(id) ?? 0;
+      if (disponibili < amount) {
         return encryptAndSend(
-          { materials: [{ mst_material_id: need.mst_material_id, amount: posseduti }] },
+          { materials: [{ mst_material_id: id, amount: disponibili }] },
           res,
           req,
           ERROR_CODE.MATERIALS_NOT_ENOUGH,
           ERROR_CATEGORY.ERROR_DIALOG,
-          `Material ${need.mst_material_id}: need ${need.amount}, have ${posseduti}`,
+          `Material ${id}: need ${amount}, have ${disponibili}`,
         );
       }
     }
@@ -904,14 +1033,8 @@ export const equipWSkillup = async (req: Request, res: Response) => {
     // Spend, then raise the arts level.
     doc.box.zeny = zenyPosseduti - zeny;
 
-    const perId = new Map<number, number>();
-    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
-      const id = Number(m.mst_material_id);
-      perId.set(id, (perId.get(id) ?? 0) + Number(m.amount ?? 0));
-    }
-    for (const need of richiesti) {
-      perId.set(need.mst_material_id, (perId.get(need.mst_material_id) ?? 0) - need.amount);
-    }
+    const perId = new Map<number, number>(posseduti);
+    for (const [id, amount] of spesa) perId.set(id, (perId.get(id) ?? 0) - amount);
     doc.box.materials = [...perId.entries()]
       .filter(([, amount]) => amount > 0)
       .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
@@ -922,14 +1045,16 @@ export const equipWSkillup = async (req: Request, res: Response) => {
     await User.findByIdAndUpdate(doc.id, { box: doc.box });
 
     log.info(
-      'arti | %s: %s slv%d -> slv%d, zenny %d (saldo %d), materiali %d',
+      'arti | %s: %s slv%d -> slv%d, zenny %d (saldo %d), materiali %d, rinforzi %d (tipo %d)',
       doc.character_name ?? '?',
       String(equipment.equipment_id),
       currentSlv,
       newSlv,
       zeny,
       Number(doc.box.zeny ?? 0),
-      richiesti.length,
+      spesa.size,
+      spesa.get(MATERIALE_RINFORZO_ARTI) ?? 0,
+      tipoMateriale,
     );
 
     // resource_materials are the materials the client must subtract, so they
@@ -937,13 +1062,217 @@ export const equipWSkillup = async (req: Request, res: Response) => {
     const data = {
       zeny: Number(doc.box.zeny ?? 0),
       base_equipment: equipment,
-      resource_materials: richiesti.map((m) => ({ mst_material_id: m.mst_material_id, amount: m.amount })),
+      resource_materials: [...spesa.entries()].map(([mst_material_id, amount]) => ({ mst_material_id, amount })),
     };
 
     encryptAndSend(data, res, req);
   } catch (error) {
     log.error('Error in equipWSkillup:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment arts level up failed');
+  }
+};
+
+/*
+ * EQUIPMENT EVOLUTION (進化 / box/equipment/evolve).
+ *
+ * Client class cAPIBoxEquipmentEvolve. Request (Request::createProperty):
+ *   { base_equipment_id, evolved_mst_equipment_id, resource_equipment_ids }
+ * Response (Response::createProperty):
+ *   { zeny, base_equipment, resource_equipments, resource_materials }
+ *
+ * Costs come from the game's own evolve_equip table, extracted into
+ * src/json/evolve-costs.json by tools-js/build-evolve-costs.cjs:
+ *   - mNeedZeny             flat zenny cost
+ *   - mEvolveAfterLevel     level the evolved piece starts at
+ *   - mNeedItemHashList     up to four requirements, either a material id
+ *                           (value = amount) or an equipment master id
+ *                           (value = the minimum plus value the sacrificed
+ *                           copy must have)
+ *
+ * The client does not send the required materials; it only sends the equipment
+ * instances picked for the equipment requirements. The server takes the
+ * materials from the table. As with the level-up route, `resource_materials`
+ * carries ABSOLUTE amounts (the box rows are written, not added to), and
+ * `resource_equipments` carries the sacrificed pieces so the client removes
+ * them from the box.
+ *
+ * An evolution needs the piece at its maximum level. The client already blocks
+ * it, but the check is repeated here so a crafted request cannot skip it.
+ */
+export const equipEvolve = async (req: Request, res: Response) => {
+  try {
+    const { session_id, base_equipment_id, evolved_mst_equipment_id, resource_equipment_ids } =
+      req.body as EquipEvolveInput;
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+
+    const equipments = doc.box.equipments ?? [];
+    const index = equipments.findIndex((e) => String(e.equipment_id) === String(base_equipment_id));
+    if (index === -1) {
+      return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
+    }
+    const eq = equipments[index]!;
+
+    const tabella = EVOLVE as unknown as TabellaEvoluzioni;
+    const riga = tabella.byEquipment[String(eq.mst_equipment_id)];
+    if (!riga) {
+      log.warn('evoluzione | mst_equipment_id %s assente dalla tabella', eq.mst_equipment_id);
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No evolution data for this equipment');
+    }
+
+    // The client picked a target; make sure it is the one the table says.
+    if (evolved_mst_equipment_id && Number(evolved_mst_equipment_id) !== riga.after) {
+      log.warn('evoluzione | %s: target %s inatteso (tabella %d)', eq.equipment_id, evolved_mst_equipment_id, riga.after);
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Wrong evolution target');
+    }
+
+    // Evolution is only available at the piece's maximum level.
+    const mst = (COSTI as unknown as TabellaCosti).equipment[String(eq.mst_equipment_id)];
+    const levelMax = Number(mst?.levelMax ?? 0);
+    if (levelMax > 0 && Number(eq.elv ?? 0) < levelMax) {
+      return encryptAndSend(
+        {},
+        res,
+        req,
+        ERROR_CODE.EQUIP_MAX_LEVEL,
+        ERROR_CATEGORY.ERROR_DIALOG,
+        `Evolution needs level ${levelMax}, piece is level ${Number(eq.elv ?? 0)}`,
+      );
+    }
+
+    const zeny = Number(riga.zeny ?? 0);
+    const zenyPosseduti = Number(doc.box.zeny ?? 0);
+    if (zeny > zenyPosseduti) {
+      return encryptAndSend(
+        { zeny: zenyPosseduti },
+        res,
+        req,
+        ERROR_CODE.ZENY_NOT_ENOUGH,
+        ERROR_CATEGORY.ERROR_DIALOG,
+        `Zenny insufficient: need ${zeny}, have ${zenyPosseduti}`,
+      );
+    }
+
+    // Owned materials, merged (the box can hold duplicate rows).
+    const posseduti = new Map<number, number>();
+    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+      const id = Number(m.mst_material_id);
+      posseduti.set(id, (posseduti.get(id) ?? 0) + Number(m.amount ?? 0));
+    }
+    for (const need of riga.materials) {
+      const disponibili = posseduti.get(need.mst_material_id) ?? 0;
+      if (disponibili < need.amount) {
+        return encryptAndSend(
+          { materials: [{ mst_material_id: need.mst_material_id, amount: disponibili }] },
+          res,
+          req,
+          ERROR_CODE.MATERIALS_NOT_ENOUGH,
+          ERROR_CATEGORY.ERROR_DIALOG,
+          `Material ${need.mst_material_id}: need ${need.amount}, have ${disponibili}`,
+        );
+      }
+    }
+
+    /*
+     * Equipment requirements. Each entry asks for ONE instance of a master id
+     * with at least minPotential plus value. `resource_equipment_ids` is what
+     * the player selected; it must match the requirements exactly, so an
+     * unrelated piece can never be eaten by mistake.
+     */
+    const ids = [...new Set((resource_equipment_ids ?? []).map(String))].filter(
+      (id) => id !== String(base_equipment_id),
+    );
+    if (ids.length !== (resource_equipment_ids ?? []).length) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Duplicate resource equipment');
+    }
+    const candidati = ids.map((id) => equipments.find((e) => String(e.equipment_id) === id));
+    if (candidati.some((e) => !e)) {
+      return encryptAndSend({}, res, req, ERROR_CODE.EQUIP_NOT_IN_BOX, ERROR_CATEGORY.ERROR_DIALOG, 'Resource equipment not in box');
+    }
+    const disponibili = candidati.filter((e): e is (typeof equipments)[number] => !!e);
+    const usati = new Set<string>();
+    const consumati: typeof disponibili = [];
+    for (const need of riga.equipments) {
+      const scelto = disponibili.find(
+        (e) =>
+          !usati.has(String(e.equipment_id)) &&
+          Number(e.mst_equipment_id) === need.mst_equipment_id &&
+          Number(e.potential ?? 0) >= need.minPotential,
+      );
+      if (!scelto) {
+        return encryptAndSend(
+          {},
+          res,
+          req,
+          ERROR_CODE.EQUIP_UPGRADE_FAILED,
+          ERROR_CATEGORY.ERROR_DIALOG,
+          `Evolution needs equipment ${need.mst_equipment_id} with plus value ${need.minPotential}`,
+        );
+      }
+      usati.add(String(scelto.equipment_id));
+      consumati.push(scelto);
+    }
+    if (usati.size !== disponibili.length) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Unexpected resource equipment');
+    }
+
+    // Everything checked out: spend.
+    doc.box.zeny = zenyPosseduti - zeny;
+
+    const spesa = new Map<number, number>();
+    for (const need of riga.materials) {
+      spesa.set(need.mst_material_id, (spesa.get(need.mst_material_id) ?? 0) + need.amount);
+    }
+    const perId = new Map<number, number>(posseduti);
+    for (const [id, amount] of spesa) perId.set(id, (perId.get(id) ?? 0) - amount);
+    doc.box.materials = [...perId.entries()]
+      .filter(([, amount]) => amount > 0)
+      .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    doc.box.equipments = equipments.filter((e) => !usati.has(String(e.equipment_id)));
+
+    // Evolve the piece in place: same equipment_id, new master id and level.
+    // The game resets the Arts level on evolution ("武技Lv.が初期化されます").
+    const prima = Number(eq.mst_equipment_id);
+    eq.mst_equipment_id = riga.after;
+    eq.elv = riga.afterLevel > 0 ? riga.afterLevel : Number(eq.elv ?? 0);
+    eq.slv = 1;
+
+    await User.findByIdAndUpdate(doc.id, { box: doc.box });
+
+    log.info(
+      'evoluzione | %s: %s %d -> %d (lv %d), zenny %d (saldo %d), materiali %d, equipaggiamenti %d',
+      doc.character_name ?? '?',
+      String(eq.equipment_id),
+      prima,
+      riga.after,
+      Number(eq.elv ?? 0),
+      zeny,
+      Number(doc.box.zeny ?? 0),
+      riga.materials.length,
+      consumati.length,
+    );
+
+    const materialiAggiornati = [...spesa.keys()].map((id) => ({
+      mst_material_id: id,
+      amount: perId.get(id) ?? 0,
+    }));
+
+    encryptAndSend(
+      {
+        zeny: Number(doc.box.zeny ?? 0),
+        base_equipment: eq,
+        resource_equipments: consumati,
+        resource_materials: materialiAggiornati,
+      },
+      res,
+      req,
+    );
+  } catch (error) {
+    log.error('Error in equipEvolve:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Equipment evolution failed');
   }
 };
 
@@ -1106,18 +1435,232 @@ export const awake = async (req: Request, res: Response) => {
 };
 
 /*
- * "Auto-set" the materials used for potential (awakening) upgrades.
+ * PLUS VALUE (プラス値): box/equipment/potentialupmaterial and
+ * box/equipment/potentialup.
  *
- * The mechanic itself is not implemented -- there is no potential-upgrade cost
- * table in the repo -- so this does nothing and says so.
+ * The weapon/armour `potential` field is its plus value. It raises the weapon's
+ * damage multiplier and is capped by rarity. Both endpoints were missing (only
+ * potentialup/auto/set existed, as a stub); the request/response fields were read
+ * from libMHS.so:
+ *   potentialupmaterial  req { base_equipment_id, resource_materials }
+ *                        resp { zeny, base_equipment, resource_materials }
+ *   potentialup          req { base_equipment_id, resource_equipment_ids }
+ *                        resp { zeny, base_equipment, resource_equipments }
+ *
+ * The caps and the per-unit values come from the game's own table,
+ * rsdnt_equip.arc :: potentialValue (see src/json/potential-values.json and
+ * tools-js/costruisci-potential-values.cjs):
+ *   mMaxPlusValue     the cap per rarity (r1 5, r2 10, r3 15, r4+ 20/25)
+ *   mUpValueList      [equipment value, material value] = [5, 1]
+ *   mStrengthBasePrice zeny base
+ * The client helper sPlayer::getEquipPotentialValue(rarity, count, kind) is
+ * mUpValueList[kind] * count, so one fodder equipment adds 5 and one plus-up
+ * material adds 1. The same table names the only materials the client will let
+ * you feed (item_plusup_material; 50 zeny each).
+ */
+interface TabellaPotenziali {
+  byRarity: Record<string, { prezzoBase: number; maxPlus: number; upValue: number[] }>;
+  materials: Record<string, { rarita: number; zeny: number; condizione: number }>;
+}
+
+const PLUS = POTENZIALI as unknown as TabellaPotenziali;
+
+/** Rarity of an equipment, from the same master table the upgrades use. */
+function raritaEquipaggiamento(mstEquipmentId: unknown): number {
+  return Number((COSTI as unknown as TabellaCosti).equipment[String(mstEquipmentId)]?.rarity ?? 0);
+}
+
+/**
+ * Plus value with plus-up materials. Each material adds `upValue[1]` (1) and
+ * costs its own mZeny (50), capped at the rarity's max.
+ */
+export const potentialupMaterial = async (req: Request, res: Response) => {
+  try {
+    const { session_id, base_equipment_id, resource_materials } = req.body as PotentialupMaterialInput;
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+
+    const equipments = doc.box.equipments ?? [];
+    const eq = equipments.find((e) => String(e.equipment_id) === String(base_equipment_id));
+    if (!eq) {
+      return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
+    }
+
+    const rarita = raritaEquipaggiamento(eq.mst_equipment_id);
+    const riga = PLUS.byRarity[String(rarita)];
+    if (!riga) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No potential value data for this rarity');
+    }
+
+    const attuale = Number(eq.potential ?? 0);
+    if (attuale >= riga.maxPlus) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Plus value already at maximum');
+    }
+
+    // Normalise the request: only real ids, positive amounts.
+    const richiesti = (resource_materials ?? [])
+      .map((m) => ({ mst_material_id: Number(m.mst_material_id), amount: Math.max(0, Number(m.amount) || 0) }))
+      .filter((m) => m.mst_material_id > 0 && m.amount > 0);
+    if (!richiesti.length) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No materials selected');
+    }
+
+    let unita = 0;
+    let zeny = 0;
+    for (const r of richiesti) {
+      const info = PLUS.materials[String(r.mst_material_id)];
+      if (!info) {
+        log.info('plus | id %s non e\' un materiale plus', r.mst_material_id);
+        return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, `Not a plus-up material: ${r.mst_material_id}`);
+      }
+      unita += r.amount;
+      zeny += info.zeny * r.amount;
+    }
+
+    // Ownership checked before anything is deducted.
+    for (const r of richiesti) {
+      const posseduti = ((doc.box.materials ?? []) as VoceMateriale[])
+        .filter((m) => Number(m.mst_material_id) === r.mst_material_id)
+        .reduce((tot, m) => tot + Number(m.amount ?? 0), 0);
+      if (posseduti < r.amount) {
+        return encryptAndSend(
+          { materials: [{ mst_material_id: r.mst_material_id, amount: posseduti }] },
+          res, req, ERROR_CODE.MATERIALS_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+          `Material ${r.mst_material_id}: need ${r.amount}, have ${posseduti}`,
+        );
+      }
+    }
+
+    const zenyPosseduti = Number(doc.box.zeny ?? 0);
+    if (zeny > zenyPosseduti) {
+      return encryptAndSend(
+        { zeny: zenyPosseduti },
+        res, req, ERROR_CODE.ZENY_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+        `Zenny insufficient: need ${zeny}, have ${zenyPosseduti}`,
+      );
+    }
+
+    doc.box.zeny = zenyPosseduti - zeny;
+
+    const perId = new Map<number, number>();
+    for (const m of (doc.box.materials ?? []) as VoceMateriale[]) {
+      const id = Number(m.mst_material_id);
+      perId.set(id, (perId.get(id) ?? 0) + Number(m.amount ?? 0));
+    }
+    for (const r of richiesti) perId.set(r.mst_material_id, (perId.get(r.mst_material_id) ?? 0) - r.amount);
+    doc.box.materials = [...perId.entries()]
+      .filter(([, amount]) => amount > 0)
+      .map(([mst_material_id, amount]) => ({ mst_material_id, amount }));
+
+    const guadagno = unita * (riga.upValue[1] ?? 1);
+    eq.potential = Math.min(riga.maxPlus, attuale + guadagno);
+
+    await User.findByIdAndUpdate(doc.id, { box: doc.box });
+
+    log.info(
+      'plus | %s: %s potential %d -> %d (%d materiali), zeny %d (saldo %d)',
+      doc.character_name ?? '?', String(eq.equipment_id), attuale, Number(eq.potential), unita, zeny, Number(doc.box.zeny ?? 0),
+    );
+
+    encryptAndSend(
+      {
+        zeny: Number(doc.box.zeny ?? 0),
+        base_equipment: eq,
+        // The materials the client must subtract; the amounts actually spent.
+        resource_materials: richiesti.map((m) => ({ mst_material_id: m.mst_material_id, amount: m.amount })),
+      },
+      res, req,
+    );
+  } catch (error) {
+    log.error('Error in potentialupMaterial:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Potential up failed');
+  }
+};
+
+/**
+ * Plus value with fodder equipment. Each fodder adds `upValue[0]` (5), capped
+ * at the rarity's max. The fodder is consumed. Feeding equipment costs its own
+ * `prezzoBase` in zeny.
+ */
+export const potentialup = async (req: Request, res: Response) => {
+  try {
+    const { session_id, base_equipment_id, resource_equipment_ids } = req.body as PotentialupInput;
+    const doc = await User.findOne({ current_session: session_id });
+    if (!doc?.box) {
+      return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+    }
+
+    const equipments = doc.box.equipments ?? [];
+    const eq = equipments.find((e) => String(e.equipment_id) === String(base_equipment_id));
+    if (!eq) {
+      return encryptAndSend({}, res, req, ERROR_CODE.EQUIPMENT_NOT_FOUND, ERROR_CATEGORY.NONE, 'equipment not found');
+    }
+
+    const rarita = raritaEquipaggiamento(eq.mst_equipment_id);
+    const riga = PLUS.byRarity[String(rarita)];
+    if (!riga) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No potential value data for this rarity');
+    }
+
+    const attuale = Number(eq.potential ?? 0);
+    if (attuale >= riga.maxPlus) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Plus value already at maximum');
+    }
+
+    // Only fodder actually in the box, never the base, never twice.
+    const ids = [...new Set((resource_equipment_ids ?? []).map(String))].filter((id) => id && id !== String(base_equipment_id));
+    const rimossi = equipments.filter((e) => ids.includes(String(e.equipment_id)));
+    if (!rimossi.length) {
+      return encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'No equipment selected');
+    }
+
+    const zeny = riga.prezzoBase * rimossi.length;
+    const zenyPosseduti = Number(doc.box.zeny ?? 0);
+    if (zeny > zenyPosseduti) {
+      return encryptAndSend(
+        { zeny: zenyPosseduti },
+        res, req, ERROR_CODE.ZENY_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG,
+        `Zenny insufficient: need ${zeny}, have ${zenyPosseduti}`,
+      );
+    }
+
+    const guadagno = rimossi.length * (riga.upValue[0] ?? 5);
+    eq.potential = Math.min(riga.maxPlus, attuale + guadagno);
+    doc.box.zeny = zenyPosseduti - zeny;
+    doc.box.equipments = equipments.filter((e) => !ids.includes(String(e.equipment_id)));
+
+    await User.findByIdAndUpdate(doc.id, { box: doc.box });
+
+    log.info(
+      'plus | %s: %s potential %d -> %d (%d pezzi divorati), zeny %d (saldo %d)',
+      doc.character_name ?? '?', String(eq.equipment_id), attuale, Number(eq.potential), rimossi.length, zeny, Number(doc.box.zeny ?? 0),
+    );
+
+    encryptAndSend(
+      { zeny: Number(doc.box.zeny ?? 0), base_equipment: eq, resource_equipments: rimossi },
+      res, req,
+    );
+  } catch (error) {
+    log.error('Error in potentialup:', error);
+    encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Potential up failed');
+  }
+};
+
+/*
+ * "Auto-set" the materials used for potential upgrades (cAPIBoxEquipmentPotentialupAutoSet).
+ *
+ * Request `eqp_obj_infos`, response `set_equipments` (from libMHS.so). The
+ * manual upgrade is implemented (potentialup / potentialupmaterial, above); the
+ * auto-selection itself is not, so this answers an empty, valid set: the player
+ * picks the fodder/materials by hand. Better an empty set than a wrong one.
  *
  * It used to return a fully invented payload: equipment "EQP_ABC123", a fake
  * partner payment, made-up materials, and `zeny: 999999`. The client applies the
  * zenny value, so the on-screen balance jumped to 999999999 after touching this
  * screen and only snapped back on the next request that re-read the real box.
- *
- * It now echoes the caller's REAL state with nothing changed, so the client
- * displays the balance it should have.
+ * The response now carries no zeny at all.
  */
 export const potentialupAutoSet = async (req: Request, res: Response) => {
   try {
@@ -1126,27 +1669,10 @@ export const potentialupAutoSet = async (req: Request, res: Response) => {
     if (!doc?.box) {
       return encryptAndSend({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
     }
-    const box = doc.box as unknown as {
-      equipments?: unknown[];
-      payments?: { mst_payment_id?: number | null; amount?: number | null }[];
-      zeny?: number | null;
-    };
-    // Nothing is consumed, so nothing is echoed as consumed: the real equipment,
-    // the real payment balances, and the real zenny.
-    encryptAndSend(
-      {
-        base_equipment: {},
-        payments: (box.payments ?? []).map((p) => ({
-          mst_payment_id: Number(p.mst_payment_id),
-          amount: Number(p.amount ?? 0),
-        })),
-        resource_equipments: [],
-        resource_materials: [],
-        zeny: Number(box.zeny ?? 0),
-      },
-      res,
-      req,
-    );
+    // No auto-selection yet: an empty, valid set (the manual endpoints above do
+    // the work). No zeny in the response, so the client cannot be tricked into
+    // showing a balance that is not real.
+    encryptAndSend({ set_equipments: [] }, res, req);
   } catch (error) {
     log.error('Error in potentialupAutoSet:', error);
     encryptAndSend({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, 'Potential up auto set failed');

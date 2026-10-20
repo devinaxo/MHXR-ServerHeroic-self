@@ -16,7 +16,7 @@ vi.mock('../../../middleware/logger', () => ({
 import User from '../../../model/user.js';
 import { encryptAndSend } from '../../../services/crypto/encryptionHelpers.js';
 import { ERROR_CODE, ERROR_CATEGORY } from '../../../constants/error.codes.js';
-import { get, otomoGet, partnerGet, equipLevelup, equipWSkillup, storageInfo, sale, favoriteSet, leveupAuto, materialSell, equipCapacityInfo, equipCapacityExpand, holdStampSet, partnerLevelup, growthitemGet, otomoSkillRemove } from './box.controller.js';
+import { get, otomoGet, partnerGet, equipLevelup, equipWSkillup, equipEvolve, potentialup, potentialupMaterial, storageInfo, sale, favoriteSet, leveupAuto, materialSell, equipCapacityInfo, equipCapacityExpand, holdStampSet, partnerLevelup, growthitemGet, otomoSkillRemove } from './box.controller.js';
 import prezzi from '../../../json/prezzi-vendita.json' with { type: 'json' };
 
 function mockReqRes(body: Record<string, unknown> = {}) {
@@ -223,7 +223,7 @@ describe('box.controller', () => {
       }
     });
 
-    it('sends back the remaining zenny and every material row the client reads', async () => {
+    it('nests zeny and the changed materials under levelup', async () => {
       utenteConLancia(30);
       vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
 
@@ -231,18 +231,75 @@ describe('box.controller', () => {
 
       await equipLevelup(req, res);
 
-      // Omitting these is what made the client show 999,999,999.
+      /*
+       * cAPIBoxEquipmentLevelup::Response::setup parses "zeny" and "materials"
+       * with the "levelup" property as their parent. At the top level the
+       * client read neither, showing 999,999,999 zenny and stale material
+       * counts. The material list is the changed rows with absolute amounts.
+       */
       expect(encryptAndSend).toHaveBeenCalledWith(
-        expect.objectContaining({
-          levelup: { equipment: expect.objectContaining({ elv: 31 }) },
-          zeny: 1_000_000 - 14_981,
-          materials: expect.arrayContaining([
-            expect.objectContaining({ mst_material_id: 1642667129, amount: 8 * 2 }),
-          ]),
-        }),
+        {
+          levelup: {
+            equipment: expect.objectContaining({ elv: 31 }),
+            zeny: 1_000_000 - 14_981,
+            materials: [{ mst_material_id: 1642667129, amount: 8 * 2 }],
+          },
+        },
         res,
         req,
       );
+    });
+
+    it('spends one 強化材 per level in reinforcement-only mode', async () => {
+      const RINFORZO = 1921761827;
+      const box = utenteConLancia(30);
+      box.materials = [{ mst_material_id: RINFORZO, amount: 4 }];
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1', eqp_obj_id: 'EQP_001', num: 2, is_use_reinforcement: 2,
+      });
+
+      await equipLevelup(req, res);
+
+      const salvato = boxSalvato();
+      expect(salvato.equipments[0]!.elv).toBe(32);
+      // The required material was not needed; only the reinforcement was spent.
+      expect(salvato.materials).toEqual([{ mst_material_id: RINFORZO, amount: 2 }]);
+    });
+
+    it('blends: spends what is owned and one 強化材 for the shortfall', async () => {
+      const RINFORZO = 1921761827;
+      const box = utenteConLancia(30);
+      // Own 2 of the 8 needed, plus a reinforcement item.
+      box.materials = [
+        { mst_material_id: 1642667129, amount: 2 },
+        { mst_material_id: RINFORZO, amount: 1 },
+      ];
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1', eqp_obj_id: 'EQP_001', num: 1, is_use_reinforcement: 1,
+      });
+
+      await equipLevelup(req, res);
+
+      const salvato = boxSalvato();
+      expect(salvato.equipments[0]!.elv).toBe(31);
+      // The 2 owned units are consumed; the missing 6 are covered by 1 強化材.
+      expect(salvato.materials).toEqual([]);
+    });
+
+    it('refuses reinforcement mode without the reinforcement item', async () => {
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1', eqp_obj_id: 'EQP_001', num: 1, is_use_reinforcement: 2,
+      });
+      utenteConLancia(30);
+      // The box only holds the normal material, no 強化材.
+
+      await equipLevelup(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({ materials: [{ mst_material_id: 1921761827, amount: 0 }] }),
+        res, req, ERROR_CODE.MATERIALS_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String),
+      );
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
     });
 
     it('refuses and changes nothing when the player cannot pay', async () => {
@@ -289,6 +346,164 @@ describe('box.controller', () => {
       await equipLevelup(req, res);
 
       expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, 2001, 0, 'equipment not found');
+    });
+  });
+
+  describe('equipEvolve', () => {
+    /*
+     * ゾークザラッシュ零Ⅰ -> 零Ⅱ (mst 1024651966 -> 1242939944), from
+     * src/json/evolve-costs.json: 2,000,000 zenny and 25/25/5 of three
+     * materials. Level max is 80.
+     */
+    const MST_ZORK_I = 1024651966;
+    const MST_ZORK_II = 1242939944;
+    const MATS = [
+      { mst_material_id: 685959140, amount: 25 },
+      { mst_material_id: 3062264391, amount: 25 },
+      { mst_material_id: 3246473937, amount: 5 },
+    ];
+    const ZENY = 2_000_000;
+
+    function utenteZork(elv = 80, zeny = 3_000_000) {
+      const box = {
+        zeny,
+        equipments: [{ equipment_id: 'EQP_Z', elv, potential: 3, slv: 4, mst_equipment_id: MST_ZORK_I }],
+        materials: MATS.map((m) => ({ mst_material_id: m.mst_material_id, amount: m.amount + 10 })),
+      };
+      vi.mocked(User.findOne).mockResolvedValue({ id: 'user-1', box } as never);
+      return box;
+    }
+
+    type BoxSalvato = {
+      zeny: number;
+      equipments: { equipment_id: string; elv: number; slv: number; mst_equipment_id: number }[];
+      materials: { mst_material_id: number; amount: number }[];
+    };
+    function boxSalvato(): BoxSalvato {
+      const [, update] = vi.mocked(User.findByIdAndUpdate).mock.calls[0]!;
+      return (update as { box: BoxSalvato }).box;
+    }
+
+    it('evolves at max level, spends zenny and materials, and resets the Arts level', async () => {
+      utenteZork();
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1',
+        base_equipment_id: 'EQP_Z',
+        evolved_mst_equipment_id: MST_ZORK_II,
+        resource_equipment_ids: [],
+      });
+
+      await equipEvolve(req, res);
+
+      const salvato = boxSalvato();
+      expect(salvato.zeny).toBe(3_000_000 - ZENY);
+      expect(salvato.equipments[0]).toEqual(
+        expect.objectContaining({ equipment_id: 'EQP_Z', mst_equipment_id: MST_ZORK_II, elv: 80, slv: 1 }),
+      );
+      for (const need of MATS) {
+        const row = salvato.materials.find((m) => m.mst_material_id === need.mst_material_id);
+        expect(row?.amount).toBe(10);
+      }
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        {
+          zeny: 3_000_000 - ZENY,
+          base_equipment: expect.objectContaining({ mst_equipment_id: MST_ZORK_II }),
+          resource_equipments: [],
+          resource_materials: MATS.map((m) => ({ mst_material_id: m.mst_material_id, amount: 10 })),
+        },
+        res,
+        req,
+      );
+    });
+
+    it('refuses below max level', async () => {
+      utenteZork(79);
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z' });
+
+      await equipEvolve(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        {}, res, req, ERROR_CODE.EQUIP_MAX_LEVEL, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String),
+      );
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+    });
+
+    it('refuses when a material is missing', async () => {
+      const box = utenteZork();
+      box.materials = [{ mst_material_id: 685959140, amount: 1 }];
+      const { req, res } = mockReqRes({ session_id: 'sess-1', base_equipment_id: 'EQP_Z' });
+
+      await equipEvolve(req, res);
+
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({ materials: [{ mst_material_id: 685959140, amount: 1 }] }),
+        res, req, ERROR_CODE.MATERIALS_NOT_ENOUGH, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String),
+      );
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+    });
+
+    it('consumes the selected fodder equipment and checks its plus value', async () => {
+      // ネオサンダークルス (35225471) -> 白雷砲エクレール (2625497820) needs
+      // three different pieces, each with plus value >= 1.
+      const FODDER = [4145058978, 2587485168, 2601529029];
+      const box = {
+        zeny: 1_000_000,
+        equipments: [
+          { equipment_id: 'EQP_BASE', elv: 50, slv: 3, potential: 0, mst_equipment_id: 35225471 },
+          ...FODDER.map((mst, i) => ({
+            equipment_id: `EQP_F${i}`,
+            elv: 1,
+            slv: 1,
+            potential: i === 0 ? 0 : 1,
+            mst_equipment_id: mst,
+          })),
+        ],
+        materials: [],
+      };
+      vi.mocked(User.findOne).mockResolvedValue({ id: 'user-1', box } as never);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+
+      // The first fodder has plus value 0, below the required 1.
+      let reqRes = mockReqRes({
+        session_id: 'sess-1',
+        base_equipment_id: 'EQP_BASE',
+        resource_equipment_ids: ['EQP_F0', 'EQP_F1', 'EQP_F2'],
+      });
+      await equipEvolve(reqRes.req, reqRes.res);
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        {}, reqRes.res, reqRes.req, ERROR_CODE.EQUIP_UPGRADE_FAILED, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String),
+      );
+      expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+
+      // Give it the plus value and try again.
+      vi.mocked(encryptAndSend).mockClear();
+      box.equipments[1]!.potential = 1;
+      reqRes = mockReqRes({
+        session_id: 'sess-1',
+        base_equipment_id: 'EQP_BASE',
+        resource_equipment_ids: ['EQP_F0', 'EQP_F1', 'EQP_F2'],
+      });
+      await equipEvolve(reqRes.req, reqRes.res);
+
+      const salvato = boxSalvato();
+      expect(salvato.equipments).toHaveLength(1);
+      expect(salvato.equipments[0]!.mst_equipment_id).toBe(2625497820);
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({
+          zeny: 500_000,
+          base_equipment: expect.objectContaining({ mst_equipment_id: 2625497820 }),
+          resource_equipments: expect.arrayContaining([
+            expect.objectContaining({ equipment_id: 'EQP_F0' }),
+            expect.objectContaining({ equipment_id: 'EQP_F1' }),
+            expect.objectContaining({ equipment_id: 'EQP_F2' }),
+          ]),
+        }),
+        reqRes.res,
+        reqRes.req,
+      );
     });
   });
 
@@ -379,6 +594,27 @@ describe('box.controller', () => {
         },
         res,
         req,
+      );
+    });
+
+    it('spends one 共通秘伝書 per step in reinforcement-only mode', async () => {
+      const DENSHO = 3795115954;
+      const box = utenteConZork(0);
+      box.materials = [{ mst_material_id: DENSHO, amount: 3 }];
+      const { req, res } = mockReqRes({
+        session_id: 'sess-1', base_equipment_id: 'EQP_Z', num: 2, is_use_reinforcement: 2,
+      });
+
+      await equipWSkillup(req, res);
+
+      const salvato = boxSalvato();
+      expect(salvato.equipments[0]!.slv).toBe(2);
+      expect(salvato.materials).toEqual([{ mst_material_id: DENSHO, amount: 1 }]);
+      expect(encryptAndSend).toHaveBeenCalledWith(
+        expect.objectContaining({
+          resource_materials: [{ mst_material_id: DENSHO, amount: 2 }],
+        }),
+        res, req,
       );
     });
 
@@ -775,5 +1011,122 @@ describe('otomo skill remove', () => {
     const { req, res } = mockReqRes({ session_id: 'bad' });
     await otomoSkillRemove(req, res);
     expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.NOT_AUTHENTICATED);
+  });
+
+  describe('plus value (potential)', () => {
+    // Zork the Rush Zero I: rarity 7 -> max plus 25, upValue [5, 1], base 8000.
+    const MST_ZORK = 1024651966;
+    // A real plus-up material (item_plusup_material), 50 zeny each.
+    const MAT_PLUS = 4253392028;
+
+    function utente(overrides: Record<string, unknown> = {}) {
+      const box = {
+        zeny: 100000,
+        equipments: [
+          { equipment_id: 'EQP_Z', mst_equipment_id: MST_ZORK, potential: 0 },
+          { equipment_id: 'EQP_F1', mst_equipment_id: MST_ZORK, potential: 0, elv: 1 },
+          { equipment_id: 'EQP_F2', mst_equipment_id: MST_ZORK, potential: 0, elv: 1 },
+        ] as { equipment_id: string; mst_equipment_id: number; potential: number; elv?: number }[],
+        materials: [{ mst_material_id: MAT_PLUS, amount: 30 }],
+        ...overrides,
+      };
+      const doc = { _id: 'id', id: 'id', character_name: 'H', box };
+      vi.mocked(User.findOne).mockResolvedValue(doc as never);
+      vi.mocked(User.findByIdAndUpdate).mockResolvedValue(null);
+      return doc;
+    }
+
+    describe('potentialupMaterial', () => {
+      it('raises the potential by one per material, spends the materials and 50 zeny each', async () => {
+        const doc = utente();
+        const { req, res } = mockReqRes({
+          session_id: 's1',
+          base_equipment_id: 'EQP_Z',
+          resource_materials: [{ mst_material_id: MAT_PLUS, amount: 3 }],
+        });
+
+        await potentialupMaterial(req, res);
+
+        expect(doc.box.equipments[0]!.potential).toBe(3);
+        expect(doc.box.zeny).toBe(100000 - 150);
+        expect(doc.box.materials).toEqual([{ mst_material_id: MAT_PLUS, amount: 27 }]);
+        expect(encryptAndSend).toHaveBeenCalledWith(
+          expect.objectContaining({
+            zeny: 100000 - 150,
+            base_equipment: expect.objectContaining({ equipment_id: 'EQP_Z', potential: 3 }),
+            resource_materials: [{ mst_material_id: MAT_PLUS, amount: 3 }],
+          }),
+          res, req,
+        );
+      });
+
+      it('caps at the rarity maximum', async () => {
+        const doc = utente();
+        doc.box.equipments[0]!.potential = 24;
+        const { req, res } = mockReqRes({
+          session_id: 's1',
+          base_equipment_id: 'EQP_Z',
+          resource_materials: [{ mst_material_id: MAT_PLUS, amount: 5 }],
+        });
+
+        await potentialupMaterial(req, res);
+
+        expect(doc.box.equipments[0]!.potential).toBe(25); // maxPlus for rarity 7
+      });
+
+      it('refuses a material that is not a plus-up material', async () => {
+        utente();
+        const { req, res } = mockReqRes({
+          session_id: 's1',
+          base_equipment_id: 'EQP_Z',
+          resource_materials: [{ mst_material_id: 999, amount: 1 }],
+        });
+
+        await potentialupMaterial(req, res);
+
+        expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+        expect(encryptAndSend).toHaveBeenCalledWith({}, res, req, ERROR_CODE.GENERIC_ERROR, ERROR_CATEGORY.ERROR_DIALOG, expect.any(String));
+      });
+    });
+
+    describe('potentialup', () => {
+      it('raises the potential by 5 per fodder, charges the base and eats the fodder', async () => {
+        const doc = utente();
+        const { req, res } = mockReqRes({
+          session_id: 's1',
+          base_equipment_id: 'EQP_Z',
+          resource_equipment_ids: ['EQP_F1', 'EQP_F2'],
+        });
+
+        await potentialup(req, res);
+
+        expect(doc.box.equipments[0]!.potential).toBe(10);
+        expect(doc.box.zeny).toBe(100000 - 8000 * 2);
+        // The two fodder are gone; the base stays.
+        expect(doc.box.equipments.map((e) => e.equipment_id)).toEqual(['EQP_Z']);
+        expect(encryptAndSend).toHaveBeenCalledWith(
+          expect.objectContaining({
+            zeny: 100000 - 16000,
+            base_equipment: expect.objectContaining({ equipment_id: 'EQP_Z', potential: 10 }),
+            resource_equipments: expect.arrayContaining([expect.objectContaining({ equipment_id: 'EQP_F1' })]),
+          }),
+          res, req,
+        );
+      });
+
+      it('never eats the base itself', async () => {
+        const doc = utente();
+        const { req, res } = mockReqRes({
+          session_id: 's1',
+          base_equipment_id: 'EQP_Z',
+          resource_equipment_ids: ['EQP_Z'],
+        });
+
+        await potentialup(req, res);
+
+        expect(User.findByIdAndUpdate).not.toHaveBeenCalled();
+        expect(doc.box.equipments.map((e) => e.equipment_id)).toEqual(['EQP_Z', 'EQP_F1', 'EQP_F2']);
+      });
+    });
   });
 });

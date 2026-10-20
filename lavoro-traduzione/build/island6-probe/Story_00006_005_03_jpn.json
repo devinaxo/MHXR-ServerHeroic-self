@@ -1,0 +1,37 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,503><TALK 5><NAME 6><CHAR 5,1,5,0,8><CHAR 1,1,1,0,0><CV 3,14>You two!\r\nSeems you slew it!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CV 1,4>Yes!\r\nWe somehow slew it!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,0><CV 4,46>I've checked the island's volcano calmed.\r\nGood work!",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,1>To think you truly slew it...\r\nAnd moreover, by cooperating with Boromia...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 5,24>Truly remarkable!\r\nKeep doing your best!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1><CV 1,12>Yes!\r\nThank you!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

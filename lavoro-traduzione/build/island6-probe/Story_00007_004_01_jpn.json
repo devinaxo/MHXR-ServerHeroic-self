@@ -1,0 +1,67 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 0,0><BGM 0,0,503><TALK 5><NAME 13><CHAR 5,1,11,0,0>Eliza!\r\nCould you wait a moment?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,0,8>Yuno?\r\nWhat's the matter?",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<CHAR 5,0,11,0,0><TALK 5><NAME 13>Pecola's...\r\ncondition seems bad...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 1><NAME 1>Pecola's...?\r\nWhy on earth...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 5><NAME 13>Pecola,\r\nseems to have caught a special illness.",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "Gathering the ritual vessels,\r\nis also to cure Pecola's illness...",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<TALK 1><NAME 1>To think there was such a reason...\r\nThe ritual vessel's 'healing power', huh...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 5><NAME 13>Pecola's illness,\r\nwe have to give her medicine...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 1><NAME 1>Medicine...\r\nWhat's needed?",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 5><NAME 13>I was using OO and XX as medicine.",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 1><NAME 1>Understood, I'll go gather them!",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "OO and XX,\r\nthings got from OO and XX.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

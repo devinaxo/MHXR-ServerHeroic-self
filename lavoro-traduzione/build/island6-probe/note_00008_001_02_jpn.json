@@ -1,0 +1,137 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 10><CHAR 5,1,7,0,8><CV 5,1>Foh-foh-foh.\r\nWhat is it?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,1,1,2,3><CV 1,5>We discovered something that seems amazing,\r\nso we came to report!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 10><CHAR 5,0,7,0,0><CV 5,2>Let's see...\r\nWon't you show me...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<ITEM COLLECTION08001,1,1><TALK 5><NAME 10><CHAR 5,0,7,0,1><CV 5,3>Oh, this is...",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "This is a beautiful mirror.\r\nHow was it embedded...",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "No, the rock's cross-section is a mirror.\r\nI've heard of mirror stone, but never this.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "And the pattern below...\r\nthis disc is like a sundial...",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "Yes, by reflecting in the mirror\r\none reads the time!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "Telling time not by shadow but by light -\r\na type I've never seen...",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "\"Sunlight on the disc tells the hour;\r\n the mark comes and goes, lighting all time\"",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CV 5,4>Mm, it matches the words on the tablet.\r\nThis is surely the treasure.",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "I'll investigate the details later.\r\nDrop by when you're near.",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,2,4><ITEM 0,1,0><CV 1,12>Thank you very much!\r\nPlease continue the investigation!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<CHAR 5,0,12,0,0><TALK 5><NAME 14><CV 17,17>It seems you found it safely...",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "<TALK 1><NAME 1><CV 1,67>Thank you for earlier!\r\nEr, you are...",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<TALK 5><NAME 14><CV 17,1>I am Solphine, serving as Lady Yuno's guard.",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "If I could be of any help, I am glad.",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<TALK 5><NAME 13><CHAR 5,0,11,0,1><CV 16,3>Solphine!\r\nThank you for really coming!",
+  "en": ""
+ },
+ {
+  "i": 18,
+  "jp": "Ah, these people escorted me here -\r\nHunter and Eliza!",
+  "en": ""
+ },
+ {
+  "i": 19,
+  "jp": "<CV 16,17>Solphine is amazing!\r\nThe guard trial is very difficult,\r\nand she became a guard the youngest ever!",
+  "en": ""
+ },
+ {
+  "i": 20,
+  "jp": "<CHAR 5,0,12,0,0><TALK 5><NAME 14><CV 17,9>Both of you, thank you for Lady Yuno.",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "jp": "<CV 17,21>I was searching for Lady Yuno,\r\nbut to think she'd be in such a place...",
+  "en": ""
+ },
+ {
+  "i": 22,
+  "jp": "<TALK 1><NAME 1><CV 1,4>No, I'm truly glad we found her.",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "jp": "<TALK 5><NAME 14>Lady Yuno is indispensable to the island.\r\nThat she was protected by people like you,\r\nI am most grateful.",
+  "en": ""
+ },
+ {
+  "i": 24,
+  "jp": "We will send a reward for the journey later.\r\nWe truly thank you for aiding the ritual.",
+  "en": ""
+ },
+ {
+  "i": 25,
+  "jp": "<CV 17,4>Then, we shall take our leave.\r\nLady Yuno, let us go!",
+  "en": ""
+ },
+ {
+  "i": 26,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

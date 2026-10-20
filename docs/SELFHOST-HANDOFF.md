@@ -439,6 +439,20 @@ It reproduces the client's displayed 14,981 / 30,461 / 46,441 exactly, but if
 prices look wrong on another piece this is the first suspect. Full derivation
 and limits in `docs/UPGRADE-COSTS.md`.
 
+### Follow-up (2026-10-20): the fields were in the wrong place
+
+The first fix sent `zeny` and `materials` at the top level. `cAPIBoxEquipmentLevelup::Response::setup`
+parses both with the **`levelup` object as their parent**, so the client still
+saw neither: the balance stayed at `999,999,999` and the material counts did not
+move, even though the database had been updated. The success response is now
+
+```json
+{ "levelup": { "equipment": { ... }, "materials": [ ... ], "zeny": 985019 } }
+```
+
+with `materials` carrying only the changed rows and their absolute amounts.
+See `docs/UPGRADE-COSTS.md`.
+
 ### Verification
 - 605/605 unit tests pass (4 stale expectations from the earlier error-code
   work were corrected: `GENERIC_ERROR` -> `KARIDAMA_NOT_ENOUGH`, and a

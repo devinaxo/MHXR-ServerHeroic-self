@@ -1,0 +1,92 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 12,0><BGM 0,0,505><TALK 1><NAME 1><CHAR 1,1,1,0,0><CHAR 5,1,9,0,0>Boromia!!!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 11><CV 10,7>It's you lot...\r\nBut you're too late.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "A while ago, I ordered all explorers\r\nto evacuate this island.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CV 10,19>This island will sink soon.\r\nYou lot evacuate at once!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CV 1,20>No way...\r\nAnd you, Boromia...?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 11><CV 10,36>I will remain here.\r\nTo slay that thing, whatever it takes.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CV 10,14>You lot, flee quickly!",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<TALK 1><NAME 1>Boromia!\r\nWe'll stay too!",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<TALK 5><NAME 11>Will you sink with the Fractured Isles?",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<TALK 1><NAME 1>No, we'll slay it, we'll show you!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<TALK 5><NAME 11><CV 10,17>What nonsense...",
+  "en": ""
+ },
+ {
+  "i": 11,
+  "jp": "<TALK 1><NAME 1>Please let us protect the Fractured Isles!\r\nWe are 'explorers' too!",
+  "en": ""
+ },
+ {
+  "i": 12,
+  "jp": "The Hunter and I\r\nwill surely slay it!",
+  "en": ""
+ },
+ {
+  "i": 13,
+  "jp": "<TALK 5><NAME 11>………",
+  "en": ""
+ },
+ {
+  "i": 14,
+  "jp": "Then we go together.",
+  "en": ""
+ },
+ {
+  "i": 15,
+  "jp": "<CV 10,6><COL C70101FF>Agnaktor Carapace</COL> and <COL C70101FF>Lagiacrus Scale</COL>...\r\nGo gather them!",
+  "en": ""
+ },
+ {
+  "i": 16,
+  "jp": "<TALK 1><NAME 1><CV 1,11><COL C70101FF>Agnaktor Carapace</COL> and <COL C70101FF>Lagiacrus Scale</COL> mean\r\n<COL C70101FF>Agnaktor</COL> and <COL C70101FF>Plesioth</COL>!\r\nWe'll go gather them!",
+  "en": ""
+ },
+ {
+  "i": 17,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

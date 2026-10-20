@@ -1,0 +1,32 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,503><TALK 5><NAME 10><CHAR 5,1,7,0,0><CHAR 1,1,1,0,0><CV 5,1>An explosion really stirs the heart.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 5><NAME 12><CHAR 5,0,6,0,1><CV 4,46>Somehow, I suppose it's a success...\r\nBut we can't let our guard down!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "We avoided it by a hair's breadth.\r\nHow long this lasts, I don't know.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CV 4,19>Both of you, I'm counting on you!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1><CV 1,4><CHAR 1,0,1,0,0>Yes!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

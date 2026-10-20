@@ -1,0 +1,57 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 4,0><BGM 0,0,508><TALK 5><NAME 9><CHAR 5,1,8,4,0><CHAR 1,1,1,0,0><CV 2,11>H-how was it, meow?",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1>He was friendly with the Arzuros, but...\r\nhe was mistaken for a fellow.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "He was mistaken for his blue fur...",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<TALK 5><NAME 9><CHAR 5,0,8,4,8><CV 2,10>Meow meow!\r\nCould it be that's Galette, meow!?",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<TALK 1><NAME 1>Eh, yes,\r\nDo you know him?",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 5><NAME 9><CV 2,6><CHAR 5,0,8,6,0>I've been looking for him, meow...\r\nLong ago, meow,\r\nsomething happened at a Felyne meet, meow.",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<CV 2,2>While Galette did his trick,\r\n'an Arzuros impression',\r\na real Arzuros appeared from behind, meow.",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CV 2,16>We scattered and fled,\r\nbut only Galette couldn't be found...",
+  "en": ""
+ },
+ {
+  "i": 8,
+  "jp": "<CV 2,5>To think he was in such a place,\r\nI never imagined, meow!",
+  "en": ""
+ },
+ {
+  "i": 9,
+  "jp": "<CV 2,7><CHAR 5,0,8,7,0>But he's quite a reliable one, meow!\r\nYou should go adventuring together, meow!",
+  "en": ""
+ },
+ {
+  "i": 10,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

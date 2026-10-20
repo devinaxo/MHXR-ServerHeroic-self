@@ -1,0 +1,22 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 3,0><BGM 0,0,502><TALK 5><NAME 6><CHAR 5,1,5,0,0><CHAR 1,1,1,0,0>That Snatcher Newt from before -\r\nthere's a reason it collects shiny things.",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "Investigating that newt,\r\nit seems it can't see well at night.",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "To brighten its nest even a little,\r\nit collects shiny things.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]

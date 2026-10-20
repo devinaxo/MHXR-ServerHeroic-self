@@ -122,29 +122,50 @@ untouched and the player keeps the piece:
 ## Log lines
 
 ```
-potenziamento | <player>: <eqp_obj_id> lv30 -> lv31, zenny 14981 (saldo 985019), materiali 4
+potenziamento | <player>: <eqp_obj_id> lv30 -> lv31, zenny 14981 (saldo 985019), materiali 4, rinforzi 0 (tipo 0)
 ```
 
 ## Notes for the client side
 
-The response must carry all three of these, or the client shows 999,999,999:
+`cAPIBoxEquipmentLevelup::Response::setup` parses `zeny` and `materials` with
+the **`levelup` object as their parent**, so the response must nest all three
+fields. Sending them at the top level is what made the client show
+999,999,999 and leave the material counts untouched even though the database
+had been updated:
 
 ```json
 {
-  "levelup":    { "equipment": { ... } },
-  "zeny":       985019,
-  "materials":  [ { "mst_material_id": ..., "amount": ... } ]
+  "levelup": {
+    "equipment": { ... },
+    "materials": [ { "mst_material_id": ..., "amount": ... } ],
+    "zeny":      985019
+  }
 }
 ```
+
+`materials` carries only the rows that changed, with the **absolute amount
+left**. `sServer::setupBoxEquipmentLevelupResponse` writes each amount straight
+into the matching box row before calling `updateBoxMaterialData`, so a material
+that reached 0 must be sent as `amount: 0` for the client to clear it.
 
 Field names are suffix-merged in the client's string table, which is why
 `levelup`, `zeny`, `materials` and `equipment` do not appear as standalone
 strings in `libMHS.so` - they are tails of longer strings like
-`box/equipment/levelup` and `resource_materials`. Confirmed by disassembling
-`sServer::setupBoxEquipmentLevelupResponse`, which reads a zenny field into the
-player workspace and then loops over a material array calling
-`updateBoxMaterialData`.
+`box/equipment/levelup` and `resource_materials`.
 
-The client also sends a third field the server ignores: `is_use_reinforcement`
-(`sPlayerWorkspace::getRequestBoxEquipmentLevelupUseMaterialType`). It selects
-which material set to spend. Currently all sets are treated the same way.
+## `is_use_reinforcement`
+
+The third request field (`sPlayerWorkspace::getRequestBoxEquipmentLevelupUseMaterialType`)
+selects how the materials are paid for. The client's `calcCompoLevelUp` compares
+it with 1 and 2, so the values are:
+
+| Value | Mode | Server behaviour |
+| --- | --- | --- |
+| 0 | Own materials | Spend the piece's required set, as before |
+| 1 | Blend | Spend the required materials that are owned, then 1 x 強化材 for each level that is still short |
+| 2 | Reinforcement only | 1 x 強化材 per level gained |
+
+強化材 is `mst_material_id` 1921761827 (`item_define` MATERIAL61107,
+`mCommonUpNum` 99999), so one unit covers any level: the most expensive set in
+`upgrade-costs.json` is a few hundred reinforcement points. The Arts route uses
+the same values with 共通秘伝書 (3795115954, MATERIAL61108).

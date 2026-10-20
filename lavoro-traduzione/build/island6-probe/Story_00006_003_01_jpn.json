@@ -1,0 +1,42 @@
+[
+ {
+  "i": 0,
+  "jp": "<STBG 7,0><BGM 0,0,505><TALK 5><NAME 6><CHAR 1,1,1,0,0><CHAR 5,1,5,0,1><CV 3,21>You two, come!\r\nIt's terrible!",
+  "en": ""
+ },
+ {
+  "i": 1,
+  "jp": "<TALK 1><NAME 1><CHAR 1,0,1,0,8><CV 1,28>Dr. Hawk!",
+  "en": ""
+ },
+ {
+  "i": 2,
+  "jp": "<TALK 5><NAME 6><CHAR 5,0,5,0,7>The excited <COL C70101FF>Uragaan</COL>\r\nis stimulating the volcano.",
+  "en": ""
+ },
+ {
+  "i": 3,
+  "jp": "<CV 3,29>At this rate it will set off the eruption.\r\nIf it erupts, that's the end!",
+  "en": ""
+ },
+ {
+  "i": 4,
+  "jp": "<CV 3,18>To delay the eruption even a little,\r\nslay that Uragaan!",
+  "en": ""
+ },
+ {
+  "i": 5,
+  "jp": "<TALK 1><NAME 1>Yes!\r\nUnderstood!",
+  "en": ""
+ },
+ {
+  "i": 6,
+  "jp": "<POP1 9,PART00006_NODE00505>",
+  "en": ""
+ },
+ {
+  "i": 7,
+  "jp": "<CLS>",
+  "en": ""
+ }
+]
